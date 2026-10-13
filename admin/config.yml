@@ -2,6 +2,7 @@ backend:
   name: github
   repo: krishnaxu/globalviewnet
   branch: main
+  local_backend: true
 media_folder: "admin/uploads"
 public_folder: "/admin/uploads"
 collections:
