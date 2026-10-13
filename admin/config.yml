@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: krishnaxu/globalviewnet
+  branch: main
+media_folder: "admin/uploads"
+public_folder: "/admin/uploads"
+collections:
+  - name: "news"
+    label: "新闻"
+    folder: "_posts"
+    create: true
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "日期", name: "date", widget: "datetime" }
+      - { label: "分类", name: "category", widget: "select", options: ["科技", "商业", "文化", "生活"] }
+      - { label: "正文", name: "body", widget: "markdown" }
