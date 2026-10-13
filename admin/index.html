@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="utf-8" />
-  <link rel="cms-config-url" href="/admin/config.yml" />
-  <script src="https://unpkg.com/decap-cms@3/dist/decap-cms.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin</title>
 </head>
-<body></body>
+<body>
+  <!-- 这个根节点必须有，否则 appendChild 必崩 -->
+  <div id="root"></div>
+  <!-- Decap CMS 核心脚本 -->
+  <script src="https://unpkg.com/decap-cms@3.1.10/dist/decap-cms.js"></script>
+</body>
 </html>
