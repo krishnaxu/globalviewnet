@@ -1,16 +1,16 @@
 backend:
   name: github
-  repo: krishnaxu/globalviewnet
+  repo: 你的用户名/你的仓库名
   branch: main
-media_folder: "admin/uploads"
-public_folder: "/admin/uploads"
+  base_url: https://globalviewnet.pages.dev
+  # auth_endpoint 必须注释或删除！
+media_folder: "static/images"
+public_folder: "/images"
 collections:
-  - name: "news"
-    label: "新闻"
-    folder: "_posts"
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
     create: true
     fields:
-      - { label: "标题", name: "title", widget: "string" }
-      - { label: "日期", name: "date", widget: "datetime" }
-      - { label: "分类", name: "category", widget: "select", options: ["科技", "商业", "文化", "生活"] }
-      - { label: "正文", name: "body", widget: "markdown" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "body", label: "Body", widget: "markdown" }
