@@ -2,9 +2,9 @@ backend:
   name: github
   repo: krishnaxu/globalviewnet
   branch: main
-  local_backend: true
-media_folder: "admin/uploads"
-public_folder: "/admin/uploads"
+  auth_endpoint: /api/auth
+  media_folder: "admin/uploads"
+  public_folder: "/admin/uploads"
 collections:
   - name: "news"
     label: "新闻"
