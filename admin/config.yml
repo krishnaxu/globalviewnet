@@ -4,13 +4,17 @@ backend:
   branch: main
   base_url: https://globalviewnet.pages.dev
   auth_endpoint: /api/auth
+
 media_folder: "static/images"
 public_folder: "/images"
+
 collections:
   - name: "posts"
     label: "Posts"
     folder: "content/posts"
     create: true
+    slug: "{{slug}}"
     fields:
       - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD" }
       - { name: "body", label: "Body", widget: "markdown" }
