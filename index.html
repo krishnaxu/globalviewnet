@@ -4,9 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CMS 管理后台</title>
-  <script src="https://unpkg.com/decap-cms@3/dist/decap-cms.js"></script>
+  <!-- 关键 1：加 defer，等 HTML 解析完再执行，解决 appendChild 报空 -->
+  <!-- 关键 2：换 jsDelivr CDN，绕开 Edge 对 unpkg 的跟踪拦截 -->
+  <script defer src="https://cdn.jsdelivr.net/npm/decap-cms@3.17.1/dist/decap-cms.js"></script>
 </head>
 <body>
+  <!-- 关键 3：挂载点（必须存在） -->
   <div id="nc-root"></div>
 </body>
 </html>
