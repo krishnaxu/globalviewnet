@@ -1,59 +1,41 @@
 export async function onRequest({ request, env }) {
   const url = new URL(request.url);
   const code = url.searchParams.get("code");
-
-  if (!code) {
-    return new Response("No code provided (Auth Callback OK)", { status: 400 });
+  const state = url.searchParams.get("state");
+  
+  // 1. 校验 state（防 CSRF，你之前的代码应有）
+  const cookieHeader = request.headers.get("Cookie") || "";
+  const storedState = cookieHeader.match(/(?:^|;\s*)oauth_state=([^;]+)/)?.[1];
+  if (!state || state !== storedState) {
+    return new Response("Invalid state", { status: 403 });
   }
 
-  const clientId = env.GITHUB_CLIENT_ID;
-  const clientSecret = env.GITHUB_CLIENT_SECRET;
-
-  if (!clientId || !clientSecret) {
-    return new Response("Missing GITHUB_CLIENT_ID or GITHUB_CLIENT_SECRET env vars", { status: 500 });
-  }
-
-  // 用 code 换 access_token
-  const tokenRes = await fetch("https://github.com/login/oauth/access_token", {
+  // 2. 换 Token（确认 env 变量名大小写完全一致）
+  const res = await fetch("https://github.com/login/oauth/access_token", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Accept": "application/json",
-    },
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
     body: JSON.stringify({
-      client_id: clientId,
-      client_secret: clientSecret,
-      code: code,
-      redirect_uri: "https://globalviewnet.pages.dev/api/auth/callback",
+      client_id: env.GITHUB_CLIENT_ID,
+      client_secret: env.GITHUB_CLIENT_SECRET,
+      code,
     }),
   });
+  const { access_token } = await res.json();
 
-  const tokenJson = await tokenRes.json();
-  const access_token = tokenJson.access_token;
-
-  if (!access_token) {
-    return new Response(
-      "Token exchange failed: " + JSON.stringify(tokenJson),
-      { status: 400 }
-    );
-  }
-
-  // 成功拿到 token，写进 cookie 并跳回 /admin/
-  const html = `<!DOCTYPE html>
-<html>
-<head>
-  <title>Authorizing...</title>
-  <script>
-    document.cookie = "access_token=${access_token}; path=/; max-age=3600; SameSite=Lax";
-    window.location.replace("/admin/");
-  </script>
-</head>
-<body>
-  <p>Login successful! Redirecting to <a href="/admin/">/admin/</a>...</p>
-</body>
-</html>`;
-
-  return new Response(html, {
-    headers: { "Content-Type": "text/html" },
-  });
+  // 3. 关键：Decap 必须的双向握手 + 反引号模板
+  const html = `
+    <script>
+      // 第一步：通知父窗口授权开始
+      window.opener.postMessage("authorizing:github", window.location.origin);
+      
+      // 第二步：监听父窗口回应，再发 Token（必须反引号）
+      window.addEventListener("message", (e) => {
+        window.opener.postMessage(
+          \`authorization:github:success:\${JSON.stringify({ token: access_token, provider: "github" })}\`,
+          window.location.origin
+        );
+        window.close();
+      });
+    </script>`;
+  return new Response(html, { headers: { "Content-Type": "text/html" } });
 }
