@@ -1,36 +1,25 @@
 export async function onRequest(context) {
   const { request, env } = context;
   const url = new URL(request.url);
+  
+  // 如果已经有 code（GitHub 回调），不做处理，让 callback.js 接管
   const code = url.searchParams.get("code");
-  if (!code) return new Response("No code", { status: 400 });
-
-  const tokenRes = await fetch("https://github.com/login/oauth/access_token", {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Accept: "application/json" },
-    body: JSON.stringify({
-      client_id: env.GITHUB_CLIENT_ID,
-      client_secret: env.GITHUB_CLIENT_SECRET,
-      code: code,
-      redirect_uri: "https://globalviewnet.pages.dev/api/auth/callback"
-    })
-  });
-
-  const tokenJson = await tokenRes.json();
-  const access_token = tokenJson.access_token;
-  if (!access_token) return new Response("Token failed: " + JSON.stringify(tokenJson), { status: 500 });
-
-  const html = `<!doctype html>
-<html>
-<body>
-<script>
-  window.opener.postMessage(
-    'authorization:github:success:' + JSON.stringify({ token: "${access_token}", provider: "github" }),
-    window.location.origin
-  );
-  window.close();
-</script>
-</body>
-</html>`;
-
-  return new Response(html, { headers: { "Content-Type": "text/html" } });
+  if (code) {
+    // 直接重定向到 callback 处理
+    return Response.redirect("https://globalviewnet.pages.dev/api/auth/callback?" + url.searchParams.toString(), 302);
+  }
+  
+  // 没有 code → 发起 GitHub OAuth 授权
+  const client_id = env.GITHUB_CLIENT_ID;
+  if (!client_id) {
+    return new Response("Error: GITHUB_CLIENT_ID undefined", { status: 500 });
+  }
+  
+  const redirect_uri = "https://globalviewnet.pages.dev/api/auth/callback";
+  const githubAuthUrl = "https://github.com/login/oauth/authorize" +
+    "?client_id=" + client_id +
+    "&redirect_uri=" + encodeURIComponent(redirect_uri) +
+    "&scope=repo";
+  
+  return Response.redirect(githubAuthUrl, 302);
 }
