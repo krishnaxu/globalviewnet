@@ -1,11 +1,22 @@
-export async function onRequest({ request, url, env }) {
+export async function onRequest(context) {
+  // 超强容错：防止根路径/中间件导致 context 异常
+  if (!context || !context.request) {
+    return new Response("Bad Request: No context", { status: 400 });
+  }
+
+  const { request, env } = context;
+
   try {
-    const code = url.searchParams.get("code");
+    // 必须自己 new URL，不能直接用 context.url
+    const reqUrl = new URL(request.url);
+    const code = reqUrl.searchParams.get("code");
+
+    // 如果访问根域名（无 code），正常提示，不报错
     if (!code) {
-      return new Response("No code provided", { status: 400 });
+      return new Response("No code provided (Auth Callback OK)", { status: 400 });
     }
 
-    // 环境变量检查（防止 1101）
+    // 环境变量检查
     if (!env.GITHUB_CLIENT_ID || !env.GITHUB_CLIENT_SECRET) {
       return new Response("Server misconfigured: missing GitHub env vars", { status: 500 });
     }
@@ -41,7 +52,7 @@ export async function onRequest({ request, url, env }) {
 
     return new Response(html, { headers: { "Content-Type": "text/html" } });
   } catch (e) {
-    // 兜底捕获，避免 1101，直接显示真实错误
+    // 兜底：绝不再抛 1101
     return new Response("Function Error: " + (e.stack || e.message || e), { status: 500 });
   }
 }
