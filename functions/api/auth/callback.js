@@ -1,18 +1,6 @@
-export async function onRequest(context) {
-  const { request, env } = context;
-  const url = new URL(request.url);
-
-  const code = url.searchParams.get("code");
-  const state = url.searchParams.get("state");
-
-  const cookie = request.headers.get("Cookie") || "";
-  const savedState = cookie.match(/oauth_state=([^;]+)/)?.[1];
-
-  if (!code || state !== savedState) {
-    return new Response("OAuth state 校验失败", { status: 403 });
-  }
-
-  // 1. 用 code 换 access_token
+  // 第 16-24 行：必须写死，与 GitHub OAuth 后台、Decap 预期完全一致
+  const redirectUri = "https://globalviewnet.pages.dev/api/auth/callback"; 
+  
   const tokenRes = await fetch("https://github.com/login/oauth/access_token", {
     method: "POST",
     headers: { "Content-Type": "application/json", Accept: "application/json" },
@@ -20,37 +8,26 @@ export async function onRequest(context) {
       client_id: env.GITHUB_CLIENT_ID,
       client_secret: env.GITHUB_CLIENT_SECRET,
       code,
-      redirect_uri: url.origin + "/api/auth/callback"
+      redirect_uri: redirectUri // 这里不再用 url.origin 拼接
     })
   });
 
   const tokenJson = await tokenRes.json();
   const access_token = tokenJson.access_token;
 
-  if (!access_token) {
-    return new Response("换 token 失败：" + JSON.stringify(tokenJson), { status: 500 });
-  }
+  if (!access_token) return new Response("Token failed: " + JSON.stringify(tokenJson), { status: 500 });
 
-  // 2. 把 token 回传给 Decap CMS 的 /admin 页面
-  const html = `
-  <!doctype html>
-  <html>
-    <body>
-      <script>
-        window.opener.postMessage(
-          'authorization:github:success:' + JSON.stringify({
-            token: ${JSON.stringify(access_token)},
-            provider: "github"
-          }),
-          window.location.origin
-        );
-        window.close();
-      </script>
-    </body>
-  </html>
-  `;
-
-  return new Response(html, {
-    headers: { "Content-Type": "text/html" }
-  });
-}
+  // 回传 Decap（保持你原有的逻辑，origin 也建议写死更稳）
+  const html = `<!doctype html>
+<html>
+<body>
+<script>
+  window.opener.postMessage(
+    'authorization:github:success:' + JSON.stringify({ token: "${access_token}", provider: "github" }),
+    "https://globalviewnet.pages.dev" // 写死父窗口源，避免跨域丢失
+  );
+  window.close();
+</script>
+</body>
+</html>`;
+  return new Response(html, { headers: { "Content-Type": "text/html" } });
