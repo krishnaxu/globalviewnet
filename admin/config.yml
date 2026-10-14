@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: 你的用户名/你的仓库名
+  repo: krishnaxu/globalviewnet   # 【必改】确认这是你的真实仓库路径
   branch: main
-  base_url: https://globalviewnet.pages.dev
-  # auth_endpoint 必须注释或删除！
+  base_url: https://globalviewnet.pages.dev   # 已修正拼写，一字不差
+  auth_endpoint: /api/auth        # 【必开】不能注释，配合 callback.js
 media_folder: "static/images"
 public_folder: "/images"
 collections:
