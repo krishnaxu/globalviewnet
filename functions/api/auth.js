@@ -1,14 +1,9 @@
 export async function onRequest(context) {
   const { request, env } = context;
   const url = new URL(request.url);
-
   const code = url.searchParams.get("code");
+  if (!code) return new Response("No code", { status: 400 });
 
-  if (!code) {
-    return new Response("No code received from GitHub", { status: 400 });
-  }
-
-  // 用 code 换 access_token
   const tokenRes = await fetch("https://github.com/login/oauth/access_token", {
     method: "POST",
     headers: { "Content-Type": "application/json", Accept: "application/json" },
@@ -22,21 +17,14 @@ export async function onRequest(context) {
 
   const tokenJson = await tokenRes.json();
   const access_token = tokenJson.access_token;
+  if (!access_token) return new Response("Token failed: " + JSON.stringify(tokenJson), { status: 500 });
 
-  if (!access_token) {
-    return new Response("Token exchange failed: " + JSON.stringify(tokenJson), { status: 500 });
-  }
-
-  // 把 token 回传给 Decap CMS
   const html = `<!doctype html>
 <html>
 <body>
 <script>
   window.opener.postMessage(
-    'authorization:github:success:' + JSON.stringify({
-      token: ${JSON.stringify(access_token)},
-      provider: "github"
-    }),
+    'authorization:github:success:' + JSON.stringify({ token: "${access_token}", provider: "github" }),
     window.location.origin
   );
   window.close();
