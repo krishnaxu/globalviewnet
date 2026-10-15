@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="个人博客，记录思考与分享。">
+  <meta name="theme-color" content="#f8f7f4">
+  <title>我的个人博客</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8f7f4;
+      --paper: #fff;
+      --text: #252720;
+      --muted: #77796f;
+      --line: #e8e6df;
+      --accent: #476b55;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.8;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(860px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .nav-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 72px 0 48px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 12px 0;
+      font-size: clamp(34px, 7vw, 52px);
+      line-height: 1.25;
+      letter-spacing: -.04em;
+    }
+
+    .intro {
+      max-width: 580px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .section-heading {
+      margin: 16px 0 20px;
+      font-size: 22px;
+    }
+
+    .post {
+      display: block;
+      padding: 22px 24px;
+      margin-bottom: 14px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      text-decoration: none;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .post:hover {
+      border-color: #b6c6b8;
+      transform: translateY(-2px);
+    }
+
+    .post-title {
+      margin: 0 0 6px;
+      font-size: 19px;
+      line-height: 1.5;
+    }
+
+    .post-meta {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .status {
+      padding: 24px;
+      color: var(--muted);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .article {
+      padding: 32px;
+      margin: 24px 0 48px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .article h1 {
+      font-size: clamp(28px, 5vw, 40px);
+    }
+
+    .article-body {
+      margin-top: 32px;
+      overflow-wrap: anywhere;
+    }
+
+    .article-body h2,
+    .article-body h3 {
+      margin-top: 32px;
+      line-height: 1.5;
+    }
+
+    .article-body img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .article-body pre {
+      padding: 16px;
+      overflow-x: auto;
+      background: #f2f1ed;
+      border-radius: 8px;
+    }
+
+    .article-body blockquote {
+      margin-left: 0;
+      padding-left: 16px;
+      border-left: 3px solid #c5d2c6;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 32px 0 48px;
+      margin-top: 56px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+    }
+
+    [hidden] { display: none !important; }
+
+    @media (max-width: 560px) {
+      .hero { padding-top: 48px; }
+      .post { padding: 18px; }
+      .article { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="/">我的个人博客</a>
+      <a class="nav-link" href="/admin/">文章管理 ↗</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="hero">
+      <div class="eyebrow">PERSONAL BLOG</div>
+      <h1>记录思考，分享发现。</h1>
+      <p class="intro">
+        这里是我的个人博客，分享日常思考、行业观察与值得记录的内容。
+        所有文章都可以通过后台持续更新。
+      </p>
+    </section>
+
+    <section id="list-view">
+      <h2 class="section-heading">最新文章</h2>
+      <div id="post-list" aria-live="polite">
+        <p class="status">正在加载文章，请稍候……</p>
+      </div>
+    </section>
+
+    <section id="article-view" hidden>
+      <a class="back" href="/">← 返回文章列表</a>
+      <article class="article">
+        <h1 id="article-title"></h1>
+        <div class="post-meta" id="article-date"></div>
+        <div class="article-body" id="article-body"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <span>© <span id="year"></span> 我的个人博客</span>
+    <span> · Powered by Cloudflare Pages</span>
+  </footer>
+
+  <!-- Markdown 渲染与 HTML 清理 -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+
+  <script>
+    // 此处使用 GitHub 仓库地址，不是 Cloudflare 域名。
+    const OWNER = "krishnaxu";
+    const REPO = "globalviewnet";
+    const BRANCH = "main";
+    const POSTS_DIR = "content/posts";
+
+    const $ = (id) => document.getElementById(id);
+
+    $("year").textContent = new Date().getFullYear();
+
+    function escapeHTML(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      })[char]);
+    }
+
+    function parsePost(source, path) {
+      let metadata = "";
+      let body = source;
+
+      const match = source.match(
+        /^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/
+      );
+
+      if (match) {
+        metadata = match[1];
+        body = source.slice(match[0].length);
+      }
+
+      function field(name) {
+        const re = new RegExp(
+          "^" + name + "\\s*:\\s*(.*?)\\s*$",
+          "m"
+        );
+        const result = metadata.match(re);
+        return result
+          ? result[1].replace(/^(['"])(.*)\1$/, "$2").trim()
+          : "";
+      }
+
+      const title = field("title") ||
+        path.split("/").pop().replace(/\.(md|markdown)$/i, "");
+
+      return {
+        path,
+        title,
+        date: field("date"),
+        body
+      };
+    }
+
+    async function fetchText(url) {
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error("请求失败：" + response.status);
+      }
+
+      return response.text();
+    }
+
+    async function getPosts() {
+      const api =
+        "https://api.github.com/repos/" +
+        OWNER + "/" + REPO +
+        "/git/trees/" + BRANCH + "?recursive=1";
+
+      const response = await fetch(api, {
+        headers: { "Accept": "application/vnd.github+json" }
+      });
+
+      if (!response.ok) {
+        throw new Error(
+          "无法读取 GitHub 仓库（HTTP " + response.status +
+          "）。请确认仓库公开、文章目录存在，或稍后再试。"
+        );
+      }
+
+      const tree = await response.json();
+
+      if (tree.truncated) {
+        throw new Error("仓库文件较多，GitHub 未返回完整文件列表。");
+      }
+
+      const files = (tree.tree || []).filter((item) =>
+        item.type === "blob" &&
+        item.path.startsWith(POSTS_DIR + "/") &&
+        /\.(md|markdown)$/i.test(item.path)
+      );
+
+      const posts = await Promise.all(files.map(async (file) => {
+        const url =
+          "https://raw.githubusercontent.com/" +
+          OWNER + "/" + REPO + "/" + BRANCH + "/" +
+          file.path.split("/").map(encodeURIComponent).join("/");
+
+        const source = await fetchText(url);
+        return parsePost(source, file.path);
+      }));
+
+      return posts.sort((a, b) =>
+        (Date.parse(b.date) || 0) - (Date.parse(a.date) || 0)
+      );
+    }
+
+    function renderList(posts) {
+      const container = $("post-list");
+
+      if (!posts.length) {
+        container.innerHTML =
+          '<div class="status">目前还没有文章。你可以进入' +
+          '<a href="/admin/">管理后台</a>，创建并发布第一篇文章。</div>';
+        return;
+      }
+
+      container.innerHTML = posts.map((post) => {
+        const href = "/?post=" + encodeURIComponent(post.path);
+
+        return `
+          <a class="post" href="${href}">
+            <h3 class="post-title">${escapeHTML(post.title)}</h3>
+            <div class="post-meta">${escapeHTML(post.date || "未设置日期")}</div>
+          </a>
+        `;
+      }).join("");
+    }
+
+    async function showArticle(path) {
+      $("hero").hidden = true;
+      $("list-view").hidden = true;
+      $("article-view").hidden = false;
+
+      try {
+        if (!path.startsWith(POSTS_DIR + "/") ||
+            !/\.(md|markdown)$/i.test(path)) {
+          throw new Error("文章地址无效。");
+        }
+
+        const url =
+          "https://raw.githubusercontent.com/" +
+          OWNER + "/" + REPO + "/" + BRANCH + "/" +
+          path.split("/").map(encodeURIComponent).join("/");
+
+        const source = await fetchText(url);
+        const post = parsePost(source, path);
+
+        $("article-title").textContent = post.title;
+        $("article-date").textContent = post.date || "";
+        $("article-body").innerHTML = DOMPurify.sanitize(
+          marked.parse(post.body)
+        );
+
+        document.title = post.title + " - 我的个人博客";
+      } catch (error) {
+        $("article-title").textContent = "文章暂时无法打开";
+        $("article-body").textContent = error.message;
+      }
+    }
+
+    async function init() {
+      const params = new URLSearchParams(location.search);
+      const path = params.get("post");
+
+      if (path) {
+        await showArticle(path);
+        return;
+      }
+
+      try {
+        const posts = await getPosts();
+        renderList(posts);
+      } catch (error) {
+        $("post-list").innerHTML =
+          '<div class="status">' +
+          escapeHTML(error.message) +
+          '<br><br>你也可以先访问 <a href="/admin/">文章管理后台</a>。</div>';
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
