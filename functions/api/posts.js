@@ -29,9 +29,7 @@ export async function onRequestGet({ env }) {
 
   if (!token) {
     return Response.json(
-      {
-        error: "缺少 GITHUB_CONTENT_TOKEN 环境变量"
-      },
+      { error: "缺少 GITHUB_CONTENT_TOKEN 环境变量" },
       { status: 500 }
     );
   }
@@ -39,7 +37,8 @@ export async function onRequestGet({ env }) {
   const headers = {
     Accept: "application/vnd.github+json",
     Authorization: "Bearer " + token,
-    "X-GitHub-Api-Version": "2022-11-28"
+    "X-GitHub-Api-Version": "2022-11-28",
+    "User-Agent": "globalviewnet-pages"
   };
 
   const apiUrl =
