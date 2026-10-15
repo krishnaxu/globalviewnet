@@ -100,7 +100,8 @@ async function githubRequest(url, token) {
     headers: {
       Accept: "application/vnd.github+json",
       Authorization: `Bearer ${token}`,
-      "X-GitHub-Api-Version": "2022-11-28"
+      "X-GitHub-Api-Version": "2022-11-28",
+      "User-Agent": "globalviewnet-cms/1.0"
     }
   });
 
