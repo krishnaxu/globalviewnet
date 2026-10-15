@@ -134,7 +134,7 @@ export async function onRequestGet({ params }) {
 
       // 行内代码先暂存，避免被其他规则处理
       const codeItems = [];
-      value = value.replace(/\`([^\`]+)\`/g, function (_, code) {
+      value = value.replace(/\\x60([^\\x60]+)\\x60/g, function (_, code) {
         const index = codeItems.length;
         codeItems.push("<code>" + code + "</code>");
         return "@@INLINECODE" + index + "@@";
