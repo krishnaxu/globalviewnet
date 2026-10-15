@@ -53,6 +53,13 @@ collections:
         default: false
         required: true
         hint: "勾选后，文章才会显示在网站首页和文章列表。"
+        
+      - label: "设为热门文章"
+        name: "is_hot"
+        widget: "boolean"
+        default: false
+        required: true
+        hint: "勾选后，该文章将进入首页热门阅读模块；取消勾选则不进入。"
 
       - label: "封面图片"
         name: "cover_image"
