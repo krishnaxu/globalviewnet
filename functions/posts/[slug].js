@@ -1,3 +1,4 @@
+
 export async function onRequestGet({ params }) {
   let slug = params?.slug || "";
 
@@ -18,7 +19,6 @@ export async function onRequestGet({ params }) {
   }
 
   const safeSlug = JSON.stringify(slug).replace(/</g, "\\u003c");
-
   const html = String.raw`<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -132,6 +132,34 @@ export async function onRequestGet({ params }) {
     #content td {
       padding: 8px 12px;
       border: 1px solid #ddd;
+    }
+
+    /* 文末来源信息 */
+    .source-info {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e5e5;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+
+    .source-info h2 {
+      margin: 0 0 8px;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .source-info a {
+      color: #1769aa;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .source-info a:hover {
+      text-decoration: underline;
     }
 
     .error {
@@ -317,7 +345,6 @@ export async function onRequestGet({ params }) {
           closeList();
 
           const level = heading[1].length;
-
           output.push(
             "<h" + level + ">" +
             inlineMarkdown(heading[2]) +
@@ -387,6 +414,47 @@ export async function onRequestGet({ params }) {
       return output.join("\n");
     }
 
+    function renderSource(article, lang, contentElement) {
+      const sourceName = String(article.source_name || "").trim();
+      const sourceUrl = String(article.source_url || "").trim();
+
+      // 两项都为空时，不显示来源区块
+      if (!sourceName && !sourceUrl) {
+        return;
+      }
+
+      const sourceSection = document.createElement("section");
+      sourceSection.className = "source-info";
+
+      const heading = document.createElement("h2");
+      heading.textContent = lang === "en" ? "Source" : "信息来源";
+      sourceSection.appendChild(heading);
+
+      const sourceText = document.createElement("div");
+
+      if (sourceName) {
+        sourceText.appendChild(document.createTextNode(sourceName));
+      }
+
+      // 只允许 HTTP / HTTPS 来源链接
+      if (/^https?:\/\/\S+$/i.test(sourceUrl)) {
+        if (sourceName) {
+          sourceText.appendChild(document.createTextNode(" · "));
+        }
+
+        const link = document.createElement("a");
+        link.href = sourceUrl;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = lang === "en" ? "Read original" : "查看原文";
+
+        sourceText.appendChild(link);
+      }
+
+      sourceSection.appendChild(sourceText);
+      contentElement.appendChild(sourceSection);
+    }
+
     async function loadArticle() {
       const titleElement = document.getElementById("title");
       const contentElement = document.getElementById("content");
@@ -437,8 +505,13 @@ export async function onRequestGet({ params }) {
               );
         }
 
+        // 渲染正文
         contentElement.innerHTML = renderMarkdown(body);
 
+        // 在正文末尾显示来源名称和来源链接
+        renderSource(article, lang, contentElement);
+
+        // 中英文首页返回链接
         const backLink = document.querySelector(".back");
 
         if (backLink) {
