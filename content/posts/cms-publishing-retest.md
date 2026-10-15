@@ -1,9 +1,11 @@
 ---
 slug: cms-publishing-retest
 category: tech
-date: 2026-10-15T23:10:00.000+08:00
+date: 2026-10-16T00:19:00.000+08:00
 published: true
 is_hot: false
+source_name: 观天下
+source_url: https://globalviewnet.pages.dev/
 title_zh: CMS 发布流程复测：多段正文与完整性检查
 excerpt_zh: 这篇测试文章用于检查 CMS 发布、GitHub 内容保存、API 读取和文章详情页展示是否正常，尤其关注多段正文及结尾内容是否完整。
 body_zh: >-
