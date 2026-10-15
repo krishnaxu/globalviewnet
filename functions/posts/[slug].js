@@ -1,5 +1,5 @@
 
-export async function onRequestGet({ request, params }) {
+export async function onRequestGet({ params }) {
   const slug = params.slug;
 
   if (
@@ -8,71 +8,83 @@ export async function onRequestGet({ request, params }) {
     slug.includes("\\") ||
     slug.includes("..")
   ) {
-    return new Response("文章地址无效", { status: 400 });
+    return new Response("文章地址无效", {
+      status: 400,
+      headers: {
+        "Content-Type": "text/plain; charset=utf-8"
+      }
+    });
   }
 
+  try {
+    const apiUrl =
+      "https://api.github.com/repos/krishnaxu/globalviewnet/contents/content/posts/" +
+      encodeURIComponent(slug) +
+      ".md?ref=main";
 
-const apiUrl =
-  "https://api.github.com/repos/krishnaxu/globalviewnet/contents/content/posts/" +
-  encodeURIComponent(slug) +
-  ".md?ref=main";
+    const response = await fetch(apiUrl, {
+      headers: {
+        Accept: "application/vnd.github+json",
+        "User-Agent": "globalviewnet-pages"
+      }
+    });
 
-const response = await fetch(apiUrl, {
-  headers: {
-    Accept: "application/vnd.github+json",
-    "User-Agent": "globalviewnet-pages"
-  }
-});
-
-if (!response.ok) {
-  return new Response(
-    response.status === 404
-      ? "文章不存在，请检查文章文件名"
-      : "读取 GitHub 文章失败，状态码：" + response.status,
-    {
-      status: response.status === 404 ? 404 : 502,
-      headers: { "Content-Type": "text/plain; charset=utf-8" }
+    if (!response.ok) {
+      return new Response(
+        response.status === 404
+          ? "文章不存在，请检查文章文件名"
+          : "读取 GitHub 文章失败，状态码：" + response.status,
+        {
+          status: response.status === 404 ? 404 : 502,
+          headers: {
+            "Content-Type": "text/plain; charset=utf-8"
+          }
+        }
+      );
     }
-  );
-}
 
-const file = await response.json();
-const contentResponse = await fetch(file.download_url);
+    const file = await response.json();
 
-if (!contentResponse.ok) {
-  return new Response("获取文章正文失败", {
-    status: 502,
-    headers: { "Content-Type": "text/plain; charset=utf-8" }
-  });
-}
+    if (!file.download_url) {
+      return new Response("未找到文章正文下载地址", {
+        status: 502,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8"
+        }
+      });
+    }
 
-const content = await contentResponse.text();
-const match = content.match(
-  /^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/
-);
+    const contentResponse = await fetch(file.download_url);
 
-const metadata = match ? match[1] : "";
-const body = match
-  ? content.slice(match[0].length)
-  : content;
+    if (!contentResponse.ok) {
+      return new Response("获取文章正文失败", {
+        status: 502,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8"
+        }
+      });
+    }
 
-const getValue = (key) => {
-  const result = metadata.match(
-    new RegExp("^" + key + ":\\s*(.*?)\\s*$", "m")
-  );
+    const content = await contentResponse.text();
 
-  return result
-    ? result[1].trim().replace(/^["']|["']$/g, "")
-    : "";
-};
+    const match = content.match(
+      /^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/
+    );
 
-const post = {
-  slug,
-  title: getValue("title") || slug,
-  date: getValue("date"),
-  body
-};
+    const metadata = match ? match[1] : "";
+    const markdown = match
+      ? content.slice(match[0].length)
+      : content;
 
+    const getValue = (key) => {
+      const result = metadata.match(
+        new RegExp("^" + key + ":\\s*(.*?)\\s*$", "m")
+      );
+
+      return result
+        ? result[1].trim().replace(/^["']|["']$/g, "")
+        : "";
+    };
 
     const escapeHtml = (value) =>
       String(value ?? "").replace(/[&<>"']/g, (char) => ({
@@ -87,38 +99,68 @@ const post = {
       let result = escapeHtml(text);
 
       result = result.replace(
-        /!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]*)")?\)/g,
+        /!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)/g,
         (_, alt, src, title) => {
-          const safeSrc = src.replace(/&amp;/g, "&");
-          if (!/^\/public\/images\/uploads\/[\w./%\-]+$/i.test(safeSrc)) {
+          let safeSrc = src;
+
+          if (safeSrc.startsWith("/images/uploads/")) {
+            safeSrc = "/public" + safeSrc;
+          }
+
+          if (
+            !safeSrc.startsWith("/public/images/uploads/") ||
+            safeSrc.includes("..") ||
+            safeSrc.includes("\\")
+          ) {
             return escapeHtml(alt || "图片");
           }
 
-          return `<img src="${escapeHtml(safeSrc)}" alt="${escapeHtml(alt)}" title="${escapeHtml(title || "")}" loading="lazy">`;
+          return (
+            '<img src="' + escapeHtml(safeSrc) +
+            '" alt="' + escapeHtml(alt) +
+            '" title="' + escapeHtml(title || "") +
+            '" loading="lazy">'
+          );
         }
       );
 
       result = result.replace(
         /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
         (_, label, href) =>
-          `<a href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`
+          '<a href="' + href +
+          '" target="_blank" rel="noopener noreferrer">' +
+          label + "</a>"
       );
 
-      result = result.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-      result = result.replace(/\*(.+?)\*/g, "<em>$1</em>");
+      result = result.replace(
+        /\*\*(.+?)\*\*/g,
+        "<strong>$1</strong>"
+      );
+
+      result = result.replace(
+        /\*(.+?)\*/g,
+        "<em>$1</em>"
+      );
 
       return result;
     };
 
-    const renderMarkdown = (markdown) => {
-      const lines = String(markdown || "").replace(/\r\n/g, "\n").split("\n");
+    const renderMarkdown = (source) => {
+      const lines = String(source || "")
+        .replace(/\r\n/g, "\n")
+        .split("\n");
+
       const output = [];
       let paragraph = [];
       let inList = false;
 
       const flushParagraph = () => {
         if (paragraph.length) {
-          output.push(`<p>${paragraph.map(renderInline).join("<br>")}</p>`);
+          output.push(
+            "<p>" +
+            paragraph.map(renderInline).join("<br>") +
+            "</p>"
+          );
           paragraph = [];
         }
       };
@@ -140,22 +182,36 @@ const post = {
         }
 
         const heading = trimmed.match(/^(#{1,3})\s+(.+)$/);
+
         if (heading) {
           flushParagraph();
           closeList();
+
           const level = heading[1].length;
-          output.push(`<h${level}>${renderInline(heading[2])}</h${level}>`);
+
+          output.push(
+            "<h" + level + ">" +
+            renderInline(heading[2]) +
+            "</h" + level + ">"
+          );
+
           continue;
         }
 
         const listItem = trimmed.match(/^[-*]\s+(.+)$/);
+
         if (listItem) {
           flushParagraph();
+
           if (!inList) {
             output.push("<ul>");
             inList = true;
           }
-          output.push(`<li>${renderInline(listItem[1])}</li>`);
+
+          output.push(
+            "<li>" + renderInline(listItem[1]) + "</li>"
+          );
+
           continue;
         }
 
@@ -169,9 +225,9 @@ const post = {
       return output.join("\n");
     };
 
-    const title = escapeHtml(post.title || slug);
-    const date = escapeHtml(post.date || "");
-    const body = renderMarkdown(post.body || "");
+    const title = escapeHtml(getValue("title") || slug);
+    const date = escapeHtml(getValue("date"));
+    const body = renderMarkdown(markdown);
 
     const html = `<!DOCTYPE html>
 <html lang="zh-CN">
@@ -220,7 +276,10 @@ const post = {
       font-size: 14px;
     }
     article { overflow-wrap: anywhere; }
-    article h2, article h3 { margin-top: 30px; line-height: 1.5; }
+    article h2, article h3 {
+      margin-top: 30px;
+      line-height: 1.5;
+    }
     article p { margin: 0 0 20px; }
     article img {
       display: block;
@@ -262,10 +321,16 @@ const post = {
         "Cache-Control": "public, max-age=60"
       }
     });
-  } catch {
-    return new Response("读取文章失败，请稍后再试", {
-      status: 500,
-      headers: { "Content-Type": "text/plain; charset=utf-8" }
-    });
+  } catch (error) {
+    return new Response(
+      "读取文章时发生错误：" +
+        (error instanceof Error ? error.message : "未知错误"),
+      {
+        status: 500,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8"
+        }
+      }
+    );
   }
 }
