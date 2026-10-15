@@ -23,10 +23,7 @@ function parseFrontmatter(markdown) {
   );
 
   if (!match) {
-    return {
-      meta: result,
-      body: markdown
-    };
+    return { meta: result, body: markdown };
   }
 
   const lines = match[1].split(/\r?\n/);
@@ -55,12 +52,7 @@ function parseFrontmatter(markdown) {
       const key = field[1];
       const value = field[2].trim();
 
-      if (
-        value === "|" ||
-        value === "|-" ||
-        value === ">" ||
-        value === ">-"
-      ) {
+      if (["|", "|-", ">", ">-"].includes(value)) {
         currentKey = key;
         continue;
       }
@@ -126,6 +118,10 @@ function getSlug(filename) {
   return filename.replace(/\.md$/i, "");
 }
 
+function isTrue(value) {
+  return String(value || "").trim().toLowerCase() === "true";
+}
+
 export async function onRequestGet({ request, env }) {
   try {
     const token = env.GITHUB_CONTENT_TOKEN;
@@ -167,9 +163,7 @@ export async function onRequestGet({ request, env }) {
         const { meta } = parseFrontmatter(markdown);
 
         // 只展示明确标记为 published: true 的文章
-        if (
-          String(meta.published || "").toLowerCase() !== "true"
-        ) {
+        if (!isTrue(meta.published)) {
           return null;
         }
 
@@ -199,6 +193,9 @@ export async function onRequestGet({ request, env }) {
         const sourceName = getString(meta.source_name);
         const sourceUrl = getString(meta.source_url);
 
+        // 新增：CMS 手动设置的热门标记
+        const isHot = isTrue(meta.is_hot);
+
         return {
           slug,
 
@@ -221,6 +218,9 @@ export async function onRequestGet({ request, env }) {
           cover_image: coverImage,
           source_name: sourceName,
           source_url: sourceUrl,
+
+          // 首页可以据此筛选热门文章
+          is_hot: isHot,
 
           url: `/posts/${encodeURIComponent(slug)}`,
           url_zh: `/posts/${encodeURIComponent(slug)}`,
