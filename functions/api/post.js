@@ -1,5 +1,10 @@
+function decodeBase64Utf8(value) {
+  const binary = atob(value.replace(/\s/g, ""));
+  const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
 
-export async function onRequestGet({ request }) {
+export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
   const slug = url.searchParams.get("slug");
 
@@ -7,11 +12,21 @@ export async function onRequestGet({ request }) {
     !slug ||
     slug.includes("/") ||
     slug.includes("\\") ||
-    slug.includes("..")
+    slug.includes("..") ||
+    slug.toLowerCase().endsWith(".md")
   ) {
     return Response.json(
       { error: "缺少有效的文章标识 slug" },
       { status: 400 }
+    );
+  }
+
+  const token = env.GITHUB_CONTENT_TOKEN;
+
+  if (!token) {
+    return Response.json(
+      { error: "缺少 GITHUB_CONTENT_TOKEN 环境变量" },
+      { status: 500 }
     );
   }
 
@@ -24,18 +39,16 @@ export async function onRequestGet({ request }) {
     const response = await fetch(apiUrl, {
       headers: {
         Accept: "application/vnd.github+json",
-        "User-Agent": "globalviewnet-pages"
+        Authorization: `Bearer ${token}`,
+        "X-GitHub-Api-Version": "2022-11-28"
       }
     });
 
     if (!response.ok) {
-      const detail = await response.text();
-
       return Response.json(
         {
           error: "读取文章失败",
-          status: response.status,
-          detail: detail.slice(0, 1000)
+          status: response.status
         },
         { status: 502 }
       );
@@ -43,38 +56,21 @@ export async function onRequestGet({ request }) {
 
     const file = await response.json();
 
-    if (!file.download_url) {
+    if (!file.content) {
       return Response.json(
-        { error: "未找到文章正文下载地址" },
+        { error: "未获取到文章正文内容" },
         { status: 502 }
       );
     }
 
-    const contentResponse = await fetch(file.download_url);
-
-    if (!contentResponse.ok) {
-      const detail = await contentResponse.text();
-
-      return Response.json(
-        {
-          error: "获取文章正文失败",
-          status: contentResponse.status,
-          detail: detail.slice(0, 1000)
-        },
-        { status: 502 }
-      );
-    }
-
-    const content = await contentResponse.text();
+    const content = decodeBase64Utf8(file.content);
 
     const match = content.match(
       /^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/
     );
 
     const metadata = match ? match[1] : "";
-    const body = match
-      ? content.slice(match[0].length)
-      : content;
+    const body = match ? content.slice(match[0].length) : content;
 
     const getValue = (key) => {
       const result = metadata.match(
@@ -103,11 +99,9 @@ export async function onRequestGet({ request }) {
     return Response.json(
       {
         error: "读取文章时发生网络错误",
-        detail: error instanceof Error
-          ? error.message
-          : "未知错误"
+        detail: error instanceof Error ? error.message : "未知错误"
       },
-      { status: 500 }
+      { status: 502 }
     );
   }
 }
