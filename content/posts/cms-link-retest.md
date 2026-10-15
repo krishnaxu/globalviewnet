@@ -2,8 +2,8 @@
 slug: cms-link-retest
 category: culture
 date: 2026-10-15T23:59:00.000+08:00
-published: true
-is_hot: true
+published: false
+is_hot: false
 title_zh: CMS 图片与链接发布测试
 excerpt_zh: CMS 图片与链接发布测试摘要
 body_zh: >-
