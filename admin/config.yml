@@ -1,4 +1,4 @@
-```yaml
+
 backend:
   name: github
   repo: krishnaxu/globalviewnet
@@ -133,4 +133,3 @@ collections:
         modes:
           - rich_text
           - raw
-```
