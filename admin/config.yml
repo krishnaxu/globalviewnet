@@ -1,4 +1,4 @@
-
+```yaml
 backend:
   name: github
   repo: krishnaxu/globalviewnet
@@ -53,7 +53,7 @@ collections:
         default: false
         required: true
         hint: "勾选后，文章才会显示在网站首页和文章列表。"
-        
+
       - label: "设为热门文章"
         name: "is_hot"
         widget: "boolean"
@@ -88,8 +88,22 @@ collections:
 
       - label: "中文正文"
         name: "body_zh"
-        widget: "markdown"
+        widget: "richtext"
         required: false
+        buttons:
+          - bold
+          - italic
+          - code
+          - link
+          - heading-one
+          - heading-two
+          - heading-three
+          - quote
+          - bulleted-list
+          - numbered-list
+        modes:
+          - rich_text
+          - raw
 
       - label: "English Title（英文标题）"
         name: "title_en"
@@ -103,5 +117,20 @@ collections:
 
       - label: "English Body（英文正文）"
         name: "body_en"
-        widget: "markdown"
+        widget: "richtext"
         required: false
+        buttons:
+          - bold
+          - italic
+          - code
+          - link
+          - heading-one
+          - heading-two
+          - heading-three
+          - quote
+          - bulleted-list
+          - numbered-list
+        modes:
+          - rich_text
+          - raw
+```
