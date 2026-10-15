@@ -40,7 +40,7 @@ export async function onRequestGet({ request, env }) {
     const response = await fetch(apiUrl, {
       headers: {
         Accept: "application/vnd.github+json",
-        Authorization: `Bearer ${token}`,
+        Authorization: "Bearer " + token,
         "X-GitHub-Api-Version": "2022-11-28"
       }
     });
