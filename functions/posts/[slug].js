@@ -1,4 +1,3 @@
-
 export async function onRequestGet({ params }) {
   let slug = params?.slug || "";
 
@@ -79,7 +78,9 @@ export async function onRequestGet({ params }) {
       line-height: 1.45;
     }
 
-    #content p { margin: 1em 0; }
+    #content p {
+      margin: 1em 0;
+    }
 
     #content img {
       display: block;
@@ -185,7 +186,6 @@ export async function onRequestGet({ params }) {
       let value = escapeHtml(text);
       const codeItems = [];
 
-      // 使用字符编码匹配反引号，避免与外层模板字符串冲突
       value = value.replace(
         /\x60([^\x60]+)\x60/g,
         function (_, code) {
@@ -240,11 +240,20 @@ export async function onRequestGet({ params }) {
     }
 
     function renderMarkdown(markdown) {
-      const lines = String(markdown || "")
-        .replace(/\r\n/g, "\n")
-        .split("\n");
+      let text = String(markdown || "");
 
+      // 兼容正文中以字面形式保存的反斜杠+n
+      text = text.replace(/\\n/g, "\n");
+
+      // 统一不同系统的换行符
+      text = text.replace(/\r\n?/g, "\n");
+
+      // 兼容现有测试文章：多个连续空格作为段落分隔
+      text = text.replace(/[ \t]{2,}/g, "\n");
+
+      const lines = text.split("\n");
       const output = [];
+
       let paragraph = [];
       let listType = "";
       let inCode = false;
@@ -306,6 +315,7 @@ export async function onRequestGet({ params }) {
         if (heading) {
           flushParagraph();
           closeList();
+
           const level = heading[1].length;
 
           output.push(
@@ -328,6 +338,7 @@ export async function onRequestGet({ params }) {
 
         if (unordered || ordered) {
           flushParagraph();
+
           const nextType = unordered ? "ul" : "ol";
 
           if (listType !== nextType) {
@@ -349,6 +360,7 @@ export async function onRequestGet({ params }) {
         if (quote) {
           flushParagraph();
           closeList();
+
           output.push(
             "<blockquote>" +
             inlineMarkdown(quote[1]) +
@@ -358,7 +370,7 @@ export async function onRequestGet({ params }) {
         }
 
         closeList();
-        paragraph.push(line);
+        paragraph.push(trimmed);
       }
 
       flushParagraph();
@@ -428,14 +440,17 @@ export async function onRequestGet({ params }) {
         contentElement.innerHTML = renderMarkdown(body);
 
         const backLink = document.querySelector(".back");
+
         if (backLink) {
           backLink.textContent =
             lang === "en" ? "← Back to Home" : "← 返回首页";
+
           backLink.href = lang === "en" ? "/?lang=en" : "/";
         }
       } catch (error) {
         titleElement.textContent =
           lang === "en" ? "Failed to load article" : "文章加载失败";
+
         contentElement.className = "error";
         contentElement.textContent =
           error instanceof Error ? error.message : "文章读取失败";
