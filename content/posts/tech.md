@@ -2,7 +2,7 @@
 slug: tech
 category: tech
 date: 2026-10-15T21:30:00.000+08:00
-published: false
+published: true
 title_zh: 测试文章3
 excerpt_zh: 摘要3
 body_zh: 测试文章的正文
