@@ -1,19 +1,53 @@
+function decodeBase64Utf8(value) {
+  const binary = atob(value.replace(/\s/g, ""));
+  const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
 
-export async function onRequestGet() {
+function parseFrontmatter(content, key) {
+  const match = content.match(
+    /^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/
+  );
+
+  if (!match) return "";
+
+  const result = match[1].match(
+    new RegExp("^" + key + ":\\s*(.*?)\\s*$", "m")
+  );
+
+  return result
+    ? result[1].trim().replace(/^["']|["']$/g, "")
+    : "";
+}
+
+export async function onRequestGet({ env }) {
+  const token = env.GITHUB_CONTENT_TOKEN;
+
+  if (!token) {
+    return Response.json(
+      { error: "缺少 GITHUB_CONTENT_TOKEN 环境变量" },
+      { status: 500 }
+    );
+  }
+
+  const headers = {
+    Accept: "application/vnd.github+json",
+    Authorization: `Bearer ${token}`,
+    "X-GitHub-Api-Version": "2022-11-28"
+  };
+
   const apiUrl =
     "https://api.github.com/repos/krishnaxu/globalviewnet/contents/content/posts?ref=main";
 
   try {
-    const response = await fetch(apiUrl, {
-      headers: {
-        Accept: "application/vnd.github+json",
-        "User-Agent": "globalviewnet-pages"
-      }
-    });
+    const response = await fetch(apiUrl, { headers });
 
     if (!response.ok) {
       return Response.json(
-        { error: "读取文章列表失败", status: response.status },
+        {
+          error: "读取文章列表失败",
+          status: response.status
+        },
         { status: 502 }
       );
     }
@@ -22,65 +56,68 @@ export async function onRequestGet() {
 
     if (!Array.isArray(files)) {
       return Response.json(
-        { error: "文章目录返回的数据格式不正确" },
+        { error: "文章目录返回格式异常" },
         { status: 502 }
       );
     }
 
     const markdownFiles = files.filter(
-      file =>
+      (file) =>
         file.type === "file" &&
-        file.name.endsWith(".md")
+        file.name.toLowerCase().endsWith(".md")
     );
 
     const posts = await Promise.all(
-      markdownFiles.map(async file => {
-        const result = await fetch(file.download_url);
+      markdownFiles.map(async (file) => {
+        const contentUrl =
+          "https://api.github.com/repos/krishnaxu/globalviewnet/contents/" +
+          file.path.split("/").map(encodeURIComponent).join("/") +
+          "?ref=main";
 
-        if (!result.ok) {
-          return null;
+        const contentResponse = await fetch(contentUrl, { headers });
+
+        if (!contentResponse.ok) {
+          throw new Error(
+            `读取文章文件失败：${file.name}，状态码 ${contentResponse.status}`
+          );
         }
 
-        const content = await result.text();
-        const match = content.match(
-          /^---\s*\r?\n([\s\S]*?)\r?\n---/
-        );
+        const data = await contentResponse.json();
 
-        const metadata = match ? match[1] : "";
-        const titleMatch = metadata.match(/^title:\s*(.*?)\s*$/m);
-        const dateMatch = metadata.match(/^date:\s*(.*?)\s*$/m);
+        if (!data.content) {
+          throw new Error(`文章内容为空：${file.name}`);
+        }
 
-        const cleanValue = value =>
-          value
-            ? value.trim().replace(/^["']|["']$/g, "")
-            : "";
+        const content = decodeBase64Utf8(data.content);
+        const slug = file.name.replace(/\.md$/i, "");
 
         return {
-          slug: file.name.replace(/\.md$/, ""),
-          title: cleanValue(titleMatch?.[1]) || file.name,
-          date: cleanValue(dateMatch?.[1]),
-          url: "/posts/" + encodeURIComponent(
-            file.name.replace(/\.md$/, "")
-          )
+          slug,
+          title: parseFrontmatter(content, "title") || slug,
+          date: parseFrontmatter(content, "date"),
+          url: "/posts/" + encodeURIComponent(slug)
         };
       })
     );
 
-    const validPosts = posts
-      .filter(Boolean)
-      .sort((a, b) =>
-        (b.date || "").localeCompare(a.date || "")
-      );
+    posts.sort((a, b) => {
+      const dateA = Date.parse(a.date) || 0;
+      const dateB = Date.parse(b.date) || 0;
+      return dateB - dateA;
+    });
 
-    return Response.json(validPosts, {
+    return Response.json(posts, {
       headers: {
         "Cache-Control": "public, max-age=60"
       }
     });
-  } catch {
+  } catch (error) {
     return Response.json(
-      { error: "读取文章时发生网络错误" },
-      { status: 500 }
+      {
+        error: "读取文章列表时发生错误",
+        detail: error instanceof Error ? error.message : "未知错误"
+      },
+      { status: 502 }
     );
   }
 }
