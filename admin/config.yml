@@ -11,11 +11,74 @@ public_folder: "/public/images/uploads"
 
 collections:
   - name: "posts"
-    label: "文章"
+    label: "文章管理"
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "标题", name: "title", widget: "string" }
-      - { label: "日期", name: "date", widget: "datetime" }
-      - { label: "正文", name: "body", widget: "markdown" }
+      - label: "标题"
+        name: "title"
+        widget: "string"
+        required: true
+
+      - label: "板块"
+        name: "category"
+        widget: "select"
+        options:
+          - label: "科技"
+            value: "tech"
+          - label: "商业"
+            value: "business"
+          - label: "文化"
+            value: "culture"
+          - label: "生活"
+            value: "life"
+        default: "tech"
+        required: true
+
+      - label: "语言"
+        name: "language"
+        widget: "select"
+        options:
+          - label: "中文"
+            value: "zh"
+          - label: "英文"
+            value: "en"
+        default: "zh"
+        required: true
+
+      - label: "双语关联 ID"
+        name: "translation_id"
+        widget: "string"
+        required: false
+        hint: "同一篇报道的中英文版本填写相同 ID；暂时没有另一语言版本时可留空。"
+
+      - label: "日期"
+        name: "date"
+        widget: "datetime"
+        required: true
+
+      - label: "首页摘要"
+        name: "excerpt"
+        widget: "text"
+        required: false
+
+      - label: "封面图片"
+        name: "cover_image"
+        widget: "image"
+        required: false
+
+      - label: "来源名称"
+        name: "source_name"
+        widget: "string"
+        required: false
+
+      - label: "来源链接"
+        name: "source_url"
+        widget: "string"
+        required: false
+
+      - label: "正文"
+        name: "body"
+        widget: "markdown"
+        required: true
