@@ -38,7 +38,7 @@ export async function onRequestGet({ env }) {
     Accept: "application/vnd.github+json",
     Authorization: "Bearer " + token,
     "X-GitHub-Api-Version": "2022-11-28",
-    "User-Agent": "globalviewnet-pages"
+    "user-agent": "globalviewnet-pages/1.0"
   };
 
   const apiUrl =
