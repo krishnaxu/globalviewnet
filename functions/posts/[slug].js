@@ -1,6 +1,5 @@
-
 export async function onRequestGet({ params }) {
-  const slug = params.slug;
+  const slug = params?.slug || "";
 
   if (
     !slug ||
@@ -8,329 +7,290 @@ export async function onRequestGet({ params }) {
     slug.includes("\\") ||
     slug.includes("..")
   ) {
-    return new Response("文章地址无效", {
-      status: 400,
-      headers: {
-        "Content-Type": "text/plain; charset=utf-8"
-      }
-    });
+    return new Response("文章地址无效", { status: 400 });
   }
 
-  try {
-    const apiUrl =
-      "https://api.github.com/repos/krishnaxu/globalviewnet/contents/content/posts/" +
-      encodeURIComponent(slug) +
-      ".md?ref=main";
+  const safeSlug = JSON.stringify(slug).replace(/</g, "\\u003c");
 
-    const response = await fetch(apiUrl, {
-      headers: {
-        Accept: "application/vnd.github+json",
-        "User-Agent": "globalviewnet-pages"
-      }
-    });
-
-    if (!response.ok) {
-      return new Response(
-        response.status === 404
-          ? "文章不存在，请检查文章文件名"
-          : "读取 GitHub 文章失败，状态码：" + response.status,
-        {
-          status: response.status === 404 ? 404 : 502,
-          headers: {
-            "Content-Type": "text/plain; charset=utf-8"
-          }
-        }
-      );
-    }
-
-    const file = await response.json();
-
-    if (!file.download_url) {
-      return new Response("未找到文章正文下载地址", {
-        status: 502,
-        headers: {
-          "Content-Type": "text/plain; charset=utf-8"
-        }
-      });
-    }
-
-    const contentResponse = await fetch(file.download_url);
-
-    if (!contentResponse.ok) {
-      return new Response("获取文章正文失败", {
-        status: 502,
-        headers: {
-          "Content-Type": "text/plain; charset=utf-8"
-        }
-      });
-    }
-
-    const content = await contentResponse.text();
-
-    const match = content.match(
-      /^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/
-    );
-
-    const metadata = match ? match[1] : "";
-    const markdown = match
-      ? content.slice(match[0].length)
-      : content;
-
-    const getValue = (key) => {
-      const result = metadata.match(
-        new RegExp("^" + key + ":\\s*(.*?)\\s*$", "m")
-      );
-
-      return result
-        ? result[1].trim().replace(/^["']|["']$/g, "")
-        : "";
-    };
-
-    const escapeHtml = (value) =>
-      String(value ?? "").replace(/[&<>"']/g, (char) => ({
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#39;"
-      })[char]);
-
-    const renderInline = (text) => {
-      let result = escapeHtml(text);
-
-      result = result.replace(
-        /!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)/g,
-        (_, alt, src, title) => {
-          let safeSrc = src;
-
-          if (safeSrc.startsWith("/images/uploads/")) {
-            safeSrc = "/public" + safeSrc;
-          }
-
-          if (
-            !safeSrc.startsWith("/public/images/uploads/") ||
-            safeSrc.includes("..") ||
-            safeSrc.includes("\\")
-          ) {
-            return escapeHtml(alt || "图片");
-          }
-
-          return (
-            '<img src="' + escapeHtml(safeSrc) +
-            '" alt="' + escapeHtml(alt) +
-            '" title="' + escapeHtml(title || "") +
-            '" loading="lazy">'
-          );
-        }
-      );
-
-      result = result.replace(
-        /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
-        (_, label, href) =>
-          '<a href="' + href +
-          '" target="_blank" rel="noopener noreferrer">' +
-          label + "</a>"
-      );
-
-      result = result.replace(
-        /\*\*(.+?)\*\*/g,
-        "<strong>$1</strong>"
-      );
-
-      result = result.replace(
-        /\*(.+?)\*/g,
-        "<em>$1</em>"
-      );
-
-      return result;
-    };
-
-    const renderMarkdown = (source) => {
-      const lines = String(source || "")
-        .replace(/\r\n/g, "\n")
-        .split("\n");
-
-      const output = [];
-      let paragraph = [];
-      let inList = false;
-
-      const flushParagraph = () => {
-        if (paragraph.length) {
-          output.push(
-            "<p>" +
-            paragraph.map(renderInline).join("<br>") +
-            "</p>"
-          );
-          paragraph = [];
-        }
-      };
-
-      const closeList = () => {
-        if (inList) {
-          output.push("</ul>");
-          inList = false;
-        }
-      };
-
-      for (const line of lines) {
-        const trimmed = line.trim();
-
-        if (!trimmed) {
-          flushParagraph();
-          closeList();
-          continue;
-        }
-
-        const heading = trimmed.match(/^(#{1,3})\s+(.+)$/);
-
-        if (heading) {
-          flushParagraph();
-          closeList();
-
-          const level = heading[1].length;
-
-          output.push(
-            "<h" + level + ">" +
-            renderInline(heading[2]) +
-            "</h" + level + ">"
-          );
-
-          continue;
-        }
-
-        const listItem = trimmed.match(/^[-*]\s+(.+)$/);
-
-        if (listItem) {
-          flushParagraph();
-
-          if (!inList) {
-            output.push("<ul>");
-            inList = true;
-          }
-
-          output.push(
-            "<li>" + renderInline(listItem[1]) + "</li>"
-          );
-
-          continue;
-        }
-
-        closeList();
-        paragraph.push(trimmed);
-      }
-
-      flushParagraph();
-      closeList();
-
-      return output.join("\n");
-    };
-
-    const title = escapeHtml(getValue("title") || slug);
-    const date = escapeHtml(getValue("date"));
-    const body = renderMarkdown(markdown);
-
-    const html = `<!DOCTYPE html>
+  const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <title>${title} - GlobalViewNet</title>
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>文章详情 - GlobalViewNet</title>
   <style>
     * { box-sizing: border-box; }
     body {
       margin: 0;
       color: #222;
-      background: #f6f7f9;
+      background: #fff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
         "Microsoft YaHei", sans-serif;
       line-height: 1.85;
     }
-    header {
-      padding: 18px 24px;
-      background: #fff;
-      border-bottom: 1px solid #e8e8e8;
+    .container {
+      width: min(820px, 92%);
+      margin: 40px auto;
     }
-    header a {
-      color: #222;
-      font-size: 18px;
-      font-weight: 700;
+    .back {
+      color: #555;
       text-decoration: none;
-    }
-    main {
-      max-width: 850px;
-      margin: 36px auto;
-      padding: 36px 42px;
-      background: #fff;
-      border-radius: 10px;
+      font-size: 14px;
     }
     h1 {
-      margin: 0 0 14px;
-      font-size: clamp(26px, 4vw, 36px);
-      line-height: 1.4;
+      margin: 28px 0 12px;
+      font-size: clamp(26px, 5vw, 36px);
+      line-height: 1.45;
       overflow-wrap: anywhere;
     }
     .date {
-      margin-bottom: 30px;
       color: #888;
       font-size: 14px;
+      margin-bottom: 30px;
     }
-    article { overflow-wrap: anywhere; }
-    article h2, article h3 {
+    #content {
+      overflow-wrap: anywhere;
+      font-size: 17px;
+    }
+    #content h2, #content h3 {
       margin-top: 30px;
       line-height: 1.5;
     }
-    article p { margin: 0 0 20px; }
-    article img {
+    #content img {
       display: block;
       max-width: 100%;
       height: auto;
       margin: 22px auto;
-      border-radius: 4px;
     }
-    article a { color: #1769aa; }
-    footer {
-      padding: 20px;
-      color: #888;
-      text-align: center;
-      font-size: 13px;
+    #content a { color: #1769aa; }
+    #content blockquote {
+      margin: 20px 0;
+      padding: 8px 16px;
+      border-left: 3px solid #ccc;
+      color: #666;
     }
+    #content pre {
+      overflow-x: auto;
+      padding: 12px;
+      background: #f5f5f5;
+    }
+    .error { color: #a22; }
     @media (max-width: 600px) {
-      main {
-        margin: 16px 10px;
-        padding: 24px 18px;
-      }
-      header { padding: 16px; }
+      .container { margin: 24px auto; }
+      #content { font-size: 16px; }
     }
   </style>
 </head>
 <body>
-  <header><a href="/">GlobalViewNet</a></header>
-  <main>
-    <h1>${title}</h1>
-    <div class="date">${date}</div>
-    <article>${body}</article>
+  <main class="container">
+    <a class="back" href="/">← 返回首页</a>
+    <h1 id="title">正在加载文章……</h1>
+    <div class="date" id="date"></div>
+    <article id="content"></article>
   </main>
-  <footer>GlobalViewNet</footer>
+
+  <script>
+    const slug = ${safeSlug};
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, function (char) {
+        return {
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;"
+        }[char];
+      });
+    }
+
+    function safeUrl(value) {
+      if (/^https?:\\/\\//i.test(value) || value.startsWith("/")) {
+        return value;
+      }
+      return "#";
+    }
+
+    function inlineMarkdown(text) {
+      let value = escapeHtml(text);
+
+      value = value.replace(
+        /!\\[([^\\]]*)\\]\\(([^\\s)]+)(?:\\s+"([^"]*)")?\\)/g,
+        function (_, alt, source, title) {
+          let src = source;
+          if (src.startsWith("/images/uploads/")) {
+            src = "/public" + src;
+          }
+          src = safeUrl(src);
+          return '<img src="' + src + '" alt="' + alt + '"' +
+            (title ? ' title="' + title + '"' : "") + '>';
+        }
+      );
+
+      value = value.replace(
+        /\\[([^\\]]+)\\]\\((https?:\\/\\/[^\\s)]+|\\/[^\\s)]*)\\)/g,
+        '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+      );
+
+      value = value.replace(/\\*\\*(.+?)\\*\\*/g, "<strong>$1</strong>");
+      value = value.replace(/\\*(.+?)\\*/g, "<em>$1</em>");
+      value = value.replace(/\`([^\`]+)\`/g, "<code>$1</code>");
+
+      return value;
+    }
+
+    function renderMarkdown(markdown) {
+      const lines = markdown.replace(/\\r/g, "").split("\\n");
+      const output = [];
+      let paragraph = [];
+      let inList = false;
+      let inCode = false;
+      let codeLines = [];
+
+      function flushParagraph() {
+        if (paragraph.length) {
+          output.push("<p>" +
+            paragraph.map(inlineMarkdown).join("<br>") +
+            "</p>");
+          paragraph = [];
+        }
+      }
+
+      function closeList() {
+        if (inList) {
+          output.push("</ul>");
+          inList = false;
+        }
+      }
+
+      for (const line of lines) {
+        if (line.trim().startsWith("\`\`\`")) {
+          flushParagraph();
+          closeList();
+
+          if (inCode) {
+            output.push("<pre><code>" +
+              escapeHtml(codeLines.join("\\n")) +
+              "</code></pre>");
+            codeLines = [];
+            inCode = false;
+          } else {
+            inCode = true;
+          }
+          continue;
+        }
+
+        if (inCode) {
+          codeLines.push(line);
+          continue;
+        }
+
+        if (!line.trim()) {
+          flushParagraph();
+          closeList();
+          continue;
+        }
+
+        const heading = line.match(/^(#{1,6})\\s+(.+)$/);
+        if (heading) {
+          flushParagraph();
+          closeList();
+          const level = heading[1].length;
+          output.push("<h" + level + ">" +
+            inlineMarkdown(heading[2]) +
+            "</h" + level + ">");
+          continue;
+        }
+
+        const image = line.match(/^\\s*!\\[([^\\]]*)\\]\\(([^\\s)]+)(?:\\s+"([^"]*)")?\\)\\s*$/);
+        if (image) {
+          flushParagraph();
+          closeList();
+          output.push(inlineMarkdown(line));
+          continue;
+        }
+
+        if (/^\\s*[-*+]\\s+/.test(line)) {
+          flushParagraph();
+          if (!inList) {
+            output.push("<ul>");
+            inList = true;
+          }
+          output.push("<li>" +
+            inlineMarkdown(line.replace(/^\\s*[-*+]\\s+/, "")) +
+            "</li>");
+          continue;
+        }
+
+        const quote = line.match(/^\\s*>\\s?(.*)$/);
+        if (quote) {
+          flushParagraph();
+          closeList();
+          output.push("<blockquote>" +
+            inlineMarkdown(quote[1]) +
+            "</blockquote>");
+          continue;
+        }
+
+        paragraph.push(line);
+      }
+
+      flushParagraph();
+      closeList();
+
+      if (inCode) {
+        output.push("<pre><code>" +
+          escapeHtml(codeLines.join("\\n")) +
+          "</code></pre>");
+      }
+
+      return output.join("\\n");
+    }
+
+    async function loadArticle() {
+      try {
+        const response = await fetch(
+          "/api/post?slug=" + encodeURIComponent(slug)
+        );
+
+        const article = await response.json();
+
+        if (!response.ok) {
+          throw new Error(article.error || "文章读取失败");
+        }
+
+        document.title = article.title + " - GlobalViewNet";
+        document.getElementById("title").textContent = article.title;
+
+        const dateElement = document.getElementById("date");
+        if (article.date) {
+          const date = new Date(article.date);
+          dateElement.textContent = Number.isNaN(date.getTime())
+            ? article.date
+            : date.toLocaleDateString("zh-CN");
+        }
+
+        document.getElementById("content").innerHTML =
+          renderMarkdown(article.body || "");
+      } catch (error) {
+        document.getElementById("title").textContent = "文章加载失败";
+        const content = document.getElementById("content");
+        content.className = "error";
+        content.textContent =
+          (error && error.message) || "请稍后重试";
+      }
+    }
+
+    loadArticle();
+  </script>
 </body>
 </html>`;
 
-    return new Response(html, {
-      headers: {
-        "Content-Type": "text/html; charset=utf-8",
-        "Cache-Control": "public, max-age=60"
-      }
-    });
-  } catch (error) {
-    return new Response(
-      "读取文章时发生错误：" +
-        (error instanceof Error ? error.message : "未知错误"),
-      {
-        status: 500,
-        headers: {
-          "Content-Type": "text/plain; charset=utf-8"
-        }
-      }
-    );
-  }
+  return new Response(html, {
+    headers: {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Cache-Control": "public, max-age=60"
+    }
+  });
 }
