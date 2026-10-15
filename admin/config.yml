@@ -16,11 +16,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - label: "标题"
-        name: "title"
-        widget: "string"
-        required: true
-
       - label: "板块"
         name: "category"
         widget: "select"
@@ -36,32 +31,10 @@ collections:
         default: "tech"
         required: true
 
-      - label: "语言"
-        name: "language"
-        widget: "select"
-        options:
-          - label: "中文"
-            value: "zh"
-          - label: "英文"
-            value: "en"
-        default: "zh"
-        required: true
-
-      - label: "双语关联 ID"
-        name: "translation_id"
-        widget: "string"
-        required: false
-        hint: "同一篇报道的中英文版本填写相同 ID；暂时没有另一语言版本时可留空。"
-
       - label: "日期"
         name: "date"
         widget: "datetime"
         required: true
-
-      - label: "首页摘要"
-        name: "excerpt"
-        widget: "text"
-        required: false
 
       - label: "封面图片"
         name: "cover_image"
@@ -78,7 +51,32 @@ collections:
         widget: "string"
         required: false
 
-      - label: "正文"
-        name: "body"
+      - label: "中文标题"
+        name: "title_zh"
+        widget: "string"
+        required: false
+
+      - label: "中文摘要"
+        name: "excerpt_zh"
+        widget: "text"
+        required: false
+
+      - label: "中文正文"
+        name: "body_zh"
         widget: "markdown"
-        required: true
+        required: false
+
+      - label: "English Title"
+        name: "title_en"
+        widget: "string"
+        required: false
+
+      - label: "English Summary"
+        name: "excerpt_en"
+        widget: "text"
+        required: false
+
+      - label: "English Body"
+        name: "body_en"
+        widget: "markdown"
+        required: false
