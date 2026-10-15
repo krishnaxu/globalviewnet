@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: globalviewnet/globalviewnet
+  repo: krishnaxu/globalviewnet
   branch: main
   base_url: https://globalviewnet.pages.dev
   auth_endpoint: /api/auth
