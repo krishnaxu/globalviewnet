@@ -12,10 +12,20 @@ public_folder: "/public/images/uploads"
 collections:
   - name: "posts"
     label: "文章管理"
+    label_singular: "文章"
     folder: "content/posts"
     create: true
-    slug: "{{slug}}"
+    identifier_field: "slug"
+    slug: "{{fields.slug}}"
+    summary: "{{title_zh}} / {{title_en}}"
+
     fields:
+      - label: "文章标识（用于网址）"
+        name: "slug"
+        widget: "string"
+        required: true
+        hint: "填写英文小写字母、数字和连字符，例如 ai-industry-001。创建后尽量不要修改。"
+
       - label: "板块"
         name: "category"
         widget: "select"
@@ -31,7 +41,7 @@ collections:
         default: "tech"
         required: true
 
-      - label: "日期"
+      - label: "发布日期"
         name: "date"
         widget: "datetime"
         required: true
@@ -66,17 +76,17 @@ collections:
         widget: "markdown"
         required: false
 
-      - label: "English Title"
+      - label: "English Title（英文标题）"
         name: "title_en"
         widget: "string"
         required: false
 
-      - label: "English Summary"
+      - label: "English Summary（英文摘要）"
         name: "excerpt_en"
         widget: "text"
         required: false
 
-      - label: "English Body"
+      - label: "English Body（英文正文）"
         name: "body_en"
         widget: "markdown"
         required: false
