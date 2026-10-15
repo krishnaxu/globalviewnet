@@ -192,7 +192,7 @@ export async function onRequestGet({ params }) {
       const codeItems = [];
 
       value = value.replace(
-        /\x60([^\x60]+)\x60/g,
+        /`([^`]+)`/g,
         function (_, code) {
           const index = codeItems.length;
           codeItems.push("<code>" + code + "</code>");
@@ -383,10 +383,15 @@ export async function onRequestGet({ params }) {
     async function loadArticle() {
       const titleElement = document.getElementById("title");
       const contentElement = document.getElementById("content");
+      const dateElement = document.getElementById("date");
+
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get("lang") === "en" ? "en" : "zh";
 
       try {
         const response = await fetch(
-          "/api/post?slug=" + encodeURIComponent(slug),
+          "/api/post?slug=" + encodeURIComponent(slug) +
+          "&lang=" + lang,
           { cache: "no-store" }
         );
 
@@ -398,26 +403,44 @@ export async function onRequestGet({ params }) {
           );
         }
 
-        document.title = article.title + " - GlobalViewNet";
-        titleElement.textContent = article.title || slug;
+        const title = lang === "en"
+          ? (article.title_en || article.title || article.title_zh || slug)
+          : (article.title_zh || article.title || article.title_en || slug);
 
-        const dateElement = document.getElementById("date");
+        const body = lang === "en"
+          ? (article.body_en || article.body || article.body_zh || "")
+          : (article.body_zh || article.body || "");
 
-        if (article.date) {
+        document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
+        document.title = title + " - GlobalViewNet";
+        titleElement.textContent = title;
+
+        if (dateElement && article.date) {
           const date = new Date(article.date);
 
           dateElement.textContent = Number.isNaN(date.getTime())
             ? article.date
-            : date.toLocaleDateString("zh-CN", {
-                year: "numeric",
-                month: "long",
-                day: "numeric"
-              });
+            : date.toLocaleDateString(
+                lang === "en" ? "en-US" : "zh-CN",
+                {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric"
+                }
+              );
         }
 
-        contentElement.innerHTML = renderMarkdown(article.body);
+        contentElement.innerHTML = renderMarkdown(body);
+
+        const backLink = document.querySelector(".back");
+        if (backLink) {
+          backLink.textContent =
+            lang === "en" ? "← Back to Home" : "← 返回首页";
+          backLink.href = lang === "en" ? "/?lang=en" : "/";
+        }
       } catch (error) {
-        titleElement.textContent = "文章加载失败";
+        titleElement.textContent =
+          lang === "en" ? "Failed to load article" : "文章加载失败";
         contentElement.className = "error";
         contentElement.textContent =
           error instanceof Error ? error.message : "文章读取失败";
