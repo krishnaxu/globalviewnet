@@ -1,3 +1,4 @@
+```javascript
 function decodeBase64Utf8(value) {
   const binary = atob(value.replace(/\s/g, ""));
   const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
@@ -25,7 +26,7 @@ export async function onRequestGet({ request, env }) {
 
   if (!token) {
     return Response.json(
-      { error: "缺少 GITHUB_CONTENT_TOKEN 环境变量" },
+      { error: "Cloudflare 未读取到 GITHUB_CONTENT_TOKEN" },
       { status: 500 }
     );
   }
@@ -45,10 +46,13 @@ export async function onRequestGet({ request, env }) {
     });
 
     if (!response.ok) {
+      const detail = await response.text();
+
       return Response.json(
         {
-          error: "读取文章失败",
-          status: response.status
+          error: "GitHub 拒绝读取文章",
+          github_status: response.status,
+          detail: detail.slice(0, 1500)
         },
         { status: 502 }
       );
@@ -58,7 +62,7 @@ export async function onRequestGet({ request, env }) {
 
     if (!file.content) {
       return Response.json(
-        { error: "未获取到文章正文内容" },
+        { error: "GitHub 未返回文章正文内容" },
         { status: 502 }
       );
     }
@@ -99,9 +103,12 @@ export async function onRequestGet({ request, env }) {
     return Response.json(
       {
         error: "读取文章时发生网络错误",
-        detail: error instanceof Error ? error.message : "未知错误"
+        detail: error instanceof Error
+          ? error.message
+          : "未知错误"
       },
       { status: 502 }
     );
   }
 }
+```
