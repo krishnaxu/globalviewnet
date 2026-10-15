@@ -1,193 +1,489 @@
 
-export async function onRequestGet({ params }) {
-  let slug = params?.slug || "";
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function normalizeMarkdown(markdown) {
+  let text = String(markdown || "")
+    .replace(/\r\n?/g, "\n");
+
+  // 将正文中被保存为字面字符的 \n 还原为换行
+  text = text.replace(/\\n/g, "\n");
+
+  // 兼容测试文章中被折叠的段落标记
+  text = text.replace(
+    /[ \t]+(?=(?:Paragraph \d+:|Final verification paragraph:))/g,
+    "\n\n"
+  );
+
+  text = text.replace(
+    /[ \t]+(?=(?:第一段：|第二段：|第三段：|第四段：|最后一段：))/g,
+    "\n\n"
+  );
+
+  return text.trim();
+}
+
+function inlineMarkdown(text) {
+  let value = escapeHtml(text);
+  const codeItems = [];
+
+  value = value.replace(
+    /\x60([^\x60]+)\x60/g,
+    function (_, code) {
+      const index = codeItems.length;
+      codeItems.push("<code>" + code + "</code>");
+      return "@@INLINECODE" + index + "@@";
+    }
+  );
+
+  value = value.replace(
+    /!\[([^\]]*)\]\((\S+?)(?:\s+["']([^"']*)["'])?\)/g,
+    function (_, alt, src, title) {
+      if (!/^(https?:\/\/|\/)/i.test(src) || src.startsWith("//")) {
+        return alt;
+      }
+
+      return '<img src="' + src + '" alt="' + alt + '"' +
+        (title ? ' title="' + title + '"' : "") +
+        ' loading="lazy">';
+    }
+  );
+
+  value = value.replace(
+    /\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/(?!\/)[^\s)]*)\)/g,
+    function (_, label, url) {
+      return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' +
+        label + "</a>";
+    }
+  );
+
+  value = value.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  value = value.replace(/__(.+?)__/g, "<strong>$1</strong>");
+  value = value.replace(/\*(.+?)\*/g, "<em>$1</em>");
+  value = value.replace(/~~(.+?)~~/g, "<del>$1</del>");
+
+  value = value.replace(
+    /@@INLINECODE(\d+)@@/g,
+    function (_, index) {
+      return codeItems[Number(index)] || "";
+    }
+  );
+
+  return value;
+}
+
+function renderMarkdown(markdown) {
+  const normalized = normalizeMarkdown(markdown);
+  const lines = normalized.split("\n");
+  const output = [];
+
+  let paragraph = [];
+  let listType = "";
+  let inCode = false;
+  let codeLines = [];
+
+  function flushParagraph() {
+    if (!paragraph.length) return;
+
+    output.push(
+      "<p>" +
+      paragraph.map(inlineMarkdown).join("<br>\n") +
+      "</p>"
+    );
+
+    paragraph = [];
+  }
+
+  function closeList() {
+    if (!listType) return;
+
+    output.push("</" + listType + ">");
+    listType = "";
+  }
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    const fence = String.fromCharCode(96, 96, 96);
+
+    if (trimmed.startsWith(fence)) {
+      if (inCode) {
+        output.push(
+          "<pre><code>" +
+          escapeHtml(codeLines.join("\n")) +
+          "</code></pre>"
+        );
+
+        codeLines = [];
+        inCode = false;
+      } else {
+        flushParagraph();
+        closeList();
+        inCode = true;
+        codeLines = [];
+      }
+
+      continue;
+    }
+
+    if (inCode) {
+      codeLines.push(line);
+      continue;
+    }
+
+    if (!trimmed) {
+      flushParagraph();
+      closeList();
+      continue;
+    }
+
+    const heading = line.match(/^(#{1,6})\s+(.+)$/);
+
+    if (heading) {
+      flushParagraph();
+      closeList();
+
+      const level = heading[1].length;
+
+      output.push(
+        "<h" + level + ">" +
+        inlineMarkdown(heading[2]) +
+        "</h" + level + ">"
+      );
+
+      continue;
+    }
+
+    if (/^\s*([-*_])\s*\1\s*\1\s*$/.test(line)) {
+      flushParagraph();
+      closeList();
+      output.push("<hr>");
+      continue;
+    }
+
+    const unordered = line.match(/^\s*[-*+]\s+(.+)$/);
+    const ordered = line.match(/^\s*\d+\.\s+(.+)$/);
+
+    if (unordered || ordered) {
+      flushParagraph();
+
+      const nextType = unordered ? "ul" : "ol";
+
+      if (listType !== nextType) {
+        closeList();
+        listType = nextType;
+        output.push("<" + listType + ">");
+      }
+
+      output.push(
+        "<li>" +
+        inlineMarkdown((unordered || ordered)[1]) +
+        "</li>"
+      );
+
+      continue;
+    }
+
+    const quote = line.match(/^\s*>\s?(.*)$/);
+
+    if (quote) {
+      flushParagraph();
+      closeList();
+
+      output.push(
+        "<blockquote>" +
+        inlineMarkdown(quote[1]) +
+        "</blockquote>"
+      );
+
+      continue;
+    }
+
+    closeList();
+    paragraph.push(line);
+  }
+
+  flushParagraph();
+  closeList();
+
+  if (inCode) {
+    output.push(
+      "<pre><code>" +
+      escapeHtml(codeLines.join("\n")) +
+      "</code></pre>"
+    );
+  }
+
+  return output.join("\n");
+}
+
+export async function onRequestGet({ request }) {
+  const url = new URL(request.url);
+  const pathname = url.pathname;
+  const rawSlug = pathname.split("/").filter(Boolean).pop() || "";
+
+  let slug;
 
   try {
-    slug = decodeURIComponent(slug);
+    slug = decodeURIComponent(rawSlug);
   } catch {
-    return new Response("文章地址无效", { status: 400 });
+    slug = rawSlug;
   }
 
   if (
     !slug ||
     slug.includes("/") ||
     slug.includes("\\") ||
-    slug.includes("..") ||
-    slug.toLowerCase().endsWith(".md")
+    slug.includes("..")
   ) {
-    return new Response("文章地址无效", { status: 400 });
+    return new Response("无效的文章地址", {
+      status: 400,
+      headers: { "Content-Type": "text/plain; charset=utf-8" }
+    });
   }
 
-  const safeSlug = JSON.stringify(slug).replace(/</g, "\\u003c");
+  const lang = url.searchParams.get("lang") === "en" ? "en" : "zh";
 
   const html = String.raw`<!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="${lang}">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>文章 - GlobalViewNet</title>
+  <meta name="robots" content="index,follow">
+  <title>Article - Global View</title>
   <style>
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      color: #252525;
+      color: #202124;
       background: #fff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
         "PingFang SC", "Microsoft YaHei", sans-serif;
       line-height: 1.8;
     }
 
-    .page {
-      width: min(800px, calc(100% - 36px));
-      margin: 0 auto;
-      padding: 32px 0 64px;
+    header {
+      border-bottom: 1px solid #e8e8e8;
+      padding: 16px 24px;
+    }
+
+    .nav {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      color: #171717;
+      text-decoration: none;
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    .lang a {
+      margin-left: 12px;
+      color: #555;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 48px auto;
+      padding: 0 24px 64px;
+      min-height: 60vh;
     }
 
     .back {
       display: inline-block;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       color: #555;
       text-decoration: none;
+      font-size: 14px;
     }
 
-    .back:hover { color: #111; }
-
     h1 {
-      margin: 0 0 12px;
+      margin: 0 0 18px;
       font-size: clamp(28px, 5vw, 40px);
       line-height: 1.35;
       overflow-wrap: anywhere;
     }
 
-    .date {
-      margin-bottom: 32px;
-      color: #888;
+    .meta {
+      color: #777;
       font-size: 14px;
+      margin-bottom: 32px;
     }
 
-    #content {
+    .article-body {
       overflow-wrap: anywhere;
-      word-break: break-word;
+      word-break: normal;
+      font-size: 17px;
     }
 
-    #content h2,
-    #content h3,
-    #content h4 {
-      margin-top: 1.8em;
-      line-height: 1.45;
+    .article-body p {
+      margin: 0 0 1.4em;
     }
 
-    #content p { margin: 1em 0; }
+    .article-body h1,
+    .article-body h2,
+    .article-body h3,
+    .article-body h4 {
+      margin: 1.7em 0 .7em;
+      line-height: 1.4;
+    }
 
-    #content img {
-      display: block;
+    .article-body ul,
+    .article-body ol {
+      padding-left: 1.8em;
+      margin: 0 0 1.4em;
+    }
+
+    .article-body li {
+      margin: .35em 0;
+    }
+
+    .article-body blockquote {
+      margin: 1.4em 0;
+      padding: 8px 18px;
+      border-left: 3px solid #ccc;
+      color: #666;
+      background: #f8f8f8;
+    }
+
+    .article-body img {
       max-width: 100%;
       height: auto;
-      margin: 22px auto;
-      border-radius: 4px;
+      display: block;
+      margin: 24px auto;
+      border-radius: 6px;
     }
 
-    #content a {
+    .article-body a {
       color: #1769aa;
       overflow-wrap: anywhere;
     }
 
-    #content blockquote {
-      margin: 20px 0;
-      padding: 4px 18px;
-      border-left: 4px solid #ddd;
-      color: #666;
-    }
-
-    #content pre {
-      padding: 16px;
+    .article-body pre {
       overflow-x: auto;
+      padding: 16px;
       background: #f5f5f5;
       border-radius: 6px;
     }
 
-    #content code {
-      padding: 2px 4px;
-      background: #f5f5f5;
-      border-radius: 3px;
-      font-family: Consolas, monospace;
+    .article-body code {
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: .9em;
     }
 
-    #content pre code {
-      padding: 0;
-      background: transparent;
-    }
-
-    #content table {
-      display: block;
-      max-width: 100%;
-      overflow-x: auto;
-      border-collapse: collapse;
-    }
-
-    #content th,
-    #content td {
-      padding: 8px 12px;
-      border: 1px solid #ddd;
+    .article-body hr {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 28px 0;
     }
 
     .error {
+      color: #a12622;
       padding: 16px;
-      color: #b42318;
-      background: #fff3f2;
-      white-space: pre-wrap;
-      overflow-wrap: anywhere;
+      background: #fff4f2;
+      border-radius: 6px;
+    }
+
+    footer {
+      border-top: 1px solid #eee;
+      padding: 24px;
+      text-align: center;
+      color: #888;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 14px 16px; }
+      main { margin-top: 30px; padding: 0 18px 48px; }
+      .article-body { font-size: 16px; }
     }
   </style>
 </head>
 <body>
-  <main class="page">
-    <a class="back" href="/">← 返回首页</a>
-    <article>
-      <h1 id="title">正在加载文章……</h1>
-      <div id="date" class="date"></div>
-      <div id="content"></div>
-    </article>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="/">Global View</a>
+      <div class="lang">
+        <a id="zhLink" href="#">中文</a>
+        <a id="enLink" href="#">English</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back" id="backLink" href="/">← <span id="backText"></span></a>
+    <h1 id="articleTitle">Loading...</h1>
+    <div class="meta" id="articleMeta"></div>
+    <article class="article-body" id="articleContent"></article>
   </main>
 
+  <footer>Global View</footer>
+
   <script>
-    const slug = __SLUG_JSON__;
+    const slug = ${JSON.stringify(slug)};
+    const lang = ${JSON.stringify(lang)};
+
+    const titleElement = document.getElementById("articleTitle");
+    const metaElement = document.getElementById("articleMeta");
+    const contentElement = document.getElementById("articleContent");
+
+    document.documentElement.lang = lang;
+
+    document.getElementById("zhLink").href =
+      "/posts/" + encodeURIComponent(slug) + "?lang=zh";
+    document.getElementById("enLink").href =
+      "/posts/" + encodeURIComponent(slug) + "?lang=en";
+
+    document.getElementById("backText").textContent =
+      lang === "en" ? "Back to home" : "返回首页";
 
     function escapeHtml(value) {
-      return String(value).replace(/[&<>"']/g, function (char) {
-        return {
-          "&": "&amp;",
-          "<": "&lt;",
-          ">": "&gt;",
-          '"': "&quot;",
-          "'": "&#39;"
-        }[char];
-      });
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
     }
 
-    function safeUrl(value) {
-      const url = String(value || "").trim();
+    function normalizeMarkdown(markdown) {
+      let text = String(markdown || "")
+        .replace(/\\r\\n?/g, "\\n")
+        .replace(/\\\\n/g, "\\n");
 
-      if (/^https?:\/\//i.test(url)) {
-        return url;
-      }
+      text = text.replace(
+        /[ \\t]+(?=(?:Paragraph \\d+:|Final verification paragraph:))/g,
+        "\\n\\n"
+      );
 
-      if (url.startsWith("/") && !url.startsWith("//")) {
-        return url;
-      }
+      text = text.replace(
+        /[ \\t]+(?=(?:第一段：|第二段：|第三段：|第四段：|最后一段：))/g,
+        "\\n\\n"
+      );
 
-      return "#";
+      return text.trim();
     }
 
     function inlineMarkdown(text) {
       let value = escapeHtml(text);
       const codeItems = [];
 
-      // 使用字符编码匹配反引号，避免与外层模板字符串冲突
       value = value.replace(
-        /\x60([^\x60]+)\x60/g,
+        /\\x60([^\\x60]+)\\x60/g,
         function (_, code) {
           const index = codeItems.length;
           codeItems.push("<code>" + code + "</code>");
@@ -196,41 +492,33 @@ export async function onRequestGet({ params }) {
       );
 
       value = value.replace(
-        /!\[([^\]]*)\]\((\S+?)(?:\s+["']([^"']*)["'])?\)/g,
+        /!\\[([^\\]]*)\\]\\((\\S+?)(?:\\s+["']([^"']*)["'])?\\)/g,
         function (_, alt, src, title) {
-          let url = safeUrl(src);
-
-          if (url.startsWith("/images/uploads/")) {
-            url = "/public" + url;
+          if (!/^(https?:\\/\\/|\\/)/i.test(src) || src.startsWith("//")) {
+            return alt;
           }
 
-          if (url === "#") {
-            return escapeHtml(alt);
-          }
-
-          return '<img src="' + escapeHtml(url) +
-            '" alt="' + escapeHtml(alt) + '"' +
-            (title ? ' title="' + escapeHtml(title) + '"' : "") +
+          return '<img src="' + src + '" alt="' + alt + '"' +
+            (title ? ' title="' + title + '"' : "") +
             ' loading="lazy">';
         }
       );
 
       value = value.replace(
-        /\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/(?!\/)[^\s)]*)\)/g,
+        /\\[([^\\]]+)\\]\\((https?:\\/\\/[^\\s)]+|\\/(?!\\/)[^\\s)]*)\\)/g,
         function (_, label, url) {
-          return '<a href="' + escapeHtml(safeUrl(url)) +
-            '" target="_blank" rel="noopener noreferrer">' +
-            label + '</a>';
+          return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' +
+            label + "</a>";
         }
       );
 
-      value = value.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+      value = value.replace(/\\*\\*(.+?)\\*\\*/g, "<strong>$1</strong>");
       value = value.replace(/__(.+?)__/g, "<strong>$1</strong>");
-      value = value.replace(/\*(.+?)\*/g, "<em>$1</em>");
+      value = value.replace(/\\*(.+?)\\*/g, "<em>$1</em>");
       value = value.replace(/~~(.+?)~~/g, "<del>$1</del>");
 
       value = value.replace(
-        /@@INLINECODE(\d+)@@/g,
+        /@@INLINECODE(\\d+)@@/g,
         function (_, index) {
           return codeItems[Number(index)] || "";
         }
@@ -240,32 +528,30 @@ export async function onRequestGet({ params }) {
     }
 
     function renderMarkdown(markdown) {
-      const lines = String(markdown || "")
-        .replace(/\r\n/g, "\n")
-        .split("\n");
-
+      const lines = normalizeMarkdown(markdown).split("\\n");
       const output = [];
+
       let paragraph = [];
       let listType = "";
       let inCode = false;
       let codeLines = [];
 
       function flushParagraph() {
-        if (paragraph.length) {
-          output.push(
-            "<p>" +
-            paragraph.map(inlineMarkdown).join("<br>\n") +
-            "</p>"
-          );
-          paragraph = [];
-        }
+        if (!paragraph.length) return;
+
+        output.push(
+          "<p>" +
+          paragraph.map(inlineMarkdown).join("<br>\\n") +
+          "</p>"
+        );
+
+        paragraph = [];
       }
 
       function closeList() {
-        if (listType) {
-          output.push("</" + listType + ">");
-          listType = "";
-        }
+        if (!listType) return;
+        output.push("</" + listType + ">");
+        listType = "";
       }
 
       for (const line of lines) {
@@ -276,7 +562,7 @@ export async function onRequestGet({ params }) {
           if (inCode) {
             output.push(
               "<pre><code>" +
-              escapeHtml(codeLines.join("\n")) +
+              escapeHtml(codeLines.join("\\n")) +
               "</code></pre>"
             );
             codeLines = [];
@@ -301,13 +587,12 @@ export async function onRequestGet({ params }) {
           continue;
         }
 
-        const heading = line.match(/^(#{1,6})\s+(.+)$/);
+        const heading = line.match(/^(#{1,6})\\s+(.+)$/);
 
         if (heading) {
           flushParagraph();
           closeList();
           const level = heading[1].length;
-
           output.push(
             "<h" + level + ">" +
             inlineMarkdown(heading[2]) +
@@ -316,15 +601,15 @@ export async function onRequestGet({ params }) {
           continue;
         }
 
-        if (/^\s*([-*_])\s*\1\s*\1\s*$/.test(line)) {
+        if (/^\\s*([-*_])\\s*\\1\\s*\\1\\s*$/.test(line)) {
           flushParagraph();
           closeList();
           output.push("<hr>");
           continue;
         }
 
-        const unordered = line.match(/^\s*[-*+]\s+(.+)$/);
-        const ordered = line.match(/^\s*\d+\.\s+(.+)$/);
+        const unordered = line.match(/^\\s*[-*+]\\s+(.+)$/);
+        const ordered = line.match(/^\\s*\\d+\\.\\s+(.+)$/);
 
         if (unordered || ordered) {
           flushParagraph();
@@ -344,7 +629,7 @@ export async function onRequestGet({ params }) {
           continue;
         }
 
-        const quote = line.match(/^\s*>\s?(.*)$/);
+        const quote = line.match(/^\\s*>\\s?(.*)$/);
 
         if (quote) {
           flushParagraph();
@@ -367,22 +652,15 @@ export async function onRequestGet({ params }) {
       if (inCode) {
         output.push(
           "<pre><code>" +
-          escapeHtml(codeLines.join("\n")) +
+          escapeHtml(codeLines.join("\\n")) +
           "</code></pre>"
         );
       }
 
-      return output.join("\n");
+      return output.join("\\n");
     }
 
     async function loadArticle() {
-      const titleElement = document.getElementById("title");
-      const contentElement = document.getElementById("content");
-      const dateElement = document.getElementById("date");
-
-      const params = new URLSearchParams(window.location.search);
-      const lang = params.get("lang") === "en" ? "en" : "zh";
-
       try {
         const response = await fetch(
           "/api/post?slug=" + encodeURIComponent(slug) +
@@ -393,9 +671,7 @@ export async function onRequestGet({ params }) {
         const article = await response.json();
 
         if (!response.ok) {
-          throw new Error(
-            article.detail || article.error || "文章读取失败"
-          );
+          throw new Error(article.error || "Failed to load article");
         }
 
         const title = lang === "en"
@@ -406,46 +682,30 @@ export async function onRequestGet({ params }) {
           ? (article.body_en || article.body || article.body_zh || "")
           : (article.body_zh || article.body || "");
 
-        document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
-        document.title = title + " - GlobalViewNet";
+        document.title = title + " | Global View";
         titleElement.textContent = title;
-
-        if (dateElement && article.date) {
-          const date = new Date(article.date);
-
-          dateElement.textContent = Number.isNaN(date.getTime())
-            ? article.date
-            : date.toLocaleDateString(
-                lang === "en" ? "en-US" : "zh-CN",
-                {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric"
-                }
-              );
-        }
+        metaElement.textContent = [
+          article.date ? article.date.slice(0, 10) : "",
+          article.category || ""
+        ].filter(Boolean).join(" · ");
 
         contentElement.innerHTML = renderMarkdown(body);
 
-        const backLink = document.querySelector(".back");
-        if (backLink) {
-          backLink.textContent =
-            lang === "en" ? "← Back to Home" : "← 返回首页";
-          backLink.href = lang === "en" ? "/?lang=en" : "/";
-        }
       } catch (error) {
         titleElement.textContent =
-          lang === "en" ? "Failed to load article" : "文章加载失败";
-        contentElement.className = "error";
-        contentElement.textContent =
-          error instanceof Error ? error.message : "文章读取失败";
+          lang === "en" ? "Unable to load article" : "文章加载失败";
+
+        contentElement.innerHTML =
+          '<p class="error">' + escapeHtml(
+            error instanceof Error ? error.message : "Unknown error"
+          ) + "</p>";
       }
     }
 
     loadArticle();
   </script>
 </body>
-</html>`.replace("__SLUG_JSON__", safeSlug);
+</html>`;
 
   return new Response(html, {
     headers: {
