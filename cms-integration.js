@@ -306,27 +306,19 @@
       startCarousel();
     };
 
-    // 四、滚动头条：优先显示最新 CMS 文章。
-    // CMS 文章不足时，再用原有头条补足。
+    // 四、滚动头条：只显示最新 CMS 文章，不混入演示文章。
     renderTicker = function () {
       const content = $("#tickerContent");
       if (!content) return;
 
       content.replaceChildren();
 
-      const cmsEntries = articles
+      const entries = articles
         .filter(article => article.cms)
-        .sort((a, b) => dateValue(b.date) - dateValue(a.date));
+        .sort((a, b) => dateValue(b.date) - dateValue(a.date))
+        .slice(0, 10);
 
-      const originalEntries = (tickerIds || [])
-        .map(id => articleById(id))
-        .filter(Boolean);
-
-      const entries = [
-        ...cmsEntries,
-        ...originalEntries.filter(article => !article.cms)
-      ].slice(0, 10);
-
+      // 复制一组用于无缝滚动；只有一篇文章时也会重复显示。
       const duplicatedEntries = [...entries, ...entries];
 
       duplicatedEntries.forEach((article, index) => {
@@ -334,6 +326,7 @@
         item.type = "button";
         item.className = "ticker-item";
         item.textContent = article.title[currentLang] || "";
+
         item.addEventListener("click", () => {
           openLinkedArticle(article);
         });
