@@ -1,7 +1,130 @@
-export async function onRequestGet() {
-  return Response.json({
-    ok: true,
-    route: "api/post",
-    message: "Post route works"
-  });
+
+function decodeBase64Utf8(value) {
+  const binary = atob(value.replace(/\s/g, ""));
+  const bytes = Uint8Array.from(
+    binary,
+    (char) => char.charCodeAt(0)
+  );
+  return new TextDecoder().decode(bytes);
+}
+
+export async function onRequestGet({ request, env }) {
+  const url = new URL(request.url);
+  const slug = url.searchParams.get("slug");
+
+  if (
+    !slug ||
+    slug.includes("/") ||
+    slug.includes("\\") ||
+    slug.includes("..") ||
+    slug.toLowerCase().endsWith(".md")
+  ) {
+    return Response.json(
+      { error: "缺少有效的文章标识 slug" },
+      { status: 400 }
+    );
+  }
+
+  const token = env.GITHUB_CONTENT_TOKEN;
+
+  if (!token) {
+    return Response.json(
+      { error: "Cloudflare 未读取到 GITHUB_CONTENT_TOKEN" },
+      { status: 500 }
+    );
+  }
+
+  const apiUrl =
+    "https://api.github.com/repos/krishnaxu/globalviewnet/contents/content/posts/" +
+    encodeURIComponent(slug) +
+    ".md?ref=main";
+
+  try {
+    const response = await fetch(apiUrl, {
+      headers: {
+        Accept: "application/vnd.github+json",
+        Authorization: "Bearer " + token,
+        "X-GitHub-Api-Version": "2022-11-28",
+        "user-agent": "globalviewnet-pages/1.0"
+      }
+    });
+
+    if (!response.ok) {
+      const detail = await response.text();
+
+      return Response.json(
+        {
+          error: "GitHub 拒绝读取文章",
+          github_status: response.status,
+          detail: detail.slice(0, 1500)
+        },
+        {
+          status: 502,
+          headers: {
+            "Cache-Control": "no-store"
+          }
+        }
+      );
+    }
+
+    const file = await response.json();
+
+    if (!file.content) {
+      return Response.json(
+        { error: "GitHub 未返回文章正文内容" },
+        { status: 502 }
+      );
+    }
+
+    const content = decodeBase64Utf8(file.content);
+
+    const match = content.match(
+      /^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/
+    );
+
+    const metadata = match ? match[1] : "";
+    const body = match
+      ? content.slice(match[0].length)
+      : content;
+
+    const getValue = (key) => {
+      const result = metadata.match(
+        new RegExp("^" + key + ":\\s*(.*?)\\s*$", "m")
+      );
+
+      return result
+        ? result[1].trim().replace(/^["']|["']$/g, "")
+        : "";
+    };
+
+    return Response.json(
+      {
+        slug,
+        title: getValue("title") || slug,
+        date: getValue("date"),
+        body
+      },
+      {
+        headers: {
+          "Cache-Control": "no-store"
+        }
+      }
+    );
+  } catch (error) {
+    return Response.json(
+      {
+        error: "读取文章时发生网络错误",
+        detail:
+          error instanceof Error
+            ? error.message
+            : "未知错误"
+      },
+      {
+        status: 502,
+        headers: {
+          "Cache-Control": "no-store"
+        }
+      }
+    );
+  }
 }
