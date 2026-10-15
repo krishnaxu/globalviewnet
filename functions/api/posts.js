@@ -1,170 +1,192 @@
 
-function decodeBase64Utf8(value) {
-  const binary = atob(value.replace(/\s/g, ""));
-  const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
-  return new TextDecoder().decode(bytes);
+const REPO = "krishnaxu/globalviewnet";
+const BRANCH = "main";
+const POSTS_PATH = "content/posts";
+
+const JSON_HEADERS = {
+  "Content-Type": "application/json; charset=utf-8",
+  "Cache-Control": "no-store"
+};
+
+function json(data, status = 200) {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: JSON_HEADERS
+  });
 }
 
-function parseFrontmatter(content) {
-  const match = content.match(
-    /^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/
+// 解析文章 Markdown 文件开头的 YAML 信息
+function parseFrontmatter(markdown) {
+  const result = {};
+  const match = markdown.match(
+    /^\uFEFF?---\s*\r?\n([\s\S]*?)\r?\n---(?:\s*\r?\n|$)/
   );
-  if (!match) return {};
+
+  if (!match) {
+    return { meta: result, body: markdown };
+  }
 
   const lines = match[1].split(/\r?\n/);
-  const data = {};
+  let currentKey = null;
+  let blockLines = [];
 
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-    const item = line.match(/^([A-Za-z0-9_-]+):(?:[ \t]*(.*))?$/);
-    if (!item) continue;
-
-    const key = item[1];
-    let value = item[2] || "";
-
-    if (/^[|>][+-]?\d?$/.test(value.trim())) {
-      const folded = value.trim().startsWith(">");
-      const block = [];
-
-      while (i + 1 < lines.length) {
-        const next = lines[i + 1];
-
-        if (next.trim() && !/^\s/.test(next)) break;
-
-        i++;
-        block.push(next);
-      }
-
-      const nonEmpty = block.filter((s) => s.trim());
-      const indent = nonEmpty.length
-        ? Math.min(...nonEmpty.map((s) => s.match(/^\s*/)[0].length))
-        : 0;
-
-      const text = block.map((s) => s.slice(indent));
-      value = folded
-        ? text.join(" ").trim()
-        : text.join("\n");
-
-      if (value && !value.endsWith("\n") && !value.endsWith("\n\n")) {
-        // 保留 Markdown 正文内容，不额外添加换行
-      }
-    } else {
-      value = value.trim();
-
-      if (value.startsWith('"') && value.endsWith('"')) {
-        try {
-          value = JSON.parse(value);
-        } catch {
-          value = value.slice(1, -1);
-        }
-      } else if (value.startsWith("'") && value.endsWith("'")) {
-        value = value.slice(1, -1).replace(/''/g, "'");
-      }
+  function saveBlock() {
+    if (currentKey !== null) {
+      result[currentKey] = blockLines.join("\n").replace(/\n+$/, "");
     }
-
-    data[key] = String(value);
+    currentKey = null;
+    blockLines = [];
   }
 
-  return data;
+  for (const line of lines) {
+    const field = line.match(/^([A-Za-z0-9_-]+)\s*:\s*(.*)$/);
+
+    if (field) {
+      saveBlock();
+
+      const key = field[1];
+      const value = field[2].trim();
+
+      if (value === "|" || value === "|-" || value === ">" || value === ">-") {
+        currentKey = key;
+        continue;
+      }
+
+      result[key] = value
+        .replace(/^(['"])([\s\S]*)\1$/, "$2")
+        .trim();
+
+      continue;
+    }
+
+    if (currentKey !== null) {
+      blockLines.push(line.replace(/^(  |\t)/, ""));
+    }
+  }
+
+  saveBlock();
+
+  return {
+    meta: result,
+    body: markdown.slice(match[0].length)
+  };
 }
 
-export async function onRequestGet({ env }) {
-  const token = env.GITHUB_CONTENT_TOKEN;
+// 读取 GitHub 返回的 Base64 内容，并正确处理中文
+function decodeBase64(content) {
+  const binary = atob(content.replace(/\s/g, ""));
+  const bytes = Uint8Array.from(binary, char => char.charCodeAt(0));
+  return new TextDecoder("utf-8").decode(bytes);
+}
 
-  if (!token) {
-    return Response.json(
-      { error: "缺少 GITHUB_CONTENT_TOKEN 环境变量" },
-      { status: 500 }
-    );
+async function githubRequest(url, token) {
+  const response = await fetch(url, {
+    headers: {
+      Accept: "application/vnd.github+json",
+      Authorization: `Bearer ${token}`,
+      "X-GitHub-Api-Version": "2022-11-28"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`GitHub API 请求失败：${response.status}`);
   }
 
-  const headers = {
-    Accept: "application/vnd.github+json",
-    Authorization: "Bearer " + token,
-    "X-GitHub-Api-Version": "2022-11-28",
-    "user-agent": "globalviewnet-pages/1.0"
-  };
+  return response.json();
+}
 
-  const apiUrl =
-    "https://api.github.com/repos/krishnaxu/globalviewnet/contents/content/posts?ref=main";
+function getString(value) {
+  return typeof value === "string" ? value.trim() : "";
+}
 
+function getSlug(filename) {
+  return filename.replace(/\.md$/i, "");
+}
+
+export async function onRequestGet({ request, env }) {
   try {
-    const response = await fetch(apiUrl, { headers });
+    const token = env.GITHUB_CONTENT_TOKEN;
 
-    if (!response.ok) {
-      const detail = await response.text();
-      return Response.json(
-        {
-          error: "读取文章列表失败",
-          status: response.status,
-          detail: detail.slice(0, 1500)
-        },
-        { status: 502 }
-      );
+    if (!token) {
+      return json({
+        error: "服务器尚未配置 GITHUB_CONTENT_TOKEN"
+      }, 500);
     }
 
-    const files = await response.json();
+    const url = new URL(request.url);
+    const category = url.searchParams.get("category") || "";
+    const lang = url.searchParams.get("lang") === "en" ? "en" : "zh";
+
+    // 读取文章目录
+    const filesUrl =
+      `https://api.github.com/repos/${REPO}/contents/${POSTS_PATH}` +
+      `?ref=${encodeURIComponent(BRANCH)}`;
+
+    const files = await githubRequest(filesUrl, token);
 
     if (!Array.isArray(files)) {
-      return Response.json(
-        {
-          error: "文章目录返回格式异常",
-          detail: JSON.stringify(files).slice(0, 1500)
-        },
-        { status: 502 }
-      );
+      return json({
+        error: "文章目录返回格式异常，请检查 GitHub 仓库目录"
+      }, 502);
     }
 
-    const markdownFiles = files.filter(
-      (file) =>
-        file.type === "file" &&
-        file.name.toLowerCase().endsWith(".md")
+    const markdownFiles = files.filter(file =>
+      file.type === "file" &&
+      file.name.toLowerCase().endsWith(".md")
     );
 
-    const posts = await Promise.all(
-      markdownFiles.map(async (file) => {
-        const contentUrl =
-          "https://api.github.com/repos/krishnaxu/globalviewnet/contents/" +
-          file.path.split("/").map(encodeURIComponent).join("/") +
-          "?ref=main";
+    // 读取并筛选文章。没有 published: true 的文章默认不公开。
+    const results = await Promise.all(
+      markdownFiles.map(async file => {
+        const fileData = await githubRequest(file.url, token);
+        const markdown = decodeBase64(fileData.content || "");
+        const { meta } = parseFrontmatter(markdown);
 
-        const contentResponse = await fetch(contentUrl, { headers });
-
-        if (!contentResponse.ok) {
-          throw new Error(
-            "读取文章文件失败：" + file.name +
-            "；状态码：" + contentResponse.status
-          );
+        // CMS 中勾选“是否发布到网站”后，YAML 应保存为 published: true
+        if (String(meta.published || "").toLowerCase() !== "true") {
+          return null;
         }
 
-        const data = await contentResponse.json();
-
-        if (!data.content) {
-          throw new Error("文章内容为空：" + file.name);
-        }
-
-        const content = decodeBase64Utf8(data.content);
-        const meta = parseFrontmatter(content);
-        const slug = file.name.replace(/\.md$/i, "");
+        const slug = getSlug(file.name);
+        const titleZh = getString(meta.title_zh || meta.title);
+        const titleEn = getString(meta.title_en || meta.title);
+        const excerptZh = getString(meta.excerpt_zh || meta.excerpt);
+        const excerptEn = getString(meta.excerpt_en || meta.excerpt);
+        const articleCategory = getString(meta.category) || "tech";
+        const date = getString(meta.date);
+        const coverImage = getString(meta.cover_image);
+        const sourceName = getString(meta.source_name);
+        const sourceUrl = getString(meta.source_url);
 
         return {
           slug,
-          category: meta.category || "tech",
-          date: meta.date || "",
-          title: meta.title_zh || meta.title_en || meta.title || slug,
-          title_zh: meta.title_zh || meta.title || "",
-          title_en: meta.title_en || "",
-          excerpt_zh: meta.excerpt_zh || "",
-          excerpt_en: meta.excerpt_en || "",
-          cover_image: meta.cover_image || "",
-          source_name: meta.source_name || "",
-          source_url: meta.source_url || "",
-          url: "/posts/" + encodeURIComponent(slug),
-          url_zh: "/zh/posts/" + encodeURIComponent(slug),
-          url_en: "/en/posts/" + encodeURIComponent(slug)
+          title: lang === "en"
+            ? (titleEn || titleZh)
+            : (titleZh || titleEn),
+          title_zh: titleZh,
+          title_en: titleEn,
+          excerpt: lang === "en"
+            ? (excerptEn || excerptZh)
+            : (excerptZh || excerptEn),
+          excerpt_zh: excerptZh,
+          excerpt_en: excerptEn,
+          category: articleCategory,
+          date,
+          cover_image: coverImage,
+          source_name: sourceName,
+          source_url: sourceUrl,
+          url: `/posts/${encodeURIComponent(slug)}`,
+          url_zh: `/posts/${encodeURIComponent(slug)}`,
+          url_en: `/posts/${encodeURIComponent(slug)}?lang=en`
         };
       })
     );
+
+    let posts = results.filter(Boolean);
+
+    if (category) {
+      posts = posts.filter(post => post.category === category);
+    }
 
     posts.sort((a, b) => {
       const dateA = Date.parse(a.date) || 0;
@@ -172,16 +194,16 @@ export async function onRequestGet({ env }) {
       return dateB - dateA;
     });
 
-    return Response.json(posts, {
-      headers: { "Cache-Control": "no-store" }
+    return json({
+      success: true,
+      total: posts.length,
+      lang,
+      posts
     });
   } catch (error) {
-    return Response.json(
-      {
-        error: "读取文章列表时发生错误",
-        detail: error instanceof Error ? error.message : "未知错误"
-      },
-      { status: 502 }
-    );
+    return json({
+      error: "获取文章列表失败",
+      detail: error instanceof Error ? error.message : String(error)
+    }, 500);
   }
 }
