@@ -142,7 +142,7 @@ export async function onRequestGet({ params }) {
 
       // 图片
       value = value.replace(
-        /!\[([^\]]*)\]\((\S+?)(?:\s+["']([^"']*)["'])?\)/g,
+        /!\\[([^\\]]*)\\]\\((\\S+?)(?:\\s+["']([^"']*)["'])?\\)/g
         function (_, alt, src, title) {
           let url = safeUrl(src);
           if (url.startsWith("/images/uploads/")) {
