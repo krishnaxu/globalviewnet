@@ -39,10 +39,11 @@ export async function onRequestGet({ request, env }) {
   try {
     const response = await fetch(apiUrl, {
       headers: {
-        Accept: "application/vnd.github+json",
-        Authorization: "Bearer " + token,
-        "X-GitHub-Api-Version": "2022-11-28"
-      }
+  Accept: "application/vnd.github+json",
+  Authorization: "Bearer " + token,
+  "X-GitHub-Api-Version": "2022-11-28",
+  "user-agent": "globalviewnet-pages/1.0"
+}
     });
 
     if (!response.ok) {
