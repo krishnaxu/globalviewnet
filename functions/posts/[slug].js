@@ -11,25 +11,68 @@ export async function onRequestGet({ request, params }) {
     return new Response("文章地址无效", { status: 400 });
   }
 
-  const apiUrl = new URL("/api/post", request.url);
-  apiUrl.searchParams.set("slug", slug);
 
-  try {
-    const response = await fetch(apiUrl.toString());
+const apiUrl =
+  "https://api.github.com/repos/krishnaxu/globalviewnet/contents/content/posts/" +
+  encodeURIComponent(slug) +
+  ".md?ref=main";
 
-    if (!response.ok) {
-      return new Response(
-        response.status === 404
-          ? "文章不存在"
-          : "暂时无法读取文章，请稍后再试",
-        {
-          status: response.status === 404 ? 404 : 502,
-          headers: { "Content-Type": "text/plain; charset=utf-8" }
-        }
-      );
+const response = await fetch(apiUrl, {
+  headers: {
+    Accept: "application/vnd.github+json",
+    "User-Agent": "globalviewnet-pages"
+  }
+});
+
+if (!response.ok) {
+  return new Response(
+    response.status === 404
+      ? "文章不存在，请检查文章文件名"
+      : "读取 GitHub 文章失败，状态码：" + response.status,
+    {
+      status: response.status === 404 ? 404 : 502,
+      headers: { "Content-Type": "text/plain; charset=utf-8" }
     }
+  );
+}
 
-    const post = await response.json();
+const file = await response.json();
+const contentResponse = await fetch(file.download_url);
+
+if (!contentResponse.ok) {
+  return new Response("获取文章正文失败", {
+    status: 502,
+    headers: { "Content-Type": "text/plain; charset=utf-8" }
+  });
+}
+
+const content = await contentResponse.text();
+const match = content.match(
+  /^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/
+);
+
+const metadata = match ? match[1] : "";
+const body = match
+  ? content.slice(match[0].length)
+  : content;
+
+const getValue = (key) => {
+  const result = metadata.match(
+    new RegExp("^" + key + ":\\s*(.*?)\\s*$", "m")
+  );
+
+  return result
+    ? result[1].trim().replace(/^["']|["']$/g, "")
+    : "";
+};
+
+const post = {
+  slug,
+  title: getValue("title") || slug,
+  date: getValue("date"),
+  body
+};
+
 
     const escapeHtml = (value) =>
       String(value ?? "").replace(/[&<>"']/g, (char) => ({
