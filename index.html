@@ -2173,62 +2173,33 @@ window.globalViewSetArticleImage = async function (img, article) {
   const category = ["tech", "business", "culture", "life"]
     .includes(article?.category) ? article.category : "tech";
 
-  const folder = `/public/images/library/${category}`;
-  const original = article?.image || "";
-  const fallback =
-    article?.fallbackImage ||
-    window.globalViewFallbackImages?.[category] ||
-    "";
-
-  let triedLocal = false;
-  let triedFallback = false;
-
-  async function useLocalImage() {
-    if (triedLocal) return false;
-    triedLocal = true;
-
-    try {
-      const response = await fetch(`${folder}/sources.json`);
-      if (!response.ok) return false;
-
-      const records = await response.json();
-      const available = records.filter(item => item.filename);
-      if (!available.length) return false;
-
-      const item = available[
-        Math.floor(Math.random() * available.length)
-      ];
-
-      img.src = `${folder}/${item.filename}`;
-      return true;
-    } catch {
-      return false;
-    }
+  // CMS 文章保留原图；RSS 自动新闻使用本地分类图片
+  if (article?.origin === "cms" && article?.image) {
+    img.onerror = null;
+    img.style.visibility = "visible";
+    img.src = article.image;
+    return;
   }
 
-  img.onerror = async function () {
-    if (await useLocalImage()) return;
+  const folder = `/public/images/library/${category}`;
 
-    if (!triedFallback && fallback && img.src !== fallback) {
-      triedFallback = true;
-      img.src = fallback;
-      return;
-    }
-
-    img.onerror = null;
-    img.style.visibility = "hidden";
-  };
-
+  img.onerror = null;
   img.style.visibility = "visible";
 
-  if (Math.random() < 0.3 && await useLocalImage()) return;
+  try {
+    const response = await fetch(`${folder}/sources.json?t=${Date.now()}`);
+    if (!response.ok) throw new Error("图片列表读取失败");
 
-  if (original) {
-    img.src = original;
-  } else if (fallback) {
-    img.src = fallback;
-  } else {
-    await useLocalImage();
+    const records = await response.json();
+    const available = records.filter(item => item.filename);
+
+    if (!available.length) throw new Error("本地图片列表为空");
+
+    const item = available[Math.floor(Math.random() * available.length)];
+    img.src = `${folder}/${item.filename}`;
+  } catch (error) {
+    console.warn("本地分类图片加载失败：", category, error);
+    img.style.visibility = "hidden";
   }
 };
     function classifyAutoNews(item) {
