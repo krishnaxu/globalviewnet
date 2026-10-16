@@ -8,7 +8,7 @@ const USER_AGENT = "GlobalViewNet/1.0 (website image library)";
 const params = new URLSearchParams({
   action: "query",
   generator: "search",
-  gsrsearch: "business",
+  gsrsearch: "culture",
   gsrnamespace: "6",
   gsrlimit: "20",
   prop: "imageinfo",
