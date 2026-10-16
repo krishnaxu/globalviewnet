@@ -1380,6 +1380,7 @@
     function setLanguage(lang) {
       if (!translations[lang]) return;
       currentLang = lang;
+      refreshAutoNewsIds();
       document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
       document.title = lang === "zh"
         ? "Global View | 观澜泗渡"
@@ -1624,15 +1625,96 @@
       return card;
     }
 
+    
+    // 判断自动新闻属于中文还是英文
+    function getAutoArticleLanguage(article) {
+      if (!String(article.id || "").startsWith("auto-")) {
+        return null;
+      }
+
+      const value = String(
+        article.language || article.lang || ""
+      ).toLowerCase();
+
+      if (value === "zh" || value.startsWith("zh-")) {
+        return "zh";
+      }
+
+      if (value === "en" || value.startsWith("en-")) {
+        return "en";
+      }
+
+      const title = String(
+        article.title?.zh || article.title?.en || ""
+      );
+
+      return /[\u3400-\u9fff]/.test(title) ? "zh" : "en";
+    }
+
+    // 按当前语言重新选择轮播图和滚动头条
+    function refreshAutoNewsIds() {
+      const autoNews = articles
+        .filter(article =>
+          getAutoArticleLanguage(article) === currentLang
+        )
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      if (autoNews.length === 0) return;
+
+      const featured = [];
+      const usedCategories = new Set();
+
+      autoNews.forEach(article => {
+        if (
+          featured.length < 4 &&
+          !usedCategories.has(article.category)
+        ) {
+          featured.push(article.id);
+          usedCategories.add(article.category);
+        }
+      });
+
+      autoNews.forEach(article => {
+        if (featured.length < 4 && !featured.includes(article.id)) {
+          featured.push(article.id);
+        }
+      });
+
+      featuredIds.splice(0, featuredIds.length, ...featured);
+      tickerIds.splice(
+        0,
+        tickerIds.length,
+        ...autoNews.slice(0, 5).map(article => article.id)
+      );
+
+      currentSlide = 0;
+    }
+
+    
     function getFilteredArticles() {
       const query = $("#searchInput").value.trim().toLocaleLowerCase();
+
       let results = articles.filter(article => {
-        const categoryMatch = activeFilter === "all" || article.category === activeFilter;
+        const articleLanguage = getAutoArticleLanguage(article);
+
+        // 自动新闻只显示当前语言对应的内容
+        if (
+          articleLanguage &&
+          articleLanguage !== currentLang
+        ) {
+          return false;
+        }
+
+        const categoryMatch =
+          activeFilter === "all" ||
+          article.category === activeFilter;
+
         const haystack = [
           article.title.zh, article.title.en,
           article.excerpt.zh, article.excerpt.en,
           article.tags.join(" "), article.source
         ].join(" ").toLocaleLowerCase();
+
         return categoryMatch && (!query || haystack.includes(query));
       });
 
@@ -1640,12 +1722,14 @@
       if (currentPage === "home" && activeFilter === "all" && !query) {
         const seen = {};
         const limited = [];
+
         results.forEach(article => {
           if (!seen[article.category]) {
             seen[article.category] = true;
             limited.push(article);
           }
         });
+
         return limited;
       }
 
@@ -2061,6 +2145,7 @@
       return {
         id: `auto-${String(item.id || index).replace(/[^a-zA-Z0-9_-]/g, "-")}`,
         category,
+        language: String(item.language || "").toLowerCase(),
         title: { zh: title, en: title },
         excerpt: { zh: excerpt || title, en: excerpt || title },
         date,
@@ -2101,23 +2186,35 @@
         articles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
         // 轮播优先选取最新新闻，并尽量覆盖不同栏目
-        const autoByCategory = [];
-        const seenCategories = new Set();
+       const autoByCategory = [];
+const seenCategories = new Set();
 
-        for (const article of articles.filter(item => item.externalUrl)) {
-          if (!seenCategories.has(article.category)) {
-            autoByCategory.push(article);
-            seenCategories.add(article.category);
-          }
-        }
+for (const article of articles.filter(
+  item =>
+    item.externalUrl &&
+    getAutoArticleLanguage(item) === currentLang
+)) {
+  if (!seenCategories.has(article.category)) {
+    autoByCategory.push(article);
+    seenCategories.add(article.category);
+  }
+}
 
-        const autoFeatured = autoByCategory.slice(0, 4);
-        for (const article of articles.filter(item => item.externalUrl)) {
-          if (autoFeatured.length >= 4) break;
-          if (!autoFeatured.some(item => item.id === article.id)) {
-            autoFeatured.push(article);
-          }
-        }
+        const autoFeatured = autoByCategory
+  .filter(article => getAutoArticleLanguage(article) === currentLang)
+  .slice(0, 4);
+
+for (const article of articles.filter(
+  item =>
+    item.externalUrl &&
+    getAutoArticleLanguage(item) === currentLang
+)) {
+  if (autoFeatured.length >= 4) break;
+
+  if (!autoFeatured.some(item => item.id === article.id)) {
+    autoFeatured.push(article);
+  }
+}
 
         const fallbackFeatured = ["ai-creative", "green-investment", "museum-digital", "urban-cycling"];
         const selectedFeatured = [
@@ -2131,9 +2228,13 @@
         featuredIds.splice(0, featuredIds.length, ...selectedFeatured);
 
         const autoTicker = articles
-          .filter(item => item.externalUrl)
-          .slice(0, 5)
-          .map(item => item.id);
+  .filter(
+    item =>
+      item.externalUrl &&
+      getAutoArticleLanguage(item) === currentLang
+  )
+  .slice(0, 5)
+  .map(item => item.id);
 
         const selectedTicker = [
           ...autoTicker,
