@@ -1539,8 +1539,15 @@
       startCarousel();
     }
 
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % featuredIds.length;
+        function nextSlide() {
+      const track = $("#featuredTrack");
+      const slideCount = track
+        ? track.querySelectorAll(".featured-slide").length
+        : 0;
+
+      if (slideCount === 0) return;
+
+      currentSlide = (currentSlide + 1) % slideCount;
       updateCarouselPosition();
     }
 
