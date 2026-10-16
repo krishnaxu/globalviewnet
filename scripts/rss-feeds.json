@@ -1,0 +1,20 @@
+
+{
+  "version": 1,
+  "feeds": [
+    {
+      "id": "fierce-biotech",
+      "name": "Fierce Biotech",
+      "url": "https://www.fiercebiotech.com/rss/xml",
+      "enabled": true,
+      "topics": ["biotech", "antibody", "cell-therapy", "gene-therapy", "nucleic-acid"]
+    },
+    {
+      "id": "nih-news",
+      "name": "NIH News Releases",
+      "url": "https://www.nih.gov/news-events/news-releases/rss.xml",
+      "enabled": true,
+      "topics": ["biomedical-research", "biotechnology"]
+    }
+  ]
+}
