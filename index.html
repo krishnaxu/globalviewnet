@@ -2269,6 +2269,11 @@ for (const article of articles.filter(
         ].slice(0, 5);
 
         tickerIds.splice(0, tickerIds.length, ...selectedTicker);
+       
+        renderTicker();
+        renderFeatured();
+        renderArticles();
+        renderTrending();
 
         console.info(`自动新闻已载入：${autoArticles.length} 条`);
       } catch (error) {
