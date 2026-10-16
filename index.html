@@ -1628,29 +1628,28 @@
     
     // 判断自动新闻属于中文还是英文
     function getAutoArticleLanguage(article) {
-      if (!String(article.id || "").startsWith("auto-")) {
-        return null;
-      }
+  if (!String(article.id || "").startsWith("auto-")) {
+    return null;
+  }
 
-      const value = String(
-        article.language || article.lang || ""
-      ).toLowerCase();
+  const value = String(
+    article.language || article.lang || ""
+  ).trim().toLowerCase();
 
-      if (value === "zh" || value.startsWith("zh-")) {
-        return "zh";
-      }
+  if (value === "zh" || value.startsWith("zh-") || value === "chinese") {
+    return "zh";
+  }
 
-      if (value === "en" || value.startsWith("en-")) {
-        return "en";
-      }
+  if (value === "en" || value.startsWith("en-") || value === "english") {
+    return "en";
+  }
 
-      const title = String(
-        article.title?.zh || article.title?.en || ""
-      );
+  const title = String(
+    article.title?.zh || article.title?.en || ""
+  );
 
-      return /[\u3400-\u9fff]/.test(title) ? "zh" : "en";
-    }
-
+  return /[\u3400-\u9fff]/.test(title) ? "zh" : "en";
+}
     // 按当前语言重新选择轮播图和滚动头条
     function refreshAutoNewsIds() {
       const autoNews = articles
@@ -1719,22 +1718,8 @@
       });
 
       // 首页最新资讯：每分类仅展示 1 篇（按日期排序取最新）
-      if (currentPage === "home" && activeFilter === "all" && !query) {
-        const seen = {};
-        const limited = [];
-
-        results.forEach(article => {
-          if (!seen[article.category]) {
-            seen[article.category] = true;
-            limited.push(article);
-          }
-        });
-
-        return limited;
-      }
-
       return results;
-    }
+}
 
     function renderGrid(target, emptyTarget, list) {
       target.replaceChildren();
