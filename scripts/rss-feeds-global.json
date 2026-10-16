@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "feeds": [
+    {
+      "id": "google-news-cn-general",
+      "name": "Google News 中文综合",
+      "url": "https://news.google.com/rss/search?q=%E5%9B%BD%E9%99%85%E6%96%B0%E9%97%BB&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "enabled": true,
+      "topics": ["international", "general"]
+    },
+    {
+      "id": "google-news-cn-technology",
+      "name": "Google News 中文科技",
+      "url": "https://news.google.com/rss/search?q=%E7%A7%91%E6%8A%80&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "enabled": true,
+      "topics": ["technology", "AI", "innovation"]
+    },
+    {
+      "id": "google-news-cn-business",
+      "name": "Google News 中文财经",
+      "url": "https://news.google.com/rss/search?q=%E8%B4%A2%E7%BB%8F&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "enabled": true,
+      "topics": ["business", "economy", "finance"]
+    },
+    {
+      "id": "bbc-world",
+      "name": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "enabled": true,
+      "topics": ["international", "politics", "society"]
+    },
+    {
+      "id": "cnbc-top-news",
+      "name": "CNBC Top News",
+      "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "enabled": true,
+      "topics": ["business", "economy", "finance", "markets"]
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "enabled": true,
+      "topics": ["technology", "startups", "AI", "business"]
+    },
+    {
+      "id": "ars-technica",
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "enabled": true,
+      "topics": ["technology", "science", "cybersecurity"]
+    }
+  ]
+}
