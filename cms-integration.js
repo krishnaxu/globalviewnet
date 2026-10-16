@@ -259,7 +259,7 @@ for (let i = articles.length - 1; i >= 0; i--) {
 
         const img = document.createElement("img");
         img.className = "featured-image";
-        img.src = article.image;
+        window.globalViewSetArticleImage(img, article);
         img.alt = article.alt[currentLang] || "";
         img.loading = index === 0 ? "eager" : "lazy";
 
