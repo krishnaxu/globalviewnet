@@ -127,7 +127,6 @@ function parseFeed(xml) {
 
     const htmlContent =
       block.match(/<(?:\w[\w.-]*:)?encoded\b[^>]*>([\s\S]*?)<\/(?:\w[\w.-]*:)?encoded\s*>/i)?.[1] ||
-      block.match(/<content:encoded\b[^>]*>([\s\S]*?)<\/content:encoded\s*>/i)?.[1] ||
       description ||
       "";
 
