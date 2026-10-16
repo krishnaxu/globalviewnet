@@ -2168,6 +2168,40 @@ async function loadGlobalViewFallbackImages() {
     console.warn("通用图片设置读取失败：", error);
   }
 }
+
+window.globalViewSetArticleImage = function (img, article) {
+  const isAutoNews =
+    String(article?.id || "").startsWith("auto-") ||
+    article?.tags?.includes("Auto News");
+
+  const fallback = isAutoNews
+    ? (
+        article.fallbackImage ||
+        window.globalViewFallbackImages?.[article.category] ||
+        ""
+      )
+    : "";
+
+  const initialImage = article.image || fallback;
+
+  img.onerror = function () {
+    if (fallback && img.dataset.usedFallback !== "true") {
+      img.dataset.usedFallback = "true";
+      article.image = fallback;
+      img.src = fallback;
+      return;
+    }
+
+    img.onerror = null;
+    img.style.visibility = "hidden";
+  };
+
+  if (initialImage) {
+    img.src = initialImage;
+  } else {
+    img.style.visibility = "hidden";
+  }
+};
     
 function classifyAutoNews(item) {
   const text = [
