@@ -1838,6 +1838,10 @@
     function openArticle(id) {
       const article = articleById(id);
       if (!article) return;
+      if (article.externalUrl) {
+  window.open(article.externalUrl, "_blank", "noopener,noreferrer");
+  return;
+}
       currentArticleId = id;
       previousFocus = document.activeElement;
       renderModalArticle(id);
@@ -2023,13 +2027,136 @@
     }, { passive: true });
     $("#backTop").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
+    // 自动新闻：读取 RSS 采集脚本生成的 JSON，转换为首页统一文章结构
+    function classifyAutoNews(item) {
+      const text = `${item.title || ""} ${item.excerpt || ""}`.toLowerCase();
+
+      const rules = [
+        ["tech", /人工智能|ai\b|科技|技术|芯片|机器人|软件|数字化|云计算|半导体|科研|科学|航天|卫星|生物科技|药物|临床试验|technology|artificial intelligence|robot|chip|software|science|biotech|clinical trial/],
+        ["business", /商业|财经|经济|股市|股票|投资|企业|公司|市场|金融|港股|美股|融资|收购|并购|business|finance|market|investment|stock|economy|company/],
+        ["culture", /文化|艺术|博物馆|电影|音乐|出版|设计|展览|文学|文化遗产|culture|museum|art|film|music|design|literature/],
+        ["life", /生活|健康|饮食|旅游|出行|城市|教育|环境|气候|消费|健康|life|health|food|travel|city|education|climate|environment/]
+      ];
+
+      for (const [category, pattern] of rules) {
+        if (pattern.test(text)) return category;
+      }
+      return "tech";
+    }
+
+    function makeAutoNewsArticle(item, index) {
+      if (!item || !item.title || !item.source_url) return null;
+
+      const title = String(item.title).trim();
+      const excerpt = String(item.excerpt || "").replace(/&nbsp;/gi, " ").trim();
+      const category = classifyAutoNews(item);
+      const dateValue = new Date(item.date);
+      const date = Number.isNaN(dateValue.getTime())
+        ? new Date().toISOString().slice(0, 10)
+        : dateValue.toISOString().slice(0, 10);
+
+      const categorySample = articles.find(article => article.category === category)
+        || articles[0];
+
+      return {
+        id: `auto-${String(item.id || index).replace(/[^a-zA-Z0-9_-]/g, "-")}`,
+        category,
+        title: { zh: title, en: title },
+        excerpt: { zh: excerpt || title, en: excerpt || title },
+        date,
+        read: 1,
+        source: String(item.source_name || "News source"),
+        externalUrl: item.source_url,
+        image: categorySample.image,
+        alt: { zh: title, en: title },
+        subtitle: { zh: excerpt || title, en: excerpt || title },
+        body: { zh: [], en: [] },
+        tags: [category, "Auto News"]
+      };
+    }
+
+    async function loadAutoNews() {
+      try {
+        const response = await fetch(`/auto-news.json?t=${Date.now()}`, {
+          cache: "no-store"
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+        if (!Array.isArray(data.items)) {
+          throw new Error("auto-news.json 缺少 items 数组");
+        }
+
+        const existingIds = new Set(articles.map(article => article.id));
+        const autoArticles = data.items
+          .map(makeAutoNewsArticle)
+          .filter(article => article && !existingIds.has(article.id));
+
+        articles.push(...autoArticles);
+
+        // 最新资讯与分类页按日期展示；保留原有示例文章作为补充
+        articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        // 轮播优先选取最新新闻，并尽量覆盖不同栏目
+        const autoByCategory = [];
+        const seenCategories = new Set();
+
+        for (const article of articles.filter(item => item.externalUrl)) {
+          if (!seenCategories.has(article.category)) {
+            autoByCategory.push(article);
+            seenCategories.add(article.category);
+          }
+        }
+
+        const autoFeatured = autoByCategory.slice(0, 4);
+        for (const article of articles.filter(item => item.externalUrl)) {
+          if (autoFeatured.length >= 4) break;
+          if (!autoFeatured.some(item => item.id === article.id)) {
+            autoFeatured.push(article);
+          }
+        }
+
+        const fallbackFeatured = ["ai-creative", "green-investment", "museum-digital", "urban-cycling"];
+        const selectedFeatured = [
+          ...autoFeatured.map(article => article.id),
+          ...fallbackFeatured.filter(id =>
+            !autoFeatured.some(article => article.id === id)
+          )
+        ].slice(0, 4);
+
+        // 数组本身可修改，不依赖变量是否用 const 声明
+        featuredIds.splice(0, featuredIds.length, ...selectedFeatured);
+
+        const autoTicker = articles
+          .filter(item => item.externalUrl)
+          .slice(0, 5)
+          .map(item => item.id);
+
+        const selectedTicker = [
+          ...autoTicker,
+          ...["ai-creative", "green-investment", "museum-digital"]
+            .filter(id => !autoTicker.includes(id))
+        ].slice(0, 5);
+
+        tickerIds.splice(0, tickerIds.length, ...selectedTicker);
+
+        console.info(`自动新闻已载入：${autoArticles.length} 条`);
+      } catch (error) {
+        console.error("自动新闻加载失败，保留现有首页内容：", error);
+      }
+    }
+
     // 初始化：优先恢复用户语言与主题偏好
-    function init() {
+    async function init() {
       initTheme();
       let savedLang = "zh";
       try { savedLang = localStorage.getItem("gp-lang") || "zh"; } catch (_) {}
       if (!translations[savedLang]) savedLang = "zh";
       updateDateLabel();
+      await loadAutoNews();
       renderTicker();
       renderFeatured();
       renderArticles();
