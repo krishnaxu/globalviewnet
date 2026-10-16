@@ -2,13 +2,13 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const API = "https://commons.wikimedia.org/w/api.php";
-const OUT = "public/images/library/business";
+const OUT = "public/images/library/culture";
 const USER_AGENT = "GlobalViewNet/1.0 (website image library)";
 
 const params = new URLSearchParams({
   action: "query",
   generator: "search",
- gsrsearch: "business",
+ gsrsearch: "culture",
   gsrnamespace: "6",
   gsrlimit: "20",
   prop: "imageinfo",
@@ -65,7 +65,7 @@ for (const page of pages) {
   else if (contentType.includes("image/avif")) extension = ".avif";
   else continue;
 
-  const filename = `business-${records.length + 1}${extension}`;
+  const filename = `culture-${records.length + 1}${extension}`;
   const buffer = Buffer.from(await imageResponse.arrayBuffer());
 
   if (buffer.length === 0) continue;
