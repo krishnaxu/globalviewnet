@@ -42,4 +42,4 @@ for (const page of pages) {
 
   const meta = info.extmetadata || {};
   const license = meta.LicenseShortName?.value || "";
-  const allowed = /CC0|CC BY|CC BY-SA|Public domain
+ const allowed = /^(CC0|CC BY(?:-SA)?(?:\s|$)|Public domain)/i.test(license);
