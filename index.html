@@ -1651,44 +1651,69 @@
   return /[\u3400-\u9fff]/.test(title) ? "zh" : "en";
 }
     // 按当前语言重新选择轮播图和滚动头条
-    function refreshAutoNewsIds() {
-      const autoNews = articles
-        .filter(article =>
-          getAutoArticleLanguage(article) === currentLang
-        )
-        .sort((a, b) => new Date(b.date) - new Date(a.date));
+   
+function refreshAutoNewsIds() {
+  const autoNews = articles
+    .filter(article =>
+      getAutoArticleLanguage(article) === currentLang
+    )
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-      if (autoNews.length === 0) return;
+  const featured = [];
+  const preferredCategories = ["tech", "business", "culture", "life"];
 
-      const featured = [];
-      const usedCategories = new Set();
+  // 优先为四个分类各选一篇最新新闻
+  preferredCategories.forEach(category => {
+    const article = autoNews.find(
+      item => item.category === category
+    );
 
-      autoNews.forEach(article => {
-        if (
-          featured.length < 4 &&
-          !usedCategories.has(article.category)
-        ) {
-          featured.push(article.id);
-          usedCategories.add(article.category);
-        }
-      });
-
-      autoNews.forEach(article => {
-        if (featured.length < 4 && !featured.includes(article.id)) {
-          featured.push(article.id);
-        }
-      });
-
-      featuredIds.splice(0, featuredIds.length, ...featured);
-      tickerIds.splice(
-        0,
-        tickerIds.length,
-        ...autoNews.slice(0, 5).map(article => article.id)
-      );
-
-      currentSlide = 0;
+    if (article) {
+      featured.push(article.id);
     }
+  });
 
+  // 某个分类没有新闻时，用其他新闻补足
+  autoNews.forEach(article => {
+    if (featured.length < 4 && !featured.includes(article.id)) {
+      featured.push(article.id);
+    }
+  });
+
+  // 自动新闻不足四篇时，使用原有文章补足
+  const fallbackFeatured = [
+    "ai-creative",
+    "green-investment",
+    "museum-digital",
+    "urban-cycling"
+  ];
+
+  fallbackFeatured.forEach(id => {
+    if (featured.length < 4 && !featured.includes(id)) {
+      featured.push(id);
+    }
+  });
+
+  featuredIds.splice(0, featuredIds.length, ...featured.slice(0, 4));
+
+  // 顶部滚动新闻仍然最多显示五篇
+  const ticker = autoNews.slice(0, 5).map(article => article.id);
+  const fallbackTicker = [
+    "ai-creative",
+    "green-investment",
+    "museum-digital"
+  ];
+
+  fallbackTicker.forEach(id => {
+    if (ticker.length < 5 && !ticker.includes(id)) {
+      ticker.push(id);
+    }
+  });
+
+  tickerIds.splice(0, tickerIds.length, ...ticker.slice(0, 5));
+
+  currentSlide = 0;
+}
     
     function getFilteredArticles() {
       const query = $("#searchInput").value.trim().toLocaleLowerCase();
@@ -1717,9 +1742,23 @@
         return categoryMatch && (!query || haystack.includes(query));
       });
 
-      // 首页最新资讯：每分类仅展示 1 篇（按日期排序取最新）
+            // 首页最新资讯：每分类仅展示 1 篇（按日期排序取最新）
+      if (currentPage === "home" && activeFilter === "all" && !query) {
+        const seen = {};
+        const limited = [];
+
+        results.forEach(article => {
+          if (!seen[article.category]) {
+            seen[article.category] = true;
+            limited.push(article);
+          }
+        });
+
+        return limited;
+      }
+
       return results;
-}
+    }
 
     function renderGrid(target, emptyTarget, list) {
       target.replaceChildren();
@@ -2097,21 +2136,23 @@
     $("#backTop").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
     // 自动新闻：读取 RSS 采集脚本生成的 JSON，转换为首页统一文章结构
-    function classifyAutoNews(item) {
-      const text = `${item.title || ""} ${item.excerpt || ""}`.toLowerCase();
+    
+function classifyAutoNews(item) {
+  const text = `${item.title || ""} ${item.excerpt || ""}`.toLowerCase();
 
-      const rules = [
-        ["tech", /人工智能|ai\b|科技|技术|芯片|机器人|软件|数字化|云计算|半导体|科研|科学|航天|卫星|生物科技|药物|临床试验|technology|artificial intelligence|robot|chip|software|science|biotech|clinical trial/],
-        ["business", /商业|财经|经济|股市|股票|投资|企业|公司|市场|金融|港股|美股|融资|收购|并购|business|finance|market|investment|stock|economy|company/],
-        ["culture", /文化|艺术|博物馆|电影|音乐|出版|设计|展览|文学|文化遗产|culture|museum|art|film|music|design|literature/],
-        ["life", /生活|健康|饮食|旅游|出行|城市|教育|环境|气候|消费|健康|life|health|food|travel|city|education|climate|environment/]
-      ];
+  const rules = [
+    ["culture", /文化|艺术|博物馆|电影|音乐|出版|设计|展览|文学|文化遗产|culture|museum|art|film|music|design|literature/],
+    ["life", /生活|健康|饮食|旅游|出行|城市|教育|环境|气候|消费|life|health|food|travel|city|education|climate|environment/],
+    ["tech", /人工智能|ai\b|科技|技术|芯片|机器人|软件|数字化|云计算|半导体|科研|科学|航天|卫星|生物科技|药物|临床试验|technology|artificial intelligence|robot|chip|software|science|biotech|clinical trial/],
+    ["business", /商业|财经|经济|股市|股票|投资|企业|公司|市场|金融|港股|美股|融资|收购|并购|business|finance|market|investment|stock|economy|company/]
+  ];
 
-      for (const [category, pattern] of rules) {
-        if (pattern.test(text)) return category;
-      }
-      return "tech";
-    }
+  for (const [category, pattern] of rules) {
+    if (pattern.test(text)) return category;
+  }
+
+  return "tech";
+}
 
     function makeAutoNewsArticle(item, index) {
       if (!item || !item.title || !item.source_url) return null;
@@ -2128,7 +2169,7 @@
         || articles[0];
 
       return {
-        id: `auto-${String(item.id || index).replace(/[^a-zA-Z0-9_-]/g, "-")}`,
+        id: `auto-${index}-${String(item.id || "").replace(/[^a-zA-Z0-9_-]/g, "-")}`,
         category,
         language: String(item.language || "").toLowerCase(),
         title: { zh: title, en: title },
