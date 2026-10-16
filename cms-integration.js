@@ -140,8 +140,11 @@
           post.date ||
           "",
 
-        read: 3,
-        source: post.source_name || "Global View",
+        
+read: 3,
+source: post.source_name || "Global View",
+origin: "cms",
+
 
         image: post.cover_image ||
           "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80",
