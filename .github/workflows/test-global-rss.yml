@@ -1,0 +1,32 @@
+name: Test Global RSS Sources
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-global-rss:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Test global RSS sources
+        run: node scripts/test-global-rss.mjs
+
+      - name: Upload RSS test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: global-rss-test-results
+          path: data/global-rss-test-results.json
+          if-no-files-found: ignore
+          retention-days: 7
