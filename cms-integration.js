@@ -101,7 +101,7 @@
     for (const post of data.posts) {
       if (!post.slug) continue;
 
-      const id = `cms-${post.slug}`;
+    const id = `cms-${post.slug}`;
       const titleZh = post.title_zh || post.title || post.slug;
       const titleEn = post.title_en || titleZh;
       const excerptZh = post.excerpt_zh || post.excerpt || "";
