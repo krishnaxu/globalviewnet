@@ -2138,10 +2138,15 @@ function refreshAutoNewsIds() {
     // 自动新闻：读取 RSS 采集脚本生成的 JSON，转换为首页统一文章结构
     
 function classifyAutoNews(item) {
-  const text = `${item.title || ""} ${item.excerpt || ""}`.toLowerCase();
+  const text = [
+  item.title || "",
+  item.excerpt || "",
+  item.source_name || "",
+  item.source_url || ""
+].join(" ").toLowerCase();
 
   const rules = [
-    ["culture", /文化|艺术|博物馆|电影|音乐|出版|设计|展览|文学|文化遗产|culture|museum|art|film|music|design|literature/],
+    ["culture", /文化|艺术|博物馆|电影|音乐|出版|设计|展览|文学|文化遗产|culture|museum|\bart\b|film|music|design|literature|theatre|theater|novel|book/],
     ["life", /生活|健康|饮食|旅游|出行|城市|教育|环境|气候|消费|life|health|food|travel|city|education|climate|environment/],
     ["tech", /人工智能|ai\b|科技|技术|芯片|机器人|软件|数字化|云计算|半导体|科研|科学|航天|卫星|生物科技|药物|临床试验|technology|artificial intelligence|robot|chip|software|science|biotech|clinical trial/],
     ["business", /商业|财经|经济|股市|股票|投资|企业|公司|市场|金融|港股|美股|融资|收购|并购|business|finance|market|investment|stock|economy|company/]
