@@ -1491,7 +1491,7 @@
 
         const img = document.createElement("img");
         img.className = "featured-image";
-        img.src = article.image;
+        window.globalViewSetArticleImage(img, article);
         img.alt = article.alt[currentLang];
 
         const content = document.createElement("div");
