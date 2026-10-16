@@ -1,7 +1,10 @@
+
 name: Build Image Library
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "30 18 * * *"
 
 permissions:
   contents: write
@@ -9,7 +12,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
@@ -31,6 +34,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/images/library/
           if ! git diff --cached --quiet; then
-            git commit -m "Add technology image library"
+            git commit -m "Update image library"
             git push origin HEAD:main
+          else
+            echo "No image library changes to commit."
           fi
