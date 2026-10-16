@@ -1,0 +1,32 @@
+
+name: RSS News Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run RSS fetcher in dry-run mode
+        run: node scripts/fetch-rss-news.mjs
+
+      - name: Upload RSS candidates
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rss-news-test-results
+          path: data/rss-candidates.json
+          if-no-files-found: ignore
+          retention-days: 7
