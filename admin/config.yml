@@ -133,3 +133,64 @@ collections:
         modes:
           - rich_text
           - raw
+
+  - name: "auto_news"
+    label: "自动新闻管理"
+    label_singular: "自动新闻"
+    folder: "content/auto-news"
+    create: true
+    identifier_field: "slug"
+    slug: "{{fields.slug}}"
+    summary: "{{title}}"
+    fields:
+      - label: "新闻标识（用于网址）"
+        name: "slug"
+        widget: "string"
+        required: true
+
+      - label: "新闻语言"
+        name: "language"
+        widget: "select"
+        options:
+          - label: "中文"
+            value: "zh"
+          - label: "English"
+            value: "en"
+        default: "zh"
+        required: true
+
+      - label: "新闻标题"
+        name: "title"
+        widget: "string"
+        required: true
+
+      - label: "新闻摘要"
+        name: "excerpt"
+        widget: "text"
+        required: false
+
+      - label: "发布日期"
+        name: "date"
+        widget: "datetime"
+        required: true
+
+      - label: "媒体来源"
+        name: "source_name"
+        widget: "string"
+        required: true
+
+      - label: "原文链接"
+        name: "source_url"
+        widget: "string"
+        required: true
+
+      - label: "是否发布"
+        name: "published"
+        widget: "boolean"
+        default: true
+        required: true
+
+      - label: "新闻正文"
+        name: "body"
+        widget: "markdown"
+        required: false
