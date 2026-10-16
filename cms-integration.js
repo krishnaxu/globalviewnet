@@ -433,7 +433,12 @@
     console.info(
       `Global View：已加载 ${data.posts.length} 篇 CMS 文章`
     );
-    } catch (error) {
-    console.error("Global View CMS 接入失败：", error);
-  }
+    
+} catch (error) {
+  console.error("Global View CMS 接入失败：", error);
+
+  // CMS 加载失败时，恢复页面显示，避免主体一直隐藏。
+  document.documentElement.classList.remove("cms-loading");
+}
 })();
+
