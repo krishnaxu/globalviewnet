@@ -2170,24 +2170,40 @@ async function loadGlobalViewFallbackImages() {
 }
 
 window.globalViewSetArticleImage = function (img, article) {
-  const isAutoNews =
-    String(article?.id || "").startsWith("auto-") ||
-    article?.tags?.includes("Auto News");
+  const category = article?.category || "tech";
+  const fallback =
+    article?.fallbackImage ||
+    window.globalViewFallbackImages?.[category] ||
+    "";
 
-  const fallback = isAutoNews
-    ? (
-        article.fallbackImage ||
-        window.globalViewFallbackImages?.[article.category] ||
-        ""
-      )
-    : "";
+  const folder = `/images/library/${category}`;
+  let triedLocal = false;
+  let triedFallback = false;
 
-  const initialImage = article.image || fallback;
+  img.onerror = async function () {
+    if (!triedLocal) {
+      triedLocal = true;
 
-  img.onerror = function () {
-    if (fallback && img.dataset.usedFallback !== "true") {
-      img.dataset.usedFallback = "true";
-      article.image = fallback;
+      try {
+        const response = await fetch(`${folder}/sources.json`);
+        if (response.ok) {
+          const records = await response.json();
+          const available = records.filter(item => item.filename);
+
+          if (available.length) {
+            const item =
+              available[Math.floor(Math.random() * available.length)];
+            img.src = `${folder}/${item.filename}`;
+            return;
+          }
+        }
+      } catch (error) {
+        console.warn("本地图片库读取失败：", error);
+      }
+    }
+
+    if (!triedFallback && fallback) {
+      triedFallback = true;
       img.src = fallback;
       return;
     }
@@ -2196,13 +2212,9 @@ window.globalViewSetArticleImage = function (img, article) {
     img.style.visibility = "hidden";
   };
 
-  if (initialImage) {
-    img.src = initialImage;
-  } else {
-    img.style.visibility = "hidden";
-  }
+  img.style.visibility = "visible";
+  img.src = article?.image || fallback || `${folder}/sources.json`;
 };
-    
 function classifyAutoNews(item) {
   const text = [
   item.title || "",
