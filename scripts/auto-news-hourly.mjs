@@ -10,21 +10,23 @@ const MAX_AGE_HOURS = 72;
 const MAX_PER_FEED = 20;
 
 const FEEDS = [
+ 
   {
-    name: "Google News 中文国际",
+    name: "中新网即时新闻",
     language: "zh",
-    url: "https://news.google.com/rss/search?q=%E5%9B%BD%E9%99%85%E6%96%B0%E9%97%BB&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+    url: "https://www.chinanews.com.cn/rss/scroll-news.xml"
   },
   {
-    name: "Google News 中文科技",
+    name: "中新网国际新闻",
     language: "zh",
-    url: "https://news.google.com/rss/search?q=%E7%A7%91%E6%8A%80&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+    url: "https://www.chinanews.com.cn/rss/world.xml"
   },
   {
-    name: "Google News 中文财经",
+    name: "中新网财经新闻",
     language: "zh",
-    url: "https://news.google.com/rss/search?q=%E8%B4%A2%E7%BB%8F&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+    url: "https://www.chinanews.com.cn/rss/finance.xml"
   },
+
   {
     name: "BBC World",
     language: "en",
