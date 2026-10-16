@@ -1,6 +1,346 @@
 {
-  "generated_at": "2026-10-16T16:42:48.646Z",
+  "generated_at": "2026-10-16T18:47:02.756Z",
   "items": [
+    {
+      "id": "katie-zacharia-out-as-trump-s-white-house-pre-ab445f8b5b12",
+      "language": "en",
+      "title": "Katie Zacharia out as Trump's White House press secretary",
+      "excerpt": "Zacharia was on shaky ground from her first White House press conference, and over questions about her claims of being a lawyer despite not passing a bar exam.",
+      "date": "2026-10-16T18:40:26.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/16/trump-katie-zacharia-white-house.html",
+      "image": ""
+    },
+    {
+      "id": "trump-says-white-house-didn-t-order-starlink--895f5284a1fb",
+      "language": "en",
+      "title": "Trump says White House didn't order Starlink restrictions in Ukraine",
+      "excerpt": "Ukrainian officials complained this week that SpaceX had limited internet connectivity without advance notice.",
+      "date": "2026-10-16T18:27:02.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/16/trump-denies-musk-claim-he-ordered-starlink-restrictions-in-ukraine.html",
+      "image": ""
+    },
+    {
+      "id": "the-austin-powers-steamroller-how-to-trade-co-c246cb3c5802",
+      "language": "en",
+      "title": "The Austin Powers steamroller: How to trade CoreWeave's slow moving crisis",
+      "excerpt": "After a 27.5% drop from last Friday's close to this Thursday morning's 52-week lows, followed by a 17% rebound, equity traders holding CoreWeave are dazed.",
+      "date": "2026-10-16T18:24:35.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/16/playing-the-coreweave-disconnect.html",
+      "image": ""
+    },
+    {
+      "id": "toxic-algorithms-wouldn-t-let-them-go-now-aus-6a78c52774f4",
+      "language": "en",
+      "title": "Toxic algorithms wouldn't let them go - now Australia wants an off switch",
+      "excerpt": "Australia has proposed a switch to force social media platforms to let users turn off recommended content.",
+      "date": "2026-10-16T18:11:29.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwr7y8er1n8vo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/21ca/live/8f226840-c966-11f1-a64c-550be9e3c66b.png"
+    },
+    {
+      "id": "debt-is-eating-up-a-bigger-chunk-of-your-rais-eff3f881e79f",
+      "language": "en",
+      "title": "Debt is eating up a bigger chunk of your raise, research shows",
+      "excerpt": "New research finds debt payments rose far faster than estimated real household income, absorbing about half of a one-earner household's gains.",
+      "date": "2026-10-16T18:08:00.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/16/debt-payments-rise-more-than-income.html",
+      "image": ""
+    },
+    {
+      "id": "analysis-why-a-2-trillion-deficit-and-5-treas-d5022a149aeb",
+      "language": "en",
+      "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+      "excerpt": "Treasury yields above 5% are raising borrowing costs for households and the federal government, highlighting the challenge of financing $2 trillion deficits.",
+      "date": "2026-10-16T18:04:20.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
+      "image": ""
+    },
+    {
+      "id": "u-s-budget-deficit-swells-to-almost-2-trillio-7f8dfcf8c9f5",
+      "language": "en",
+      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+      "excerpt": "The Treasury Department published the U.S. budget deficit for the 2026 fiscal year.",
+      "date": "2026-10-16T18:00:15.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+      "image": ""
+    },
+    {
+      "id": "india-becomes-the-latest-country-to-report-ro-8ffbbf24c13a",
+      "language": "en",
+      "title": "India becomes the latest country to report rogue AI agent activity",
+      "excerpt": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
+      "date": "2026-10-16T17:52:24.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "image": ""
+    },
+    {
+      "id": "nba-tightens-betting-rules-develops-ai-to-fla-4ec72e677a20",
+      "language": "en",
+      "title": "NBA tightens betting rules, develops AI to flag suspicious wagers",
+      "excerpt": "The NBA is tightening restrictions on bets and deploying AI to help identify suspicious wagering, according to two documents obtained by CNBC.",
+      "date": "2026-10-16T17:50:50.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/16/nba-tightens-betting-rules-develops-ai-to-flag-suspicious-wagers.html",
+      "image": ""
+    },
+    {
+      "id": "沙特主导联军称拦截3枚导弹和4架无人机-31145d4f237a",
+      "language": "zh",
+      "title": "沙特主导联军称拦截3枚导弹和4架无人机",
+      "excerpt": "沙特阿拉伯主导的多国联军发言人图尔基·马利基16日在社交媒体上说，联军当天已拦截并摧毁3枚导弹和4架无人机。",
+      "date": "2026-10-16T17:22:23.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-17/10716048.shtml",
+      "image": ""
+    },
+    {
+      "id": "特朗普称美国可能会对伊朗镐山核设施发动打击-e5844d73e5bc",
+      "language": "zh",
+      "title": "特朗普称美国可能会对伊朗镐山核设施发动打击",
+      "excerpt": "美国总统特朗普15日在白宫接受采访时说，美国可能会对伊朗核设施再次发动打击，其中包括镐山的地下核设施。",
+      "date": "2026-10-16T17:19:13.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-17/10716047.shtml",
+      "image": ""
+    },
+    {
+      "id": "中新健康-老人大量囤积废品被儿女-举报-医生紧急提醒-d3dc5de11526",
+      "language": "zh",
+      "title": "中新健康｜老人大量囤积废品被儿女“举报”，医生紧急提醒！",
+      "excerpt": "中新网北京10月17日电(罗春昊)近日，有媒体报道，江西抚州一男子向消防救援部门求助，其母亲长期在家中、楼道大量堆积废品，父亲因此肺部感染住院，母亲之前也同样因感染住过院。该男子多次劝阻无效，无奈选择“举报”母亲。",
+      "date": "2026-10-16T17:16:39.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/jk/2026/10-17/10716041.shtml",
+      "image": ""
+    },
+    {
+      "id": "中央音乐学院举行-10-15-艺术节开幕音乐会-60aa8b1a018f",
+      "language": "zh",
+      "title": "中央音乐学院举行“10·15”艺术节开幕音乐会",
+      "excerpt": "中新网北京10月17日电 10月15日晚，2026中俄教育年·中央音乐学院“10·15”艺术节开幕式交响音乐会在中央音乐学院歌剧音乐厅上演。圣彼得堡国立音乐学院院长、俄罗斯功勋艺术家阿列克谢·瓦西里耶夫执棒中央音乐学院交响乐团，以中俄当代新作与经典民族器乐协奏曲，为第八届“10·15”艺术节拉开帷幕。",
+      "date": "2026-10-16T17:13:32.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/10-17/10716036.shtml",
+      "image": ""
+    },
+    {
+      "id": "樟树-药交会-观察-05后-大学生让中医药-潮起来-29a8820547d6",
+      "language": "zh",
+      "title": "樟树“药交会”观察：“05后”大学生让中医药“潮起来”",
+      "excerpt": "中新网江西樟树10月17日电 (王剑)在16日开幕的江西樟树“药交会”上，一批青年学子将本草智慧融入美妆、糕点、标本挂画之中，以鲜活创意为古老中医药赋予新潮表达。“05后”中药学专业大学生把本草知识转化为可看、可尝、可用的文创与日用产品，让中医药走出典籍药柜，走进大众日常。",
+      "date": "2026-10-16T17:12:06.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/10-17/10716032.shtml",
+      "image": ""
+    },
+    {
+      "id": "哈尔滨芭蕾舞团原创芭蕾舞剧-我们的北大荒-建组启动-9b74a6290e05",
+      "language": "zh",
+      "title": "哈尔滨芭蕾舞团原创芭蕾舞剧《我们的北大荒》建组启动",
+      "excerpt": "中新网哈尔滨10月17日电 (王琳 刘倚辰)16日，原创芭蕾舞剧《我们的北大荒》建组启动仪式在位于哈尔滨的北大荒博物馆举行。该剧呈现了拓荒者把荒芜沼泽建设成中华大粮仓的峥嵘岁月，填补了哈尔滨垦荒题材原创芭蕾舞剧的创作空白。",
+      "date": "2026-10-16T17:11:06.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cul/2026/10-17/10716031.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国清洁能源装备供给能力持续跃升-b5a46a731f78",
+      "language": "zh",
+      "title": "中国清洁能源装备供给能力持续跃升",
+      "excerpt": "中新网四川德阳10月17日电 中国机械工业联合会党委书记、会长徐念沙在2026世界清洁能源装备大会上表示，中国清洁能源装备供给能力持续跃升，今年上半年，核发电机组、水轮发电机组、风力发电机组产量同比分别增长92.0%、51.9%、11.5%。",
+      "date": "2026-10-16T17:09:40.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-17/10716029.shtml",
+      "image": ""
+    },
+    {
+      "id": "河南漯河港中心港区召陵作业区一期工程开工-119affe94410",
+      "language": "zh",
+      "title": "河南漯河港中心港区召陵作业区一期工程开工",
+      "excerpt": "中新网漯河10月17日电 (记者 王宇)10月16日，河南漯河港中心港区召陵作业区工程(一期)项目正式开工，这标志着沙颍河航运枢纽建设再提速。",
+      "date": "2026-10-16T17:09:04.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/10-17/10716028.shtml",
+      "image": ""
+    },
+    {
+      "id": "rfk-jr-proposes-fda-look-the-other-way-on-unp-1de3881c92dc",
+      "language": "en",
+      "title": "RFK Jr. proposes FDA look the other way on unproven peptides, report says",
+      "excerpt": "FDA scientists said none of the popular drugs have been proven safe or effective.",
+      "date": "2026-10-16T17:05:59.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/health/2026/10/rfk-jr-proposes-fda-look-the-other-way-on-unproven-peptides-report-says/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/03/GettyImages-2268348621-500x500.jpg"
+    },
+    {
+      "id": "天津reits研究院揭牌-金融创新赋能实体经济发展-6cd1d447280c",
+      "language": "zh",
+      "title": "天津REITs研究院揭牌 金融创新赋能实体经济发展",
+      "excerpt": "中新网天津10月17日电 (孙翼飞 周亚强)2026天津五大道金融论坛16日在天津大礼堂举行，天津REITs研究院于当日正式揭牌。",
+      "date": "2026-10-16T17:05:16.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-17/10716026.shtml",
+      "image": ""
+    },
+    {
+      "id": "黑龙江秋粮收购有序展开-1271亿斤仓容待-秋粮归仓-c731c8bb620a",
+      "language": "zh",
+      "title": "黑龙江秋粮收购有序展开 1271亿斤仓容待“秋粮归仓”",
+      "excerpt": "中新网哈尔滨10月17日电(记者 王妮娜)10月16日是第46个世界粮食日，黑龙江2026年世界粮食日和全国粮食安全宣传周主会场活动在哈尔滨举办。记者从活动上获悉，目前全省粮食收获已过半，全省已准备仓容1271亿斤，农发行准备贷款资金900亿元，交通、铁路等部门全力保障粮食运输，秋粮收购正有序展开。",
+      "date": "2026-10-16T17:04:24.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-17/10716025.shtml",
+      "image": ""
+    },
+    {
+      "id": "青海-青ba-群众篮球联赛总决赛打响-c0bb998a80ff",
+      "language": "zh",
+      "title": "青海“青BA”群众篮球联赛总决赛打响",
+      "excerpt": "中新网西宁10月17日电 (记者 孙睿)16日晚，2026年青海省“青BA”群众篮球联赛总决赛在西宁打响。8支代表队、130余名群众球员，将在为期5天的比赛里进行20场角逐，争夺总冠军。",
+      "date": "2026-10-16T17:03:44.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/10-17/10716024.shtml",
+      "image": ""
+    },
+    {
+      "id": "here-s-who-netflix-just-brought-in-to-run-con-00bf2016198f",
+      "language": "en",
+      "title": "Here's who Netflix just brought in to run content — and what it means for the streamer",
+      "excerpt": "Peter Rice brings a wealth of experience in TV and film, including scripted and unscripted shows, live sports, prestige television and theatrical distribution.",
+      "date": "2026-10-16T17:02:50.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/16/netflix-peter-rice-chief-content-officer.html",
+      "image": ""
+    },
+    {
+      "id": "海内外专家学者福州研讨余潜士教育思想-648f6ce977e5",
+      "language": "zh",
+      "title": "海内外专家学者福州研讨余潜士教育思想",
+      "excerpt": "中新网福州10月17日电 (叶秋云)16日，余潜士教育思想座谈会在福建福州举行，海内外专家学者、一线教育工作者、先贤后裔等200余人齐聚一堂，以清代闽学先贤余潜士的耕读教化思想为切入点，共探传统智慧与现代教育融合的可行路径。座谈会由福建省炎黄文化研究会副会长徐德金主持。",
+      "date": "2026-10-16T17:02:48.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-17/10716020.shtml",
+      "image": ""
+    },
+    {
+      "id": "prediction-market-odds-on-tesla-spacex-merger-5c23513ce44d",
+      "language": "en",
+      "title": "Prediction market odds on Tesla-SpaceX merger are above 50% for early 2027",
+      "excerpt": "Kalshi odds for a Tesla-SpaceX merger rose above 50% for early 2027 as Barclays outlined how a deal could work.",
+      "date": "2026-10-16T17:02:40.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/16/tesla-spacex-merger-odds-rise-on-kalshi.html",
+      "image": ""
+    },
+    {
+      "id": "百余幅诗歌珍贵手稿在沪展出-0281f2440265",
+      "language": "zh",
+      "title": "百余幅诗歌珍贵手稿在沪展出",
+      "excerpt": "中新网上海10月17日电 (记者 陈静)“天际线上的诗”——中国诗人手稿展(下称：展览)16日在沪启幕，汇集58位当代汉语诗人，展出百余幅珍贵手稿，串联起四十余年当代新诗发展脉络，是近年来国内规模与文献分量兼具的诗歌手稿公共大展。",
+      "date": "2026-10-16T16:59:40.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cul/2026/10-17/10716019.shtml",
+      "image": ""
+    },
+    {
+      "id": "长征胜利90周年-长征路上的民族团结-主题展亮相四川博物院-f521a3b817f3",
+      "language": "zh",
+      "title": "（长征胜利90周年）“长征路上的民族团结” 主题展亮相四川博物院",
+      "excerpt": "中新网成都10月17日电 (单鹏)“万水千山情深意长——长征路上的民族团结”主题展览16日在位于成都的四川博物院开展。",
+      "date": "2026-10-16T16:58:30.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-17/10716014.shtml",
+      "image": ""
+    },
+    {
+      "id": "大型音-舞-诗晚会-长征之路-第二轮公演在穗举行-17f1754e0d74",
+      "language": "zh",
+      "title": "大型音·舞·诗晚会《长征之路》第二轮公演在穗举行",
+      "excerpt": "中新网广州10月17日电 (记者 王坚)今年是中国共产党成立105周年、中国工农红军长征胜利90周年。为弘扬伟大长征精神，大型音·舞·诗公益晚会《长征之路》第二轮公演16日在广州正佳大剧院举行。",
+      "date": "2026-10-16T16:56:19.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cul/2026/10-17/10716013.shtml",
+      "image": ""
+    },
+    {
+      "id": "广东省退役军人应急救助资金累计发放突破3亿元-1717788ec18a",
+      "language": "zh",
+      "title": "广东省退役军人应急救助资金累计发放突破3亿元",
+      "excerpt": "中新网广州10月17日电 (记者 程景伟)据广东省退役军人事务厅16日消息，截至2026年10月10日，广东省退役军人应急救助资金累计发放金额突破3亿元，覆盖全省各地困难退役军人和其他优抚对象超过1.24万人。",
+      "date": "2026-10-16T16:54:13.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-17/10716018.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国官方确定14个-人工智能-文化和旅游-试点项目-292b0929cada",
+      "language": "zh",
+      "title": "中国官方确定14个“人工智能+文化和旅游”试点项目",
+      "excerpt": "中新社北京10月16日电 (记者 应妮)为进一步推进人工智能技术在文化和旅游领域融合应用，中国文化和旅游部16日正式公布“人工智能+文化和旅游”的14个应用试点立项名单。",
+      "date": "2026-10-16T16:47:29.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-17/10716015.shtml",
+      "image": ""
+    },
+    {
+      "id": "第二十六届中国国际工业博览会在上海闭幕-d8da924ecc62",
+      "language": "zh",
+      "title": "第二十六届中国国际工业博览会在上海闭幕",
+      "excerpt": "中新社上海10月16日电 (记者 郑莹莹)以“智能经济 智造无界”为主题的第二十六届中国国际工业博览会(工博会)16日在上海闭幕。",
+      "date": "2026-10-16T16:46:53.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-17/10716016.shtml",
+      "image": ""
+    },
+    {
+      "id": "国际自行车联盟主席-将增加在华赛事数量-提升民众参与度-cad9b6e7fd09",
+      "language": "zh",
+      "title": "国际自行车联盟主席：将增加在华赛事数量，提升民众参与度",
+      "excerpt": "中新社上海10月16日电 (记者 缪璐)2026天梭国际自行车联盟(UCI)场地自行车世界锦标赛正在上海举行，国际自行车联盟主席大卫·拉帕蒂安(David Lappartient)16日受访时表示，UCI已将提升亚洲地区参与度作为全球战略重点，未来将进一步增加在华赛事数量，提升中国民众参与度。",
+      "date": "2026-10-16T16:46:15.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/10-17/10716017.shtml",
+      "image": ""
+    },
+    {
+      "id": "错估震级9-9级-日本气象厅两度召开记者会致歉-4e246c796de5",
+      "language": "zh",
+      "title": "错估震级9.9级 日本气象厅两度召开记者会致歉",
+      "excerpt": "中新社东京10月16日电 (记者 朱晨曦)针对16日中午错误推测发生9.9级地震并发出相应警报一事，日本气象厅当日下午两度召开记者会致歉。日本气象厅表示，此次误发预警可能是震源位置推定错误所致。",
+      "date": "2026-10-16T16:45:39.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-17/10716023.shtml",
+      "image": ""
+    },
+    {
+      "id": "马来西亚第三季度经济同比增5-3-6cee9b4b148b",
+      "language": "zh",
+      "title": "马来西亚第三季度经济同比增5.3%",
+      "excerpt": "中新社吉隆坡10月16日电 (记者 刘育英)马来西亚统计局16日公布的国内生产总值(GDP)初步估算数据显示，2026年第三季度马来西亚GDP同比增长5.3%，增速较第二季度的6%有所放缓；前三季度GDP同比增长5.5%，高于2025年同期的4.8%。",
+      "date": "2026-10-16T16:44:51.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-17/10716033.shtml",
+      "image": ""
+    },
+    {
+      "id": "报告指上半年全球人形机器人出货量超2-2万台-9dcd5b0ca0fc",
+      "language": "zh",
+      "title": "报告指上半年全球人形机器人出货量超2.2万台",
+      "excerpt": "中新社杭州10月16日电 (钱晨菲)16日在杭州举办的国际电信联盟具身智能标准焦点组2026年第三次会议及具身智能标准高级研修班上，中国信息通信研究院人工智能研究所联合清华大学电子工程系、具身智能测试实验室，共同发布《具身智能发展报告(2026年)》(英文版)，系统梳理当前具身智能产业发展情况。",
+      "date": "2026-10-16T16:43:23.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-17/10716044.shtml",
+      "image": ""
+    },
     {
       "id": "a-nvidia-insider-turned-vc-on-why-robotics-ha-68b9f741f3df",
       "language": "en",
@@ -29,6 +369,16 @@
       "date": "2026-10-16T16:27:04.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/10-17/10716042.shtml",
+      "image": ""
+    },
+    {
+      "id": "schwab-to-create-tax-aware-strategy-that-s-be-caa944834d6a",
+      "language": "en",
+      "title": "Schwab to create 'tax-aware' strategy that's been attracting billions from wealthy investors",
+      "excerpt": "Wealthy investors are flocking to tax-aware long short strategies, adding billions into these super-powered versions of tax-loss harvesting accounts.",
+      "date": "2026-10-16T16:21:14.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/16/tax-strategies-capital-gains-wealthy-investors-schwab.html",
       "image": ""
     },
     {
@@ -150,6 +500,16 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d887/live/549b5300-c978-11f1-9a39-31b474234113.jpg"
+    },
+    {
+      "id": "meta-may-use-sweeping-new-commercial-tos-to-a-e9c3d49cc9d7",
+      "language": "en",
+      "title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
+      "excerpt": "Meta “streamlined” its commercial TOS. Legal experts warn it’s an AI power grab.",
+      "date": "2026-10-16T15:41:00.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2296621320-500x500.jpg"
     },
     {
       "id": "jev-is-vercel-s-fastest-adopted-ai-model-ever-7ff2fab56ea7",
@@ -2639,366 +2999,6 @@
       "date": "2026-10-16T08:27:00.000Z",
       "source_name": "Google News 中文财经",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUzdWR2xzUnkyNWVRUE94dXl5NC1HZ2IzU3pKdkFSSXp3cW1UbFBzQlgxM0JJaXh6SVVOdmRMU3lFOEUtSHVZLTR2LUx5ZnFNWERxRVRoZXZTWU1ZM0JJdUVTcUNiYTQ5aE8zcld3aVpPYnBZMmNIUVdBTklLdTRaUzhxV3VaSUxYU1p0TF8xbw?oc=5",
-      "image": ""
-    },
-    {
-      "id": "南方财经全媒体集团-南方财经-de4b62d34688",
-      "language": "zh",
-      "title": "南方财经全媒体集团 - 南方财经",
-      "excerpt": "南方财经全媒体集团 &nbsp;&nbsp; 南方财经",
-      "date": "2026-10-16T08:21:01.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qbkZfLXdPRklyd0J6QVhMN2ttS0MwSFdWWlVEdFFwRXZidWEySVU5ZHkxRnptci1MOG5iamlsNlJ2bFY0ckhnMW9JbDd2LUpGRk9KNXA2Y1RLdkJjdjRHNWxKSEpaX0U?oc=5",
-      "image": ""
-    },
-    {
-      "id": "海量财经-京东采销回应抖音电商起诉-每逢电商大促节点-就会出现针对京东的抹黑爆料-搜狐-93138a1a66df",
-      "language": "zh",
-      "title": "海量财经｜京东采销回应抖音电商起诉：每逢电商大促节点，就会出现针对京东的抹黑爆料 - 搜狐",
-      "excerpt": "海量财经｜京东采销回应抖音电商起诉：每逢电商大促节点，就会出现针对京东的抹黑爆料 &nbsp;&nbsp; 搜狐",
-      "date": "2026-10-16T08:12:00.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTWVZMk1UVDd2U1N4WEpFSFFmX0FXSVkzMXBhaWlrUDlleWhaUE93cEYwSU01MW9mdklHSkRYbVBvV29rRV9fSDRUdTUtY0lLQUM3dnkyNE84SnBwOHpaZ2pSYzVVeDEzc2dHNm9zOUZ3QXA4VXJoUTRCNEFRLXA2a3JCamxkSjV2a051Tg?oc=5",
-      "image": ""
-    },
-    {
-      "id": "海量财经丨-st清越停牌面临退市-公司回应赔付等问题-中国经济网-fb571777bb50",
-      "language": "zh",
-      "title": "海量财经丨*ST清越停牌面临退市 公司回应赔付等问题 - 中国经济网",
-      "excerpt": "海量财经丨*ST清越停牌面临退市 公司回应赔付等问题 &nbsp;&nbsp; 中国经济网",
-      "date": "2026-10-16T08:02:00.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1aRkx1cEF4LTNCcTBkNkJvWUFVNVRiTTFvYWhKRjMtVVZTVEZSbXIteWFXN3VIXzdaQk5LaTRja0sySFZnTk13dVRhU1g1dHRiaFhkMkV1ZVhYM0hSLS12Y3ZFd1JjdjRJSV9HR0E1QWlkQQ?oc=5",
-      "image": ""
-    },
-    {
-      "id": "灯塔之光照亮育人征程-中南财经政法大学第六届-公道美品德行奖-授予仪式举行-文澜新闻网-7ece4f6f34a6",
-      "language": "zh",
-      "title": "灯塔之光照亮育人征程 中南财经政法大学第六届“公道美品德行奖”授予仪式举行 - 文澜新闻网",
-      "excerpt": "灯塔之光照亮育人征程 中南财经政法大学第六届“公道美品德行奖”授予仪式举行 &nbsp;&nbsp; 文澜新闻网",
-      "date": "2026-10-16T08:01:03.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OVDB5bXN1a0o3Qi1uZ1FwbU5kMEtnTmdYeGFUWGZnQUVrU3phZnNpQnY4RGplWmpvcXloNjU2anZyOGJ3ekp1ZTFDVHJ1NDdPTUlTWjM5a3I2c1FXNy1SRHQtUHRFOFMzR0E?oc=5",
-      "image": ""
-    },
-    {
-      "id": "spacex-policy-manager-set-to-testify-as-part--3e1690f4283a",
-      "language": "en",
-      "title": "SpaceX policy manager set to testify as part of NYC Council AI safety investigation",
-      "excerpt": "SpaceX is sending its head of global government affairs for AI, Gabriela Castillo Madrid, to testify before the New York City Council.",
-      "date": "2026-10-16T08:00:01.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/16/spacex-policy-manger-to-testify-in-nyc-council-ai-safety-investigation.html",
-      "image": ""
-    },
-    {
-      "id": "不如卖给梁文锋-新浪财经-1fe554d54219",
-      "language": "zh",
-      "title": "“不如卖给梁文锋” - 新浪财经",
-      "excerpt": "“不如卖给梁文锋” &nbsp;&nbsp; 新浪财经",
-      "date": "2026-10-16T07:59:10.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1NYzdENVc4d2hZeWJNRGRPYmpPUjcyTGN4OTJuV2dDay1TVlN0cksxYmpObmx5dmhTOWJMLVNtT0gxZHB6UHlaS3NyT3dIM1RCZ1JIcTN6clVxRVZZNGpza2dTZGFOemQzYXJudzhadTFvejBLVkxONQ?oc=5",
-      "image": ""
-    },
-    {
-      "id": "trump-says-he-won-t-use-nuclear-weapons-or-se-9d13c3a1baad",
-      "language": "en",
-      "title": "Trump says he won't use nuclear weapons or send ground troops to Iran",
-      "excerpt": "Trump said he would not use nuclear weapons against Iran or send ground troops as the U.S. reportedly weighs new strike options.",
-      "date": "2026-10-16T07:56:55.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/16/us-iran-war-trump-hormuz.html",
-      "image": ""
-    },
-    {
-      "id": "养老服务价格文件发布-让机构收费明明白白-21财经-8ea28a396da2",
-      "language": "zh",
-      "title": "养老服务价格文件发布 让机构收费明明白白 - 21财经",
-      "excerpt": "养老服务价格文件发布 让机构收费明明白白 &nbsp;&nbsp; 21财经",
-      "date": "2026-10-16T07:51:00.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQkEwQUQtVlM1UTBZY0ZoWWVDbC1pQ3RFR1UtSFpOd3hLUFpTdHoxZFZ1U05TcGg0VkJQc0JaTVlZRGdabVVaTkQwXzcxcjVIUThIWVAwTnNSYTg2cjFFRkJqaFVrNnVqM2pJOWhtMEdWQnhTRExSY0RGM1hJcllNVW8tbDRiRWNONXdQSVA1dw?oc=5",
-      "image": ""
-    },
-    {
-      "id": "叙利亚油气管道接连遭破坏-21财经-573f161a7f73",
-      "language": "zh",
-      "title": "叙利亚油气管道接连遭破坏 - 21财经",
-      "excerpt": "叙利亚油气管道接连遭破坏 &nbsp;&nbsp; 21财经",
-      "date": "2026-10-16T07:35:00.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ3p2Nm1lbVl2TGxCVTRzTG5kaG9VNkU0RC1jYkx3Zm5sVFVpX280SWo2N3JuWVo0THA2VnQtS0xWdEZmUUlTTFV3cFBqeGtMeWlQaFBkVXhhN01JajVnY05LLXNudno5VUxwNC1ycTFWMHYtaGpreDVYOGl2c0xieDZEcVI4ZmktTkwyeVcybw?oc=5",
-      "image": ""
-    },
-    {
-      "id": "普通话台-午间新闻-财经-陈柏轩-亚洲资金走向冷静大金融类市场仍然具有吸引力-rthk-f9cee628bbd7",
-      "language": "zh",
-      "title": "普通话台|午间新闻/财经|陈柏轩：亚洲资金走向冷静大金融类市场仍然具有吸引力 - RTHK",
-      "excerpt": "普通话台|午间新闻/财经|陈柏轩：亚洲资金走向冷静大金融类市场仍然具有吸引力 &nbsp;&nbsp; RTHK",
-      "date": "2026-10-16T07:31:10.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUWQzUm5jcjV3VnJtQUtOR2tFcU1ONi1vMHhaOU9FT0prUU1uQlBRdVJyR3RJRWRuX3NTRlRyOGN4OFZZVjZ5NkdUNUpWMERKWHFjVDFCQXBMbllPdHc0UE1jRVZGTHdQb015NWtjTGdZdlhKZldyS1A5alBjS2RTRXprRy15THJCV21ISS13?oc=5",
-      "image": ""
-    },
-    {
-      "id": "南京财经大学首届-经纬-财经前沿论坛开幕-搜狐网-e434da697d2b",
-      "language": "zh",
-      "title": "南京财经大学首届“经纬”财经前沿论坛开幕 - 搜狐网",
-      "excerpt": "南京财经大学首届“经纬”财经前沿论坛开幕 &nbsp;&nbsp; 搜狐网",
-      "date": "2026-10-16T07:21:44.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQcGYzaFVOUm9MZEIxbDJjVWFTaVlKbVdCUWIwbk1VLU9mVGotRkVsbnJfcGNLb0R5UXZ2a2hSam52ZWp6dS1OcXBvQUdRd0ZGZm1nV0JOdzN6aEgxYmpyZHpYNWQ5ZzQtZDJnTEhyWmc4S19hX3FENU5ldzlEakpqVFROUEQzLWZnREhIdG9BeXpLZzRTZXliWWtCcmdINnIxYXFjWTRoWEgzMjFWN0tYU3VmOFhhRHc1TXdsdkhOSUkzVGEyal9FbWlCODNGSHk0LTJZekNBdzNCWWgycW8xMTBrMzBtMDVWajlSQjQyZF9FWWxHWnRQZ2U0OHVfcG1wM1FubQ?oc=5",
-      "image": ""
-    },
-    {
-      "id": "外资最新持仓来了-增持这些公司-finance-sina-com-cn-2c63612c83e1",
-      "language": "zh",
-      "title": "外资最新持仓来了！增持这些公司 - finance.sina.com.cn",
-      "excerpt": "外资最新持仓来了！增持这些公司 &nbsp;&nbsp; finance.sina.com.cn",
-      "date": "2026-10-16T07:20:29.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1KM09uTmxEQmZfNXR1b1lXRk5mRVVwMUFkS0gyVTN0aEttZ3Ntc2NnODd1bmhnYnZPMlZBVVBHNEJ0WC1YVFd5akgzRndSakR0MnBYNkhXVVJheHVTT09jdGo3ZmtKSHNncHV5RHJJMA?oc=5",
-      "image": ""
-    },
-    {
-      "id": "收盘-沪指涨0-24-飞行汽车概念股大涨-finance-sina-com-cn-f5ccc75bc187",
-      "language": "zh",
-      "title": "收盘｜沪指涨0.24% 飞行汽车概念股大涨 - finance.sina.com.cn",
-      "excerpt": "收盘｜沪指涨0.24% 飞行汽车概念股大涨 &nbsp;&nbsp; finance.sina.com.cn",
-      "date": "2026-10-16T07:19:07.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pWUQ3ZVdoRFdpcXFaR3pTcThsN0VNYjk4SEdKa3hhSkhMWjVGdmttNmktOEU1V041ajV6UGc0OFV6T2dQQlBhbjdsNzVkblcxT3NxbmU2akxTanE1eGZUeWdrUUFRbEIyMHhwY0pB?oc=5",
-      "image": ""
-    },
-    {
-      "id": "大厂没有安全感-21财经-21d05c42fbac",
-      "language": "zh",
-      "title": "大厂没有安全感 - 21财经",
-      "excerpt": "大厂没有安全感 &nbsp;&nbsp; 21财经",
-      "date": "2026-10-16T07:18:00.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQkM3R251Z09TSlJQWXVhZUVXd0I2QUhtTV8xR1JrUVFaWHB6dmNINUJNNW5RWExhMFFLWHVzeXllTDdmTVBCSEs1SE1xZlBCY0trMDlHazFGdE01T2FpVE9KSzBBcHFhLUp5QnowOFlqcVE3Z1hDVXNnVnFPUk9kcmR5RmxLS0lmb0dMQXZqUQ?oc=5",
-      "image": ""
-    },
-    {
-      "id": "fed-s-warsh-withholds-rate-signal-praises-rec-7051a2189468",
-      "language": "en",
-      "title": "Fed's Warsh withholds rate signal, praises recent global tightening with 'no free riders'",
-      "excerpt": "Warsh refrained from signaling another interest rate hike this month, pointed to a \"synchronous tightening\" by central banks in the fight against inflation.",
-      "date": "2026-10-16T07:11:22.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/16/feds-warsh-says-ai-development-path-will-be-very-bumpy-.html",
-      "image": ""
-    },
-    {
-      "id": "南方财经全媒体集团-南方财经-1a1e2412e689",
-      "language": "zh",
-      "title": "南方财经全媒体集团 - 南方财经",
-      "excerpt": "南方财经全媒体集团 &nbsp;&nbsp; 南方财经",
-      "date": "2026-10-16T07:00:19.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzeVpkb3JYb1FnTUZnYXZ5QU1tY3FHYjhsQWMzNmxrZG9RcExYUDhzUFM5MkdldzJiT2o0SDZtbTYta0NSbjN5Qkl4OFUwdFhYenZFdE5QV1BkdjJTR1pNX1A4d0RSeHRpUFE?oc=5",
-      "image": ""
-    },
-    {
-      "id": "第140届广交会-为什么全球客商偏爱广东-21财经-d5ad181a7286",
-      "language": "zh",
-      "title": "第140届广交会：为什么全球客商偏爱广东 - 21财经",
-      "excerpt": "第140届广交会：为什么全球客商偏爱广东 &nbsp;&nbsp; 21财经",
-      "date": "2026-10-16T06:53:00.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQkhQby1OVmZCS205QTVZSlJlSlpfQ1JUdWVKaEU5Nk5RSE1DVTJpMUhMQ2pJYi1IVGY0blZNcFFPLUtQUnVXXzJDZjhhb2RjTjUzTUluQ090MjNoclk5QTdKZGxDWjBIZWlGdG5jWEZlS0JFWEVGRml0Qi1XTE1leDJ4dkhoSDJBbHVJUENQaw?oc=5",
-      "image": ""
-    },
-    {
-      "id": "marco-rubio-to-visit-indian-billionaire-amban-6eee7296c84e",
-      "language": "en",
-      "title": "Marco Rubio to visit Indian billionaire Ambani's refinery in Gujarat as U.S. diesel prices surge",
-      "excerpt": "Not only is Ambani's Reliance investing in a U.S. refinery and buying Venezuelan oil, but its strong ability to supply diesel has put Jamnagar on the map during Rubio's visit.",
-      "date": "2026-10-16T06:45:02.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/16/marco-rubio-reliance-jamnagar-refinery.html",
-      "image": ""
-    },
-    {
-      "id": "透視國際線-川普-美提供烏克蘭武器被-盜賣-新唐人電視台-b6bea5bc157d",
-      "language": "zh",
-      "title": "【透視國際線】川普：美提供烏克蘭武器被「盜賣」 - 新唐人電視台",
-      "excerpt": "【透視國際線】川普：美提供烏克蘭武器被「盜賣」 &nbsp;&nbsp; 新唐人電視台",
-      "date": "2026-10-16T06:44:07.000Z",
-      "source_name": "Google News 中文国际",
-      "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mSTh0Y2w5YTV1eUZ6WFhfSFhUQXB5Tm1sbnROOUxjV2FFcUd3S3Q4YUotWWFWQlEwTGpPS3hNcTAtV00xSnVWNTBGU1J5MkUxN3g4emdGN3RtSGNqUG9OUtIBZkFVX3lxTE1mSksyYTFvSTFFZEItMnNiLVFIR3BLVmN6QWltT1ZXTkRPVGxaNE5wTm9FeUd6VzdGMDJaQ09DU1JfZkRCa0FQLXc1M1FtUHVMcHBVd0R1amd4ZGdLcENnZ29nVGxfZw?oc=5",
-      "image": ""
-    },
-    {
-      "id": "首发-首展-首秀-国新办重要发布-21财经-c989acdadc0c",
-      "language": "zh",
-      "title": "首发、首展、首秀！国新办重要发布 - 21财经",
-      "excerpt": "首发、首展、首秀！国新办重要发布 &nbsp;&nbsp; 21财经",
-      "date": "2026-10-16T06:43:48.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdDZKWGd4VWhxdDlVM3F3VEE4XzFySzIzU1ZOZGU3Wk1aWVFOOE1JeG9CNlA0UVlRVlIxOG5mRXkweDNiMGx2TDMyVmRmc3ZxTnVSZjYtc3BYdHIxTDV4M19vTGdzVHRPZmFsUHJlMUJIemowSU1CYXhYRjRqZmhqVkpGZFpOMU9wUXZtcXppZw?oc=5",
-      "image": ""
-    },
-    {
-      "id": "南方财经全媒体集团-南方财经-c53b3884efb8",
-      "language": "zh",
-      "title": "南方财经全媒体集团 - 南方财经",
-      "excerpt": "南方财经全媒体集团 &nbsp;&nbsp; 南方财经",
-      "date": "2026-10-16T06:42:38.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5MU3ZFa19HYS1KXzluOFM0bjZBQmRhOFdIMXE2LVByZDBESU1FemxsSV9NOGNpbklIQjkxNmZnRUZRNmY0czRlZmFIVDJ5X0c2MUxQMjFVbHEtdHZFcFdrRDBWOWdRQl9MQ3c?oc=5",
-      "image": ""
-    },
-    {
-      "id": "国际刑警组织牵头打击涉儿童色情犯罪-国际-速豹新闻网-2f6de7ef1599",
-      "language": "zh",
-      "title": "国际刑警组织牵头打击涉儿童色情犯罪- 国际 - 速豹新闻网",
-      "excerpt": "国际刑警组织牵头打击涉儿童色情犯罪- 国际 &nbsp;&nbsp; 速豹新闻网",
-      "date": "2026-10-16T06:40:32.000Z",
-      "source_name": "Google News 中文国际",
-      "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SSVZDR1loeXpOcGpZWXVUb0M4elpIV1pYcjY0aDNmcFk5YWJUSE9jbmRLblMtZXhId1JpU2F1OHZkcHprT1I1ZGlpT19scVNBaWpZNzR3TTlManctM0RvMg?oc=5",
-      "image": ""
-    },
-    {
-      "id": "南方财经全媒体集团-林健民-2026-10-16-14-37-50-南方财经-7042a00d4cb9",
-      "language": "zh",
-      "title": "南方财经全媒体集团 林健民 2026-10-16 14:37:50 - 南方财经",
-      "excerpt": "南方财经全媒体集团 林健民 2026-10-16 14:37:50 &nbsp;&nbsp; 南方财经",
-      "date": "2026-10-16T06:37:50.000Z",
-      "source_name": "Google News 中文财经",
-      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50OXoyQWhBNV9zUzNVSUF3cUlUa1NFUUVKUDhjOTBmWUxMLUdJUExkVTRDbTE1R2VNczlNZG1Bc09rdUV1OEUxNDJZZGNneVR2akxPaVBmQ1VPQk40QUt4SENlM2lISk1oaEE?oc=5",
-      "image": ""
-    },
-    {
-      "id": "what-to-know-about-starshield-spacex-s-milita-c821f2dd9b87",
-      "language": "en",
-      "title": "What to know about Starshield, SpaceX's military-focused Starlink service",
-      "excerpt": "Elon Musk distinguished Starshield from Starlink, which he said could not be used for offensive military operations.",
-      "date": "2026-10-16T06:25:31.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/15/what-is-starshield-spacex-starlink-military.html",
-      "image": ""
-    },
-    {
-      "id": "russia-returns-to-g20-table-in-bangkok-on-u-s-444e86fd14da",
-      "language": "en",
-      "title": "Russia returns to G20 table in Bangkok on U.S. invitation that angers Europe",
-      "excerpt": "Russia’s return to the G20 table has tested how far Washington’s outreach to Moscow will strain ties with European allies.",
-      "date": "2026-10-16T06:11:35.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/16/g20-russia-ukraine-trump-diesel-europe-.html",
-      "image": ""
-    },
-    {
-      "id": "哈萨克斯坦登记机动车超610万辆-963fb6a0ccdf",
-      "language": "zh",
-      "title": "哈萨克斯坦登记机动车超610万辆",
-      "excerpt": "中新网阿斯塔纳10月16日电 哈通社16日援引哈国家统计局数据显示，截至今年10月1日，该国登记机动车总量达611.46万辆，其中乘用车占83.9%。",
-      "date": "2026-10-16T06:04:26.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-16/10715620.shtml",
-      "image": ""
-    },
-    {
-      "id": "加拿大卡尔加里多车相撞起火致3死19伤-9abed1ce9f35",
-      "language": "zh",
-      "title": "加拿大卡尔加里多车相撞起火致3死19伤",
-      "excerpt": "中新网北京10月16日电 据加拿大城市新闻网站报道，加拿大艾伯塔省卡尔加里市当地时间15日下午发生一起多车连环相撞事故，造成3人死亡、19人受伤。",
-      "date": "2026-10-16T06:03:19.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-16/10715604.shtml",
-      "image": ""
-    },
-    {
-      "id": "one-singapore-ship-was-sunk-but-here-s-why-ot-ef0a847b8661",
-      "language": "en",
-      "title": "One Singapore ship was sunk, but here's why others are still transiting the Strait of Hormuz",
-      "excerpt": "Singapore vessels are set to continue navigating the perilous Strait of Hormuz despite attacks on two container ships, said maritime experts.",
-      "date": "2026-10-16T05:56:28.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/16/strait-hormuz-singapore-ships-attacked.html",
-      "image": ""
-    },
-    {
-      "id": "even-benchmark-thinks-ai-is-eroding-the-ventu-cc388b79b039",
-      "language": "en",
-      "title": "Even Benchmark thinks AI is eroding the venture pact against backing rivals",
-      "excerpt": "Benchmark says the Valley’s rule against backing rivals is getting harder to keep.",
-      "date": "2026-10-16T05:16:46.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/10/15/even-benchmark-thinks-ai-is-eroding-the-venture-pact-against-backing-rivals/",
-      "image": ""
-    },
-    {
-      "id": "ship-attack-reports-near-hormuz-reach-record--a06797f3d253",
-      "language": "en",
-      "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
-      "excerpt": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
-      "date": "2026-10-16T05:00:17.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/139a/live/0f24b0c0-c8b3-11f1-bc2e-018d645d8d21.png"
-    },
-    {
-      "id": "the-ipo-drought-is-driving-private-equity-own-e87c94fa9ac6",
-      "language": "en",
-      "title": "The IPO drought is driving private equity-owned companies to the debt market to pay investors",
-      "excerpt": "Private equity firms are increasingly using debt-funded dividend recaps to return cash to investors as exits remain subdued.",
-      "date": "2026-10-16T05:00:01.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/16/private-equity-portfolios-ipo-debt.html",
-      "image": ""
-    },
-    {
-      "id": "they-fled-russia-but-the-west-sent-them-back-21783060a845",
-      "language": "en",
-      "title": "They fled Russia, but the West sent them back",
-      "excerpt": "Over the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge.",
-      "date": "2026-10-16T04:57:28.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0473/live/14048a40-c929-11f1-bcc7-a3638a736ce9.jpg"
-    },
-    {
-      "id": "美媒-巴西总统卢拉指责meta偏袒其竞选对手-自身内容遭限流-dd81546fdedb",
-      "language": "zh",
-      "title": "美媒：巴西总统卢拉指责Meta偏袒其竞选对手 自身内容遭限流",
-      "excerpt": "中新网10月16日电 据美国《纽约时报》14日报道，巴西现任总统、劳工党候选人卢拉及独立监督组织指责美国科技企业Meta及其旗下社交媒体平台偏袒其竞选对手弗拉维奥·博索纳罗。弗拉维奥·博索纳罗是前总统雅伊尔·博索纳罗之子、自由党候选人。",
-      "date": "2026-10-16T04:42:39.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-16/10715570.shtml",
-      "image": ""
-    },
-    {
-      "id": "俄罗斯堪察加半岛发生6-9级地震-fe7176ccc408",
-      "language": "zh",
-      "title": "俄罗斯堪察加半岛发生6.9级地震",
-      "excerpt": "中新网10月16日电 据中国地震台网正式测定：10月16日11时35分在俄罗斯堪察加半岛(北纬51.95度，东经157.40度)发生6.9级地震，震源深度150千米。",
-      "date": "2026-10-16T04:00:01.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-16/10715564.shtml",
-      "image": ""
-    },
-    {
-      "id": "俄罗斯堪察加半岛发生6-9级地震-震源深度150千米-53438118fcd0",
-      "language": "zh",
-      "title": "俄罗斯堪察加半岛发生6.9级地震，震源深度150千米",
-      "excerpt": "中新网10月16日电 据“中国地震台网速报”微博消息，中国地震台网正式测定：10月16日11时35分在俄罗斯堪察加半岛(北纬51.95度，东经157.40度)发生6.9级地震，震源深度150千米。",
-      "date": "2026-10-16T03:59:23.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-16/10715563.shtml",
-      "image": ""
-    },
-    {
-      "id": "也门亚丁总统府遭袭已致5死-联合国安理会谴责胡塞武装袭击沙特-126f19136a8a",
-      "language": "zh",
-      "title": "也门亚丁总统府遭袭已致5死 联合国安理会谴责胡塞武装袭击沙特",
-      "excerpt": "中新社北京10月16日电 综合消息：也门公共卫生与人口部长卡西姆·布哈伊贝当地时间15日称，也门胡塞武装当日袭击位于也门南部临时首都亚丁的总统府，已造成5人死亡，另有16人受伤。",
-      "date": "2026-10-16T03:56:17.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-16/10715549.shtml",
       "image": ""
     }
   ]
