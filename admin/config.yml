@@ -134,6 +134,33 @@ collections:
           - rich_text
           - raw
 
+  - name: "site_settings"
+    label: "网站图片设置"
+    files:
+      - label: "四大板块通用图片"
+        name: "category_images"
+        file: "content/site-settings.json"
+        fields:
+          - label: "科技通用图"
+            name: "tech"
+            widget: "image"
+            required: false
+
+          - label: "商业通用图"
+            name: "business"
+            widget: "image"
+            required: false
+
+          - label: "文化通用图"
+            name: "culture"
+            widget: "image"
+            required: false
+
+          - label: "生活通用图"
+            name: "life"
+            widget: "image"
+            required: false
+
   - name: "auto_news"
     label: "自动新闻管理"
     label_singular: "自动新闻"
