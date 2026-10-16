@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const API = "https://commons.wikimedia.org/w/api.php";
-const OUT = "public/images/library/tech";
+const OUT = "public/images/library/life";
 const USER_AGENT = "GlobalViewNet/1.0 (website image library)";
 
 const params = new URLSearchParams({
@@ -65,7 +65,7 @@ for (const page of pages) {
   else if (contentType.includes("image/avif")) extension = ".avif";
   else continue;
 
-  const filename = `technology-${records.length + 1}${extension}`;
+  const filename = `life-${records.length + 1}${extension}`;
   const buffer = Buffer.from(await imageResponse.arrayBuffer());
 
   if (buffer.length === 0) continue;
