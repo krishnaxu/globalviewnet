@@ -1596,7 +1596,7 @@
       imageWrap.className = "card-image-wrap";
       const image = document.createElement("img");
       image.className = "card-image";
-      image.src = article.image;
+      window.globalViewSetArticleImage(image, article);
       image.alt = article.alt[currentLang];
       image.loading = "lazy";
       imageWrap.appendChild(image);
@@ -1971,7 +1971,7 @@ function refreshAutoNewsIds() {
       const article = articleById(id);
       if (!article) return;
 
-      $("#modalImage").src = article.image;
+      window.globalViewSetArticleImage($("#modalImage"), article);
       $("#modalImage").alt = article.alt[currentLang];
       $("#modalCategory").textContent = categoryName(article.category);
       $("#modalTitle").textContent = article.title[currentLang];
@@ -2143,6 +2143,31 @@ function refreshAutoNewsIds() {
     $("#backTop").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
     // 自动新闻：读取 RSS 采集脚本生成的 JSON，转换为首页统一文章结构
+
+window.globalViewFallbackImages = {
+  tech: "",
+  business: "",
+  culture: "",
+  life: ""
+};
+
+async function loadGlobalViewFallbackImages() {
+  try {
+    const response = await fetch("/content/site-settings.json?t=" + Date.now());
+    if (!response.ok) return;
+
+    const settings = await response.json();
+
+    window.globalViewFallbackImages = {
+      tech: settings.tech || "",
+      business: settings.business || "",
+      culture: settings.culture || "",
+      life: settings.life || ""
+    };
+  } catch (error) {
+    console.warn("通用图片设置读取失败：", error);
+  }
+}
     
 function classifyAutoNews(item) {
   const text = [
@@ -2190,7 +2215,8 @@ function classifyAutoNews(item) {
         read: 1,
         source: String(item.source_name || "News source"),
         externalUrl: item.source_url,
-        image: categorySample.image,
+        image: item.image || window.globalViewFallbackImages?.[category] || categorySample.image,
+fallbackImage: window.globalViewFallbackImages?.[category] || categorySample.image,
         alt: { zh: title, en: title },
         subtitle: { zh: excerpt || title, en: excerpt || title },
         body: { zh: [], en: [] },
@@ -2329,6 +2355,7 @@ for (const article of articles.filter(
       try { savedLang = localStorage.getItem("gp-lang") || "zh"; } catch (_) {}
       if (!translations[savedLang]) savedLang = "zh";
       updateDateLabel();
+      await loadGlobalViewFallbackImages();
       await loadAutoNews();
       renderTicker();
       renderFeatured();
