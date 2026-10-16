@@ -84,7 +84,7 @@
     });
 
     if (!response.ok) {
-      throw new Error(`CMS API 请求失败：${response.status}`);
+      throw new Error("CMS API 请求失败：" + response.status);
     }
 
     const data = await response.json();
