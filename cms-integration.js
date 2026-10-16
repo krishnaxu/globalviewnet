@@ -427,7 +427,9 @@
     if (categories.includes(currentPage)) {
       renderCategoryGrid();
     }
-
+    
+    document.documentElement.classList.remove("cms-loading");
+    
     console.info(
       `Global View：已加载 ${data.posts.length} 篇 CMS 文章`
     );
