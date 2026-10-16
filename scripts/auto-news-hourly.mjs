@@ -87,15 +87,69 @@ function readLink(block) {
 }
 
 function parseFeed(xml) {
+  function decodeEntities(value = "") {
+    return String(value)
+      .replace(/&amp;/gi, "&")
+      .replace(/&quot;/gi, '"')
+      .replace(/&#39;|&apos;/gi, "'")
+      .replace(/&lt;/gi, "<")
+      .replace(/&gt;/gi, ">")
+      .trim();
+  }
+
+  function resolveImage(url, articleUrl) {
+    if (!url) return "";
+    try {
+      const resolved = new URL(decodeEntities(url), articleUrl);
+      return ["http:", "https:"].includes(resolved.protocol)
+        ? resolved.href
+        : "";
+    } catch {
+      return "";
+    }
+  }
+
+  function extractImage(block, description, link) {
+    const patterns = [
+      /<(?:\w[\w.-]*:)?thumbnail\b[^>]*\burl\s*=\s*["']([^"']+)["']/i,
+      /<(?:\w[\w.-]*:)?content\b[^>]*\burl\s*=\s*["']([^"']+)["']/i,
+      /<enclosure\b[^>]*\burl\s*=\s*["']([^"']+)["'][^>]*\btype\s*=\s*["']image\/[^"']+["']/i,
+      /<enclosure\b[^>]*\btype\s*=\s*["']image\/[^"']+["'][^>]*\burl\s*=\s*["']([^"']+)["']/i
+    ];
+
+    for (const pattern of patterns) {
+      const match = block.match(pattern);
+      if (match) {
+        const imageUrl = resolveImage(match[1], link);
+        if (imageUrl) return imageUrl;
+      }
+    }
+
+    const htmlContent =
+      block.match(/<(?:\w[\w.-]*:)?encoded\b[^>]*>([\s\S]*?)<\/(?:\w[\w.-]*:)?encoded\s*>/i)?.[1] ||
+      block.match(/<content:encoded\b[^>]*>([\s\S]*?)<\/content:encoded\s*>/i)?.[1] ||
+      description ||
+      "";
+
+    const imageMatch =
+      htmlContent.match(/<img\b[^>]*\bsrc\s*=\s*["']([^"']+)["']/i) ||
+      htmlContent.match(/<img\b[^>]*\bdata-src\s*=\s*["']([^"']+)["']/i);
+
+    return imageMatch ? resolveImage(imageMatch[1], link) : "";
+  }
+
   const blocks = [...xml.matchAll(/<(item|entry)\b[^>]*>([\s\S]*?)<\/\1>/gi)];
+
   return blocks.map((match) => {
     const block = match[2];
     const title = cleanText(tag(block, "title"));
     const link = readLink(block);
+
     const description =
       tag(block, "description") ||
       tag(block, "summary") ||
       tag(block, "content");
+
     const dateText =
       cleanText(tag(block, "pubDate")) ||
       cleanText(tag(block, "published")) ||
@@ -103,6 +157,7 @@ function parseFeed(xml) {
       cleanText(tag(block, "date"));
 
     const timestamp = Date.parse(dateText);
+    const image = extractImage(block, description, link);
 
     return {
       title,
@@ -110,7 +165,8 @@ function parseFeed(xml) {
       excerpt: cleanText(description).slice(0, 700),
       date: Number.isFinite(timestamp)
         ? new Date(timestamp).toISOString()
-        : ""
+        : "",
+      image
     };
   }).filter((item) => item.title && item.link && item.date);
 }
