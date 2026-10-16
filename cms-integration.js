@@ -177,11 +177,16 @@
 
     // 按文章日期排序，供其他依赖该顺序的现有功能使用。
         // 首页统一使用 CMS 文章，不再保留建站演示文章。
-    for (let i = articles.length - 1; i >= 0; i--) {
-      if (!articles[i].cms) {
-        articles.splice(i, 1);
-      }
-    }
+    
+for (let i = articles.length - 1; i >= 0; i--) {
+  const article = articles[i];
+  const isAutoNews = String(article.id || "").startsWith("auto-");
+
+  if (!article.cms && !isAutoNews) {
+    articles.splice(i, 1);
+  }
+}
+
 
     // 按文章日期排序。
     articles.sort(
