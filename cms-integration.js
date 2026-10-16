@@ -1,4 +1,4 @@
-```js
+
 /**
  * Global View CMS Integration
  * CMS文章接入首页，并动态更新轮播、滚动头条和热门阅读。
