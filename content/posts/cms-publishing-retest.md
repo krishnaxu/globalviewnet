@@ -4,6 +4,7 @@ category: tech
 date: 2026-10-16T00:19:00.000+08:00
 published: true
 is_hot: false
+cover_image: /public/images/uploads/img_20261004_160315.jpg
 source_name: 观天下
 source_url: https://globalviewnet.pages.dev/
 title_zh: CMS 发布流程复测：多段正文与完整性检查
