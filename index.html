@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -14,7 +15,17 @@
   <meta name="color-scheme" content="light dark">
   <title>Global View | 观澜泗渡</title>
 
+  <style>
+    html.cms-loading main {
+      visibility: hidden;
+    }
+  </style>
+  <script>
+    document.documentElement.classList.add("cms-loading");
+  </script>
+
   <!-- Google Fonts：网络不可用时自动回退至本地字体 -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700;800&display=swap" rel="stylesheet">
