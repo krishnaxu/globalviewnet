@@ -7,6 +7,7 @@ date: "2026-10-15T15:43:24.000Z"
 source_name: "Ars Technica"
 source_url: "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
 published: true
+image: "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2277824748-500x500.jpg"
 ---
 
 FTC may fine AI firms on par with companies that delay data breach reports.

@@ -7,6 +7,7 @@ date: "2026-10-15T16:57:24.000Z"
 source_name: "Ars Technica"
 source_url: "https://arstechnica.com/space/2026/10/rocket-lab-announces-another-delay-for-its-medium-lift-neutron-rocket/"
 published: true
+image: "https://cdn.arstechnica.net/wp-content/uploads/2026/10/53194639182_2982a6d6de_h-500x500.jpg"
 ---
 
 Rocket Lab announced the Neutron rocket in 2021, aiming for a first flight in 2024.

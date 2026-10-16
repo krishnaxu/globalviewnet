@@ -7,6 +7,7 @@ date: "2026-10-15T18:16:36.000Z"
 source_name: "Ars Technica"
 source_url: "https://arstechnica.com/tech-policy/2026/10/trump-cancels-pentagon-plans-to-livestream-firing-squad-execution/"
 published: true
+image: "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2294712564-500x500.jpg"
 ---
 
 8 in 10 Americans opposed the Pentagon's plans, a Thursday poll showed.

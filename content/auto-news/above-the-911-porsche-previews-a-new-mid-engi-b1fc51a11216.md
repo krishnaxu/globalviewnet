@@ -7,6 +7,7 @@ date: "2026-10-15T20:30:02.000Z"
 source_name: "Ars Technica"
 source_url: "https://arstechnica.com/cars/2026/10/porsche-previews-its-future-with-mission-s-supercar-concept/"
 published: true
+image: "https://cdn.arstechnica.net/wp-content/uploads/2026/10/CC27X05IX0009_sRGB_072dpi-500x500.jpg"
 ---
 
 Porsche’s turnaround plan for 2035 involves less volume but more expensive cars.

@@ -7,6 +7,7 @@ date: "2026-10-15T22:21:06.000Z"
 source_name: "Ars Technica"
 source_url: "https://arstechnica.com/gadgets/2026/10/kde-turns-30-with-plasma-6-8-remote-upgrades-and-an-x11-farewell/"
 published: true
+image: "https://cdn.arstechnica.net/wp-content/uploads/2026/10/KDE_Birthday_30th_Laptop-500x500.png"
 ---
 
 KDE celebrates 30 years with a new Plasma release, a farewell to X11, and a movie.

@@ -7,6 +7,7 @@ date: "2026-10-16T10:00:54.000Z"
 source_name: "Ars Technica"
 source_url: "https://arstechnica.com/space/2026/10/blue-origin-is-going-all-in-on-the-new-glenn-rocket/"
 published: true
+image: "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Blue-Origin-Upper-Stage-Facility-Still-Render-500x500.png"
 ---
 
 The infrastructure is designed to support multiple flights per week by the end of the decade.

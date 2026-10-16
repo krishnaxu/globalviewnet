@@ -7,6 +7,7 @@ date: "2026-10-15T19:10:03.000Z"
 source_name: "Ars Technica"
 source_url: "https://arstechnica.com/science/2026/10/what-did-the-liberty-bell-sound-like-science-is-on-the-case/"
 published: true
+image: "https://cdn.arstechnica.net/wp-content/uploads/2026/05/bell-ALT-500x500.jpg"
 ---
 
 Researchers hunted for clues in modal analysis of 20th-century replica bell at Penn State Behrend.

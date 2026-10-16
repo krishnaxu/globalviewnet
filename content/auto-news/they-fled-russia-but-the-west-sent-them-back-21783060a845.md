@@ -7,6 +7,7 @@ date: "2026-10-16T04:57:28.000Z"
 source_name: "BBC World"
 source_url: "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&at_campaign=rss"
 published: true
+image: "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0473/live/14048a40-c929-11f1-bcc7-a3638a736ce9.jpg"
 ---
 
 Over the past year there has been a stark rise in anti-government activists deported to Russia from the EU and US where they were seeking refuge.

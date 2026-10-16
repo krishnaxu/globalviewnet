@@ -7,6 +7,7 @@ date: "2026-10-15T23:27:21.000Z"
 source_name: "BBC World"
 source_url: "https://www.bbc.co.uk/news/articles/cqgm0j4kjvevo?at_medium=RSS&at_campaign=rss"
 published: true
+image: "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/316e/live/9caab030-c88a-11f1-a2e8-f71844f8002e.jpg"
 ---
 
 The alleged plot only failed because the 19-year-old suspect's gun jammed outside the place of worship, say police.

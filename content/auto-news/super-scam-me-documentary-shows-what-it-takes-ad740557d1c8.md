@@ -7,6 +7,7 @@ date: "2026-10-16T14:00:59.000Z"
 source_name: "Ars Technica"
 source_url: "https://arstechnica.com/tech-policy/2026/10/romance-scam-doc-super-scam-me-takes-viewers-deep-into-love-bombing-terrain/"
 published: true
+image: "https://cdn.arstechnica.net/wp-content/uploads/2026/10/SuperScamMe_UHD_42-500x500-1792098327.jpg"
 ---
 
 Watch an exclusive clip from Super Scam Me where a victim tracks down her scammer.

@@ -7,6 +7,7 @@ date: "2026-10-16T05:00:17.000Z"
 source_name: "BBC World"
 source_url: "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss"
 published: true
+image: "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/139a/live/0f24b0c0-c8b3-11f1-bc2e-018d645d8d21.png"
 ---
 
 BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.

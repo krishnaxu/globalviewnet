@@ -7,6 +7,7 @@ date: "2026-10-15T15:05:40.000Z"
 source_name: "Ars Technica"
 source_url: "https://arstechnica.com/science/2026/10/seabirds-forests-and-coral-could-help-save-sinking-islands/"
 published: true
+image: "https://cdn.arstechnica.net/wp-content/uploads/2026/10/researchersatoll-500x500.jpg"
 ---
 
 Seabirds, native plants, and healthy reefs can help atolls build as seas rise.
