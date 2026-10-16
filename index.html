@@ -2128,7 +2128,7 @@
         || articles[0];
 
       return {
-        id: `auto-${String(item.id || index).replace(/[^\p{L}\p{N}_-]/gu, "-")}`,
+        id: `auto-${String(item.id || index).replace(/[^a-zA-Z0-9_-]/g, "-")}`,
         category,
         language: String(item.language || "").toLowerCase(),
         title: { zh: title, en: title },
