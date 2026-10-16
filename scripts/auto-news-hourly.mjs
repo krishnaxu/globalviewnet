@@ -228,6 +228,7 @@ function readFrontmatter(file) {
   return fields;
 }
 
+
 function loadExisting() {
   fs.mkdirSync(NEWS_DIR, { recursive: true });
 
@@ -246,7 +247,6 @@ function loadExisting() {
       knownUrls.add(normalizeUrl(String(fields.source_url)));
     }
 
-    // Existing CMS records are not overwritten by the crawler.
     items.push({
       id: String(fields.slug || file.replace(/\.md$/, "")),
       language: fields.language === "en" ? "en" : "zh",
@@ -255,6 +255,7 @@ function loadExisting() {
       date: String(fields.date || ""),
       source_name: String(fields.source_name || ""),
       source_url: String(fields.source_url || ""),
+      image: String(fields.image || ""),
       published: fields.published !== false,
       file
     });
@@ -278,6 +279,7 @@ function writeNews(item) {
     `date: ${yamlString(item.date)}`,
     `source_name: ${yamlString(item.source_name)}`,
     `source_url: ${yamlString(item.link)}`,
+    `image: ${yamlString(item.image || "")}`,
     "published: true",
     "---",
     "",
@@ -319,11 +321,38 @@ async function main() {
   for (const feed of FEEDS) {
     try {
       const articles = await fetchFeed(feed);
+      
       for (const article of articles) {
         const normalized = normalizeUrl(article.link);
-        if (knownUrls.has(normalized)) continue;
+
+        if (knownUrls.has(normalized)) {
+          const existing = items.find(
+            (item) => normalizeUrl(item.source_url) === normalized
+          );
+
+          if (existing && !existing.image && article.image) {
+            const fullPath = path.join(NEWS_DIR, existing.file);
+            const raw = fs.readFileSync(fullPath, "utf8");
+            const imageLine = `image: ${yamlString(article.image)}`;
+
+            const updated = /^image:\s*.*$/m.test(raw)
+              ? raw.replace(/^image:\s*.*$/m, imageLine)
+              : raw.replace(
+                  /^(---\r?\n[\s\S]*?)(\r?\n---)/,
+                  `$1\n${imageLine}$2`
+                );
+
+            if (updated !== raw) {
+              fs.writeFileSync(fullPath, updated, "utf8");
+              existing.image = article.image;
+            }
+          }
+
+          continue;
+        }
 
         const created = writeNews(article);
+
         knownUrls.add(normalized);
         if (created) added++;
       }
@@ -341,9 +370,11 @@ async function main() {
     .filter((item) => item.published && item.title && item.source_url)
     .sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
     .slice(0, 300)
-    .map(({ id, language, title, excerpt, date, source_name, source_url }) => ({
-      id, language, title, excerpt, date, source_name, source_url
+    
+    .map(({ id, language, title, excerpt, date, source_name, source_url, image }) => ({
+      id, language, title, excerpt, date, source_name, source_url, image
     }));
+
 
   fs.writeFileSync(
     JSON_FILE,
