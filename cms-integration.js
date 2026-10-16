@@ -211,25 +211,43 @@ for (let i = articles.length - 1; i >= 0; i--) {
       return originalOpenArticle(id);
     };
 
-    // 三、轮播：从全站 CMS 文章中选择最新 5 篇。
-    // 不再按栏目分配名额，也不再使用演示文章补位。
+       // 三、轮播：最新 1 篇 CMS 文章 + 4 篇 RSS 自动新闻。
     renderFeatured = function () {
       const track = $("#featuredTrack");
       const dotsContainer = $("#carouselDots");
 
       if (!track || !dotsContainer) return;
 
-      const featuredArticles = articles
+      const latestCMS = articles
         .filter(article => article.cms)
         .slice()
-        .sort((a, b) => {
-          const dateA = dateValue(a.updatedAt || a.date);
-          const dateB = dateValue(b.updatedAt || b.date);
-          return dateB - dateA;
-        })
-        .slice(0, 5);
+        .sort((a, b) =>
+          dateValue(b.updatedAt || b.date) -
+          dateValue(a.updatedAt || a.date)
+        )[0];
 
-      // 供首页及栏目文章列表排除重复文章。
+      const rssArticles = articles
+        .filter(article =>
+          String(article.id || "").startsWith("auto-")
+        )
+        .slice()
+        .sort((a, b) => dateValue(b.date) - dateValue(a.date));
+
+      const featuredArticles = [];
+
+      if (latestCMS) {
+        featuredArticles.push(latestCMS);
+      }
+
+      rssArticles.forEach(article => {
+        if (
+          featuredArticles.length < 5 &&
+          !featuredArticles.some(item => item.id === article.id)
+        ) {
+          featuredArticles.push(article);
+        }
+      });
+
       window.globalViewCarouselIds = new Set(
         featuredArticles.map(article => article.id)
       );
@@ -252,54 +270,28 @@ for (let i = articles.length - 1; i >= 0; i--) {
         content.className = "featured-content";
 
         const categoryTag = makeText(
-          "span",
-          "category-tag",
-          categoryName(article.category)
+          "span", "category-tag", categoryName(article.category)
         );
-
         const title = makeText(
-          "h2",
-          "",
-          article.title[currentLang] || article.title.zh || ""
+          "h2", "", article.title[currentLang] || article.title.zh || ""
         );
-
         const excerpt = makeText(
-          "p",
-          "",
-          article.excerpt[currentLang] || article.excerpt.zh || ""
+          "p", "", article.excerpt[currentLang] || article.excerpt.zh || ""
         );
 
         const meta = document.createElement("div");
         meta.className = "featured-meta";
 
-        const dateMeta = makeText(
-          "span",
-          "",
-          displayDate(article.date)
-        );
-
-        const separator = makeText("span", "dot", "|");
-
-        const readMeta = makeText(
-          "span",
-          "",
-          readTimeText(article.read)
-        );
-
-        const separator2 = makeText("span", "dot", "|");
-
-        const sourceMeta = makeText(
-          "span",
-          "",
-          `${t("sourceLabel")}: ${article.source || "Global View"}`
-        );
-
         meta.append(
-          dateMeta,
-          separator,
-          readMeta,
-          separator2,
-          sourceMeta
+          makeText("span", "", displayDate(article.date)),
+          makeText("span", "dot", "|"),
+          makeText("span", "", readTimeText(article.read)),
+          makeText("span", "dot", "|"),
+          makeText(
+            "span",
+            "",
+            `${t("sourceLabel")}: ${article.source || "Global View"}`
+          )
         );
 
         content.append(categoryTag, title, excerpt, meta);
@@ -310,25 +302,16 @@ for (let i = articles.length - 1; i >= 0; i--) {
         dot.type = "button";
         dot.className =
           "carousel-dot" + (index === 0 ? " active" : "");
-        dot.setAttribute(
-          "aria-label",
-          `Go to slide ${index + 1}`
-        );
-
+        dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
         dot.addEventListener("click", () => goToSlide(index));
         dotsContainer.appendChild(dot);
       });
 
-      // 兼容现有轮播位置、箭头和自动播放逻辑。
-      currentSlide = Math.min(
-        currentSlide,
-        Math.max(0, featuredArticles.length - 1)
-      );
-
+      currentSlide = 0;
       updateCarouselPosition();
       startCarousel();
     };
-
+    
     // 四、滚动头条：只显示最新 CMS 文章。
     renderTicker = function () {
       const content = $("#tickerContent");
