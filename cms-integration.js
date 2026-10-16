@@ -1,4 +1,4 @@
-
+```js
 /**
  * Global View CMS Integration
  * CMS文章接入首页，并动态更新轮播、滚动头条和热门阅读。
@@ -8,14 +8,6 @@
   "use strict";
 
   const categories = ["tech", "business", "culture", "life"];
-
-  // 保留原首页各分类对应的演示文章，作为空分类时的回退。
-  const fallbackFeaturedIds = {
-    tech: "ai-creative",
-    business: "green-investment",
-    culture: "museum-digital",
-    life: "urban-cycling"
-  };
 
   function dateValue(value) {
     const timestamp = Date.parse(value || "");
@@ -105,7 +97,7 @@
       throw new Error("没有找到首页 articles 数组");
     }
 
-    // 一、将 CMS 数据转换为首页现有文章格式
+    // 一、将 CMS 数据转换为首页现有文章格式。
     for (const post of data.posts) {
       if (!post.slug) continue;
 
@@ -143,6 +135,11 @@
         },
 
         date: post.date || "",
+        updatedAt: post.updated_at ||
+          post.updatedAt ||
+          post.date ||
+          "",
+
         read: 3,
         source: post.source_name || "Global View",
 
@@ -178,8 +175,10 @@
       }
     }
 
-    // 最新文章排在前面，供首页列表和轮播选取。
-    articles.sort((a, b) => dateValue(b.date) - dateValue(a.date));
+    // 按文章日期排序，供其他依赖该顺序的现有功能使用。
+    articles.sort(
+      (a, b) => dateValue(b.date) - dateValue(a.date)
+    );
 
     // 二、保留 CMS 文章独立详情页跳转。
     const originalOpenArticle = openArticle;
@@ -199,21 +198,28 @@
       return originalOpenArticle(id);
     };
 
-    // 三、轮播：每个分类优先选最新 CMS 文章。
-    // 若某分类没有 CMS 文章，则暂时保留该分类原演示文章。
+    // 三、轮播：从全站 CMS 文章中选择最新 5 篇。
+    // 不再按栏目分配名额，也不再使用演示文章补位。
     renderFeatured = function () {
       const track = $("#featuredTrack");
       const dotsContainer = $("#carouselDots");
 
       if (!track || !dotsContainer) return;
 
-      const featuredArticles = categories.map(category => {
-        const latest = articles.find(
-          article => article.cms && article.category === category
-        );
+      const featuredArticles = articles
+        .filter(article => article.cms)
+        .slice()
+        .sort((a, b) => {
+          const dateA = dateValue(a.updatedAt || a.date);
+          const dateB = dateValue(b.updatedAt || b.date);
+          return dateB - dateA;
+        })
+        .slice(0, 5);
 
-        return latest || articleById(fallbackFeaturedIds[category]);
-      }).filter(Boolean);
+      // 供首页及栏目文章列表排除重复文章。
+      window.globalViewCarouselIds = new Set(
+        featuredArticles.map(article => article.id)
+      );
 
       track.replaceChildren();
       dotsContainer.replaceChildren();
@@ -241,13 +247,13 @@
         const title = makeText(
           "h2",
           "",
-          article.title[currentLang]
+          article.title[currentLang] || article.title.zh || ""
         );
 
         const excerpt = makeText(
           "p",
           "",
-          article.excerpt[currentLang]
+          article.excerpt[currentLang] || article.excerpt.zh || ""
         );
 
         const meta = document.createElement("div");
@@ -291,12 +297,16 @@
         dot.type = "button";
         dot.className =
           "carousel-dot" + (index === 0 ? " active" : "");
-        dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
+        dot.setAttribute(
+          "aria-label",
+          `Go to slide ${index + 1}`
+        );
+
         dot.addEventListener("click", () => goToSlide(index));
         dotsContainer.appendChild(dot);
       });
 
-      // 当前轮播固定为四个分类，兼容原有箭头与自动播放逻辑。
+      // 兼容现有轮播位置、箭头和自动播放逻辑。
       currentSlide = Math.min(
         currentSlide,
         Math.max(0, featuredArticles.length - 1)
@@ -306,7 +316,7 @@
       startCarousel();
     };
 
-    // 四、滚动头条：只显示最新 CMS 文章，不混入演示文章。
+    // 四、滚动头条：只显示最新 CMS 文章。
     renderTicker = function () {
       const content = $("#tickerContent");
       if (!content) return;
@@ -315,10 +325,10 @@
 
       const entries = articles
         .filter(article => article.cms)
+        .slice()
         .sort((a, b) => dateValue(b.date) - dateValue(a.date))
         .slice(0, 10);
 
-      // 复制一组用于无缝滚动；只有一篇文章时也会重复显示。
       const duplicatedEntries = [...entries, ...entries];
 
       duplicatedEntries.forEach((article, index) => {
@@ -341,7 +351,6 @@
     };
 
     // 五、热门阅读：仅显示 CMS 中明确勾选的文章。
-    // 不用演示文章伪装成真实热门内容。
     renderTrending = function () {
       const list = $("#trendingList");
       if (!list) return;
@@ -350,6 +359,7 @@
 
       const ranking = articles
         .filter(article => article.cms && article.is_hot)
+        .slice()
         .sort((a, b) => dateValue(b.date) - dateValue(a.date))
         .slice(0, 5);
 
@@ -369,7 +379,7 @@
         const title = makeText(
           "p",
           "trend-title",
-          article.title[currentLang]
+          article.title[currentLang] || article.title.zh || ""
         );
 
         const subtitle = makeText(
@@ -413,8 +423,4 @@
     console.info(
       `Global View：已加载 ${data.posts.length} 篇 CMS 文章`
     );
-  } catch (error) {
-    // 加载失败时保留原有页面，避免阻断网站使用。
-    console.error("Global View CMS 接入失败：", error);
-  }
-})();
+  } catch
