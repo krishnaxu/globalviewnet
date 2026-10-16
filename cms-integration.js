@@ -226,9 +226,13 @@ for (let i = articles.length - 1; i >= 0; i--) {
           dateValue(a.updatedAt || a.date)
         )[0];
 
-      const rssArticles = articles
+           const rssArticles = articles
         .filter(article =>
-          String(article.id || "").startsWith("auto-")
+          String(article.id || "").startsWith("auto-") &&
+          (
+            !getAutoArticleLanguage(article) ||
+            getAutoArticleLanguage(article) === currentLang
+          )
         )
         .slice()
         .sort((a, b) => dateValue(b.date) - dateValue(a.date));
