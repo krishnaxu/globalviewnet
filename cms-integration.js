@@ -226,32 +226,25 @@ for (let i = articles.length - 1; i >= 0; i--) {
           dateValue(a.updatedAt || a.date)
         )[0];
 
-           const rssArticles = articles
+                      const rssArticles = articles
         .filter(article =>
           String(article.id || "").startsWith("auto-") &&
-          (
-            !getAutoArticleLanguage(article) ||
-            getAutoArticleLanguage(article) === currentLang
-          )
+          getAutoArticleLanguage(article) === currentLang
         )
         .slice()
         .sort((a, b) => dateValue(b.date) - dateValue(a.date));
 
-      const featuredArticles = [];
-
-      if (latestCMS) {
-        featuredArticles.push(latestCMS);
-      }
+      const featuredArticles = latestCMS ? [latestCMS] : [];
 
       rssArticles.forEach(article => {
-        if (
-          featuredArticles.length < 5 &&
-          !featuredArticles.some(item => item.id === article.id)
-        ) {
+        if (featuredArticles.length < 5) {
           featuredArticles.push(article);
         }
       });
 
+      window.globalViewCarouselIds = new Set(
+        featuredArticles.map(article => article.id)
+      );
       window.globalViewCarouselIds = new Set(
         featuredArticles.map(article => article.id)
       );
