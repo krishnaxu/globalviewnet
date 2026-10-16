@@ -2169,7 +2169,7 @@ async function loadGlobalViewFallbackImages() {
   }
 }
 
-window.globalViewSetArticleImage = function (img, article) {
+window.globalViewSetArticleImage = async function (img, article) {
   const category = ["tech", "business", "culture", "life"]
     .includes(article?.category) ? article.category : "tech";
 
