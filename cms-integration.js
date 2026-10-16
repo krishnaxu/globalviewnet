@@ -423,4 +423,7 @@
     console.info(
       `Global View：已加载 ${data.posts.length} 篇 CMS 文章`
     );
-  } catch
+    } catch (error) {
+    console.error("Global View CMS 接入失败：", error);
+  }
+})();
