@@ -329,17 +329,26 @@ for (let i = articles.length - 1; i >= 0; i--) {
       });
     };
 
-    // 五、热门阅读：仅显示 CMS 中明确勾选的文章。
+    
+    // 五、我的专栏：展示未进入首页轮播的较早 CMS 文章。
     renderTrending = function () {
       const list = $("#trendingList");
       if (!list) return;
 
       list.replaceChildren();
 
+      const carouselIds = window.globalViewCarouselIds || new Set();
+
       const ranking = articles
-        .filter(article => article.cms && article.is_hot)
+        .filter(article =>
+          article.cms &&
+          !carouselIds.has(article.id)
+        )
         .slice()
-        .sort((a, b) => dateValue(b.date) - dateValue(a.date))
+        .sort((a, b) =>
+          dateValue(b.updatedAt || b.date) -
+          dateValue(a.updatedAt || a.date)
+        )
         .slice(0, 5);
 
       ranking.forEach((article, index) => {
