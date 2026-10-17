@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-17T15:37:31.588Z",
+  "generated_at": "2026-10-17T16:39:18.836Z",
   "items": [
+    {
+      "id": "semiconductor-market-to-remain-solid-at-least-ec249df502ca",
+      "language": "en",
+      "title": "Semiconductor market to remain solid ‘at least through next year,’ South Korea finance minister says",
+      "excerpt": "South Korea's finance minister said semiconductor growth can last at least through 2027 as supply remains tight despite a global chip sell-off.",
+      "date": "2026-10-17T16:31:29.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/17/south-korea-semiconductor-outlook-lee-hyoung-il.html",
+      "image": ""
+    },
+    {
+      "id": "孟加拉国度假村火灾已致10人死亡-d6087319ab09",
+      "language": "zh",
+      "title": "孟加拉国度假村火灾已致10人死亡",
+      "excerpt": "据孟加拉国消防和民防部门最新通报，当地时间17日早晨，该国东南部科克斯巴扎尔地区一度假村餐厅当天发生火灾，已造成10人死亡，多人受伤。",
+      "date": "2026-10-17T15:45:20.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-17/10716479.shtml",
+      "image": ""
+    },
+    {
+      "id": "ai-stocks-plunge-inflation-heats-up-where-we--ce912e9ef010",
+      "language": "en",
+      "title": "AI stocks plunge. Inflation heats up. Where we're still finding opportunities",
+      "excerpt": "The sinking AI trade rattled last week's market. But solid bank earnings and a rotation beyond tech gave us reasons for optimism.",
+      "date": "2026-10-17T15:42:34.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/17/ai-stocks-plunge-inflation-heats-up-where-were-still-finding-opportunities.html",
+      "image": ""
+    },
     {
       "id": "ember-s-new-temperature-controlled-mug-makes--273d744b399a",
       "language": "en",
@@ -2970,36 +3000,6 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8455/live/c34abe60-c99d-11f1-8844-b58b162b44d4.jpg"
-    },
-    {
-      "id": "openai-models-hacked-a-crypto-wallet-and-brea-16df95b107d5",
-      "language": "en",
-      "title": "OpenAI models hacked a crypto wallet and breached more websites",
-      "excerpt": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
-      "date": "2026-10-16T20:59:01.000Z",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-500x500.jpg"
-    },
-    {
-      "id": "why-did-coreweave-stock-get-crushed-this-week-3b6b79c94978",
-      "language": "en",
-      "title": "Why did CoreWeave stock get crushed this week? Look to this corner of the debt market for clues",
-      "excerpt": "CoreWeave’s bond yields and credit default swaps have surged as its stock sells off. Here’s what those credit signals mean for stock investors.",
-      "date": "2026-10-16T20:33:55.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/investingclub/2026/10/16/coreweave-credit-default-swaps.html",
-      "image": ""
-    },
-    {
-      "id": "thegentlemanpervert-producing-ai-csam-is-a-nj-7353a42c67b5",
-      "language": "en",
-      "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
-      "excerpt": "Discord user flagged AI CSAM, triggering arrest of New Jersey deputy AG.",
-      "date": "2026-10-16T20:20:07.000Z",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2233803629-2-500x500.jpg"
     }
   ]
 }
