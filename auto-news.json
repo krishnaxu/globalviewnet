@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-17T18:39:55.943Z",
+  "generated_at": "2026-10-17T19:34:15.496Z",
   "items": [
+    {
+      "id": "replit-is-no-longer-working-with-anthropic-ce-fcf73aabe3e3",
+      "language": "en",
+      "title": "Replit is no longer working with Anthropic, CEO says",
+      "excerpt": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+      "date": "2026-10-17T18:48:08.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "image": ""
+    },
     {
       "id": "semiconductor-market-to-remain-solid-at-least-ec249df502ca",
       "language": "en",
@@ -2990,16 +3000,6 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "image": ""
-    },
-    {
-      "id": "katie-zacharia-leaving-her-white-house-role-l-94eab1f0bb1f",
-      "language": "en",
-      "title": "Katie Zacharia leaving her White House role less than five days on the job",
-      "excerpt": "Her public debut as White House press secretary on Tuesday ended with a flurry of media criticism about her credentials and preparedness.",
-      "date": "2026-10-16T21:05:05.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8455/live/c34abe60-c99d-11f1-8844-b58b162b44d4.jpg"
     }
   ]
 }
