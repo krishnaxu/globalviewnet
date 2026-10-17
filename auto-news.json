@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-17T19:34:15.496Z",
+  "generated_at": "2026-10-17T20:37:43.890Z",
   "items": [
+    {
+      "id": "anthropic-says-its-workforce-has-become-less--fd3979152c2e",
+      "language": "en",
+      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+      "excerpt": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
+      "date": "2026-10-17T20:21:19.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "image": ""
+    },
     {
       "id": "replit-is-no-longer-working-with-anthropic-ce-fcf73aabe3e3",
       "language": "en",
@@ -2989,16 +2999,6 @@
       "date": "2026-10-16T21:49:13.000Z",
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/16/midterm-election-fundraising-elon-musk.html",
-      "image": ""
-    },
-    {
-      "id": "replit-is-no-longer-working-with-anthropic-ce-fdd4c6f578d6",
-      "language": "en",
-      "title": "Replit is no longer working with Anthropic, CEO says",
-      "excerpt": "Replit CEO and co-founder Amjad Masad made the comments during TechCrunch Disrupt 2026.",
-      "date": "2026-10-16T21:22:28.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "image": ""
     }
   ]
