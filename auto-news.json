@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-10-17T22:36:04.347Z",
+  "generated_at": "2026-10-17T23:32:28.467Z",
   "items": [
+    {
+      "id": "10月18日新闻早报-51d57a8413ca",
+      "language": "zh",
+      "title": "10月18日新闻早报",
+      "excerpt": "",
+      "date": "2026-10-17T23:00:00.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/iframe/2026/10-18/10716483.shtml",
+      "image": ""
+    },
     {
       "id": "苏丹首都圈地区一军事基地发生爆炸-60e67877503f",
       "language": "zh",
@@ -2989,16 +2999,6 @@
       "date": "2026-10-17T00:47:57.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/10-17/10716058.shtml",
-      "image": ""
-    },
-    {
-      "id": "庆祝中俄建交77周年音乐会在莫斯科举行-5f1f7ea95049",
-      "language": "zh",
-      "title": "庆祝中俄建交77周年音乐会在莫斯科举行",
-      "excerpt": "",
-      "date": "2026-10-17T00:42:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-17/1208051.shtml",
       "image": ""
     }
   ]
