@@ -43,19 +43,49 @@ def yaml_string(value):
     return json.dumps(value, ensure_ascii=False)
 
 def main():
-    existing_urls = set()
+       existing_by_url = {}
     for file in OUT.glob("*.md"):
         text = file.read_text(encoding="utf-8")
         m = re.search(r"(?m)^original_url:\s*[\"']?(https?://\S+)", text)
         if m:
-            existing_urls.add(m.group(1).rstrip("\"'"))
+            existing_by_url[m.group(1).rstrip("\"'")] = file
 
     found = {}
     for page in PAGES:
         print("读取：", page)
         req = Request(page, headers={"User-Agent": "Mozilla/5.0"})
-        with urlopen(req, timeout=30) as response:
-            source = response.read().decode("utf-8", errors="replace")
+                with urlopen(req, timeout=30) as response:
+            raw = response.read()
+
+            # 优先读取网页自身声明的编码
+            charset_match = re.search(
+                br'<meta[^>]+charset=["\']?\s*([a-zA-Z0-9_-]+)',
+                raw,
+                re.IGNORECASE
+            )
+
+            charset = (
+                charset_match.group(1).decode("ascii")
+                if charset_match
+                else response.headers.get_content_charset()
+            )
+
+            # 人民网旧版页面常使用 GBK 系列编码
+            candidates = []
+            if charset:
+                candidates.append(charset)
+            candidates.extend(["gb18030", "utf-8"])
+
+            source = None
+            for encoding in dict.fromkeys(candidates):
+                try:
+                    source = raw.decode(encoding)
+                    break
+                except (UnicodeDecodeError, LookupError):
+                    continue
+
+            if source is None:
+                raise ValueError(f"无法识别网页编码：{page}")
         parser = Links()
         parser.feed(source)
 
@@ -77,8 +107,26 @@ def main():
 
         time.sleep(1)
     added = 0
-    for url, title in found.items():
-        if url in existing_urls:
+       for url, title in found.items():
+        if url in existing_by_url:
+            existing_file = existing_by_url[url]
+
+            # 只修复本次批量导入的作品，不覆盖原有手工作品
+            if existing_file.name.startswith("people-"):
+                content = existing_file.read_text(encoding="utf-8")
+                replacement = "title: " + yaml_string(title)
+
+                content, count = re.subn(
+                    r"(?m)^title:.*$",
+                    lambda _: replacement,
+                    content,
+                    count=1
+                )
+
+                if count:
+                    existing_file.write_text(content, encoding="utf-8")
+                    print("修复标题：", title)
+
             continue
 
         slug = "people-" + hashlib.sha1(url.encode()).hexdigest()[:14]
