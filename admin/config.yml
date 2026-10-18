@@ -230,3 +230,55 @@ collections:
         name: "body"
         widget: "markdown"
         required: false
+
+  - name: "works"
+    label: "我的作品"
+    label_singular: "作品"
+    folder: "content/works"
+    create: true
+    identifier_field: "slug"
+    slug: "{{fields.slug}}"
+    summary: "{{title}}"
+    fields:
+      - label: "作品标识（用于文件名）"
+        name: "slug"
+        widget: "string"
+        required: true
+        hint: "填写英文小写字母、数字和连字符，例如 people-report-001。"
+
+      - label: "人民网原文链接"
+        name: "original_url"
+        widget: "string"
+        required: true
+
+      - label: "作品标题"
+        name: "title"
+        widget: "string"
+        required: true
+
+      - label: "发表平台"
+        name: "platform"
+        widget: "string"
+        default: "人民网"
+        required: true
+
+      - label: "发布日期"
+        name: "date"
+        widget: "datetime"
+        required: false
+
+      - label: "作品简介"
+        name: "excerpt"
+        widget: "text"
+        required: false
+
+      - label: "封面图片"
+        name: "cover_image"
+        widget: "image"
+        required: false
+
+      - label: "发布到首页"
+        name: "published"
+        widget: "boolean"
+        default: false
+        required: true
