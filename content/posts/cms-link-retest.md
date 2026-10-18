@@ -1,6 +1,7 @@
 ---
 slug: cms-link-retest
 category: culture
+show_in_column: true
 date: 2026-10-15T23:59:00.000+08:00
 published: true
 is_hot: false
