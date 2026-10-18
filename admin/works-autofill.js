@@ -48,7 +48,7 @@
 
         const fields = [
           ["作品标题", data.title],
-          ["发布日期", data.date],
+          ["发布日期", data.date ? data.date.slice(0, 10) + "T00:00" : ""],
           ["作品简介", data.excerpt]
         ];
 
