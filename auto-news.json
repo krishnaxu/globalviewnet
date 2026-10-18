@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-18T16:39:30.748Z",
+  "generated_at": "2026-10-18T17:36:58.528Z",
   "items": [
+    {
+      "id": "王毅同黑山副总理兼外长伊布拉希莫维奇会谈-98f98ee7f2e5",
+      "language": "zh",
+      "title": "王毅同黑山副总理兼外长伊布拉希莫维奇会谈",
+      "excerpt": "当地时间2026年10月18日，中共中央政治局委员、外交部长王毅在波德戈里察同黑山副总理兼外长伊布拉希莫维奇举行会谈。",
+      "date": "2026-10-18T16:54:55.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-19/10716911.shtml",
+      "image": ""
+    },
+    {
+      "id": "厄尔尼诺加剧干旱风险-菲律宾强化森林保护与修复-33132e0ba0cd",
+      "language": "zh",
+      "title": "厄尔尼诺加剧干旱风险 菲律宾强化森林保护与修复",
+      "excerpt": "中新社马尼拉10月18日电 (记者 周璟)菲律宾环境与自然资源部18日表示，为应对厄尔尼诺可能加剧的旱情、保障水资源安全，该部门正加强菲律宾重点流域的森林巡护、退化生态系统修复和植树造林。",
+      "date": "2026-10-18T16:45:40.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-19/10716910.shtml",
+      "image": ""
+    },
     {
       "id": "disney-agrees-to-hire-the-majority-of-charact-35cd62faf12b",
       "language": "en",
@@ -10,6 +30,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
       "image": ""
+    },
+    {
+      "id": "anthropic-gives-outside-ai-watchdog-employee--796bbd796e41",
+      "language": "en",
+      "title": "Anthropic gives outside AI watchdog “employee-like” access",
+      "excerpt": "The outside watchdog can publish its findings without Anthropic's approval.",
+      "date": "2026-10-18T16:25:19.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/claudebyanthropic-500x500.jpg"
     },
     {
       "id": "techcrunch-mobility-rivian-s-next-act-1e22e9d98402",
@@ -2969,36 +2999,6 @@
       "date": "2026-10-17T23:00:00.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/iframe/2026/10-18/10716483.shtml",
-      "image": ""
-    },
-    {
-      "id": "苏丹首都圈地区一军事基地发生爆炸-60e67877503f",
-      "language": "zh",
-      "title": "苏丹首都圈地区一军事基地发生爆炸",
-      "excerpt": "当地时间10月17日，苏丹武装部队发布声明称，首都喀土穆市北部的北喀土穆市一座军事基地当天发生爆炸。",
-      "date": "2026-10-17T22:26:34.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-18/10716482.shtml",
-      "image": ""
-    },
-    {
-      "id": "纽约曼哈顿地铁站发生枪击事件致一人死亡-db2c30e73c28",
-      "language": "zh",
-      "title": "纽约曼哈顿地铁站发生枪击事件致一人死亡",
-      "excerpt": "新华社纽约10月17日电(记者施春)据当地警方消息，美国纽约曼哈顿一地铁站17日发生枪击事件，造成一名男子死亡。",
-      "date": "2026-10-17T22:21:12.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-18/10716481.shtml",
-      "image": ""
-    },
-    {
-      "id": "也门胡塞武装-沙特空袭塔伊兹省造成至少9人死亡-86c41983b794",
-      "language": "zh",
-      "title": "也门胡塞武装：沙特空袭塔伊兹省造成至少9人死亡",
-      "excerpt": "也门胡塞武装17日称，沙特阿拉伯当天空袭也门西南部塔伊兹省，造成包括妇女和儿童在内至少9人死亡，另有16人受伤。",
-      "date": "2026-10-17T22:19:26.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-18/10716480.shtml",
       "image": ""
     }
   ]
