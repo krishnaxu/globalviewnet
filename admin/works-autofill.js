@@ -55,8 +55,8 @@
         for (const [labelText, value] of fields) {
           if (!value) continue;
 
-          const field = labelText === "发布日期"
-  ? document.querySelector('input[type="datetime-local"]')
+         const field = labelText === "发布日期"
+  ? document.querySelector('#date-field-5, input[data-testid^="date-field-"]')
   : findField(labelText);
           if (!field || field.value.trim()) continue;
 
@@ -65,8 +65,12 @@
             "value"
           )?.set;
 
-          if (setter) setter.call(field, value);
-          else field.value = value;
+          const finalValue = labelText === "发布日期"
+  ? value.slice(0, 10) + "T00:00"
+  : value;
+
+if (setter) setter.call(field, finalValue);
+else field.value = finalValue;
 
           field.dispatchEvent(new Event("input", { bubbles: true }));
           field.dispatchEvent(new Event("change", { bubbles: true }));
