@@ -278,13 +278,13 @@ for (let i = articles.length - 1; i >= 0; i--) {
       if (!track || !dotsContainer) return;
 
       const featuredArticles = articles
-        .filter(article => article.cms)
+.filter(article => article.cms && article.show_in_column === true)
         .slice()
         .sort((a, b) =>
           dateValue(b.updatedAt || b.date) -
           dateValue(a.updatedAt || a.date)
         )
-        .slice(0, 5);
+      
 
       window.globalViewCarouselIds = new Set(
         featuredArticles.map(article => article.id)
@@ -396,11 +396,10 @@ for (let i = articles.length - 1; i >= 0; i--) {
 
      
       const ranking = articles
-        .filter(article =>
-          article.cms &&
-          article.show_in_column === true &&
-          !carouselIds.has(article.id)
-        )
+  .filter(article =>
+    article.cms &&
+    article.show_in_column === true
+  )
 
         .slice()
         .sort((a, b) =>
