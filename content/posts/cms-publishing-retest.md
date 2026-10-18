@@ -1,6 +1,7 @@
 ---
 slug: cms-publishing-retest
 category: tech
+show_in_column: true
 date: 2026-10-16T00:19:00.000+08:00
 published: true
 is_hot: false
