@@ -1,0 +1,30 @@
+
+name: Import historical People.com.cn works
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Import historical works
+        run: python scripts/import_people_works.py
+
+      - name: Commit imported works
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/works
+          if git diff --cached --quiet; then
+            echo "没有新增作品"
+            exit 0
+          fi
+          git commit -m "Import historical People.com.cn works"
+          git push
