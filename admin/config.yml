@@ -42,6 +42,15 @@ collections:
         default: "tech"
         required: true
 
+        
+      - label: "发布到我的专栏"
+        name: "show_in_column"
+        widget: "boolean"
+        default: false
+        required: true
+        hint: "勾选后，该文章将显示在首页“我的专栏”列表中。"
+
+
       - label: "发布日期"
         name: "date"
         widget: "datetime"
