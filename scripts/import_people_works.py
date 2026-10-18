@@ -56,28 +56,26 @@ def main():
         req = Request(page, headers={"User-Agent": "Mozilla/5.0"})
         with urlopen(req, timeout=30) as response:
             source = response.read().decode("utf-8", errors="replace")
-
         parser = Links()
         parser.feed(source)
 
         for href, title in parser.items:
             if not title or len(title) < 4:
                 continue
+
             url = urljoin(page, html.unescape(href)).split("#")[0]
             host = urlparse(url).hostname or ""
 
             if host != "world.people.com.cn":
-    continue
-if "/GB/8722/11139/385815/" in url:
-    continue
+                continue
+            if "/GB/8722/11139/385815/" in url:
+                continue
 
-# 兼容旧版 http 链接，统一保存为 https
-url = url.replace("http://", "https://", 1)
-
+            # 兼容旧版 http 链接，统一保存为 https
+            url = url.replace("http://", "https://", 1)
             found[url] = title
 
         time.sleep(1)
-
     added = 0
     for url, title in found.items():
         if url in existing_urls:
