@@ -55,7 +55,9 @@
         for (const [labelText, value] of fields) {
           if (!value) continue;
 
-          const field = findField(labelText);
+          const field = labelText === "发布日期"
+  ? document.querySelector('input[type="datetime-local"]')
+  : findField(labelText);
           if (!field || field.value.trim()) continue;
 
           const setter = Object.getOwnPropertyDescriptor(
