@@ -55,7 +55,19 @@ export async function onRequestGet({ request }) {
       }, 502);
     }
 
-    const html = await response.text();
+    
+const buffer = await response.arrayBuffer();
+const contentType = response.headers.get("content-type") || "";
+const charset = contentType.match(/charset\s*=\s*["']?([^;"'\s]+)/i)?.[1];
+
+let html;
+
+if (charset) {
+  html = new TextDecoder(charset).decode(buffer);
+} else {
+  html = new TextDecoder("gbk").decode(buffer);
+}
+
 
     function extract(pattern) {
       const match = html.match(pattern);
