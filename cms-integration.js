@@ -278,12 +278,13 @@ for (let i = articles.length - 1; i >= 0; i--) {
       if (!track || !dotsContainer) return;
 
       const featuredArticles = articles
-.filter(article => article.cms && article.show_in_column === true)
-        .slice()
-        .sort((a, b) =>
-          dateValue(b.updatedAt || b.date) -
-          dateValue(a.updatedAt || a.date)
-        )
+  .filter(article => article.cms && article.show_in_column === true)
+  .slice()
+  .sort((a, b) =>
+    dateValue(b.updatedAt || b.date) -
+    dateValue(a.updatedAt || a.date)
+  )
+  .slice(0, 5);
       
 
       window.globalViewCarouselIds = new Set(
