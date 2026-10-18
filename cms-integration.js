@@ -180,6 +180,50 @@ origin: "cms",
         articles.push(article);
       }
     }
+    
+    // 加载“我的作品”
+    try {
+      const worksResponse = await fetch("/api/works", {
+        headers: { Accept: "application/json" },
+        cache: "no-store"
+      });
+
+      if (!worksResponse.ok) {
+        throw new Error("作品 API 请求失败：" + worksResponse.status);
+      }
+
+      const worksData = await worksResponse.json();
+      const worksList = document.getElementById("worksList");
+
+      if (
+        worksList &&
+        worksData.success &&
+        Array.isArray(worksData.works)
+      ) {
+        worksList.replaceChildren();
+
+        if (worksData.works.length === 0) {
+          const empty = document.createElement("p");
+          empty.className = "works-empty";
+          empty.textContent = "暂无作品";
+          worksList.appendChild(empty);
+        } else {
+          for (const work of worksData.works) {
+            const link = document.createElement("a");
+            link.className = "work-item";
+            link.href = work.original_url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = work.title;
+            link.title = work.title;
+            worksList.appendChild(link);
+          }
+        }
+      }
+    } catch (error) {
+      console.error("加载我的作品失败：", error);
+    }
+
 
     // 按文章日期排序，供其他依赖该顺序的现有功能使用。
         // 首页统一使用 CMS 文章，不再保留建站演示文章。
