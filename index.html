@@ -15,14 +15,39 @@
   <meta name="color-scheme" content="light dark">
   <title>Global View | 观澜泗渡</title>
 
-  <style>
-    html.cms-loading main {
-      visibility: hidden;
-    }
-  </style>
-  <script>
-    document.documentElement.classList.add("cms-loading");
-  </script>
+ <style>
+  .works-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .work-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.6;
+    text-decoration: none;
+  }
+
+  .work-number {
+    flex-shrink: 0;
+    min-width: 22px;
+    font-weight: 600;
+  }
+
+  .work-title {
+    overflow-wrap: anywhere;
+  }
+
+  html.cms-loading main {
+    visibility: hidden;
+  }
+   
+</style>
+<script>
+  document.documentElement.classList.add("cms-loading");
+</script>
 
   <!-- Google Fonts：网络不可用时自动回退至本地字体 -->
 
