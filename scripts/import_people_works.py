@@ -66,12 +66,13 @@ def main():
             url = urljoin(page, html.unescape(href)).split("#")[0]
             host = urlparse(url).hostname or ""
 
-            if not host.endswith("people.com.cn"):
-                continue
-            if "/GB/8722/11139/385815/" in url:
-                continue
-            if not url.startswith("https://"):
-                continue
+            if host != "world.people.com.cn":
+    continue
+if "/GB/8722/11139/385815/" in url:
+    continue
+
+# 兼容旧版 http 链接，统一保存为 https
+url = url.replace("http://", "https://", 1)
 
             found[url] = title
 
