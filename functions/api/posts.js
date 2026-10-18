@@ -195,6 +195,7 @@ export async function onRequestGet({ request, env }) {
 
         // 新增：CMS 手动设置的热门标记
         const isHot = isTrue(meta.is_hot);
+        const showInColumn = isTrue(meta.show_in_column);
 
         return {
           slug,
@@ -221,6 +222,7 @@ export async function onRequestGet({ request, env }) {
 
           // 首页可以据此筛选热门文章
           is_hot: isHot,
+          show_in_column: showInColumn,
 
           url: `/posts/${encodeURIComponent(slug)}`,
           url_zh: `/posts/${encodeURIComponent(slug)}`,
