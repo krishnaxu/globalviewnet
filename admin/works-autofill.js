@@ -1,63 +1,77 @@
 
 (function () {
-  const originalFetch = window.fetch;
+  const originalFetch = window.fetch.bind(window);
 
-  async function getArticleInfo(url) {
-    const response = await originalFetch(
-      "/api/works-metadata?url=" + encodeURIComponent(url)
+  function findField(labelText) {
+    const labels = [...document.querySelectorAll("label")];
+    const label = labels.find(el =>
+      el.innerText.trim().includes(labelText)
     );
 
-    if (!response.ok) {
-      throw new Error("获取文章信息失败");
-    }
+    if (!label) return null;
 
-    return response.json();
+    const root = label.closest("[class]")?.parentElement ||
+      label.parentElement;
+
+    return (
+      label.control ||
+      root?.querySelector("input, textarea") ||
+      label.parentElement?.querySelector("input, textarea")
+    );
   }
 
-  document.addEventListener("input", async function (event) {
-    const input = event.target;
+  let timer;
 
-    if (
-      !input ||
-      input.name !== "original_url" ||
-      !input.value.trim()
-    ) {
-      return;
-    }
+  document.addEventListener("input", function (event) {
+    const urlField = findField("人民网原文链接");
+    if (!urlField || event.target !== urlField) return;
 
-    const url = input.value.trim();
+    clearTimeout(timer);
 
-    if (!/^https?:\/\/(www\.)?people\.com\.cn\//i.test(url)) {
-      return;
-    }
+    timer = setTimeout(async () => {
+      const url = urlField.value.trim();
 
-    if (input.dataset.autofillUrl === url) return;
-    input.dataset.autofillUrl = url;
-
-    try {
-      const data = await getArticleInfo(url);
-
-      if (!data.success) throw new Error(data.error || "获取失败");
-
-      const fields = {
-        title: data.title,
-        date: data.date,
-        excerpt: data.excerpt
-      };
-
-      for (const [name, value] of Object.entries(fields)) {
-        if (!value) continue;
-
-        const field = document.querySelector(`[name="${name}"]`);
-        if (!field || field.value.trim()) continue;
-
-        field.value = value;
-        field.dispatchEvent(new Event("input", { bubbles: true }));
-        field.dispatchEvent(new Event("change", { bubbles: true }));
+      if (!/^https?:\/\/([\w-]+\.)*people\.com\.cn\//i.test(url)) {
+        return;
       }
-    } catch (error) {
-      console.error("作品自动填充失败：", error);
-      delete input.dataset.autofillUrl;
-    }
+
+      try {
+        const response = await originalFetch(
+          "/api/works-metadata?url=" + encodeURIComponent(url)
+        );
+
+        const data = await response.json();
+
+        if (!response.ok || !data.success) {
+          throw new Error(data.error || "获取文章信息失败");
+        }
+
+        const fields = [
+          ["作品标题", data.title],
+          ["发布日期", data.date],
+          ["作品简介", data.excerpt]
+        ];
+
+        for (const [labelText, value] of fields) {
+          if (!value) continue;
+
+          const field = findField(labelText);
+          if (!field || field.value.trim()) continue;
+
+          const setter = Object.getOwnPropertyDescriptor(
+            Object.getPrototypeOf(field),
+            "value"
+          )?.set;
+
+          if (setter) setter.call(field, value);
+          else field.value = value;
+
+          field.dispatchEvent(new Event("input", { bubbles: true }));
+          field.dispatchEvent(new Event("change", { bubbles: true }));
+        }
+      } catch (error) {
+        console.error("作品自动填充失败：", error);
+      }
+    }, 600);
   });
 })();
