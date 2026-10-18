@@ -110,8 +110,11 @@
       const article = {
         id,
         cms: true,
+       
         slug: post.slug,
         is_hot: isTrue(post.is_hot),
+        show_in_column: isTrue(post.show_in_column),
+
 
         url_zh: post.url_zh ||
           post.url ||
@@ -339,11 +342,14 @@ for (let i = articles.length - 1; i >= 0; i--) {
 
       const carouselIds = window.globalViewCarouselIds || new Set();
 
+     
       const ranking = articles
         .filter(article =>
           article.cms &&
+          article.show_in_column === true &&
           !carouselIds.has(article.id)
         )
+
         .slice()
         .sort((a, b) =>
           dateValue(b.updatedAt || b.date) -
