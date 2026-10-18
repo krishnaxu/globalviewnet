@@ -43,12 +43,16 @@ def yaml_string(value):
     return json.dumps(value, ensure_ascii=False)
 
 def main():
-       existing_by_url = {}
+    existing_by_url = {}
+
     for file in OUT.glob("*.md"):
         text = file.read_text(encoding="utf-8")
-        m = re.search(r"(?m)^original_url:\s*[\"']?(https?://\S+)", text)
-        if m:
-            existing_by_url[m.group(1).rstrip("\"'")] = file
+        match = re.search(
+            r"(?m)^original_url:\s*[\"']?(https?://\S+)",
+            text
+        )
+        if match:
+            existing_by_url[match.group(1).rstrip("\"'")] = file
 
     found = {}
     for page in PAGES:
