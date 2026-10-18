@@ -181,7 +181,7 @@ origin: "cms",
       }
     }
     
-    // 加载“我的作品”
+       // 加载“我的作品”
     try {
       const worksResponse = await fetch("/api/works", {
         headers: { Accept: "application/json" },
@@ -208,13 +208,22 @@ origin: "cms",
           empty.textContent = "暂无作品";
           worksList.appendChild(empty);
         } else {
-          for (const work of worksData.works) {
+          for (const [index, work] of worksData.works.entries()) {
             const link = document.createElement("a");
             link.className = "work-item";
             link.href = work.original_url;
             link.target = "_blank";
             link.rel = "noopener noreferrer";
-            link.textContent = work.title;
+
+            const number = document.createElement("span");
+            number.className = "work-number";
+            number.textContent = `${index + 1}.`;
+
+            const title = document.createElement("span");
+            title.className = "work-title";
+            title.textContent = work.title;
+
+            link.append(number, title);
             link.title = work.title;
             worksList.appendChild(link);
           }
@@ -223,8 +232,7 @@ origin: "cms",
     } catch (error) {
       console.error("加载我的作品失败：", error);
     }
-
-
+    
     // 按文章日期排序，供其他依赖该顺序的现有功能使用。
         // 首页统一使用 CMS 文章，不再保留建站演示文章。
     
