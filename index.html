@@ -1761,6 +1761,10 @@ function refreshAutoNewsIds() {
       const query = $("#searchInput").value.trim().toLocaleLowerCase();
 
       let results = articles.filter(article => {
+                // 已发布到专栏的 CMS 文章不进入普通文章版块
+        if (article.cms && article.show_in_column === true) {
+          return false;
+        }
         const articleLanguage = getAutoArticleLanguage(article);
 
         // 自动新闻只显示当前语言对应的内容
@@ -1771,6 +1775,10 @@ function refreshAutoNewsIds() {
           return false;
         }
 
+       // 已发布到专栏的 CMS 文章不进入普通文章列表
+if (article.cms && article.show_in_column === true) {
+  return false;
+}
         const categoryMatch =
           activeFilter === "all" ||
           article.category === activeFilter;
