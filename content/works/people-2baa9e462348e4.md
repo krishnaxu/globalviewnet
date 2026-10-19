@@ -1,6 +1,6 @@
 ---
 slug: "people-2baa9e462348e4"
-title: "�����ֺ������߼������ֻ����żӴ����"
+title: "东盟灾害管理高级别研讨会在雅加达举行"
 original_url: "https://world.people.com.cn/n1/2020/0228/c1002-31608668.html"
 platform: "人民网"
 date: ""

@@ -1,6 +1,6 @@
 ---
 slug: "people-8a702fcbf69d12"
-title: "ӡ���¹ڷ����ۼ�ȷ�ﲡ������7775��"
+title: "印尼新冠肺炎累计确诊病例升至7775例"
 original_url: "https://world.people.com.cn/n1/2020/0423/c1002-31685632.html"
 platform: "人民网"
 date: ""

@@ -1,6 +1,6 @@
 ---
 slug: "people-6d2eb517e7770d"
-title: "�ͻ�˹̹�״γɹ�ͨ��Ǳͧ����Ѳ������"
+title: "巴基斯坦首次成功通过潜艇试射巡航导弹"
 original_url: "https://world.people.com.cn/n1/2017/0110/c1002-29013443.html"
 platform: "人民网"
 date: ""

@@ -1,6 +1,6 @@
 ---
 slug: "people-3c66e3f8f6aace"
-title: "����̸�а͹�ϵ"
+title: "王毅谈中巴关系"
 original_url: "https://world.people.com.cn/n1/2017/0626/c1002-29362117.html"
 platform: "人民网"
 date: ""
