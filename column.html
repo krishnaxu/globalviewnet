@@ -118,6 +118,40 @@
       font-size: 14px;
     }
 
+    
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 28px;
+      font-size: 14px;
+    }
+
+    .pagination button {
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--card);
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .pagination button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .pagination button:hover:not(:disabled) {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .page-indicator {
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
     @media (max-width: 600px) {
       main {
         padding-top: 26px;
@@ -147,6 +181,13 @@
 
     <div class="count" id="articleCount">正在加载文章……</div>
     <div class="article-list" id="articleList"></div>
+
+<nav class="pagination" id="pagination"
+     aria-label="专栏文章分页" hidden>
+  <button type="button" id="prevPage">上一页</button>
+  <span class="page-indicator" id="pageIndicator">第 1 / 1 页</span>
+  <button type="button" id="nextPage">下一页</button>
+</nav>
     <p class="status" id="status" role="status"></p>
   </main>
 
@@ -155,6 +196,16 @@
       "use strict";
 
       const list = document.getElementById("articleList");
+      
+      const pagination = document.getElementById("pagination");
+      const prevPageButton = document.getElementById("prevPage");
+      const nextPageButton = document.getElementById("nextPage");
+      const pageIndicator = document.getElementById("pageIndicator");
+
+      const pageSize = 10;
+      let currentPage = 1;
+      let posts = [];
+
       const count = document.getElementById("articleCount");
       const status = document.getElementById("status");
 
@@ -205,7 +256,7 @@
           throw new Error("文章数据格式不正确");
         }
 
-        const posts = data.posts
+       posts = data.posts
           .filter(post =>
             post.slug &&
             isTrue(post.show_in_column) &&
@@ -225,46 +276,86 @@
           return;
         }
 
-        posts.forEach(post => {
-          const link = document.createElement("a");
-          link.className = "article-card";
 
-          const url = post.url_zh || post.url_en;
-
-          if (url) {
-            link.href = url;
-          } else {
-            link.href = "#";
-            link.addEventListener("click", event => {
-              event.preventDefault();
-            });
-          }
-
-          addText(
-            link,
-            "h2",
-            "article-title",
-            post.title_zh || post.title || post.slug
+        function renderPage() {
+          const totalPages = Math.ceil(posts.length / pageSize);
+          const startIndex = (currentPage - 1) * pageSize;
+          const pagePosts = posts.slice(
+            startIndex,
+            startIndex + pageSize
           );
 
-          const excerpt = post.excerpt_zh || post.excerpt || "";
+          list.replaceChildren();
 
-          if (excerpt) {
-            addText(link, "p", "article-excerpt", excerpt);
+          pagePosts.forEach(post => {
+            const link = document.createElement("a");
+            link.className = "article-card";
+
+            const url = post.url_zh || post.url_en;
+
+            if (url) {
+              link.href = url;
+            } else {
+              link.href = "#";
+              link.addEventListener("click", event => {
+                event.preventDefault();
+              });
+            }
+
+            addText(
+              link,
+              "h2",
+              "article-title",
+              post.title_zh || post.title || post.slug
+            );
+
+            const excerpt = post.excerpt_zh || post.excerpt || "";
+
+            if (excerpt) {
+              addText(link, "p", "article-excerpt", excerpt);
+            }
+
+            addText(
+              link,
+              "div",
+              "article-meta",
+              [
+                post.category || "",
+                displayDate(post.updatedAt || post.updated_at || post.date)
+              ].filter(Boolean).join(" · ")
+            );
+
+            list.appendChild(link);
+          });
+
+          pagination.hidden = totalPages <= 1;
+          pageIndicator.textContent =
+            `第 ${currentPage} / ${totalPages} 页`;
+
+          prevPageButton.disabled = currentPage <= 1;
+          nextPageButton.disabled = currentPage >= totalPages;
+        }
+
+        prevPageButton.addEventListener("click", () => {
+          if (currentPage > 1) {
+            currentPage--;
+            renderPage();
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }
-
-          addText(
-            link,
-            "div",
-            "article-meta",
-            [
-              post.category || "",
-              displayDate(post.updatedAt || post.updated_at || post.date)
-            ].filter(Boolean).join(" · ")
-          );
-
-          list.appendChild(link);
         });
+
+        nextPageButton.addEventListener("click", () => {
+          const totalPages = Math.ceil(posts.length / pageSize);
+
+          if (currentPage < totalPages) {
+            currentPage++;
+            renderPage();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        });
+
+        renderPage();
+
       } catch (error) {
         console.error("专栏文章加载失败：", error);
         count.textContent = "文章加载失败";
