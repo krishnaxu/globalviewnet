@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-19T18:51:04.497Z",
+  "generated_at": "2026-10-19T19:43:30.483Z",
   "items": [
+    {
+      "id": "hackers-hit-ai-coding-tool-opencode-running-u-f649037fa8e9",
+      "language": "en",
+      "title": "Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts",
+      "excerpt": "OpenCode is an open-source AI coding agent that's become a popular alternative to Claude Code and Cursor. But hackers got into part of its online platform and stole some users’ API keys, and the AI tools it turned to for help kept refusing to look at the malicious code.",
+      "date": "2026-10-19T19:28:34.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+      "image": ""
+    },
+    {
+      "id": "startup-taps-underwater-volcano-as-energy-sou-f206d1912eab",
+      "language": "en",
+      "title": "Startup taps underwater volcano as energy source in \"proof point\" test",
+      "excerpt": "Can undersea geothermal power help Pacific Rim nations cut down on oil imports?",
+      "date": "2026-10-19T19:27:24.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/10/startup-taps-underwater-volcano-as-energy-source-in-proof-point-test/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Endurance-Energy-rockhopper-drill-500x500.jpeg"
+    },
+    {
+      "id": "crushed-tech-stocks-bounce-plus-new-doctor-su-8fd7dee9b237",
+      "language": "en",
+      "title": "Crushed tech stocks bounce — plus, new doctor survey keeps us positive on Lilly",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "date": "2026-10-19T19:13:00.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/19/crushed-tech-stocks-bounce-new-doctor-survey-keeps-us-positive-on-lilly.html",
+      "image": ""
+    },
+    {
+      "id": "tolan-snags-30m-for-its-ai-companion-that-hel-7ab42e04cf3b",
+      "language": "en",
+      "title": "Tolan snags $30M for its AI companion that helps users navigate life",
+      "excerpt": "AI companion app Tolan has raised another $30 million after attracting more than 250,000 active users.",
+      "date": "2026-10-19T19:00:12.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
+      "image": ""
+    },
     {
       "id": "replika-s-founder-built-the-ai-assistant-she--347bd5ae4a1a",
       "language": "en",
@@ -20,6 +60,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
       "image": ""
+    },
+    {
+      "id": "reactos-reaches-major-milestone-with-ntfs-ins-0f4aa3cd99c0",
+      "language": "en",
+      "title": "ReactOS reaches major milestone with NTFS install support",
+      "excerpt": "ReactOS gains NTFS install support with new driver.",
+      "date": "2026-10-19T18:30:56.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ReactOS_NTFS_Drive_Properties-500x500.jpg"
     },
     {
       "id": "ukrainians-dying-because-us-restricting-intel-c1ae638f5dee",
@@ -90,6 +140,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/investingclub/2026/10/19/apples-iphone-duo-is-proving-the-catalyst-that-jim-cramer-said-it-would-be.html",
       "image": ""
+    },
+    {
+      "id": "ai-game-clones-are-making-indie-developers-af-6e82abff5fff",
+      "language": "en",
+      "title": "AI game clones are making indie developers afraid to show their work",
+      "excerpt": "Delayed Steam Next Fest demo is a sign of a growing problem for indie devs.",
+      "date": "2026-10-19T16:59:22.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gaming/2026/10/ai-game-clones-are-making-indie-developers-afraid-to-show-their-work/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ss_c6067e139d8dd2cbf79c41a9c4e41e3bb088c95a.1920x1080-500x500.jpg"
     },
     {
       "id": "amazon-to-fund-12-small-nuclear-reactors-at-f-aeb3467d5805",
@@ -2940,66 +3000,6 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/cm79plrvpl4vo?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1a2c/live/e6934370-cb7c-11f1-8d42-dd1c1e8413a3.jpg"
-    },
-    {
-      "id": "赋能优势特色产业-共绘发展新图景-e2e137aefab4",
-      "language": "zh",
-      "title": "赋能优势特色产业，共绘发展新图景",
-      "excerpt": "河北武强县和饶阳县、贵州黄平县、重庆秀山县、内蒙古鄂伦春自治旗是中国农业银行的5个定点帮扶县。各县立足特色产业和文旅资源，发展动能不断增强，产业结构持续优化，打造形成“中国管弦乐器生产基地”(武强)、“中国设施葡萄之乡”(饶阳)、“国家重点生态功能保护区”(黄平)、“区域特色美丽茶乡”(秀山)及“国家级大豆制种大县”(鄂伦春)。欢迎各界人士前来旅游观光、投资兴业，开创互利共赢新局面！",
-      "date": "2026-10-19T05:56:13.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-19/10717118.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家统计局-前三季度内需逐步改善-e7995b42b723",
-      "language": "zh",
-      "title": "国家统计局：前三季度内需逐步改善",
-      "excerpt": "中新网10月19日电 国新办19日举行新闻发布会，国家统计局新闻发言人、副局长毛盛勇表示，前三季度内需逐步改善。",
-      "date": "2026-10-19T05:55:57.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-19/10717115.shtml",
-      "image": ""
-    },
-    {
-      "id": "印尼股市触及2020年以来最低水平-官方收窄个股跌幅限制-d39a03a48f5b",
-      "language": "zh",
-      "title": "印尼股市触及2020年以来最低水平 官方收窄个股跌幅限制",
-      "excerpt": "中新社雅加达10月19日电 (记者 李志全)印度尼西亚股市19日开盘后延续跌势，雅加达综合股价指数一度跌至4908.34点，跌破5000点心理关口，触及2020年10月以来最低水平。",
-      "date": "2026-10-19T05:49:17.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-19/10717101.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家统计局-今年物价总水平呈现温和回升态势-358ebe251ba1",
-      "language": "zh",
-      "title": "国家统计局：今年物价总水平呈现温和回升态势",
-      "excerpt": "中新网10月19日电 国务院新闻办公室19日举行新闻发布会，会上，国家统计局新闻发言人、国民经济综合统计司负责人王冠华表示，今年物价总水平呈现温和回升的态势。",
-      "date": "2026-10-19T05:48:59.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-19/10717114.shtml",
-      "image": ""
-    },
-    {
-      "id": "一块-打印-出的-三文鱼-3b7220e5f958",
-      "language": "zh",
-      "title": "一块“打印”出的“三文鱼”",
-      "excerpt": "一顿便饭对多数人而言再寻常不过，然而对吞咽功能减退的老人来说，每次进食都需格外小心，稍不留神可能呛咳，严重时甚至将食物误吸入气管。",
-      "date": "2026-10-19T05:36:36.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/10-19/10717116.shtml",
-      "image": ""
-    },
-    {
-      "id": "9月一线城市房价环比继续上涨-二三线城市降幅收窄-49b1bf2aa18a",
-      "language": "zh",
-      "title": "9月一线城市房价环比继续上涨 二三线城市降幅收窄",
-      "excerpt": "中新社北京10月19日电 (记者 庞无忌)随着传统销售旺季到来，9月份中国大中城市房价“止跌企稳、降幅收窄”态势进一步清晰。",
-      "date": "2026-10-19T05:33:30.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-19/10717097.shtml",
-      "image": ""
     }
   ]
 }
