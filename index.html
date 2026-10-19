@@ -2173,8 +2173,9 @@ window.globalViewSetArticleImage = async function (img, article) {
         ? new Date().toISOString().slice(0, 10)
         : dateValue.toISOString().slice(0, 10);
 
-      const categoryFallbackImage =
-        window.globalViewFallbackImages?.[category] || "";
+const categoryFallbackImage =
+  (window.globalViewFallbackImages &&
+    window.globalViewFallbackImages[category]) || "";
       
       return {
         id: `auto-${index}-${String(item.id || "").replace(/[^a-zA-Z0-9_-]/g, "-")}`,
