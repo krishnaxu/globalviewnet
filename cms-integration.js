@@ -393,7 +393,7 @@ for (let i = articles.length - 1; i >= 0; i--) {
     dateValue(b.updatedAt || b.date) -
     dateValue(a.updatedAt || a.date)
   )
-  .slice(0, 5);
+  .slice(0, 3);
       
 
       window.globalViewCarouselIds = new Set(
