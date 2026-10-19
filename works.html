@@ -209,15 +209,31 @@
       <div class="status">正在加载作品，请稍候…</div>
     </section>
 
-    <nav class="pagination" aria-label="作品分页">
+        <nav class="pagination" aria-label="作品分页">
       <button class="page-button" id="prevButton" type="button" disabled>
         上一页
       </button>
+
       <span class="page-info" id="pageInfo">第 1 页</span>
+
       <button class="page-button" id="nextButton" type="button" disabled>
         下一页
       </button>
+
+      <label for="jumpPageInput">跳转至</label>
+      <input
+        id="jumpPageInput"
+        type="number"
+        min="1"
+        value="1"
+        aria-label="输入要跳转的页码"
+        style="width: 72px; padding: 8px; border: 1px solid var(--border); border-radius: 7px; background: var(--surface); color: var(--text);"
+      >
+      <button class="page-button" id="jumpPageButton" type="button">
+        跳转
+      </button>
     </nav>
+  </main>
   </main>
 
   <script>
@@ -226,6 +242,8 @@
     const prevButton = document.getElementById("prevButton");
     const nextButton = document.getElementById("nextButton");
     const pageInfo = document.getElementById("pageInfo");
+    const jumpPageInput = document.getElementById("jumpPageInput");
+    const jumpPageButton = document.getElementById("jumpPageButton");
 
     const params = new URLSearchParams(window.location.search);
     let currentPage = Math.max(1, Number(params.get("page")) || 1);
@@ -357,6 +375,8 @@
 
         pageInfo.textContent =
           `第 ${currentPage} / ${totalPages} 页`;
+        jumpPageInput.value = currentPage;
+        jumpPageInput.max = totalPages;
 
         prevButton.disabled = currentPage <= 1;
         nextButton.disabled =
@@ -393,6 +413,30 @@
         loadWorks(currentPage + 1);
       }
     });
+    function jumpToPage() {
+  const targetPage = Number(jumpPageInput.value);
+
+  if (
+    !Number.isInteger(targetPage) ||
+    targetPage < 1 ||
+    targetPage > totalPages
+  ) {
+    alert(`请输入 1 到 ${totalPages} 之间的页码。`);
+    jumpPageInput.value = currentPage;
+    return;
+  }
+
+  nextButton.textContent = "下一页";
+  loadWorks(targetPage);
+}
+
+jumpPageButton.addEventListener("click", jumpToPage);
+
+jumpPageInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    jumpToPage();
+  }
+});
 
     loadWorks(currentPage);
   </script>
