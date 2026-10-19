@@ -1063,7 +1063,8 @@
       </div>
       <div class="about-content">
         <h2 data-i18n="aboutMissionTitle">我们的定位</h2>
-        <p data-i18n="aboutMission">我们希望通过清晰的内容结构与中英双语呈现，帮助读者发现值得关注的趋势、行业变化与文化故事。本站示例文章用于展示页面结构和内容体验，不应被视为已核实的实时新闻报道。</p>
+
+<p data-i18n="aboutMission">我们希望通过清晰的内容结构与中英双语呈现，帮助读者发现值得关注的趋势、行业变化与文化故事。</p>
 
         <h2 data-i18n="aboutContentTitle">内容与来源</h2>
         <p data-i18n="aboutContent">平台内容包括编辑整理、观点分享及依法获得授权或符合适用规则的转载内容。转载内容应在发布时标注原始来源、作者及原文链接（如适用）。文章所列来源名称仅作为示例，不代表相关机构已发布或认可本文。</p>
@@ -1258,7 +1259,8 @@ disclaimer: "本站是一个提供信息聚合、双语阅读与观点分享的�
         aboutTitle: "Ideas across languages. Perspectives across borders.",
         aboutIntro: "Global View is a bilingual information and perspectives platform focused on technology, business, culture and life.",
         aboutMissionTitle: "Our Mission",
-        aboutMission: "We use a clear editorial structure to help readers explore noteworthy trends, industry developments and cultural stories. The sample articles on this website demonstrate the layout and reading experience; they should not be treated as verified, real-time news reports.",
+        aboutMission: "Through clear content organization and bilingual presentation, we aim to help readers discover noteworthy trends, industry developments, and cultural stories.
+",
         aboutContentTitle: "Content & Sources",
         aboutContent: "Content may include editorial summaries, commentary and reproduced material published with appropriate authorization or in accordance with applicable rules. Reproduced content should identify its original source, author and original link where applicable. Source names shown in sample articles are illustrative and do not imply that the named organizations published or endorsed the content.",
         aboutStandardsTitle: "Editorial Principles",
@@ -2244,8 +2246,8 @@ if (!data) {
 
         articles.push(...autoArticles);
 
-        // 最新资讯与分类页按日期展示；保留原有示例文章作为补充
-        articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+// 最新资讯与分类页按日期展示
+articles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
         // 轮播优先选取最新新闻，并尽量覆盖不同栏目
        const autoByCategory = [];
