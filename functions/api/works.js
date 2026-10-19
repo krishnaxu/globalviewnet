@@ -16,13 +16,16 @@ function json(data, status = 200) {
   });
 }
 
-function parseFrontmatter(markdown) {
+function splitMarkdown(markdown) {
   const match = markdown.match(
     /^\uFEFF?---\s*\r?\n([\s\S]*?)\r?\n---(?:\s*\r?\n|$)/
   );
 
+  if (!match) {
+    return { meta: {}, body: markdown.trim() };
+  }
+
   const meta = {};
-  if (!match) return meta;
 
   for (const line of match[1].split(/\r?\n/)) {
     const field = line.match(/^([A-Za-z0-9_-]+)\s*:\s*(.*)$/);
@@ -35,7 +38,10 @@ function parseFrontmatter(markdown) {
     }
   }
 
-  return meta;
+  return {
+    meta,
+    body: markdown.slice(match[0].length).trim()
+  };
 }
 
 function decodeBase64(content) {
@@ -73,6 +79,59 @@ function isTrue(value) {
   return String(value || "").trim().toLowerCase() === "true";
 }
 
+function toWork(meta, filename, body = undefined) {
+  const work = {
+    slug: getString(meta.slug) ||
+      filename.replace(/\.md$/i, ""),
+    title: getString(meta.title),
+    original_url: getString(meta.original_url),
+    platform: getString(meta.platform) || "人民网",
+    date: getString(meta.date),
+    excerpt: getString(meta.excerpt),
+    cover_image: getString(meta.cover_image)
+  };
+
+  if (body !== undefined) {
+    work.body = body;
+  }
+
+  return work;
+}
+
+async function getMarkdownFiles(token) {
+  const filesUrl =
+    `https://api.github.com/repos/${REPO}/contents/${WORKS_PATH}` +
+    `?ref=${encodeURIComponent(BRANCH)}`;
+
+  const files = await githubRequest(filesUrl, token);
+
+  if (!Array.isArray(files)) {
+    throw new Error("作品目录格式异常");
+  }
+
+  return files
+    .filter(file =>
+      file.type === "file" &&
+      typeof file.name === "string" &&
+      file.name.toLowerCase().endsWith(".md")
+    )
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+async function readWork(file, token) {
+  const fileData = await githubRequest(file.url, token);
+  const markdown = decodeBase64(fileData.content || "");
+  const { meta, body } = splitMarkdown(markdown);
+
+  if (!isTrue(meta.published)) return null;
+
+  const work = toWork(meta, file.name, body);
+
+  if (!work.title || !work.original_url) return null;
+
+  return work;
+}
+
 export async function onRequestGet({ request, env }) {
   try {
     const token = env.GITHUB_CONTENT_TOKEN;
@@ -85,6 +144,42 @@ export async function onRequestGet({ request, env }) {
     }
 
     const requestUrl = new URL(request.url);
+    const requestedSlug = getString(
+      requestUrl.searchParams.get("slug")
+    );
+
+    const files = await getMarkdownFiles(token);
+
+    // 单篇详情：/api/works?slug=people-003d1227bc41f8
+    if (requestedSlug) {
+      const targetFile = files.find(file => {
+        const filenameSlug = file.name.replace(/\.md$/i, "");
+        return filenameSlug === requestedSlug;
+      });
+
+      if (!targetFile) {
+        return json({
+          success: false,
+          error: "未找到这篇作品"
+        }, 404);
+      }
+
+      const work = await readWork(targetFile, token);
+
+      if (!work || work.slug !== requestedSlug) {
+        return json({
+          success: false,
+          error: "作品不存在、未发布或 slug 不匹配"
+        }, 404);
+      }
+
+      return json({
+        success: true,
+        work
+      });
+    }
+
+    // 作品列表：保留原有分页方式
     const requestedPage = Number.parseInt(
       requestUrl.searchParams.get("page") || "1",
       10
@@ -94,57 +189,16 @@ export async function onRequestGet({ request, env }) {
       ? Math.max(1, requestedPage)
       : 1;
 
-    const filesUrl =
-      `https://api.github.com/repos/${REPO}/contents/${WORKS_PATH}` +
-      `?ref=${encodeURIComponent(BRANCH)}`;
-
-    const files = await githubRequest(filesUrl, token);
-
-    if (!Array.isArray(files)) {
-      return json({
-        success: false,
-        error: "作品目录格式异常"
-      }, 502);
-    }
-
-    const markdownFiles = files
-      .filter(file =>
-        file.type === "file" &&
-        typeof file.name === "string" &&
-        file.name.toLowerCase().endsWith(".md")
-      )
-      .sort((a, b) => a.name.localeCompare(b.name));
-
-    const totalFiles = markdownFiles.length;
+    const totalFiles = files.length;
     const totalPages = Math.ceil(totalFiles / PAGE_SIZE);
     const start = (page - 1) * PAGE_SIZE;
-    const pageFiles = markdownFiles.slice(start, start + PAGE_SIZE);
+    const pageFiles = files.slice(start, start + PAGE_SIZE);
 
-    // 每次只读取当前页的 Markdown 文件，控制子请求数量。
     const results = await Promise.all(
-      pageFiles.map(async file => {
-        const fileData = await githubRequest(file.url, token);
-        const markdown = decodeBase64(fileData.content || "");
-        const meta = parseFrontmatter(markdown);
-
-        if (!isTrue(meta.published)) return null;
-
-        return {
-          slug: getString(meta.slug) ||
-            file.name.replace(/\.md$/i, ""),
-          title: getString(meta.title),
-          original_url: getString(meta.original_url),
-          platform: getString(meta.platform) || "人民网",
-          date: getString(meta.date),
-          excerpt: getString(meta.excerpt),
-          cover_image: getString(meta.cover_image)
-        };
-      })
+      pageFiles.map(file => readWork(file, token))
     );
 
-    const works = results.filter(work =>
-      work && work.title && work.original_url
-    );
+    const works = results.filter(Boolean);
 
     works.sort((a, b) =>
       (Date.parse(b.date) || 0) - (Date.parse(a.date) || 0)
@@ -162,7 +216,7 @@ export async function onRequestGet({ request, env }) {
   } catch (error) {
     return json({
       success: false,
-      error: "获取作品列表失败",
+      error: "获取作品失败",
       detail: error instanceof Error
         ? error.message
         : String(error)
