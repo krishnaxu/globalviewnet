@@ -315,15 +315,14 @@
               addText(link, "p", "article-excerpt", excerpt);
             }
 
+
             addText(
               link,
               "div",
               "article-meta",
-              [
-                post.category || "",
-                displayDate(post.updatedAt || post.updated_at || post.date)
-              ].filter(Boolean).join(" · ")
+              displayDate(post.updatedAt || post.updated_at || post.date)
             );
+
 
             list.appendChild(link);
           });
