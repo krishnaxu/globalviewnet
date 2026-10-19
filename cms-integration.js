@@ -181,110 +181,183 @@ origin: "cms",
       }
     }
        
-    // 加载“我的作品”：分页读取，避免 Cloudflare 子请求超限。
-    try {
-      const worksList = document.getElementById("worksList");
+    // 加载“我的作品”：默认展示 3 条，点击后每次增加 3 条。
+try {
+  const worksList = document.getElementById("worksList");
 
-      if (worksList) {
-        worksList.replaceChildren();
+  if (worksList) {
+    worksList.replaceChildren();
 
-        let worksPage = 0;
-        let worksHasMore = true;
-        let worksLoading = false;
+    let worksPage = 0;
+    let worksHasMore = true;
+    let worksLoading = false;
+    let visibleCount = 3;
 
-        const loadMoreButton = document.createElement("button");
-        loadMoreButton.type = "button";
-        loadMoreButton.textContent = "加载更多作品";
-        loadMoreButton.style.cssText =
-          "display:block;width:100%;padding:10px;margin-top:12px;" +
-          "border:1px solid #ddd;border-radius:6px;" +
-          "background:transparent;cursor:pointer;";
+    const allWorks = [];
 
-        async function loadWorksPage() {
-          if (worksLoading || !worksHasMore) return;
+    const loadMoreButton = document.createElement("button");
+    loadMoreButton.type = "button";
+    loadMoreButton.className = "works-more-button";
+    loadMoreButton.textContent = "查看更多作品";
 
-          worksLoading = true;
-          loadMoreButton.disabled = true;
-          loadMoreButton.textContent = "正在加载…";
+    function formatWorkDate(value) {
+      if (!value) return "";
 
-          try {
-            const nextPage = worksPage + 1;
-            const response = await fetch(
-              `/api/works?page=${nextPage}`,
-              {
-                headers: { Accept: "application/json" },
-                cache: "no-store"
-              }
-            );
+      const match = String(value).match(
+        /^(\d{4})-(\d{1,2})-(\d{1,2})/
+      );
 
-            if (!response.ok) {
-              throw new Error("作品 API 请求失败：" + response.status);
-            }
+      if (!match) return String(value);
 
-            const data = await response.json();
+      return `${match[1]}年${Number(match[2])}月${Number(match[3])}日`;
+    }
 
-            if (!data.success || !Array.isArray(data.works)) {
-              throw new Error(data.detail || "作品 API 返回格式不正确");
-            }
+    async function fetchNextWorksPage() {
+      if (worksLoading || !worksHasMore) return;
 
-            if (loadMoreButton.parentNode) {
-              loadMoreButton.remove();
-            }
+      worksLoading = true;
+      loadMoreButton.disabled = true;
+      loadMoreButton.textContent = "正在加载…";
 
-            for (const work of data.works) {
-              const link = document.createElement("a");
-              link.className = "work-item";
-              link.href = work.original_url;
-              link.target = "_blank";
-              link.rel = "noopener noreferrer";
+      try {
+        const nextPage = worksPage + 1;
 
-              const number = document.createElement("span");
-              number.className = "work-number";
-              number.textContent = `${worksList.querySelectorAll(".work-item").length + 1}.`;
-
-              const title = document.createElement("span");
-              title.className = "work-title";
-              title.textContent = work.title;
-
-              link.append(number, title);
-              link.title = work.title;
-              worksList.appendChild(link);
-            }
-
-            worksPage = data.page;
-            worksHasMore = data.has_more;
-
-            if (worksPage === 1 && data.works.length === 0 && !worksHasMore) {
-              const empty = document.createElement("p");
-              empty.className = "works-empty";
-              empty.textContent = "暂无作品";
-              worksList.appendChild(empty);
-            }
-
-            if (worksHasMore) {
-              loadMoreButton.disabled = false;
-              loadMoreButton.textContent = "加载更多作品";
-              worksList.appendChild(loadMoreButton);
-            }
-          } catch (error) {
-            console.error("加载我的作品失败：", error);
-            loadMoreButton.disabled = false;
-            loadMoreButton.textContent = "加载失败，点击重试";
-            if (!loadMoreButton.parentNode) {
-              worksList.appendChild(loadMoreButton);
-            }
-          } finally {
-            worksLoading = false;
+        const response = await fetch(
+          `/api/works?page=${nextPage}`,
+          {
+            headers: { Accept: "application/json" },
+            cache: "no-store"
           }
+        );
+
+        if (!response.ok) {
+          throw new Error("作品 API 请求失败：" + response.status);
         }
 
-        loadMoreButton.addEventListener("click", loadWorksPage);
-        await loadWorksPage();
+        const data = await response.json();
+
+        if (!data.success || !Array.isArray(data.works)) {
+          throw new Error(
+            data.detail || "作品 API 返回格式不正确"
+          );
+        }
+
+        allWorks.push(...data.works);
+        worksPage = data.page || nextPage;
+        worksHasMore = Boolean(data.has_more);
+      } catch (error) {
+        loadMoreButton.textContent = "加载失败，点击重试";
+        throw error;
+      } finally {
+        worksLoading = false;
+        loadMoreButton.disabled = false;
       }
+    }
+
+    function renderWorks() {
+      worksList.replaceChildren();
+
+      const visibleWorks = allWorks.slice(0, visibleCount);
+
+      visibleWorks.forEach((work, index) => {
+        const link = document.createElement("a");
+        link.className = "work-item";
+        link.href = work.original_url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.title = work.title || "";
+
+        const number = document.createElement("span");
+        number.className = "work-number";
+        number.textContent = `${index + 1}.`;
+
+        const content = document.createElement("div");
+        content.className = "work-content";
+
+        const title = document.createElement("span");
+        title.className = "work-title";
+        title.textContent = work.title || "未命名作品";
+
+        content.appendChild(title);
+
+        const metaItems = [];
+
+        if (work.platform) {
+          metaItems.push(work.platform);
+        }
+
+        const formattedDate = formatWorkDate(work.date);
+
+        if (formattedDate) {
+          metaItems.push(formattedDate);
+        }
+
+        if (metaItems.length > 0) {
+          const meta = document.createElement("p");
+          meta.className = "work-meta";
+          meta.textContent = metaItems.join(" · ");
+          content.appendChild(meta);
+        }
+
+        if (work.excerpt) {
+          const excerpt = document.createElement("p");
+          excerpt.className = "work-excerpt";
+          excerpt.textContent = work.excerpt;
+          content.appendChild(excerpt);
+        }
+
+        link.append(number, content);
+        worksList.appendChild(link);
+      });
+
+      if (allWorks.length === 0 && !worksHasMore) {
+        const empty = document.createElement("p");
+        empty.className = "works-empty";
+        empty.textContent = "暂无作品";
+        worksList.appendChild(empty);
+      }
+
+      if (visibleCount < allWorks.length || worksHasMore) {
+        loadMoreButton.disabled = false;
+        loadMoreButton.textContent = "查看更多作品";
+        worksList.appendChild(loadMoreButton);
+      }
+    }
+
+    async function showMoreWorks() {
+      if (worksLoading) return;
+
+      const targetCount = visibleCount + 3;
+
+      try {
+        while (
+          allWorks.length < targetCount &&
+          worksHasMore
+        ) {
+          await fetchNextWorksPage();
+        }
+
+        visibleCount = Math.min(targetCount, allWorks.length);
+        renderWorks();
+      } catch (error) {
+        console.error("加载我的作品失败：", error);
+      }
+    }
+
+    loadMoreButton.addEventListener("click", showMoreWorks);
+    worksList.appendChild(loadMoreButton);
+
+    try {
+      await fetchNextWorksPage();
+      visibleCount = Math.min(3, allWorks.length);
+      renderWorks();
     } catch (error) {
       console.error("加载我的作品失败：", error);
     }
-
+  }
+} catch (error) {
+  console.error("加载我的作品失败：", error);
+}
     
     // 按文章日期排序，供其他依赖该顺序的现有功能使用。
         // 首页统一使用 CMS 文章，不再保留建站演示文章。
