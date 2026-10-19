@@ -1663,7 +1663,7 @@ function refreshAutoNewsIds() {
         const haystack = [
           article.title.zh, article.title.en,
           article.excerpt.zh, article.excerpt.en,
-          article.tags.join(" "), article.source
+          (article.tags || []).join(" ")
         ].join(" ").toLocaleLowerCase();
 
         return categoryMatch && (!query || haystack.includes(query));
