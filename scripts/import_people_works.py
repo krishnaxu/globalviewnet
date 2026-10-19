@@ -58,7 +58,7 @@ def main():
     for page in PAGES:
         print("读取：", page)
         req = Request(page, headers={"User-Agent": "Mozilla/5.0"})
-                with urlopen(req, timeout=30) as response:
+        with urlopen(req, timeout=30) as response:
             raw = response.read()
 
             # 优先读取网页自身声明的编码
@@ -111,7 +111,7 @@ def main():
 
         time.sleep(1)
     added = 0
-       for url, title in found.items():
+    for url, title in found.items():
         if url in existing_by_url:
             existing_file = existing_by_url[url]
 
