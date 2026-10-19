@@ -1656,10 +1656,6 @@ function refreshAutoNewsIds() {
           return false;
         }
 
-       // 已发布到专栏的 CMS 文章不进入普通文章列表
-if (article.cms && article.show_in_column === true) {
-  return false;
-}
         const categoryMatch =
           activeFilter === "all" ||
           article.category === activeFilter;
