@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-19T20:42:29.367Z",
+  "generated_at": "2026-10-19T21:41:33.143Z",
   "items": [
+    {
+      "id": "tech-stocks-had-a-nice-oversold-bounce-on-mon-b95ededfd931",
+      "language": "en",
+      "title": "Tech stocks had a nice oversold bounce on Monday. Earnings this week will determine if it's for real",
+      "excerpt": "Investors are hopeful that last week's pullback was a clearing event for equities, but lingering concerns remain.",
+      "date": "2026-10-19T20:57:14.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/19/tech-stocks-rebound-meta-tesla-earnings.html",
+      "image": ""
+    },
+    {
+      "id": "russian-spacecraft-maneuvers-in-extreme-proxi-df6c27a6432a",
+      "language": "en",
+      "title": "Russian spacecraft maneuvers in \"extreme proximity\" to satellite used by Ukraine",
+      "excerpt": "\"Kosmos 2612 closed from hundreds of kilometers away to extreme proximity to ICEYE-X36.\"",
+      "date": "2026-10-19T20:54:17.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/10/russian-spacecraft-maneuvers-in-extreme-proximity-to-satellite-used-by-ukraine/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ICEYE_assembling_satellite_06_3x2-500x500.jpg"
+    },
     {
       "id": "trump-says-he-d-meet-with-putin-and-xi-critic-5989a3180de2",
       "language": "en",
@@ -12,6 +32,16 @@
       "image": ""
     },
     {
+      "id": "accused-openai-spy-had-folder-called-saudi-go-21dc8fc69ccc",
+      "language": "en",
+      "title": "Accused OpenAI spy had folder called “Saudi Gov Docs,” FBI says",
+      "excerpt": "US fears Saudi government will help ex-OpenAI engineer flee spying charges.",
+      "date": "2026-10-19T20:21:53.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2214263510-500x500.jpg"
+    },
+    {
       "id": "amazon-is-taking-its-biggest-shot-at-nvidia-y-c1dfee28d50b",
       "language": "en",
       "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
@@ -20,6 +50,26 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
       "image": ""
+    },
+    {
+      "id": "batteries-help-reduce-emissions-but-how-do-we-4eca8f5df1f1",
+      "language": "en",
+      "title": "Batteries help reduce emissions, but how do we reduce their emissions?",
+      "excerpt": "One way to make batteries cleaner is to make fewer of them.",
+      "date": "2026-10-19T20:03:55.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/10/batteries-have-a-small-carbon-footprint-we-can-make-it-smaller/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1177067-500x500.jpg"
+    },
+    {
+      "id": "psa-patch-your-plex-media-server-before-someo-93bc531bda3a",
+      "language": "en",
+      "title": "PSA: Patch your Plex media server before someone hacks it",
+      "excerpt": "A researcher says attacks chaining 4 vulnerabilities is hacking unpatched boxes.",
+      "date": "2026-10-19T19:39:19.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/security/2026/10/recently-fixed-plex-media-vulnerabilities-are-being-exploited-to-install-malware/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/plex-media-server-500x500.webp"
     },
     {
       "id": "hackers-hit-ai-coding-tool-opencode-running-u-f649037fa8e9",
@@ -170,6 +220,16 @@
       "source_name": "Ars Technica",
       "source_url": "https://arstechnica.com/gaming/2026/10/ai-game-clones-are-making-indie-developers-afraid-to-show-their-work/",
       "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ss_c6067e139d8dd2cbf79c41a9c4e41e3bb088c95a.1920x1080-500x500.jpg"
+    },
+    {
+      "id": "gartner-analyst-behind-tech-rout-ai-returns-a-7423f75f7067",
+      "language": "en",
+      "title": "Gartner analyst behind tech rout: AI returns are not yet large enough to justify neocloud build-out",
+      "excerpt": "The firm stands behind analysis that sent shockwaves through the market last week.",
+      "date": "2026-10-19T16:57:16.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/19/gartner-analyst-warns-about-ai-neccloud-build-out.html",
+      "image": ""
     },
     {
       "id": "amazon-to-fund-12-small-nuclear-reactors-at-f-aeb3467d5805",
@@ -2939,66 +2999,6 @@
       "date": "2026-10-19T06:08:26.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-19/10717119.shtml",
-      "image": ""
-    },
-    {
-      "id": "openai-bugging-suspect-whatsapp-ed-saudi-roya-d6fcbbe75832",
-      "language": "en",
-      "title": "OpenAI bugging suspect WhatsApp'ed Saudi royal days before arrest, feds reveal",
-      "excerpt": "Saudi national Abdulrahman Alfozan is accused of planting a recording device in an executive conference room at OpenAI headquarters in San Francisco.",
-      "date": "2026-10-19T06:06:58.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
-      "image": ""
-    },
-    {
-      "id": "第三十三届中外传记文学研究会年会在东北大学召开-bea10fb64bf9",
-      "language": "zh",
-      "title": "第三十三届中外传记文学研究会年会在东北大学召开",
-      "excerpt": "中新网沈阳10月19日电 (记者 韩宏)第三十三届中外传记文学研究会年会“区域国别传记文学研究：聚焦亚洲及其它”16日至18日在东北大学召开，来自全国50余所高校、科研单位及出版社的100余位专家、学者、作家参会。",
-      "date": "2026-10-19T06:06:26.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/10-19/10717110.shtml",
-      "image": ""
-    },
-    {
-      "id": "中欧班列-光雾山秋日班列-成都首发-巴中好物与红叶文旅共赴波兰罗兹-2cbbb774cddb",
-      "language": "zh",
-      "title": "中欧班列“光雾山秋日班列”成都首发 巴中好物与红叶文旅共赴波兰罗兹",
-      "excerpt": "中新网成都10月19日电 (吴静)成都国际铁路港19日消息：中欧班列“光雾山秋日班列”发车仪式18日在成都国际铁路港举行。班列搭载“巴中产、巴中造”产品从成都国际铁路港始发，驶向终点波兰罗兹，以跨境班列为媒介，推动巴中特色产品与光雾山红叶文旅走向亚欧市场。",
-      "date": "2026-10-19T06:04:40.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ydyl/2026/10-19/10717108.shtml",
-      "image": ""
-    },
-    {
-      "id": "河北蓝皮书-2026-系列丛书出版发行-ab6288e2a77e",
-      "language": "zh",
-      "title": "《河北蓝皮书（2026）》系列丛书出版发行",
-      "excerpt": "中新网石家庄10月19日电 (赵丹媚 赵京广) 河北省社会科学院19日消息，《河北蓝皮书(2026)》系列丛书近日由社会科学文献出版社出版发行。该系列丛书分别从河北宏观经济、农业农村经济、社会发展、文化产业等方面展开分析研判，全景式反映河北经济社会发展。",
-      "date": "2026-10-19T06:04:36.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/10-19/10717107.shtml",
-      "image": ""
-    },
-    {
-      "id": "李家超会见亚投行行长邹加怡-支持亚投行在港设办事处-0e74b5d686cd",
-      "language": "zh",
-      "title": "李家超会见亚投行行长邹加怡 支持亚投行在港设办事处",
-      "excerpt": "中新社香港10月19日电 香港特区行政长官李家超19日在香港礼宾府与亚洲基础设施投资银行(简称“亚投行”)行长邹加怡会面，欢迎她率团来港出席2026年亚太经济合作组织(APEC)财政部长会议。",
-      "date": "2026-10-19T06:03:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/10-19/10717106.shtml",
-      "image": ""
-    },
-    {
-      "id": "广东首宗老年人权益保护消费民事公益诉讼胜诉-受损消费者可领赔偿金-4602ac472fab",
-      "language": "zh",
-      "title": "广东首宗老年人权益保护消费民事公益诉讼胜诉 受损消费者可领赔偿金",
-      "excerpt": "中新网广州10月19日电 (记者 许青青)据广东省消费者委员会(下称“广东消委会”)19日介绍，由广东消委会提起的广东首宗维护老年人权益消费民事公益诉讼近日经广东省高级人民法院作出判决，驳回被告上诉，支持广东消委会诉讼请求，确认被告需支付赔偿款约1470万元。已确定身份的83名相关受损消费者可在公告期限内按照购买商品价款的三倍申请退赔，并按执行到位的实际金额按比例分配。",
-      "date": "2026-10-19T06:01:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/10-19/10717111.shtml",
       "image": ""
     }
   ]
