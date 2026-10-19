@@ -276,9 +276,26 @@ collections:
         name: "cover_image"
         widget: "image"
         required: false
-
+        
       - label: "发布到首页"
         name: "published"
         widget: "boolean"
         default: false
         required: true
+
+      - label: "作品正文"
+        name: "body"
+        widget: "markdown"
+        required: false
+        buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - quote
+          - bulleted-list
+          - numbered-list
+        modes:
+          - rich_text
+          - raw
