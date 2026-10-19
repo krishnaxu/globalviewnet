@@ -1760,7 +1760,7 @@ if (article.cms && article.show_in_column === true) {
 
     // 热门阅读：演示排序，数字不代表真实访问量
     function renderTrending() {
-      const ranking = ["ai-creative", "green-investment", "digital-markets", "museum-digital", "urban-cycling"];
+      const ranking = [];
       const list = $("#trendingList");
       list.replaceChildren();
       ranking.forEach((id, index) => {
