@@ -1286,250 +1286,8 @@ disclaimer: "This website is a platform for information aggregation, bilingual r
       }
     };
 
-    /* 示例资讯：每个类别两篇，中英标题、摘要与正文对照。
-       图片采用 Unsplash 公开图片地址；来源字段为演示占位，不代表真实转载关系。 */
-    const articles = [
-      {
-        id: "ai-creative",
-        category: "tech",
-        title: { zh: "生成式人工智能如何改变创意工作流程", en: "How Generative AI Is Reshaping Creative Workflows" },
-        excerpt: {
-          zh: "从内容构思到原型制作，生成式人工智能正成为创意团队的新工具，也带来质量控制与版权管理的新课题。",
-          en: "From ideation to prototyping, generative AI is becoming a new tool for creative teams while raising fresh questions about quality control and copyright."
-        },
-        date: "2026-10-12", read: 6,
-        source: "Editorial Desk",
-        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80",
-        alt: { zh: "人工智能数字概念图", en: "Digital artificial intelligence concept" },
-        subtitle: {
-          zh: "效率之外，团队还需要重新思考创意、判断力与责任如何分工。",
-          en: "Beyond efficiency, teams must rethink how creativity, judgment and accountability are shared."
-        },
-        body: {
-          zh: [
-            "生成式人工智能正逐步进入创意工作的多个环节。研究资料整理、视觉草图生成、文案初稿和多版本内容制作，都可能因此变得更快。对小型团队而言，这类工具也降低了尝试新表达方式的门槛。",
-            "效率提升并不意味着专业判断可以被省略。模型生成的内容仍需要事实核查、语境审阅与人工编辑，涉及个人信息、商业机密或受版权保护的素材时，更应审慎评估使用边界。",
-            "对于企业来说，值得关注的不是单纯追求产量，而是建立清晰的使用规范：哪些环节可以辅助生成、谁负责审核、如何披露人工智能的参与，以及如何持续衡量最终成果的质量。"
-          ],
-          en: [
-            "Generative AI is finding its way into multiple stages of creative work. Research synthesis, visual sketching, first-draft copy and the production of content variations can all become faster. For smaller teams, these tools may also lower the barrier to experimenting with new forms of expression.",
-            "Greater speed does not eliminate the need for professional judgment. Generated material still requires fact-checking, contextual review and human editing. Extra care is warranted when personal data, confidential business information or copyrighted material is involved.",
-            "For organizations, the opportunity is not simply to maximize output. It is to establish clear guidelines: where generation is appropriate, who reviews the results, how AI involvement is disclosed and how the quality of finished work is evaluated."
-          ]
-        },
-        tags: ["AI", "Creative Work", "Digital Transformation"]
-      },
-      {
-        id: "satellite-data",
-        category: "tech",
-        title: { zh: "卫星数据应用走向日常，地球观测释放新价值", en: "Satellite Data Moves Into Everyday Applications" },
-        excerpt: {
-          zh: "地球观测数据与云计算工具结合，为农业监测、城市规划和环境研究提供更多可用的信息。",
-          en: "Combined with cloud tools, Earth-observation data is creating new possibilities for agriculture, urban planning and environmental research."
-        },
-        date: "2026-10-10", read: 5,
-        source: "Editorial Desk",
-        image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80",
-        alt: { zh: "太空中的地球与卫星", en: "Earth and a satellite in space" },
-        subtitle: {
-          zh: "数据的价值不仅在于获取影像，也在于将其转化为可理解、可行动的信息。",
-          en: "The value lies not only in capturing images but in turning them into useful, actionable information."
-        },
-        body: {
-          zh: [
-            "卫星遥感不再只是专业研究机构使用的技术。随着数据处理工具与云端平台不断发展，更多组织可以利用地表变化、植被状况和城市扩张等观测信息，辅助日常决策。",
-            "在农业领域，遥感数据可用于观察作物生长与土地变化；在城市管理中，它可以帮助研究人员理解土地利用与热环境；在环境研究中，长期观测也有助于识别值得进一步调查的变化。",
-            "不过，数据分辨率、更新频率、云层遮挡以及解释方法都会影响结论。可靠的应用需要结合现场数据、专业知识与透明的分析流程，避免把单一图像直接等同于完整事实。"
-          ],
-          en: [
-            "Satellite remote sensing is no longer limited to specialist research institutions. As data-processing tools and cloud platforms evolve, more organizations can use observations of land cover, vegetation and urban expansion to support everyday decisions.",
-            "In agriculture, remote sensing can help monitor crop growth and land changes. Urban researchers can use it to study land use and heat patterns, while long-term environmental observations can identify changes that warrant further investigation.",
-            "Resolution, update frequency, cloud cover and analytical methods all affect interpretation. Reliable applications combine satellite observations with field data, domain expertise and transparent analytical processes rather than treating a single image as the whole story."
-          ]
-        },
-        tags: ["Space", "Earth Observation", "Data"]
-      },
-      {
-        id: "green-investment",
-        category: "business",
-        title: { zh: "绿色能源投资持续受到关注，企业重新审视长期布局", en: "Green Energy Investment Keeps Long-Term Strategy in Focus" },
-        excerpt: {
-          zh: "能源转型正在推动企业重新评估运营效率、能源采购与长期投资之间的关系。",
-          en: "The energy transition is prompting companies to reassess the relationship between operational efficiency, energy sourcing and long-term investment."
-        },
-        date: "2026-10-13", read: 5,
-        source: "Editorial Desk",
-        image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=85",
-        alt: { zh: "山地与风力发电机", en: "Wind turbines in a green mountain landscape" },
-        subtitle: {
-          zh: "从能源成本到供应链韧性，可持续发展逐渐融入企业经营的日常决策。",
-          en: "From energy costs to supply-chain resilience, sustainability is increasingly part of everyday business decisions."
-        },
-        body: {
-          zh: [
-            "能源转型正在改变企业评估长期经营成本的方式。对于能源使用量较大的企业而言，能源采购策略、设施效率与供电稳定性之间的关系，正在成为运营规划的重要组成部分。",
-            "可再生能源项目的评估通常需要综合考虑当地资源条件、基础设施、融资成本、政策环境和项目周期。不同地区和行业面对的约束并不相同，因此不宜用单一指标判断某项投资是否适合。",
-            "对企业管理者来说，更务实的做法是将能源管理纳入整体经营计划，持续跟踪实际消耗与成本，并根据业务需求评估可行方案。透明披露目标、进展与限制，也有助于建立更可信的可持续发展沟通。"
-          ],
-          en: [
-            "The energy transition is changing how companies assess long-term operating costs. For energy-intensive businesses, the relationship between procurement strategy, facility efficiency and supply reliability is becoming an important part of operational planning.",
-            "Assessing renewable-energy projects generally involves local resource conditions, infrastructure, financing costs, policy environments and project timelines. Constraints differ across regions and industries, so no single metric can determine whether an investment is suitable.",
-            "A practical approach is to integrate energy management into overall business planning, monitor actual consumption and costs, and evaluate options against operational needs. Transparent reporting of targets, progress and limitations can also support more credible sustainability communication."
-          ]
-        },
-        tags: ["Green Energy", "Business Strategy", "Sustainability"]
-      },
-      {
-        id: "digital-markets",
-        category: "business",
-        title: { zh: "企业数字化从工具采购走向流程重塑", en: "Business Digitalization Shifts From Buying Tools to Redesigning Processes" },
-        excerpt: {
-          zh: "数字化项目的关键不只是引入新系统，更在于工作流程、组织协作与员工能力能否同步调整。",
-          en: "Successful digital projects depend not only on new systems but also on changes to workflows, collaboration and employee capabilities."
-        },
-        date: "2026-10-09", read: 6,
-        source: "Editorial Desk",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80",
-        alt: { zh: "现代城市商务建筑", en: "Modern commercial buildings in a city" },
-        subtitle: {
-          zh: "数字化价值往往来自组织如何使用工具，而非工具本身的数量。",
-          en: "Digital value often comes from how an organization uses its tools, not how many tools it buys."
-        },
-        body: {
-          zh: [
-            "不少企业的数字化工作从采购软件或升级基础设施开始，但技术上线并不必然带来效率改善。如果旧有流程没有调整，新系统可能只是把原来的问题搬到了新的界面中。",
-            "更系统的做法是先识别业务痛点，再决定技术方案。企业可以从重复性工作、跨团队交接和信息孤岛等问题入手，明确需要改善的结果，并在项目开始前设定可衡量的指标。",
-            "员工参与同样重要。清晰的培训、反馈机制与责任分工，可以帮助团队理解变化的原因，并让技术应用更贴近实际工作。数字化转型因此更像一个持续改进的过程，而不是一次性的采购项目。"
-          ],
-          en: [
-            "Many corporate digitalization initiatives begin with software purchases or infrastructure upgrades. Yet implementation alone does not guarantee better performance. If existing workflows remain unchanged, a new system may simply move old problems into a new interface.",
-            "A more systematic approach starts by identifying business pain points before choosing a technical solution. Repetitive work, cross-team handoffs and information silos can provide useful starting points, supported by measurable goals established early in the project.",
-            "Employee participation matters as well. Clear training, feedback channels and accountability help teams understand why processes are changing and make tools more relevant to actual work. Digital transformation is therefore an ongoing improvement process rather than a one-off purchasing exercise."
-          ]
-        },
-        tags: ["Digital Transformation", "Management", "Productivity"]
-      },
-      {
-        id: "museum-digital",
-        category: "culture",
-        title: { zh: "博物馆数字化：让艺术与文化更贴近日常", en: "Museum Digitalization Brings Art and Culture Closer to Everyday Life" },
-        excerpt: {
-          zh: "数字导览、在线馆藏与互动展陈正在拓展观众接触艺术的方式，也为文化机构带来新的设计课题。",
-          en: "Digital guides, online collections and interactive exhibits are expanding access to art while creating new design questions for cultural institutions."
-        },
-        date: "2026-10-08", read: 4,
-        source: "Editorial Desk",
-        image: "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80",
-        alt: { zh: "艺术博物馆内的绘画作品", en: "Paintings displayed inside an art museum" },
-        subtitle: {
-          zh: "技术可以帮助观众发现作品，但文化体验仍离不开语境、讲述与真实空间。",
-          en: "Technology can help audiences discover artworks, but cultural experiences still depend on context, storytelling and physical spaces."
-        },
-        body: {
-          zh: [
-            "博物馆与文化机构正在探索多种数字化呈现方式，包括线上馆藏、移动导览、数字档案和互动展陈。这些工具能够让观众在参观前后继续了解作品，也为无法到场的人提供另一种接触文化资源的途径。",
-            "数字体验并非越复杂越好。清晰的文字、可靠的作品信息、易于使用的界面，以及对不同年龄和能力观众的考虑，往往比炫目的视觉效果更重要。机构还需要妥善处理数字图像授权与馆藏资料的使用边界。",
-            "线上与线下可以互为补充。数字工具帮助观众预习和回顾，现场参观则保留作品尺度、材质与空间氛围带来的独特体验。真正有价值的数字化，应当让文化内容更容易理解，而不是让技术本身成为主角。"
-          ],
-          en: [
-            "Museums and cultural institutions are exploring online collections, mobile guides, digital archives and interactive displays. These tools allow visitors to continue learning before and after a visit and offer alternative ways for people who cannot attend in person to access cultural resources.",
-            "A digital experience does not have to be complicated to be effective. Clear text, reliable artwork information, usable interfaces and consideration for audiences of different ages and abilities are often more important than visual spectacle. Institutions must also address image licensing and the permitted use of collection materials.",
-            "Online and in-person experiences can complement one another. Digital tools support preparation and reflection, while physical visits preserve the distinctive experience of scale, material and space. Effective digitalization makes cultural content easier to understand instead of making technology the main attraction."
-          ]
-        },
-        tags: ["Museums", "Culture", "Digital Experience"]
-      },
-      {
-        id: "creative-cities",
-        category: "culture",
-        title: { zh: "创意城市如何通过公共空间激活文化生活", en: "How Creative Cities Use Public Spaces to Enrich Cultural Life" },
-        excerpt: {
-          zh: "公共艺术、社区活动与开放空间设计，让文化体验从传统场馆延伸到城市日常。",
-          en: "Public art, community events and open-space design are extending cultural experiences beyond traditional venues into everyday urban life."
-        },
-        date: "2026-10-06", read: 5,
-        source: "Editorial Desk",
-        image: "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80",
-        alt: { zh: "城市公共空间与建筑", en: "Urban architecture and public space" },
-        subtitle: {
-          zh: "公共文化空间的价值，既在于活动本身，也在于人们能否轻松参与。",
-          en: "The value of public cultural spaces lies both in programming and in how easily people can participate."
-        },
-        body: {
-          zh: [
-            "文化生活并不只发生在剧院、美术馆和音乐厅。街区公共艺术、社区市集、户外演出与共享空间，也能让居民在日常出行中遇见新的文化体验。",
-            "设计公共文化空间时，便利性和可达性与视觉吸引力同样重要。交通连接、无障碍设施、活动时间、休息区域和周边商业配套，都会影响不同群体是否愿意使用这些空间。",
-            "长期来看，社区参与可以帮助文化项目建立持续性。让居民、艺术家、商户与公共服务部门共同参与规划，有助于活动回应当地需求，也能避免空间只在短期活动期间热闹、之后缺少维护与运营。"
-          ],
-          en: [
-            "Cultural life does not take place only in theaters, galleries and concert halls. Public art, neighborhood markets, outdoor performances and shared spaces can introduce new cultural experiences into everyday journeys.",
-            "Convenience and accessibility are as important as visual appeal in public-space design. Transport links, accessible facilities, event schedules, seating and nearby amenities all influence whether different groups choose to use these spaces.",
-            "Community participation can help cultural projects endure. Involving residents, artists, businesses and public-service teams in planning allows activities to respond to local needs and reduces the risk of spaces becoming lively only during occasional events."
-          ]
-        },
-        tags: ["Creative Cities", "Public Space", "Community"]
-      },
-      {
-        id: "healthy-eating",
-        category: "life",
-        title: { zh: "植物性饮食持续受到关注，日常餐桌出现更多选择", en: "Plant-Based Eating Gains Attention in Everyday Food Choices" },
-        excerpt: {
-          zh: "从豆类到全谷物，越来越多消费者开始探索多样化的植物性食材与更灵活的饮食搭配。",
-          en: "From legumes to whole grains, consumers are exploring a wider range of plant-based ingredients and flexible meal choices."
-        },
-        date: "2026-10-05", read: 4,
-        source: "Editorial Desk",
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80",
-        alt: { zh: "色彩丰富的蔬菜沙拉", en: "A colorful bowl of vegetable salad" },
-        subtitle: {
-          zh: "饮食选择没有统一模板，关键在于多样性、营养平衡与个人实际需要。",
-          en: "There is no single template for eating well; variety, nutritional balance and individual needs matter."
-        },
-        body: {
-          zh: [
-            "植物性食材正在进入更多人的日常菜单。豆类、坚果、蔬菜、水果和全谷物可以带来不同的口感与烹饪方式，也让家庭在安排日常餐食时拥有更多组合空间。",
-            "饮食模式因文化、预算、生活节奏和个人需要而异。与其追逐某一种流行标签，不如关注食物的多样性，减少过度依赖单一食材，并根据实际情况安排蛋白质、膳食纤维和其他营养来源。",
-            "对于有特殊营养需求或健康顾虑的人，饮食调整应结合可靠的专业建议。日常饮食的改善通常可以从容易坚持的小改变开始，例如增加蔬菜种类、尝试不同豆类，或提前规划一周的餐食。"
-          ],
-          en: [
-            "Plant-based ingredients are appearing on more everyday menus. Legumes, nuts, vegetables, fruit and whole grains offer different textures and cooking possibilities, giving households more flexibility when planning meals.",
-            "Eating patterns vary with culture, budget, schedules and individual needs. Rather than chasing a dietary label, it can be more useful to focus on variety, avoid relying too heavily on a narrow range of foods and consider sources of protein, fiber and other nutrients.",
-            "People with specific nutritional needs or health concerns should make dietary changes with appropriate professional guidance. Everyday improvements can start with manageable habits, such as adding more kinds of vegetables, trying different legumes or planning meals ahead."
-          ]
-        },
-        tags: ["Food", "Lifestyle", "Plant-Based"]
-      },
-      {
-        id: "urban-cycling",
-        category: "life",
-        title: { zh: "城市骑行热度上升，慢行出行重新进入视野", en: "Urban Cycling Brings Active Mobility Back Into Focus" },
-        excerpt: {
-          zh: "自行车通勤与休闲骑行让城市居民重新审视短途出行方式，基础设施和道路安全也更受关注。",
-          en: "Commuting and leisure cycling are prompting residents to rethink short trips, with infrastructure and road safety gaining attention."
-        },
-        date: "2026-10-03", read: 4,
-        source: "Editorial Desk",
-        image: "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=900&q=80",
-        alt: { zh: "停放在城市街道旁的自行车", en: "A bicycle parked along an urban street" },
-        subtitle: {
-          zh: "让骑行成为可靠的出行选择，需要连贯的道路网络与清晰的交通规则。",
-          en: "Making cycling a dependable travel option requires connected routes and clear traffic rules."
-        },
-        body: {
-          zh: [
-            "对于距离适中的通勤和日常办事，骑行可以成为公共交通和步行之外的一种选择。休闲骑行也为人们探索街区、公园和城市周边地区提供了不同视角。",
-            "骑行体验与道路条件密切相关。连续的自行车道、清晰的路口设计、可靠的停车设施以及对机动车与骑行者之间关系的合理管理，都会影响人们是否愿意把自行车纳入日常出行。",
-            "城市在规划慢行交通时，需要同时考虑安全、便利和不同道路使用者的需求。对骑行者而言，遵守当地交通规则、使用合适的安全装备并提前规划路线，也有助于降低出行风险。"
-          ],
-          en: [
-            "For commutes and errands over moderate distances, cycling can complement public transport and walking. Leisure rides also offer a different way to explore neighborhoods, parks and areas around a city.",
-            "The cycling experience depends heavily on road conditions. Connected bike lanes, clear intersection design, secure parking and sensible management of interactions between motor vehicles and cyclists all influence whether people adopt bicycles for everyday travel.",
-            "Cities planning active mobility need to consider safety, convenience and the needs of different road users together. Cyclists can also reduce travel risks by following local traffic rules, using appropriate safety equipment and planning routes in advance."
-          ]
-        },
-        tags: ["Urban Mobility", "Cycling", "City Life"]
-      }
-    ];
+    /* 正式文章由 CMS 和 RSS 加载，不预置示例文章。 */
+    const articles = [];
 
     /* 头条数据：标题均对应本页演示文章 */
     let tickerIds = ["ai-creative", "green-investment", "museum-digital", "healthy-eating", "satellite-data"];
@@ -2413,9 +2171,9 @@ window.globalViewSetArticleImage = async function (img, article) {
         ? new Date().toISOString().slice(0, 10)
         : dateValue.toISOString().slice(0, 10);
 
-      const categorySample = articles.find(article => article.category === category)
-        || articles[0];
-
+      const categoryFallbackImage =
+        window.globalViewFallbackImages?.[category] || "";
+      
       return {
         id: `auto-${index}-${String(item.id || "").replace(/[^a-zA-Z0-9_-]/g, "-")}`,
         category,
@@ -2426,8 +2184,8 @@ window.globalViewSetArticleImage = async function (img, article) {
         read: 1,
         source: String(item.source_name || "News source"),
         externalUrl: item.source_url,
-        image: item.image || window.globalViewFallbackImages?.[category] || categorySample.image,
-fallbackImage: window.globalViewFallbackImages?.[category] || categorySample.image,
+        image: item.image || categoryFallbackImage,
+        fallbackImage: categoryFallbackImage,
         alt: { zh: title, en: title },
         subtitle: { zh: excerpt || title, en: excerpt || title },
         body: { zh: [], en: [] },
