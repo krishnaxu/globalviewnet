@@ -869,49 +869,81 @@
           </div>
         </div>
 
-        <!-- 右侧边栏 -->
-        <aside class="sidebar">
-          <section class="side-panel">
-            <div class="panel-heading">
-              <svg width="20" height="20" aria-hidden="true"><use href="#i-flame"/></svg>
-             <h3 data-i18n="trendingTitle">我的专栏</h3>
-<small>My Column</small>
-            </div>
-            <ol class="trending-list" id="trendingList"></ol>
-            <div class="panel-heading works-heading">
-  <svg width="20" height="20" aria-hidden="true">
-    <use href="#i-link"/>
-  </svg>
-  <h3>我的作品</h3>
-  <small>My Works</small>
-</div>
-<div class="works-list" id="worksList">
-  <p class="works-empty">暂无作品</p>
-</div>
-          </section>
+     
+<!-- 右侧边栏 -->
+<aside class="sidebar">
 
-          <section class="side-panel newsletter">
-            <div class="panel-heading">
-              <svg width="21" height="21" aria-hidden="true"><use href="#i-mail"/></svg>
-              <h3>Newsletter</h3>
-            </div>
-            <p data-i18n="newsletterIntro">订阅观澜泗渡，获取双语资讯与编辑精选。</p>
-            <form class="newsletter-form" id="newsletterForm">
-              <input type="email" id="newsletterEmail" required maxlength="254" autocomplete="email" placeholder="请输入您的邮箱地址" data-i18n-placeholder="emailPlaceholder" aria-label="Email address">
-              <button class="primary-btn" type="submit" data-i18n="subscribe">订阅</button>
-            </form>
-            <p class="form-message hidden" id="newsletterMessage" role="status" aria-live="polite"></p>
-          </section>
+  <!-- 卡片一：我的专栏 -->
+  <section class="side-panel">
+    <div class="panel-heading">
+      <svg width="20" height="20" aria-hidden="true">
+        <use href="#i-flame"/>
+      </svg>
+      <h3 data-i18n="trendingTitle">我的专栏</h3>
+      <small>My Column</small>
+    </div>
 
-          <section class="about-promo">
-            <div class="promo-orb"></div>
-            <h3 class="serif" data-i18n="promoTitle">观澜泗渡<br>以双语视角探索科技、商业与文化的交汇。</h3>
-            <p data-i18n="promoText" class="promo-subtitle"></p>
-            <a class="text-link" href="#about" data-page-link="about"><span data-i18n="learnMore">了解我们</span> <svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </section>
-        </aside>
-      </div>
-    </section>
+    <ol class="trending-list" id="trendingList"></ol>
+  </section>
+
+  <!-- 卡片二：我的作品 -->
+  <section class="side-panel works-panel">
+    <div class="panel-heading works-heading">
+      <svg width="20" height="20" aria-hidden="true">
+        <use href="#i-link"/>
+      </svg>
+      <h3>我的作品</h3>
+      <small>My Works</small>
+    </div>
+
+    <div class="works-list" id="worksList">
+      <p class="works-empty">暂无作品</p>
+    </div>
+  </section>
+
+  <!-- 卡片三：Newsletter -->
+  <section class="side-panel newsletter">
+    <div class="panel-heading">
+      <svg width="21" height="21" aria-hidden="true">
+        <use href="#i-mail"/>
+      </svg>
+      <h3>Newsletter</h3>
+    </div>
+
+    <p data-i18n="newsletterIntro">订阅观澜泗渡，获取双语资讯与编辑精选。</p>
+
+    <form class="newsletter-form" id="newsletterForm">
+      <input
+        type="email"
+        id="newsletterEmail"
+        required
+        maxlength="254"
+        autocomplete="email"
+        placeholder="请输入您的邮箱地址"
+        data-i18n-placeholder="emailPlaceholder"
+        aria-label="Email address"
+      >
+      <button class="primary-btn" type="submit" data-i18n="subscribe">订阅</button>
+    </form>
+
+    <p class="form-message hidden" id="newsletterMessage" role="status" aria-live="polite"></p>
+  </section>
+
+  <!-- 观澜泗渡介绍 -->
+  <section class="about-promo">
+    <div class="promo-orb"></div>
+    <h3 class="serif" data-i18n="promoTitle">观澜泗渡<br>以双语视角探索科技、商业与文化的交汇。</h3>
+    <p data-i18n="promoText" class="promo-subtitle"></p>
+    <a class="text-link" href="#about" data-page-link="about">
+      <span data-i18n="learnMore">了解我们</span>
+      <svg width="14" height="14" aria-hidden="true">
+        <use href="#i-arrow"/>
+      </svg>
+    </a>
+  </section>
+
+</aside>
+
 
     <!-- 分类页 -->
     <section id="categoryPage" class="inner-page hidden">
