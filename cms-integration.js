@@ -254,6 +254,7 @@ try {
       }
     }
 
+
     function renderWorks() {
       worksList.replaceChildren();
 
@@ -277,7 +278,6 @@ try {
         const title = document.createElement("span");
         title.className = "work-title";
         title.textContent = work.title || "未命名作品";
-
         content.appendChild(title);
 
         const metaItems = [];
@@ -306,6 +306,19 @@ try {
           content.appendChild(excerpt);
         }
 
+        const footer = document.createElement("div");
+        footer.className = "work-footer";
+
+        const readTime = document.createElement("span");
+        readTime.className = "work-read-time";
+
+        const textLength = `${work.title || ""}${work.excerpt || ""}`.length;
+        const minutes = Math.max(1, Math.ceil(textLength / 300));
+        readTime.textContent = `约 ${minutes} 分钟阅读`;
+
+        footer.appendChild(readTime);
+        content.appendChild(footer);
+
         link.append(number, content);
         worksList.appendChild(link);
       });
@@ -323,6 +336,7 @@ try {
         worksList.appendChild(loadMoreButton);
       }
     }
+
 
    function showMoreWorks() {
   window.location.href = "/works.html";
