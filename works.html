@@ -283,7 +283,7 @@
         const link = document.createElement("a");
         link.className = "work-item";
 
-                link.href = `/work.html?slug=${encodeURIComponent(work.slug)}`;
+        link.href = `/work?slug=${encodeURIComponent(work.slug)}`;
 
         const number = document.createElement("span");
         number.className = "work-number";
