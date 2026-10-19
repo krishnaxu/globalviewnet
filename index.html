@@ -2310,8 +2310,8 @@ for (const article of articles.filter(
       try { savedLang = localStorage.getItem("gp-lang") || "zh"; } catch (_) {}
       if (!translations[savedLang]) savedLang = "zh";
       updateDateLabel();
-loadGlobalViewFallbackImages();
-await loadAutoNews();
+      await loadGlobalViewFallbackImages();
+      await loadAutoNews();
       renderTicker();
       renderFeatured();
       renderArticles();
