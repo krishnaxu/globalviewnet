@@ -324,26 +324,9 @@ try {
       }
     }
 
-    async function showMoreWorks() {
-      if (worksLoading) return;
-
-      const targetCount = visibleCount + 3;
-
-      try {
-        while (
-          allWorks.length < targetCount &&
-          worksHasMore
-        ) {
-          await fetchNextWorksPage();
-        }
-
-        visibleCount = Math.min(targetCount, allWorks.length);
-        renderWorks();
-      } catch (error) {
-        console.error("加载我的作品失败：", error);
-      }
-    }
-
+   function showMoreWorks() {
+  window.location.href = "/works.html";
+}
     loadMoreButton.addEventListener("click", showMoreWorks);
     worksList.appendChild(loadMoreButton);
 
