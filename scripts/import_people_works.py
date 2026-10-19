@@ -115,7 +115,6 @@ class LinkParser(HTMLParser):
             self.href = None
             self.parts = []
 
-
 class ArticleParser(HTMLParser):
     TARGETS = (
         "rm_txt_con",
@@ -125,10 +124,15 @@ class ArticleParser(HTMLParser):
         "article_body",
         "article-body",
         "text_con",
-        "rwb_zw"
+        "rwb_zw",
     )
 
     SKIP_TAGS = {"script", "style", "nav", "footer", "noscript"}
+    VOID_TAGS = {
+        "area", "base", "br", "col", "embed", "hr",
+        "img", "input", "link", "meta", "param",
+        "source", "track", "wbr",
+    }
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -137,6 +141,10 @@ class ArticleParser(HTMLParser):
         self.skip_depth = 0
         self.parts = []
         self.candidates = []
+        self.paragraphs = []
+        self.in_p = False
+        self.p_parts = []
+        self.p_skip_depth = 0
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -145,7 +153,14 @@ class ArticleParser(HTMLParser):
             str(attrs.get("class", ""))
         ).lower()
 
-        if not self.active and any(target in marker for target in self.TARGETS):
+        if tag == "p" and self.p_skip_depth == 0:
+            self.in_p = True
+            self.p_parts = []
+
+        if tag in self.SKIP_TAGS:
+            self.p_skip_depth += 1
+
+        if not self.active and any(t in marker for t in self.TARGETS):
             self.active = True
             self.depth = 1
             self.skip_depth = 0
@@ -155,34 +170,53 @@ class ArticleParser(HTMLParser):
         if not self.active:
             return
 
-        self.depth += 1
+        if tag not in self.VOID_TAGS:
+            self.depth += 1
 
         if tag in self.SKIP_TAGS:
             self.skip_depth += 1
-            return
-
-        if self.skip_depth == 0 and tag in (
+        elif self.skip_depth == 0 and tag in (
             "p", "h1", "h2", "h3", "h4", "br", "li"
         ):
             self.parts.append("\n")
 
     def handle_data(self, data):
+        text = re.sub(r"\s+", " ", data).strip()
+        if not text:
+            return
+
+        if self.in_p and self.p_skip_depth == 0:
+            self.p_parts.append(text)
+
         if self.active and self.skip_depth == 0:
-            text = re.sub(r"\s+", " ", data).strip()
-            if text:
-                self.parts.append(text)
+            self.parts.append(text)
 
     def handle_endtag(self, tag):
+        if tag == "p" and self.in_p:
+            paragraph = re.sub(
+                r"\s+", " ", "".join(self.p_parts)
+            ).strip()
+            if len(paragraph) >= 15:
+                self.paragraphs.append(paragraph)
+            self.in_p = False
+            self.p_parts = []
+
+        if tag in self.SKIP_TAGS and self.p_skip_depth:
+            self.p_skip_depth -= 1
+
         if not self.active:
             return
 
         if tag in self.SKIP_TAGS and self.skip_depth:
             self.skip_depth -= 1
 
-        if self.skip_depth == 0 and tag in ("p", "h1", "h2", "h3", "h4", "li"):
+        if self.skip_depth == 0 and tag in (
+            "p", "h1", "h2", "h3", "h4", "li"
+        ):
             self.parts.append("\n")
 
-        self.depth -= 1
+        if tag not in self.VOID_TAGS:
+            self.depth -= 1
 
         if self.depth <= 0:
             text = "".join(self.parts)
@@ -204,10 +238,21 @@ def extract_article(url):
     parser = ArticleParser()
     parser.feed(source)
 
-    if not parser.candidates:
-        return ""
+    if parser.candidates:
+        return max(parser.candidates, key=len)
 
-    return max(parser.candidates, key=len)
+    # 正文容器无法识别时，退回到网页中的段落文本。
+    noise = (
+        "客户端", "下载", "责任编辑", "责编：",
+        "版权所有", "举报电话", "返回顶部",
+    )
+    paragraphs = [
+        p for p in parser.paragraphs
+        if not any(word in p for word in noise)
+    ]
+    text = "\n\n".join(paragraphs)
+    return text if len(text) >= 100 else ""
+
 
 
 def normalize_url(url):
@@ -215,6 +260,31 @@ def normalize_url(url):
 
 
 def main():
+    # 先验证一篇已知文章，失败时禁止批量处理
+    test_url = (
+        "https://world.people.com.cn/"
+        "n1/2020/0908/c1002-31854160.html"
+    )
+    print("先验证人民网样本文章……")
+
+    try:
+        test_body = extract_article(test_url)
+    except Exception as error:
+        print("样本验证失败，停止批量处理：", error)
+        return
+
+    required_text = (
+        "印尼政府新冠肺炎疫情官方网站",
+        "新增3046例",
+    )
+
+    if not all(text in test_body for text in required_text):
+        print("样本正文识别不正确，停止批量处理。")
+        print("提取结果预览：", test_body[:500])
+        return
+
+    print("样本验证通过，正文长度：", len(test_body))
+
     existing_by_url = {}
 
     for file in OUT.glob("*.md"):
