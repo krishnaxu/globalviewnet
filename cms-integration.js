@@ -263,9 +263,9 @@ try {
       visibleWorks.forEach((work, index) => {
         const link = document.createElement("a");
         link.className = "work-item";
-        link.href = work.original_url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
+
+        link.href = `/work?slug=${encodeURIComponent(work.slug)}`;
+
         link.title = work.title || "";
 
         const number = document.createElement("span");
