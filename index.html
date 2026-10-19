@@ -14,52 +14,102 @@
   <meta property="og:site_name" content="Global View">
   <meta name="color-scheme" content="light dark">
   <title>Global View | 观澜泗渡</title>
-
-
 <style>
+  /* 我的作品列表：参考我的专栏，增加留白 */
   .works-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    padding: 0 18px;
   }
 
   .work-item {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 23px minmax(0, 1fr);
     gap: 8px;
-    line-height: 1.6;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+    color: inherit;
     text-decoration: none;
+    line-height: 1.65;
   }
 
   .work-number {
     flex-shrink: 0;
-    min-width: 22px;
-    font-weight: 600;
+    color: var(--blue);
+    font: 700 16px/1.5 Georgia, serif;
+  }
+
+  .work-content {
+    min-width: 0;
   }
 
   .work-title {
+    display: block;
+    margin: 0 0 5px;
+    font-size: 12px;
+    line-height: 1.65;
+    font-weight: 700;
     overflow-wrap: anywhere;
   }
 
-  html.cms-loading main {
-    visibility: hidden;
+  .work-meta {
+    margin: 0;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.65;
   }
 
-/* 我的作品独立卡片标题 */
-.sidebar .side-panel.works-panel .works-heading {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  margin: 0;
-  padding: 17px 18px;
-  border-top: none;
-  border-bottom: 1px solid var(--border);
-}
+  .work-excerpt {
+    margin: 5px 0 0;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+
+  /* 查看更多作品按钮 */
+  .works-more-button {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    border: 0;
+    background: transparent;
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .works-more-button:hover {
+    opacity: 0.75;
+  }
+
+  .works-more-button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+
+  /* 我的作品独立卡片标题 */
+  .sidebar .side-panel.works-panel .works-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 17px 18px;
+    border-top: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* 标题与作品列表之间的距离 */
   .sidebar .side-panel #worksList {
     margin-top: 16px;
   }
 
+  /* CMS 加载期间隐藏主体，避免页面闪动 */
+  html.cms-loading main {
+    visibility: hidden;
+  }
 </style>
 <script>
   document.documentElement.classList.add("cms-loading");
