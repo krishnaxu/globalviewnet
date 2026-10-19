@@ -1,6 +1,106 @@
 {
-  "generated_at": "2026-10-19T21:41:33.143Z",
+  "generated_at": "2026-10-19T22:40:04.185Z",
   "items": [
+    {
+      "id": "microsoft-says-ai-agents-are-like-insider-thr-4de91e154063",
+      "language": "en",
+      "title": "Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’",
+      "excerpt": "Microsoft wants enterprises to closely watch the agents employees use with systems not controlled by AI labs like OpenAI and Anthropic.",
+      "date": "2026-10-19T22:04:28.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+      "image": ""
+    },
+    {
+      "id": "泽连斯基称俄无人机袭击哈尔科夫州一公园致6死14伤-b420b5b9cde1",
+      "language": "zh",
+      "title": "泽连斯基称俄无人机袭击哈尔科夫州一公园致6死14伤",
+      "excerpt": "乌克兰总统泽连斯基19日表示，俄罗斯当天使用无人机袭击哈尔科夫州一处公园，造成6人死亡、14人受伤。",
+      "date": "2026-10-19T21:58:44.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-20/10717550.shtml",
+      "image": ""
+    },
+    {
+      "id": "特朗普称该换人代表乌克兰谈判-212a06b4814c",
+      "language": "zh",
+      "title": "特朗普称该换人代表乌克兰谈判",
+      "excerpt": "当地时间10月19日下午，美国总统特朗普在白宫对媒体表示，他认为应该由乌克兰总统泽连斯基以外的人代表乌克兰进行谈判，以寻求结束与俄罗斯的战事。特朗普说：“也许泽连斯基是时候找别人来谈判了。”",
+      "date": "2026-10-19T21:57:16.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-20/10717549.shtml",
+      "image": ""
+    },
+    {
+      "id": "美国俄亥俄州哥伦布市东北部发生枪击事件-至少1人死亡-29c9ed7afa14",
+      "language": "zh",
+      "title": "美国俄亥俄州哥伦布市东北部发生枪击事件 至少1人死亡",
+      "excerpt": "当地时间10月19日，总台记者获悉，当日下午，美国俄亥俄州哥伦布市东北部一座清真寺附近发生枪击事件，导致至少一人死亡。",
+      "date": "2026-10-19T21:55:50.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-20/10717548.shtml",
+      "image": ""
+    },
+    {
+      "id": "伊朗波斯湾海峡管理局-122艘船舶被列入违规名单-3c75cf09dc9f",
+      "language": "zh",
+      "title": "伊朗波斯湾海峡管理局：122艘船舶被列入违规名单",
+      "excerpt": "当地时间20日，伊朗波斯湾海峡管理局宣布，截至目前，已有122艘船舶被列入波斯湾航道管理的违规名单。",
+      "date": "2026-10-19T21:54:22.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-20/10717547.shtml",
+      "image": ""
+    },
+    {
+      "id": "王毅同保加利亚外长佩特罗娃会谈-9052ee2643da",
+      "language": "zh",
+      "title": "王毅同保加利亚外长佩特罗娃会谈",
+      "excerpt": "新华社索非亚10月19日电(记者林浩 姚雨璘)中共中央政治局委员、外交部长王毅19日在索非亚同保加利亚外长佩特罗娃举行会谈。",
+      "date": "2026-10-19T21:52:10.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-20/10717546.shtml",
+      "image": ""
+    },
+    {
+      "id": "王毅会见保加利亚副总理普列夫-18f675cfbc02",
+      "language": "zh",
+      "title": "王毅会见保加利亚副总理普列夫",
+      "excerpt": "新华社索非亚10月19日电(记者林浩 姚雨璘)中共中央政治局委员、外交部长王毅19日在索非亚会见保加利亚副总理普列夫。",
+      "date": "2026-10-19T21:50:48.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-20/10717545.shtml",
+      "image": ""
+    },
+    {
+      "id": "法国总统马克龙出访海湾国家-聚焦能源供应-86640ebe0487",
+      "language": "zh",
+      "title": "法国总统马克龙出访海湾国家 聚焦能源供应",
+      "excerpt": "中新社巴黎10月19日电 法国总统马克龙当地时间19日起对多个海湾国家展开访问，聚焦能源供应。",
+      "date": "2026-10-19T21:46:27.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-20/10717544.shtml",
+      "image": ""
+    },
+    {
+      "id": "us-church-on-frontline-of-battle-against-drug-a2e14f466ebb",
+      "language": "en",
+      "title": "US Church on frontline of battle against drug known as 'tranq'",
+      "excerpt": "Synthetic opioids like fentanyl are more powerful and in plentiful supply, and they have transformed the drugs landscape.",
+      "date": "2026-10-19T21:05:54.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cqd097z3epvno?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/483d/live/f2db5f30-cbdd-11f1-9a39-31b474234113.jpg"
+    },
+    {
+      "id": "tennis-star-svitolina-says-emotional-toll-of--92b358263949",
+      "language": "en",
+      "title": "Tennis star Svitolina says emotional toll of Ukraine war led to Monfils separation",
+      "excerpt": "The two top tennis pros married in 2021 and have one child together.",
+      "date": "2026-10-19T21:02:33.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckd7qy12j148o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/766b/live/02caf1d0-cbc0-11f1-a64c-550be9e3c66b.jpg"
+    },
     {
       "id": "tech-stocks-had-a-nice-oversold-bounce-on-mon-b95ededfd931",
       "language": "en",
@@ -60,6 +160,16 @@
       "source_name": "Ars Technica",
       "source_url": "https://arstechnica.com/science/2026/10/batteries-have-a-small-carbon-footprint-we-can-make-it-smaller/",
       "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1177067-500x500.jpg"
+    },
+    {
+      "id": "ukraine-says-it-carried-out-first-drone-airli-948e232c9f03",
+      "language": "en",
+      "title": "Ukraine says it carried out first drone airlift of wounded soldier from front line",
+      "excerpt": "The serviceman was surrounded by landmines and enemy drones so a ground rescue was not possible, Ukraine's military says.",
+      "date": "2026-10-19T20:00:43.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/c3vgx05p149wo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9ffd/live/9535d5d0-cbf7-11f1-9a39-31b474234113.jpg"
     },
     {
       "id": "psa-patch-your-plex-media-server-before-someo-93bc531bda3a",
@@ -940,6 +1050,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-19/10717460.shtml",
       "image": ""
+    },
+    {
+      "id": "watch-are-the-french-riots-a-warning-of-an-in-c86a1dae9a10",
+      "language": "en",
+      "title": "Watch: Are the French riots a warning of an intense election to come?",
+      "excerpt": "Rioting, looting and vandalism has gripped France over the weekend after protests spiralled out of control across the country.",
+      "date": "2026-10-19T13:43:27.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/145f/live/7a0d3230-cbcf-11f1-a64c-550be9e3c66b.jpg"
     },
     {
       "id": "exiled-critic-of-rwandan-president-found-behe-b1fd16c8275a",
@@ -2879,126 +2999,6 @@
       "date": "2026-10-19T06:33:21.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/jk/2026/10-19/10717149.shtml",
-      "image": ""
-    },
-    {
-      "id": "新启6条高速动脉-广东加快构建全域互联互通公路网-549ec71222eb",
-      "language": "zh",
-      "title": "新启6条高速动脉 广东加快构建全域互联互通公路网",
-      "excerpt": "中新网广州10月19日电 (蔡敏婕 欧阳征朝)广东交通集团2026年高速公路建设会暨“促投资”现场会19日在广州举行，2026年计划新开工河紫、凤凰山、兰海高速湛江段、茂吴、陆惠、京珠北改扩建等6个高速公路项目。",
-      "date": "2026-10-19T06:32:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/10-19/10717148.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴西圣保罗华社举行重阳敬老活动-8833194e1624",
-      "language": "zh",
-      "title": "巴西圣保罗华社举行重阳敬老活动",
-      "excerpt": "",
-      "date": "2026-10-19T06:31:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-19/1208246.shtml",
-      "image": ""
-    },
-    {
-      "id": "院士专家齐聚湖北恩施-共探硒产业大健康新赛道-247df600b3bc",
-      "language": "zh",
-      "title": "院士专家齐聚湖北恩施 共探硒产业大健康新赛道",
-      "excerpt": "中新网恩施10月19日电(税浪 田景文)10月18日至20日，第十一届世界硒都(恩施)硒产品博览交易会在湖北恩施举行。展会以“大健康新硒望”为主题，以富硒产业赋能大健康为主线，邀请诺奖得主、院士专家、科研院所相聚恩施，开展学术研讨与产业对接，打造集展览展示、经贸洽谈、品牌推介、产业对接、云上直播于一体的展会平台。",
-      "date": "2026-10-19T06:30:39.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-19/10717147.shtml",
-      "image": ""
-    },
-    {
-      "id": "研究-住宅周边绿化程度高或有助降低痴呆症风险-93610d88380f",
-      "language": "zh",
-      "title": "研究：住宅周边绿化程度高或有助降低痴呆症风险",
-      "excerpt": "新华社赫尔辛基10月18日电(记者朱昊晨 徐谦)斯德哥尔摩消息：瑞典斯德哥尔摩大学和卡罗琳医学院的一项最新联合研究发现，住宅周边100米范围内绿化程度较高的老年人，随着时间推移患痴呆症的风险更低。",
-      "date": "2026-10-19T06:24:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/10-19/10717146.shtml",
-      "image": ""
-    },
-    {
-      "id": "斯诺克北爱尔兰公开赛-中国军团首日两人晋级-e1fc9a1c4d32",
-      "language": "zh",
-      "title": "斯诺克北爱尔兰公开赛：中国军团首日两人晋级",
-      "excerpt": "中新社英国贝尔法斯特10月19日电 当地时间10月18日，2026年斯诺克北爱尔兰公开赛在贝尔法斯特展开首日较量，中国军团5人出战，徐思与小将王信伯分别战胜各自对手晋级32强。",
-      "date": "2026-10-19T06:23:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-19/10717143.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家发改委向社会公开征求-电力现货市场基本规则-公开征求意见稿-意见-bc6a9e5705cc",
-      "language": "zh",
-      "title": "国家发改委向社会公开征求《电力现货市场基本规则（公开征求意见稿）》意见",
-      "excerpt": "中新网10月19日电 据国家发改委网站消息，为加快推进全国统一电力市场建设，强化电力市场基础制度规则统一，规范电力现货市场运营和管理，国家发改委组织对《电力现货市场基本规则(试行)》(发改能源规〔2023〕1217号)进行了修订，形成了《电力现货市场基本规则(公开征求意见稿)》，现向社会公开征求意见。",
-      "date": "2026-10-19T06:19:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-19/10717109.shtml",
-      "image": ""
-    },
-    {
-      "id": "青岛-碱蓬草如锦似霞层叠铺展-红海滩生态风光如画-8b1cba304d69",
-      "language": "zh",
-      "title": "青岛：碱蓬草如锦似霞层叠铺展 红海滩生态风光如画",
-      "excerpt": "",
-      "date": "2026-10-19T06:19:47.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cnhttps://www.chinanews.com.cn/tp/hd2011/2026/10-19/1208242.shtml",
-      "image": ""
-    },
-    {
-      "id": "红色巡讲走进江苏响水-灌河岸畔这场沉浸式思政课超燃-4469d8da57ae",
-      "language": "zh",
-      "title": "红色巡讲走进江苏响水 灌河岸畔这场沉浸式思政课超燃",
-      "excerpt": "10月16日，江苏省响水县新时代文明实践中心一楼淮海剧场。台上，灯光渐暗，音乐低回，身着素衣的舞者们以一支《铭记》回望烽火岁月，倾诉对为国牺牲革命英烈的深切缅怀。台下，公安干警、卫健系统代表、青年学生和社会各界群众凝神静观，舞毕，掌声久久回荡。",
-      "date": "2026-10-19T06:16:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-19/10717139.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家网信办开展未成年人用户数量巨大等网络平台服务提供者认定工作-7dafdf7caa06",
-      "language": "zh",
-      "title": "国家网信办开展未成年人用户数量巨大等网络平台服务提供者认定工作",
-      "excerpt": "中新网10月19日电 据“网信中国”微信公众号消息，国家网信办发布《关于开展未成年人用户数量巨大和对未成年人群体具有显著影响的网络平台服务提供者认定工作的公告》称，为进一步强化未成年人网络保护，压实网络平台主体责任，根据《未成年人网络保护条例》《未成年人用户数量巨大和对未成年人群体具有显著影响的网络平台服务提供者认定办法》等相关要求，现启动认定工作。网络平台服务提供者按照认定标准和流程要求，主动评估并提交申报材料。",
-      "date": "2026-10-19T06:13:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-19/10717141.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家统计局-2027年1月1日起第四次全国农业普查将正式开启入户登记-86f102a27f85",
-      "language": "zh",
-      "title": "国家统计局：2027年1月1日起第四次全国农业普查将正式开启入户登记",
-      "excerpt": "中新网10月19日电 国务院新闻办公室19日举行新闻发布会，会上，国家统计局新闻发言人、副局长毛盛勇表示，第四次全国农业普查正在进入关键阶段，2027年1月1日起将正式开启入户登记。",
-      "date": "2026-10-19T06:12:34.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-19/10717122.shtml",
-      "image": ""
-    },
-    {
-      "id": "一封写给家乡的书信-何以打动世界-86bb3a7171c9",
-      "language": "zh",
-      "title": "一封写给家乡的书信，何以打动世界？",
-      "excerpt": "13岁中国女孩获第55届国际少年书信写作比赛金奖——",
-      "date": "2026-10-19T06:12:04.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/edu/2026/10-19/10717140.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家统计局-规模以上制造业人工智能技术重点场景应用普及率超过1-3-c7c2b481a608",
-      "language": "zh",
-      "title": "国家统计局：规模以上制造业人工智能技术重点场景应用普及率超过1/3",
-      "excerpt": "中新网10月19日电 国新办19日举行新闻发布会，国家统计局新闻发言人、国民经济综合统计司负责人王冠华在会上表示，目前，全国已累计建成5.6万余家基础级、9000余家先进级、500余家卓越级智能工厂，规模以上制造业人工智能技术重点场景应用普及率超过1/3。",
-      "date": "2026-10-19T06:08:26.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-19/10717119.shtml",
       "image": ""
     }
   ]
