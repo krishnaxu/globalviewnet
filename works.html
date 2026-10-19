@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>我的作品 | Global View 观澜泗渡</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --surface: #ffffff;
+      --text: #20242b;
+      --muted: #737b87;
+      --border: #e5e8ed;
+      --blue: #3269a8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #15181d;
+        --surface: #20242b;
+        --text: #edf0f4;
+        --muted: #a2aab6;
+        --border: #363c46;
+        --blue: #8bbcff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, "Noto Sans SC", sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 48px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back-link {
+      color: var(--blue);
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 28px 0 4px;
+      font-family: Georgia, "Noto Serif SC", serif;
+      font-size: clamp(26px, 5vw, 34px);
+    }
+
+    .intro {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .summary {
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .works-list {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+    }
+
+    .work-item {
+      display: grid;
+      grid-template-columns: 32px minmax(0, 1fr);
+      gap: 12px;
+      padding: 18px;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+    }
+
+    .work-item:last-child {
+      border-bottom: 0;
+    }
+
+    .work-number {
+      color: var(--blue);
+      font: 700 17px/1.6 Georgia, serif;
+    }
+
+    .work-content {
+      min-width: 0;
+    }
+
+    .work-title {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    .work-item:hover .work-title {
+      color: var(--blue);
+    }
+
+    .work-meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .work-excerpt {
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .status {
+      padding: 28px 16px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .pagination {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .page-button {
+      padding: 9px 16px;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      background: var(--surface);
+      color: var(--text);
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .page-button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .page-info {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding-top: 20px;
+      }
+
+      .work-item {
+        grid-template-columns: 25px minmax(0, 1fr);
+        gap: 8px;
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header class="topbar">
+      <a class="brand" href="/">Global View | 观澜泗渡</a>
+      <a class="back-link" href="/">← 返回首页</a>
+    </header>
+
+    <h1>我的作品</h1>
+    <p class="intro">My Works · 文章与内容存档</p>
+
+    <div class="summary" id="summary">正在加载作品…</div>
+
+    <section class="works-list" id="worksList" aria-live="polite">
+      <div class="status">正在加载作品，请稍候…</div>
+    </section>
+
+    <nav class="pagination" aria-label="作品分页">
+      <button class="page-button" id="prevButton" type="button" disabled>
+        上一页
+      </button>
+      <span class="page-info" id="pageInfo">第 1 页</span>
+      <button class="page-button" id="nextButton" type="button" disabled>
+        下一页
+      </button>
+    </nav>
+  </main>
+
+  <script>
+    const worksList = document.getElementById("worksList");
+    const summary = document.getElementById("summary");
+    const prevButton = document.getElementById("prevButton");
+    const nextButton = document.getElementById("nextButton");
+    const pageInfo = document.getElementById("pageInfo");
+
+    const params = new URLSearchParams(window.location.search);
+    let currentPage = Math.max(1, Number(params.get("page")) || 1);
+    let totalPages = 1;
+    let loading = false;
+
+    function formatDate(value) {
+      if (!value) return "";
+
+      const match = String(value).match(
+        /^(\d{4})-(\d{1,2})-(\d{1,2})/
+      );
+
+      if (!match) return String(value);
+
+      return `${match[1]}年${Number(match[2])}月${Number(match[3])}日`;
+    }
+
+    function showStatus(message) {
+      worksList.replaceChildren();
+
+      const status = document.createElement("div");
+      status.className = "status";
+      status.textContent = message;
+
+      worksList.appendChild(status);
+    }
+
+    function renderWorks(works) {
+      worksList.replaceChildren();
+
+      if (works.length === 0) {
+        showStatus("这一页暂时没有作品。");
+        return;
+      }
+
+      works.forEach((work, index) => {
+        const link = document.createElement("a");
+        link.className = "work-item";
+
+        if (work.original_url) {
+          link.href = work.original_url;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+        } else {
+          link.href = "#";
+          link.removeAttribute("target");
+        }
+
+        const number = document.createElement("span");
+        number.className = "work-number";
+        number.textContent =
+          String((currentPage - 1) * 25 + index + 1) + ".";
+
+        const content = document.createElement("div");
+        content.className = "work-content";
+
+        const title = document.createElement("span");
+        title.className = "work-title";
+        title.textContent = work.title || "未命名作品";
+        content.appendChild(title);
+
+        const metaItems = [];
+
+        if (work.platform) {
+          metaItems.push(work.platform);
+        }
+
+        const date = formatDate(work.date);
+
+        if (date) {
+          metaItems.push(date);
+        }
+
+        if (metaItems.length) {
+          const meta = document.createElement("p");
+          meta.className = "work-meta";
+          meta.textContent = metaItems.join(" · ");
+          content.appendChild(meta);
+        }
+
+        if (work.excerpt) {
+          const excerpt = document.createElement("p");
+          excerpt.className = "work-excerpt";
+          excerpt.textContent = work.excerpt;
+          content.appendChild(excerpt);
+        }
+
+        link.append(number, content);
+        worksList.appendChild(link);
+      });
+    }
+
+    async function loadWorks(page) {
+      if (loading) return;
+
+      loading = true;
+      prevButton.disabled = true;
+      nextButton.disabled = true;
+      summary.textContent = "正在加载作品…";
+      showStatus("正在加载作品，请稍候…");
+
+      try {
+        const response = await fetch(
+          `/api/works?page=${page}`,
+          {
+            headers: { Accept: "application/json" },
+            cache: "no-store"
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error("请求失败：" + response.status);
+        }
+
+        const data = await response.json();
+
+        if (!data.success || !Array.isArray(data.works)) {
+          throw new Error(data.detail || "作品数据格式不正确");
+        }
+
+        currentPage = Number(data.page) || page;
+        totalPages = Math.max(1, Number(data.total_pages) || 1);
+
+        renderWorks(data.works);
+
+        summary.textContent =
+          `共 ${data.total} 篇作品 · 每页 ${data.page_size} 篇`;
+
+        pageInfo.textContent =
+          `第 ${currentPage} / ${totalPages} 页`;
+
+        prevButton.disabled = currentPage <= 1;
+        nextButton.disabled =
+          currentPage >= totalPages || !data.has_more;
+
+        const url = new URL(window.location.href);
+        url.searchParams.set("page", currentPage);
+        window.history.replaceState({}, "", url);
+      } catch (error) {
+        console.error("加载作品失败：", error);
+        showStatus("作品加载失败，请检查网络后重试。");
+        summary.textContent = "暂时无法获取作品数据";
+        pageInfo.textContent = `第 ${page} 页`;
+        prevButton.disabled = page <= 1;
+        nextButton.disabled = false;
+        nextButton.textContent = "重试";
+      } finally {
+        loading = false;
+      }
+    }
+
+    prevButton.addEventListener("click", () => {
+      if (currentPage > 1) {
+        nextButton.textContent = "下一页";
+        loadWorks(currentPage - 1);
+      }
+    });
+
+    nextButton.addEventListener("click", () => {
+      if (nextButton.textContent === "重试") {
+        nextButton.textContent = "下一页";
+        loadWorks(currentPage);
+      } else if (currentPage < totalPages) {
+        loadWorks(currentPage + 1);
+      }
+    });
+
+    loadWorks(currentPage);
+  </script>
+</body>
+</html>
