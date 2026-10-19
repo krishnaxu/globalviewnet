@@ -777,19 +777,7 @@
     }
   }
   </script>
-  <script type="application/ld+json" id="article-jsonld">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "全球绿色能源投资持续升温，企业加速布局可持续发展",
-    "description": "了解绿色能源投资、企业可持续发展战略及其面临的机遇。",
-    "inLanguage": "zh-CN",
-    "author": { "@type": "Organization", "name": "Global View Editorial Team" },
-    "publisher": { "@type": "Organization", "name": "Global View" },
-    "datePublished": "2026-10-13",
-    "dateModified": "2026-10-13"
-  }
-  </script>
+ 
 </head>
 
 <body>
@@ -1351,7 +1339,6 @@ disclaimer: "This website is a platform for information aggregation, bilingual r
       updateCategoryPage();
       if (currentArticleId) renderModalArticle(currentArticleId);
       updateDateLabel();
-      updateJsonLd(currentArticleId ? articleById(currentArticleId) : articleById("green-investment"));
     }
 
     // 主题切换：默认遵循系统偏好，用户手动选择后保存偏好。
@@ -1903,7 +1890,6 @@ if (article.cms && article.show_in_column === true) {
       document.body.classList.add("modal-open");
       $("#modalClose").focus();
       history.replaceState({ page: currentPage, article: id }, "", `#article-${id}`);
-      updateJsonLd(article);
     }
 
     function renderModalArticle(id) {
@@ -1953,7 +1939,6 @@ if (article.cms && article.show_in_column === true) {
       $("#articleModal").classList.remove("open");
       document.body.classList.remove("modal-open");
       currentArticleId = null;
-      updateJsonLd(articleById("green-investment"));
       const cleanHash = currentPage === "home" ? "#home" : `#${currentPage}`;
       history.replaceState({ page: currentPage }, "", cleanHash);
       if (previousFocus && typeof previousFocus.focus === "function") previousFocus.focus();
