@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Global View 观澜泗渡文章存档">
+  <title>文章详情 | Global View 观澜泗渡</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --surface: #ffffff;
+      --text: #20242b;
+      --muted: #737b87;
+      --border: #e5e8ed;
+      --blue: #3269a8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #15181d;
+        --surface: #20242b;
+        --text: #edf0f4;
+        --muted: #a2aab6;
+        --border: #363c46;
+        --blue: #8bbcff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, "Noto Sans SC", sans-serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: var(--blue);
+    }
+
+    .container {
+      width: min(820px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back-link {
+      font-size: 14px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    article {
+      margin-top: 32px;
+      padding: clamp(20px, 5vw, 42px);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-family: Georgia, "Noto Serif SC", serif;
+      font-size: clamp(25px, 5vw, 35px);
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .meta {
+      padding-bottom: 22px;
+      margin-bottom: 26px;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .article-body {
+      font-family: Georgia, "Noto Serif SC", serif;
+      font-size: 17px;
+      line-height: 2;
+      overflow-wrap: anywhere;
+      white-space: normal;
+    }
+
+    .article-body p {
+      margin: 0 0 1.25em;
+      text-indent: 2em;
+    }
+
+    .article-body p.no-indent {
+      text-indent: 0;
+    }
+
+    .original-link {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .original-link a {
+      text-decoration: none;
+    }
+
+    .original-link a:hover,
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .status {
+      padding: 36px 12px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding-top: 18px;
+      }
+
+      article {
+        margin-top: 20px;
+        padding: 20px 17px;
+      }
+
+      .article-body {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header class="topbar">
+      <a class="brand" href="/">Global View | 观澜泗渡</a>
+      <a class="back-link" href="/works.html">← 返回作品列表</a>
+    </header>
+
+    <div id="status" class="status" role="status">
+      正在加载文章…
+    </div>
+
+    <article id="article" hidden>
+      <h1 id="title"></h1>
+      <div id="meta" class="meta"></div>
+      <div id="articleBody" class="article-body"></div>
+
+      <footer class="original-link">
+        <a id="originalLink" href="#" target="_blank"
+           rel="noopener noreferrer">阅读人民网原文 →</a>
+      </footer>
+    </article>
+  </main>
+
+  <script>
+    const statusElement = document.getElementById("status");
+    const articleElement = document.getElementById("article");
+    const titleElement = document.getElementById("title");
+    const metaElement = document.getElementById("meta");
+    const bodyElement = document.getElementById("articleBody");
+    const originalLinkElement = document.getElementById("originalLink");
+
+    const params = new URLSearchParams(window.location.search);
+    const slug = (params.get("slug") || "").trim();
+
+    // 只允许访问预期格式的作品标识，避免无效请求。
+    function isValidSlug(value) {
+      return /^[a-zA-Z0-9_-]+$/.test(value);
+    }
+
+    function formatDate(value) {
+      if (!value) return "";
+
+      const match = String(value).match(
+        /^(\d{4})-(\d{1,2})-(\d{1,2})/
+      );
+
+      if (!match) return String(value);
+
+      return `${match[1]}年${Number(match[2])}月${Number(match[3])}日`;
+    }
+
+    // 过滤人民网页面中常见的导航、分享和推荐内容。
+    // 只用于展示层，不会修改 GitHub 中保存的 Markdown 文件。
+    function cleanBody(text) {
+      const lines = String(text || "")
+        .replace(/\r\n?/g, "\n")
+        .split("\n");
+
+      const stopPatterns = [
+        /^\s*分享让更多人看到\s*$/,
+        /^\s*客户端下载\s*$/,
+        /^\s*人民日报\s*$/,
+        /^\s*人民网\+\s*$/,
+        /^\s*手机人民网\s*$/,
+        /^\s*领导留言板\s*$/,
+        /^\s*人民视频\s*$/,
+        /^\s*人民智云\s*$/,
+        /^\s*人民智作\s*$/,
+        /^\s*热门排行\s*$/,
+        /^\s*相关阅读\s*$/,
+        /^\s*相关专题\s*$/,
+        /^\s*返回顶部\s*$/
+      ];
+
+      const cleaned = [];
+      let stopped = false;
+
+      for (const line of lines) {
+        const trimmed = line.trim();
+
+        // 责编通常是文章末尾信息，保留后即停止，
+        // 防止将后面的网页导航和推荐列表显示出来。
+        if (/^\(责编[:：]/.test(trimmed)) {
+          break;
+        }
+
+        if (stopPatterns.some(pattern => pattern.test(trimmed))) {
+          stopped = true;
+          break;
+        }
+
+        // 清除标题后常见的发布时间、来源、字号提示行。
+        if (
+          /^\d{4}年\d{1,2}月\d{1,2}日\d{1,2}:\d{2}/.test(trimmed) ||
+          /^\s*小字号\s*$/.test(trimmed)
+        ) {
+          continue;
+        }
+
+        cleaned.push(line);
+      }
+
+      // 不依赖责编是否存在，正文到此结束。
+      return cleaned.join("\n").trim();
+    }
+
+    function renderBody(text) {
+      bodyElement.replaceChildren();
+
+      const cleaned = cleanBody(text);
+
+      if (!cleaned) {
+        const p = document.createElement("p");
+        p.className = "no-indent";
+        p.textContent = "暂时没有可展示的正文内容。";
+        bodyElement.appendChild(p);
+        return;
+      }
+
+      const paragraphs = cleaned
+        .split(/\n\s*\n/)
+        .map(item => item.trim())
+        .filter(Boolean);
+
+      for (const paragraph of paragraphs) {
+        const p = document.createElement("p");
+        p.textContent = paragraph.replace(/\n/g, " ").trim();
+        bodyElement.appendChild(p);
+      }
+    }
+
+    function showError(message) {
+      statusElement.textContent = message;
+      statusElement.hidden = false;
+      articleElement.hidden = true;
+    }
+
+    async function loadArticle() {
+      if (!slug || !isValidSlug(slug)) {
+        showError("文章链接缺少有效的作品标识，请从作品列表重新进入。");
+        return;
+      }
+
+      try {
+        const response = await fetch(
+          `/api/works?slug=${encodeURIComponent(slug)}`,
+          {
+            headers: { Accept: "application/json" },
+            cache: "no-store"
+          }
+        );
+
+        const data = await response.json();
+
+        if (!response.ok || !data.success || !data.work) {
+          throw new Error(data.error || data.detail || "文章不存在或暂时无法读取。");
+        }
+
+        const work = data.work;
+
+        titleElement.textContent = work.title || "未命名文章";
+
+        const metaItems = [];
+
+        if (work.platform) {
+          metaItems.push(work.platform);
+        }
+
+        const date = formatDate(work.date);
+
+        if (date) {
+          metaItems.push(date);
+        }
+
+        metaElement.textContent = metaItems.join(" · ");
+
+        renderBody(work.body || "");
+
+        // 仅接受 HTTP/HTTPS 链接作为原文链接。
+        let originalUrl;
+
+        try {
+          originalUrl = new URL(work.original_url);
+        } catch {
+          originalUrl = null;
+        }
+
+        if (
+          originalUrl &&
+          ["http:", "https:"].includes(originalUrl.protocol)
+        ) {
+          originalLinkElement.href = originalUrl.href;
+          originalLinkElement.hidden = false;
+        } else {
+          originalLinkElement.hidden = true;
+        }
+
+        document.title =
+          `${work.title || "文章详情"} | Global View 观澜泗渡`;
+
+        statusElement.hidden = true;
+        articleElement.hidden = false;
+      } catch (error) {
+        console.error("文章加载失败：", error);
+        showError("文章加载失败，请稍后重试，或返回作品列表重新打开。");
+      }
+    }
+
+    loadArticle();
+  </script>
+</body>
+</html>
