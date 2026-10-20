@@ -1,6 +1,96 @@
 {
-  "generated_at": "2026-10-20T17:41:50.495Z",
+  "generated_at": "2026-10-20T18:47:44.145Z",
   "items": [
+    {
+      "id": "google-has-joined-amazon-in-attacking-nvidia--61ce75599c83",
+      "language": "en",
+      "title": "Google has joined Amazon in attacking Nvidia’s stronghold with AI app developers",
+      "excerpt": "Google has joined Amazon in releasing a developer tool that makes it easy for PyTorch users to move their apps off Nvidia GPUs.",
+      "date": "2026-10-20T18:38:24.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+      "image": ""
+    },
+    {
+      "id": "chatgpt-now-lets-you-lock-your-chats-af34a6699219",
+      "language": "en",
+      "title": "ChatGPT now lets you lock your chats",
+      "excerpt": "The company says the feature is designed for situations where users might be discussing something personal or planning a surprise and want to keep those conversations private when handing their device to friends or family to show them something in another chat.",
+      "date": "2026-10-20T18:36:53.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
+      "image": ""
+    },
+    {
+      "id": "mike-bloomberg-spent-80m-to-boost-democrats-i-dd3b8346f697",
+      "language": "en",
+      "title": "Mike Bloomberg spent $80M to boost Democrats in midterms: NYT",
+      "excerpt": "Democrats are hopeful that they will regain majority control of the House of Representatives and the Senate in November's elections.",
+      "date": "2026-10-20T18:30:53.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/20/mike-bloomberg-democrats-house-trump.html",
+      "image": ""
+    },
+    {
+      "id": "cba常规赛次轮-北京队主场轻取广东队-斩获两连胜-f69981ec346b",
+      "language": "zh",
+      "title": "CBA常规赛次轮：北京队主场轻取广东队 斩获两连胜",
+      "excerpt": "中新社北京10月20日电 (刘梦青 国璇)在2026-2027赛季中国男子篮球职业联赛(CBA)常规赛次轮较量中，北京队20日晚在北京以96:78战胜广东队，斩获两连胜，广东队则遭遇两连败。",
+      "date": "2026-10-20T18:16:27.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/10-21/10718218.shtml",
+      "image": ""
+    },
+    {
+      "id": "泰方称将加强泰中协调保障游客安全-6ea4c7df0593",
+      "language": "zh",
+      "title": "泰方称将加强泰中协调保障游客安全",
+      "excerpt": "中新社曼谷10月20日电 (王茜 李映民)泰国旅游与体育部长素拉萨20日表示，泰方高度重视包括中国游客在内的各国游客安全，将加强相关部门协调，并与中方进一步沟通，以提升游客安全保障水平。",
+      "date": "2026-10-20T18:16:11.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-21/10718217.shtml",
+      "image": ""
+    },
+    {
+      "id": "traders-are-betting-netflix-s-stock-drama-may-54d724f991f1",
+      "language": "en",
+      "title": "Traders are betting Netflix's stock drama may be coming to an end",
+      "excerpt": "Current options prices are implying a 9% post-earnings move for Netflix, which is the highest since its Q3 2022 report, when it was priced for an 11% move.",
+      "date": "2026-10-20T18:10:13.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/20/traders-are-betting-netflixs-stock-drama-may-be-coming-to-an-end.html",
+      "image": ""
+    },
+    {
+      "id": "stocks-try-for-back-to-back-gains-plus-qnity--69607b9cc1e4",
+      "language": "en",
+      "title": "Stocks try for back-to-back gains — plus, Qnity gets iPhone business from Apple",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "date": "2026-10-20T18:09:42.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/20/stocks-try-for-back-to-back-gains-plus-qnity-gets-iphone-business-from-apple.html",
+      "image": ""
+    },
+    {
+      "id": "housing-is-flashing-warning-signs-just-as-the-b4619394bd67",
+      "language": "en",
+      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+      "excerpt": "Housing data deteriorated further in September, according to separate reports Tuesday.",
+      "date": "2026-10-20T18:03:57.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+      "image": ""
+    },
+    {
+      "id": "eric-schmidt-reportedly-owns-about-half-as-mu-f947e16b0edd",
+      "language": "en",
+      "title": "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
+      "excerpt": "The former Google CEO owns about 1% stake in the leading AI lab, Bloomberg reported.",
+      "date": "2026-10-20T17:55:12.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/",
+      "image": ""
+    },
     {
       "id": "if-elon-musk-gifts-spacex-stock-through-trump-bbc50c070bba",
       "language": "en",
@@ -239,6 +329,16 @@
       "date": "2026-10-20T15:20:43.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/10-20/10718201.shtml",
+      "image": ""
+    },
+    {
+      "id": "to-get-a-reply-when-reaching-out-to-people-ma-491e4db94487",
+      "language": "en",
+      "title": "To get a reply when reaching out to people, make 1 simple change, says LinkedIn career expert",
+      "excerpt": "LinkedIn career expert Catherine Fisher says making this change when reaching out to people could boost the chances of hearing a yes.",
+      "date": "2026-10-20T15:09:33.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/make-it/2026/10/20/networking-specific-ask-linkedin-career-expert.html",
       "image": ""
     },
     {
@@ -2899,106 +2999,6 @@
       "date": "2026-10-20T07:11:46.000Z",
       "source_name": "中新网财经新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717806.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国推出首批136项标志性重大应用场景项目-9cdb7e157485",
-      "language": "zh",
-      "title": "中国推出首批136项标志性重大应用场景项目",
-      "excerpt": "中新社北京10月20日电 (记者 王恩博)记者20日自中国国家发改委获悉，其会同有关部门推出首批136项标志性重大应用场景项目清单，覆盖新领域新赛道、产业转型升级、行业领域应用、社会治理服务、民生领域等五大类型应用场景。",
-      "date": "2026-10-20T07:11:16.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717799.shtml",
-      "image": ""
-    },
-    {
-      "id": "广东将奖励制造业赋能项目-最高1500万元-f04c487d90d2",
-      "language": "zh",
-      "title": "广东将奖励制造业赋能项目 最高1500万元",
-      "excerpt": "中新网广州10月20日电 (记者 程景伟)广东省人民政府新闻办公室20日在广州举行“粤智赋万企行”专项行动新闻发布会，广东省人民政府副秘书长孙哲表示，广东省即将印发《广东省制造业赋能奖励专项资金方案(2026—2028年)》，采取“事后奖补”“分级奖补”方式，对成效良好的赋能项目给予支持，谁投入、谁见效、谁受益。",
-      "date": "2026-10-20T07:09:44.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717802.shtml",
-      "image": ""
-    },
-    {
-      "id": "前三季度我国获批创新药中国产占比达80-12218457f20c",
-      "language": "zh",
-      "title": "前三季度我国获批创新药中国产占比达80%",
-      "excerpt": "新华社北京10月20日电 工业和信息化部总工程师王卫明20日在国新办举行的新闻发布会上表示，前三季度我国获批创新药中，国产占比达80%，肿瘤、精神、抗感染、痛风、罕见病等多领域药物研究取得突破。(完)",
-      "date": "2026-10-20T07:09:32.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717814.shtml",
-      "image": ""
-    },
-    {
-      "id": "16部门联合部署2026年全国-优化消费环境月-活动-6822678cf381",
-      "language": "zh",
-      "title": "16部门联合部署2026年全国“优化消费环境月”活动",
-      "excerpt": "中新网北京10月20日电 (记者 刘亮)市场监管总局、工业和信息化部等16个部门近日联合部署在今年11月开展2026年全国“优化消费环境月”活动。活动以“放心消费你我共享”为主题，深入贯彻《优化消费环境三年行动方案(2025—2027年)》有关要求，为持续推进消费环境优化营造良好氛围。",
-      "date": "2026-10-20T07:09:12.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717803.shtml",
-      "image": ""
-    },
-    {
-      "id": "前三季度工业对经济增长的贡献率保持在35-左右-a3aca4ee092c",
-      "language": "zh",
-      "title": "前三季度工业对经济增长的贡献率保持在35%左右",
-      "excerpt": "新华社北京10月20日电 工业和信息化部总工程师王卫明20日在国新办举行的新闻发布会上表示，前三季度，规模以上工业增加值同比增长5.3%，工业对经济增长的贡献率保持在35%左右。(完)",
-      "date": "2026-10-20T07:08:00.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717809.shtml",
-      "image": ""
-    },
-    {
-      "id": "blackwall-quadruples-valuation-to-2-2b-as-web-76faeee63fa2",
-      "language": "en",
-      "title": "Blackwall quadruples valuation to $2.2B as websites wrangle an increasingly crowded internet",
-      "excerpt": "Blackwall has raised $100M at a $2.2B valuation to continue building security and filtering tools that help websites grapple with growing bot and AI traffic.",
-      "date": "2026-10-20T07:01:00.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/",
-      "image": ""
-    },
-    {
-      "id": "国家发改委-针对氢能部分环节投资较热问题正制定方案-86d5c3dde5d5",
-      "language": "zh",
-      "title": "国家发改委：针对氢能部分环节投资较热问题正制定方案",
-      "excerpt": "中新社北京10月20日电 (记者 王恩博)中国国家发改委创新和高技术发展司副司长任中保20日透露，针对氢能部分环节投资较热问题，近期官方正制定方案，统筹考虑国家战略需求、技术成熟程度、要素支撑条件等因素，合理布局重大项目，引导地方在关键核心技术攻关、可再生能源制氢示范、应用场景开拓中找准自身定位、实现错位发展。",
-      "date": "2026-10-20T06:59:57.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717791.shtml",
-      "image": ""
-    },
-    {
-      "id": "七部门联合印发-广告产业发展-十五五-规划-e48257e65b5c",
-      "language": "zh",
-      "title": "七部门联合印发《广告产业发展“十五五”规划》",
-      "excerpt": "中新网10月20日电 据国家市场监督管理总局网站消息，近日，市场监管总局、中央网信办、文化和旅游部、教育部、公安部、商务部、广电总局联合印发《广告产业发展“十五五”规划》(以下简称《规划》)。《规划》依据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》编制，是未来五年引领我国广告产业高质量发展的专项文件。",
-      "date": "2026-10-20T06:58:15.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717792.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国lpr连续17个月不变-贷款-定价锚-却要变了-bb6ef85b99f8",
-      "language": "zh",
-      "title": "中国LPR连续17个月不变 贷款“定价锚”却要变了",
-      "excerpt": "中新社北京10月20日电 (记者 庞无忌)中国人民银行20日授权全国银行间同业拆借中心公布最新一期贷款市场报价利率(LPR)：1年期LPR为3.0%，5年期以上LPR为3.5%。两个期限品种的LPR均连续17个月维持不变。",
-      "date": "2026-10-20T06:57:37.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717790.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家发展改革委-要素市场化试点推出首批56项可推广经验-216fe423f788",
-      "language": "zh",
-      "title": "国家发展改革委：要素市场化试点推出首批56项可推广经验",
-      "excerpt": "中新网10月20日电 国家发展改革委政策研究室副主任、新闻发言人李超在20日举行的新闻发布会上表示，2025年9月，国务院印发《关于全国部分地区要素市场化配置综合改革试点实施方案的批复》，明确在10个地区开展要素市场化配置综合改革试点。试点启动实施一年来，国家发展改革委会同各有关部门，支持指导试点地区开展差异化改革探索，取得阶段性成效。近期，国家发展改革委会同有关方面，总结并发布了首批56项具有推广价值的创新举措和经验做法，不仅涉及土地、劳动力、资本等传统要素，也包括环境资源、数据、算力等新型要素配置方式和价值实现路径。",
-      "date": "2026-10-20T06:55:37.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717757.shtml",
       "image": ""
     }
   ]
