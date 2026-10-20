@@ -1,9 +1,10 @@
 ---
 slug: globalview-cms-test
 category: tech
+show_in_column: false
 date: 2026-10-15T22:43:00.000+08:00
-published: true
-is_hot: true
+published: false
+is_hot: false
 cover_image: /public/images/uploads/img_20261002_205201.jpg
 title_zh: Global View 网站功能测试
 excerpt_zh: 这是一篇用于测试文章发布、首页展示和详情页跳转的测试文章。
