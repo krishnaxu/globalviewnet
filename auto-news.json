@@ -1,6 +1,116 @@
 {
-  "generated_at": "2026-10-20T19:43:39.838Z",
+  "generated_at": "2026-10-20T20:43:45.201Z",
   "items": [
+    {
+      "id": "spacex-s-ai-business-is-beating-expectations-23c7d3cfe76c",
+      "language": "en",
+      "title": "SpaceX’s AI business is beating expectations",
+      "excerpt": "SpaceX’s data centers and Grok agents have been more profitable than investors expected in second quarter of the year, as the company leaves its roots as a space company behind to focus on artificial intelligence, which now makes up 52% of its income. Elon Musk’s deep conglomerate reported on Tuesday $14.6 billion in third-quarter revenue. […]",
+      "date": "2026-10-20T20:40:41.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
+      "image": ""
+    },
+    {
+      "id": "openai-acquires-startup-orchestra-bio-to-beef-fb5a585d63d0",
+      "language": "en",
+      "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
+      "excerpt": "OpenAI says it's adding Orchestra's team and technology to work on Rosalind, its AI model for life sciences research, and to its related Rosalind Workbench tool, a harness that aims to help researchers plan experiments and analyze results.",
+      "date": "2026-10-20T20:35:10.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+      "image": ""
+    },
+    {
+      "id": "united-airlines-slashes-2026-profit-outlook-o-c4706f68d93f",
+      "language": "en",
+      "title": "United Airlines slashes 2026 profit outlook on fuel prices, but travelers keep booking despite higher fares",
+      "excerpt": "United Airlines cut its profit outlook for the year as fuel prices continued to climb.",
+      "date": "2026-10-20T20:23:58.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/20/united-airlines-ual-3q-2026-earnings.html",
+      "image": ""
+    },
+    {
+      "id": "justwatch-which-tackles-streaming-fragmentati-e2b10a07d524",
+      "language": "en",
+      "title": "JustWatch, which tackles streaming fragmentation, launches own streaming service",
+      "excerpt": "A lifetime ad-free subscription is available.",
+      "date": "2026-10-20T20:20:12.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/justwatch-which-tackles-streaming-fragmentation-launches-own-streaming-service/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Global_banner_preview-500x500.png"
+    },
+    {
+      "id": "meta-drops-the-word-train-from-its-commercial-379ed475f59b",
+      "language": "en",
+      "title": "Meta drops the word \"train\" from its commercial TOS after AI backlash",
+      "excerpt": "Meta changes AI scraping policy but won’t add language respecting robots.txt.",
+      "date": "2026-10-20T20:07:58.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2299491134-500x500-1792525443.jpg"
+    },
+    {
+      "id": "zelensky-says-us-intelligence-sharing-works-n-c038aa98247b",
+      "language": "en",
+      "title": "Zelensky says US intelligence sharing 'works now' after talks with Trump envoy in Oslo",
+      "excerpt": "Ukraine had accused the US of withholding key intelligence - a claim rejected as \"scandalous\" by Washington.",
+      "date": "2026-10-20T20:01:04.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c49a/live/3ca9cb60-ccba-11f1-9a39-31b474234113.jpg"
+    },
+    {
+      "id": "trump-and-zelensky-appear-at-loggerheads-desp-6437763f391a",
+      "language": "en",
+      "title": "Trump and Zelensky appear at loggerheads despite Oslo optimism",
+      "excerpt": "The Ukrainian leader's hug with Steve Witkoff in the Norwegian capital is unlikely to dispel misgivings about US policy towards his country, writes Paul Adams.",
+      "date": "2026-10-20T20:00:57.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckrey51jrgnro?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ca83/live/3f595b00-ccba-11f1-a64c-550be9e3c66b.png"
+    },
+    {
+      "id": "gemini-s-personal-intelligence-is-coming-to-c-3fae25bc0747",
+      "language": "en",
+      "title": "Gemini's Personal Intelligence is coming to cars",
+      "excerpt": "It's probably time to audit your Gemini settings.",
+      "date": "2026-10-20T20:00:33.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/google/2026/10/geminis-personal-intelligence-is-coming-to-cars/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/google-gemini-android-auto-500x500.png"
+    },
+    {
+      "id": "google-is-bringing-a-more-personal-version-of-d84f6e97d944",
+      "language": "en",
+      "title": "Google is bringing a more personal version of its Gemini AI assistant to your car",
+      "excerpt": "Google is bringing Gemini's Personal Intelligence feature to cars, allowing its AI assistant to draw on information from Gmail, Calendar, Maps, YouTube, and other Google services to deliver more personalized responses while driving.",
+      "date": "2026-10-20T20:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/20/google-is-bringing-a-more-personal-version-of-its-gemini-ai-assistant-to-your-car/",
+      "image": ""
+    },
+    {
+      "id": "openbsd-8-0-arrives-with-security-record-stil-dd45cf1955c2",
+      "language": "en",
+      "title": "OpenBSD 8.0 arrives with security record still intact",
+      "excerpt": "OpenBSD 8.0 lands with Intel Arc support, ARM64 hibernation, and 64-vCPU guests",
+      "date": "2026-10-20T19:57:18.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/openbsd-8-0-lands-with-intel-arc-graphics-support/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/OpenBSD80Fish-500x198.png"
+    },
+    {
+      "id": "the-internet-goes-on-high-alert-after-discove-4e56a9d9b406",
+      "language": "en",
+      "title": "The Internet goes on high alert after discovery of 8 compromised TLS certs",
+      "excerpt": "Intermediate certs allow anyone to mint web credentials for any Internet server.",
+      "date": "2026-10-20T19:47:35.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/broken-encryption-lock-500x500.jpg"
+    },
     {
       "id": "boeing-wins-faa-approval-for-737-max-10-after-e4a86c899305",
       "language": "en",
@@ -30,6 +140,26 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/cqrkyj13m588o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/18fe/live/5bca92c0-ccb7-11f1-a64c-550be9e3c66b.jpg"
+    },
+    {
+      "id": "tp-link-tries-to-appease-trump-admin-with-ple-95eea9c21d65",
+      "language": "en",
+      "title": "TP-Link tries to appease Trump admin with pledge to assemble routers in US",
+      "excerpt": "TP-Link can't sell latest routers in US despite rivals getting FCC approvals.",
+      "date": "2026-10-20T19:25:14.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/tp-link-tries-to-appease-trump-admin-with-pledge-to-assemble-routers-in-us/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/tp-link-routers-500x500.jpg"
+    },
+    {
+      "id": "does-anyone-actually-want-to-win-the-medium-l-86adc743eb7f",
+      "language": "en",
+      "title": "Does anyone actually want to win the medium-lift race in the United States?",
+      "excerpt": "Ars Technica is here to help with a guide to the medium-lift space race.",
+      "date": "2026-10-20T19:13:31.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/10/does-anyone-actually-want-to-win-the-medium-lift-race-in-the-united-states/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/stoke-second-stage-500x500.jpg"
     },
     {
       "id": "we-re-booking-big-profits-in-an-ai-stock-and--6f67a7ff1e54",
@@ -72,6 +202,16 @@
       "image": ""
     },
     {
+      "id": "ukraine-s-drone-rescue-of-wounded-soldier-put-7b93b8c0d8e3",
+      "language": "en",
+      "title": "Ukraine’s drone rescue of wounded soldier puts much touted idea into practice",
+      "excerpt": "Ukraine’s latest drone innovation may boost bleak odds of evacuating casualties.",
+      "date": "2026-10-20T18:22:54.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/ukraines-drone-rescue-of-wounded-soldier-puts-much-touted-idea-into-practice/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Ukraine-drone-evacuation-500x500.jpg"
+    },
+    {
       "id": "cba常规赛次轮-北京队主场轻取广东队-斩获两连胜-f69981ec346b",
       "language": "zh",
       "title": "CBA常规赛次轮：北京队主场轻取广东队 斩获两连胜",
@@ -112,6 +252,16 @@
       "image": ""
     },
     {
+      "id": "quantum-error-correction-goes-well-beyond-bre-c387ce8f27c2",
+      "language": "en",
+      "title": "Quantum error correction goes well beyond breakeven",
+      "excerpt": "A demo of error-corrected qubits shows big reductions in errors as they grow.",
+      "date": "2026-10-20T18:08:57.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/10/quantum-error-correction-goes-well-beyond-breakeven/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/11/helios-chip_top-500x500.jpg"
+    },
+    {
       "id": "housing-is-flashing-warning-signs-just-as-the-b4619394bd67",
       "language": "en",
       "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
@@ -130,6 +280,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/",
       "image": ""
+    },
+    {
+      "id": "meta-tries-to-scapegoat-staff-who-downloaded--5e09c3ded611",
+      "language": "en",
+      "title": "Meta tries to scapegoat staff who downloaded torrents to spare execs",
+      "excerpt": "Meta argues nobody “decided” to pirate books to train AI.",
+      "date": "2026-10-20T17:40:20.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/meta-ordered-to-name-execs-who-approved-torrenting-for-ai-training/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2273107915-500x500-1792514374.jpg"
     },
     {
       "id": "if-elon-musk-gifts-spacex-stock-through-trump-bbc50c070bba",
@@ -2839,166 +2999,6 @@
       "date": "2026-10-20T07:32:49.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/txy/2026/10-20/10717832.shtml",
-      "image": ""
-    },
-    {
-      "id": "徐州举办第十届人工智能大会-构建量算产业生态合作共同体-bccc3fee9c96",
-      "language": "zh",
-      "title": "徐州举办第十届人工智能大会 构建量算产业生态合作共同体",
-      "excerpt": "中新网徐州10月20日电(刘林 谷华)10月19日下午，以“智产融合十载向新”为主题的2026徐州第十届人工智能大会在徐州市鼓楼区举办。来自人工智能领域的专家学者、企业家、商协会代表等各界嘉宾齐聚一堂，共话人工智能创新发展，共谋新质生产力背景下产业合作新机遇。会上举行量算产业生态合作共建发布仪式，为徐州人工智能产业发展注入新动能。",
-      "date": "2026-10-20T07:32:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717837.shtml",
-      "image": ""
-    },
-    {
-      "id": "拉萨筑牢食安监督网-守护外卖烟火气-ebaa069fffad",
-      "language": "zh",
-      "title": "拉萨筑牢食安监督网 守护外卖烟火气",
-      "excerpt": "中新网拉萨10月20日电 题：拉萨筑牢食安监督网 守护外卖烟火气",
-      "date": "2026-10-20T07:31:27.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-20/10717830.shtml",
-      "image": ""
-    },
-    {
-      "id": "我国在建规模最大陆岛公路项目大连长海大桥进入大规模箱梁制运架施工阶段-a58cbd19c720",
-      "language": "zh",
-      "title": "我国在建规模最大陆岛公路项目大连长海大桥进入大规模箱梁制运架施工阶段",
-      "excerpt": "中新网大连10月20日电 (记者 杨毅)我国在建规模最大的陆岛公路项目大连长海大桥20日取得新进展。由中建股份承建、中建八局建设的首榀40米预制混凝土箱梁当日成功架设，标志着项目正式进入大规模箱梁制、运、架施工阶段。",
-      "date": "2026-10-20T07:30:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717824.shtml",
-      "image": ""
-    },
-    {
-      "id": "ai换脸拟声-仿冒名人带货如何-解-d3231c523c67",
-      "language": "zh",
-      "title": "AI换脸拟声 仿冒名人带货如何“解”",
-      "excerpt": "法治在线丨AI换脸拟声 仿冒名人带货如何“解”",
-      "date": "2026-10-20T07:29:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-20/10717836.shtml",
-      "image": ""
-    },
-    {
-      "id": "黑龙江哈尔滨迎降温天气-市民着冬装出行-b6a8a166016f",
-      "language": "zh",
-      "title": "黑龙江哈尔滨迎降温天气 市民着冬装出行",
-      "excerpt": "10月20日，黑龙江哈尔滨，小朋友身着厚衣物在索菲亚广场游玩。中新社记者 赵宇航 摄 10月20日，黑龙江哈尔滨，游人身着厚衣物在索菲亚广场游玩。中新社记者 赵宇航 摄 10月20日，黑龙江哈尔滨，市民身着厚衣物出行。中新社记者 赵宇航 摄 10月20日，黑龙江哈尔滨，游人身着厚衣服在索菲亚广场游玩。中新社记者 赵宇航 摄 10月20日，黑龙江哈尔滨，市民身着冬装出行。中新社记者 赵宇航 摄 10月20日，黑龙江哈尔滨，市民身着冬装吃着冰棍儿出行。中新社记者 赵宇航 摄 10月20日，黑龙江哈尔滨，市民身着冬装出行。中新社记者 赵宇航 摄 10月20日，黑龙江哈尔滨，小朋友身着冬装出行。中新社记者 赵宇航 摄 10月20日，黑龙江哈尔滨，市民身着冬装出行。中新社记者 赵宇航 摄",
-      "date": "2026-10-20T07:28:41.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-20/10717810.shtml",
-      "image": ""
-    },
-    {
-      "id": "外交部-国际调解院成立一年来得到国际社会广泛支持-创始成员国增至48个-2c8dfff433dd",
-      "language": "zh",
-      "title": "外交部：国际调解院成立一年来得到国际社会广泛支持 创始成员国增至48个",
-      "excerpt": "中新网北京10月20日电 (记者 张素 郭超凯)中国外交部发言人毛宁20日主持例行记者会。",
-      "date": "2026-10-20T07:28:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-20/10717835.shtml",
-      "image": ""
-    },
-    {
-      "id": "长征精神对新时代中国外交和发展有何启示-中国外交部回应-989382c88ea3",
-      "language": "zh",
-      "title": "长征精神对新时代中国外交和发展有何启示？中国外交部回应",
-      "excerpt": "中新网北京10月20日电 (记者 张素)中国外交部发言人毛宁20日主持例行记者会。",
-      "date": "2026-10-20T07:28:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-20/10717834.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026晋港澳青创峰会收官-青年代表走访山西探寻文脉与科创合作-a9eea43f960d",
-      "language": "zh",
-      "title": "2026晋港澳青创峰会收官 青年代表走访山西探寻文脉与科创合作",
-      "excerpt": "中新网太原10月20日电 (记者 杨杰英)在山西省海外联谊会支持下，2026晋港澳青创峰会于10月17日至19日在山西举行。30余位晋港澳青年代表从晋祠博物馆出发，走访天龙山石窟、清徐醋企和能源企业，最后走进山西医科大学，围绕核医疗与大健康科创展开交流。",
-      "date": "2026-10-20T07:27:37.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/10-20/10717822.shtml",
-      "image": ""
-    },
-    {
-      "id": "美方禁止联邦民用机构使用deepseek的产品服务-中方回应-ea5b08dc52e3",
-      "language": "zh",
-      "title": "美方禁止联邦民用机构使用DeepSeek的产品服务 中方回应",
-      "excerpt": "中新网北京10月20日电 (记者 张素)中国外交部发言人毛宁20日主持例行记者会。会上，有记者就美方禁止联邦民用机构使用中国人工智能企业DeepSeek的产品或服务一事提问。",
-      "date": "2026-10-20T07:26:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-20/10717833.shtml",
-      "image": ""
-    },
-    {
-      "id": "海外华文媒体登黄鹤楼-感受武汉-一桥两山-风光-37b038a82d5b",
-      "language": "zh",
-      "title": "海外华文媒体登黄鹤楼 感受武汉“一桥两山”风光",
-      "excerpt": "中新网武汉10月20日电 题：海外华文媒体登黄鹤楼 感受武汉“一桥两山”风光",
-      "date": "2026-10-20T07:26:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/10-20/10717821.shtml",
-      "image": ""
-    },
-    {
-      "id": "大白鹭-组团-现身荒漠湿地-92bc34f8fd95",
-      "language": "zh",
-      "title": "大白鹭“组团”现身荒漠湿地",
-      "excerpt": "目前，秋季候鸟迁徙已进入尾声，甘肃安西极旱荒漠国家级自然保护区双塔国家重要湿地出现大白鹭大规模集群景观。千余只大白鹭齐聚滩涂，洁白羽翼在金色的胡杨与碧水间格外醒目，尽显秋日荒漠湿地的蓬勃生机。裴鹏祖 摄 目前，秋季候鸟迁徙已进入尾声，甘肃安西极旱荒漠国家级自然保护区双塔国家重要湿地出现大白鹭大规模集群景观。千余只大白鹭齐聚滩涂，洁白羽翼在金色的胡杨与碧水间格外醒目，尽显秋日荒漠湿地的蓬勃生机。裴鹏祖 摄 目前，秋季候鸟迁徙已进入尾声，甘肃安西极旱荒漠国家级自然保护区双塔国家重要湿地出现大白鹭大规模集群景观。千余只大白鹭齐聚滩涂，洁白羽翼在金色的胡杨与碧水间格外醒目，尽显秋日荒漠湿地的蓬勃生机。裴鹏祖 摄 目前，秋季候鸟迁徙已进入尾声，甘肃安西极旱荒漠国家级自然保护区双塔国家重要湿地出现大白鹭大规模集群景观。千余只大白鹭齐聚滩涂，洁白羽翼在金色的胡杨与碧水间格外醒目，尽显秋日荒漠湿地的蓬勃生机。裴鹏祖 摄 目前，秋季候鸟迁徙已进入尾声，甘肃安西极旱荒漠国家级自然保护区双塔国家重要湿地出现大白鹭大规模集群景观。千余只大白鹭齐聚滩涂，洁白羽翼在金色的胡杨与碧水间格外醒目，尽显秋日荒漠湿地的蓬勃生机。裴鹏祖 摄 目前，秋季候鸟迁徙已进入尾声，甘肃安西极旱荒漠国家级自然保护区双塔国家重要湿地出现大白鹭大规模集群景观。千余只大白鹭齐聚滩涂，洁白羽翼在金色的胡杨与碧水间格外醒目，尽显秋日荒漠湿地的蓬勃生机。裴鹏祖 摄 目前，秋季候鸟迁徙已进入尾声，甘肃安西极旱荒漠国家级自然保护区双塔国家重要湿地出现大白鹭大规模集群景观。千余只大白鹭齐聚滩涂，洁白羽翼在金色的胡杨与碧水间格外醒目，尽显秋日荒漠",
-      "date": "2026-10-20T07:24:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-20/10717804.shtml",
-      "image": ""
-    },
-    {
-      "id": "教育部等三部门部署防控儿童青少年高度近视-de3c91d90df0",
-      "language": "zh",
-      "title": "教育部等三部门部署防控儿童青少年高度近视",
-      "excerpt": "中新网10月20日电 据教育部网站消息，近日，教育部、国家卫生健康委、国家疾控局联合印发《关于防控儿童青少年高度近视的通知》(以下简称《通知》)，推动各地、学校和家庭持续践行健康第一教育理念，科学认识、切实防控儿童青少年高度近视。",
-      "date": "2026-10-20T07:24:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/edu/2026/10-20/10717829.shtml",
-      "image": ""
-    },
-    {
-      "id": "四川前三季度gdp同比增长4-9-锂离子电池产量增长94-7-c4bbe2eb9aa0",
-      "language": "zh",
-      "title": "四川前三季度GDP同比增长4.9% 锂离子电池产量增长94.7%",
-      "excerpt": "中新网成都10月20日电 (袁牟知博)在四川省人民政府新闻办公室20日举办的新闻发布会上，四川省统计局新闻发言人、副局长杨治刚介绍，根据地区生产总值统一核算结果，2026年前三季度四川地区生产总值同比增长4.9%。其中，规模以上高技术制造业增加值同比增长12.5%，锂离子电池产量同比增长94.7%。",
-      "date": "2026-10-20T07:24:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717818.shtml",
-      "image": ""
-    },
-    {
-      "id": "工信部-1-8月规上工业中小企业利润总额同比增长13-8-9b32625b2587",
-      "language": "zh",
-      "title": "工信部：1-8月规上工业中小企业利润总额同比增长13.8%",
-      "excerpt": "国务院新闻办公室今日(10月20日)举行新闻发布会。",
-      "date": "2026-10-20T07:19:28.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717828.shtml",
-      "image": ""
-    },
-    {
-      "id": "what-s-making-europe-so-angry-the-frustration-d7a6b2d6deed",
-      "language": "en",
-      "title": "What’s making Europe so angry? The frustration behind the protests",
-      "excerpt": "Protests broke out in France and several European countries as people railed against living costs, poor schooling conditions, and a housing crisis.",
-      "date": "2026-10-20T07:19:16.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/20/france-protests-europe-cost-living-violence.html",
-      "image": ""
-    },
-    {
-      "id": "日本发射火星卫星探测器-计划2031年带回-火卫一-样本-e7c703426dbe",
-      "language": "zh",
-      "title": "日本发射火星卫星探测器 计划2031年带回“火卫一”样本",
-      "excerpt": "中新网10月20日电 据路透社报道，当地时间10月20日凌晨，日本发射火星卫星探测器，该探测器将前往火星的卫星“火卫一”进行探测，并采样返回地球。",
-      "date": "2026-10-20T07:19:08.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-20/10717827.shtml",
       "image": ""
     }
   ]
