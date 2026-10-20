@@ -1,9 +1,9 @@
 ---
 slug: bilingual-test-001
 category: life
-show_in_column: true
+show_in_column: false
 date: 2026-10-15T15:40:00.000+08:00
-published: true
+published: false
 is_hot: false
 title_zh: 双语测试
 body_zh: 中文测试正文
