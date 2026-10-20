@@ -90,6 +90,31 @@ export async function onRequestGet({ request, params }) {
   const absoluteSeoImage = seoImage
     ? new URL(seoImage, request.url).toString()
     : "";
+  const parsedSeoDate = seoDate ? new Date(seoDate) : null;
+
+const seoStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": seoTitle,
+  "description": seoDescription,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": seoCanonical
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GlobalViewNet"
+  },
+  ...(absoluteSeoImage ? { image: [absoluteSeoImage] } : {}),
+  ...(parsedSeoDate && !Number.isNaN(parsedSeoDate.getTime())
+    ? { datePublished: parsedSeoDate.toISOString() }
+    : {})
+};
+
+const seoStructuredDataTag =
+  '<script type="application/ld+json">' +
+  JSON.stringify(seoStructuredData).replace(/</g, "\\u003c") +
+  "</script>";
 
     const seoBody = lang === "en"
     ? (
@@ -125,11 +150,11 @@ export async function onRequestGet({ request, params }) {
     '<meta name="twitter:card" content="' + (absoluteSeoImage ? "summary_large_image" : "summary") + '">',
     '<meta name="twitter:title" content="' + escapeSeoHtml(seoTitle) + '">',
     '<meta name="twitter:description" content="' + escapeSeoHtml(seoDescription) + '">',
-    absoluteSeoImage
-      ? '<meta name="twitter:image" content="' + escapeSeoHtml(absoluteSeoImage) + '">'
-      : ""
-  ].filter(Boolean).join("\n  ");
-
+  absoluteSeoImage
+    ? '<meta name="twitter:image" content="' + escapeSeoHtml(absoluteSeoImage) + '">'
+    : "",
+  seoStructuredDataTag
+].filter(Boolean).join("\n  ");
   const html = String.raw`<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
