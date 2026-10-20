@@ -365,7 +365,8 @@
       height: 355px; background: #17233d; color: white;
       isolation: isolate; box-shadow: var(--shadow);
     }
-    html.cms-loading .featured-carousel::before {
+
+html.cms-loading .featured-carousel::before {
   content: "正在加载精选文章…";
   position: absolute;
   inset: 0;
@@ -379,6 +380,11 @@
   background: #17233d;
   pointer-events: none;
 }
+
+html[lang="en"].cms-loading .featured-carousel::before {
+  content: "Loading featured articles…";
+}
+
     .featured-track {
       display: flex; width: 100%; height: 100%;
       transition: transform .6s ease-in-out;
