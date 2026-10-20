@@ -121,9 +121,10 @@ const seoStructuredData = {
     "@type": "Organization",
     "name": "GlobalViewNet"
   },
-    "author": {
+  "author": {
     "@type": "Organization",
-    "name": "GlobalViewNet"
+    "name": "GlobalViewNet",
+    "url": "https://globalviewnet.pages.dev/"
   },
   ...(absoluteSeoImage ? { image: [absoluteSeoImage] } : {}),
   ...(parsedSeoDate && !Number.isNaN(parsedSeoDate.getTime())
