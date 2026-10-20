@@ -121,6 +121,10 @@ const seoStructuredData = {
     "@type": "Organization",
     "name": "GlobalViewNet"
   },
+    "author": {
+    "@type": "Organization",
+    "name": "GlobalViewNet"
+  },
   ...(absoluteSeoImage ? { image: [absoluteSeoImage] } : {}),
   ...(parsedSeoDate && !Number.isNaN(parsedSeoDate.getTime())
     ? { datePublished: parsedSeoDate.toISOString() }
