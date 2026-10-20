@@ -1,0 +1,49 @@
+
+name: IndexNow Article Notification
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "content/posts/**/*.md"
+
+permissions:
+  contents: read
+
+jobs:
+  notify-indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Collect changed article files
+        shell: bash
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
+        run: |
+          if [[ "$BEFORE_SHA" =~ ^0+$ ]]; then
+            git ls-files 'content/posts/*.md' 'content/posts/**/*.md' > changed-files.txt
+          else
+            git diff --name-only --diff-filter=ACMRT \
+              "$BEFORE_SHA" "$AFTER_SHA" \
+              -- content/posts > changed-files.txt
+          fi
+
+          echo "本次变更的文章文件："
+          cat changed-files.txt
+
+      - name: Submit published articles to IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: node scripts/indexnow-submit.mjs changed-files.txt
