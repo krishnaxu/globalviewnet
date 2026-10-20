@@ -1,5 +1,5 @@
 
-export async function onRequestGet({ params }) {
+export async function onRequestGet({ request, params }) {
   let slug = params?.slug || "";
 
   try {
@@ -19,13 +19,104 @@ export async function onRequestGet({ params }) {
   }
 
   const safeSlug = JSON.stringify(slug).replace(/</g, "\\u003c");
+
+  // 在服务器端读取文章信息，供 SEO 标签使用
+  const requestUrl = new URL(request.url);
+  const lang = requestUrl.searchParams.get("lang") === "en" ? "en" : "zh";
+  let seoArticle = null;
+
+  try {
+    const apiUrl = new URL("/api/post", request.url);
+    apiUrl.searchParams.set("slug", slug);
+    apiUrl.searchParams.set("lang", lang);
+
+    const apiResponse = await fetch(apiUrl.toString(), {
+      headers: { Accept: "application/json" }
+    });
+
+    if (apiResponse.ok) {
+      seoArticle = await apiResponse.json();
+    }
+  } catch (error) {
+    seoArticle = null;
+  }
+
+  const seoTitle = lang === "en"
+    ? (
+        seoArticle?.title_en ||
+        seoArticle?.title ||
+        seoArticle?.title_zh ||
+        slug
+      )
+    : (
+        seoArticle?.title_zh ||
+        seoArticle?.title ||
+        seoArticle?.title_en ||
+        slug
+      );
+
+  const seoDescription = lang === "en"
+    ? (
+        seoArticle?.excerpt_en ||
+        seoArticle?.excerpt ||
+        seoArticle?.excerpt_zh ||
+        seoTitle
+      )
+    : (
+        seoArticle?.excerpt_zh ||
+        seoArticle?.excerpt ||
+        seoArticle?.excerpt_en ||
+        seoTitle
+      );
+
+  const seoImage = seoArticle?.cover_image || "";
+  const seoCanonical = new URL(
+    "/posts/" + encodeURIComponent(slug),
+    request.url
+  ).toString();
+
+  function escapeSeoHtml(value) {
+    return String(value || "").replace(/[&<>"']/g, function (char) {
+      return {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[char];
+    });
+  }
+
+  const absoluteSeoImage = seoImage
+    ? new URL(seoImage, request.url).toString()
+    : "";
+
+  const seoTags = [
+    "<title>" + escapeSeoHtml(seoTitle) + " - GlobalViewNet</title>",
+    '<meta name="description" content="' + escapeSeoHtml(seoDescription) + '">',
+    '<link rel="canonical" href="' + escapeSeoHtml(seoCanonical) + '">',
+    '<meta property="og:type" content="article">',
+    '<meta property="og:title" content="' + escapeSeoHtml(seoTitle) + '">',
+    '<meta property="og:description" content="' + escapeSeoHtml(seoDescription) + '">',
+    '<meta property="og:url" content="' + escapeSeoHtml(seoCanonical) + '">',
+    absoluteSeoImage
+      ? '<meta property="og:image" content="' + escapeSeoHtml(absoluteSeoImage) + '">'
+      : "",
+    '<meta name="twitter:card" content="' + (absoluteSeoImage ? "summary_large_image" : "summary") + '">',
+    '<meta name="twitter:title" content="' + escapeSeoHtml(seoTitle) + '">',
+    '<meta name="twitter:description" content="' + escapeSeoHtml(seoDescription) + '">',
+    absoluteSeoImage
+      ? '<meta name="twitter:image" content="' + escapeSeoHtml(absoluteSeoImage) + '">'
+      : ""
+  ].filter(Boolean).join("\n  ");
+
   const html = String.raw`<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>文章 - GlobalViewNet</title>
+    __SEO_TAGS__
   <style>
     * { box-sizing: border-box; }
 
@@ -533,7 +624,9 @@ export async function onRequestGet({ params }) {
     loadArticle();
   </script>
 </body>
-</html>`.replace("__SLUG_JSON__", safeSlug);
+</html>`
+    .replace("__SLUG_JSON__", safeSlug)
+    .replace("__SEO_TAGS__", seoTags);
 
   return new Response(html, {
     headers: {
