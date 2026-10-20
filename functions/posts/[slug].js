@@ -90,6 +90,22 @@ export async function onRequestGet({ request, params }) {
   const absoluteSeoImage = seoImage
     ? new URL(seoImage, request.url).toString()
     : "";
+
+    const seoBody = lang === "en"
+    ? (
+        seoArticle?.body_en ||
+        seoArticle?.body ||
+        seoArticle?.body_zh ||
+        ""
+      )
+    : (
+        seoArticle?.body_zh ||
+        seoArticle?.body ||
+        ""
+      );
+
+  const seoDate = seoArticle?.date || "";
+
   const parsedSeoDate = seoDate ? new Date(seoDate) : null;
 
 const seoStructuredData = {
@@ -115,21 +131,6 @@ const seoStructuredDataTag =
   '<script type="application/ld+json">' +
   JSON.stringify(seoStructuredData).replace(/</g, "\\u003c") +
   "</script>";
-
-    const seoBody = lang === "en"
-    ? (
-        seoArticle?.body_en ||
-        seoArticle?.body ||
-        seoArticle?.body_zh ||
-        ""
-      )
-    : (
-        seoArticle?.body_zh ||
-        seoArticle?.body ||
-        ""
-      );
-
-  const seoDate = seoArticle?.date || "";
 
   function escapeSeoBody(value) {
     return escapeSeoHtml(value)
