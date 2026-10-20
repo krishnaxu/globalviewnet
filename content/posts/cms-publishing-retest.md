@@ -1,9 +1,9 @@
 ---
 slug: cms-publishing-retest
 category: tech
-show_in_column: true
+show_in_column: false
 date: 2026-10-16T00:19:00.000+08:00
-published: true
+published: false
 is_hot: false
 cover_image: /public/images/uploads/img_20261004_160315.jpg
 source_name: 观天下
