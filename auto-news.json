@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-20T18:47:44.145Z",
+  "generated_at": "2026-10-20T19:43:39.838Z",
   "items": [
+    {
+      "id": "boeing-wins-faa-approval-for-737-max-10-after-e4a86c899305",
+      "language": "en",
+      "title": "Boeing wins FAA approval for 737 Max 10 after years of delays",
+      "excerpt": "The 737 Max 10, the largest model in the family, was set to start flying in 2020, but increased scrutiny and other safety issues delayed its certification.",
+      "date": "2026-10-20T19:41:23.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/20/boeing-737-max-10-certification.html",
+      "image": ""
+    },
+    {
+      "id": "gm-to-close-detroit-battery-assembly-plant-bu-eb38beeda4ee",
+      "language": "en",
+      "title": "GM to close Detroit battery assembly plant, but not for reasons you might think",
+      "excerpt": "GM is shuttering the Brownstown Battery Assembly Plant, though the closure has nothing to do with the automaker's electrification strategy.",
+      "date": "2026-10-20T19:32:43.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/20/gm-to-close-detroit-battery-assembly-plant-but-not-for-reasons-you-might-think/",
+      "image": ""
+    },
+    {
+      "id": "trump-sued-over-canadian-tariffs-in-latest-le-1b54169ee507",
+      "language": "en",
+      "title": "Trump sued over Canadian tariffs in latest legal challenge",
+      "excerpt": "The lawsuit argues the White House exceeded its authority in imposing the latest tariffs on the country and caused \"immediate harm to American businesses\".",
+      "date": "2026-10-20T19:30:05.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqrkyj13m588o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/18fe/live/5bca92c0-ccb7-11f1-a64c-550be9e3c66b.jpg"
+    },
+    {
+      "id": "we-re-booking-big-profits-in-an-ai-stock-and--6f67a7ff1e54",
+      "language": "en",
+      "title": "We're booking big profits in an AI stock and trimming a credit-exposed bank",
+      "excerpt": "We making two trades Tuesday afternoon.",
+      "date": "2026-10-20T19:00:39.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/20/were-booking-big-profits-in-an-ai-stock-and-trimming-a-credit-exposed-bank.html",
+      "image": ""
+    },
     {
       "id": "google-has-joined-amazon-in-attacking-nvidia--61ce75599c83",
       "language": "en",
@@ -2959,46 +2999,6 @@
       "date": "2026-10-20T07:19:08.000Z",
       "source_name": "中新网国际新闻",
       "source_url": "https://www.chinanews.com.cn/gj/2026/10-20/10717827.shtml",
-      "image": ""
-    },
-    {
-      "id": "科技创新与产业创新协同发力-新兴领域出口跑出加速度-df0c39e6dfa0",
-      "language": "zh",
-      "title": "科技创新与产业创新协同发力 新兴领域出口跑出加速度",
-      "excerpt": "中新网北京10月20日电 2026年以来，中国人工智能、机器人、创新药等领域的出海迎来爆发式增长。人工智能领域，7月中旬，中国大模型在OpenRouter平台的周调用量达到36.11万亿Token，连续12周领跑；机器人领域，上半年工业机器人出口62.9亿元，同比增长18.6%，销往141个国家和地区；创新药领域，上半年对外授权达到81笔，交易总额约1100亿美元，已达2025年全年总额80%，再创历史新高。三类产业分别来自数字技术、先进制造和生命科学领域，产品形态和国际化方式差异较大，却在同一阶段加快进入全球市场。值得关注的不只是新的出口增长点接续出现，更在于新的优势产业为什么能够持续涌现，以及这一变化正在怎样影响中国参与国际市场的方式。",
-      "date": "2026-10-20T07:15:16.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717817.shtml",
-      "image": ""
-    },
-    {
-      "id": "甘肃庆阳-一颗苹果的-数字风味-e83ef29b7230",
-      "language": "zh",
-      "title": "甘肃庆阳：一颗苹果的“数字风味”",
-      "excerpt": "中新网兰州10月20日电 (高文)19日，甘肃庆阳市西峰区彭原镇鄢旗坳村，庆阳苹果智慧分选仓储中心里机器嗡嗡作响。八通道水洗AI智慧分选线满负荷运转，苹果先清洗，再进入光学检测，0.5秒内糖度、色泽、果径、瑕疵、成熟度、霉心病等12项指标一一读出，糖度误差不超过0.2%。",
-      "date": "2026-10-20T07:15:06.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717815.shtml",
-      "image": ""
-    },
-    {
-      "id": "cnbc-daily-open-tech-rebounds-in-the-u-s-but--e6e9f9b6b2d6",
-      "language": "en",
-      "title": "CNBC Daily Open: Tech rebounds in the U.S., but Asia isn’t buying it yet",
-      "excerpt": "The Nasdaq Composite gained more than 1% after last week’s sell-off, led by advances in Tesla, Nvidia and Alphabet.",
-      "date": "2026-10-20T07:14:27.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/20/daily-open-tech-stocks-rebound.html",
-      "image": ""
-    },
-    {
-      "id": "乡村行-看振兴-河南息县-小香菇-撑起-富民伞-95c3dd2f1a93",
-      "language": "zh",
-      "title": "（乡村行·看振兴）河南息县：“小香菇”撑起“富民伞”",
-      "excerpt": "中新网信阳10月20日电 题：河南息县：“小香菇”撑起“富民伞”",
-      "date": "2026-10-20T07:11:46.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-20/10717806.shtml",
       "image": ""
     }
   ]
