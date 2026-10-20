@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0f172a">
-  <meta name="description" content="观澜泗渡 Global View，关注科技、商业、文化与生活，以中英双语呈现全球资讯、行业动态与多元观点。Global View covers technology, business, culture, and lifestyle, connecting readers with global news, industry insights, and diverse perspectives in both Chinese and English.">
+  <meta name="description" content="观澜泗渡 Global View 以中英双语呈现全球科技、商业、文化与生活资讯，关注行业动态与多元观点，连接全球视野。">
   <meta name="keywords" content="观澜泗渡, Global View, 双语资讯, 科技, 商业, 文化, 生活, 行业动态">
   <meta name="author" content="Global View Editorial Team">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:title" content="Global View | 观澜泗渡">
-  <meta property="og:description" content="观澜泗渡 Global View，关注科技、商业、文化与生活，以中英双语呈现全球资讯、行业动态与多元观点。Global View covers technology, business, culture, and lifestyle, connecting readers with global news, industry insights, and diverse perspectives in both Chinese and English.">
+  <meta property="og:description" content="观澜泗渡 Global View，关注科技、商业、文化与生活，以中英双语呈现全球资讯、行业动态与多元观点。">
   <meta property="og:site_name" content="Global View">
   <meta property="og:image" content="https://globalviewnet.pages.dev/public/images/Pic_20261019230931_2_19.jpg">
   <meta property="og:image:alt" content="观澜泗渡 Global View 双语资讯网站首页封面。Global View bilingual news website cover.">
@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="1272">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Global View | 观澜泗渡">
-  <meta name="twitter:description" content="观澜泗渡 Global View，关注科技、商业、文化与生活，以中英双语呈现全球资讯、行业动态与多元观点。Global View covers technology, business, culture, and lifestyle, connecting readers with global news, industry insights, and diverse perspectives in both Chinese and English.">
+  <meta name="twitter:description" content="观澜泗渡 Global View，关注科技、商业、文化与生活，以中英双语呈现全球资讯、行业动态与多元观点。">
   <meta name="twitter:image" content="https://globalviewnet.pages.dev/public/images/Pic_20261019230931_2_19.jpg">
   <link rel="canonical" href="https://globalviewnet.pages.dev/">
   <meta property="og:url" content="https://globalviewnet.pages.dev/">
@@ -565,7 +565,7 @@
       border-radius: var(--radius); background: var(--surface);
       border: 1px solid var(--border);
     }
-    .inner-page-header h1 { font: 700 clamp(28px, 4vw, 42px)/1.3 var(--serif); margin: 10px 0; }
+    .inner-page-header h2 { font: 700 clamp(28px, 4vw, 42px)/1.3 var(--serif); margin: 10px 0; }
     .inner-page-header p { color: var(--muted); max-width: 700px; margin-bottom: 0; }
     .about-content {
       max-width: 850px; padding: 32px; background: var(--surface);
@@ -603,7 +603,7 @@
     .modal-hero { height: 310px; background: var(--surface-soft); }
     .modal-hero img { width: 100%; height: 100%; object-fit: cover; }
     .modal-article { padding: 30px clamp(20px, 5vw, 52px) 40px; }
-    .modal-article h1 { font: 700 clamp(25px, 4vw, 36px)/1.55 var(--serif); margin: 12px 0; }
+    .modal-article h2 { font: 700 clamp(25px, 4vw, 36px)/1.55 var(--serif); margin: 12px 0; }
     .modal-subtitle { color: var(--muted); font-size: 15px; line-height: 1.8; }
     .modal-byline {
       display: flex; flex-wrap: wrap; align-items: center; gap: 13px;
@@ -754,7 +754,7 @@
       .modal-dialog { max-height: 94vh; border-radius: 16px 16px 0 0; }
       .modal-hero { height: 210px; }
       .modal-article { padding: 23px 20px 30px; }
-      .modal-article h1 { font-size: 24px; }
+      .modal-article h2 { font-size: 24px; }
       .modal-subtitle { font-size: 13px; }
       .footer-main { grid-template-columns: 1fr 1fr; gap: 25px 15px; padding: 30px 0; }
       .footer-brand { grid-column: 1 / -1; }
@@ -1033,7 +1033,7 @@
     <section id="categoryPage" class="inner-page hidden">
       <div class="inner-page-header">
         <div class="eyebrow" data-i18n="categoryEyebrow">主题探索 · Topic Explorer</div>
-        <h1 class="serif" id="categoryPageTitle">科技 Tech</h1>
+        <h2 class="serif" id="categoryPageTitle">科技 Tech</h2>
         <p id="categoryPageDesc"></p>
       </div>
       <div class="filter-row" id="categoryFilterRow">
@@ -1054,7 +1054,7 @@
     <section id="aboutPage" class="inner-page hidden">
       <div class="inner-page-header">
         <div class="eyebrow" data-i18n="aboutEyebrow">关于我们 · About Us</div>
-        <h1 class="serif" data-i18n="aboutTitle">让信息跨越语言，让观点连接世界</h1>
+       <h2 class="serif" data-i18n="aboutTitle">让信息跨越语言，让观点连接世界</h2>
         <p data-i18n="aboutIntro">观澜泗渡 Global View 是一个聚焦科技、商业、文化与生活的双语资讯与观点分享平台。</p>
       </div>
       <div class="about-content">
@@ -1144,7 +1144,7 @@
       <div class="modal-hero"><img id="modalImage" src="" alt=""></div>
       <article class="modal-article">
         <span class="category-tag" id="modalCategory"></span>
-        <h1 id="modalTitle" class="serif"></h1>
+        <h2 id="modalTitle" class="serif"></h2>
         <p class="modal-subtitle" id="modalSubtitle"></p>
         <div class="modal-byline">
           <span id="modalAuthor"></span>
