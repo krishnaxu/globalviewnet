@@ -91,6 +91,26 @@ export async function onRequestGet({ request, params }) {
     ? new URL(seoImage, request.url).toString()
     : "";
 
+    const seoBody = lang === "en"
+    ? (
+        seoArticle?.body_en ||
+        seoArticle?.body ||
+        seoArticle?.body_zh ||
+        ""
+      )
+    : (
+        seoArticle?.body_zh ||
+        seoArticle?.body ||
+        ""
+      );
+
+  const seoDate = seoArticle?.date || "";
+
+  function escapeSeoBody(value) {
+    return escapeSeoHtml(value)
+      .replace(/\r\n?/g, "\n")
+      .replace(/\n/g, "<br>\n");
+  }
   const seoTags = [
     "<title>" + escapeSeoHtml(seoTitle) + " - GlobalViewNet</title>",
     '<meta name="description" content="' + escapeSeoHtml(seoDescription) + '">',
@@ -266,9 +286,9 @@ export async function onRequestGet({ request, params }) {
   <main class="page">
     <a class="back" href="/">← 返回首页</a>
     <article>
-      <h1 id="title">正在加载文章……</h1>
-      <div id="date" class="date"></div>
-      <div id="content"></div>
+      <h1 id="title">__SSR_TITLE__</h1>
+      <div id="date" class="date">__SSR_DATE__</div>
+      <div id="content">__SSR_BODY__</div>
     </article>
   </main>
 
@@ -625,9 +645,11 @@ export async function onRequestGet({ request, params }) {
   </script>
 </body>
 </html>`
-    .replace("__SLUG_JSON__", safeSlug)
-    .replace("__SEO_TAGS__", seoTags);
-
+    .replace("__SLUG_JSON__", () => safeSlug)
+    .replace("__SEO_TAGS__", () => seoTags)
+    .replace("__SSR_TITLE__", () => escapeSeoHtml(seoTitle))
+    .replace("__SSR_DATE__", () => escapeSeoHtml(seoDate))
+    .replace("__SSR_BODY__", () => escapeSeoBody(seoBody));
   return new Response(html, {
     headers: {
       "Content-Type": "text/html; charset=utf-8",
