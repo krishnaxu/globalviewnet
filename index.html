@@ -2317,7 +2317,7 @@ for (const article of articles.filter(
       if (!translations[savedLang]) savedLang = "zh";
       updateDateLabel();
       loadGlobalViewFallbackImages();
-      await loadAutoNews();
+      loadAutoNews();
       renderTicker();
       renderFeatured();
       renderArticles();
