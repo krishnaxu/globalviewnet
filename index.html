@@ -366,7 +366,8 @@
       isolation: isolate; box-shadow: var(--shadow);
     }
 
-html.cms-loading .featured-carousel::before {
+
+html.cms-loading .featured-carousel:has(#featuredTrack:empty)::before {
   content: "正在加载精选文章…";
   position: absolute;
   inset: 0;
@@ -381,7 +382,7 @@ html.cms-loading .featured-carousel::before {
   pointer-events: none;
 }
 
-html[lang="en"].cms-loading .featured-carousel::before {
+html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before {
   content: "Loading featured articles…";
 }
 
