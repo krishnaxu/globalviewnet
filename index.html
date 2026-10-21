@@ -2065,15 +2065,28 @@ function refreshAutoNewsIds() {
       }
     });
 
+
     // 页脚免责声明：跳转到关于页对应内容
     $("#footerDisclaimerLink").addEventListener("click", event => {
       event.preventDefault();
       navigate("about");
+
       setTimeout(() => {
         const disclaimer = $("#aboutPage .disclaimer");
-        if (disclaimer) disclaimer.scrollIntoView({ behavior: "smooth", block: "center" });
-      }, 50);
+        if (!disclaimer) return;
+
+        const targetTop =
+          disclaimer.getBoundingClientRect().top +
+          window.scrollY -
+          100;
+
+        window.scrollTo({
+          top: Math.max(0, targetTop),
+          behavior: "smooth"
+        });
+      }, 350);
     });
+
 
     // 返回顶部
     window.addEventListener("scroll", () => {
