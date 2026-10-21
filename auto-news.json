@@ -1,6 +1,126 @@
 {
-  "generated_at": "2026-10-21T19:42:41.214Z",
+  "generated_at": "2026-10-21T20:43:02.847Z",
   "items": [
+    {
+      "id": "trump-denies-ordering-starlink-slowdown-in-uk-5ac9a4d5041b",
+      "language": "en",
+      "title": "Trump denies ordering Starlink slowdown in Ukraine, says he doesn't know who did",
+      "excerpt": "",
+      "date": "2026-10-21T20:38:39.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/21/trump-starlink-ukraine-elon-musk.html",
+      "image": ""
+    },
+    {
+      "id": "southwest-airlines-cuts-2026-profit-forecast--ed83a0180242",
+      "language": "en",
+      "title": "Southwest Airlines cuts 2026 profit forecast on higher fuel",
+      "excerpt": "Southwest Airlines became the third major U.S. airline this month to cut its 2026 profit forecast due to higher fuel prices.",
+      "date": "2026-10-21T20:36:43.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/21/southwest-airlines-luv-3q-2026-earnings.html",
+      "image": ""
+    },
+    {
+      "id": "tesla-stars-optimus-robot-production-in-calif-37cae458eee7",
+      "language": "en",
+      "title": "Tesla stars Optimus robot production in California as profit falls 43%",
+      "excerpt": "Tesla's revenue was flat and its expenses skyrocketed as it pressed the accelerator on its Optimus robots, AI, and autonomous driving.",
+      "date": "2026-10-21T20:33:09.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/",
+      "image": ""
+    },
+    {
+      "id": "ibm-beats-on-top-and-bottom-lines-as-ceo-kris-484c6c5c12a4",
+      "language": "en",
+      "title": "IBM beats on top and bottom lines as CEO Krishna touts 'Super Intelligence' traction",
+      "excerpt": "CEO Arvind Krishna indicated that IBM is helping clients in artificial intelligence.",
+      "date": "2026-10-21T20:29:47.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/21/ibm-q3-earnings-report-2026.html",
+      "image": ""
+    },
+    {
+      "id": "recursive-launches-flint-a-laptop-coding-mode-b1ec87d70575",
+      "language": "en",
+      "title": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
+      "excerpt": "Startup Recursive has released Flint, a free, laptop-sized coding model built largely by its own AI research system, as an early test of AI that improves itself.",
+      "date": "2026-10-21T20:27:41.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+      "image": ""
+    },
+    {
+      "id": "ex-prosecutor-charged-with-treason-in-mexico--16c82ec6f58e",
+      "language": "en",
+      "title": "Ex-prosecutor charged with treason in Mexico over US drug raid",
+      "excerpt": "César Jáuregui Moreno is accused of allowing US agents to join a raid on a suspected drugs lab in April.",
+      "date": "2026-10-21T20:19:51.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckx2qpw4rjd7o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0463/live/f6cb33e0-cd86-11f1-b1e7-39558e114359.jpg"
+    },
+    {
+      "id": "automattic-begins-layoffs-following-board-uph-454849b21b81",
+      "language": "en",
+      "title": "Automattic begins layoffs following board upheaval and executive departures",
+      "excerpt": "Automattic has begun laying off employees across multiple teams, including WordPress.com and its enterprise business, following a board shakeup and a series of executive departures. Sources say more cuts could follow as the company looks to improve its finances.",
+      "date": "2026-10-21T20:15:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/21/automattic-begins-layoffs-following-board-upheaval-and-executive-departures/",
+      "image": ""
+    },
+    {
+      "id": "pope-does-not-need-further-treatment-after-lu-ecc61938bb8b",
+      "language": "en",
+      "title": "Pope does not need further treatment after lung cancer surgery",
+      "excerpt": "Test results have confirmed his diagnosis as a lung adenocarcinoma that was localised.",
+      "date": "2026-10-21T20:09:10.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqrly2dg5xzzo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a09d/live/89f335e0-cd88-11f1-b1e7-39558e114359.jpg"
+    },
+    {
+      "id": "rosenberg-us-diplomatic-push-offers-little-ho-cb0db03c0b0d",
+      "language": "en",
+      "title": "Rosenberg: US diplomatic push offers little hope for imminent Ukraine peace",
+      "excerpt": "Russia's President Putin does not feel under pressure right now to end the war.",
+      "date": "2026-10-21T19:58:06.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm98zn5j89kdo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b522/live/adcfbb20-cd86-11f1-a64c-550be9e3c66b.jpg"
+    },
+    {
+      "id": "gm-is-betting-compute-and-ai-will-help-it-com-543ca2ad9127",
+      "language": "en",
+      "title": "GM is betting compute and AI will help it compete with Chinese automakers",
+      "excerpt": "To compete with Tesla, Rivian, and a host of Chinese automakers, GM’s fourth-gen EV platform will roll out a new central computer and electrical architecture that will debut in 2028 in the Cadillac Escalade IQ.",
+      "date": "2026-10-21T19:52:20.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/21/gm-is-betting-compute-and-ai-will-help-it-compete-with-chinese-automakers/",
+      "image": ""
+    },
+    {
+      "id": "apple-s-iphone-duo-in-short-supply-plus-the-2-e6302c3adb13",
+      "language": "en",
+      "title": "Apple's iPhone Duo in short supply — plus, the 2 stocks fueling an AI rebound",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "date": "2026-10-21T19:47:38.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/21/apples-iphone-duo-in-short-supply-plus-2-stocks-fueling-an-ai-rebound.html",
+      "image": ""
+    },
+    {
+      "id": "the-new-human-crafted-apple-music-brand-matte-38056d541988",
+      "language": "en",
+      "title": "The new human-crafted Apple Music brand matters in an AI world",
+      "excerpt": "Opinion: In a world of AI slop, showing the human hands making things helps.",
+      "date": "2026-10-21T19:44:40.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/apple-music-rebrand-icon-500x500.jpg"
+    },
     {
       "id": "meta-ordered-to-pay-25-billion-in-case-relate-34727e2ab12c",
       "language": "en",
@@ -52,6 +172,16 @@
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9bc3/live/125ed250-cd83-11f1-9a39-31b474234113.jpg"
     },
     {
+      "id": "rip-bioware-ea-shuts-down-storied-rpg-studio--0cbc38bad937",
+      "language": "en",
+      "title": "RIP BioWare: EA shuts down storied RPG studio after over three decades",
+      "excerpt": "Next Mass Effect project canceled as parent company lays off 400.",
+      "date": "2026-10-21T19:12:16.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gaming/2026/10/rip-bioware-ea-shuts-down-storied-rpg-studio-after-over-three-decades/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/me3ending-500x500.webp"
+    },
+    {
       "id": "the-internet-is-having-a-very-bad-cybersecuri-532319ec633f",
       "language": "en",
       "title": "The internet is having a very bad cybersecurity day",
@@ -82,6 +212,26 @@
       "image": ""
     },
     {
+      "id": "openai-s-latest-ai-models-are-coming-to-googl-7b066c33c960",
+      "language": "en",
+      "title": "OpenAI's latest AI models are coming to Google Cloud and Antigravity",
+      "excerpt": "Google Cloud will have GPT 6.1 Astra, Sol, and Luna in the coming weeks.",
+      "date": "2026-10-21T18:51:42.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/06/Google-cloud-IO-500x500.jpg"
+    },
+    {
+      "id": "report-musk-ordered-starlink-slowdown-in-ukra-3004c7348845",
+      "language": "en",
+      "title": "Report: Musk ordered Starlink slowdown in Ukraine, then blamed it on Trump",
+      "excerpt": "Musk and Trump both denied ordering Starlink slowdown. WSJ reports it was Musk.",
+      "date": "2026-10-21T18:35:38.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/report-says-musk-not-trump-ordered-starlink-throttling-that-blindsided-ukraine/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/starlink-ukraine-500x500-1792605024.jpg"
+    },
+    {
       "id": "netflix-has-dipped-its-toe-into-theatrical-is-ebedb4a5c3c2",
       "language": "en",
       "title": "Netflix has dipped its toe into theatrical. Is it ready to jump in?",
@@ -100,6 +250,16 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/c674p0xepljeo?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0c4c/live/6c343880-cd77-11f1-bc2e-018d645d8d21.jpg"
+    },
+    {
+      "id": "judge-rejects-trump-s-wild-claim-epa-can-dism-ae6ee33522ea",
+      "language": "en",
+      "title": "Judge rejects Trump’s wild claim EPA can dismiss data center pollution lawsuits",
+      "excerpt": "Trump’s EPA can't unilaterally dismiss SpaceXAI pollution lawsuit, court rules.",
+      "date": "2026-10-21T18:20:40.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/04/xAI-Thermal-Image-500x500.jpg"
     },
     {
       "id": "targeted-attack-on-much-loved-mp-leaves-austr-057526649a86",
@@ -130,6 +290,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html",
       "image": ""
+    },
+    {
+      "id": "does-opting-out-of-smart-tv-tracking-work-res-9d116b4972a6",
+      "language": "en",
+      "title": "Does opting out of smart TV tracking work? Research finds “suspicious” traffic.",
+      "excerpt": "OS operators throwing out that data is \"unlikely,\" research author tells Ars.",
+      "date": "2026-10-21T18:00:37.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/does-opting-out-of-smart-tv-tracking-work-research-finds-suspicious-traffic/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2226225055-500x500.jpg"
     },
     {
       "id": "gm-is-giving-onstar-an-ai-makeover-fedf6669d08c",
@@ -2829,176 +2999,6 @@
       "date": "2026-10-21T06:37:29.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718472.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国慈善联合会-到2029年底慈善团体标准体系等基本建成-ee83c9a95263",
-      "language": "zh",
-      "title": "中国慈善联合会：到2029年底慈善团体标准体系等基本建成",
-      "excerpt": "中新网北京10月21日电 (张素 马广志)近日发布的《中国慈善联合会慈善行业标准化建设三年行动方案》提出，到2029年底，慈善团体标准体系、行业组织网络、贯标协同机制和人才队伍基本建成，研制发布多批次团体标准，分层分类开展慈善组织试点建设，组建包括指导专家、宣贯员等的专业队伍。",
-      "date": "2026-10-21T06:35:35.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718463.shtml",
-      "image": ""
-    },
-    {
-      "id": "一张人民币就是最硬的底气丨真相-f836112263ae",
-      "language": "zh",
-      "title": "一张人民币就是最硬的底气丨真相",
-      "excerpt": "视频：一张人民币就是最硬的底气丨真相来源：中国新闻网",
-      "date": "2026-10-21T06:35:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/txy/2026/10-21/10718465.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国-乌兹别克斯坦专家委员会第二次会议举行-共商数字技术合作前景-c3e60b2ce5a1",
-      "language": "zh",
-      "title": "中国—乌兹别克斯坦专家委员会第二次会议举行 共商数字技术合作前景",
-      "excerpt": "中新网北京10月21日电 (记者 黄钰钦)记者21日从中国社会科学院获悉，中国—乌兹别克斯坦专家委员会第二次会议日前在乌兹别克斯坦世界经济与外交大学举行。会议以“数字伙伴关系：人工智能与新一代数据经济”为主题，聚焦数字化转型、人工智能治理与务实合作，探讨以科技创新赋能两国现代化建设新路径。",
-      "date": "2026-10-21T06:34:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718471.shtml",
-      "image": ""
-    },
-    {
-      "id": "长征胜利90周年-从新兵到-排爆兵王-彝族战士普有飞的-长征-cb02bf5f8d99",
-      "language": "zh",
-      "title": "（长征胜利90周年）从新兵到“排爆兵王” 彝族战士普有飞的“长征”",
-      "excerpt": "中新社石家庄10月21日电 题：从新兵到“排爆兵王” 彝族战士普有飞的“长征”",
-      "date": "2026-10-21T06:32:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718453.shtml",
-      "image": ""
-    },
-    {
-      "id": "uk-inflation-jumps-to-3-5-cementing-rate-hike-647a53aaaa91",
-      "language": "en",
-      "title": "UK inflation jumps to 3.5% — cementing rate hike expectations",
-      "excerpt": "U.K. inflation rose by a hotter-than-expected 3.5% in the 12 months to September, driven by the surging cost of motor fuels.",
-      "date": "2026-10-21T06:30:27.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html",
-      "image": ""
-    },
-    {
-      "id": "四川能源核产业有限公司揭牌-加速布局微型反应堆新赛道-556d1440f448",
-      "language": "zh",
-      "title": "四川能源核产业有限公司揭牌 加速布局微型反应堆新赛道",
-      "excerpt": "中新网成都10月21日电 10月20日，微堆产业共建大会暨四川能源核产业有限公司揭牌活动在成都举行。",
-      "date": "2026-10-21T06:26:56.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718451.shtml",
-      "image": ""
-    },
-    {
-      "id": "活力中国调研行丨海口造-惠全国-供全球-a15506ddcce9",
-      "language": "zh",
-      "title": "活力中国调研行丨海口造 惠全国 供全球",
-      "excerpt": "“活力中国调研行”，记者来到了位于海口国家高新区药谷工业园区的先声药业。展台上，一个个巴掌大的西林瓶引人注目，它的名字叫科赛拉。这瓶小小的抗癌新药，不仅为国内小细胞肺癌患者穿上了化疗前的“防弹衣”，还串联起了一段从“漂洋过海”到“海口制造”，再到“反向出海”的旅程。",
-      "date": "2026-10-21T06:18:02.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718459.shtml",
-      "image": ""
-    },
-    {
-      "id": "世界在建最大跨径路轨两用悬索桥实现主桥合龙-f70ca5cb3560",
-      "language": "zh",
-      "title": "世界在建最大跨径路轨两用悬索桥实现主桥合龙",
-      "excerpt": "中新社重庆10月21日电 (张旭 周毅)随着最后一节钢桁梁精准就位，世界在建最大跨径路轨两用悬索桥——重庆黄桷沱长江大桥21日实现主桥合龙，为后续桥面系施工及建成通车奠定坚实基础。",
-      "date": "2026-10-21T06:11:15.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718442.shtml",
-      "image": ""
-    },
-    {
-      "id": "今年前三季度中国铁路累计投产新线1625公里-c78afffc63fc",
-      "language": "zh",
-      "title": "今年前三季度中国铁路累计投产新线1625公里",
-      "excerpt": "中新社北京10月21日电 (记者 刘文文)今年以来，铁路建设优质高效推进。记者21日从中国国家铁路集团有限公司(简称“国铁集团”)获悉，前三季度，全国铁路完成固定资产投资6012亿元人民币，同比增长1.3%，累计投产新线1625公里。",
-      "date": "2026-10-21T05:54:32.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718432.shtml",
-      "image": ""
-    },
-    {
-      "id": "厄瓜多尔与秘鲁国有油企时隔四年恢复交易-深化两国能源合作-26b7204de49d",
-      "language": "zh",
-      "title": "厄瓜多尔与秘鲁国有油企时隔四年恢复交易 深化两国能源合作",
-      "excerpt": "中新网北京10月21日电 综合消息：厄瓜多尔国家石油公司当地时间20日宣布，将向秘鲁国家石油公司供应1620万桶原油，预计交易额达16.52亿美元。这标志着两家国有油企时隔四年恢复商业交易。",
-      "date": "2026-10-21T05:52:14.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-21/10718415.shtml",
-      "image": ""
-    },
-    {
-      "id": "pakistan-arrests-man-hunted-by-us-over-126m-p-12ef0f78fb8c",
-      "language": "en",
-      "title": "Pakistan arrests man hunted by US over $126m postage fraud case",
-      "excerpt": "Faheem Akram allegedly sold more than 5 million fake postage labels for a fixed price of $2 a piece.",
-      "date": "2026-10-21T05:46:33.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/ckdd8m1z1z3yo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e26e/live/12c0e130-cd0f-11f1-92f9-3b44ce9ad221.jpg"
-    },
-    {
-      "id": "业界共探航运脱碳路径-灵活性布局助力平稳转型-1f35a4daf0ff",
-      "language": "zh",
-      "title": "业界共探航运脱碳路径 灵活性布局助力平稳转型",
-      "excerpt": "中新网上海10月21日电 (杨硕 谢梦圆)2026北外滩国际航运论坛金融与保险主题论坛10月20日在沪举行，与会嘉宾围绕替代燃料船舶产业趋势、风险治理等话题展开讨论。来自船东、能源、保险等行业各环节的与会人士在交流中普遍提出，当前航运脱碳的技术路线、监管框架尚未完全定型，现阶段须保持灵活性。",
-      "date": "2026-10-21T05:46:18.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718416.shtml",
-      "image": ""
-    },
-    {
-      "id": "智慧通关新成果发布-虹桥国际机场已率先落地国际全流程无感通行场景-854314dd963e",
-      "language": "zh",
-      "title": "智慧通关新成果发布 虹桥国际机场已率先落地国际全流程无感通行场景",
-      "excerpt": "中新网上海10月21日电 (记者 陈静)上海边检总站虹桥边检站(下称：虹桥边检站)21日披露，20日在北外滩国际航空论坛上，该站发布智慧口岸创新实践成果——基于One ID系统，实现“值机、查验、登机”三端贯通，助力虹桥国际机场国际、港澳台航班及旅客高效通关。",
-      "date": "2026-10-21T05:45:42.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718413.shtml",
-      "image": ""
-    },
-    {
-      "id": "国际工商界代表齐聚山东-共觅金砖合作新机遇-51d65034cb07",
-      "language": "zh",
-      "title": "国际工商界代表齐聚山东 共觅金砖合作新机遇",
-      "excerpt": "中新网济南10月21日电 (吕妍)“对话金砖—山东省国际贸易投资洽谈会”10月21日在山东济南举行，来自全球30个国家和地区的100余名国际工商界代表参会，共觅金砖合作框架下的经贸合作新机遇。",
-      "date": "2026-10-21T05:44:58.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718412.shtml",
-      "image": ""
-    },
-    {
-      "id": "全国碳排放交易量累计突破10亿吨大关-ac85b78eb7f2",
-      "language": "zh",
-      "title": "全国碳排放交易量累计突破10亿吨大关",
-      "excerpt": "中新网10月21日电 21日，国新办就中国积极应对气候变化、参与引领全球气候治理有关情况举行新闻发布会。生态环境部副部长李高表示，全国碳排放权交易市场启动上线交易五年来，已建成全球规模最大的碳排放权交易市场，目前管控二氧化碳排放量约83亿吨，占全国二氧化碳排放总量的65%以上。上周，我国碳排放权交易市场配额累计成交量突破10亿吨大关。在政策方面，中办、国办《关于推进绿色低碳转型 加强全国碳市场建设的意见》明确未来一个时期的建设目标和重点任务；生态环境法典进一步筑牢碳市场建设的法治根基；碳排放权交易市场也成为我国碳定价的主要形式。",
-      "date": "2026-10-21T05:40:30.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718392.shtml",
-      "image": ""
-    },
-    {
-      "id": "薯-里造芯-远销海外-土豆见证宁夏固原的蝶变新生-527094e4a5d7",
-      "language": "zh",
-      "title": "“薯”里造芯、远销海外 土豆见证宁夏固原的蝶变新生",
-      "excerpt": "90多年前，中央红军陕甘支队长征抵达宁夏固原市乔家渠，当时乡亲们拿出家里的土豆，给红军做饭。可这里缺水，战士们就把土豆简单擦拭一下蒸熟，也不舍得扒皮吃，土豆上可能还带着泥。而那一颗颗还带着泥的土豆，如今成了当地产业发展、村民致富的“金豆豆”。",
-      "date": "2026-10-21T05:38:06.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718428.shtml",
-      "image": ""
-    },
-    {
-      "id": "广东工会开展就业服务进校园活动-供岗1-5万余个-019c08f00dc5",
-      "language": "zh",
-      "title": "广东工会开展就业服务进校园活动 供岗1.5万余个",
-      "excerpt": "中新网广州10月21日电 (张璐 陈楚红)“粤工送岗 职等你来”工会就业服务进校园秋季专场招聘活动启动仪式(简称“活动”)20日在广东轻工职业技术大学举办。本次活动邀约广东省内560多家优质企业，提供15000余个适配高校毕业生的就业岗位。",
-      "date": "2026-10-21T05:34:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/10-21/10718405.shtml",
       "image": ""
     }
   ]
