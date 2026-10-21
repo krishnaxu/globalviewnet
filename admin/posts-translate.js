@@ -82,11 +82,12 @@
   }
 
   // Protect inline Markdown, translate only the text between markers.
-  async function translateInline(text) {
-    const parts = [];
-    const pattern =
-      /!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)|`[^`\n]*`|<https?:\/\/[^>]+>|https?:\/\/[^\s)]+|<[^>]+>|\*\*|__|~~|(?<!\*)\*(?!\*)|(?<!_)_(?!_)/g;
 
+  async function translateInline(text) {
+    const pattern =
+      /!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)|`[^`\n]*`|<https?:\/\/[^>]+>|https?:\/\/[^\s)]+|<[^>]+>|\*\*[\s\S]+?\*\*|__[\s\S]+?__|~~[\s\S]+?~~|\*[^*\n]+\*|_[^_\n]+_/g;
+
+    const parts = [];
     let last = 0;
     let match;
 
@@ -98,10 +99,34 @@
         });
       }
 
-      parts.push({
-        type: "marker",
-        value: match[0]
-      });
+      const value = match[0];
+
+      if (
+        value.startsWith("**") ||
+        value.startsWith("__") ||
+        value.startsWith("~~") ||
+        (value.startsWith("*") && !value.startsWith("**")) ||
+        (value.startsWith("_") && !value.startsWith("__"))
+      ) {
+        const markerLength =
+          value.startsWith("**") ||
+          value.startsWith("__") ||
+          value.startsWith("~~") ? 2 : 1;
+
+        const marker = value.slice(0, markerLength);
+        const inner = value.slice(markerLength, -markerLength);
+
+        parts.push({
+          type: "emphasis",
+          marker: marker,
+          value: inner
+        });
+      } else {
+        parts.push({
+          type: "protected",
+          value: value
+        });
+      }
 
       last = pattern.lastIndex;
     }
@@ -116,8 +141,11 @@
     const output = [];
 
     for (const part of parts) {
-      if (part.type === "marker") {
+      if (part.type === "protected") {
         output.push(part.value);
+      } else if (part.type === "emphasis") {
+        const translated = await translatePlainText(part.value);
+        output.push(part.marker + translated.trim() + part.marker);
       } else {
         output.push(await translatePlainText(part.value));
       }
