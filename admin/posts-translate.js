@@ -19,23 +19,31 @@
         break;
       }
 
-      let part = "";
+      let end = 0;
       let lastSpace = -1;
+      let size = 0;
 
       for (const char of remaining) {
-        if (byteLength(part + char) > maxBytes) break;
-        part += char;
-        if (/\s/.test(char)) lastSpace = part.length;
+        const charSize = byteLength(char);
+
+        if (size + charSize > maxBytes) break;
+
+        size += charSize;
+        end += char.length;
+
+        if (/\s/.test(char)) lastSpace = end;
       }
 
-      if (!part) throw new Error("文本拆分失败");
-
-      if (lastSpace > 0 && lastSpace > part.length * 0.5) {
-        part = part.slice(0, lastSpace);
+      if (end === 0) {
+        throw new Error("文本拆分失败");
       }
 
-      chunks.push(part);
-      remaining = remaining.slice(part.length);
+      if (lastSpace > 0 && lastSpace > end * 0.5) {
+        end = lastSpace;
+      }
+
+      chunks.push(remaining.slice(0, end));
+      remaining = remaining.slice(end);
     }
 
     return chunks;
@@ -43,8 +51,9 @@
 
   function protectMarkdown(text) {
     const tokens = [];
+
     const protectedText = text.replace(
-      /```[\s\S]*?```|!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)|`[^`\n]*`|<[^>]+>/g,
+      /```[\s\S]*?```|~~~[\s\S]*?~~~|!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)|<https?:\/\/[^>]+>|<[^>]+>|`[^`\n]*`|^ {0,3}#{1,6}(?=\s)|^ {0,3}(?:[-+*]|\d+[.)])(?=\s)|^ {0,3}>\s?|\*\*|__|~~|(?<!\*)\*(?!\*)|(?<!_)_(?!_)|\\[*_~`#[\]()>-]/gm,
       function (match) {
         const token = "ZXQKEEP" + tokens.length + "QXZ";
         tokens.push([token, match]);
@@ -56,9 +65,10 @@
   }
 
   function restoreMarkdown(text, tokens) {
-    for (const item of tokens) {
-      text = text.replaceAll(item[0], item[1]);
+    for (const [token, original] of tokens) {
+      text = text.split(token).join(original);
     }
+
     return text;
   }
 
@@ -68,11 +78,11 @@
     url.searchParams.set("langpair", "zh-CN|en");
 
     const response = await fetch(url.toString(), {
-      signal: AbortSignal.timeout(12000)
+      signal: AbortSignal.timeout(15000)
     });
 
     if (!response.ok) {
-      throw new Error("翻译请求失败");
+      throw new Error("翻译请求失败：" + response.status);
     }
 
     const result = await response.json();
@@ -80,18 +90,19 @@
     if (
       result.responseStatus !== 200 ||
       !result.responseData ||
-      !result.responseData.translatedText
+      typeof result.responseData.translatedText !== "string"
     ) {
       throw new Error("没有获得有效译文");
     }
 
     const textarea = document.createElement("textarea");
     textarea.innerHTML = result.responseData.translatedText;
+
     return textarea.value;
   }
 
-  async function translateText(text) {
-    if (!text || !text.trim()) return "";
+  async function translatePlainText(text) {
+    if (!text || !text.trim()) return text;
 
     const protectedData = protectMarkdown(text);
     const chunks = splitText(protectedData.text, MAX_BYTES);
@@ -107,7 +118,47 @@
     );
   }
 
-  async function translateField(data, zhKey, enKey) {
+  async function translateMarkdown(text) {
+    const lines = text.split("\n");
+    const output = [];
+    let inCodeBlock = false;
+    let codeFence = "";
+
+    for (const line of lines) {
+      const fenceMatch = line.match(/^ {0,3}(`{3,}|~{3,})/);
+
+      if (fenceMatch) {
+        const fence = fenceMatch[1];
+
+        if (!inCodeBlock) {
+          inCodeBlock = true;
+          codeFence = fence[0];
+        } else if (fence[0] === codeFence) {
+          inCodeBlock = false;
+          codeFence = "";
+        }
+
+        output.push(line);
+        continue;
+      }
+
+      if (inCodeBlock || !line.trim()) {
+        output.push(line);
+        continue;
+      }
+
+      try {
+        output.push(await translatePlainText(line));
+      } catch (error) {
+        console.warn("该行翻译失败，保留原文：", error);
+        output.push(line);
+      }
+    }
+
+    return output.join("\n");
+  }
+
+  async function translateField(data, zhKey, enKey, isMarkdown) {
     const chinese = data.get(zhKey);
     const english = data.get(enKey);
 
@@ -120,14 +171,16 @@
     }
 
     try {
-      const translated = await translateText(chinese);
+      const translated = isMarkdown
+        ? await translateMarkdown(chinese)
+        : await translatePlainText(chinese);
 
       if (translated && translated.trim()) {
         return data.set(enKey, translated);
       }
     } catch (error) {
       console.warn(
-        "自动翻译失败，保留中文并继续：" + zhKey,
+        "自动翻译失败，保留中文并继续保存：" + zhKey,
         error
       );
     }
@@ -154,9 +207,9 @@
       let data = entry.get("data");
 
       try {
-        data = await translateField(data, "title_zh", "title_en");
-        data = await translateField(data, "excerpt_zh", "excerpt_en");
-        data = await translateField(data, "body_zh", "body_en");
+        data = await translateField(data, "title_zh", "title_en", false);
+        data = await translateField(data, "excerpt_zh", "excerpt_en", false);
+        data = await translateField(data, "body_zh", "body_en", true);
       } catch (error) {
         console.warn("翻译流程异常，继续保存：", error);
       }
@@ -165,5 +218,5 @@
     }
   });
 
-  console.log("文章自动翻译脚本已加载");
+  console.log("文章自动翻译脚本已加载（Markdown 保留版）");
 })();
