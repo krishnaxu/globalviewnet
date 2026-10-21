@@ -145,7 +145,7 @@
         output.push(part.value);
       } else if (part.type === "emphasis") {
         const translated = await translatePlainText(part.value);
-        output.push(part.marker + translated.trim() + part.marker);
+        output.push(part.marker + translated.trim() + part.marker + " ");
       } else {
         output.push(await translatePlainText(part.value));
       }
