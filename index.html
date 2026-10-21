@@ -2077,12 +2077,16 @@ $("#footerDisclaimerLink").addEventListener("click", event => {
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       const disclaimer = document.querySelector("#disclaimer");
-      if (!disclaimer) return;
+if (!disclaimer) {
+  alert("找不到免责声明元素");
+  return;
+}
 
-      disclaimer.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+alert("已找到免责声明元素");
+disclaimer.scrollIntoView({
+  behavior: "auto",
+  block: "start"
+});
     });
   });
 });
