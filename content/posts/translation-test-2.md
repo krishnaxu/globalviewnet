@@ -8,11 +8,9 @@ is_hot: false
 title_zh: 硅基流动翻译测试
 excerpt_zh: 这是硅基流动测试翻译内容
 body_zh: |-
-  这桶105美元的油，最终会加到谁头上？
+  这桶105美元的油我们左右不了霍尔木兹海峡的
 
-  国际油价上涨，不仅影响加油站的价格，也可能通过运输、物流和生产成本，传导至普通消费者的日常生活。
-
-  我们左右不了霍尔木兹海峡的风浪，但可以让自己手里的伞，结实一点。
+  风浪，但可以让自己手里的伞，结实一点。
 title_en: Silicon-based Flow Translation Testing
 excerpt_en: This is a silicon based flow test translation
 body_en: >-
