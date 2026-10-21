@@ -2082,11 +2082,22 @@ if (!disclaimer) {
   return;
 }
 
-alert("已找到免责声明元素");
+alert(
+  "元素位置：" + disclaimer.getBoundingClientRect().top +
+  "\n页面滚动位置：" + window.scrollY
+);
+
 disclaimer.scrollIntoView({
   behavior: "auto",
   block: "start"
 });
+
+setTimeout(() => {
+  alert(
+    "滚动后位置：" + disclaimer.getBoundingClientRect().top +
+    "\n页面滚动位置：" + window.scrollY
+  );
+}, 500);
     });
   });
 });
