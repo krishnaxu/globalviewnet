@@ -1017,19 +1017,27 @@ html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before
 
     <p data-i18n="newsletterIntro">订阅观澜泗渡，获取双语资讯与编辑精选。</p>
 
-    <form class="newsletter-form" id="newsletterForm">
-      <input
-        type="email"
-        id="newsletterEmail"
-        required
-        maxlength="254"
-        autocomplete="email"
-        placeholder="请输入您的邮箱地址"
-        data-i18n-placeholder="emailPlaceholder"
-        aria-label="Email address"
-      >
-      <button class="primary-btn" type="submit" data-i18n="subscribe">订阅</button>
-    </form>
+
+<form
+  class="newsletter-form"
+  id="newsletterForm"
+  action="https://buttondown.com/api/emails/embed-subscribe/globalviewnet"
+  method="post"
+  target="_blank"
+>
+  <input
+    type="email"
+    id="newsletterEmail"
+    name="email"
+    required
+    maxlength="254"
+    autocomplete="email"
+    placeholder="请输入您的邮箱地址"
+    data-i18n-placeholder="emailPlaceholder"
+    aria-label="Email address"
+  >
+  <button class="primary-btn" type="submit" data-i18n="subscribe">订阅</button>
+</form>
 
     <p class="form-message hidden" id="newsletterMessage" role="status" aria-live="polite"></p>
   </section>
@@ -1995,24 +2003,6 @@ function refreshAutoNewsIds() {
       };
       $("#article-jsonld").textContent = JSON.stringify(payload, null, 2);
     }
-
-    // Newsletter：纯前端演示，不会真的保存或发送邮箱
-    $("#newsletterForm").addEventListener("submit", event => {
-      event.preventDefault();
-      const email = $("#newsletterEmail").value.trim();
-      const message = $("#newsletterMessage");
-      message.classList.remove("hidden", "success", "error");
-
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        message.classList.add("error");
-        message.textContent = t("newsletterError");
-        return;
-      }
-
-      message.classList.add("success");
-      message.textContent = t("newsletterSuccess");
-      $("#newsletterEmail").value = "";
-    });
 
     // 分享链接：尝试使用浏览器剪贴板；失败时提供可读提示
     $("#shareArticleBtn").addEventListener("click", async () => {
