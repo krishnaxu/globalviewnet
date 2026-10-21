@@ -2151,27 +2151,47 @@ window.globalViewSetArticleImage = async function (img, article) {
     img.style.visibility = "hidden";
   }
 };
-    function classifyAutoNews(item) {
-  const text = [
-    item.title || "",
-    item.excerpt || "",
-    item.source_name || "",
-    item.source_url || ""
-  ].join(" ").toLowerCase();
 
-  const rules = [
-    ["culture", /文化|艺术|博物馆|电影|音乐|出版|设计|展览|文学|文化遗产|culture|museum|\bart\b|film|music|design|literature|theatre|theater|novel|book/],
-    ["life", /生活|健康|饮食|旅游|出行|城市|教育|环境|气候|消费|life|health|food|travel|city|education|climate|environment/],
-    ["tech", /人工智能|ai\b|科技|技术|芯片|机器人|软件|数字化|云计算|半导体|科研|科学|航天|卫星|生物科技|药物|临床试验|technology|artificial intelligence|robot|chip|software|science|biotech|clinical trial/],
-    ["business", /商业|财经|经济|股市|股票|投资|企业|公司|市场|金融|港股|美股|融资|收购|并购|business|finance|market|investment|stock|economy|company/]
-  ];
+function classifyAutoNews(item) {
+  const title = String(item.title || "").toLowerCase();
+  const excerpt = String(item.excerpt || "").toLowerCase();
 
-  for (const [category, pattern] of rules) {
-    if (pattern.test(text)) return category;
-  }
+  // 标题权重更高，摘要仅作辅助；不使用来源名称和网址分类
+  const titleText = title;
+  const fullText = `${title} ${excerpt}`;
 
+  // 1. 文化：艺术、影视、音乐、文学、博物馆等
+  const culturePattern =
+    /文化|艺术|博物馆|美术馆|电影|影视|音乐|演唱会|出版|设计展|展览|文学|文化遗产|文物|考古发现|戏剧|戏曲|舞蹈|纪录片|culture|museum|art exhibition|film|movie|cinema|music|concert|publishing|literature|theatre|theater|novel|heritage|archaeology|dance|documentary/;
+
+  // 2. 科技：科技研发、生物医药、军事技术、航天等
+  const techPattern =
+    /人工智能|机器学习|大模型|机器人|芯片|半导体|软件|网络安全|云计算|数据中心|量子计算|科技|技术突破|科研|科学研究|航天|卫星|火箭发射|太空探索|生物科技|生物技术|创新药|新药研发|药物研发|临床试验|药品获批|基因|细胞治疗|医疗器械|电池技术|新能源技术|军事技术|军用无人机|无人作战|导弹技术|雷达系统|战斗机|军舰|武器系统|technology|artificial intelligence|machine learning|robotics|semiconductor|chip|software|cybersecurity|cloud computing|quantum computing|scientific research|space exploration|satellite|rocket launch|biotech|biotechnology|drug development|clinical trial|gene therapy|cell therapy|medical device|military technology|military drone|missile technology|radar system|fighter jet|warship|weapons system/;
+
+  // 3. 商业：企业经营、金融市场、投资融资、军工产业等
+  const businessPattern =
+    /商业|财经|经济增长|宏观经济|股市|股票|股价|证券|债券|基金|汇率|央行|利率|通货膨胀|投资|融资|上市|财报|营收|利润|企业|公司|并购|收购|ipo|供应链|贸易|关税|出口|进口|制造业|房地产市场|银行|保险|金融|军工企业|国防承包商|军费开支|军火出口|business|finance|financial market|stock market|share price|economy|economic growth|central bank|interest rate|inflation|investment|funding|ipo|earnings|revenue|profit|company|corporate|merger|acquisition|supply chain|trade|tariff|export|import|manufacturing|real estate market|banking|insurance|defense contractor|defence contractor|defense spending|defence spending|arms exports/;
+
+  // 4. 生活：健康、教育、旅游、城市、环境、公共安全及民生影响
+  const lifePattern =
+    /生活|健康|疾病预防|公共卫生|医院|患者|医疗服务|饮食|食品安全|餐饮|旅游|旅行|交通|出行|城市|住房|教育|学校|大学|就业|职场|消费者|消费|气候变化|极端天气|环境保护|污染|能源价格|自然灾害|地震|洪水|台风|火灾|事故|公共安全|社会保障|养老金|家庭|儿童|青少年|战争伤亡|平民|难民|人道主义|撤离居民|停电|物价|health|public health|hospital|patient|food safety|restaurant|travel|tourism|transport|commute|city|housing|education|school|university|employment|consumer|climate change|extreme weather|environmental protection|pollution|natural disaster|earthquake|flood|typhoon|wildfire|accident|public safety|social security|pension|family|children|teenagers|civilian casualties|civilians|refugees|humanitarian|evacuation|power outage|cost of living/;
+
+  // 标题明确命中时优先采用标题判断
+  if (culturePattern.test(titleText)) return "culture";
+  if (techPattern.test(titleText)) return "tech";
+  if (businessPattern.test(titleText)) return "business";
+  if (lifePattern.test(titleText)) return "life";
+
+  // 标题信息不足时，再结合摘要判断
+  if (culturePattern.test(fullText)) return "culture";
+  if (techPattern.test(fullText)) return "tech";
+  if (businessPattern.test(fullText)) return "business";
+  if (lifePattern.test(fullText)) return "life";
+
+  // 暂时保留现有四分类结构，无法识别时默认归入科技
   return "tech";
 }
+
     function makeAutoNewsArticle(item, index) {
       if (!item || !item.title || !item.source_url) return null;
 
