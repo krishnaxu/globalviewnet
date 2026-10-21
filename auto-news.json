@@ -1,6 +1,86 @@
 {
-  "generated_at": "2026-10-21T18:48:56.213Z",
+  "generated_at": "2026-10-21T19:42:41.214Z",
   "items": [
+    {
+      "id": "meta-ordered-to-pay-25-billion-in-case-relate-34727e2ab12c",
+      "language": "en",
+      "title": "Meta ordered to pay $25 billion in case related to Cambridge Analytica scandal",
+      "excerpt": "The payout is related to a recent trial involving the social media giant that revolved around its data privacy practices.",
+      "date": "2026-10-21T19:42:32.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/21/meta-ordered-to-pay-25-billion-in-case-related-to-cambridge-analytica-scandal/",
+      "image": ""
+    },
+    {
+      "id": "blackrock-s-rick-rieder-sees-historic-opportu-0e2b7bd0d26d",
+      "language": "en",
+      "title": "BlackRock's Rick Rieder sees 'historic' opportunity in high-quality bonds",
+      "excerpt": "Rick Rieder, BlackRock's CIO of global fixed income, lays out his expectations for the fourth quarter and where he sees the best opportunities.",
+      "date": "2026-10-21T19:32:55.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/21/rick-rieder-investment-grade-bonds.html",
+      "image": ""
+    },
+    {
+      "id": "meta-fined-25bn-for-lies-over-user-data-priva-2f964328fd13",
+      "language": "en",
+      "title": "Meta fined $25bn for 'lies' over user data privacy",
+      "excerpt": "The fine is the largest to date against Facebook's owner, larger than an $18bn deal with California.",
+      "date": "2026-10-21T19:30:30.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqdr8zxrr3dxo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6026/live/1fd68c80-cd78-11f1-bc2e-018d645d8d21.jpg"
+    },
+    {
+      "id": "while-amazon-blocks-ai-agents-walmart-rolls-o-dd62bb078550",
+      "language": "en",
+      "title": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
+      "excerpt": "As Amazon blocks AI agents from shopping on its site, Walmart is taking the opposite approach, introducing new technology that lets AI agents make purchases on customers' behalf, with controls over spending and transaction approvals.",
+      "date": "2026-10-21T19:30:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+      "image": ""
+    },
+    {
+      "id": "nigeria-s-first-ebola-patient-holidayed-in-ug-1c2220f1aa08",
+      "language": "en",
+      "title": "Nigeria's first Ebola patient holidayed in Uganda, officials say",
+      "excerpt": "The wife of a diplomat based in Abuja travelled to Kampala for a vacation.",
+      "date": "2026-10-21T19:29:40.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c62kepvg2x9lo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9bc3/live/125ed250-cd83-11f1-9a39-31b474234113.jpg"
+    },
+    {
+      "id": "the-internet-is-having-a-very-bad-cybersecuri-532319ec633f",
+      "language": "en",
+      "title": "The internet is having a very bad cybersecurity day",
+      "excerpt": "From AI-discovered PHP vulnerabilities to flaws in Node.js and popular AI tool LiteLLM, cybersecurity teams have plenty to worry about this week.",
+      "date": "2026-10-21T19:03:28.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/21/the-internet-is-having-a-very-bad-cybersecurity-day/",
+      "image": ""
+    },
+    {
+      "id": "spacex-gives-the-ai-trade-a-shot-in-the-arm-w-2f96ff03032d",
+      "language": "en",
+      "title": "SpaceX gives the AI trade a shot in the arm. What it means for our stocks",
+      "excerpt": "SpaceX indicated there's been no slowdown in demand for AI computing.",
+      "date": "2026-10-21T19:01:23.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/21/spacex-gives-the-ai-trade-a-shot-in-the-arm-what-it-means-for-our-stocks-.html",
+      "image": ""
+    },
+    {
+      "id": "legal-ai-startup-legora-raises-550m-series-e--1e65411ac6cf",
+      "language": "en",
+      "title": "Legal AI startup Legora raises $550M Series E at $8.8B valuation",
+      "excerpt": "Legal AI startup Legora announced Wednesday that it raised a $550 million Series E round, valuing it at $8.8 billion.",
+      "date": "2026-10-21T18:51:56.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/",
+      "image": ""
+    },
     {
       "id": "netflix-has-dipped-its-toe-into-theatrical-is-ebedb4a5c3c2",
       "language": "en",
@@ -2919,86 +2999,6 @@
       "date": "2026-10-21T05:34:19.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/dwq/2026/10-21/10718405.shtml",
-      "image": ""
-    },
-    {
-      "id": "纽约茱莉亚学院荣休院长-中国会成为世界古典音乐发展的中心之一-2b2f87d188c4",
-      "language": "zh",
-      "title": "纽约茱莉亚学院荣休院长：中国会成为世界古典音乐发展的中心之一",
-      "excerpt": "中新网北京10月21日电 (记者 应妮)由纽约茱莉亚学院荣休院长、天津茱莉亚学院理事会主席约瑟夫·W·波利希担任主编、人民音乐出版社发行的《乐韵交融 文化共鸣》日前在京面世。",
-      "date": "2026-10-21T05:33:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/10-21/10718414.shtml",
-      "image": ""
-    },
-    {
-      "id": "台风-蔷琵-逼近-浙江启动海上防台风应急响应-76436f1d35d2",
-      "language": "zh",
-      "title": "台风“蔷琵”逼近 浙江启动海上防台风应急响应",
-      "excerpt": "中新网杭州10月21日电 (钱晨菲)21日，根据《浙江省防汛防台抗旱应急预案》，经会商研判，浙江省防指决定于10月21日9时启动海上防台风应急响应。",
-      "date": "2026-10-21T05:29:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-21/10718403.shtml",
-      "image": ""
-    },
-    {
-      "id": "国际工商界代表齐聚山东-共觅金砖合作新机遇-4561469f7b37",
-      "language": "zh",
-      "title": "国际工商界代表齐聚山东 共觅金砖合作新机遇",
-      "excerpt": "中新社济南10月21日电 (吕妍)“对话金砖—山东省国际贸易投资洽谈会”10月21日在山东济南举行，来自全球30个国家和地区的100余名国际工商界代表参会，共觅金砖合作框架下的经贸合作新机遇。",
-      "date": "2026-10-21T05:28:27.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718398.shtml",
-      "image": ""
-    },
-    {
-      "id": "我们的长征路-习言道丨习近平讲过的长征故事-1e648da931e0",
-      "language": "zh",
-      "title": "【我们的长征路】习言道丨习近平讲过的长征故事",
-      "excerpt": "",
-      "date": "2026-10-21T05:28:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718396.shtml",
-      "image": ""
-    },
-    {
-      "id": "南宁海关隶属北海海关涉案财物拍卖摇珠公告-2026年10月-38a5a63f48f0",
-      "language": "zh",
-      "title": "南宁海关隶属北海海关涉案财物拍卖摇珠公告（2026年10月）",
-      "excerpt": "我关拟于近期组织公开拍卖三批涉案财物，并通过摇珠选择拍卖企业，拟定于2026年10月23日15时00分进行此次拍卖摇珠，具体如下：",
-      "date": "2026-10-21T05:27:43.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-21/10718410.shtml",
-      "image": ""
-    },
-    {
-      "id": "oil-prices-climb-as-traders-assess-middle-eas-15de954631e5",
-      "language": "en",
-      "title": "Oil prices climb as traders assess Middle East developments",
-      "excerpt": "Iran's Revolutionary Guards said Tuesday that naval mines had prevented three tankers attempting to pass through the Strait of Hormuz.",
-      "date": "2026-10-21T05:27:19.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/21/oil-price-today-wti-brent-rise-on-middle-east-worries.html",
-      "image": ""
-    },
-    {
-      "id": "黄埔后人吁继承孙中山思想-促进两岸交流-72de92227046",
-      "language": "zh",
-      "title": "黄埔后人吁继承孙中山思想、促进两岸交流",
-      "excerpt": "中新社广西桂林10月21日电 (陈建新 韦佳秀)第十九届黄埔论坛20日至21日在广西桂林举行。黄埔组织代表及两岸黄埔后人呼吁，继承孙中山思想，以黄埔精神为纽带，发挥影响力，促进两岸交流往来。",
-      "date": "2026-10-21T05:25:35.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718397.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国最高法-司法人员应对其履行审判职责行为终身负责-09a3088cec4c",
-      "language": "zh",
-      "title": "中国最高法：司法人员应对其履行审判职责行为终身负责",
-      "excerpt": "中新社北京10月21日电 (记者 张素)中国最高人民法院21日发布的一份条例明确，司法人员应当对其履行审判职责的行为终身负责。",
-      "date": "2026-10-21T05:20:05.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718395.shtml",
       "image": ""
     }
   ]
