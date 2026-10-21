@@ -11,11 +11,11 @@
 
   function splitText(text, maxBytes) {
     const chunks = [];
-    let remaining = text;
+    let rest = text;
 
-    while (remaining.length > 0) {
-      if (byteLength(remaining) <= maxBytes) {
-        chunks.push(remaining);
+    while (rest.length) {
+      if (byteLength(rest) <= maxBytes) {
+        chunks.push(rest);
         break;
       }
 
@@ -23,53 +23,25 @@
       let lastSpace = -1;
       let size = 0;
 
-      for (const char of remaining) {
-        const charSize = byteLength(char);
+      for (const char of rest) {
+        const n = byteLength(char);
+        if (size + n > maxBytes) break;
 
-        if (size + charSize > maxBytes) break;
-
-        size += charSize;
+        size += n;
         end += char.length;
 
         if (/\s/.test(char)) lastSpace = end;
       }
 
-      if (end === 0) {
-        throw new Error("文本拆分失败");
-      }
+      if (!end) throw new Error("文本拆分失败");
 
-      if (lastSpace > 0 && lastSpace > end * 0.5) {
-        end = lastSpace;
-      }
+      if (lastSpace > end * 0.5) end = lastSpace;
 
-      chunks.push(remaining.slice(0, end));
-      remaining = remaining.slice(end);
+      chunks.push(rest.slice(0, end));
+      rest = rest.slice(end);
     }
 
     return chunks;
-  }
-
-  function protectMarkdown(text) {
-    const tokens = [];
-
-    const protectedText = text.replace(
-      /```[\s\S]*?```|~~~[\s\S]*?~~~|!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)|<https?:\/\/[^>]+>|<[^>]+>|`[^`\n]*`|^ {0,3}#{1,6}(?=\s)|^ {0,3}(?:[-+*]|\d+[.)])(?=\s)|^ {0,3}>\s?|\*\*|__|~~|(?<!\*)\*(?!\*)|(?<!_)_(?!_)|\\[*_~`#[\]()>-]/gm,
-      function (match) {
-        const token = "ZXQKEEP" + tokens.length + "QXZ";
-        tokens.push([token, match]);
-        return token;
-      }
-    );
-
-    return { text: protectedText, tokens: tokens };
-  }
-
-  function restoreMarkdown(text, tokens) {
-    for (const [token, original] of tokens) {
-      text = text.split(token).join(original);
-    }
-
-    return text;
   }
 
   async function translateChunk(text) {
@@ -81,9 +53,7 @@
       signal: AbortSignal.timeout(15000)
     });
 
-    if (!response.ok) {
-      throw new Error("翻译请求失败：" + response.status);
-    }
+    if (!response.ok) throw new Error("翻译请求失败");
 
     const result = await response.json();
 
@@ -97,58 +67,117 @@
 
     const textarea = document.createElement("textarea");
     textarea.innerHTML = result.responseData.translatedText;
-
     return textarea.value;
   }
 
   async function translatePlainText(text) {
-    if (!text || !text.trim()) return text;
-
-    const protectedData = protectMarkdown(text);
-    const chunks = splitText(protectedData.text, MAX_BYTES);
-    const translated = [];
+    const chunks = splitText(text, MAX_BYTES);
+    const result = [];
 
     for (const chunk of chunks) {
-      translated.push(await translateChunk(chunk));
+      result.push(await translateChunk(chunk));
     }
 
-    return restoreMarkdown(
-      translated.join(""),
-      protectedData.tokens
+    return result.join("");
+  }
+
+  // Protect inline Markdown, translate only the text between markers.
+  async function translateInline(text) {
+    const parts = [];
+    const pattern =
+      /!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)|`[^`\n]*`|<https?:\/\/[^>]+>|https?:\/\/[^\s)]+|<[^>]+>|\*\*|__|~~|(?<!\*)\*(?!\*)|(?<!_)_(?!_)/g;
+
+    let last = 0;
+    let match;
+
+    while ((match = pattern.exec(text)) !== null) {
+      if (match.index > last) {
+        parts.push({
+          type: "text",
+          value: text.slice(last, match.index)
+        });
+      }
+
+      parts.push({
+        type: "marker",
+        value: match[0]
+      });
+
+      last = pattern.lastIndex;
+    }
+
+    if (last < text.length) {
+      parts.push({
+        type: "text",
+        value: text.slice(last)
+      });
+    }
+
+    const output = [];
+
+    for (const part of parts) {
+      if (part.type === "marker") {
+        output.push(part.value);
+      } else {
+        output.push(await translatePlainText(part.value));
+      }
+    }
+
+    return output.join("");
+  }
+
+  function splitPrefix(line) {
+    // Keep heading, blockquote and list prefixes exactly as written.
+    const match = line.match(
+      /^(\s*(?:(?:>\s*)*)(?:(?:[-+*]|\d+[.)])\s+)?(?:#{1,6}\s+)?)(.*)$/
     );
+
+    if (!match) return ["", line];
+
+    return [match[1], match[2]];
   }
 
   async function translateMarkdown(text) {
     const lines = text.split("\n");
     const output = [];
-    let inCodeBlock = false;
-    let codeFence = "";
+    let inFence = false;
+    let fenceChar = "";
 
     for (const line of lines) {
-      const fenceMatch = line.match(/^ {0,3}(`{3,}|~{3,})/);
+      const fence = line.match(/^ {0,3}(`{3,}|~{3,})/);
 
-      if (fenceMatch) {
-        const fence = fenceMatch[1];
-
-        if (!inCodeBlock) {
-          inCodeBlock = true;
-          codeFence = fence[0];
-        } else if (fence[0] === codeFence) {
-          inCodeBlock = false;
-          codeFence = "";
+      if (fence) {
+        if (!inFence) {
+          inFence = true;
+          fenceChar = fence[1][0];
+        } else if (fence[1][0] === fenceChar) {
+          inFence = false;
+          fenceChar = "";
         }
 
         output.push(line);
         continue;
       }
 
-      if (inCodeBlock || !line.trim()) {
+      if (
+        inFence ||
+        !line.trim() ||
+        /^ {4,}/.test(line) ||
+        /^\s*(?:[-*_]\s*){3,}$/.test(line)
+      ) {
         output.push(line);
         continue;
       }
 
       try {
-        output.push(await translatePlainText(line));
+        const [prefix, content] = splitPrefix(line);
+
+        if (!content.trim()) {
+          output.push(line);
+          continue;
+        }
+
+        output.push(prefix + await translateInline(content));
       } catch (error) {
         console.warn("该行翻译失败，保留原文：", error);
         output.push(line);
@@ -162,27 +191,20 @@
     const chinese = data.get(zhKey);
     const english = data.get(enKey);
 
-    if (typeof english === "string" && english.trim()) {
-      return data;
-    }
-
-    if (typeof chinese !== "string" || !chinese.trim()) {
-      return data;
-    }
+    // Never overwrite existing English content.
+    if (typeof english === "string" && english.trim()) return data;
+    if (typeof chinese !== "string" || !chinese.trim()) return data;
 
     try {
       const translated = isMarkdown
         ? await translateMarkdown(chinese)
-        : await translatePlainText(chinese);
+        : await translateInline(chinese);
 
       if (translated && translated.trim()) {
         return data.set(enKey, translated);
       }
     } catch (error) {
-      console.warn(
-        "自动翻译失败，保留中文并继续保存：" + zhKey,
-        error
-      );
+      console.warn("自动翻译失败，保留中文并继续：" + zhKey, error);
     }
 
     return data;
@@ -200,9 +222,7 @@
     name: "preSave",
 
     handler: async function ({ entry }) {
-      if (entry.get("collection") !== "posts") {
-        return;
-      }
+      if (entry.get("collection") !== "posts") return;
 
       let data = entry.get("data");
 
@@ -218,5 +238,5 @@
     }
   });
 
-  console.log("文章自动翻译脚本已加载（Markdown 保留版）");
+  console.log("文章自动翻译脚本已加载（Markdown 结构保护版）");
 })();
