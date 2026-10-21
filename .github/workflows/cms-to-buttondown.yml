@@ -1,0 +1,51 @@
+
+name: CMS to Buttondown Drafts
+
+on:
+  push:
+    paths:
+      - "content/posts/**"
+      - "scripts/cms-to-buttondown.mjs"
+      - ".github/workflows/cms-to-buttondown.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cms-to-buttondown
+  cancel-in-progress: false
+
+jobs:
+  create-newsletter-drafts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Create Buttondown drafts
+        if: github.event_name == 'push'
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.event.after }}
+        run: node scripts/cms-to-buttondown.mjs
+
+      - name: Save processed article records
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/cms-newsletter-state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record CMS newsletter drafts"
+            git push
+          fi
