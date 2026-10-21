@@ -44,30 +44,63 @@
     return chunks;
   }
 
-  async function translateChunk(text) {
-    const url = new URL(API);
-    url.searchParams.set("q", text);
-    url.searchParams.set("langpair", "zh-CN|en");
+async function translateChunk(text) {
+    try {
+      const response = await fetch("/api/translate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ text }),
+        signal: AbortSignal.timeout(30000)
+      });
 
-    const response = await fetch(url.toString(), {
-      signal: AbortSignal.timeout(15000)
-    });
+      if (!response.ok) {
+        throw new Error("SiliconFlow 翻译请求失败");
+      }
 
-    if (!response.ok) throw new Error("翻译请求失败");
+      const result = await response.json();
 
-    const result = await response.json();
+      if (
+        typeof result.translation !== "string" ||
+        !result.translation.trim()
+      ) {
+        throw new Error("SiliconFlow 没有返回有效译文");
+      }
 
-    if (
-      result.responseStatus !== 200 ||
-      !result.responseData ||
-      typeof result.responseData.translatedText !== "string"
-    ) {
-      throw new Error("没有获得有效译文");
+      return result.translation.trim();
+    } catch (error) {
+      console.warn(
+        "SiliconFlow 翻译失败，尝试使用 MyMemory：",
+        error
+      );
+
+      const url = new URL(API);
+      url.searchParams.set("q", text);
+      url.searchParams.set("langpair", "zh-CN|en");
+
+      const response = await fetch(url.toString(), {
+        signal: AbortSignal.timeout(15000)
+      });
+
+      if (!response.ok) {
+        throw new Error("MyMemory 备用翻译请求失败");
+      }
+
+      const result = await response.json();
+
+      if (
+        result.responseStatus !== 200 ||
+        !result.responseData ||
+        typeof result.responseData.translatedText !== "string"
+      ) {
+        throw new Error("MyMemory 没有返回有效译文");
+      }
+
+      const textarea = document.createElement("textarea");
+      textarea.innerHTML = result.responseData.translatedText;
+      return textarea.value;
     }
-
-    const textarea = document.createElement("textarea");
-    textarea.innerHTML = result.responseData.translatedText;
-    return textarea.value;
   }
 
   async function translatePlainText(text) {
