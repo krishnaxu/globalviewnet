@@ -1,4 +1,4 @@
-
+```javascript
 (function () {
   "use strict";
 
@@ -8,13 +8,10 @@
     const chunks = [];
     let remaining = text;
 
-    // 接口限制为 2000 字符，每段留出余量
     while (remaining.length > 1800) {
       let cut = remaining.lastIndexOf("\n", 1800);
 
-      if (cut < 900) {
-        cut = remaining.lastIndexOf("。", 1800);
-      }
+      if (cut < 900) cut = remaining.lastIndexOf("。", 1800);
 
       if (cut < 900) {
         cut = 1800;
@@ -33,9 +30,7 @@
     for (const chunk of chunks) {
       const response = await fetch("/api/translate", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: chunk }),
         signal: AbortSignal.timeout(60000)
       });
@@ -46,10 +41,7 @@
 
       const result = await response.json();
 
-      if (
-        typeof result.translation !== "string" ||
-        !result.translation.trim()
-      ) {
+      if (!result.translation || typeof result.translation !== "string") {
         throw new Error("接口没有返回有效译文");
       }
 
@@ -59,10 +51,20 @@
     return results.join("\n");
   }
 
+  function normalize(text) {
+    return (text || "")
+      .replace(/\(OPTIONAL\)/gi, "")
+      .replace(/[：:（）()]/g, "")
+      .replace(/\s+/g, "")
+      .toLowerCase();
+  }
+
   function findField(labelText) {
+    const wanted = normalize(labelText);
     const labels = Array.from(document.querySelectorAll("label"));
+
     const label = labels.find(function (item) {
-      return item.innerText.trim().includes(labelText);
+      return normalize(item.innerText).startsWith(wanted);
     });
 
     if (!label) return null;
@@ -73,35 +75,35 @@
     }
 
     let parent = label.parentElement;
+    let bestMatch = null;
 
     for (let i = 0; parent && i < 8; i++) {
-      const control = parent.querySelector(
+      const controls = Array.from(parent.querySelectorAll(
         'input:not([type="checkbox"]):not([type="radio"]), textarea'
-      );
+      ));
 
-      if (control) return control;
+      if (controls.length === 1) {
+        bestMatch = controls[0];
+        break;
+      }
 
       parent = parent.parentElement;
     }
 
-    return null;
+    return bestMatch;
   }
 
   function setFieldValue(field, value) {
     if (!field) return false;
 
-    // 使用原生 setter，通知 CMS 更新受控输入框
     const prototype = field.tagName === "TEXTAREA"
       ? HTMLTextAreaElement.prototype
       : HTMLInputElement.prototype;
 
-    const setter = Object.getOwnPropertyDescriptor(
-      prototype,
-      "value"
-    );
+    const descriptor = Object.getOwnPropertyDescriptor(prototype, "value");
 
-    if (setter && setter.set) {
-      setter.set.call(field, value);
+    if (descriptor && descriptor.set) {
+      descriptor.set.call(field, value);
     } else {
       field.value = value;
     }
@@ -114,9 +116,21 @@
 
   async function translateFields(button) {
     const fields = [
-      { zh: "中文标题", en: "English Title", name: "标题" },
-      { zh: "中文摘要", en: "English Summary", name: "摘要" },
-      { zh: "中文正文", en: "English Body", name: "正文" }
+      {
+        zh: "中文标题",
+        en: "ENGLISH TITLE",
+        name: "标题"
+      },
+      {
+        zh: "中文摘要",
+        en: "ENGLISH SUMMARY",
+        name: "摘要"
+      },
+      {
+        zh: "中文正文",
+        en: "ENGLISH BODY",
+        name: "正文"
+      }
     ];
 
     const jobs = [];
@@ -127,8 +141,8 @@
 
       if (!zhField || !enField) {
         alert(
-          "找不到“" + item.zh + "”或对应英文输入框。\n" +
-          "请确认文章编辑页已经打开，并且正文使用 Raw（原始文本）模式。"
+          "仍未能找到“" + item.zh + "”或对应英文输入框。\n" +
+          "请保持文章编辑页打开，并将中文正文和英文正文切换到 Raw（原始文本）模式。"
         );
         return;
       }
@@ -139,11 +153,9 @@
       if (!chinese.trim()) continue;
 
       if (english.trim()) {
-        const overwrite = confirm(
-          item.name + "的英文栏已有内容，是否重新翻译并覆盖？"
-        );
-
-        if (!overwrite) continue;
+        if (!confirm(item.name + "的英文栏已有内容，是否重新翻译并覆盖？")) {
+          continue;
+        }
       }
 
       jobs.push({
@@ -159,22 +171,18 @@
     }
 
     button.disabled = true;
-    button.textContent = "正在翻译，请稍候…";
 
     try {
       for (const job of jobs) {
         button.textContent = "正在翻译" + job.name + "…";
 
         const translated = await translateText(job.text);
-
-        if (!setFieldValue(job.field, translated)) {
-          throw new Error("无法填入英文" + job.name);
-        }
+        setFieldValue(job.field, translated);
       }
 
       alert(
-        "翻译完成！请检查英文标题、摘要和正文。\n" +
-        "本操作不会主动发布文章。"
+        "翻译请求已完成，请检查英文标题、摘要和正文。\n" +
+        "本按钮不会主动发布文章。请检查内容后再决定是否保存。"
       );
     } catch (error) {
       console.error("手动翻译失败：", error);
@@ -188,10 +196,9 @@
   function addButton() {
     if (document.getElementById(BUTTON_ID)) return;
 
-    // 只在文章编辑页显示
     const labels = Array.from(document.querySelectorAll("label"));
     const hasChineseTitle = labels.some(function (label) {
-      return label.innerText.trim().includes("中文标题");
+      return normalize(label.innerText).startsWith(normalize("中文标题"));
     });
 
     if (!hasChineseTitle) return;
@@ -235,3 +242,4 @@
 
   console.log("手动翻译按钮脚本已加载");
 })();
+```
