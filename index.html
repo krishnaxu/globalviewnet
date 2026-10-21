@@ -1838,7 +1838,7 @@ function refreshAutoNewsIds() {
     }
 
     // 页面导航：单文件内切换，不刷新
-    function navigate(page) {
+   function navigate(page, options = {}) {
       const validPages = ["home", "tech", "business", "culture", "life", "about"];
       if (!validPages.includes(page)) page = "home";
       currentPage = page;
@@ -1868,7 +1868,9 @@ function refreshAutoNewsIds() {
       });
 
       if (location.hash !== `#${page}`) history.pushState({ page }, "", `#${page}`);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+     if (options.scrollTop !== false) {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
     }
 
     function updateCategoryPage() {
@@ -2070,7 +2072,7 @@ function refreshAutoNewsIds() {
 $("#footerDisclaimerLink").addEventListener("click", event => {
   event.preventDefault();
 
-  navigate("about");
+  navigate("about", { scrollTop: false });
 
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
