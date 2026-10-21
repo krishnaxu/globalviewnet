@@ -1,6 +1,86 @@
 {
-  "generated_at": "2026-10-21T17:40:18.985Z",
+  "generated_at": "2026-10-21T18:48:56.213Z",
   "items": [
+    {
+      "id": "netflix-has-dipped-its-toe-into-theatrical-is-ebedb4a5c3c2",
+      "language": "en",
+      "title": "Netflix has dipped its toe into theatrical. Is it ready to jump in?",
+      "excerpt": "Co-CEO Ted Sarandos has said the streamer needs new avenues for growth and to improve execution around its content strategy.",
+      "date": "2026-10-21T18:32:12.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/21/netflix-theatrical-strategy.html",
+      "image": ""
+    },
+    {
+      "id": "india-cockroach-leaders-who-called-on-electio-d14096932a32",
+      "language": "en",
+      "title": "India 'cockroach' leaders who called on election chief to quit are freed from jail",
+      "excerpt": "Saurav Das and Ashutosh Ranka were accused of breaking into an unauthorised protest venue in Delhi.",
+      "date": "2026-10-21T18:22:28.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c674p0xepljeo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0c4c/live/6c343880-cd77-11f1-bc2e-018d645d8d21.jpg"
+    },
+    {
+      "id": "targeted-attack-on-much-loved-mp-leaves-austr-057526649a86",
+      "language": "en",
+      "title": "'Targeted' attack on much-loved MP leaves Australian town heartbroken",
+      "excerpt": "Locals describe the MP, who had to have both legs amputated, as a genuinely kind person who fought for the community.",
+      "date": "2026-10-21T18:10:42.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmgr8q88r5eqo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ce68/live/40f9c020-cd60-11f1-bc2e-018d645d8d21.jpg"
+    },
+    {
+      "id": "capital-one-delivered-a-strong-quarter-why-we-f7000a613ff5",
+      "language": "en",
+      "title": "Capital One delivered a strong quarter. Why we're not declaring victory just yet",
+      "excerpt": "Capital One reported solid earnings, but one of our biggest concerns still remains.",
+      "date": "2026-10-21T18:06:31.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/21/capital-one-delivered-a-strong-quarter-why-were-not-declaring-victory-just-yet.html",
+      "image": ""
+    },
+    {
+      "id": "gm-aims-to-develop-vehicles-in-as-little-as-t-c1b86fd0abb3",
+      "language": "en",
+      "title": "GM aims to develop vehicles in as little as two years with AI, software push",
+      "excerpt": "General Motors is targeting a roughly two-year vehicle development cycle as it expands its use of artificial intelligence, simulation and vehicle software.",
+      "date": "2026-10-21T18:03:55.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html",
+      "image": ""
+    },
+    {
+      "id": "gm-is-giving-onstar-an-ai-makeover-fedf6669d08c",
+      "language": "en",
+      "title": "GM is giving OnStar an AI makeover",
+      "excerpt": "It's one of the biggest overhauls ever to the 30-year-old connected car product.",
+      "date": "2026-10-21T18:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/",
+      "image": ""
+    },
+    {
+      "id": "php-armageddon-openai-google-s-wiz-find-ancie-9f2c544ee930",
+      "language": "en",
+      "title": "PHP armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet",
+      "excerpt": "This is the kind of security issue that was found and prevented by AI, but is also a high risk because of AI.",
+      "date": "2026-10-21T17:59:12.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
+      "image": ""
+    },
+    {
+      "id": "trump-aligned-super-pacs-pour-millions-into-o-518241b920e4",
+      "language": "en",
+      "title": "Trump-aligned super PACs pour millions into once-safe GOP House seats",
+      "excerpt": "Trump-aligned PACs are pouring hundreds of millions into House and Senate races as Republicans defend an expanding midterm election battleground map.",
+      "date": "2026-10-21T17:51:21.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/21/trump-pac-spending-midterm-election-house-republicans.html",
+      "image": ""
+    },
     {
       "id": "meta-ordered-to-pay-25-billion-penalty-in-new-7643c65b3244",
       "language": "en",
@@ -50,6 +130,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/21/waymo-starts-offering-rides-at-the-las-vegas-airport/",
       "image": ""
+    },
+    {
+      "id": "spacex-to-attempt-starship-catch-on-next-flig-b9cc9712c518",
+      "language": "en",
+      "title": "SpaceX to attempt Starship catch on next flight, with eye on rapid cadence increase",
+      "excerpt": "\"We have had significant constructive engagement with the FAA.\"",
+      "date": "2026-10-21T16:46:19.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/HTU8ja-XgAE6GwQ-500x500.jpg"
     },
     {
       "id": "russia-says-it-is-ready-to-resume-talks-with--3222098e2424",
@@ -290,6 +380,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/21/sports-betting-young-investors-compounding.html",
       "image": ""
+    },
+    {
+      "id": "the-15-billion-ad-powered-ai-startup-your-doc-25b2428c48d9",
+      "language": "en",
+      "title": "The $15 billion ad-powered AI startup your doctor may already be using",
+      "excerpt": "OpenEvidence is booming despite questions about accuracy and ads.",
+      "date": "2026-10-21T15:14:07.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/10/the-15-billion-ad-powered-ai-startup-your-doctor-may-already-be-using/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/openevidencelist-500x500.jpg"
     },
     {
       "id": "中国团队创新突破分子筛催化-推动羰基化反应-百年老树发新枝-f05f69e64bcf",
@@ -1332,6 +1432,16 @@
       "image": ""
     },
     {
+      "id": "review-carrie-is-a-triumphant-remix-with-one--0610664c2e0b",
+      "language": "en",
+      "title": "Review: Carrie is a triumphant remix with one major flaw",
+      "excerpt": "Mike Flanagan's re-imagining of Stephen King's classic is well worth watching.",
+      "date": "2026-10-21T11:19:12.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/culture/2026/10/review-carrie-is-a-triumphant-remix-with-one-major-flaw/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/carrieTOP-500x500.jpg"
+    },
+    {
       "id": "东西问丨曾珺-跨越90年-外籍友人与长征的故事何以不断书写-0d4a3540f735",
       "language": "zh",
       "title": "东西问丨曾珺：跨越90年，外籍友人与长征的故事何以不断书写？",
@@ -1400,6 +1510,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "http://www.chinanews.com.cn/sh/shipin/cns-d/2026/10-21/news1072553.shtml",
       "image": ""
+    },
+    {
+      "id": "the-past-present-and-future-share-a-show-floo-f26b96f74508",
+      "language": "en",
+      "title": "The past, present, and future share a show floor at Pinball Expo 2026",
+      "excerpt": "Flipping through the highlights in and around Pinball Expo 2026.",
+      "date": "2026-10-21T11:00:04.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gaming/2026/10/the-past-present-and-future-share-a-show-floor-at-pinball-expo-2026/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/PXL_20261016_184926781-500x500.jpg"
     },
     {
       "id": "mortgage-rates-drop-for-the-first-time-in-2-m-5bba4125a3fb",
@@ -2879,126 +2999,6 @@
       "date": "2026-10-21T05:20:05.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718395.shtml",
-      "image": ""
-    },
-    {
-      "id": "东方雨虹董事长李卫国撰文谈慎终如始-守好每一处细节-夯实长期信赖根基-b7738a00a8f1",
-      "language": "zh",
-      "title": "东方雨虹董事长李卫国撰文谈慎终如始：守好每一处细节，夯实长期信赖根基",
-      "excerpt": "近日，东方雨虹董事长李卫国刊发署名文章《慎终如始，则无败事》，以“千丈之堤，以蝼蚁之穴溃；百尺之室，以突隙之烟焚”敲响经营警钟。文中直指，企业最大的危机，从来不是外部市场的激烈竞争，而是潜藏在内部、不易察觉的细微疏漏。顺境之下滋生“差不多”的懈怠心态，便是在透支数十年积攒下来的市场信任。企业无法依靠运气行稳致远，唯有常怀敬畏之心、事事较真、守住每一处细节，方能筑牢长青根基。",
-      "date": "2026-10-21T05:19:57.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718400.shtml",
-      "image": ""
-    },
-    {
-      "id": "北交所上市公司达351家-民营企业近九成-7e46948cdba9",
-      "language": "zh",
-      "title": "北交所上市公司达351家 民营企业近九成",
-      "excerpt": "中新社北京10月21日电 (记者 吕少威 郎佳慧)北京证券交易所(简称“北交所”)现有上市公司351家，中小企业超七成，民营企业近九成，战略新兴产业超八成，国家级专精特新“小巨人”企业超六成，一批代表新质生产力发展方向的优质企业实现高效上市。",
-      "date": "2026-10-21T05:18:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718394.shtml",
-      "image": ""
-    },
-    {
-      "id": "晚宴-球场-集会-特朗普屡遭刺杀威胁-美国政治暴力阴影难消-8147f8d662ef",
-      "language": "zh",
-      "title": "晚宴、球场、集会……特朗普屡遭刺杀威胁，美国政治暴力阴影难消",
-      "excerpt": "中新网10月21日电 综合外媒20日报道，美国司法部堪萨斯州联邦检察官办公室当地时间19日表示，一名涉嫌威胁刺杀美国总统特朗普的男子已被逮捕。",
-      "date": "2026-10-21T05:17:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-21/10718404.shtml",
-      "image": ""
-    },
-    {
-      "id": "伊朗强调所有核材料将留在国内-建立信任是谈判前提-f0db1e67374b",
-      "language": "zh",
-      "title": "伊朗强调所有核材料将留在国内 建立信任是谈判前提",
-      "excerpt": "中新社北京10月21日电 综合消息：伊朗多名官员20日会见到访的巴基斯坦陆军参谋长穆尼尔，赞赏巴方斡旋努力，强调重启谈判的前提是美国采取措施建立信任。伊方明确表示，所有核材料都将留在伊朗国内。",
-      "date": "2026-10-21T05:16:48.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-21/10718402.shtml",
-      "image": ""
-    },
-    {
-      "id": "也门多线交火致人道主义危机加剧-超25万人流离失所-c03eccda4dc7",
-      "language": "zh",
-      "title": "也门多线交火致人道主义危机加剧 超25万人流离失所",
-      "excerpt": "中新社北京10月21日电 综合消息：也门战事20日多线持续交火，也门政府军称过去24小时内消灭约200名也门胡塞武装人员；胡塞方面则指责沙特阿拉伯空袭致平民死亡。同时，联合国机构20日警告，也门新一轮战事已迫使超25万人流离失所，当地人道主义危机加剧。",
-      "date": "2026-10-21T05:16:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-21/10718391.shtml",
-      "image": ""
-    },
-    {
-      "id": "国台办回应大陆在东沙海域执法巡查-0dcb8abda5d9",
-      "language": "zh",
-      "title": "国台办回应大陆在东沙海域执法巡查",
-      "excerpt": "中新网10月21日电 10月21日，国务院台办举行例行新闻发布会。有记者问：请问近期大陆方面加大在东沙海域巡航，是否受到先前水炮事件影响？未来会否在该海域扩大管制？",
-      "date": "2026-10-21T05:08:00.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718399.shtml",
-      "image": ""
-    },
-    {
-      "id": "cop31召开在即-我国将积极推动气候变化国际谈判进程-892f271cf537",
-      "language": "zh",
-      "title": "COP31召开在即 我国将积极推动气候变化国际谈判进程",
-      "excerpt": "中新网10月21日电 21日，国新办就中国积极应对气候变化、参与引领全球气候治理有关情况举行新闻发布会。生态环境部副部长李高介绍，今年的联合国气候变化大会(COP31)将于11月9日至20日在土耳其安塔利亚举行，生态环境部将会同外交部等十多个部委和研究机构以及香港、澳门特别行政区政府，组成中国代表团参加COP31。",
-      "date": "2026-10-21T05:00:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718366.shtml",
-      "image": ""
-    },
-    {
-      "id": "内蒙古自治区赤峰市政协副主席郭玉强接受审查调查-3a50e7296d63",
-      "language": "zh",
-      "title": "内蒙古自治区赤峰市政协副主席郭玉强接受审查调查",
-      "excerpt": "中新网10月21日电 据内蒙古自治区纪委监委消息：内蒙古自治区赤峰市政协党组副书记、副主席郭玉强涉嫌严重违纪违法，目前正接受内蒙古自治区纪委监委纪律审查和监察调查。",
-      "date": "2026-10-21T04:57:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718389.shtml",
-      "image": ""
-    },
-    {
-      "id": "近观中国-习近平说长征-要走好我们这一代人的长征路-22e43d664303",
-      "language": "zh",
-      "title": "（近观中国）习近平说长征：要走好我们这一代人的长征路",
-      "excerpt": "中新社北京10月21日电 题：习近平说长征：要走好我们这一代人的长征路",
-      "date": "2026-10-21T04:51:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-21/10718387.shtml",
-      "image": ""
-    },
-    {
-      "id": "u-s-eyes-refining-muscle-of-indian-billionair-e78fc87cfff9",
-      "language": "en",
-      "title": "U.S. eyes refining muscle of Indian billionaire Ambani's Reliance as Rubio visits Jamnagar plant",
-      "excerpt": "Rubio said the \"extraordinary\" refining capacity of Reliance could help India diversify its energy supplies, hinting at greater offtake of Venezuelan crude.",
-      "date": "2026-10-21T04:47:43.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/21/rubio-reliance-venezuela-oil-diesel.html",
-      "image": ""
-    },
-    {
-      "id": "新阶层-新经济-老爸评测-创始人魏文锋-让-看不见的风险-被看见-f805ca9b7bc6",
-      "language": "zh",
-      "title": "新阶层·新经济 | “老爸评测”创始人魏文锋：让“看不见的风险”被看见",
-      "excerpt": "中新网杭州10月21日电(钱晨菲)“作为一个做检测的爸爸，连孩子每天使用的东西是否安全都无法识别，我觉得这是我的失职。”十多年前，一次关于书皮问题的发现，让魏文锋重新审视自己的职业。",
-      "date": "2026-10-21T04:47:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-21/10718363.shtml",
-      "image": ""
-    },
-    {
-      "id": "樊振东发文抵制偷拍-以爱为名-岂能成为僭越隐私的托词-1b7ce527d05a",
-      "language": "zh",
-      "title": "樊振东发文抵制偷拍！以爱为名，岂能成为僭越隐私的托词？",
-      "excerpt": "10月21日，樊振东在个人微博发文抵制偷拍。他明确指出，不管偷拍者是什么身份什么心态什么目的，都无法改变这类行为不尊重他人、侵犯他人隐私的本质，即使以爱为名，即使延迟发布扩散。",
-      "date": "2026-10-21T04:44:37.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-21/10718390.shtml",
       "image": ""
     }
   ]
