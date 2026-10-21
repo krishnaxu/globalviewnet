@@ -58,11 +58,11 @@ body_en: >-
   Traditional drug development requires multiple stages, including target validation, lead compound discovery, drug candidate optimization, and preclinical research. Artificial intelligence can help researchers analyze large amounts of data, identify potential patterns, and provide references for experimental design.
 
 
-  * **Target Discovery:**Analyze biological data for potential therapeutic targets.
+  * **Target Discovery:** Analyze biological data for potential therapeutic targets.
 
-  * **Molecular Design:**Assist in predicting the relationship between molecular structure and biological activity.
+  * **Molecular Design:** Assist in predicting the relationship between molecular structure and biological activity.
 
-  * **Experimental Optimization:**Adjust the experimental protocol according to the existing results to reduce unnecessary duplication of work.
+  * **Experimental Optimization:** Adjust the experimental protocol according to the existing results to reduce unnecessary duplication of work.
 
 
   ## II. Limitations of the technology
@@ -80,5 +80,5 @@ body_en: >-
   In the future, the combination of artificial intelligence with experimental platforms, automation equipment and high-quality data may further promote the optimization of R&D processes. The practical value of technology applications still needs to be evaluated in combination with specific tasks, validation results, and costs.
 
 
-  **Summary:**Artificial intelligence can assist life science research, but it cannot replace rigorous experimental verification and scientific judgment.
+  **Summary:** Artificial intelligence can assist life science research, but it cannot replace rigorous experimental verification and scientific judgment.
 ---
