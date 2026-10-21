@@ -62,14 +62,15 @@ function readState() {
 async function createDraft(subject, body, slug) {
   const response = await fetch(API_URL, {
     method: "POST",
-    headers: {
-      Authorization: `Token ${apiKey}`,
-      "Content-Type": "application/json"
-    },
+headers: {
+Authorization: `Token ${apiKey}`,
+  "Content-Type": "application/json",
+  "X-Buttondown-Live-Dangerously": "true"
+},
     body: JSON.stringify({
       subject,
       body,
-      status: "draft",
+     status: "about_to_send",
       slug: `cms-${slug}`
     })
   });
