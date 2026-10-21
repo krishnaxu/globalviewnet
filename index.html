@@ -2068,36 +2068,23 @@ function refreshAutoNewsIds() {
     });
 
 
-   // 页脚免责声明：跳转到关于页对应内容
+   
+ // 页脚免责声明：跳转到关于页对应内容
 $("#footerDisclaimerLink").addEventListener("click", event => {
   event.preventDefault();
 
   navigate("about", { scrollTop: false });
 
   requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      const disclaimer = document.querySelector("#disclaimer");
-if (!disclaimer) {
-  alert("找不到免责声明元素");
-  return;
-}
+    const disclaimer = document.querySelector("#disclaimer");
+    if (!disclaimer) return;
 
-alert(
-  "元素位置：" + disclaimer.getBoundingClientRect().top +
-  "\n页面滚动位置：" + window.scrollY
-);
+    const targetTop =
+      disclaimer.getBoundingClientRect().top + window.scrollY;
 
-disclaimer.scrollIntoView({
-  behavior: "auto",
-  block: "start"
-});
-
-setTimeout(() => {
-  alert(
-    "滚动后位置：" + disclaimer.getBoundingClientRect().top +
-    "\n页面滚动位置：" + window.scrollY
-  );
-}, 500);
+    window.scrollTo({
+      top: targetTop,
+      behavior: "smooth"
     });
   });
 });
