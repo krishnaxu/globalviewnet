@@ -5,7 +5,7 @@
   const BUTTON_ID = "manual-translate-button";
   const BRIDGE_KEY = "__GVN_RICHTEXT_FIELDS__";
   const REQUEST_TIMEOUT = 300000;
-  const MAX_CHUNK_LENGTH = 700;
+  const MAX_CHUNK_LENGTH = 1200;
 
   const FIELD_SELECTOR =
     ".CodeMirror, textarea, input:not([type='checkbox']):not([type='radio'])";
@@ -289,7 +289,7 @@
     return false;
   }
 
-  // 长文本按段落优先切分，避免翻译时把整篇文章的段落边界混在一起。
+  // 长文本按段落优先切分，避免单次请求过长。
   function splitLongBlock(text) {
     const chunks = [];
     let remaining = text.trim();
@@ -329,8 +329,8 @@
     return chunks;
   }
 
+  // 返回二维数组：每个原文段落包含一个或多个分块。
   function splitText(text) {
-    // 空行是段落边界；先保留这些边界，再拆分超长段落。
     const normalizedText = String(text || "")
       .replace(/\r\n?/g, "\n")
       .trim();
@@ -338,20 +338,21 @@
     if (!normalizedText) return [];
 
     const blocks = normalizedText.split(/\n[ \t]*\n+/);
-    const chunks = [];
+    const paragraphs = [];
 
     for (const block of blocks) {
       const trimmed = block.trim();
       if (!trimmed) continue;
 
-      if (trimmed.length <= MAX_CHUNK_LENGTH) {
-        chunks.push(trimmed);
-      } else {
-        chunks.push(...splitLongBlock(trimmed));
-      }
+      const chunks =
+        trimmed.length <= MAX_CHUNK_LENGTH
+          ? [trimmed]
+          : splitLongBlock(trimmed);
+
+      paragraphs.push(chunks);
     }
 
-    return chunks;
+    return paragraphs;
   }
 
   async function requestTranslation(text) {
@@ -384,6 +385,17 @@
         const result = await response.json();
         const translation = result.translation;
 
+        // 后端必须同时返回 finishReason，才能识别输出截断。
+        if (result.finishReason === "length") {
+          const error = new Error(
+            "模型输出触及 Token 上限，当前分块的译文可能不完整。" +
+            "系统已停止接受该段译文。请缩小分块或调整输出上限后重试。"
+          );
+
+          error.code = "TRANSLATION_OUTPUT_TRUNCATED";
+          throw error;
+        }
+
         if (
           typeof translation !== "string" ||
           !translation.trim()
@@ -404,6 +416,14 @@
         return translation.trim();
       } catch (error) {
         lastError = error;
+
+        // 输出被截断时不自动重试，避免重复消耗请求。
+        if (
+          error &&
+          error.code === "TRANSLATION_OUTPUT_TRUNCATED"
+        ) {
+          throw error;
+        }
 
         if (attempt < 2) {
           await new Promise(
@@ -428,24 +448,49 @@
     const source = String(text || "");
     const protectedImages = [];
 
-    // 将图片标记替换成不会被普通分块拆开的独立标记。
+    // 先保护 Markdown 图片，防止图片链接被拆分或翻译。
     const protectedText = source.replace(
       /!\[[^\]]*\]\([^)\n]*\)/g,
       function (markdown) {
-        const token = "GVNIMAGEPLACEHOLDER" +
-          protectedImages.length + "END";
+        const token =
+          "GVNIMAGEPLACEHOLDER" +
+          protectedImages.length +
+          "END";
 
         protectedImages.push({ token, markdown });
         return token;
       }
     );
 
-    // 按原始空行分段，记录每段之间原本的分隔符。
+    // 保留原文段落之间的空行。
     const normalized = protectedText.replace(/\r\n?/g, "\n");
     const parts = normalized.split(/(\n[ \t]*\n+)/);
     const output = [];
 
+    let completed = 0;
+    let total = 0;
+
+    // 统计总分块数，使进度显示对应整项翻译任务。
     for (const part of parts) {
+      if (!part.trim()) continue;
+
+      if (
+        protectedImages.some(
+          image => part.trim() === image.token
+        )
+      ) {
+        continue;
+      }
+
+      const paragraphs = splitText(part);
+
+      for (const paragraph of paragraphs) {
+        total += paragraph.length;
+      }
+    }
+
+    for (const part of parts) {
+      // 原文段落间的空行直接保留，不送去翻译。
       if (/^\n[ \t]*\n+$/.test(part)) {
         output.push(part);
         continue;
@@ -456,32 +501,47 @@
         continue;
       }
 
-      // 只有纯图片占位符的段落不发送给模型。
+      // 纯图片标记不需要调用模型。
       if (
-        protectedImages.some(image => part.trim() === image.token)
+        protectedImages.some(
+          image => part.trim() === image.token
+        )
       ) {
         output.push(part);
         continue;
       }
 
-      const chunks = splitText(part);
-      const translatedChunks = [];
+      const paragraphs = splitText(part);
+      const translatedParagraphs = [];
 
-      for (let i = 0; i < chunks.length; i++) {
-        progress(i + 1, chunks.length);
-        translatedChunks.push(
-          await requestTranslation(chunks[i])
+      for (const paragraph of paragraphs) {
+        const translatedChunks = [];
+
+        for (const chunk of paragraph) {
+          const translation = await requestTranslation(chunk);
+          translatedChunks.push(translation);
+
+          completed++;
+          progress(completed, total);
+        }
+
+        // 同一段原文被拆成多个分块时，以单个换行衔接。
+        translatedParagraphs.push(
+          translatedChunks.join("\n")
         );
       }
 
-      output.push(translatedChunks.join("\n"));
+      output.push(
+        translatedParagraphs.join("\n\n")
+      );
     }
 
     let translated = output.join("");
 
-    // 图片标记必须完整保留，且每个标记只能出现一次。
+    // 校验每个图片标记均完整保留且只出现一次。
     for (const image of protectedImages) {
-      const count = translated.split(image.token).length - 1;
+      const count =
+        translated.split(image.token).length - 1;
 
       if (count !== 1) {
         throw new Error(
@@ -499,7 +559,6 @@
   }
 
   function cleanEnglishTitle(title) {
-    // 只去除标题末尾的英文句点或中文句号，不改标题内部标点。
     return String(title || "")
       .trim()
       .replace(/[.。]+$/u, "")
@@ -646,9 +705,10 @@
           );
         }
 
-        // 正文额外检查桥接字段是否仍能读取到回填后的内容。
+        // 正文额外校验富文本桥接状态。
         if (item.type === "body") {
-          const refreshedTarget = getRichTextDescriptor("body_en");
+          const refreshedTarget =
+            getRichTextDescriptor("body_en");
 
           if (
             !refreshedTarget ||
