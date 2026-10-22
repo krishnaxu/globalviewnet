@@ -632,15 +632,18 @@
       JSON.stringify(translatedStructure[key])
     );
 
-    if (mismatches.length > 0) {
-      console.error(
-        "[GVN Translate] Markdown结构校验详情",
-        mismatches.map(key => ({
-          项目: labels[key],
-          原文: originalStructure[key],
-          译文: translatedStructure[key]
-        }))
-      );
+   console.error(
+  "[GVN Translate] Markdown结构校验详情：" +
+  JSON.stringify(
+    mismatches.map(key => ({
+      项目: labels[key],
+      原文: originalStructure[key],
+      译文: translatedStructure[key]
+    })),
+    null,
+    2
+  )
+);
 
       throw new Error(
         "正文格式校验失败，存在差异的项目：" +
