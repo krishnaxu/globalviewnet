@@ -1,4 +1,4 @@
-
+```yaml
 backend:
   name: github
   repo: krishnaxu/globalviewnet
@@ -42,14 +42,12 @@ collections:
         default: "tech"
         required: true
 
-        
       - label: "发布到我的专栏"
         name: "show_in_column"
         widget: "boolean"
         default: false
         required: true
         hint: "勾选后，该文章将显示在首页“我的专栏”列表中。"
-
 
       - label: "发布日期"
         name: "date"
@@ -95,7 +93,6 @@ collections:
         widget: "text"
         required: false
 
-
       - label: "中文正文"
         name: "body_zh"
         widget: "richtext-bridge"
@@ -103,15 +100,22 @@ collections:
         buttons:
           - bold
           - italic
+          - code
           - link
+          - heading-one
           - heading-two
           - heading-three
+          - heading-four
+          - quote
           - bulleted-list
           - numbered-list
-        editor_components: []
+        editor_components:
+          - image
+          - code-block
         modes:
           - rich_text
-        
+          - raw
+
       - label: "English Title（英文标题）"
         name: "title_en"
         widget: "string"
@@ -122,7 +126,6 @@ collections:
         widget: "text"
         required: false
 
-
       - label: "English Body（英文正文）"
         name: "body_en"
         widget: "richtext-bridge"
@@ -130,15 +133,22 @@ collections:
         buttons:
           - bold
           - italic
+          - code
           - link
+          - heading-one
           - heading-two
           - heading-three
+          - heading-four
+          - quote
           - bulleted-list
           - numbered-list
-        editor_components: []
+        editor_components:
+          - image
+          - code-block
         modes:
           - rich_text
-        
+          - raw
+
   - name: "site_settings"
     label: "网站图片设置"
     files:
@@ -252,46 +262,4 @@ collections:
         widget: "string"
         required: true
 
-      - label: "发表平台"
-        name: "platform"
-        widget: "string"
-        default: "人民网"
-        required: true
-
-      - label: "发布日期"
-        name: "date"
-        widget: "datetime"
-        required: false
-
-      - label: "作品简介"
-        name: "excerpt"
-        widget: "text"
-        required: false
-
-      - label: "封面图片"
-        name: "cover_image"
-        widget: "image"
-        required: false
-        
-      - label: "发布到首页"
-        name: "published"
-        widget: "boolean"
-        default: false
-        required: true
-
-      - label: "作品正文"
-        name: "body"
-        widget: "markdown"
-        required: false
-        buttons:
-          - bold
-          - italic
-          - link
-          - heading-two
-          - heading-three
-          - quote
-          - bulleted-list
-          - numbered-list
-        modes:
-          - rich_text
-          - raw
+      - label
