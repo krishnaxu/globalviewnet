@@ -302,19 +302,18 @@
 
       if (!track || !dotsContainer) return;
 
-      const featuredArticles = articles
-        .filter(article =>
-          hasLanguage(article) &&
-          (article.cms
-            ? article.show_in_column === true
-            : String(article.id || "").startsWith("auto-"))
-        )
-        .slice()
-        .sort((a, b) =>
-          dateValue(b.updatedAt || b.date) -
-          dateValue(a.updatedAt || a.date)
-        )
-        .slice(0, 5);
+const featuredArticles = articles
+  .filter(article =>
+    article.cms === true &&
+    hasLanguage(article) &&
+    article.show_in_column === true
+  )
+  .slice()
+  .sort((a, b) =>
+    dateValue(b.updatedAt || b.date) -
+    dateValue(a.updatedAt || a.date)
+  )
+  .slice(0, 5);
 
       window.globalViewCarouselIds = new Set(
         featuredArticles.map(article => article.id)
