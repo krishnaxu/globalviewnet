@@ -97,23 +97,18 @@ collections:
 
       - label: "中文正文"
         name: "body_zh"
-        widget: "text"
+        widget: "richtext"
         required: false
         buttons:
           - bold
           - italic
-          - code
           - link
-          - heading-one
           - heading-two
           - heading-three
-          - quote
           - bulleted-list
           - numbered-list
-        modes:
-          - rich_text
-          - raw
-
+        editor_components: []
+        
       - label: "English Title（英文标题）"
         name: "title_en"
         widget: "string"
@@ -126,23 +121,18 @@ collections:
 
       - label: "English Body（英文正文）"
         name: "body_en"
-        widget: "text"
+        widget: "richtext"
         required: false
         buttons:
           - bold
           - italic
-          - code
           - link
-          - heading-one
           - heading-two
           - heading-three
-          - quote
           - bulleted-list
           - numbered-list
-        modes:
-          - rich_text
-          - raw
-
+        editor_components: []
+        
   - name: "site_settings"
     label: "网站图片设置"
     files:
