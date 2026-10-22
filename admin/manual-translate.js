@@ -442,12 +442,14 @@
     throw lastError || new Error("翻译请求失败");
   }
 
-  async function translateText(text, progress) {
+
+async function translateText(text, progress) {
     const source = String(text || "");
     const protectedImages = [];
+    const protectedHeadings = [];
 
-    // 暂时保护完整的 Markdown 图片语法。
-    const protectedText = source.replace(
+    // 保护完整的 Markdown 图片语法。
+    let protectedText = source.replace(
       /!\[[^\]]*\]\([^)\n]*\)/g,
       function (markdown) {
         const token =
@@ -456,6 +458,25 @@
           "END";
 
         protectedImages.push({ token, markdown });
+        return token;
+      }
+    );
+
+    // 保护 Markdown 标题标记，保留原文标题层级。
+    // 例如：## 中文小标题 -> GVNHEADINGPLACEHOLDER0END中文小标题
+    protectedText = protectedText.replace(
+      /^( {0,3})(#{1,6})([ \t]+)(?=\S)/gm,
+      function (match, indent, hashes, spacing) {
+        const token =
+          "GVNHEADINGPLACEHOLDER" +
+          protectedHeadings.length +
+          "END";
+
+        protectedHeadings.push({
+          token,
+          markdown: indent + hashes + spacing
+        });
+
         return token;
       }
     );
@@ -531,7 +552,7 @@
 
     let translated = output.join("");
 
-    // 每个图片占位符必须保留一次，随后恢复原始图片语法。
+    // 检查并恢复每个图片标记。
     for (const image of protectedImages) {
       const count =
         translated.split(image.token).length - 1;
@@ -548,10 +569,28 @@
       );
     }
 
+    // 检查并恢复每个标题标记。
+    for (const heading of protectedHeadings) {
+      const count =
+        translated.split(heading.token).length - 1;
+
+      if (count !== 1) {
+        throw new Error(
+          "标题标记校验失败，已停止回填。请勿保存或发布文章。"
+        );
+      }
+
+      translated = translated.replace(
+        heading.token,
+        heading.markdown
+      );
+    }
+
     return translated;
   }
 
   // 提取 Markdown 结构。图片替代文字和链接显示文字允许翻译。
+  
   function getMarkdownStructure(text) {
     const source = String(text || "");
 
