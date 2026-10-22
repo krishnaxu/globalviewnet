@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f7f3">
   <title>我的专栏 | Global View</title>
-  <meta name="description" content="浏览 GlobalViewNet 专栏文章，阅读持续更新的行业观察、观点与深度内容，发现全球资讯背后的趋势与思考。">
+  <meta name="description" content="浏览 GlobalViewNet 专栏文章，阅读持续更新的行业观察、观点与深度内容。">
 
   <style>
     :root {
@@ -61,4 +61,572 @@
     .lang-switch {
       display: flex;
       flex-shrink: 0;
-      gap
+      gap: 4px;
+      padding: 4px;
+      border-radius: 99px;
+      background: #eeede7;
+    }
+
+    .lang-btn {
+      padding: 5px 10px;
+      border: 0;
+      border-radius: 99px;
+      background: transparent;
+      color: var(--muted);
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    main {
+      padding: 38px 0 60px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-family: Georgia, "Songti SC", "SimSun", serif;
+      font-size: clamp(28px, 5vw, 38px);
+      font-weight: 500;
+      line-height: 1.35;
+    }
+
+    .intro {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .count {
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .article-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .article-card {
+      display: block;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card);
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.2s;
+    }
+
+    .article-card:hover {
+      border-color: var(--accent);
+    }
+
+    .article-title {
+      margin: 0 0 8px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.55;
+    }
+
+    .article-excerpt {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .article-meta {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .status {
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 28px;
+      font-size: 14px;
+    }
+
+    .pagination button {
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--card);
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .pagination button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .pagination button:hover:not(:disabled) {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .page-indicator {
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding-top: 26px;
+      }
+
+      .article-card {
+        padding: 16px;
+      }
+
+      .article-title {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <a class="back-link" id="backLink" href="/">← 返回首页</a>
+
+      <div class="lang-switch" aria-label="Language selector">
+        <button type="button" class="lang-btn" data-lang="zh">中文</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 id="columnTitle">我的专栏</h1>
+    <p class="intro" id="columnIntro">文章与观点，持续更新。</p>
+
+    <div class="count" id="articleCount">正在加载文章……</div>
+    <div class="article-list" id="articleList"></div>
+
+    <nav class="pagination" id="pagination"
+         aria-label="专栏文章分页" hidden>
+      <button type="button" id="prevPage">上一页</button>
+      <span class="page-indicator" id="pageIndicator">第 1 / 1 页</span>
+      <button type="button" id="nextPage">下一页</button>
+    </nav>
+
+    <p class="status" id="status" role="status"></p>
+  </main>
+
+  <script>
+    (async function () {
+      "use strict";
+
+      const list = document.getElementById("articleList");
+      const pagination = document.getElementById("pagination");
+      const prevPageButton = document.getElementById("prevPage");
+      const nextPageButton = document.getElementById("nextPage");
+      const pageIndicator = document.getElementById("pageIndicator");
+      const count = document.getElementById("articleCount");
+      const status = document.getElementById("status");
+      const backLink = document.getElementById("backLink");
+      const columnTitle = document.getElementById("columnTitle");
+      const columnIntro = document.getElementById("columnIntro");
+
+      const pageSize = 10;
+
+      let currentPage = 1;
+      let posts = [];
+      let loadFailed = false;
+
+      function getLanguage() {
+        const params = new URLSearchParams(window.location.search);
+
+        if (params.get("lang") === "en") return "en";
+        if (params.get("lang") === "zh") return "zh";
+
+        try {
+          return localStorage.getItem("gp-lang") === "en"
+            ? "en"
+            : "zh";
+        } catch (_) {
+          return "zh";
+        }
+      }
+
+      let currentLang = getLanguage();
+
+      function t(zh, en) {
+        return currentLang === "en" ? en : zh;
+      }
+
+      function isTrue(value) {
+        return value === true ||
+          String(value || "").trim().toLowerCase() === "true";
+      }
+
+      function dateValue(value) {
+        const timestamp = Date.parse(value || "");
+        return Number.isFinite(timestamp) ? timestamp : 0;
+      }
+
+      function displayDate(value) {
+        if (!value) return "";
+
+        const date = new Date(value);
+
+        if (Number.isNaN(date.getTime())) {
+          return "";
+        }
+
+        return new Intl.DateTimeFormat(
+          currentLang === "en" ? "en-US" : "zh-CN",
+          {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+          }
+        ).format(date);
+      }
+
+      function addText(parent, tag, className, value) {
+        const element = document.createElement(tag);
+        element.className = className;
+        element.textContent = value || "";
+        parent.appendChild(element);
+        return element;
+      }
+
+      function applyLanguage() {
+        document.documentElement.lang =
+          currentLang === "en" ? "en" : "zh-CN";
+
+        document.title = t(
+          "我的专栏 | Global View",
+          "My Column | Global View"
+        );
+
+        document.querySelector(
+          'meta[name="description"]'
+        ).content = t(
+          "浏览 GlobalViewNet 专栏文章，阅读持续更新的行业观察、观点与深度内容。",
+          "Explore GlobalViewNet column articles, industry insights, perspectives and in-depth analysis."
+        );
+
+        backLink.textContent = t(
+          "← 返回首页",
+          "← Back to Home"
+        );
+
+        columnTitle.textContent = t(
+          "我的专栏",
+          "My Column"
+        );
+
+        columnIntro.textContent = t(
+          "文章与观点，持续更新。",
+          "Articles and perspectives, updated regularly."
+        );
+
+        prevPageButton.textContent = t(
+          "上一页",
+          "Previous"
+        );
+
+        nextPageButton.textContent = t(
+          "下一页",
+          "Next"
+        );
+
+        document.querySelectorAll("[data-lang]").forEach(button => {
+          const active = button.dataset.lang === currentLang;
+
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+
+        pagination.setAttribute(
+          "aria-label",
+          t("专栏文章分页", "Column article pagination")
+        );
+
+        try {
+          localStorage.setItem("gp-lang", currentLang);
+        } catch (_) {}
+      }
+
+      // 语言资格由 API 根据标题和正文共同判断。
+      // 不使用通用 title 字段推断英文版本。
+      function hasLanguageVersion(post, lang) {
+        if (lang === "en") {
+          return post.has_en === true;
+        }
+
+        return post.has_zh === true;
+      }
+
+      function getPostTitle(post) {
+        if (currentLang === "en") {
+          return String(post.title_en || "").trim();
+        }
+
+        return String(
+          post.title_zh || post.title || ""
+        ).trim();
+      }
+
+      function getPostExcerpt(post) {
+        if (currentLang === "en") {
+          return String(post.excerpt_en || "").trim();
+        }
+
+        return String(
+          post.excerpt_zh || post.excerpt || ""
+        ).trim();
+      }
+
+      function getPostUrl(post) {
+        if (!post.slug) return "";
+
+        const slug = encodeURIComponent(post.slug);
+
+        if (currentLang === "en") {
+          return "/posts/" + slug + "?lang=en";
+        }
+
+        return "/posts/" + slug + "?lang=zh";
+      }
+
+      function getVisiblePosts() {
+        return posts.filter(post =>
+          hasLanguageVersion(post, currentLang) &&
+          Boolean(getPostTitle(post))
+        );
+      }
+
+      function renderPage() {
+        if (loadFailed) return;
+
+        const visiblePosts = getVisiblePosts();
+
+        const totalPages = Math.max(
+          1,
+          Math.ceil(visiblePosts.length / pageSize)
+        );
+
+        if (currentPage > totalPages) {
+          currentPage = totalPages;
+        }
+
+        const startIndex = (currentPage - 1) * pageSize;
+
+        const pagePosts = visiblePosts.slice(
+          startIndex,
+          startIndex + pageSize
+        );
+
+        list.replaceChildren();
+        status.textContent = "";
+
+        if (visiblePosts.length === 0) {
+          pagination.hidden = true;
+
+          count.textContent = t(
+            "共 0 篇文章",
+            "0 articles"
+          );
+
+          status.textContent = t(
+            "当前语言暂时没有已发布的专栏文章。",
+            "No published column articles are available in this language yet."
+          );
+
+          return;
+        }
+
+        count.textContent = currentLang === "en"
+          ? `${visiblePosts.length} articles`
+          : `共 ${visiblePosts.length} 篇文章`;
+
+        pagePosts.forEach(post => {
+          const link = document.createElement("a");
+          link.className = "article-card";
+
+          const url = getPostUrl(post);
+
+          if (url) {
+            link.href = url;
+          } else {
+            link.href = "#";
+            link.addEventListener("click", event => {
+              event.preventDefault();
+            });
+          }
+
+          addText(
+            link,
+            "h2",
+            "article-title",
+            getPostTitle(post)
+          );
+
+          const excerpt = getPostExcerpt(post);
+
+          if (excerpt) {
+            addText(
+              link,
+              "p",
+              "article-excerpt",
+              excerpt
+            );
+          }
+
+          const date = displayDate(
+            post.updatedAt ||
+            post.updated_at ||
+            post.date
+          );
+
+          if (date) {
+            addText(
+              link,
+              "div",
+              "article-meta",
+              date
+            );
+          }
+
+          list.appendChild(link);
+        });
+
+        pagination.hidden = totalPages <= 1;
+
+        pageIndicator.textContent = currentLang === "en"
+          ? `Page ${currentPage} of ${totalPages}`
+          : `第 ${currentPage} / ${totalPages} 页`;
+
+        prevPageButton.disabled = currentPage <= 1;
+        nextPageButton.disabled = currentPage >= totalPages;
+      }
+
+      document.querySelectorAll("[data-lang]").forEach(button => {
+        button.addEventListener("click", () => {
+          const nextLang =
+            button.dataset.lang === "en" ? "en" : "zh";
+
+          if (nextLang === currentLang) return;
+
+          currentLang = nextLang;
+          currentPage = 1;
+
+          applyLanguage();
+          renderPage();
+
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", currentLang);
+
+          window.history.replaceState({}, "", url);
+        });
+      });
+
+      prevPageButton.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderPage();
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
+      });
+
+      nextPageButton.addEventListener("click", () => {
+        const totalPages = Math.max(
+          1,
+          Math.ceil(getVisiblePosts().length / pageSize)
+        );
+
+        if (currentPage < totalPages) {
+          currentPage++;
+          renderPage();
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
+      });
+
+      applyLanguage();
+
+      try {
+        const response = await fetch("/api/posts", {
+          headers: {
+            Accept: "application/json"
+          },
+          cache: "no-store"
+        });
+
+        if (!response.ok) {
+          throw new Error("文章数据请求失败");
+        }
+
+        const data = await response.json();
+
+        if (!data.success || !Array.isArray(data.posts)) {
+          throw new Error("文章数据格式不正确");
+        }
+
+        posts = data.posts
+          .filter(post =>
+            post.slug &&
+            isTrue(post.show_in_column) &&
+            post.published !== false &&
+            String(post.published).toLowerCase() !== "false"
+          )
+          .slice()
+          .sort((a, b) =>
+            dateValue(
+              b.updatedAt || b.updated_at || b.date
+            ) -
+            dateValue(
+              a.updatedAt || a.updated_at || a.date
+            )
+          );
+
+        renderPage();
+
+      } catch (error) {
+        console.error("专栏文章加载失败：", error);
+
+        loadFailed = true;
+        list.replaceChildren();
+        pagination.hidden = true;
+
+        count.textContent = t(
+          "文章加载失败",
+          "Failed to load articles"
+        );
+
+        status.textContent = t(
+          "暂时无法加载专栏文章，请稍后刷新页面。",
+          "Unable to load column articles. Please refresh the page later."
+        );
+      }
+    })();
+  </script>
+</body>
+</html>
