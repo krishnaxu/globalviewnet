@@ -97,7 +97,7 @@ collections:
 
       - label: "中文正文"
         name: "body_zh"
-        widget: "markdown"
+        widget: "text"
         required: false
         buttons:
           - bold
@@ -126,7 +126,7 @@ collections:
 
       - label: "English Body（英文正文）"
         name: "body_en"
-        widget: "markdown"
+        widget: "text"
         required: false
         buttons:
           - bold
