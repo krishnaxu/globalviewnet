@@ -95,6 +95,7 @@ collections:
         widget: "text"
         required: false
 
+
       - label: "中文正文"
         name: "body_zh"
         widget: "richtext"
@@ -108,6 +109,8 @@ collections:
           - bulleted-list
           - numbered-list
         editor_components: []
+        modes:
+          - rich_text
         
       - label: "English Title（英文标题）"
         name: "title_en"
@@ -118,6 +121,7 @@ collections:
         name: "excerpt_en"
         widget: "text"
         required: false
+
 
       - label: "English Body（英文正文）"
         name: "body_en"
@@ -132,6 +136,8 @@ collections:
           - bulleted-list
           - numbered-list
         editor_components: []
+        modes:
+          - rich_text
         
   - name: "site_settings"
     label: "网站图片设置"
