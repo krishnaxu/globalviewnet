@@ -315,7 +315,7 @@ const seoStructuredDataTag =
 </head>
 <body>
   <main class="page">
-    <a class="back" href="/">← 返回首页</a>
+<a class="back" href="/" style="visibility:hidden">← 返回首页</a>
     <article>
       <h1 id="title">__SSR_TITLE__</h1>
       <div id="date" class="date">__SSR_DATE__</div>
@@ -672,6 +672,7 @@ if (backLink) {
 
     backLink.href = lang === "en" ? "/?lang=en" : "/";
   }
+    backLink.style.visibility = "visible";
 }
       } catch (error) {
         titleElement.textContent =
