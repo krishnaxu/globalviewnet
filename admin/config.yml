@@ -98,7 +98,7 @@ collections:
 
       - label: "中文正文"
         name: "body_zh"
-        widget: "richtext"
+        widget: "richtext-bridge"
         required: false
         buttons:
           - bold
@@ -125,7 +125,7 @@ collections:
 
       - label: "English Body（英文正文）"
         name: "body_en"
-        widget: "richtext"
+        widget: "richtext-bridge"
         required: false
         buttons:
           - bold
