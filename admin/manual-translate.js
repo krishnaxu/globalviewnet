@@ -442,155 +442,214 @@
     throw lastError || new Error("翻译请求失败");
   }
 
-
-async function translateText(text, progress) {
-    const source = String(text || "");
-    const protectedImages = [];
-    const protectedHeadings = [];
-
-    // 保护完整的 Markdown 图片语法。
-    let protectedText = source.replace(
-      /!\[[^\]]*\]\([^)\n]*\)/g,
-      function (markdown) {
-        const token =
-          "GVNIMAGEPLACEHOLDER" +
-          protectedImages.length +
-          "END";
-
-        protectedImages.push({ token, markdown });
-        return token;
-      }
-    );
-
-    // 保护 Markdown 标题标记，保留原文标题层级。
-    // 例如：## 中文小标题 -> GVNHEADINGPLACEHOLDER0END中文小标题
-    protectedText = protectedText.replace(
-      /^( {0,3})(#{1,6})([ \t]+)(?=\S)/gm,
-      function (match, indent, hashes, spacing) {
-        const token =
-          "GVNHEADINGPLACEHOLDER" +
-          protectedHeadings.length +
-          "END";
-
-        protectedHeadings.push({
-          token,
-          markdown: indent + hashes + spacing
-        });
-
-        return token;
-      }
-    );
-
-    const normalized = protectedText.replace(/\r\n?/g, "\n");
-    const parts = normalized.split(/(\n[ \t]*\n+)/);
-    const output = [];
-
+  async function translateText(text, progress) {
+    const source = String(text || "").replace(/\r\n?/g, "\n");
+    const protectedItems = [];
     let completed = 0;
-    let total = 0;
 
-    for (const part of parts) {
-      if (!part.trim()) continue;
+    function protect(value, type) {
+      const token =
+        "GVNKEEP" +
+        type +
+        String(protectedItems.length).padStart(5, "0") +
+        "END";
 
-      if (
-        protectedImages.some(
-          image => part.trim() === image.token
-        )
-      ) {
-        continue;
-      }
-
-      const paragraphs = splitText(part);
-
-      for (const paragraph of paragraphs) {
-        total += paragraph.length;
-      }
+      protectedItems.push({ token, value, type });
+      return token;
     }
 
-    for (const part of parts) {
-      if (/^\n[ \t]*\n+$/.test(part)) {
-        output.push(part);
-        continue;
-      }
+    // 保护完整图片语法。
+    let prepared = source.replace(
+      /!\[[^\]]*\]\([^)\n]*\)/g,
+      match => protect(match, "IMAGE")
+    );
 
-      if (!part.trim()) {
-        output.push(part);
-        continue;
-      }
+    // 只保护普通 Markdown 链接的目标地址，显示文字仍可翻译。
+    prepared = prepared.replace(
+      /(?<!!)\[([^\]\n]*)\]\(([^)\n]*)\)/g,
+      (match, label, target) =>
+        "[" + label + "](" + protect(target, "URL") + ")"
+    );
 
-      if (
-        protectedImages.some(
-          image => part.trim() === image.token
+    // 保护标记必须从待翻译文本中剥离，不能交给翻译模型处理。
+    const tokenPattern = protectedItems.length
+      ? new RegExp(
+          "(" +
+          protectedItems
+            .map(item => item.token)
+            .join("|") +
+          ")",
+          "g"
         )
-      ) {
-        output.push(part);
-        continue;
-      }
+      : null;
 
-      const paragraphs = splitText(part);
-      const translatedParagraphs = [];
+    function splitSafely(value) {
+      const chunks = [];
+      let remaining = value;
 
-      for (const paragraph of paragraphs) {
-        const translatedChunks = [];
+      while (remaining.length > MAX_CHUNK_LENGTH) {
+        let cut = -1;
+        const limit = MAX_CHUNK_LENGTH;
+        const minimum = Math.floor(limit / 2);
 
-        for (const chunk of paragraph) {
-          const translation = await requestTranslation(chunk);
-          translatedChunks.push(translation);
+        const candidates = [
+          remaining.lastIndexOf("\n", limit),
+          remaining.lastIndexOf("。", limit),
+          remaining.lastIndexOf("！", limit),
+          remaining.lastIndexOf("？", limit),
+          remaining.lastIndexOf(". ", limit) + 1,
+          remaining.lastIndexOf("! ", limit) + 1,
+          remaining.lastIndexOf("? ", limit) + 1,
+          remaining.lastIndexOf(" ", limit)
+        ];
 
-          completed++;
-          progress(completed, total);
+        for (const candidate of candidates) {
+          if (candidate >= minimum && candidate <= limit) {
+            cut = Math.max(cut, candidate);
+          }
         }
 
-        translatedParagraphs.push(
-          translatedChunks.join("\n")
-        );
+        if (cut < minimum) cut = limit;
+
+        // 不允许在保护标记中间切开。
+        for (const item of protectedItems) {
+          const start = remaining.indexOf(item.token);
+          if (start < 0) continue;
+
+          const end = start + item.token.length;
+
+          if (cut > start && cut < end) {
+            cut = start > 0 ? start : end;
+          }
+        }
+
+        if (cut <= 0) cut = limit;
+
+        chunks.push(remaining.slice(0, cut));
+        remaining = remaining.slice(cut);
       }
 
+      if (remaining) chunks.push(remaining);
+      return chunks;
+    }
+
+    async function translateChunk(raw) {
+      const leading = (raw.match(/^\s*/) || [""])[0];
+      const trailing = (raw.match(/\s*$/) || [""])[0];
+      const end = raw.length - trailing.length;
+      const core = raw.slice(leading.length, end);
+
+      if (!core) return raw;
+
+      const result = await requestTranslation(core);
+
+      completed++;
+      if (typeof progress === "function") {
+        progress(completed, completed);
+      }
+
+      return leading + result + trailing;
+    }
+
+    async function translatePlainText(value) {
+      // 先按保护标记切分；标记原样保留，绝不发送给模型。
+      const pieces = tokenPattern
+        ? value.split(tokenPattern)
+        : [value];
+
+      const output = [];
+
+      for (const piece of pieces) {
+        const protectedItem = protectedItems.find(
+          item => item.token === piece
+        );
+
+        if (protectedItem) {
+          output.push(piece);
+          continue;
+        }
+
+        // 保留段落之间的空行。
+        const paragraphs = piece.split(/(\n[ \t]*\n+)/);
+
+        for (const paragraph of paragraphs) {
+          if (!paragraph.trim()) {
+            output.push(paragraph);
+            continue;
+          }
+
+          const chunks = splitSafely(paragraph);
+
+          for (const chunk of chunks) {
+            output.push(await translateChunk(chunk));
+          }
+        }
+      }
+
+      return output.join("");
+    }
+
+    // 标题行单独处理，保留原始 # 数量、空格和换行。
+    const headingPattern =
+      /^([ \t]{0,3})(#{1,6})([ \t]+)([^\n]*?)(\n?)$/;
+
+    const segments = prepared.split(
+      /(^[ \t]{0,3}#{1,6}[ \t]+[^\n]*(?:\n|$))/gm
+    );
+
+    const output = [];
+
+    for (const segment of segments) {
+      const match = segment.match(headingPattern);
+
+      if (!match) {
+        output.push(await translatePlainText(segment));
+        continue;
+      }
+
+      const [, indent, marker, spacing, headingText, newline] = match;
+      const translatedHeading = headingText.trim()
+        ? await translatePlainText(headingText)
+        : headingText;
+
       output.push(
-        translatedParagraphs.join("\n\n")
+        indent +
+        marker +
+        spacing +
+        translatedHeading +
+        newline
       );
     }
 
     let translated = output.join("");
 
-    // 检查并恢复每个图片标记。
-    for (const image of protectedImages) {
-      const count =
-        translated.split(image.token).length - 1;
+    // 每个保护标记必须恰好出现一次。
+    for (const item of protectedItems) {
+      const count = translated.split(item.token).length - 1;
 
       if (count !== 1) {
         throw new Error(
-          "图片标记校验失败，已停止回填。请勿保存或发布文章。"
+          (item.type === "IMAGE" ? "图片" : "链接") +
+          "保护标记校验失败，已停止回填。请勿保存或发布文章。"
         );
       }
-
-      translated = translated.replace(
-        image.token,
-        image.markdown
-      );
     }
 
-    // 检查并恢复每个标题标记。
-    for (const heading of protectedHeadings) {
-      const count =
-        translated.split(heading.token).length - 1;
+    // 恢复原始图片语法和链接目标地址。
+    for (const item of protectedItems) {
+      translated = translated.replace(item.token, item.value);
+    }
 
-      if (count !== 1) {
-        throw new Error(
-          "标题标记校验失败，已停止回填。请勿保存或发布文章。"
-        );
-      }
-
-      translated = translated.replace(
-        heading.token,
-        heading.markdown
+    if (/GVNKEEP(?:IMAGE|URL)\d{5}END/.test(translated)) {
+      throw new Error(
+        "发现未恢复的 Markdown 保护标记，已停止回填。请勿保存或发布文章。"
       );
     }
 
     return translated;
   }
-
-  // 提取 Markdown 结构。图片替代文字和链接显示文字允许翻译。
   
+  // 提取 Markdown 结构。图片替代文字和链接显示文字允许翻译.
   function getMarkdownStructure(text) {
     const source = String(text || "");
 
@@ -638,8 +697,6 @@ async function translateText(text, progress) {
     };
   }
 
-  // 图片地址和链接目标地址不一致时停止回填；
-  // 其他 Markdown 排版差异只记录警告，允许人工微调。
   function validateMarkdownStructure(original, translated) {
     const originalStructure = getMarkdownStructure(original);
     const translatedStructure = getMarkdownStructure(translated);
