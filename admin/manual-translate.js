@@ -424,55 +424,71 @@
     throw lastError || new Error("翻译请求失败");
   }
 
-
   async function translateText(text, progress) {
-    // 翻译前保护 Markdown 图片，避免把图片地址发送给模型。
+    const source = String(text || "");
     const protectedImages = [];
-    const protectedText = String(text || "").replace(
+
+    // 将图片标记替换成不会被普通分块拆开的独立标记。
+    const protectedText = source.replace(
       /!\[[^\]]*\]\([^)\n]*\)/g,
-      function (imageMarkdown) {
+      function (markdown) {
         const token = "GVNIMAGEPLACEHOLDER" +
           protectedImages.length + "END";
 
-        protectedImages.push({
-          token: token,
-          markdown: imageMarkdown
-        });
-
+        protectedImages.push({ token, markdown });
         return token;
       }
     );
 
-    // 仍然使用原来的分块与翻译流程。
-    const chunks = splitText(protectedText);
-    const results = [];
+    // 按原始空行分段，记录每段之间原本的分隔符。
+    const normalized = protectedText.replace(/\r\n?/g, "\n");
+    const parts = normalized.split(/(\n[ \t]*\n+)/);
+    const output = [];
 
-    for (let i = 0; i < chunks.length; i++) {
-      progress(i + 1, chunks.length);
-      results.push(await requestTranslation(chunks[i]));
+    for (const part of parts) {
+      if (/^\n[ \t]*\n+$/.test(part)) {
+        output.push(part);
+        continue;
+      }
+
+      if (!part.trim()) {
+        output.push(part);
+        continue;
+      }
+
+      // 只有纯图片占位符的段落不发送给模型。
+      if (
+        protectedImages.some(image => part.trim() === image.token)
+      ) {
+        output.push(part);
+        continue;
+      }
+
+      const chunks = splitText(part);
+      const translatedChunks = [];
+
+      for (let i = 0; i < chunks.length; i++) {
+        progress(i + 1, chunks.length);
+        translatedChunks.push(
+          await requestTranslation(chunks[i])
+        );
+      }
+
+      output.push(translatedChunks.join("\n"));
     }
 
-    let translated = results.join("\n\n");
+    let translated = output.join("");
 
-    // 检查图片占位符是否完整，避免图片被静默丢弃。
+    // 图片标记必须完整保留，且每个标记只能出现一次。
     for (const image of protectedImages) {
-      const escapedToken = image.token.replace(
-        /[.*+?^${}()|[\]\\]/g,
-        "\\$&"
-      );
-      const matches = translated.match(
-        new RegExp(escapedToken, "g")
-      ) || [];
+      const count = translated.split(image.token).length - 1;
 
-      if (matches.length !== 1) {
+      if (count !== 1) {
         throw new Error(
           "图片标记校验失败，已停止回填。请勿保存或发布文章。"
         );
       }
-    }
 
-    // 将原始图片标记恢复到译文原来的位置。
-    for (const image of protectedImages) {
       translated = translated.replace(
         image.token,
         image.markdown
