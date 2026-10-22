@@ -6,8 +6,13 @@
 
   window[FIELD_MAP] = window[FIELD_MAP] || {};
 
-  if (!window.CMS || typeof window.CMS.registerWidget !== "function") {
-    console.error("无法注册正文编辑器桥接组件：CMS 尚未加载。");
+  if (
+    !window.CMS ||
+    typeof window.CMS.registerWidget !== "function"
+  ) {
+    console.error(
+      "[GVN Bridge] CMS 未加载，无法注册富文本桥接组件。"
+    );
     return;
   }
 
@@ -16,7 +21,25 @@
   const createClass = window.createClass;
 
   if (typeof h !== "function" || typeof createClass !== "function") {
-    console.error("CMS 未提供自定义编辑器所需的组件接口。");
+    console.error(
+      "[GVN Bridge] 缺少 React 组件接口。"
+    );
+    return;
+  }
+
+  const nativeWidget = CMS.getWidget("richtext");
+
+  if (!nativeWidget || !nativeWidget.control) {
+    console.error(
+      "[GVN Bridge] 找不到原生 richtext 编辑器。"
+    );
+    return;
+  }
+
+  if (!nativeWidget.preview) {
+    console.error(
+      "[GVN Bridge] 原生 richtext 预览组件不可用，停止注册以避免预览异常。"
+    );
     return;
   }
 
@@ -25,6 +48,7 @@
 
     getFieldName: function () {
       const field = this.props.field;
+
       return field && typeof field.get === "function"
         ? field.get("name")
         : "";
@@ -32,11 +56,25 @@
 
     registerField: function () {
       const name = this.getFieldName();
+
       if (!name) return;
 
+      const props = this.props;
+
       window[FIELD_MAP][name] = {
-        getValue: () => this.props.value || "",
-        setValue: (value) => this.props.onChange(value)
+        getValue: function () {
+          return props.value == null ? "" : props.value;
+        },
+
+        setValue: function (value) {
+          if (typeof props.onChange !== "function") {
+            throw new Error(
+              "富文本字段缺少 onChange 接口：" + name
+            );
+          }
+
+          props.onChange(value == null ? "" : value);
+        }
       };
     },
 
@@ -50,21 +88,25 @@
 
     componentWillUnmount: function () {
       const name = this.getFieldName();
-      if (name) delete window[FIELD_MAP][name];
+
+      if (name && window[FIELD_MAP][name]) {
+        delete window[FIELD_MAP][name];
+      }
     },
 
     render: function () {
-      const widget = CMS.getWidget("richtext");
-
-      if (!widget || !widget.control) {
-        return h("div", null, "正文编辑器加载失败，请刷新页面。");
-      }
-
-      return h(widget.control, this.props);
+      return h(nativeWidget.control, this.props);
     }
   });
 
-  CMS.registerWidget("richtext-bridge", RichTextBridge);
+  CMS.registerWidget(
+    "richtext-bridge",
+    RichTextBridge,
+    nativeWidget.preview,
+    nativeWidget.schema
+  );
 
-  console.log("正文编辑器桥接组件已注册。");
+  console.log(
+    "[GVN Bridge] 富文本桥接组件已注册，原生预览组件已保留。"
+  );
 })();
