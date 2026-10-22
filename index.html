@@ -1707,6 +1707,42 @@ track.style.cursor = "grab";
 }
 
     // 资讯卡片：使用 DOM API 构建内容，避免将文章文本直接拼接进 HTML。
+    
+function setSearchHighlight(element, text) {
+  const query = document.getElementById("searchInput").value.trim();
+  element.replaceChildren();
+
+  if (!query) {
+    element.textContent = text || "";
+    return;
+  }
+
+  const content = text || "";
+  const lowerContent = content.toLocaleLowerCase();
+  const lowerQuery = query.toLocaleLowerCase();
+
+  let start = 0;
+  let index;
+
+  while ((index = lowerContent.indexOf(lowerQuery, start)) !== -1) {
+    element.appendChild(
+      document.createTextNode(content.slice(start, index))
+    );
+
+    const mark = document.createElement("mark");
+    mark.textContent = content.slice(index, index + query.length);
+    mark.style.backgroundColor = "#FFF0A6";
+    mark.style.color = "inherit";
+    mark.style.borderRadius = "3px";
+    mark.style.padding = "0 2px";
+
+    element.appendChild(mark);
+    start = index + query.length;
+  }
+
+  element.appendChild(document.createTextNode(content.slice(start)));
+}
+
     function createArticleCard(article) {
       const card = document.createElement("article");
       card.className = "article-card";
@@ -1739,11 +1775,11 @@ track.style.cursor = "grab";
 
       const title = document.createElement("h3");
       title.className = "card-title serif";
-      title.textContent = article.title[currentLang];
+     setSearchHighlight(title, article.title[currentLang]);
 
       const excerpt = document.createElement("p");
       excerpt.className = "card-excerpt";
-      excerpt.textContent = article.excerpt[currentLang];
+      setSearchHighlight(excerpt, article.excerpt[currentLang]);
 
       const meta = document.createElement("div");
       meta.className = "card-meta";
