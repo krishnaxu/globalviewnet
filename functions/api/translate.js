@@ -75,20 +75,26 @@ export async function onRequestPost({ request, env }) {
       );
     }
 
-    const result = await response.json();
-    const translation = result.choices?.[0]?.message?.content?.trim();
+const result = await response.json();
+const choice = result.choices?.[0];
+const translation = choice?.message?.content?.trim();
+const finishReason = choice?.finish_reason || null;
 
-    if (!translation) {
-      return new Response(
-        JSON.stringify({ error: "Empty translation" }),
-        { status: 502, headers }
-      );
-    }
+if (!translation) {
+  return new Response(
+    JSON.stringify({ error: "Empty translation" }),
+    { status: 502, headers }
+  );
+}
 
-    return new Response(
-      JSON.stringify({ translation }),
-      { status: 200, headers }
-    );
+return new Response(
+  JSON.stringify({
+    translation,
+    finishReason
+  }),
+  { status: 200, headers }
+);
+
   } catch (error) {
     console.error("Translation request failed:", error);
 
