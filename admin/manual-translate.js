@@ -558,37 +558,56 @@
     return translated;
   }
 
-    // 比较原文和译文的 Markdown 结构，防止格式丢失后回填。
+  // 比较原文和译文的 Markdown 结构，避免翻译破坏排版。
   function getMarkdownStructure(text) {
     const source = String(text || "");
 
+    // 提取图片地址，不比较图片替代文字，避免文字变化造成误报。
+    const images = Array.from(
+      source.matchAll(/!\[[^\]]*\]\([^)\n]*\)/g),
+      match => match[0]
+        .replace(/^!\[[^\]]*\]\(/, "")
+        .replace(/\)$/, "")
+        .trim()
+    );
+
+    // 提取普通 Markdown 链接的目标地址，不比较链接显示文字。
+    const linkTargets = Array.from(
+      source.matchAll(/(?<!!)\[[^\]]*\]\(([^)\n]*)\)/g),
+      match => match[1].trim()
+    );
+
     return {
+      // 保留每个标题的层级，例如 ## 和 ### 不能互换。
       headingLevels: Array.from(
         source.matchAll(/^ {0,3}(#{1,6})[ \t]+/gm),
         match => match[1].length
       ),
 
+      // 保留列表类型和缩进层级，不强制要求项目符号完全相同。
       listMarkers: Array.from(
-        source.matchAll(
-          /^ {0,3}(?:[-+*]|(\d+)[.)])[ \t]+/gm
-        ),
-        match => match[0].trim().replace(/^\d+/, "#")
+        source.matchAll(/^(\s{0,3})([-+*]|\d+[.)])[ \t]+/gm),
+        match => ({
+          indent: match[1].length,
+          type: /^\d/.test(match[2])
+            ? (match[2].endsWith(")") ? "ordered-paren" : "ordered-dot")
+            : "unordered"
+        })
       ),
 
+      // 保留引用层级，例如 > 和 >>。
       quoteLines: Array.from(
-        source.matchAll(/^ {0,3}>/gm)
-      ).length,
-
-      images: Array.from(
-        source.matchAll(/!\[[^\]]*\]\([^)\n]*\)/g),
-        match => match[0]
+        source.matchAll(/^ {0,3}(>+)/gm),
+        match => match[1].length
       ),
 
-      linkTargets: Array.from(
-        source.matchAll(/(?<!!)\[[^\]]*\]\(([^)\n]*)\)/g),
-        match => match[1]
-      ),
+      // 图片地址必须保持一致，但不比较图片替代文字。
+      images,
 
+      // Markdown 链接目标地址必须保持一致。
+      linkTargets,
+
+      // 保留代码围栏的字符类型和长度。
       codeFences: Array.from(
         source.matchAll(/^ {0,3}(`{3,}|~{3,})/gm),
         match => match[1][0] + match[1].length
@@ -605,12 +624,27 @@
       JSON.stringify(translatedStructure)
     ) {
       throw new Error(
-        "正文格式校验失败：小标题、列表、引用、图片、链接或代码块结构可能发生变化。" +
-        "系统已停止回填，请勿保存或发布。"
+        "正文格式校验失败：标题层级、列表、引用、图片地址、链接地址或代码块结构可能发生变化。" +
+        "系统已停止回填，请检查原文和译文后再继续。"
       );
     }
   }
-  
+
+  function validateMarkdownStructure(original, translated) {
+    const originalStructure = getMarkdownStructure(original);
+    const translatedStructure = getMarkdownStructure(translated);
+
+    if (
+      JSON.stringify(originalStructure) !==
+      JSON.stringify(translatedStructure)
+    ) {
+      throw new Error(
+        "正文格式校验失败：标题层级、列表、引用、图片地址、链接地址或代码块结构可能发生变化。" +
+        "系统已停止回填，请检查原文和译文后再继续。"
+      );
+    }
+  }
+
   function cleanEnglishTitle(title) {
     return String(title || "")
       .trim()
