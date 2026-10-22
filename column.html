@@ -397,17 +397,18 @@
         ).trim();
       }
 
-      function getPostUrl(post) {
-        if (!post.slug) return "";
 
-        const slug = encodeURIComponent(post.slug);
+function getPostUrl(post) {
+  if (!post.slug) return "";
 
-        if (currentLang === "en") {
-          return "/posts/" + slug + "?lang=en";
-        }
+  const slug = encodeURIComponent(post.slug);
 
-        return "/posts/" + slug + "?lang=zh";
-      }
+  if (currentLang === "en") {
+    return "/posts/" + slug + "?lang=en&from=column";
+  }
+
+  return "/posts/" + slug + "?lang=zh&from=column";
+}
 
       function getVisiblePosts() {
         return posts.filter(post =>
