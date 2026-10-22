@@ -211,11 +211,9 @@
 
     if (field.__gvnRichText) {
       const entry = getBridgeEntry(field);
-
       if (!entry) return "";
 
       const value = entry.getValue();
-
       return value == null ? "" : String(value);
     }
 
@@ -237,7 +235,6 @@
 
     if (field.__gvnRichText) {
       const entry = getBridgeEntry(field);
-
       if (!entry) return false;
 
       try {
@@ -249,7 +246,6 @@
           field.fieldName,
           error
         );
-
         return false;
       }
     }
@@ -293,7 +289,8 @@
     return false;
   }
 
-  function splitText(text) {
+  // 长文本按段落优先切分，避免翻译时把整篇文章的段落边界混在一起。
+  function splitLongBlock(text) {
     const chunks = [];
     let remaining = text.trim();
 
@@ -315,6 +312,8 @@
           ". ",
           MAX_CHUNK_LENGTH
         );
+
+        if (cut >= 0) cut += 1;
       }
 
       if (cut < MAX_CHUNK_LENGTH / 2) {
@@ -326,6 +325,31 @@
     }
 
     if (remaining) chunks.push(remaining);
+
+    return chunks;
+  }
+
+  function splitText(text) {
+    // 空行是段落边界；先保留这些边界，再拆分超长段落。
+    const normalizedText = String(text || "")
+      .replace(/\r\n?/g, "\n")
+      .trim();
+
+    if (!normalizedText) return [];
+
+    const blocks = normalizedText.split(/\n[ \t]*\n+/);
+    const chunks = [];
+
+    for (const block of blocks) {
+      const trimmed = block.trim();
+      if (!trimmed) continue;
+
+      if (trimmed.length <= MAX_CHUNK_LENGTH) {
+        chunks.push(trimmed);
+      } else {
+        chunks.push(...splitLongBlock(trimmed));
+      }
+    }
 
     return chunks;
   }
@@ -406,22 +430,30 @@
 
     for (let i = 0; i < chunks.length; i++) {
       progress(i + 1, chunks.length);
+
       results.push(
         await requestTranslation(chunks[i])
       );
     }
 
+    // 每个独立段落之间明确保留一个空行。
     return results.join("\n\n");
   }
 
+  function cleanEnglishTitle(title) {
+    // 只去除标题末尾的英文句点或中文句号，不改标题内部标点。
+    return String(title || "")
+      .trim()
+      .replace(/[.。]+$/u, "")
+      .trim();
+  }
+
   async function waitForValue(field, expectedValue) {
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 40; i++) {
       await new Promise(
         resolve => setTimeout(resolve, 150)
       );
 
-      // 富文本每次从桥接表读取最新状态；
-      // 普通字段直接验证当前控件，不再用空标签重新查找。
       const currentField = field.__gvnRichText
         ? getRichTextDescriptor(field.fieldName)
         : field;
@@ -442,17 +474,20 @@
       {
         zh: "中文标题",
         en: "English Title",
-        name: "标题"
+        name: "标题",
+        type: "title"
       },
       {
         zh: "中文摘要",
         en: "English Summary",
-        name: "摘要"
+        name: "摘要",
+        type: "summary"
       },
       {
         zh: "中文正文",
         en: "English Body",
-        name: "正文"
+        name: "正文",
+        type: "body"
       }
     ];
 
@@ -509,10 +544,9 @@
       for (const job of jobs) {
         const item = job.item;
 
-        button.textContent =
-          "正在翻译" + item.name + "…";
+        button.textContent = "正在翻译" + item.name + "…";
 
-        const translated = await translateText(
+        let translated = await translateText(
           job.text,
           (current, total) => {
             button.textContent =
@@ -521,7 +555,10 @@
           }
         );
 
-        // 翻译完成后重新定位目标字段。
+        if (item.type === "title") {
+          translated = cleanEnglishTitle(translated);
+        }
+
         const target = findField(item.en);
 
         if (!target) {
@@ -549,6 +586,21 @@
             "的译文未能在 CMS 状态中得到确认。" +
             "请检查编辑器，暂勿保存或发布。"
           );
+        }
+
+        // 正文额外检查桥接字段是否仍能读取到回填后的内容。
+        if (item.type === "body") {
+          const refreshedTarget = getRichTextDescriptor("body_en");
+
+          if (
+            !refreshedTarget ||
+            getFieldValue(refreshedTarget) !== translated
+          ) {
+            throw new Error(
+              "英文正文已尝试回填，但正文桥接状态校验失败。" +
+              "请检查编辑器，暂勿保存或发布。"
+            );
+          }
         }
       }
 
