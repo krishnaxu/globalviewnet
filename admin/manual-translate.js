@@ -618,14 +618,34 @@
   function validateMarkdownStructure(original, translated) {
     const originalStructure = getMarkdownStructure(original);
     const translatedStructure = getMarkdownStructure(translated);
+    const labels = {
+      headingLevels: "标题层级",
+      listMarkers: "列表格式",
+      quoteLines: "引用格式",
+      images: "图片地址",
+      linkTargets: "链接地址",
+      codeFences: "代码块格式"
+    };
 
-    if (
-      JSON.stringify(originalStructure) !==
-      JSON.stringify(translatedStructure)
-    ) {
+    const mismatches = Object.keys(labels).filter(key =>
+      JSON.stringify(originalStructure[key]) !==
+      JSON.stringify(translatedStructure[key])
+    );
+
+    if (mismatches.length > 0) {
+      console.error(
+        "[GVN Translate] Markdown结构校验详情",
+        mismatches.map(key => ({
+          项目: labels[key],
+          原文: originalStructure[key],
+          译文: translatedStructure[key]
+        }))
+      );
+
       throw new Error(
-        "正文格式校验失败：标题层级、列表、引用、图片地址、链接地址或代码块结构可能发生变化。" +
-        "系统已停止回填，请检查原文和译文后再继续。"
+        "正文格式校验失败，存在差异的项目：" +
+        mismatches.map(key => labels[key]).join("、") +
+        "。详细信息请查看浏览器控制台。系统已停止回填，请勿保存或发布。"
       );
     }
   }
