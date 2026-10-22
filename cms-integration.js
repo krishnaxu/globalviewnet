@@ -102,14 +102,31 @@
       if (!post.slug) continue;
 
     const id = `cms-${post.slug}`;
-      const titleZh = post.title_zh || post.title || post.slug;
-      const titleEn = post.title_en || titleZh;
-      const excerptZh = post.excerpt_zh || post.excerpt || "";
-      const excerptEn = post.excerpt_en || excerptZh;
 
-      const article = {
-        id,
-        cms: true,
+const hasZh = post.has_zh === true;
+const hasEn = post.has_en === true;
+
+const titleZh = hasZh
+  ? (post.title_zh || post.title || "")
+  : "";
+
+const titleEn = hasEn
+  ? (post.title_en || "")
+  : "";
+
+const excerptZh = hasZh
+  ? (post.excerpt_zh || post.excerpt || "")
+  : "";
+
+const excerptEn = hasEn
+  ? (post.excerpt_en || "")
+  : "";
+
+const article = {
+  id,
+  cms: true,
+  has_zh: hasZh,
+  has_en: hasEn,
        
         slug: post.slug,
         is_hot: isTrue(post.is_hot),
@@ -400,9 +417,17 @@ for (let i = articles.length - 1; i >= 0; i--) {
 
       if (!track || !dotsContainer) return;
 
-      const featuredArticles = articles
-        .filter(article => article.cms && article.show_in_column === true)
-        .slice()
+     const featuredArticles = articles
+
+.filter(article =>
+  article.cms &&
+  article.show_in_column === true &&
+  (currentLang === "en"
+    ? article.has_en === true
+    : article.has_zh === true)
+)
+
+.slice()
         .sort((a, b) =>
           dateValue(b.updatedAt || b.date) -
           dateValue(a.updatedAt || a.date)
@@ -435,10 +460,10 @@ for (let i = articles.length - 1; i >= 0; i--) {
           "span", "category-tag", categoryName(article.category)
         );
         const title = makeText(
-          "h2", "", article.title?.[currentLang] || article.title?.zh || ""
+          "h2", "", article.title?.[currentLang] || ""
         );
         const excerpt = makeText(
-          "p", "", article.excerpt?.[currentLang] || article.excerpt?.zh || ""
+          "p", "", article.excerpt?.[currentLang] || ""
         );
 
         const meta = document.createElement("div");
@@ -481,9 +506,16 @@ for (let i = articles.length - 1; i >= 0; i--) {
 
       content.replaceChildren();
 
-      const entries = articles
-        .filter(article => article.cms)
-        .slice()
+const entries = articles
+
+.filter(article =>
+  article.cms &&
+  (currentLang === "en"
+    ? article.has_en === true
+    : article.has_zh === true)
+)
+
+.slice()
         .sort((a, b) => dateValue(b.date) - dateValue(a.date))
         .slice(0, 10);
 
@@ -520,10 +552,13 @@ for (let i = articles.length - 1; i >= 0; i--) {
 
      
       const ranking = articles
-  .filter(article =>
-    article.cms &&
-    article.show_in_column === true
-  )
+.filter(article =>
+  article.cms &&
+  article.show_in_column === true &&
+  (currentLang === "en"
+    ? article.has_en === true
+    : article.has_zh === true)
+)
 
         .slice()
         .sort((a, b) =>
