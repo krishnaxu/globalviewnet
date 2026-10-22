@@ -160,8 +160,7 @@ export async function onRequestGet({ request, env }) {
       markdownFiles.map(async file => {
         const fileData = await githubRequest(file.url, token);
         const markdown = decodeBase64(fileData.content || "");
-        const { meta } = parseFrontmatter(markdown);
-
+        const { meta, body: legacyBody } = parseFrontmatter(markdown);
         // 只展示明确标记为 published: true 的文章
         if (!isTrue(meta.published)) {
           return null;
@@ -170,21 +169,31 @@ export async function onRequestGet({ request, env }) {
         const slug = getSlug(file.name);
 
         const titleZh = getString(
-          meta.title_zh || meta.title
-        );
+  meta.title_zh || meta.title
+);
 
-        const titleEn = getString(
-          meta.title_en || meta.title
-        );
+const titleEn = getString(
+  meta.title_en
+);
 
-        const excerptZh = getString(
-          meta.excerpt_zh || meta.excerpt
-        );
+const excerptZh = getString(
+  meta.excerpt_zh || meta.excerpt
+);
 
-        const excerptEn = getString(
-          meta.excerpt_en || meta.excerpt
-        );
+const excerptEn = getString(
+  meta.excerpt_en
+);
 
+const bodyZh = getString(
+  meta.body_zh || legacyBody
+);
+
+const bodyEn = getString(
+  meta.body_en
+);
+
+const hasZh = Boolean(titleZh && bodyZh);
+const hasEn = Boolean(titleEn && bodyEn);
         const articleCategory =
           getString(meta.category) || "tech";
 
@@ -199,6 +208,8 @@ export async function onRequestGet({ request, env }) {
 
         return {
           slug,
+          has_zh: hasZh,
+          has_en: hasEn,
 
           title: lang === "en"
             ? (titleEn || titleZh)
