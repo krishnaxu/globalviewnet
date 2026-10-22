@@ -43,42 +43,42 @@ body_zh: >-
 
 
   **总结：** 人工智能能够辅助生命科学研究，但不能取代严格的实验验证与科学判断。
-title_en: Long Body and Format Translation Test
-excerpt_en: Test long text segmentation translation and Markdown format retention.
+title_en: Long Article and Format Translation Test
+excerpt_en: Test long text segmented translation and Markdown format retention.
 body_en: >-
-  # Artificial intelligence is transforming life sciences
+  # Artificial Intelligence is Transforming Life Sciences
 
 
-  Artificial intelligence (AI) is providing new tools for life science research. From target discovery to drug candidate screening, researchers can use data analysis and machine learning methods to improve research efficiency.
+  Artificial intelligence (AI) is providing new tools for life science research. From target discovery to candidate drug screening, researchers can leverage data analysis and machine learning methods to enhance research efficiency.
 
 
-  ## I. Changes in the R&D Process
+  ## 1. Changes in the R&D Process
 
 
-  Traditional drug development requires multiple stages, including target validation, lead compound discovery, drug candidate optimization, and preclinical research. Artificial intelligence can help researchers analyze large amounts of data, identify potential patterns, and provide references for experimental design.
+  Traditional drug development involves multiple stages, including target validation, lead compound discovery, candidate drug optimization, and preclinical research. Artificial intelligence can assist researchers in analyzing vast datasets, identifying potential patterns, and providing guidance for experimental design.
 
 
-  * **Target Discovery:** Analyze biological data for potential therapeutic targets.
+  * **Target Discovery:** Analyze biological data to identify potential therapeutic targets.  
 
-  * **Molecular Design:** Assist in predicting the relationship between molecular structure and biological activity.
+  * **Molecular Design:** Aid in predicting the relationship between molecular structure and biological activity.  
 
-  * **Experimental Optimization:** Adjust the experimental protocol according to the existing results to reduce unnecessary duplication of work.
-
-
-  ## II. Limitations of the technology
+  * **Experimental Optimization:** Adjust experimental protocols based on existing results to minimize unnecessary repetitive work.
 
 
-  The predicted results of the AI model are not equal to the experimental conclusions. The performance of the model is influenced by factors such as the quality of the training data, the scope of application, and the validation method, so the researchers still need to confirm the results through experiments and subsequent studies.
+  ## II. Limitations of Technology
 
 
-  For example, models predict that a molecule may have a specific activity and do not directly prove that the molecule has the same effect in a real biological system.
+  The prediction results of artificial intelligence models are not equivalent to experimental conclusions. Model performance is influenced by factors such as the quality of training data, applicability scope, and validation methods, so researchers still need to confirm the results through experiments and further studies.
 
 
-  ## III. Future development direction
+  For example, a model predicting that a certain molecule may have specific biological activity cannot directly prove that the molecule has the same effect in a real biological system.
 
 
-  In the future, the combination of artificial intelligence with experimental platforms, automation equipment and high-quality data may further promote the optimization of R&D processes. The practical value of technology applications still needs to be evaluated in combination with specific tasks, validation results, and costs.
+  III. Future Development Directions
 
 
-  **Summary:** Artificial intelligence can assist life science research, but it cannot replace rigorous experimental verification and scientific judgment.
+  In the future, the integration of artificial intelligence with experimental platforms, automated equipment, and high-quality data may further drive the optimization of R&D processes. The practical value of technology applications still requires evaluation based on specific tasks, validation results, and costs.
+
+
+  Artificial intelligence can assist in life science research, but it cannot replace rigorous experimental verification and scientific judgment.
 ---
