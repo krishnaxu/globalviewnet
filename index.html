@@ -1887,58 +1887,67 @@ function refreshAutoNewsIds() {
   currentSlide = 0;
 }
     
-    function getFilteredArticles() {
-      const query = $("#searchInput").value.trim().toLocaleLowerCase();
+function getFilteredArticles() {
+  const query = $("#searchInput").value.trim().toLocaleLowerCase();
 
-      let results = articles.filter(article => {
-// 已发布到专栏的 CMS 文章：仅在搜索时纳入搜索结果
-if (
-  article.cms &&
-  article.show_in_column === true &&
-  !query
-) {
-  return false;
-}
-        const articleLanguage = getAutoArticleLanguage(article);
-
-        // 自动新闻只显示当前语言对应的内容
-        if (
-          articleLanguage &&
-          articleLanguage !== currentLang
-        ) {
-          return false;
-        }
-
-        const categoryMatch =
-          activeFilter === "all" ||
-          article.category === activeFilter;
-
-        const haystack = [
-          article.title.zh, article.title.en,
-          article.excerpt.zh, article.excerpt.en,
-          (article.tags || []).join(" ")
-        ].join(" ").toLocaleLowerCase();
-
-        return categoryMatch && (!query || haystack.includes(query));
-      });
-
-            // 首页最新资讯：每分类仅展示 1 篇（按日期排序取最新）
-      if (currentPage === "home" && activeFilter === "all" && !query) {
-        const seen = {};
-        const limited = [];
-
-        results.forEach(article => {
-          if (!seen[article.category]) {
-            seen[article.category] = true;
-            limited.push(article);
-          }
-        });
-
-        return limited;
-      }
-
-      return results;
+  let results = articles.filter(article => {
+    // 无搜索关键词时，CMS 文章不进入 RSS 普通文章列表
+    if (article.cms === true && !query) {
+      return false;
     }
+
+    const articleLanguage = getAutoArticleLanguage(article);
+
+    // 自动新闻只显示当前语言对应的内容
+    if (
+      articleLanguage &&
+      articleLanguage !== currentLang
+    ) {
+      return false;
+    }
+
+    const categoryMatch =
+      activeFilter === "all" ||
+      article.category === activeFilter;
+
+    const haystack = [
+      article.title.zh,
+      article.title.en,
+      article.excerpt.zh,
+      article.excerpt.en,
+      (article.tags || []).join(" ")
+    ].join(" ").toLocaleLowerCase();
+
+    return categoryMatch && (!query || haystack.includes(query));
+  });
+
+  // 搜索时：CMS 文章优先，RSS 新闻随后
+  // 保留两组文章原有的相对顺序
+  if (query) {
+    results.sort((a, b) => {
+      if (a.cms === true && b.cms !== true) return -1;
+      if (a.cms !== true && b.cms === true) return 1;
+      return 0;
+    });
+  }
+
+  // 首页无搜索时：每个分类只展示 1 篇最新文章
+  if (currentPage === "home" && activeFilter === "all" && !query) {
+    const seen = {};
+    const limited = [];
+
+    results.forEach(article => {
+      if (!seen[article.category]) {
+        seen[article.category] = true;
+        limited.push(article);
+      }
+    });
+
+    return limited;
+  }
+
+  return results;
+}
 
     function renderGrid(target, emptyTarget, list) {
       target.replaceChildren();
