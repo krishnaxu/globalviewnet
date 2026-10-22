@@ -2541,16 +2541,18 @@ for (const article of articles.filter(
       renderTrending();
       setLanguage(savedLang);
 
-      const initialPage = location.hash.replace("#", "");
-      if (["home", "tech", "business", "culture", "life", "about"].includes(initialPage)) {
-        navigateWithoutHistory(initialPage);
-      } else if (initialPage.startsWith("article-")) {
-        const id = initialPage.slice("article-".length);
-        if (articleById(id)) openArticle(id);
-        else navigateWithoutHistory("home");
-      } else {
-        navigateWithoutHistory("home");
-      }
+const initialPage = location.hash.replace("#", "");
+
+if (initialPage.startsWith("article-")) {
+  const id = initialPage.slice("article-".length);
+  if (articleById(id)) {
+    openArticle(id);
+  } else {
+    navigateWithoutHistory("home");
+  }
+} else {
+  navigateWithoutHistory("home");
+}
     }
 
     init();
