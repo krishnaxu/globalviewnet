@@ -1891,10 +1891,14 @@ function refreshAutoNewsIds() {
       const query = $("#searchInput").value.trim().toLocaleLowerCase();
 
       let results = articles.filter(article => {
-                // 已发布到专栏的 CMS 文章不进入普通文章版块
-        if (article.cms && article.show_in_column === true) {
-          return false;
-        }
+// 已发布到专栏的 CMS 文章：仅在搜索时纳入搜索结果
+if (
+  article.cms &&
+  article.show_in_column === true &&
+  !query
+) {
+  return false;
+}
         const articleLanguage = getAutoArticleLanguage(article);
 
         // 自动新闻只显示当前语言对应的内容
