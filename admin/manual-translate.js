@@ -1,8 +1,18 @@
-
 (function () {
   "use strict";
 
   const BUTTON_ID = "manual-translate-button";
+  const FIELD_SELECTOR =
+    'textarea, input:not([type="checkbox"]):not([type="radio"]), ' +
+    '[contenteditable="true"], [role="textbox"], .CodeMirror';
+
+  function normalize(text) {
+    return (text || "")
+      .replace(/\(OPTIONAL\)/gi, "")
+      .replace(/[：:（）()]/g, "")
+      .replace(/\s+/g, "")
+      .toLowerCase();
+  }
 
   async function translateText(text) {
     const chunks = [];
@@ -51,12 +61,40 @@
     return results.join("\n");
   }
 
-  function normalize(text) {
-    return (text || "")
-      .replace(/\(OPTIONAL\)/gi, "")
-      .replace(/[：:（）()]/g, "")
-      .replace(/\s+/g, "")
-      .toLowerCase();
+  function getEditorFromContainer(container, labelText) {
+    if (!container) return null;
+
+    const controls = Array.from(
+      container.querySelectorAll(FIELD_SELECTOR)
+    );
+
+    const isBody = /正文|body/i.test(labelText);
+    const isSummary = /摘要|summary/i.test(labelText);
+
+    if (isBody) {
+      return (
+        controls.find(el => el.matches('[contenteditable="true"]')) ||
+        controls.find(el => el.getAttribute("role") === "textbox") ||
+        controls.find(el => el.matches(".CodeMirror")) ||
+        controls.find(el => el.matches("textarea")) ||
+        null
+      );
+    }
+
+    if (isSummary) {
+      return (
+        controls.find(el => el.tagName === "TEXTAREA") ||
+        controls.find(el => el.matches('[contenteditable="true"]')) ||
+        null
+      );
+    }
+
+    return (
+      controls.find(el => el.tagName === "INPUT") ||
+      controls.find(el => el.tagName === "TEXTAREA") ||
+      controls.find(el => el.matches('[contenteditable="true"]')) ||
+      null
+    );
   }
 
   function findField(labelText) {
@@ -69,68 +107,91 @@
 
     if (!label) return null;
 
-    if (label.htmlFor) {
-      const control = document.getElementById(label.htmlFor);
-      if (control) return control;
-    }
+    const container = label.closest('[class*="ControlContainer"]');
+
+    const field = getEditorFromContainer(container, labelText);
+    if (field) return field;
 
     let parent = label.parentElement;
-    let bestMatch = null;
 
     for (let i = 0; parent && i < 8; i++) {
-      const controls = Array.from(parent.querySelectorAll(
-        'input:not([type="checkbox"]):not([type="radio"]), textarea'
-      ));
-
-      if (controls.length === 1) {
-        bestMatch = controls[0];
-        break;
-      }
-
+      const found = getEditorFromContainer(parent, labelText);
+      if (found) return found;
       parent = parent.parentElement;
     }
 
-    return bestMatch;
+    return null;
+  }
+
+  function getFieldValue(field) {
+    if (!field) return "";
+
+    if (field.CodeMirror && typeof field.CodeMirror.getValue === "function") {
+      return field.CodeMirror.getValue();
+    }
+
+    if ("value" in field && typeof field.value === "string") {
+      return field.value;
+    }
+
+    return field.innerText || field.textContent || "";
   }
 
   function setFieldValue(field, value) {
     if (!field) return false;
 
-    const prototype = field.tagName === "TEXTAREA"
-      ? HTMLTextAreaElement.prototype
-      : HTMLInputElement.prototype;
-
-    const descriptor = Object.getOwnPropertyDescriptor(prototype, "value");
-
-    if (descriptor && descriptor.set) {
-      descriptor.set.call(field, value);
-    } else {
-      field.value = value;
+    if (field.CodeMirror && typeof field.CodeMirror.setValue === "function") {
+      field.CodeMirror.setValue(value);
+      return field.CodeMirror.getValue() === value;
     }
 
-    field.dispatchEvent(new Event("input", { bubbles: true }));
-    field.dispatchEvent(new Event("change", { bubbles: true }));
+    if (field.tagName === "TEXTAREA" || field.tagName === "INPUT") {
+      const prototype = field.tagName === "TEXTAREA"
+        ? HTMLTextAreaElement.prototype
+        : HTMLInputElement.prototype;
 
-    return true;
+      const descriptor = Object.getOwnPropertyDescriptor(prototype, "value");
+
+      if (descriptor && descriptor.set) {
+        descriptor.set.call(field, value);
+      } else {
+        field.value = value;
+      }
+
+      field.dispatchEvent(new Event("input", { bubbles: true }));
+      field.dispatchEvent(new Event("change", { bubbles: true }));
+
+      return true;
+    }
+
+    if (field.isContentEditable || field.getAttribute("role") === "textbox") {
+      field.focus();
+
+      const selection = window.getSelection();
+      const range = document.createRange();
+
+      range.selectNodeContents(field);
+      selection.removeAllRanges();
+      selection.addRange(range);
+
+      const success = document.execCommand("insertText", false, value);
+
+      if (success) {
+        field.dispatchEvent(new Event("input", { bubbles: true }));
+        field.dispatchEvent(new Event("change", { bubbles: true }));
+      }
+
+      return success;
+    }
+
+    return false;
   }
 
   async function translateFields(button) {
     const fields = [
-      {
-        zh: "中文标题",
-        en: "ENGLISH TITLE",
-        name: "标题"
-      },
-      {
-        zh: "中文摘要",
-        en: "ENGLISH SUMMARY",
-        name: "摘要"
-      },
-      {
-        zh: "中文正文",
-        en: "ENGLISH BODY",
-        name: "正文"
-      }
+      { zh: "中文标题", en: "ENGLISH TITLE", name: "标题" },
+      { zh: "中文摘要", en: "ENGLISH SUMMARY", name: "摘要" },
+      { zh: "中文正文", en: "ENGLISH BODY", name: "正文" }
     ];
 
     const jobs = [];
@@ -141,14 +202,14 @@
 
       if (!zhField || !enField) {
         alert(
-          "仍未能找到“" + item.zh + "”或对应英文输入框。\n" +
-          "请保持文章编辑页打开，并将中文正文和英文正文切换到 Raw（原始文本）模式。"
+          "找不到“" + item.zh + "”或对应的英文编辑器。\n\n" +
+          "请确认文章编辑页已打开，并且对应字段已经显示。"
         );
         return;
       }
 
-      const chinese = zhField.value || "";
-      const english = enField.value || "";
+      const chinese = getFieldValue(zhField);
+      const english = getFieldValue(enField);
 
       if (!chinese.trim()) continue;
 
@@ -177,12 +238,17 @@
         button.textContent = "正在翻译" + job.name + "…";
 
         const translated = await translateText(job.text);
-        setFieldValue(job.field, translated);
+
+        if (!setFieldValue(job.field, translated)) {
+          throw new Error(
+            job.name + "的译文已生成，但无法写入编辑器。请勿保存文章。"
+          );
+        }
       }
 
       alert(
-        "翻译请求已完成，请检查英文标题、摘要和正文。\n" +
-        "本按钮不会主动发布文章。请检查内容后再决定是否保存。"
+        "翻译处理完成。请检查英文标题、摘要和正文是否都已正确填入。\n\n" +
+        "本按钮不会主动发布文章，也不会自动保存文章。"
       );
     } catch (error) {
       console.error("手动翻译失败：", error);
@@ -242,4 +308,3 @@
 
   console.log("手动翻译按钮脚本已加载");
 })();
-
