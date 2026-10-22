@@ -951,7 +951,7 @@ html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before
           </div>
 
           <div class="section-heading">
-            <h2 class="serif"><span data-i18n="latestArticles">最新资讯</span><span class="section-title-en" data-i18n="latestArticlesEn">Latest Articles</span></h2>
+            <h2 class="serif"><span data-i18n="latestArticles">最新资讯</span></h2>
             <span class="muted" id="articleCount"></span>
           </div>
 
@@ -981,7 +981,7 @@ html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before
         <use href="#i-flame"/>
       </svg>
       <h3 data-i18n="trendingTitle">我的专栏</h3>
-      <small>My Column</small>
+     
     </div>
 
     <ol class="trending-list" id="trendingList"></ol>
@@ -997,12 +997,11 @@ html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before
       <svg width="20" height="20" aria-hidden="true">
         <use href="#i-link"/>
       </svg>
-      <h3>我的作品</h3>
-      <small>My Works</small>
+     <h3 data-i18n="worksTitle">我的作品</h3>
     </div>
 
     <div class="works-list" id="worksList">
-      <p class="works-empty">暂无作品</p>
+     <p class="works-empty" data-i18n="worksEmpty">暂无作品</p>
     </div>
   </section>
 
@@ -1215,13 +1214,16 @@ html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before
         catBusiness: "商业", catBusinessEn: "Business",
         catCulture: "文化", catCultureEn: "Culture",
         catLife: "生活", catLifeEn: "Life",
-        latestArticles: "最新资讯", latestArticlesEn: "Latest Articles",
+       latestArticles: "最新资讯",
         latestNews: "最新动态", searchPlaceholder: "搜索感兴趣的内容...",
         eyebrow: "全球视野 · 双语阅读",
         homeTitle: "连接世界，发现更多可能",
         homeSubtitle: "从科技创新到文化生活，读懂正在发生的变化。",
         filterAll: "全部",
-        trendingTitle: "我的专栏", newsletterIntro: "订阅观澜泗渡，获取双语资讯与编辑精选。",
+       trendingTitle: "我的专栏",
+       worksTitle: "我的作品",
+       worksEmpty: "暂无作品",
+       newsletterIntro: "订阅观澜泗渡，获取双语资讯与编辑精选。",
         emailPlaceholder: "请输入您的邮箱地址", subscribe: "订阅",
         promoTitle: "观澜泗渡<br>以双语视角探索科技、商业与文化的交汇。",
         promoText: "",
@@ -1273,13 +1275,16 @@ disclaimer: "本站是一个提供信息聚合、双语阅读与观点分享的�
         catBusiness: "Business", catBusinessEn: "商业",
         catCulture: "Culture", catCultureEn: "文化",
         catLife: "Life", catLifeEn: "生活",
-        latestArticles: "Latest Articles", latestArticlesEn: "最新资讯",
+       latestArticles: "Latest Articles",
         latestNews: "Latest", searchPlaceholder: "Search articles...",
         eyebrow: "Global perspectives · Bilingual reading",
         homeTitle: "Connect the world. Discover more.",
         homeSubtitle: "From technological innovation to culture and everyday life, explore the changes shaping our world.",
         filterAll: "All",
-        trendingTitle: "My Column", newsletterIntro: "Get bilingual insights and editorial picks from Global View.",
+        trendingTitle: "My Column",
+        worksTitle: "My Works",
+        worksEmpty: "No works available yet",
+        newsletterIntro: "Get bilingual insights and editorial picks from Global View.",
         emailPlaceholder: "Enter your email address", subscribe: "Subscribe",
         promoTitle: "Global View<br>Explore the intersection of technology, business and culture through a bilingual lens.",
         promoText: "",
@@ -1358,14 +1363,6 @@ disclaimer: "This website is a platform for information aggregation, bilingual r
 
       $$("[data-i18n-placeholder]").forEach(el => {
         el.placeholder = t(el.dataset.i18nPlaceholder);
-      });
-
-      // 栏目英文副标题：跟随语言切换
-      $$(".section-title-en").forEach(el => {
-        const key = el.dataset.i18n;
-        if (translations[lang][key] !== undefined) {
-          el.textContent = translations[lang][key];
-        }
       });
 
       $$("[data-lang]").forEach(btn => {
@@ -1485,19 +1482,43 @@ disclaimer: "This website is a platform for information aggregation, bilingual r
       startCarousel();
     }
 
-    function updateCarouselPosition() {
-      const track = $("#featuredTrack");
-      track.style.transform = `translateX(-${currentSlide * 100}%)`;
-      $$(".carousel-dot").forEach((dot, i) => {
-        dot.classList.toggle("active", i === currentSlide);
-      });
-    }
 
-    function goToSlide(index) {
-      currentSlide = index;
-      updateCarouselPosition();
-      startCarousel();
-    }
+function updateCarouselPosition() {
+  const track = $("#featuredTrack");
+  if (!track) return;
+
+  const slides = track.querySelectorAll(".featured-slide");
+  const slideCount = slides.length;
+
+  if (slideCount === 0) {
+    currentSlide = 0;
+    track.style.transform = "translateX(0)";
+    $$(".carousel-dot").forEach(dot => {
+      dot.classList.remove("active");
+    });
+    return;
+  }
+
+  currentSlide = Math.max(0, Math.min(currentSlide, slideCount - 1));
+  track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+  $$(".carousel-dot").forEach((dot, i) => {
+    dot.classList.toggle("active", i === currentSlide);
+  });
+}
+
+function goToSlide(index) {
+  const track = $("#featuredTrack");
+  const slideCount = track
+    ? track.querySelectorAll(".featured-slide").length
+    : 0;
+
+  if (slideCount === 0) return;
+
+  currentSlide = ((index % slideCount) + slideCount) % slideCount;
+  updateCarouselPosition();
+  startCarousel();
+}
 
         function nextSlide() {
       const track = $("#featuredTrack");
@@ -1523,11 +1544,18 @@ disclaimer: "This website is a platform for information aggregation, bilingual r
       }
     }
 
-    $("#carouselPrev").addEventListener("click", () => {
-      currentSlide = (currentSlide - 1 + featuredIds.length) % featuredIds.length;
-      updateCarouselPosition();
-      startCarousel();
-    });
+$("#carouselPrev").addEventListener("click", () => {
+  const track = $("#featuredTrack");
+  const slideCount = track
+    ? track.querySelectorAll(".featured-slide").length
+    : 0;
+
+  if (slideCount === 0) return;
+
+  currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+  updateCarouselPosition();
+  startCarousel();
+});
     $("#carouselNext").addEventListener("click", () => {
       nextSlide();
       startCarousel();
@@ -1536,6 +1564,101 @@ disclaimer: "This website is a platform for information aggregation, bilingual r
     // 鼠标悬停暂停轮播
     $("#featuredCarousel").addEventListener("mouseenter", stopCarousel);
     $("#featuredCarousel").addEventListener("mouseleave", startCarousel);
+    // 鼠标拖动和手机左右滑动
+const carousel = $("#featuredCarousel");
+const track = $("#featuredTrack");
+
+if (carousel && track) {
+  track.style.touchAction = "pan-y";
+  track.style.cursor = "grab";
+
+  let pointerStartX = 0;
+  let pointerStartY = 0;
+  let pointerLastX = 0;
+  let isDragging = false;
+  let isHorizontalDrag = false;
+  let activePointerId = null;
+  let suppressClickUntil = 0;
+
+  carousel.addEventListener("pointerdown", event => {
+    if (event.pointerType === "mouse" && event.button !== 0) return;
+    if (event.target.closest("button")) return;
+
+    activePointerId = event.pointerId;
+    carousel.setPointerCapture(event.pointerId);
+    pointerStartX = event.clientX;
+    pointerStartY = event.clientY;
+    pointerLastX = event.clientX;
+    isDragging = true;
+    isHorizontalDrag = false;
+
+    stopCarousel();
+    track.style.cursor = "grabbing";
+  });
+
+  carousel.addEventListener("pointermove", event => {
+    if (!isDragging || event.pointerId !== activePointerId) return;
+
+    pointerLastX = event.clientX;
+
+    const deltaX = event.clientX - pointerStartX;
+    const deltaY = event.clientY - pointerStartY;
+
+    if (!isHorizontalDrag) {
+      if (Math.abs(deltaX) < 8) return;
+      if (Math.abs(deltaX) <= Math.abs(deltaY)) return;
+
+      isHorizontalDrag = true;
+    }
+
+    event.preventDefault();
+  }, { passive: false });
+
+  function finishCarouselDrag(event) {
+    if (!isDragging || event.pointerId !== activePointerId) return;
+
+    const deltaX = pointerLastX - pointerStartX;
+    const wasHorizontalDrag = isHorizontalDrag;
+
+   isDragging = false;
+isHorizontalDrag = false;
+
+if (carousel.hasPointerCapture(event.pointerId)) {
+  carousel.releasePointerCapture(event.pointerId);
+}
+
+activePointerId = null;
+track.style.cursor = "grab";
+
+   if (event.type === "pointerup" && wasHorizontalDrag && Math.abs(deltaX) >= 40) {
+      suppressClickUntil = Date.now() + 500;
+
+      const slideCount = track.querySelectorAll(".featured-slide").length;
+
+      if (slideCount > 0) {
+        if (deltaX < 0) {
+          goToSlide((currentSlide + 1) % slideCount);
+        } else {
+          goToSlide((currentSlide - 1 + slideCount) % slideCount);
+        }
+      }
+    } else {
+      startCarousel();
+    }
+  }
+
+  carousel.addEventListener("pointerup", finishCarouselDrag);
+  carousel.addEventListener("pointercancel", finishCarouselDrag);
+
+  carousel.addEventListener("click", event => {
+    if (Date.now() < suppressClickUntil) {
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      suppressClickUntil = 0;
+    }
+  }, true);
+}
 
     // 资讯卡片：使用 DOM API 构建内容，避免将文章文本直接拼接进 HTML。
     function createArticleCard(article) {
