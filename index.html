@@ -986,7 +986,7 @@ html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before
 
     <ol class="trending-list" id="trendingList"></ol>
 
-<a class="column-more" href="/column.html">
+<a class="column-more" href="/column.html" data-i18n="viewMoreArticles">
   查看更多文章 →
 </a>
   </section>
@@ -1221,6 +1221,7 @@ html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before
         homeSubtitle: "从科技创新到文化生活，读懂正在发生的变化。",
         filterAll: "全部",
        trendingTitle: "我的专栏",
+       viewMoreArticles: "查看更多文章 →",
        worksTitle: "我的作品",
        worksEmpty: "暂无作品",
        newsletterIntro: "订阅观澜泗渡，获取双语资讯与编辑精选。",
@@ -1267,61 +1268,102 @@ disclaimer: "本站是一个提供信息聚合、双语阅读与观点分享的�
           life: "从健康饮食到城市出行，关注日常生活中的选择与新趋势。"
         }
       },
-      en: {
-        brandCn: "观澜泗渡",
-        navHome: "Home", navHomeEn: "首页",
-        navAbout: "About", navAboutEn: "关于",
-        catTech: "Technology", catTechEn: "科技",
-        catBusiness: "Business", catBusinessEn: "商业",
-        catCulture: "Culture", catCultureEn: "文化",
-        catLife: "Life", catLifeEn: "生活",
-       latestArticles: "Latest Articles",
-        latestNews: "Latest", searchPlaceholder: "Search articles...",
-        eyebrow: "Global perspectives · Bilingual reading",
-        homeTitle: "Connect the world. Discover more.",
-        homeSubtitle: "From technological innovation to culture and everyday life, explore the changes shaping our world.",
-        filterAll: "All",
-        trendingTitle: "My Column",
-        worksTitle: "My Works",
-        worksEmpty: "No works available yet",
-        newsletterIntro: "Get bilingual insights and editorial picks from Global View.",
-        emailPlaceholder: "Enter your email address", subscribe: "Subscribe",
-        promoTitle: "Global View<br>Explore the intersection of technology, business and culture through a bilingual lens.",
-        promoText: "",
-        learnMore: "About us", noResults: "No matching articles. Try another keyword.",
-        categoryEyebrow: "Topic Explorer",
-        aboutEyebrow: "About Us",
-        aboutTitle: "Ideas across languages. Perspectives across borders.",
-        aboutIntro: "Global View is a bilingual information and perspectives platform focused on technology, business, culture and life.",
-        aboutMissionTitle: "Our Mission",
-aboutMission: "Through clear content organization and bilingual presentation, we aim to help readers discover noteworthy trends, industry developments, and cultural stories.",
 
-        aboutContentTitle: "Content & Sources",
-        aboutContent: "Content may include editorial summaries, commentary and reproduced material published with appropriate authorization or in accordance with applicable rules. Reproduced content should identify its original source, author and original link where applicable. Source names shown in sample articles are illustrative and do not imply that the named organizations published or endorsed the content.",
-        aboutStandardsTitle: "Editorial Principles",
-        aboutStandard1: "Distinguish factual information, analysis and illustrative content.",
-        aboutStandard2: "Attribute reproduced material and preserve context and provenance where possible.",
-        aboutStandard3: "Review, update or correct errors when identified.",
-        aboutStandard4: "Respect intellectual property, privacy and applicable laws.",
-        aboutContactTitle: "Contact Us", contactText: "Editorial partnerships, copyright and feedback:",
-        disclaimerTitle: "Disclaimer",
-        
+en: {
+  brandCn: "观澜泗渡",
 
-disclaimer: "This website is a platform for information aggregation, bilingual reading, and opinion sharing, rather than a news-gathering or reporting organization. Its content is compiled from publicly available information, third-party sources, and editorial materials for informational and discussion purposes only, and does not represent the official position of any organization or individual. The content on this website does not constitute investment, medical, legal, or other professional advice, nor should it be relied upon as the sole basis for making any related decisions. Users should exercise independent judgment and consult appropriately qualified professionals when necessary. We strive to ensure the accuracy and timeliness of the content but do not guarantee that all information is complete, accurate, up to date, or suitable for any particular circumstance. This website may contain links to third-party websites. The content, services, and privacy practices of those websites are the responsibility of their respective operators. If you believe that any content on this website contains factual errors or infringes your legal rights or interests, please contact us using the contact information provided on this website.",
+  navHome: "Home",
+  navHomeEn: "首页",
+  navAbout: "About",
+  navAboutEn: "关于",
 
-        shareArticle: "Share article link", closeArticle: "Close",
-        shareCopied: "Article link copied.", shareFailed: "Could not copy automatically. Copy the browser address manually.",
-        newsletterSuccess: "Subscription request simulated on this page. Connect an email service before launch.",
-        newsletterError: "Please enter a valid email address.",
-        readTime: "min read", articlesCount: "articles",
-        categoryDescriptions: {
-          tech: "Explore how AI, digital technologies, scientific research and innovation are changing work, industries and everyday life.",
-          business: "Explore global business trends, corporate strategy, market shifts and sustainable growth.",
-          culture: "Discover stories in art, design, museums, creative industries and cross-cultural exchange.",
-          life: "From healthy food to urban mobility, explore choices and trends shaping everyday life."
-        }
-      }
-    };
+  catTech: "Technology",
+  catTechEn: "科技",
+  catBusiness: "Business",
+  catBusinessEn: "商业",
+  catCulture: "Culture",
+  catCultureEn: "文化",
+  catLife: "Life",
+  catLifeEn: "生活",
+
+  latestArticles: "Latest Articles",
+  latestNews: "Latest",
+  searchPlaceholder: "Search articles...",
+
+  eyebrow: "Global perspectives · Bilingual reading",
+  homeTitle: "Connect the world. Discover more.",
+  homeSubtitle: "From technological innovation to culture and everyday life, explore the changes shaping our world.",
+
+  filterAll: "All",
+  trendingTitle: "My Column",
+  viewMoreArticles: "View More Articles →",
+  worksTitle: "My Works",
+  worksEmpty: "No works available yet",
+
+  newsletterIntro: "Get bilingual insights and editorial picks from Global View.",
+  emailPlaceholder: "Enter your email address",
+  subscribe: "Subscribe",
+
+  promoTitle: "Global View<br>Explore the intersection of technology, business and culture through a bilingual lens.",
+  promoText: "",
+  learnMore: "About us",
+  noResults: "No matching articles. Try another keyword.",
+
+  categoryEyebrow: "Topic Explorer",
+
+  aboutEyebrow: "About Us",
+  aboutTitle: "Ideas across languages. Perspectives across borders.",
+  aboutIntro: "Global View is a bilingual information and perspectives platform focused on technology, business, culture and life.",
+
+  aboutMissionTitle: "Our Mission",
+  aboutMission: "Through clear content organization and bilingual presentation, we aim to help readers discover noteworthy trends, industry developments, and cultural stories.",
+
+  aboutContentTitle: "Content & Sources",
+  aboutContent: "Content may include editorial summaries, commentary and reproduced material published with appropriate authorization or in accordance with applicable rules. Reproduced content should identify its original source, author and original link where applicable. Source names shown in sample articles are illustrative and do not imply that the named organizations published or endorsed the content.",
+
+  aboutStandardsTitle: "Editorial Principles",
+  aboutStandard1: "Distinguish factual information, analysis and illustrative content.",
+  aboutStandard2: "Attribute reproduced material and preserve context and provenance where possible.",
+  aboutStandard3: "Review, update or correct errors when identified.",
+  aboutStandard4: "Respect intellectual property, privacy and applicable laws.",
+
+  aboutContactTitle: "Contact Us",
+  contactText: "Editorial partnerships, copyright and feedback:",
+
+  disclaimerTitle: "Disclaimer",
+  disclaimer: "This website is a platform for information aggregation, bilingual reading, and opinion sharing, rather than a news-gathering or reporting organization. Its content is compiled from publicly available information, third-party sources, and editorial materials for informational and discussion purposes only, and does not represent the official position of any organization or individual. The content on this website does not constitute investment, medical, legal, or other professional advice, nor should it be relied upon as the sole basis for making any related decisions. Users should exercise independent judgment and consult appropriately qualified professionals when necessary. We strive to ensure the accuracy and timeliness of the content but do not guarantee that all information is complete, accurate, up to date, or suitable for any particular circumstance. This website may contain links to third-party websites. The content, services, and privacy practices of those websites are the responsibility of their respective operators. If you believe that any content on this website contains factual errors or infringes your legal rights or interests, please contact us using the contact information provided on this website.",
+
+  footerDescription: "Connecting global news through a bilingual perspective, bringing ideas worth noticing across borders.",
+  footerExplore: "Explore",
+  footerConnect: "About & Contact",
+  footerContact: "Contact Us",
+  footerDisclaimer: "Disclaimer",
+  rights: "All rights reserved.",
+  footerDisclaimerShort: "This website is a platform for information aggregation and opinion sharing, not a news-gathering or reporting organization.",
+
+  sourceLabel: "Source",
+  sourceNote: "Source information",
+  author: "Author",
+  editorialTeam: "Global View Editorial Team",
+
+  shareArticle: "Share article link",
+  closeArticle: "Close",
+  shareCopied: "Article link copied.",
+  shareFailed: "Could not copy automatically. Copy the browser address manually.",
+
+  newsletterSuccess: "Subscription request simulated on this page. Connect an email service before launch.",
+  newsletterError: "Please enter a valid email address.",
+
+  readTime: "min read",
+  articlesCount: "articles",
+
+  categoryDescriptions: {
+    tech: "Explore how AI, digital technologies, scientific research and innovation are changing work, industries and everyday life.",
+    business: "Explore global business trends, corporate strategy, market shifts and sustainable growth.",
+    culture: "Discover stories in art, design, museums, creative industries and cross-cultural exchange.",
+    life: "From healthy food to urban mobility, explore choices and trends shaping everyday life."
+  }
+}
 
     /* 正式文章由 CMS 和 RSS 加载，不预置示例文章。 */
     const articles = [];
