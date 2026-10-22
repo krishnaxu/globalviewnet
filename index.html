@@ -1977,11 +1977,38 @@ function refreshAutoNewsIds() {
       if (button) setFilter(button.dataset.filter);
     });
 
-    // 搜索：同时过滤中文标题、英文标题和摘要
-    $("#searchInput").addEventListener("input", () => {
-      renderArticles();
-      if (currentPage !== "home" && currentPage !== "about") renderCategoryGrid();
-    });
+
+ // 搜索：筛选文章，并在输入完成后自动定位到结果区
+let searchScrollTimer = null;
+
+$("#searchInput").addEventListener("input", () => {
+  renderArticles();
+
+  if (currentPage !== "home" && currentPage !== "about") {
+    renderCategoryGrid();
+  }
+
+  clearTimeout(searchScrollTimer);
+
+  const query = $("#searchInput").value.trim();
+
+  // 清空搜索框时不自动滚动
+  if (!query) return;
+
+  // 等待用户输入停顿后再滚动，避免页面频繁跳动
+  searchScrollTimer = setTimeout(() => {
+    const resultArea =
+      document.getElementById("articleCount") ||
+      document.getElementById("articleGrid");
+
+    if (resultArea) {
+      resultArea.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  }, 600);
+});
 
     // 头条滚动
     function renderTicker() {
