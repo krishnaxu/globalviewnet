@@ -650,21 +650,6 @@
     }
   }
 
-  function validateMarkdownStructure(original, translated) {
-    const originalStructure = getMarkdownStructure(original);
-    const translatedStructure = getMarkdownStructure(translated);
-
-    if (
-      JSON.stringify(originalStructure) !==
-      JSON.stringify(translatedStructure)
-    ) {
-      throw new Error(
-        "正文格式校验失败：标题层级、列表、引用、图片地址、链接地址或代码块结构可能发生变化。" +
-        "系统已停止回填，请检查原文和译文后再继续。"
-      );
-    }
-  }
-
   function cleanEnglishTitle(title) {
     return String(title || "")
       .trim()
