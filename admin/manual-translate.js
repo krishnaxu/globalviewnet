@@ -289,7 +289,7 @@
     return false;
   }
 
-  // 长文本按段落优先切分，避免单次请求过长。
+  // 长文本优先按段落和句子切分。
   function splitLongBlock(text) {
     const chunks = [];
     let remaining = text.trim();
@@ -329,7 +329,7 @@
     return chunks;
   }
 
-  // 返回二维数组：每个原文段落包含一个或多个分块。
+  // 每个原文段落对应一个或多个翻译分块。
   function splitText(text) {
     const normalizedText = String(text || "")
       .replace(/\r\n?/g, "\n")
@@ -385,11 +385,10 @@
         const result = await response.json();
         const translation = result.translation;
 
-        // 后端必须同时返回 finishReason，才能识别输出截断。
         if (result.finishReason === "length") {
           const error = new Error(
             "模型输出触及 Token 上限，当前分块的译文可能不完整。" +
-            "系统已停止接受该段译文。请缩小分块或调整输出上限后重试。"
+            "系统已停止接受该段译文，请缩小分块或调整输出上限后重试。"
           );
 
           error.code = "TRANSLATION_OUTPUT_TRUNCATED";
@@ -417,7 +416,6 @@
       } catch (error) {
         lastError = error;
 
-        // 输出被截断时不自动重试，避免重复消耗请求。
         if (
           error &&
           error.code === "TRANSLATION_OUTPUT_TRUNCATED"
@@ -448,7 +446,7 @@
     const source = String(text || "");
     const protectedImages = [];
 
-    // 先保护 Markdown 图片，防止图片链接被拆分或翻译。
+    // 暂时保护完整的 Markdown 图片语法。
     const protectedText = source.replace(
       /!\[[^\]]*\]\([^)\n]*\)/g,
       function (markdown) {
@@ -462,7 +460,6 @@
       }
     );
 
-    // 保留原文段落之间的空行。
     const normalized = protectedText.replace(/\r\n?/g, "\n");
     const parts = normalized.split(/(\n[ \t]*\n+)/);
     const output = [];
@@ -470,7 +467,6 @@
     let completed = 0;
     let total = 0;
 
-    // 统计总分块数，使进度显示对应整项翻译任务。
     for (const part of parts) {
       if (!part.trim()) continue;
 
@@ -490,7 +486,6 @@
     }
 
     for (const part of parts) {
-      // 原文段落间的空行直接保留，不送去翻译。
       if (/^\n[ \t]*\n+$/.test(part)) {
         output.push(part);
         continue;
@@ -501,7 +496,6 @@
         continue;
       }
 
-      // 纯图片标记不需要调用模型。
       if (
         protectedImages.some(
           image => part.trim() === image.token
@@ -525,7 +519,6 @@
           progress(completed, total);
         }
 
-        // 同一段原文被拆成多个分块时，以单个换行衔接。
         translatedParagraphs.push(
           translatedChunks.join("\n")
         );
@@ -538,7 +531,7 @@
 
     let translated = output.join("");
 
-    // 校验每个图片标记均完整保留且只出现一次。
+    // 每个图片占位符必须保留一次，随后恢复原始图片语法。
     for (const image of protectedImages) {
       const count =
         translated.split(image.token).length - 1;
@@ -558,11 +551,10 @@
     return translated;
   }
 
-  // 比较原文和译文的 Markdown 结构，避免翻译破坏排版。
+  // 提取 Markdown 结构。图片替代文字和链接显示文字允许翻译。
   function getMarkdownStructure(text) {
     const source = String(text || "");
 
-    // 提取图片地址，不比较图片替代文字，避免文字变化造成误报。
     const images = Array.from(
       source.matchAll(/!\[[^\]]*\]\([^)\n]*\)/g),
       match => match[0]
@@ -571,20 +563,17 @@
         .trim()
     );
 
-    // 提取普通 Markdown 链接的目标地址，不比较链接显示文字。
     const linkTargets = Array.from(
       source.matchAll(/(?<!!)\[[^\]]*\]\(([^)\n]*)\)/g),
       match => match[1].trim()
     );
 
     return {
-      // 保留每个标题的层级，例如 ## 和 ### 不能互换。
       headingLevels: Array.from(
         source.matchAll(/^ {0,3}(#{1,6})[ \t]+/gm),
         match => match[1].length
       ),
 
-      // 保留列表类型和缩进层级，不强制要求项目符号完全相同。
       listMarkers: Array.from(
         source.matchAll(/^(\s{0,3})([-+*]|\d+[.)])[ \t]+/gm),
         match => ({
@@ -595,19 +584,14 @@
         })
       ),
 
-      // 保留引用层级，例如 > 和 >>。
       quoteLines: Array.from(
         source.matchAll(/^ {0,3}(>+)/gm),
         match => match[1].length
       ),
 
-      // 图片地址必须保持一致，但不比较图片替代文字。
       images,
-
-      // Markdown 链接目标地址必须保持一致。
       linkTargets,
 
-      // 保留代码围栏的字符类型和长度。
       codeFences: Array.from(
         source.matchAll(/^ {0,3}(`{3,}|~{3,})/gm),
         match => match[1][0] + match[1].length
@@ -615,9 +599,12 @@
     };
   }
 
+  // 图片地址和链接目标地址不一致时停止回填；
+  // 其他 Markdown 排版差异只记录警告，允许人工微调。
   function validateMarkdownStructure(original, translated) {
     const originalStructure = getMarkdownStructure(original);
     const translatedStructure = getMarkdownStructure(translated);
+
     const labels = {
       headingLevels: "标题层级",
       listMarkers: "列表格式",
@@ -632,25 +619,36 @@
       JSON.stringify(translatedStructure[key])
     );
 
-   console.error(
-  "[GVN Translate] Markdown结构校验详情：" +
-  JSON.stringify(
-    mismatches.map(key => ({
-      项目: labels[key],
-      原文: originalStructure[key],
-      译文: translatedStructure[key]
-    })),
-    null,
-    2
-  )
-);
-
-      throw new Error(
-        "正文格式校验失败，存在差异的项目：" +
-        mismatches.map(key => labels[key]).join("、") +
-        "。详细信息请查看浏览器控制台。系统已停止回填，请勿保存或发布。"
+    if (mismatches.length > 0) {
+      console.warn(
+        "[GVN Translate] Markdown结构差异：\n" +
+        JSON.stringify(
+          mismatches.map(key => ({
+            项目: labels[key],
+            原文: originalStructure[key],
+            译文: translatedStructure[key]
+          })),
+          null,
+          2
+        )
       );
     }
+
+    const criticalMismatches = ["images", "linkTargets"].filter(
+      key =>
+        JSON.stringify(originalStructure[key]) !==
+        JSON.stringify(translatedStructure[key])
+    );
+
+    if (criticalMismatches.length > 0) {
+      throw new Error(
+        "正文图片或链接地址校验失败：" +
+        criticalMismatches.map(key => labels[key]).join("、") +
+        "。系统已停止回填，请检查原文和译文后再继续。"
+      );
+    }
+
+    return mismatches;
   }
 
   function cleanEnglishTitle(title) {
@@ -804,7 +802,6 @@
           );
         }
 
-        // 正文额外校验富文本桥接状态。
         if (item.type === "body") {
           const refreshedTarget =
             getRichTextDescriptor("body_en");
