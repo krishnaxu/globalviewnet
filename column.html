@@ -339,7 +339,15 @@
           "文章与观点，持续更新。",
           "Articles and perspectives, updated regularly."
         );
+        const articleCount = document.getElementById("articleCount");
 
+if (articleCount) {
+  articleCount.textContent = t(
+    "正在加载文章……",
+    "Loading articles..."
+  );
+}
+ 
         prevPageButton.textContent = t(
           "上一页",
           "Previous"
