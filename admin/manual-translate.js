@@ -2,10 +2,10 @@
   "use strict";
 
   const BUTTON_ID = "manual-translate-button";
+  const BRIDGE_KEY = "__GVN_RICHTEXT_FIELDS__";
   const REQUEST_TIMEOUT = 90000;
   const MAX_CHUNK_LENGTH = 700;
 
-  // 禁止直接操作 contenteditable / Slate DOM。
   const FIELD_SELECTOR =
     ".CodeMirror, textarea, input:not([type='checkbox']):not([type='radio'])";
 
@@ -39,8 +39,10 @@
   function getCodeMirror(field) {
     if (!field) return null;
 
-    if (field.CodeMirror &&
-        typeof field.CodeMirror.getValue === "function") {
+    if (
+      field.CodeMirror &&
+      typeof field.CodeMirror.getValue === "function"
+    ) {
       return field.CodeMirror;
     }
 
@@ -48,9 +50,11 @@
       ? field
       : field.querySelector("textarea");
 
-    if (textarea &&
-        textarea.CodeMirror &&
-        typeof textarea.CodeMirror.getValue === "function") {
+    if (
+      textarea &&
+      textarea.CodeMirror &&
+      typeof textarea.CodeMirror.getValue === "function"
+    ) {
       return textarea.CodeMirror;
     }
 
@@ -65,18 +69,7 @@
   }
 
   function chooseControl(controls, labelText) {
-    const isBody = /正文|body/i.test(labelText);
     const isSummary = /摘要|summary/i.test(labelText);
-
-    if (isBody) {
-      // 优先选择 Markdown 编辑器。
-      return (
-        controls.find(el => el.matches(".CodeMirror")) ||
-        controls.find(el => !!getCodeMirror(el)) ||
-        controls.find(el => el.matches("textarea")) ||
-        null
-      );
-    }
 
     if (isSummary) {
       return (
@@ -93,14 +86,51 @@
     );
   }
 
+  function getRichTextFieldName(labelText) {
+    if (normalize(labelText).startsWith(normalize("中文正文"))) {
+      return "body_zh";
+    }
+
+    if (normalize(labelText).startsWith(normalize("English Body"))) {
+      return "body_en";
+    }
+
+    return null;
+  }
+
+  function getRichTextDescriptor(fieldName) {
+    const bridge = window[BRIDGE_KEY];
+    const field = bridge && bridge[fieldName];
+
+    if (
+      !field ||
+      typeof field.getValue !== "function" ||
+      typeof field.setValue !== "function"
+    ) {
+      return null;
+    }
+
+    return {
+      __gvnRichText: true,
+      fieldName: fieldName
+    };
+  }
+
   function findField(labelText) {
+    const richTextName = getRichTextFieldName(labelText);
+
+    if (richTextName) {
+      // 正文必须通过桥接组件读写 CMS 状态。
+      // 不查找或修改 Slate 的 contenteditable DOM。
+      return getRichTextDescriptor(richTextName);
+    }
+
     const label = getLabels().find(
       item => labelMatches(item, labelText)
     );
 
     if (!label) return null;
 
-    // 如果 label 明确关联输入框，优先使用该输入框。
     const targetId = label.getAttribute("for");
 
     if (targetId) {
@@ -117,7 +147,6 @@
       }
     }
 
-    // 从字段专属容器开始查找，避免跨字段误选。
     const container = label.closest(
       '[class*="ControlContainer"], [class*="Field"], fieldset'
     );
@@ -131,7 +160,6 @@
       if (found) return found;
     }
 
-    // 逐层向上查找；遇到其他字段标签时停止。
     let parent = label.parentElement;
 
     for (let i = 0; parent && i < 8; i++) {
@@ -157,6 +185,13 @@
   function getFieldValue(field) {
     if (!field) return "";
 
+    if (field.__gvnRichText) {
+      const bridge = window[BRIDGE_KEY];
+      const entry = bridge && bridge[field.fieldName];
+
+      return entry ? String(entry.getValue() || "") : "";
+    }
+
     const editor = getCodeMirror(field);
 
     if (editor) return editor.getValue() || "";
@@ -169,18 +204,29 @@
   }
 
   function setFieldValue(field, value) {
-    if (!field || !field.isConnected) return false;
+    if (!field) return false;
+
+    if (field.__gvnRichText) {
+      const bridge = window[BRIDGE_KEY];
+      const entry = bridge && bridge[field.fieldName];
+
+      if (!entry) return false;
+
+      // 使用 React/CMS 的 onChange 更新正文，不直接改编辑器 DOM。
+      entry.setValue(value);
+
+      return true;
+    }
+
+    if (!field.isConnected) return false;
 
     const editor = getCodeMirror(field);
 
-    // 通过 CodeMirror 自身 API 更新编辑器状态。
     if (editor) {
       editor.setValue(value);
-
       return editor.getValue() === value;
     }
 
-    // 通过原生输入框 setter 更新受控输入值。
     if (field.matches("textarea, input")) {
       const prototype = field.matches("textarea")
         ? HTMLTextAreaElement.prototype
@@ -208,7 +254,6 @@
       return field.value === value;
     }
 
-    // 绝不使用 execCommand 或修改 Slate 的 contenteditable DOM。
     return false;
   }
 
@@ -253,7 +298,9 @@
       try {
         const response = await fetch("/api/translate", {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json"
+          },
           body: JSON.stringify({ text }),
           signal: controller.signal
         });
@@ -297,7 +344,7 @@
     }
 
     if (lastError && lastError.name === "AbortError") {
-      throw new Error("正文请求超过 90 秒，重试后仍然失败");
+      throw new Error("翻译请求超过 90 秒，重试后仍然失败");
     }
 
     throw lastError || new Error("翻译请求失败");
@@ -309,11 +356,34 @@
 
     for (let i = 0; i < chunks.length; i++) {
       progress(i + 1, chunks.length);
-
       results.push(await requestTranslation(chunks[i]));
     }
 
     return results.join("\n\n");
+  }
+
+  async function waitForValue(field, expectedValue) {
+    // 等待 CMS/React 接收正文变更，并验证实际状态。
+    for (let i = 0; i < 20; i++) {
+      await new Promise(resolve => setTimeout(resolve, 150));
+
+      const currentField = field.__gvnRichText
+        ? getRichTextDescriptor(field.fieldName)
+        : findField(
+            field.dataset && field.dataset.gvnLabel
+              ? field.dataset.gvnLabel
+              : ""
+          );
+
+      if (
+        currentField &&
+        getFieldValue(currentField) === expectedValue
+      ) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   async function translateFields(button) {
@@ -332,7 +402,7 @@
       if (!zhField || !enField) {
         alert(
           "找不到“" + item.zh + "”或对应的英文编辑器。\n\n" +
-          "请确认对应字段已显示，并将英文正文切换到 Markdown 模式。"
+          "请确认标题、摘要字段可见，并确认中文正文和英文正文的桥接组件已加载。"
         );
         return;
       }
@@ -342,13 +412,20 @@
 
       if (!chinese) continue;
 
-      if (english && !confirm(
-        item.name + "的英文栏已有内容，是否重新翻译并覆盖？"
-      )) {
+      if (
+        english &&
+        !confirm(
+          item.name + "的英文栏已有内容，是否重新翻译并覆盖？"
+        )
+      ) {
         continue;
       }
 
-      jobs.push({ item, text: chinese });
+      jobs.push({
+        item: item,
+        text: chinese,
+        targetName: item.en
+      });
     }
 
     if (!jobs.length) {
@@ -373,38 +450,35 @@
           }
         );
 
-        // 翻译完成后重新查找字段，避免使用旧 DOM。
-        const target = findField(item.en);
+        // 翻译结束后重新获取目标字段，避免使用过期引用。
+        const target = findField(job.targetName);
 
         if (!target) {
           throw new Error(
-            item.name + "的英文编辑器已无法定位。请勿保存文章。"
+            "无法定位" + item.name + "的英文编辑器。请勿保存文章。"
           );
         }
 
         if (!setFieldValue(target, translated)) {
           throw new Error(
             item.name +
-            "的译文已生成，但当前编辑器不是受支持的 Markdown 输入框。" +
-            "为避免再次破坏 Slate 编辑器，本次已停止写入。请勿保存文章。"
+            "的译文已生成，但写入失败。请勿保存文章。"
           );
         }
 
-        await new Promise(resolve => setTimeout(resolve, 300));
+        const verified = await waitForValue(target, translated);
 
-        const updatedTarget = findField(item.en);
-
-        if (getFieldValue(updatedTarget) !== translated) {
+        if (!verified) {
           throw new Error(
             item.name +
-            "的译文写入后没有保留，说明 CMS 状态未同步。请勿保存文章。"
+            "的译文未能在 CMS 状态中得到确认。请检查编辑器，暂勿保存或发布。"
           );
         }
       }
 
       alert(
         "翻译和回填已完成。\n\n" +
-        "请检查英文标题、摘要、正文和右侧预览。\n" +
+        "请检查英文标题、摘要、正文及编辑器预览。\n" +
         "本按钮不会主动保存或发布文章。"
       );
     } catch (error) {
@@ -413,7 +487,7 @@
       alert(
         "翻译未能全部完成：\n" +
         error.message +
-        "\n\n请勿保存或发布文章。"
+        "\n\n请检查各字段；确认内容正确前，请勿保存或发布文章。"
       );
     } finally {
       button.disabled = false;
@@ -431,7 +505,6 @@
     if (!hasChineseTitle) return;
 
     const button = document.createElement("button");
-
     button.id = BUTTON_ID;
     button.type = "button";
     button.textContent = "手动翻译英文";
@@ -452,7 +525,7 @@
       "box-shadow:0 2px 8px rgba(0,0,0,.2)"
     ].join(";");
 
-    button.addEventListener("click", () => {
+    button.addEventListener("click", function () {
       translateFields(button);
     });
 
@@ -468,5 +541,5 @@
 
   addButton();
 
-  console.log("手动翻译按钮脚本已加载（安全写入模式）");
+  console.log("手动翻译按钮脚本已加载（richtext-bridge 模式）");
 })();
