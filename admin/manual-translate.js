@@ -424,20 +424,62 @@
     throw lastError || new Error("翻译请求失败");
   }
 
+
   async function translateText(text, progress) {
-    const chunks = splitText(text);
+    // 翻译前保护 Markdown 图片，避免把图片地址发送给模型。
+    const protectedImages = [];
+    const protectedText = String(text || "").replace(
+      /!\[[^\]]*\]\([^)\n]*\)/g,
+      function (imageMarkdown) {
+        const token = "GVNIMAGEPLACEHOLDER" +
+          protectedImages.length + "END";
+
+        protectedImages.push({
+          token: token,
+          markdown: imageMarkdown
+        });
+
+        return token;
+      }
+    );
+
+    // 仍然使用原来的分块与翻译流程。
+    const chunks = splitText(protectedText);
     const results = [];
 
     for (let i = 0; i < chunks.length; i++) {
       progress(i + 1, chunks.length);
+      results.push(await requestTranslation(chunks[i]));
+    }
 
-      results.push(
-        await requestTranslation(chunks[i])
+    let translated = results.join("\n\n");
+
+    // 检查图片占位符是否完整，避免图片被静默丢弃。
+    for (const image of protectedImages) {
+      const escapedToken = image.token.replace(
+        /[.*+?^${}()|[\]\\]/g,
+        "\\$&"
+      );
+      const matches = translated.match(
+        new RegExp(escapedToken, "g")
+      ) || [];
+
+      if (matches.length !== 1) {
+        throw new Error(
+          "图片标记校验失败，已停止回填。请勿保存或发布文章。"
+        );
+      }
+    }
+
+    // 将原始图片标记恢复到译文原来的位置。
+    for (const image of protectedImages) {
+      translated = translated.replace(
+        image.token,
+        image.markdown
       );
     }
 
-    // 每个独立段落之间明确保留一个空行。
-    return results.join("\n\n");
+    return translated;
   }
 
   function cleanEnglishTitle(title) {
