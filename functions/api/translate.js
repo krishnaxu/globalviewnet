@@ -62,7 +62,7 @@ export async function onRequestPost({ request, env }) {
           max_tokens: 1200,
           temperature: 0.2
         }),
-      signal: AbortSignal.timeout(60000),
+      signal: AbortSignal.timeout(300000),
       }
     );
 
