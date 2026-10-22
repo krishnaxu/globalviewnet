@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-22T20:41:18.792Z",
+  "generated_at": "2026-10-22T21:40:32.925Z",
   "items": [
+    {
+      "id": "rivian-buys-world-model-startup-to-accelerate-e12cae2a65e1",
+      "language": "en",
+      "title": "Rivian buys world model startup to accelerate self-driving ambitions",
+      "excerpt": "Third Dimension's technology uses AI to match the physical world, which when combined with Rivian's reams of data could turn into a valuable simulator.",
+      "date": "2026-10-22T21:05:05.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/",
+      "image": ""
+    },
+    {
+      "id": "meta-s-deal-to-keep-zuckerberg-in-california--98aecefaa975",
+      "language": "en",
+      "title": "Meta’s deal to keep Zuckerberg in California adds fuel to wealth tax debate ahead of election",
+      "excerpt": "With less than two weeks before the midterm elections, Meta made clear that Mark Zuckerberg is staying in California if the wealth tax passes.",
+      "date": "2026-10-22T20:47:59.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/22/meta-mark-zuckerberg-california-billionaire-tax.html",
+      "image": ""
+    },
+    {
+      "id": "disney-s-multiplatform-super-bowl-plan-frustr-78a95f561cf1",
+      "language": "en",
+      "title": "Disney’s multiplatform Super Bowl plan frustrates ABC affiliates",
+      "excerpt": "Disney is airing the Super Bowl on ABC, ESPN, Disney+, ESPN2, ESPNU, and NFL Network, to the chagrin of local station affiliates.",
+      "date": "2026-10-22T20:44:26.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/22/disneys-multiplatform-super-bowl-plan-frustrates-abc-affiliates.html",
+      "image": ""
+    },
     {
       "id": "openai-nears-up-to-30-billion-funding-round-a-f2d694adc68d",
       "language": "en",
@@ -10,6 +40,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
       "image": ""
+    },
+    {
+      "id": "disgraced-emudhra-drops-out-of-tls-business-a-98516d3e7e04",
+      "language": "en",
+      "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+      "excerpt": "Flubbed key signing \"ceremony\" allowed minting of web credentials for any site.",
+      "date": "2026-10-22T20:17:52.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/02/GettyImages-1778229942-500x500.jpg"
     },
     {
       "id": "a-lesson-from-poker-tells-us-not-to-fold-on-m-22d2b9c02bd6",
@@ -40,6 +80,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/22/the-secret-to-fast-startup-growth-isnt-early-sales-top-names-in-tech-say/",
       "image": ""
+    },
+    {
+      "id": "leaked-mass-effect-universe-trailer-gives-a-t-b321342c8bd3",
+      "language": "en",
+      "title": "Leaked Mass Effect: Universe trailer gives a taste of what we're all missing",
+      "excerpt": "We can't have nice things, but at least we can get trailers for them.",
+      "date": "2026-10-22T19:59:37.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gaming/2026/10/leaked-mass-effect-universe-trailer-gives-a-taste-of-what-were-all-missing/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/meuniverse-500x500-1792697650.png"
     },
     {
       "id": "reported-fraud-losses-among-older-americans-h-38e3ed2e99ac",
@@ -2949,56 +2999,6 @@
       "date": "2026-10-22T08:18:57.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-22/10719123.shtml",
-      "image": ""
-    },
-    {
-      "id": "泽连斯基称俄军向基辅发射21枚弹道导弹-已致2死34伤-f16afcd4588c",
-      "language": "zh",
-      "title": "泽连斯基称俄军向基辅发射21枚弹道导弹 已致2死34伤",
-      "excerpt": "乌克兰总统泽连斯基22日表示，俄军从21日晚起分三轮向基辅发射21枚弹道导弹，造成住宅、能源设施、火车站、地铁、购物中心、企业等建筑受损。",
-      "date": "2026-10-22T08:18:39.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-22/10719127.shtml",
-      "image": ""
-    },
-    {
-      "id": "十四五-时期我国吸收外商直接投资超7500亿美元-161c952fc9b4",
-      "language": "zh",
-      "title": "“十四五”时期我国吸收外商直接投资超7500亿美元",
-      "excerpt": "中新网10月22日电 国务院新闻办公室于22日举行“开局起步‘十五五’”系列主题新闻发布会，商务部副部长蒋成华表示，“十四五”时期，国内消费市场稳步扩大，社会消费品零售总额先后跨越40万亿元和50万亿元大关；对外贸易再创新高，货物进出口超过6万亿美元，服务进出口突破1万亿美元；双向投资保持世界前列，吸收外商直接投资5年累计超过7500亿美元，非金融类对外直接投资遍及近190个国家和地区，5年累计超过8000亿美元；多双边和区域经贸合作成果丰硕；商务安全体系更加完善。",
-      "date": "2026-10-22T08:16:45.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-22/10719112.shtml",
-      "image": ""
-    },
-    {
-      "id": "celebrity-shark-guided-out-of-south-korea-can-c289548e4451",
-      "language": "en",
-      "title": "Celebrity shark guided out of South Korea canal refuses to swim out to sea",
-      "excerpt": "Bukangi the shark became an unlikely sensation after it was spotted in a canal in Busan weeks ago.",
-      "date": "2026-10-22T08:15:48.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cr3wv99614deo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b8eb/live/0ca70d20-cdc2-11f1-ae0b-3f5d64e6a869.jpg"
-    },
-    {
-      "id": "北京优化涉外支付服务-更好满足境外人士消费等需求-0b33bf2db144",
-      "language": "zh",
-      "title": "北京优化涉外支付服务 更好满足境外人士消费等需求",
-      "excerpt": "中新社北京10月22日电 (记者 徐婧)《北京市全面提升金融营商环境实施方案》(简称“实施方案”)22日在2026金融街论坛年会举办期间发布。实施方案明确加强企业上市服务，大力支持符合条件的企业在境内外资本市场上市；优化涉外支付服务，更好满足境外人士在京消费、通信、上网等需求。",
-      "date": "2026-10-22T08:11:07.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-22/10719113.shtml",
-      "image": ""
-    },
-    {
-      "id": "经济观察-人民币国际化正迎来以-可信选择-为标志的加速期-0ef246aff413",
-      "language": "zh",
-      "title": "（经济观察）人民币国际化正迎来以“可信选择”为标志的加速期",
-      "excerpt": "中新社上海10月22日电 (高志苗)以“科技、地缘与全球经济”为主题的2026外滩年会19日至22日在上海召开。在人工智能治理与地缘变局讨论之外，人民币国际化成为与会嘉宾绕不开的议题。多位与会专家认为，人民币国际化正迎来一个以“可信选择”为标志的加速期。",
-      "date": "2026-10-22T08:06:28.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-22/10719095.shtml",
       "image": ""
     }
   ]
