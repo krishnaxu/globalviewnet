@@ -653,15 +653,26 @@ const seoStructuredDataTag =
         // 在正文末尾显示来源名称和来源链接
         renderSource(article, lang, contentElement);
 
-        // 中英文首页返回链接
-        const backLink = document.querySelector(".back");
+// 根据文章来源设置返回位置，并保留当前语言
+const backLink = document.querySelector(".back");
+const from = params.get("from");
 
-        if (backLink) {
-          backLink.textContent =
-            lang === "en" ? "← Back to Home" : "← 返回首页";
+if (backLink) {
+  if (from === "column") {
+    backLink.textContent =
+      lang === "en" ? "← Back to Column" : "← 返回专栏";
 
-          backLink.href = lang === "en" ? "/?lang=en" : "/";
-        }
+    backLink.href =
+      lang === "en"
+        ? "/column.html?lang=en"
+        : "/column.html?lang=zh";
+  } else {
+    backLink.textContent =
+      lang === "en" ? "← Back to Home" : "← 返回首页";
+
+    backLink.href = lang === "en" ? "/?lang=en" : "/";
+  }
+}
       } catch (error) {
         titleElement.textContent =
           lang === "en" ? "Failed to load article" : "文章加载失败";
