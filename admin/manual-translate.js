@@ -4,7 +4,7 @@
 
   const BUTTON_ID = "manual-translate-button";
   const BRIDGE_KEY = "__GVN_RICHTEXT_FIELDS__";
-  const REQUEST_TIMEOUT = 90000;
+  const REQUEST_TIMEOUT = 300000;
   const MAX_CHUNK_LENGTH = 700;
 
   const FIELD_SELECTOR =
@@ -417,7 +417,7 @@
 
     if (lastError && lastError.name === "AbortError") {
       throw new Error(
-        "翻译请求超过 90 秒，重试后仍然失败"
+        "翻译请求超过 5 分钟，重试后仍然失败"
       );
     }
 
