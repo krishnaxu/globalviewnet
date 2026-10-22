@@ -1,3 +1,4 @@
+
 (function () {
   "use strict";
 
@@ -31,9 +32,11 @@
 
     const style = window.getComputedStyle(el);
 
-    return style.display !== "none" &&
+    return (
+      style.display !== "none" &&
       style.visibility !== "hidden" &&
-      el.getAttribute("aria-hidden") !== "true";
+      el.getAttribute("aria-hidden") !== "true"
+    );
   }
 
   function getCodeMirror(field) {
@@ -71,6 +74,12 @@
   function chooseControl(controls, labelText) {
     const isSummary = /摘要|summary/i.test(labelText);
 
+    const codeMirrorControl = controls.find(
+      el => getCodeMirror(el)
+    );
+
+    if (codeMirrorControl) return codeMirrorControl;
+
     if (isSummary) {
       return (
         controls.find(el => el.matches("textarea")) ||
@@ -87,11 +96,13 @@
   }
 
   function getRichTextFieldName(labelText) {
-    if (normalize(labelText).startsWith(normalize("中文正文"))) {
+    const normalized = normalize(labelText);
+
+    if (normalized.startsWith(normalize("中文正文"))) {
       return "body_zh";
     }
 
-    if (normalize(labelText).startsWith(normalize("English Body"))) {
+    if (normalized.startsWith(normalize("English Body"))) {
       return "body_en";
     }
 
@@ -120,8 +131,6 @@
     const richTextName = getRichTextFieldName(labelText);
 
     if (richTextName) {
-      // 正文必须通过桥接组件读写 CMS 状态。
-      // 不查找或修改 Slate 的 contenteditable DOM。
       return getRichTextDescriptor(richTextName);
     }
 
@@ -137,9 +146,7 @@
       const target = document.getElementById(targetId);
 
       if (target && isVisible(target)) {
-        const editor = getCodeMirror(target);
-
-        if (editor) return target;
+        if (getCodeMirror(target)) return target;
 
         if (target.matches("textarea, input")) {
           return target;
@@ -182,14 +189,34 @@
     return null;
   }
 
+  function getBridgeEntry(field) {
+    if (!field || !field.__gvnRichText) return null;
+
+    const bridge = window[BRIDGE_KEY];
+    const entry = bridge && bridge[field.fieldName];
+
+    if (
+      !entry ||
+      typeof entry.getValue !== "function" ||
+      typeof entry.setValue !== "function"
+    ) {
+      return null;
+    }
+
+    return entry;
+  }
+
   function getFieldValue(field) {
     if (!field) return "";
 
     if (field.__gvnRichText) {
-      const bridge = window[BRIDGE_KEY];
-      const entry = bridge && bridge[field.fieldName];
+      const entry = getBridgeEntry(field);
 
-      return entry ? String(entry.getValue() || "") : "";
+      if (!entry) return "";
+
+      const value = entry.getValue();
+
+      return value == null ? "" : String(value);
     }
 
     const editor = getCodeMirror(field);
@@ -206,16 +233,25 @@
   function setFieldValue(field, value) {
     if (!field) return false;
 
+    value = value == null ? "" : String(value);
+
     if (field.__gvnRichText) {
-      const bridge = window[BRIDGE_KEY];
-      const entry = bridge && bridge[field.fieldName];
+      const entry = getBridgeEntry(field);
 
       if (!entry) return false;
 
-      // 使用 React/CMS 的 onChange 更新正文，不直接改编辑器 DOM。
-      entry.setValue(value);
+      try {
+        entry.setValue(value);
+        return true;
+      } catch (error) {
+        console.error(
+          "[GVN Translate] 富文本写入失败：",
+          field.fieldName,
+          error
+        );
 
-      return true;
+        return false;
+      }
     }
 
     if (!field.isConnected) return false;
@@ -262,14 +298,23 @@
     let remaining = text.trim();
 
     while (remaining.length > MAX_CHUNK_LENGTH) {
-      let cut = remaining.lastIndexOf("\n", MAX_CHUNK_LENGTH);
+      let cut = remaining.lastIndexOf(
+        "\n",
+        MAX_CHUNK_LENGTH
+      );
 
       if (cut < MAX_CHUNK_LENGTH / 2) {
-        cut = remaining.lastIndexOf("。", MAX_CHUNK_LENGTH);
+        cut = remaining.lastIndexOf(
+          "。",
+          MAX_CHUNK_LENGTH
+        );
       }
 
       if (cut < MAX_CHUNK_LENGTH / 2) {
-        cut = remaining.lastIndexOf(". ", MAX_CHUNK_LENGTH);
+        cut = remaining.lastIndexOf(
+          ". ",
+          MAX_CHUNK_LENGTH
+        );
       }
 
       if (cut < MAX_CHUNK_LENGTH / 2) {
@@ -290,6 +335,7 @@
 
     for (let attempt = 1; attempt <= 2; attempt++) {
       const controller = new AbortController();
+
       const timeoutId = setTimeout(
         () => controller.abort(),
         REQUEST_TIMEOUT
@@ -327,7 +373,7 @@
           )
         ) {
           throw new Error(
-            "接口没有收到预期的中文原文，请检查字段识别"
+            "接口没有收到预期的中文原文，请检查字段读取"
           );
         }
 
@@ -336,7 +382,9 @@
         lastError = error;
 
         if (attempt < 2) {
-          await new Promise(resolve => setTimeout(resolve, 1000));
+          await new Promise(
+            resolve => setTimeout(resolve, 1000)
+          );
         }
       } finally {
         clearTimeout(timeoutId);
@@ -344,7 +392,9 @@
     }
 
     if (lastError && lastError.name === "AbortError") {
-      throw new Error("翻译请求超过 90 秒，重试后仍然失败");
+      throw new Error(
+        "翻译请求超过 90 秒，重试后仍然失败"
+      );
     }
 
     throw lastError || new Error("翻译请求失败");
@@ -356,24 +406,25 @@
 
     for (let i = 0; i < chunks.length; i++) {
       progress(i + 1, chunks.length);
-      results.push(await requestTranslation(chunks[i]));
+      results.push(
+        await requestTranslation(chunks[i])
+      );
     }
 
     return results.join("\n\n");
   }
 
   async function waitForValue(field, expectedValue) {
-    // 等待 CMS/React 接收正文变更，并验证实际状态。
-    for (let i = 0; i < 20; i++) {
-      await new Promise(resolve => setTimeout(resolve, 150));
+    for (let i = 0; i < 30; i++) {
+      await new Promise(
+        resolve => setTimeout(resolve, 150)
+      );
 
+      // 富文本每次从桥接表读取最新状态；
+      // 普通字段直接验证当前控件，不再用空标签重新查找。
       const currentField = field.__gvnRichText
         ? getRichTextDescriptor(field.fieldName)
-        : findField(
-            field.dataset && field.dataset.gvnLabel
-              ? field.dataset.gvnLabel
-              : ""
-          );
+        : field;
 
       if (
         currentField &&
@@ -388,9 +439,21 @@
 
   async function translateFields(button) {
     const definitions = [
-      { zh: "中文标题", en: "English Title", name: "标题" },
-      { zh: "中文摘要", en: "English Summary", name: "摘要" },
-      { zh: "中文正文", en: "English Body", name: "正文" }
+      {
+        zh: "中文标题",
+        en: "English Title",
+        name: "标题"
+      },
+      {
+        zh: "中文摘要",
+        en: "English Summary",
+        name: "摘要"
+      },
+      {
+        zh: "中文正文",
+        en: "English Body",
+        name: "正文"
+      }
     ];
 
     const jobs = [];
@@ -400,10 +463,17 @@
       const enField = findField(item.en);
 
       if (!zhField || !enField) {
+        const missing = [];
+
+        if (!zhField) missing.push(item.zh);
+        if (!enField) missing.push(item.en);
+
         alert(
-          "找不到“" + item.zh + "”或对应的英文编辑器。\n\n" +
-          "请确认标题、摘要字段可见，并确认中文正文和英文正文的桥接组件已加载。"
+          "找不到以下字段：\n" +
+          missing.join("、") +
+          "\n\n请确认对应字段可见，并确认富文本桥接组件已加载。"
         );
+
         return;
       }
 
@@ -415,7 +485,8 @@
       if (
         english &&
         !confirm(
-          item.name + "的英文栏已有内容，是否重新翻译并覆盖？"
+          item.name +
+          "的英文栏已有内容，是否重新翻译并覆盖？"
         )
       ) {
         continue;
@@ -423,8 +494,7 @@
 
       jobs.push({
         item: item,
-        text: chinese,
-        targetName: item.en
+        text: chinese
       });
     }
 
@@ -439,7 +509,8 @@
       for (const job of jobs) {
         const item = job.item;
 
-        button.textContent = "正在翻译" + item.name + "…";
+        button.textContent =
+          "正在翻译" + item.name + "…";
 
         const translated = await translateText(
           job.text,
@@ -450,12 +521,13 @@
           }
         );
 
-        // 翻译结束后重新获取目标字段，避免使用过期引用。
-        const target = findField(job.targetName);
+        // 翻译完成后重新定位目标字段。
+        const target = findField(item.en);
 
         if (!target) {
           throw new Error(
-            "无法定位" + item.name + "的英文编辑器。请勿保存文章。"
+            "无法定位" + item.name +
+            "的英文编辑器。请勿保存文章。"
           );
         }
 
@@ -466,27 +538,36 @@
           );
         }
 
-        const verified = await waitForValue(target, translated);
+        const verified = await waitForValue(
+          target,
+          translated
+        );
 
         if (!verified) {
           throw new Error(
             item.name +
-            "的译文未能在 CMS 状态中得到确认。请检查编辑器，暂勿保存或发布。"
+            "的译文未能在 CMS 状态中得到确认。" +
+            "请检查编辑器，暂勿保存或发布。"
           );
         }
       }
 
       alert(
         "翻译和回填已完成。\n\n" +
-        "请检查英文标题、摘要、正文及编辑器预览。\n" +
+        "请检查英文标题、摘要、正文及右侧预览。\n" +
         "本按钮不会主动保存或发布文章。"
       );
     } catch (error) {
-      console.error("手动翻译失败：", error);
+      console.error(
+        "[GVN Translate] 手动翻译失败：",
+        error
+      );
 
       alert(
         "翻译未能全部完成：\n" +
-        error.message +
+        (error && error.message
+          ? error.message
+          : String(error)) +
         "\n\n请检查各字段；确认内容正确前，请勿保存或发布文章。"
       );
     } finally {
@@ -505,6 +586,7 @@
     if (!hasChineseTitle) return;
 
     const button = document.createElement("button");
+
     button.id = BUTTON_ID;
     button.type = "button";
     button.textContent = "手动翻译英文";
@@ -541,5 +623,7 @@
 
   addButton();
 
-  console.log("手动翻译按钮脚本已加载（richtext-bridge 模式）");
+  console.log(
+    "[GVN Translate] 手动翻译按钮已加载（富文本桥接模式）。"
+  );
 })();
