@@ -1,4 +1,4 @@
-```javascript
+
 (function () {
   "use strict";
 
@@ -242,4 +242,4 @@
 
   console.log("手动翻译按钮脚本已加载");
 })();
-```
+
