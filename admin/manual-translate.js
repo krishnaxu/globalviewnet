@@ -558,6 +558,59 @@
     return translated;
   }
 
+    // 比较原文和译文的 Markdown 结构，防止格式丢失后回填。
+  function getMarkdownStructure(text) {
+    const source = String(text || "");
+
+    return {
+      headingLevels: Array.from(
+        source.matchAll(/^ {0,3}(#{1,6})[ \t]+/gm),
+        match => match[1].length
+      ),
+
+      listMarkers: Array.from(
+        source.matchAll(
+          /^ {0,3}(?:[-+*]|(\d+)[.)])[ \t]+/gm
+        ),
+        match => match[0].trim().replace(/^\d+/, "#")
+      ),
+
+      quoteLines: Array.from(
+        source.matchAll(/^ {0,3}>/gm)
+      ).length,
+
+      images: Array.from(
+        source.matchAll(/!\[[^\]]*\]\([^)\n]*\)/g),
+        match => match[0]
+      ),
+
+      linkTargets: Array.from(
+        source.matchAll(/(?<!!)\[[^\]]*\]\(([^)\n]*)\)/g),
+        match => match[1]
+      ),
+
+      codeFences: Array.from(
+        source.matchAll(/^ {0,3}(`{3,}|~{3,})/gm),
+        match => match[1][0] + match[1].length
+      )
+    };
+  }
+
+  function validateMarkdownStructure(original, translated) {
+    const originalStructure = getMarkdownStructure(original);
+    const translatedStructure = getMarkdownStructure(translated);
+
+    if (
+      JSON.stringify(originalStructure) !==
+      JSON.stringify(translatedStructure)
+    ) {
+      throw new Error(
+        "正文格式校验失败：小标题、列表、引用、图片、链接或代码块结构可能发生变化。" +
+        "系统已停止回填，请勿保存或发布。"
+      );
+    }
+  }
+  
   function cleanEnglishTitle(title) {
     return String(title || "")
       .trim()
@@ -674,6 +727,10 @@
 
         if (item.type === "title") {
           translated = cleanEnglishTitle(translated);
+        }
+
+        if (item.type === "body") {
+          validateMarkdownStructure(job.text, translated);
         }
 
         const target = findField(item.en);
