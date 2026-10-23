@@ -67,8 +67,12 @@ function parseFrontmatter(content) {
       );
 
       value = folded
-        ? text.join(" ").trim()
-        : text.join("\n");
+  ? (
+      key === "body_en" || key === "body_zh"
+        ? text.join("\n").trim()
+        : text.join(" ").trim()
+    )
+  : text.join("\n");
 
     } else {
       // 处理普通 YAML 字段，以及缩进换行的续行
