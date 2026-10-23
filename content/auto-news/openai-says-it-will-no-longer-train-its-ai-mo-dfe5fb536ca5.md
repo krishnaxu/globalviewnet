@@ -1,0 +1,15 @@
+---
+slug: "openai-says-it-will-no-longer-train-its-ai-mo-dfe5fb536ca5"
+language: "en"
+title: "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”"
+excerpt: "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work."
+date: "2026-10-23T23:05:49.000Z"
+source_name: "TechCrunch"
+source_url: "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+image: ""
+published: true
+---
+
+OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.
+
+原文链接：https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/

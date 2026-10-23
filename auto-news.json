@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-10-23T22:40:09.641Z",
+  "generated_at": "2026-10-23T23:38:33.995Z",
   "items": [
+    {
+      "id": "10月24日新闻早报-64e46b2cc340",
+      "language": "zh",
+      "title": "10月24日新闻早报",
+      "excerpt": "",
+      "date": "2026-10-23T23:09:34.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/iframe/2026/10-24/10720171.shtml",
+      "image": ""
+    },
+    {
+      "id": "startups-don-t-need-to-go-viral-to-win-custom-8f96b86f1e56",
+      "language": "en",
+      "title": "Startups don’t need to go viral to win customers",
+      "excerpt": "At TechCrunch Disrupt last week, two founders and a VC discussed how to not just gain an early following but keep one.",
+      "date": "2026-10-23T23:07:45.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/23/startups-dont-need-to-go-viral-to-win-customers/",
+      "image": ""
+    },
+    {
+      "id": "openai-says-it-will-no-longer-train-its-ai-mo-dfe5fb536ca5",
+      "language": "en",
+      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+      "excerpt": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
+      "date": "2026-10-23T23:05:49.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "image": ""
+    },
+    {
+      "id": "turmoil-hits-ai-build-out-as-neoclouds-face-p-fa5d4551543f",
+      "language": "en",
+      "title": "Turmoil hits AI build-out as neoclouds face pressure, credit risks mount and Solidigm pulls IPO",
+      "excerpt": "Stock slumps, pulled IPOs and rising spreads on credit default swaps this week sets stage for hyperscaler earnings.",
+      "date": "2026-10-23T22:49:04.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/23/ai-turmoil-neoclouds-struggle-credit-risks-jump-solidigm-pulls-ipo.html",
+      "image": ""
+    },
+    {
+      "id": "nasa-updates-lander-plans-for-moon-landings-f-94538d593663",
+      "language": "en",
+      "title": "NASA updates lander plans for Moon landings, finally solves long-festering Orion issue",
+      "excerpt": "\"We have the mandate, we have the resources, and the support from our stakeholders.\"",
+      "date": "2026-10-23T22:48:25.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/centaur-500x500.jpg"
+    },
+    {
+      "id": "年轻人开始流行-喝大水-极简养生的背后怎么喝才更健康-2d0c011a06d2",
+      "language": "zh",
+      "title": "年轻人开始流行“喝大水” 极简养生的背后怎么喝才更健康？",
+      "excerpt": "最近，一种叫“大水理论”的生活方式在网络上引发热议。",
+      "date": "2026-10-23T22:39:59.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/jk/2026/10-24/10720170.shtml",
+      "image": ""
+    },
     {
       "id": "moody-s-holds-steady-on-france-s-credit-ratin-6fc0faf8c87f",
       "language": "en",
@@ -9,6 +69,16 @@
       "date": "2026-10-23T22:37:19.000Z",
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
+      "image": ""
+    },
+    {
+      "id": "伊朗称两艘超级油轮在霍尔木兹海峡南部触雷爆炸-807123059661",
+      "language": "zh",
+      "title": "伊朗称两艘超级油轮在霍尔木兹海峡南部触雷爆炸",
+      "excerpt": "当地时间23日，伊朗伊斯兰革命卫队海军宣布，当天早些时候，两艘试图非法穿越霍尔木兹海峡南部的超级油轮触雷。爆炸和大火导致其机舱瘫痪，并停泊在原地。这两艘油轮共载有超过450万桶原油，触雷后被遗弃在霍尔木兹海峡南部，船员弃船逃生。(总台记者 李健南）",
+      "date": "2026-10-23T22:36:43.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-24/10720169.shtml",
       "image": ""
     },
     {
@@ -2929,76 +2999,6 @@
       "date": "2026-10-23T08:19:02.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-23/10719785.shtml",
-      "image": ""
-    },
-    {
-      "id": "校企携手对接冰雪产业-聚力培育文旅应用型人才-1feecc0bf982",
-      "language": "zh",
-      "title": "校企携手对接冰雪产业 聚力培育文旅应用型人才",
-      "excerpt": "中新网黑河10月23日电 (史轶夫 郭林燕)立足中俄边境口岸区位，盘活冰雪文旅冷资源。23日，以“开放向北文旅融通”为主题的校企对接暨黑河文旅产教融合发展交流活动在黑河学院启幕，黑龙江省25所高校、百余家文旅企业齐聚北疆，打通人才培养与产业发展的衔接堵点。",
-      "date": "2026-10-23T08:18:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-23/10719789.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国无人驾驶技术-驶向-哈萨克斯坦-9c12a47930ec",
-      "language": "zh",
-      "title": "中国无人驾驶技术“驶向”哈萨克斯坦",
-      "excerpt": "【中亚专线】中国无人驾驶技术“驶向”哈萨克斯坦",
-      "date": "2026-10-23T08:17:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ydyl/2026/10-23/10719777.shtml",
-      "image": ""
-    },
-    {
-      "id": "nvidia-s-huang-heads-to-kazakhstan-for-the-fi-7511e2975083",
-      "language": "en",
-      "title": "Nvidia's Huang heads to Kazakhstan for the first time — and he's not the only one with big plans",
-      "excerpt": "Jensen Huang's first Kazakhstan visit highlights the country's growing AI ambitions and global business appeal.",
-      "date": "2026-10-23T08:16:52.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/23/nvidia-huang-investment-kazakhstan-.html",
-      "image": ""
-    },
-    {
-      "id": "7国16支青少年足球队在云南丽江同场竞技-883f5e259802",
-      "language": "zh",
-      "title": "7国16支青少年足球队在云南丽江同场竞技",
-      "excerpt": "中新网云南丽江10月23日电 (王安卓)22日晚，一带一路·2026第三届“天雨流芳”丽江青少年足球邀请赛在云南省丽江市开幕。即日起至10月28日，来自中国、尼泊尔、马来西亚及老挝等7个国家的16支青少年球队齐聚玉龙雪山脚下，通过32场精彩对决挥洒汗水，追逐梦想。",
-      "date": "2026-10-23T08:16:12.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-23/10719788.shtml",
-      "image": ""
-    },
-    {
-      "id": "中俄青少年相聚长春-在传统文化体验中增进友谊-c33fa1a79960",
-      "language": "zh",
-      "title": "中俄青少年相聚长春 在传统文化体验中增进友谊",
-      "excerpt": "中新网长春10月23日电 (记者 郭佳)23日，俄罗斯符拉迪沃斯托克第62中学30余名师生走进长春市第四十五中学，与中国师生开展文化交流。当天，两校签署友好学校合作协议，计划通过师生互访、教育教学研讨和文化交流等方式，将一次校园相聚延伸为长期合作。",
-      "date": "2026-10-23T08:15:22.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-23/10719787.shtml",
-      "image": ""
-    },
-    {
-      "id": "湖北鄂州花湖机场跑出跨境生鲜保障-加速度-35594d3c66fa",
-      "language": "zh",
-      "title": "湖北鄂州花湖机场跑出跨境生鲜保障“加速度”",
-      "excerpt": "中新网湖北鄂州10月23日电 (刘小进 王星予 武一力)记者23日从湖北鄂州花湖国际机场获悉，为破解生鲜货运时效痛点，该机场建立生鲜货物专项保障机制。今年以来，已累计保障国际生鲜货物2.1万吨，同比增长10%，其中三文鱼运量达1.4万吨，同比增长146%。",
-      "date": "2026-10-23T08:14:56.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-23/10719786.shtml",
-      "image": ""
-    },
-    {
-      "id": "ai说唱-过来人-在台引共鸣-大陆文化产品持续受关注-806d5f1ce9dd",
-      "language": "zh",
-      "title": "AI说唱《过来人》在台引共鸣 大陆文化产品持续受关注",
-      "excerpt": "中新社台北10月23日电 由大陆创作者“喆FILM”(本名王琨喆)制作的人工智能(AI)说唱歌曲《过来人》近日在大陆社交平台走红，也引发台湾网友关注。",
-      "date": "2026-10-23T08:14:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-23/10719780.shtml",
       "image": ""
     }
   ]
