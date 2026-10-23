@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-10-23T16:45:03.518Z",
+  "generated_at": "2026-10-23T17:40:15.709Z",
   "items": [
+    {
+      "id": "crows-can-evaluate-visual-info-twice-as-fast--67838713450d",
+      "language": "en",
+      "title": "Crows can evaluate visual info twice as fast as mammals",
+      "excerpt": "Birds' compact nervous system seems to help them handle tasks very quickly.",
+      "date": "2026-10-23T17:32:58.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/10/crows-can-evaluate-visual-info-twice-as-fast-as-mammals/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1472974929-500x500.jpg"
+    },
+    {
+      "id": "intel-gets-waiver-after-worries-fuzzy-us-ban--1e9b03cbb67b",
+      "language": "en",
+      "title": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
+      "excerpt": "Company says foreign-made robotic vehicles are crucial to US chip production.",
+      "date": "2026-10-23T17:18:31.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Intel-fab-interior-500x500.jpg"
+    },
+    {
+      "id": "musk-s-spacex-is-still-restricting-starlink-i-2097bd8254c1",
+      "language": "en",
+      "title": "Musk's SpaceX is still restricting Starlink in Ukraine and the toll is rising",
+      "excerpt": "Since last week, Ukraine has reported restrictions on a version of Starshield, a version of SpaceX's Starlink, hampering its military operations against Russia.",
+      "date": "2026-10-23T17:04:14.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/23/ukraine-says-starlink-restrictions-remain-despite-trump-assurances.html",
+      "image": ""
+    },
+    {
+      "id": "两名日本登山者在尼泊尔失联多日后遗体被发现-f55d2bff1ca9",
+      "language": "zh",
+      "title": "两名日本登山者在尼泊尔失联多日后遗体被发现",
+      "excerpt": "中新社加德满都10月23日电 (记者 崔楠)尼泊尔救援人员23日在该国西北部山区发现两名此前失联的日本登山者遗体。",
+      "date": "2026-10-23T17:01:20.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-24/10720160.shtml",
+      "image": ""
+    },
+    {
+      "id": "rfk-jr-s-vaccine-injury-clinic-could-damage-n-a93a5fce988f",
+      "language": "en",
+      "title": "RFK Jr.’s vaccine injury clinic could damage NIH hospital, board warns",
+      "excerpt": "\"Trust is slow to build and quick to lose,\" board chair Jack Leslie said.",
+      "date": "2026-10-23T16:58:39.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/health/2026/10/rfk-jr-s-vaccine-injury-clinic-could-damage-nih-hospital-board-warns/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2298718210-500x500.jpg"
+    },
+    {
+      "id": "knicks-sent-employees-fake-offer-of-champions-8b0b484a58d8",
+      "language": "en",
+      "title": "Knicks sent employees fake offer of championship rings in phishing test: Report",
+      "excerpt": "Corporate phishing tests are common, but this one was especially cruel.",
+      "date": "2026-10-23T16:51:59.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/knicks-sent-employees-fake-offer-of-championship-rings-in-phishing-test-report/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/james-dolan-knicks-championship-500x500-1792772620.jpg"
+    },
     {
       "id": "college-campuses-have-largely-gone-silent-can-a9524bcba910",
       "language": "en",
@@ -10,6 +70,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/make-it/2026/10/23/college-students-socializing-less-campus-life.html",
       "image": ""
+    },
+    {
+      "id": "everybody-panic-a-valve-developer-said-hlx-in-6fa4559ee3ac",
+      "language": "en",
+      "title": "Everybody panic: A Valve developer said \"HLX\" in public",
+      "excerpt": "Sound designer lets Half Life-related codename slip at a conference.",
+      "date": "2026-10-23T16:35:00.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gaming/2026/10/everybody-panic-a-valve-developer-said-hlx-in-public/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2017/08/024-500x500-1740609177.jpg"
     },
     {
       "id": "agent-cloud-startup-daytona-hits-1b-valuation-df0e399b4111",
@@ -2929,76 +2999,6 @@
       "date": "2026-10-23T07:09:24.000Z",
       "source_name": "中新网财经新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-23/10719729.shtml",
-      "image": ""
-    },
-    {
-      "id": "前三季度全国财政收入同比增长5-1-1abf8834f83d",
-      "language": "zh",
-      "title": "前三季度全国财政收入同比增长5.1%",
-      "excerpt": "原标题：新华社权威快报|前三季度全国财政收入同比增长5.1%",
-      "date": "2026-10-23T07:09:08.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-23/10719738.shtml",
-      "image": ""
-    },
-    {
-      "id": "聚焦文化产业投融资等议题-2026金融街论坛年会文化金融论坛举办-4055ced92466",
-      "language": "zh",
-      "title": "聚焦文化产业投融资等议题 2026金融街论坛年会文化金融论坛举办",
-      "excerpt": "中新网北京10月23日电 (记者 徐婧)2026金融街论坛年会文化金融论坛22日举办。以“共生·共创·共赢——金融助推文化产业新图景”为主题，围绕文化产业投融资、文化科技融合、中华文化国际传播等议题展开交流，探讨金融赋能文化产业高质量发展的路径。",
-      "date": "2026-10-23T07:07:00.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-23/10719714.shtml",
-      "image": ""
-    },
-    {
-      "id": "国际人士积极评价中国经济-三季报-中国经济发展韧性和活力持续彰显-为世界带来更多机遇-c83eba435658",
-      "language": "zh",
-      "title": "国际人士积极评价中国经济“三季报”—— “中国经济发展韧性和活力持续彰显，为世界带来更多机遇”",
-      "excerpt": "中国国家统计局10月19日发布最新数据显示，初步核算，前三季度中国国内生产总值1071071亿元，按不变价格计算，同比增长4.6%。面对外部环境复杂变化，中国经济顶住压力保持平稳运行，呈现动能向新、结构向优、质效向好的发展态势，高质量发展取得新成效。接受本报记者采访的国际人士表示，前三季度中国经济发展韧性和活力持续彰显。中国超大规模市场为各国商品提供广阔空间，中国产业链供应链升级为世界工业化、智能化、绿色化提供有力支撑，一个有韧性、充满活力的中国将为世界经济增长注入更多动能。",
-      "date": "2026-10-23T07:01:17.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-23/10719730.shtml",
-      "image": ""
-    },
-    {
-      "id": "商务部新闻发言人就美国防部公布所谓科研安全审查结果事答记者问-a04a1e914e00",
-      "language": "zh",
-      "title": "商务部新闻发言人就美国防部公布所谓科研安全审查结果事答记者问",
-      "excerpt": "有记者问：",
-      "date": "2026-10-23T06:49:21.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-23/10719719.shtml",
-      "image": ""
-    },
-    {
-      "id": "前三季度大连市地区生产总值7726-7亿元-同比增长5-3-9320f820e003",
-      "language": "zh",
-      "title": "前三季度大连市地区生产总值7726.7亿元 同比增长5.3%",
-      "excerpt": "中新网大连10月23日电 (记者 杨毅)大连市统计局、国家统计局大连调查队23日公布前三季度全市经济运行情况，根据辽宁省地区生产总值统一核算结果，前三季度，全市地区生产总值7726.7亿元，按不变价格计算，同比增长5.3%。",
-      "date": "2026-10-23T06:41:40.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-23/10719673.shtml",
-      "image": ""
-    },
-    {
-      "id": "伊议员说伊朗已要求中东国家停止支持美国-792a6da48608",
-      "language": "zh",
-      "title": "伊议员说伊朗已要求中东国家停止支持美国",
-      "excerpt": "23日有消息称，伊朗议会国家安全和外交政策委员会成员费达-侯赛因·马利基说，伊朗已向中东地区国家发出最后通牒，要求一旦伊朗与美国重燃战火，这些国家必须停止对美方的一切支持。",
-      "date": "2026-10-23T06:40:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-23/10719713.shtml",
-      "image": ""
-    },
-    {
-      "id": "广交会第二期开幕-逾万家企业打造全球家居采购对接平台-f7931c1101fb",
-      "language": "zh",
-      "title": "广交会第二期开幕 逾万家企业打造全球家居采购对接平台",
-      "excerpt": "中新社广州10月23日电 (记者 蔡敏婕)第140届中国进出口商品交易会(广交会)第二期23日在广州开幕，本期聚焦“品质家居”主题，约1.1万家企业共同打造全球家居采购的高效对接平台，持续引领行业新风向。",
-      "date": "2026-10-23T06:39:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/10-23/10719688.shtml",
       "image": ""
     }
   ]
