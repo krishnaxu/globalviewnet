@@ -1468,66 +1468,123 @@ en: {
     let currentSlide = 0;
     let carouselTimer = null;
 
-    function renderFeatured() {
-      const track = $("#featuredTrack");
-      const dotsContainer = $("#carouselDots");
-      track.replaceChildren();
-      dotsContainer.replaceChildren();
 
-      featuredIds.forEach((id, index) => {
-        const article = articleById(id);
-        if (!article) return;
+function renderFeatured() {
+  const track = $("#featuredTrack");
+  const dotsContainer = $("#carouselDots");
+  track.replaceChildren();
+  dotsContainer.replaceChildren();
 
-        // 幻灯片
-        const slide = document.createElement("article");
-        slide.className = "featured-slide";
-        slide.tabIndex = 0;
-        slide.setAttribute("role", "button");
-        slide.setAttribute("aria-label", article.title[currentLang]);
-        slide.addEventListener("click", () => openArticle(id));
-        slide.addEventListener("keydown", event => {
-          if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            openArticle(id);
-          }
-        });
+  featuredIds.forEach((id, index) => {
+    const article = articleById(id);
+    if (!article) return;
 
-        const img = document.createElement("img");
-        img.className = "featured-image";
-        window.globalViewSetArticleImage(img, article);
-        img.alt = article.alt[currentLang];
+    // 幻灯片
+    const slide = document.createElement("article");
+    slide.className = "featured-slide";
+    slide.tabIndex = 0;
+    slide.setAttribute("role", "button");
+    slide.setAttribute("aria-label", article.title[currentLang]);
+    slide.addEventListener("click", () => openArticle(id));
+    slide.addEventListener("keydown", event => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openArticle(id);
+      }
+    });
 
-        const content = document.createElement("div");
-        content.className = "featured-content";
-        content.innerHTML = `
-          <span class="category-tag">${categoryName(article.category)}</span>
-          <h2>${article.title[currentLang]}</h2>
-          <p>${article.excerpt[currentLang]}</p>
-          <div class="featured-meta">
-            <span><svg width="13" height="13"><use href="#i-calendar"/></svg><span>${formatDate(article.date)}</span></span>
-            <span class="dot">|</span>
-            <span><svg width="13" height="13"><use href="#i-clock"/></svg><span>${readTimeText(article.read)}</span></span>
-            <span class="dot">|</span>
-            <span>${t("sourceLabel")}: ${article.source}</span>
-          </div>
-        `;
+    const img = document.createElement("img");
+    img.className = "featured-image";
+    window.globalViewSetArticleImage(img, article);
+    img.alt = article.alt[currentLang];
 
-        slide.append(img, content);
-        track.appendChild(slide);
+    const content = document.createElement("div");
+    content.className = "featured-content";
 
-        // 指示点
-        const dot = document.createElement("button");
-        dot.type = "button";
-        dot.className = "carousel-dot" + (index === 0 ? " active" : "");
-        dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
-        dot.addEventListener("click", () => goToSlide(index));
-        dotsContainer.appendChild(dot);
-      });
+    // 分类标签：使用 textContent，避免把动态内容当作 HTML
+    const categoryTag = document.createElement("span");
+    categoryTag.className = "category-tag";
+    categoryTag.textContent = categoryName(article.category);
 
-      updateCarouselPosition();
-      startCarousel();
+    // 标题
+    const title = document.createElement("h2");
+    title.textContent = article.title[currentLang];
+
+    // 摘要
+    const excerpt = document.createElement("p");
+    excerpt.textContent = article.excerpt[currentLang];
+
+    // 元信息
+    const meta = document.createElement("div");
+    meta.className = "featured-meta";
+
+    function createMetaIcon(iconId) {
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("width", "13");
+      svg.setAttribute("height", "13");
+
+      const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
+      use.setAttribute("href", iconId);
+
+      svg.appendChild(use);
+      return svg;
     }
 
+    function createMetaItem(iconId, text) {
+      const outer = document.createElement("span");
+      outer.appendChild(createMetaIcon(iconId));
+
+      const inner = document.createElement("span");
+      inner.textContent = text;
+      outer.appendChild(inner);
+
+      return outer;
+    }
+
+    function createMetaSeparator() {
+      const separator = document.createElement("span");
+      separator.className = "dot";
+      separator.textContent = "|";
+      return separator;
+    }
+
+    const dateItem = createMetaItem(
+      "#i-calendar",
+      formatDate(article.date)
+    );
+
+    const readItem = createMetaItem(
+      "#i-clock",
+      readTimeText(article.read)
+    );
+
+    const sourceItem = document.createElement("span");
+    sourceItem.textContent = `${t("sourceLabel")}: ${article.source}`;
+
+    meta.append(
+      dateItem,
+      createMetaSeparator(),
+      readItem,
+      createMetaSeparator(),
+      sourceItem
+    );
+
+    content.append(categoryTag, title, excerpt, meta);
+    slide.append(img, content);
+    track.appendChild(slide);
+
+    // 指示点
+    const dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "carousel-dot" + (index === 0 ? " active" : "");
+    dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
+    dot.addEventListener("click", () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  updateCarouselPosition();
+  startCarousel();
+}
 
 function updateCarouselPosition() {
   const track = $("#featuredTrack");
