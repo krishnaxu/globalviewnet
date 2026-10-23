@@ -224,6 +224,19 @@ export async function onRequestGet({ request, env }) {
     const content = decodeBase64Utf8(file.content);
     const parsed = parseFrontmatter(content);
     const meta = parsed.metadata;
+    
+    // 只允许公开已明确标记为 published: true 的文章
+  if (String(meta.published || "").trim().toLowerCase() !== "true") {
+  return Response.json(
+    { error: "文章不存在或尚未发布" },
+    {
+      status: 404,
+      headers: {
+        "Cache-Control": "no-store"
+      }
+    }
+  );
+}
 
     // 兼容没有 body_zh 字段的旧文章
     const legacyBody = parsed.body.trim();
