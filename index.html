@@ -1631,7 +1631,6 @@ if (carousel && track) {
     if (event.target.closest("button")) return;
 
     activePointerId = event.pointerId;
-    carousel.setPointerCapture(event.pointerId);
     pointerStartX = event.clientX;
     pointerStartY = event.clientY;
     pointerLastX = event.clientX;
@@ -1654,7 +1653,12 @@ if (carousel && track) {
       if (Math.abs(deltaX) < 8) return;
       if (Math.abs(deltaX) <= Math.abs(deltaY)) return;
 
-      isHorizontalDrag = true;
+        isHorizontalDrag = true;
+
+      // 只有确认横向拖动后才捕获指针，避免干扰普通点击
+      if (!carousel.hasPointerCapture(event.pointerId)) {
+        carousel.setPointerCapture(event.pointerId);
+      }
     }
 
     event.preventDefault();
