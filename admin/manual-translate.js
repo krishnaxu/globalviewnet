@@ -458,11 +458,12 @@
       return token;
     }
 
-    // 保护完整图片语法。
-    let prepared = source.replace(
-      /!\[[^\]]*\]\([^)\n]*\)/g,
-      match => protect(match, "IMAGE")
-    );
+// 只保护图片地址，保留图片替代文字供翻译。
+let prepared = source.replace(
+  /!\[([^\]]*)\]\(([^)\n]*)\)/g,
+  (match, alt, url) =>
+    "![" + alt + "](" + protect(url, "URL") + ")"
+);
 
     // 只保护普通 Markdown 链接的目标地址，显示文字仍可翻译。
     prepared = prepared.replace(
@@ -545,7 +546,7 @@
 
       completed++;
       if (typeof progress === "function") {
-        progress(completed, completed);
+      progress(completed, completed)
       }
 
       return leading + result + trailing;
@@ -629,8 +630,8 @@
 
       if (count !== 1) {
         throw new Error(
-          (item.type === "IMAGE" ? "图片" : "链接") +
-          "保护标记校验失败，已停止回填。请勿保存或发布文章。"
+        (item.type === "IMAGE" ? "图片" : "链接或图片地址") +
+        "保护标记校验失败，已停止回填。请勿保存或发布文章。"
         );
       }
     }
@@ -653,13 +654,10 @@
   function getMarkdownStructure(text) {
     const source = String(text || "");
 
-    const images = Array.from(
-      source.matchAll(/!\[[^\]]*\]\([^)\n]*\)/g),
-      match => match[0]
-        .replace(/^!\[[^\]]*\]\(/, "")
-        .replace(/\)$/, "")
-        .trim()
-    );
+const images = Array.from(
+  source.matchAll(/!\[[^\]]*\]\(([^)\n]*)\)/g),
+  match => match[1].trim()
+);
 
     const linkTargets = Array.from(
       source.matchAll(/(?<!!)\[[^\]]*\]\(([^)\n]*)\)/g),
@@ -730,17 +728,23 @@
       );
     }
 
-    const criticalMismatches = ["images", "linkTargets"].filter(
-      key =>
-        JSON.stringify(originalStructure[key]) !==
-        JSON.stringify(translatedStructure[key])
-    );
-
+const criticalMismatches = [
+  "headingLevels",
+  "listMarkers",
+  "quoteLines",
+  "images",
+  "linkTargets",
+  "codeFences"
+].filter(
+  key =>
+    JSON.stringify(originalStructure[key]) !==
+    JSON.stringify(translatedStructure[key])
+);
     if (criticalMismatches.length > 0) {
       throw new Error(
-        "正文图片或链接地址校验失败：" +
-        criticalMismatches.map(key => labels[key]).join("、") +
-        "。系统已停止回填，请检查原文和译文后再继续。"
+      "正文 Markdown 结构校验失败：" +
+criticalMismatches.map(key => labels[key]).join("、") +
+"。系统已停止回填，请检查原文和译文后再继续。"
       );
     }
 
