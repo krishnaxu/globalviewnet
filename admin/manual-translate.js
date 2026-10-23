@@ -5,7 +5,7 @@
   const BUTTON_ID = "manual-translate-button";
   const BRIDGE_KEY = "__GVN_RICHTEXT_FIELDS__";
   const REQUEST_TIMEOUT = 300000;
-  const MAX_CHUNK_LENGTH = 1200;
+  const MAX_CHUNK_LENGTH = 2000;
 
   const FIELD_SELECTOR =
     ".CodeMirror, textarea, input:not([type='checkbox']):not([type='radio'])";
