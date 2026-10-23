@@ -868,10 +868,7 @@ criticalMismatches.map(key => labels[key]).join("、") +
           translated = cleanEnglishTitle(translated);
         }
 
-        if (item.type === "body") {
-          validateMarkdownStructure(job.text, translated);
-        }
-
+    
         const target = findField(item.en);
 
         if (!target) {
