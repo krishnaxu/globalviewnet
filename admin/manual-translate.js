@@ -458,11 +458,10 @@
       return token;
     }
 
-// 只保护图片地址，保留图片替代文字供翻译。
+// 保护完整图片语法，确保图片地址绝不被翻译。
 let prepared = source.replace(
-  /!\[([^\]]*)\]\(([^)\n]*)\)/g,
-  (match, alt, url) =>
-    "![" + alt + "](" + protect(url, "URL") + ")"
+  /!\[[^\]]*\]\([^)\n]*\)/g,
+  match => protect(match, "IMAGE")
 );
 
     // 只保护普通 Markdown 链接的目标地址，显示文字仍可翻译。
