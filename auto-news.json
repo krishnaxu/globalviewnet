@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-23T20:43:18.976Z",
+  "generated_at": "2026-10-23T21:41:13.205Z",
   "items": [
+    {
+      "id": "argentina-drops-investigation-into-president--87a58a0b3d17",
+      "language": "en",
+      "title": "Argentina drops investigation into President Milei over crypto fraud",
+      "excerpt": "Javier Milei had denied acting fraudulently when a cryptocurrency nosedived after he deleted a social media post about it.",
+      "date": "2026-10-23T20:59:39.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c64g1eplpvddo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8738/live/24bdf9e0-cf1c-11f1-9796-954775b3a434.jpg"
+    },
+    {
+      "id": "vcs-superhuman-mail-founder-share-red-flags-a-a9baeb88f659",
+      "language": "en",
+      "title": "VCs, Superhuman Mail founder share red flags about product-market fit",
+      "excerpt": "Top investors from Iconiq and Sapphire Ventures, along with Rahul Vohra, the founder of Superhuman Mail, share the do's and don'ts for building hit products.",
+      "date": "2026-10-23T20:57:13.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/23/vcs-superhuman-mail-founder-share-red-flags-about-product-market-fit/",
+      "image": ""
+    },
+    {
+      "id": "hegseth-warns-prediction-market-bets-warp-mil-7beb0b6ead3f",
+      "language": "en",
+      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
+      "excerpt": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
+      "date": "2026-10-23T20:28:43.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/polymarket-500x500.jpg"
+    },
+    {
+      "id": "updated-google-privacy-policy-says-your-gmail-7be3008f9053",
+      "language": "en",
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+      "excerpt": "Turning on Personal Intelligence gives the company more data for ad targeting.",
+      "date": "2026-10-23T20:19:55.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/05/google-logo-big-g-grooves-500x500.jpg"
+    },
     {
       "id": "freed-us-citizen-was-tortured-in-russian-jail-a0e0280cc8c3",
       "language": "en",
@@ -42,6 +82,16 @@
       "image": ""
     },
     {
+      "id": "inside-the-pentagon-the-pressure-is-on-to-fin-a9635a9fe06d",
+      "language": "en",
+      "title": "Inside the Pentagon, the pressure is on to find a home for a new spaceport",
+      "excerpt": "Space Force considering options: public-private, federal installation, state land.",
+      "date": "2026-10-23T19:33:58.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/10/senior-commander-says-space-force-needs-new-spaceport-by-2030/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/gallery-gallery_ng-2-ascent-2-500x500.jpg"
+    },
+    {
       "id": "meta-shares-are-down-9-this-week-here-s-why-m-a04cb613a6a9",
       "language": "en",
       "title": "Meta shares are down 9% this week. Here's why Mike Khouw is buying now",
@@ -60,6 +110,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/23/carta-and-newview-partner-hoping-to-entice-more-startups-to-let-employees-sell-shares-early/",
       "image": ""
+    },
+    {
+      "id": "spotify-ramps-up-policy-enforcement-on-family-dea976fbb312",
+      "language": "en",
+      "title": "Spotify ramps up policy enforcement on family plans",
+      "excerpt": "If you share Spotify sub with family, you may need to scan QR code to prove it.",
+      "date": "2026-10-23T19:20:27.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/spotify-ramps-up-policy-enforcement-on-family-plans/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2016/07/spotify-500x500.png"
     },
     {
       "id": "from-toast-to-bessemer-who-founders-will-hear-6f6451b374ed",
@@ -2939,66 +2999,6 @@
       "date": "2026-10-23T07:43:56.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/10-23/10719755.shtml",
-      "image": ""
-    },
-    {
-      "id": "新华时评丨警惕日本正滑入-新的战前状态-bc561284493b",
-      "language": "zh",
-      "title": "新华时评丨警惕日本正滑入“新的战前状态”",
-      "excerpt": "新华社北京10月22日电(记者叶书宏)近日，日本首相高市早苗再次公然向靖国神社供奉祭品、祭祀费，多名政府官员、自民党政要以及国会议员前往参拜。日方最新的消极动向再次表明，其执政当局在历史认知上大开倒车、肆意践踏历史正义，在“再军事化”道路上一路狂奔。种种危险举动正对战后国际秩序构成系统性冲击，将日本推向重蹈历史覆辙的歧路。",
-      "date": "2026-10-23T07:41:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-23/10719771.shtml",
-      "image": ""
-    },
-    {
-      "id": "长征的历史从未远去-长征精神就在我们身边-访中国政府友谊奖获得者潘维廉-b0f688dcf7a3",
-      "language": "zh",
-      "title": "“长征的历史从未远去，长征精神就在我们身边”——访中国政府友谊奖获得者潘维廉",
-      "excerpt": "“我读过很多关于长征的书，也去过长征沿线的许多地方。”中国政府友谊奖获得者、厦门大学美籍教授潘维廉日前接受本报记者采访时表示，他读过的关于长征的书，可能有几十本。书中的文字一次次带他走近那段波澜壮阔的历史，当沿着红军走过的道路前行时，他发现，只有用双脚丈量这片土地，才会真正理解这片土地上发生过什么，以及正在发生什么。",
-      "date": "2026-10-23T07:35:39.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-23/10719769.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国驻韩国大使馆提醒-请来韩团体游客远离低价团消费陷阱-49aa69a3283e",
-      "language": "zh",
-      "title": "中国驻韩国大使馆提醒：请来韩团体游客远离低价团消费陷阱",
-      "excerpt": "中新网10月23日电 据中国驻韩国大使馆微信公众号消息，中国驻韩国大使馆23日提醒：请来韩团体游客远离低价团消费陷阱。",
-      "date": "2026-10-23T07:33:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-23/10719728.shtml",
-      "image": ""
-    },
-    {
-      "id": "西藏巴青余震叠加效应可能对已受损建筑造成进一步破坏-6d45bb06149d",
-      "language": "zh",
-      "title": "西藏巴青余震叠加效应可能对已受损建筑造成进一步破坏",
-      "excerpt": "今天(10月23日)15时，西藏那曲市人民政府新闻办公室举行西藏那曲市巴青县7.0级地震第一场新闻发布会，通报地震灾害受灾情况，搜寻救援工作、转移安置、基础设施抢修、物资供应、医疗救治等最新情况。",
-      "date": "2026-10-23T07:28:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-23/10719765.shtml",
-      "image": ""
-    },
-    {
-      "id": "天山南北一家亲-78ff569faeaa",
-      "language": "zh",
-      "title": "天山南北一家亲",
-      "excerpt": "天山南北，一幅幅民族团结的动人图景，展现于烟火日常。各族群众共同建设美好家园，携手并肩、团结奋进，情谊日益深厚。",
-      "date": "2026-10-23T07:27:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/txy/2026/10-23/10719764.shtml",
-      "image": ""
-    },
-    {
-      "id": "外交部-中方坚定支持联合国在国际事务中发挥核心作用-6041e84f186b",
-      "language": "zh",
-      "title": "外交部：中方坚定支持联合国在国际事务中发挥核心作用",
-      "excerpt": "10月23日，外交部发言人毛宁主持例行记者会。总台央视记者提问：10月25日是新中国恢复联合国合法席位55周年纪念日，中方如何评价55年来的历程，未来将如何推进同联合国合作？",
-      "date": "2026-10-23T07:26:41.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-23/10719763.shtml",
       "image": ""
     }
   ]
