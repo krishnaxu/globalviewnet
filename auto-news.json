@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-24T20:37:36.884Z",
+  "generated_at": "2026-10-24T21:39:11.349Z",
   "items": [
+    {
+      "id": "almost-1-000-arrested-as-clashes-follow-anoth-431f5566a31b",
+      "language": "en",
+      "title": "Almost 1,000 arrested as clashes follow another day of mass protests across France",
+      "excerpt": "Officials have so far managed to avoid a repeat of last weekend's rioting and looting as hundreds of thousands took part in demonstrations.",
+      "date": "2026-10-24T21:09:27.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6090/live/bf46ec40-cfe6-11f1-93e1-3b657b665bcf.jpg"
+    },
+    {
+      "id": "starlink-seems-to-be-working-normally-again-i-87bb975b7408",
+      "language": "en",
+      "title": "Starlink seems to be working normally again in Ukraine",
+      "excerpt": "Elon Musk reportedly ordered SpaceX to throttle Ukraine's Starlink access.",
+      "date": "2026-10-24T20:46:34.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/24/starlink-seems-to-be-working-normally-again-in-ukraine/",
+      "image": ""
+    },
     {
       "id": "will-ai-expose-the-rickety-infrastructure-of--d3798ec9a0ad",
       "language": "en",
@@ -2980,26 +3000,6 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/23/ai-turmoil-neoclouds-struggle-credit-risks-jump-solidigm-pulls-ipo.html",
       "image": ""
-    },
-    {
-      "id": "nasa-updates-lander-plans-for-moon-landings-f-94538d593663",
-      "language": "en",
-      "title": "NASA updates lander plans for Moon landings, finally solves long-festering Orion issue",
-      "excerpt": "\"We have the mandate, we have the resources, and the support from our stakeholders.\"",
-      "date": "2026-10-23T22:48:25.000Z",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/centaur-500x500.jpg"
-    },
-    {
-      "id": "father-who-killed-oregon-school-shooter-descr-316ed2d0479c",
-      "language": "en",
-      "title": "Father who killed Oregon school shooter describes anguish over children he couldn't save",
-      "excerpt": "Kaylub Giamanco, has been hailed as a hero for killing a teenager who fatally shot three children and a teacher.",
-      "date": "2026-10-23T22:47:07.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/crgj9ndwvj9jo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2348/live/e4a29f10-cf42-11f1-93e1-3b657b665bcf.jpg"
     }
   ]
 }
