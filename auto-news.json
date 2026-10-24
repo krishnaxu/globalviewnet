@@ -1,6 +1,86 @@
 {
-  "generated_at": "2026-10-24T15:40:36.849Z",
+  "generated_at": "2026-10-24T16:41:02.749Z",
   "items": [
+    {
+      "id": "instacart-reportedly-discussed-selling-itself-93f8cf567fdc",
+      "language": "en",
+      "title": "Instacart reportedly discussed selling itself with DoorDash and Uber",
+      "excerpt": "Instacart might sell itself to a larger competitor.",
+      "date": "2026-10-24T16:30:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/24/instacart-reportedly-discussed-selling-itself-with-doordash-and-uber/",
+      "image": ""
+    },
+    {
+      "id": "ai-funding-fears-rattle-wall-street-here-s-ho-bd9c959341a9",
+      "language": "en",
+      "title": "AI funding fears rattle Wall Street. Here's how we're adjusting our portfolio",
+      "excerpt": "The rotation out of AI stocks benefited several defensive Club stocks.",
+      "date": "2026-10-24T16:14:00.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/24/ai-funding-fears-rattle-wall-street-heres-how-were-adjusting-our-portfolio.html",
+      "image": ""
+    },
+    {
+      "id": "第五届亚洲残疾人运动会在日本名古屋闭幕-3b5f693a4631",
+      "language": "zh",
+      "title": "第五届亚洲残疾人运动会在日本名古屋闭幕",
+      "excerpt": "中新社日本名古屋10月25日电 (记者 朱晨曦)第五届亚洲残疾人运动会24日在日本名古屋瑞穗公园田径场闭幕。中国体育代表团获得207枚金牌、117枚银牌和111枚铜牌，共435枚奖牌，连续第五届位居金牌榜、奖牌榜首位，创造境外参加亚残运会最好成绩。",
+      "date": "2026-10-24T16:02:56.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/10-25/10720538.shtml",
+      "image": ""
+    },
+    {
+      "id": "2027国考报名截止-多职位数千人竞争一岗-6084660e4229",
+      "language": "zh",
+      "title": "2027国考报名截止，多职位数千人竞争一岗",
+      "excerpt": "中新网北京10月25日电(记者 李京统)10月24日是2027年国考报名最后一天，报名热度持续攀升，热门岗位竞争超6000：1。",
+      "date": "2026-10-24T16:01:14.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-25/10720536.shtml",
+      "image": ""
+    },
+    {
+      "id": "block-s-new-voice-model-sounds-eerily-human-61ceba6cfe49",
+      "language": "en",
+      "title": "Block’s new voice model sounds eerily human",
+      "excerpt": "Block said that the voice model can run locally on a MacBook M4 Max",
+      "date": "2026-10-24T16:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+      "image": ""
+    },
+    {
+      "id": "watch-as-fire-engulfs-hitler-s-mountaintop-ea-155f7f5e8c38",
+      "language": "en",
+      "title": "Watch as fire engulfs Hitler's mountaintop Eagle's Nest retreat",
+      "excerpt": "Police in the southern German state of Bavaria have detained a 33-year-old German man following the fire.",
+      "date": "2026-10-24T15:56:48.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cq98z9xxy2n2o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bfba/live/f1443bc0-cfbf-11f1-93e1-3b657b665bcf.jpg"
+    },
+    {
+      "id": "全国短池游泳锦标赛-徐嘉余一晚两破仰泳纪录-87b0e705943a",
+      "language": "zh",
+      "title": "全国短池游泳锦标赛：徐嘉余一晚两破仰泳纪录",
+      "excerpt": "中新社北京10月24日电 (记者 国璇)2026年全国游泳锦标赛(25米)24日在北京国家游泳中心“水立方”继续进行。仰泳名将徐嘉余当晚收获两枚金牌，打破男子100米仰泳亚洲纪录，并刷新男子50米仰泳世界纪录。",
+      "date": "2026-10-24T15:47:02.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/10-24/10720535.shtml",
+      "image": ""
+    },
+    {
+      "id": "american-embassies-tighten-security-as-iran-t-f9bab2425403",
+      "language": "en",
+      "title": "American embassies tighten security as Iran threat warnings intensify ahead of U.S. midterm elections",
+      "excerpt": "A memo from DNI director Jay Clayton said Iran is in the \"advanced stages\" of planning attacks against Americans.",
+      "date": "2026-10-24T15:44:53.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/24/iran-threats-us-embassies-middle-east.html",
+      "image": ""
+    },
     {
       "id": "php-ocalypse-how-two-critical-web-bugs-almost-2829b6d86798",
       "language": "en",
@@ -2920,86 +3000,6 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gj/2026/10-24/10720166.shtml",
       "image": ""
-    },
-    {
-      "id": "法国巴黎大区发生枪击事件致一死多伤-官方定性为恐袭-510b64ece53e",
-      "language": "zh",
-      "title": "法国巴黎大区发生枪击事件致一死多伤 官方定性为恐袭",
-      "excerpt": "中新社巴黎10月23日电 (记者 李洋)法国巴黎大区当地时间23日发生一起枪击事件，目前造成一人死亡，多人受伤。法国官方已经将事件定性为恐怖袭击。",
-      "date": "2026-10-23T22:32:26.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-24/10720165.shtml",
-      "image": ""
-    },
-    {
-      "id": "全国短池游泳锦标赛开赛-张展硕-于子迪摘金-e020f20ccc33",
-      "language": "zh",
-      "title": "全国短池游泳锦标赛开赛 张展硕、于子迪摘金",
-      "excerpt": "中新社北京10月24日电 (记者 国璇)2026年全国游泳锦标赛(25米)23日在北京国家游泳中心“水立方”开赛。首日决出六金，其中张展硕夺得男子1500米自由泳冠军，“小孩姐”于子迪收获女子200米混合泳金牌。",
-      "date": "2026-10-23T22:32:14.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-24/10720164.shtml",
-      "image": ""
-    },
-    {
-      "id": "who-actually-controls-ukraine-s-access-to-sta-1f9547d1f07b",
-      "language": "en",
-      "title": "Who actually controls Ukraine's access to Starlink?",
-      "excerpt": "President Zelensky says limits to the technology continue to affect Ukrainian forces, while US officials and Elon Musk offer conflicting accounts of who controls it.",
-      "date": "2026-10-23T22:24:36.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/videos/cqy7lvv0lvzpo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a39d/live/2b410510-cf2f-11f1-b441-2b33b063138f.jpg"
-    },
-    {
-      "id": "hottest-toy-for-christmas-nvidia-ceo-plays-wi-739797ca19c0",
-      "language": "en",
-      "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-      "excerpt": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-      "date": "2026-10-23T21:59:19.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-      "image": ""
-    },
-    {
-      "id": "argentina-drops-investigation-into-president--87a58a0b3d17",
-      "language": "en",
-      "title": "Argentina drops investigation into President Milei over crypto fraud",
-      "excerpt": "Javier Milei had denied acting fraudulently when a cryptocurrency nosedived after he deleted a social media post about it.",
-      "date": "2026-10-23T20:59:39.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c64g1eplpvddo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8738/live/24bdf9e0-cf1c-11f1-9796-954775b3a434.jpg"
-    },
-    {
-      "id": "vcs-superhuman-mail-founder-share-red-flags-a-a9baeb88f659",
-      "language": "en",
-      "title": "VCs, Superhuman Mail founder share red flags about product-market fit",
-      "excerpt": "Top investors from Iconiq and Sapphire Ventures, along with Rahul Vohra, the founder of Superhuman Mail, share the do's and don'ts for building hit products.",
-      "date": "2026-10-23T20:57:13.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/10/23/vcs-superhuman-mail-founder-share-red-flags-about-product-market-fit/",
-      "image": ""
-    },
-    {
-      "id": "hegseth-warns-prediction-market-bets-warp-mil-7beb0b6ead3f",
-      "language": "en",
-      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
-      "excerpt": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
-      "date": "2026-10-23T20:28:43.000Z",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/polymarket-500x500.jpg"
-    },
-    {
-      "id": "updated-google-privacy-policy-says-your-gmail-7be3008f9053",
-      "language": "en",
-      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
-      "excerpt": "Turning on Personal Intelligence gives the company more data for ad targeting.",
-      "date": "2026-10-23T20:19:55.000Z",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/05/google-logo-big-g-grooves-500x500.jpg"
     }
   ]
 }
