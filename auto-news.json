@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-24T18:42:18.898Z",
+  "generated_at": "2026-10-24T19:35:47.390Z",
   "items": [
+    {
+      "id": "the-ai-graveyard-a-running-list-of-projects-a-43fa73ddaf37",
+      "language": "en",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "excerpt": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "date": "2026-10-24T19:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "image": ""
+    },
+    {
+      "id": "biotech-stocks-are-surging-how-investors-can--4282034fb46e",
+      "language": "en",
+      "title": "Biotech stocks are surging. How investors can play the new drug innovation boom",
+      "excerpt": "Biotech stocks are rallying as clinical wins, M&A and new drug technologies revive the sector. Here are the ETFs and stocks analysts favor.",
+      "date": "2026-10-24T18:56:29.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/24/biotech-stocks-drug-innovation-rally.html",
+      "image": ""
+    },
     {
       "id": "palestinian-families-displaced-as-israeli-for-3fcd6f105601",
       "language": "en",
@@ -2979,26 +2999,6 @@
       "date": "2026-10-23T22:36:43.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gj/2026/10-24/10720169.shtml",
-      "image": ""
-    },
-    {
-      "id": "特朗普称可能对伊发动一次小规模-史诗怒火-行动-e43b2aaa45ce",
-      "language": "zh",
-      "title": "特朗普称可能对伊发动一次小规模“史诗怒火”行动",
-      "excerpt": "当地时间10月23日，美国总统特朗普表示，美国或许会再来一次小规模的“史诗怒火”行动，又或者伊朗会选择妥协。特朗普称，如果伊朗足够聪明，就会直接说：“咱们来谈正事吧。”",
-      "date": "2026-10-23T22:35:24.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-24/10720168.shtml",
-      "image": ""
-    },
-    {
-      "id": "共振-中德当代艺术展-在柏林开幕-94f0d3ca3d67",
-      "language": "zh",
-      "title": "“共振：中德当代艺术展”在柏林开幕",
-      "excerpt": "中新社柏林10月23日电 (记者 马秀秀)当地时间23日，“共振：中德当代艺术展”在柏林中国文化中心开幕。",
-      "date": "2026-10-23T22:33:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-24/10720167.shtml",
       "image": ""
     }
   ]
