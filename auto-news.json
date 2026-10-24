@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-24T19:35:47.390Z",
+  "generated_at": "2026-10-24T20:37:36.884Z",
   "items": [
+    {
+      "id": "will-ai-expose-the-rickety-infrastructure-of--d3798ec9a0ad",
+      "language": "en",
+      "title": "Will AI expose the rickety infrastructure of the internet?",
+      "excerpt": "The moment you realize the internet is \"held together by glue and dreams.\"",
+      "date": "2026-10-24T20:15:33.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+      "image": ""
+    },
+    {
+      "id": "democrats-voting-rights-groups-challenge-trum-0dfeec45c0f1",
+      "language": "en",
+      "title": "Democrats, voting-rights groups challenge Trump's bid to block Alaska Senate certification",
+      "excerpt": "Lawsuits filed by candidate Mary Peltola and a voters' rights group challenge Trump's preemptive efforts to block a Democratic Senate victory in Alaska.",
+      "date": "2026-10-24T19:57:24.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/24/alaska-senate-doj-certification-lawsuit.html",
+      "image": ""
+    },
+    {
+      "id": "fireworks-and-tear-gas-as-protesters-and-riot-d58590effe1c",
+      "language": "en",
+      "title": "Fireworks and tear gas as protesters and riot police clash in Paris",
+      "excerpt": "Europe correspondent Nick Beake reports from Paris where mostly peaceful protests turned into unrest after nightfall.",
+      "date": "2026-10-24T19:37:35.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cm89zqw9lx1do?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f4f2/live/c78fb360-cfe5-11f1-b441-2b33b063138f.jpg"
+    },
     {
       "id": "the-ai-graveyard-a-running-list-of-projects-a-43fa73ddaf37",
       "language": "en",
@@ -2970,36 +3000,6 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/crgj9ndwvj9jo?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2348/live/e4a29f10-cf42-11f1-93e1-3b657b665bcf.jpg"
-    },
-    {
-      "id": "年轻人开始流行-喝大水-极简养生的背后怎么喝才更健康-2d0c011a06d2",
-      "language": "zh",
-      "title": "年轻人开始流行“喝大水” 极简养生的背后怎么喝才更健康？",
-      "excerpt": "最近，一种叫“大水理论”的生活方式在网络上引发热议。",
-      "date": "2026-10-23T22:39:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/10-24/10720170.shtml",
-      "image": ""
-    },
-    {
-      "id": "moody-s-holds-steady-on-france-s-credit-ratin-6fc0faf8c87f",
-      "language": "en",
-      "title": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
-      "excerpt": "Moody's left its credit rating on France at Aa3, giving the country some relief in a week of unrest.",
-      "date": "2026-10-23T22:37:19.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
-      "image": ""
-    },
-    {
-      "id": "伊朗称两艘超级油轮在霍尔木兹海峡南部触雷爆炸-807123059661",
-      "language": "zh",
-      "title": "伊朗称两艘超级油轮在霍尔木兹海峡南部触雷爆炸",
-      "excerpt": "当地时间23日，伊朗伊斯兰革命卫队海军宣布，当天早些时候，两艘试图非法穿越霍尔木兹海峡南部的超级油轮触雷。爆炸和大火导致其机舱瘫痪，并停泊在原地。这两艘油轮共载有超过450万桶原油，触雷后被遗弃在霍尔木兹海峡南部，船员弃船逃生。(总台记者 李健南）",
-      "date": "2026-10-23T22:36:43.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-24/10720169.shtml",
-      "image": ""
     }
   ]
 }
