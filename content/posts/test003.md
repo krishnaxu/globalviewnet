@@ -9,7 +9,7 @@ title_zh: Cell子刊：天津大学姬晓元团队开发纳米机器人，通过
 excerpt_zh: 放疗常受到肿瘤固有的 DNA 修复能力以及免疫抑制性微环境的限制，而乳酸的积累会进一步加剧这两种情况。
 body_zh: >-
   2026 年 10 月 22 日，天津大学医学院姬晓元教授作为通讯作者（南京中医药大学Yueyue Fan、Jiamin Ye为共同第一作者），在 Cell
-  子刊Cell Reports Medicine发表题为：Targeted lactate depletion via gluconeogenesis by
+  子刊Cell Reports Medicine发表了题为：Targeted lactate depletion via gluconeogenesis by
   engineered hepatocyte-based micronanorobots for radiosensitization and immune
   activation 的研究论文。
 
@@ -45,5 +45,50 @@ body_zh: >-
 
 
   https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00540-9
-body_en: ""
+title_en: "Cell issue: Ji Xiaoyuan's team at Tianjin University develops
+  nanorobots to achieve radiosensitization and immune activation by targeting
+  depleted lactic acid"
+excerpt_en: Radiation therapy is often limited by the tumor's inherent ability
+  to repair DNA and the immunosuppressive microenvironment, both of which are
+  further exacerbated by the accumulation of lactic acid.
+body_en: >-
+  On October 22, 2026, Professor Ji Xiaoyuan of Tianjin University School of
+  Medicine published a research paper entitled: Targeted lactate depletion via
+  gluconeogenesis by engineered hepatocyte-based micronanorobots for
+  radiosensitization and immune activation in Cell Reports Medicine as the
+  corresponding author (with Yueyue Fan and Jiamin Ye of Nanjing University of
+  Traditional Chinese Medicine as co-first authors).
+
+
+  The study developed a gold-platinum nanorobot based on engineered liver cells that utilizes gluconeogenic targeting to deplete lactic acid in tumors, thereby inhibiting repair-related protein lactation modification and impairing DNA repair; at the same time, gold-platinum catalysis can amplify radiation-induced damage. This metabolic remodeling synergistically alleviates immunosuppression and promotes a systemic anti-tumor immune response.
+
+
+  In this latest study, the research team developed a CXCR4 engineered denuclearized hepatocyte cytoplasmic platform loaded with gold-platinum Janus nanorobots (AP/LCCXCR4) for removal of intratumoral lactic acid and enhancement of radiation-induced oxidative stress.
+
+
+  The hepatocyte cytoplasm can target the tumor site, consume lactic acid through gluconeogenesis, reduce the level of protein lactation associated with repair, and interfere with the co-separation and chromatin recruitment of the MRE11-RAD50-NBS1 (MRN) complex, thereby inhibiting the repair of DNA double-strand breaks. At the same time, gold-platinum nanorobots promote the generation of reactive oxygen species in the acidic microenvironment of tumors, further aggravating radiation damage.
+
+
+  In radiation-tolerant colorectal cancer models and metastatic cervical cancer models, AP/LCCXCR4 combined with radiation therapy can maintain DNA damage, promote immunogenic cell death, reduce the number of immunosuppressive myeloid cells and regulatory T cells (Tregs), enhance dendritic cell maturation and CD8 + T cell activation, and significantly improve tumor control and survival.
+
+
+  At its core, the study found that:
+
+
+  CXCR4 engineered hepatocyte cytoplasm can target tumors and consume lactic acid;
+
+
+  Lactic acid depletion reduces protein lactation and impairs MRN-related DNA repair;
+
+
+  Au-Pt nanorobots amplify radiation-induced oxidative damage in acidic tumors;
+
+
+  Combination therapy relieves immunosuppression and enhances anti-tumor immunity.
+
+
+  Link to the paper:
+
+
+  https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26) 00540-9
 ---
