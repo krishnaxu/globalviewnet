@@ -9,7 +9,7 @@ title_zh: Cell子刊：天津大学姬晓元团队开发纳米机器人，通过
 excerpt_zh: 放疗常受到肿瘤固有的 DNA 修复能力以及免疫抑制性微环境的限制，而乳酸的积累会进一步加剧这两种情况。
 body_zh: >-
   2026 年 10 月 22 日，天津大学医学院姬晓元教授作为通讯作者（南京中医药大学Yueyue Fan、Jiamin Ye为共同第一作者），在 Cell
-  子刊Cell Reports Medicine上发表题为：Targeted lactate depletion via gluconeogenesis by
+  子刊Cell Reports Medicine发表题为：Targeted lactate depletion via gluconeogenesis by
   engineered hepatocyte-based micronanorobots for radiosensitization and immune
   activation 的研究论文。
 
