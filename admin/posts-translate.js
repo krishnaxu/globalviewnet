@@ -1,41 +1,52 @@
-
+```javascript
 (function () {
   "use strict";
 
   const API = "https://api.mymemory.translated.net/get";
-  const MAX_BYTES = 450;
+  const MAX_CHARS = 2000;
 
-  function byteLength(text) {
-    return new TextEncoder().encode(text).length;
-  }
-
-  function splitText(text, maxBytes) {
+  function splitText(text, maxChars) {
     const chunks = [];
     let rest = text;
 
     while (rest.length) {
-      if (byteLength(rest) <= maxBytes) {
+      if (rest.length <= maxChars) {
         chunks.push(rest);
         break;
       }
 
-      let end = 0;
-      let lastSpace = -1;
-      let size = 0;
+      let end = maxChars;
 
-      for (const char of rest) {
-        const n = byteLength(char);
-        if (size + n > maxBytes) break;
+      // 避免在 UTF-16 代理对中间切分字符。
+      const previousCode = rest.charCodeAt(end - 1);
+      const nextCode = rest.charCodeAt(end);
 
-        size += n;
-        end += char.length;
-
-        if (/\s/.test(char)) lastSpace = end;
+      if (
+        previousCode >= 0xD800 &&
+        previousCode <= 0xDBFF &&
+        nextCode >= 0xDC00 &&
+        nextCode <= 0xDFFF
+      ) {
+        end--;
       }
 
-      if (!end) throw new Error("文本拆分失败");
+      // 尽量在空白处切分，减少单词被截断的情况。
+      let lastSpace = -1;
 
-      if (lastSpace > end * 0.5) end = lastSpace;
+      for (let i = end - 1; i >= Math.floor(end / 2); i--) {
+        if (/\s/.test(rest[i])) {
+          lastSpace = i + 1;
+          break;
+        }
+      }
+
+      if (lastSpace > 0) {
+        end = lastSpace;
+      }
+
+      if (end <= 0) {
+        throw new Error("文本拆分失败");
+      }
 
       chunks.push(rest.slice(0, end));
       rest = rest.slice(end);
@@ -44,7 +55,7 @@
     return chunks;
   }
 
-async function translateChunk(text) {
+  async function translateChunk(text) {
     try {
       const response = await fetch("/api/translate", {
         method: "POST",
@@ -99,12 +110,13 @@ async function translateChunk(text) {
 
       const textarea = document.createElement("textarea");
       textarea.innerHTML = result.responseData.translatedText;
+
       return textarea.value;
     }
   }
 
   async function translatePlainText(text) {
-    const chunks = splitText(text, MAX_BYTES);
+    const chunks = splitText(text, MAX_CHARS);
     const result = [];
 
     for (const chunk of chunks) {
@@ -114,8 +126,7 @@ async function translateChunk(text) {
     return result.join("");
   }
 
-  // Protect inline Markdown, translate only the text between markers.
-
+  // 保护行内 Markdown，只翻译标记之间的文本。
   async function translateInline(text) {
     const pattern =
       /!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)|`[^`\n]*`|<https?:\/\/[^>]+>|https?:\/\/[^\s)]+|<[^>]+>|\*\*[\s\S]+?\*\*|__[\s\S]+?__|~~[\s\S]+?~~|\*[^*\n]+\*|_[^_\n]+_/g;
@@ -144,7 +155,9 @@ async function translateChunk(text) {
         const markerLength =
           value.startsWith("**") ||
           value.startsWith("__") ||
-          value.startsWith("~~") ? 2 : 1;
+          value.startsWith("~~")
+            ? 2
+            : 1;
 
         const marker = value.slice(0, markerLength);
         const inner = value.slice(markerLength, -markerLength);
@@ -188,12 +201,14 @@ async function translateChunk(text) {
   }
 
   function splitPrefix(line) {
-    // Keep heading, blockquote and list prefixes exactly as written.
+    // 保留标题、引用和列表前缀。
     const match = line.match(
       /^(\s*(?:(?:>\s*)*)(?:(?:[-+*]|\d+[.)])\s+)?(?:#{1,6}\s+)?)(.*)$/
     );
 
-    if (!match) return ["", line];
+    if (!match) {
+      return ["", line];
+    }
 
     return [match[1], match[2]];
   }
@@ -252,9 +267,14 @@ async function translateChunk(text) {
     const chinese = data.get(zhKey);
     const english = data.get(enKey);
 
-    // Never overwrite existing English content.
-    if (typeof english === "string" && english.trim()) return data;
-    if (typeof chinese !== "string" || !chinese.trim()) return data;
+    // 不覆盖已经填写的英文内容。
+    if (typeof english === "string" && english.trim()) {
+      return data;
+    }
+
+    if (typeof chinese !== "string" || !chinese.trim()) {
+      return data;
+    }
 
     try {
       const translated = isMarkdown
@@ -283,7 +303,9 @@ async function translateChunk(text) {
     name: "preSave",
 
     handler: async function ({ entry }) {
-      if (entry.get("collection") !== "posts") return;
+      if (entry.get("collection") !== "posts") {
+        return;
+      }
 
       let data = entry.get("data");
 
@@ -299,5 +321,6 @@ async function translateChunk(text) {
     }
   });
 
-  console.log("文章自动翻译脚本已加载（Markdown 结构保护版）");
+  console.log("文章自动翻译脚本已加载（2000 字符分段版）");
 })();
+```
