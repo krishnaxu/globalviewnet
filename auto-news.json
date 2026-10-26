@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-26T16:11:14.046Z",
+  "generated_at": "2026-10-26T16:53:33.978Z",
   "items": [
+    {
+      "id": "anthropic-s-ipo-filing-reveals-its-strategy-f-b2ed8daad1cc",
+      "language": "en",
+      "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
+      "excerpt": "Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party app, a cross-selling playbook reminiscent of Amazon that’s making enterprise customers stickier.",
+      "date": "2026-10-26T16:49:42.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+      "image": ""
+    },
+    {
+      "id": "spacex-locks-in-40b-gpu-financing-deal-with-a-d6e31d9e0fa6",
+      "language": "en",
+      "title": "SpaceX locks in $40B GPU financing deal with Apollo",
+      "excerpt": "SpaceX has locked in a binding commitment for roughly $40 billion in financing to pay for AI chips and related data center equipment, the company disclosed in a regulatory filing Monday. In a statement, SpaceX called it the “largest committed GPU financing” ever.",
+      "date": "2026-10-26T16:46:36.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+      "image": ""
+    },
+    {
+      "id": "德国总统施泰因迈尔抵达安徽开始访华-d21b7ccd235f",
+      "language": "zh",
+      "title": "德国总统施泰因迈尔抵达安徽开始访华",
+      "excerpt": "新华社合肥10月27日电(记者郭晨)德国总统施泰因迈尔10月27日抵达安徽合肥，开始对中国进行为期5天的国事访问。",
+      "date": "2026-10-26T16:34:27.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-27/10721432.shtml",
+      "image": ""
+    },
+    {
+      "id": "more-than-60-christians-killed-in-ethiopia-ma-628ec16068f0",
+      "language": "en",
+      "title": "More than 60 Christians killed in Ethiopia 'massacre', church official says",
+      "excerpt": "One resident, whose 75-year-old father was killed, described it as an ambush, saying they were surrounded.",
+      "date": "2026-10-26T16:31:09.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm4g175dgdx2o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ea02/live/3f6f54a0-d147-11f1-9eb5-811878e0f07d.jpg"
+    },
     {
       "id": "microsoft-offers-voluntary-buyouts-to-60-000--b636afd10678",
       "language": "en",
@@ -19,6 +59,16 @@
       "date": "2026-10-26T16:08:18.000Z",
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/26/maurene-comey-firing-unlawful-trump.html",
+      "image": ""
+    },
+    {
+      "id": "federal-reserve-is-likely-to-hold-interest-ra-e1647ff64b0f",
+      "language": "en",
+      "title": "Federal Reserve is likely to hold interest rates steady in October. Here's what that means for consumers",
+      "excerpt": "The Federal Reserve is expected to keep its overnight rate unchanged at the conclusion of its October meeting this week.",
+      "date": "2026-10-26T16:03:57.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/26/fed-decision-expectations-october-meeting.html",
       "image": ""
     },
     {
@@ -60,6 +110,26 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/ty/2026/10-26/10721430.shtml",
       "image": ""
+    },
+    {
+      "id": "catholic-bishops-apologise-for-exploited-trum-55a9edc81528",
+      "language": "en",
+      "title": "Catholic bishops apologise for 'exploited' Trump meeting",
+      "excerpt": "Two bishops in images that show them praying with Trump have said they believed the meeting was private.",
+      "date": "2026-10-26T15:46:31.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw8rz1d286v3o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9660/live/4332a8c0-d148-11f1-9eb5-811878e0f07d.jpg"
+    },
+    {
+      "id": "police-arrest-teenager-after-shooting-that-in-387b0af82a26",
+      "language": "en",
+      "title": "Police arrest teenager after shooting that injured 12, including children, in Florida",
+      "excerpt": "The incident happened on Saturday night, close to an American football stadium where a game had just been played.",
+      "date": "2026-10-26T15:45:30.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckpdg8vnv171o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2fbc/live/37ee8ce0-d152-11f1-9eb5-811878e0f07d.jpg"
     },
     {
       "id": "investors-are-doing-just-as-well-this-year-by-3a6c63920b60",
@@ -209,6 +279,16 @@
       "date": "2026-10-26T14:29:42.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gj/2026/10-26/10721424.shtml",
+      "image": ""
+    },
+    {
+      "id": "小新talkshow-西藏震后安置点飘出糌粑牛肉粥香-板房通了电-冰柜进了户-1c99dc7de852",
+      "language": "zh",
+      "title": "小新Talkshow：西藏震后安置点飘出糌粑牛肉粥香：板房通了电 冰柜进了户",
+      "excerpt": "2026年10月22日22时33分，西藏自治区那曲市巴青县发生7.0级地震。记者26日在玛如乡二村安置点看到，这里60套板房已搭建完成，仅用时8小时实现全部通电。",
+      "date": "2026-10-26T14:29:01.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/sh/shipin/2026/10-26/news1073043.shtml",
       "image": ""
     },
     {
@@ -2919,86 +2999,6 @@
       "date": "2026-10-26T02:30:53.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/ty/2026/10-26/10720976.shtml",
-      "image": ""
-    },
-    {
-      "id": "湖北宜昌-从三个场景-看江与城共生-0b1c794d2d01",
-      "language": "zh",
-      "title": "湖北宜昌：从三个场景，看江与城共生",
-      "excerpt": "中新网宜昌10月26日电 题：湖北宜昌：从三个场景，看江与城共生",
-      "date": "2026-10-26T02:29:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/10-26/10720972.shtml",
-      "image": ""
-    },
-    {
-      "id": "我国造船业持续领跑全球-11f8763d3b04",
-      "language": "zh",
-      "title": "我国造船业持续领跑全球",
-      "excerpt": "央视网消息(新闻联播)：工业和信息化部近日发布2026年1至9月全国船舶工业统计数据，造船业三大指标持续领跑全球。",
-      "date": "2026-10-26T02:29:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10720984.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026第八届郑州种业博览会举办-6000余新优品种亮相-831396bc0bf8",
-      "language": "zh",
-      "title": "2026第八届郑州种业博览会举办 6000余新优品种亮相",
-      "excerpt": "中新网郑州10月26日电 (连晨宇 李雪)10月24日至26日，2026第八届郑州种业博览会暨第十一届中原国际种业科技展览会(以下简称展会)在河南郑州惠济区举办。本届展会共展出6000余个蔬菜新优品种，覆盖50多个作物品类，各地农业部门代表、科研专家、海内外客商、种植大户到场参会。",
-      "date": "2026-10-26T02:28:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10720975.shtml",
-      "image": ""
-    },
-    {
-      "id": "tcr中国锦标赛总决赛-李光华本场夺冠-朱戴维卫冕赛季总冠军-cd74a9d92340",
-      "language": "zh",
-      "title": "TCR中国锦标赛总决赛：李光华本场夺冠 朱戴维卫冕赛季总冠军",
-      "excerpt": "10月25日，车手们陆续出发。当日，TCR中国锦标赛收官赛在浙江绍兴开赛，数十名车手在干湿变换的赛道环境中竞逐，李光华后半场获得持续领先优势，并最终获得本场比赛冠军，朱戴维以6175总积分成功卫冕2026赛季总冠军。中新社记者 王刚 摄 10月25日，TCR中国锦标赛收官赛在浙江绍兴开赛，数十名车手在干湿变换的赛道环境中竞逐，李光华后半场获得持续领先优势，并最终获得本场比赛冠军，朱戴维以6175总积分成功卫冕2026赛季总冠军。中新社记者 王刚 摄 10月25日，朱戴维在比赛中。当日，TCR中国锦标赛收官赛在浙江绍兴开赛，数十名车手在干湿变换的赛道环境中竞逐，李光华后半场获得持续领先优势，并最终获得本场比赛冠军，朱戴维以6175总积分成功卫冕2026赛季总冠军。中新社记者 王刚 摄 10月25日，朱戴维在比赛中领先张志强。当日，TCR中国锦标赛收官赛在浙江绍兴开赛，数十名车手在干湿变换的赛道环境中竞逐，李光华后半场获得持续领先优势，并最终获得本场比赛冠军，朱戴维以6175总积分成功卫冕2026赛季总冠军。中新社记者 王刚 摄 10月25日，朱戴维直道冲刺。当日，TCR中国锦标赛收官赛在浙江绍兴开赛，数十名车手在干湿变换的赛道环境中竞逐，李光华后半场获得持续领先优势，并最终获得本场比赛冠军，朱戴维以6175总积分成功卫冕2026赛季总冠军。中新社记者 王刚 摄 10月25日，李光华在比赛中。当日，TCR中国锦标赛收官赛在浙江绍兴开赛，数十名车手在干湿变换的赛道环境中竞逐，李光华后半场获得持续领先优势，并最终获得本场比赛冠军，朱戴维以6175总积分成功卫冕2026赛季总冠军。中新社",
-      "date": "2026-10-26T02:26:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-26/10720940.shtml",
-      "image": ""
-    },
-    {
-      "id": "八千跑者逐梦洪泽湖畔-2026江苏泗洪马拉松落幕-4911d407af39",
-      "language": "zh",
-      "title": "八千跑者逐梦洪泽湖畔 2026江苏泗洪马拉松落幕",
-      "excerpt": "中新网宿迁10月26日电(刘林 谷华)10月25日上午，2026泗洪马拉松在泗洪县城南公园鸣枪开赛。来自全国各地的8000名跑者齐聚“湿地之都、水韵泗洪”，在湖光稻海间竞速奔跑，感受生态泗洪的秋日魅力，赛事全程平稳有序、圆满收官。",
-      "date": "2026-10-26T02:26:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-26/10720968.shtml",
-      "image": ""
-    },
-    {
-      "id": "工经智媒-正本-geo解决方案-发布-44a3f08a3c1e",
-      "language": "zh",
-      "title": "“工经智媒·‘正本’GEO解决方案”发布",
-      "excerpt": "10月21日，在中国工业品牌可信GEO研讨会暨第十九届工业论坛新闻发布会上，制造强国品牌工程“工经智媒·‘正本’GEO解决方案”正式发布。这是一个为工业企业量身打造的生成式引擎优化(GEO)行业解决方案。",
-      "date": "2026-10-26T02:25:30.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10720983.shtml",
-      "image": ""
-    },
-    {
-      "id": "两岸音乐家北京同台纪念孙中山诞辰160周年-0e1e0540ddd1",
-      "language": "zh",
-      "title": "两岸音乐家北京同台纪念孙中山诞辰160周年",
-      "excerpt": "中新网北京10月26日电 (金志成)以“弦歌同心·共谱华章”为主题的纪念孙中山先生诞辰160周年两岸音乐会，25日在北京中山公园音乐堂上演。北京、台北和金门三地音乐家同台演奏，共同追忆这位民主革命先驱。",
-      "date": "2026-10-26T02:25:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-26/10720971.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国体育代表团连续5届亚残运会位居奖牌榜首位-自强不息-成就梦想-c6c530aa58ac",
-      "language": "zh",
-      "title": "中国体育代表团连续5届亚残运会位居奖牌榜首位——自强不息 成就梦想",
-      "excerpt": "中国体育代表团连续5届亚残运会位居奖牌榜首位",
-      "date": "2026-10-26T02:24:04.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-26/10720982.shtml",
       "image": ""
     }
   ]
