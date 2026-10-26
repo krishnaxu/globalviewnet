@@ -1,9 +1,13 @@
-
 (function () {
   "use strict";
 
-  const API = "https://api.mymemory.translated.net/get";
   const MAX_CHARS = 2000;
+
+  function createError(message, code) {
+    const error = new Error(message);
+    if (code) error.code = code;
+    return error;
+  }
 
   function splitText(text, maxChars) {
     const chunks = [];
@@ -56,63 +60,47 @@
   }
 
   async function translateChunk(text) {
+    const response = await fetch("/api/translate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ text }),
+      signal: AbortSignal.timeout(60000)
+    });
+
+    let result = {};
+
     try {
-      const response = await fetch("/api/translate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ text }),
-        signal: AbortSignal.timeout(30000)
-      });
-
-      if (!response.ok) {
-        throw new Error("SiliconFlow 翻译请求失败");
-      }
-
-      const result = await response.json();
-
-      if (
-        typeof result.translation !== "string" ||
-        !result.translation.trim()
-      ) {
-        throw new Error("SiliconFlow 没有返回有效译文");
-      }
-
-      return result.translation.trim();
-    } catch (error) {
-      console.warn(
-        "SiliconFlow 翻译失败，尝试使用 MyMemory：",
-        error
-      );
-
-      const url = new URL(API);
-      url.searchParams.set("q", text);
-      url.searchParams.set("langpair", "zh-CN|en");
-
-      const response = await fetch(url.toString(), {
-        signal: AbortSignal.timeout(15000)
-      });
-
-      if (!response.ok) {
-        throw new Error("MyMemory 备用翻译请求失败");
-      }
-
-      const result = await response.json();
-
-      if (
-        result.responseStatus !== 200 ||
-        !result.responseData ||
-        typeof result.responseData.translatedText !== "string"
-      ) {
-        throw new Error("MyMemory 没有返回有效译文");
-      }
-
-      const textarea = document.createElement("textarea");
-      textarea.innerHTML = result.responseData.translatedText;
-
-      return textarea.value;
+      result = await response.json();
+    } catch {
+      // 服务端没有返回 JSON 时，使用通用错误提示。
     }
+
+    if (response.status === 401) {
+      throw createError(
+        "CMS 翻译会话已失效。请重新登录 CMS，再保存文章以重新翻译。",
+        "AUTH_REQUIRED"
+      );
+    }
+
+    if (!response.ok) {
+      const detail =
+        typeof result.error === "string" && result.error.trim()
+          ? result.error.trim()
+          : "HTTP " + response.status;
+
+      throw createError("翻译服务请求失败：" + detail);
+    }
+
+    if (
+      typeof result.translation !== "string" ||
+      !result.translation.trim()
+    ) {
+      throw new Error("翻译服务没有返回有效译文");
+    }
+
+    return result.translation.trim();
   }
 
   async function translatePlainText(text) {
@@ -128,7 +116,6 @@
 
   // 保护行内 Markdown，只翻译标记之间的文本。
   async function translateInline(text) {
-
     const pattern = new RegExp(
       "!\\[[^\\]]*\\]\\([^)]*\\)|\\[[^\\]]*\\]\\([^)]*\\)|`[^`\\n]*`|<https?:\\/\\/[^>]+>|https?:\\/\\/[^\\s)]+|<[^>]+>|\\*\\*[\\s\\S]+?\\*\\*|__[\\s\\S]+?__|~~[\\s\\S]+?~~|\\*[^*\\n]+\\*|_[^_\\n]+_",
       "g"
@@ -260,6 +247,10 @@
 
         output.push(prefix + await translateInline(content));
       } catch (error) {
+        if (error && error.code === "AUTH_REQUIRED") {
+          throw error;
+        }
+
         console.warn("该行翻译失败，保留原文：", error);
         output.push(line);
       }
@@ -290,6 +281,10 @@
         return data.set(enKey, translated);
       }
     } catch (error) {
+      if (error && error.code === "AUTH_REQUIRED") {
+        throw error;
+      }
+
       console.warn("自动翻译失败，保留中文并继续：" + zhKey, error);
     }
 
@@ -319,12 +314,20 @@
         data = await translateField(data, "excerpt_zh", "excerpt_en", false);
         data = await translateField(data, "body_zh", "body_en", true);
       } catch (error) {
-        console.warn("翻译流程异常，继续保存：", error);
+        if (error && error.code === "AUTH_REQUIRED") {
+          window.alert(
+            "自动翻译已停止：CMS 翻译会话已失效。\n\n" +
+            "请重新登录 CMS，然后再次保存文章。\n" +
+            "本次不会使用 MyMemory 备用翻译。"
+          );
+        } else {
+          console.warn("翻译流程异常，保留现有内容并继续保存：", error);
+        }
       }
 
       return data;
     }
   });
 
-  console.log("文章自动翻译脚本已加载（2000 字符分段版）");
+  console.log("文章自动翻译脚本已加载（2000 字符分段版，无备用翻译）");
 })();
