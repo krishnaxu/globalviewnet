@@ -12,7 +12,7 @@ export async function onRequest(context) {
 
   const stateCookieName = "gv_oauth_state";
   const sessionCookieName = "gv_translate_session";
-  const sessionLifetime = 60 * 60;
+  const sessionLifetime = 12 * 60 * 60;
   const repoName = "krishnaxu/globalviewnet";
 
   function getCookie(name) {
