@@ -1,6 +1,86 @@
 {
-  "generated_at": "2026-10-26T20:44:15.653Z",
+  "generated_at": "2026-10-26T21:42:03.715Z",
   "items": [
+    {
+      "id": "anthropic-s-ipo-puts-power-in-the-hands-of-fo-1fa2b4ad78aa",
+      "language": "en",
+      "title": "Anthropic's IPO puts power in the hands of founders, giving everyday shareholders little voice",
+      "excerpt": "Founder LLC is one component of the \"novel capital and corporate governance structure\" that Anthropic outlined in its public S-1 filing.",
+      "date": "2026-10-26T21:41:26.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-founder-voting-control.html",
+      "image": ""
+    },
+    {
+      "id": "doj-charges-ex-fbi-director-james-comey-in-ne-34194f84859e",
+      "language": "en",
+      "title": "DOJ charges ex-FBI Director James Comey in new case",
+      "excerpt": "Comey for years has been targeted by President Donald Trump, who fired him as FBI director in 2017.",
+      "date": "2026-10-26T21:37:39.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/26/james-comey-indictment-national-defense-doj-trump.html",
+      "image": ""
+    },
+    {
+      "id": "jetblue-posts-bigger-loss-on-fuel-costs-but-c-89d21ae4cd71",
+      "language": "en",
+      "title": "JetBlue posts bigger loss on fuel costs, but CEO says margins improving",
+      "excerpt": "JetBlue Airways is in the middle of a plan that aims to cut costs and increase premium revenue.",
+      "date": "2026-10-26T21:18:07.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/26/jetblue-jblu-3q-2026-earnings.html",
+      "image": ""
+    },
+    {
+      "id": "watch-out-youtube-instagram-goes-from-short-f-b8d7ecc2e537",
+      "language": "en",
+      "title": "Watch out, YouTube; Instagram goes from short-form to 90-minute videos",
+      "excerpt": "As Instagram rolls out long form videos of up to 90 minutes, the platform has an opportunity to challenge YouTube if it plays its cards right.",
+      "date": "2026-10-26T21:05:11.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/26/watch-out-youtube-instagram-goes-from-short-form-to-90-minute-videos/",
+      "image": ""
+    },
+    {
+      "id": "worms-mate-in-man-s-eyes-get-plucked-out-righ-bd7cd1d4fbb4",
+      "language": "en",
+      "title": "Worms mate in man's eyes, get plucked out right before larvae burst out",
+      "excerpt": "Case study gives a whole new meaning to \"bedroom eyes.\"",
+      "date": "2026-10-26T20:27:00.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/health/2026/10/whats-worse-than-having-eye-worms-having-eye-worms-with-babies/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/larvae-released-500x500.jpg"
+    },
+    {
+      "id": "meta-spacex-anthropic-stoke-the-ai-funding-fr-a0b5b8d4cc14",
+      "language": "en",
+      "title": "Meta, SpaceX, Anthropic stoke the AI funding frenzy. What it means for our stocks",
+      "excerpt": "",
+      "date": "2026-10-26T20:26:26.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/26/meta-spacex-anthropic-stoke-the-ai-funding-frenzy-what-it-means-for-our-stocks.html",
+      "image": ""
+    },
+    {
+      "id": "meet-the-real-life-scottish-surgeon-who-inspi-489a5325aa04",
+      "language": "en",
+      "title": "Meet the real-life Scottish surgeon who inspired Sherlock Holmes",
+      "excerpt": "Lindsey Fitzharris chats with Ars about her new book, Sleuth-Hound: The Case of the Real Sherlock Holmes .",
+      "date": "2026-10-26T20:15:07.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/10/meet-the-real-life-scottish-surgeon-who-inspired-sherlock-holmes/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/sleuthTOP-500x500.jpg"
+    },
+    {
+      "id": "apple-releases-ios-and-macos-27-2-with-new-si-3806ea744298",
+      "language": "en",
+      "title": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
+      "excerpt": "Included is the ability to limit which applications Siri can directly access.",
+      "date": "2026-10-26T20:04:16.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Siri-AI-500x500.png"
+    },
     {
       "id": "trump-administration-illegally-fired-james-co-be36d8aa05a0",
       "language": "en",
@@ -30,6 +110,16 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/cmy4xwp22xyqo?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f03d/live/90fce170-d165-11f1-87df-afb7a168a1f2.jpg"
+    },
+    {
+      "id": "apple-reveals-updated-ipad-mini-with-a-bigger-b4ee20a095cf",
+      "language": "en",
+      "title": "Apple reveals updated iPad mini with a bigger OLED screen for $700",
+      "excerpt": "Apple claims this is the most significant update ever for the iPad mini line.",
+      "date": "2026-10-26T19:04:40.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/apple/2026/10/apple-reveals-updated-ipad-mini-with-a-bigger-oled-screen-for-700/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Apple-iPad-mini-hero-500x500.jpg"
     },
     {
       "id": "fusion-startups-are-giving-the-government-sha-8b6904d60e0c",
@@ -2909,96 +2999,6 @@
       "date": "2026-10-26T03:49:05.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/10-26/10721016.shtml",
-      "image": ""
-    },
-    {
-      "id": "我国协作帮扶已实现消费帮扶2400多亿元-94e4703cf6b3",
-      "language": "zh",
-      "title": "我国协作帮扶已实现消费帮扶2400多亿元",
-      "excerpt": "记者从农业农村部了解到，我国协作帮扶专项工作已开展近两年，东西部协作省份聚焦欠发达地区产业链培育等方面，筛选农产品生产经营主体与购销主体进行产销对接，带动群众增收。截至8月，专项工作已累计实现消费帮扶2400多亿元。",
-      "date": "2026-10-26T03:46:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10721039.shtml",
-      "image": ""
-    },
-    {
-      "id": "快手举办1024嘉年华-程一笑称ai时代仍要保持独立思考-5c2aff6934e8",
-      "language": "zh",
-      "title": "快手举办1024嘉年华 程一笑称AI时代仍要保持独立思考",
-      "excerpt": "近期，快手举办了为期数日、全员参与的1024嘉年华系列活动。活动以“持续创造”为主题，旨在让AI成为每位快手人的创新生产力。",
-      "date": "2026-10-26T03:26:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10720910.shtml",
-      "image": ""
-    },
-    {
-      "id": "酸奶为什么会沾盖-咸蛋黄为什么会分层-这些小知识你知道几个-295cc736204e",
-      "language": "zh",
-      "title": "酸奶为什么会沾盖？咸蛋黄为什么会分层？这些小知识你知道几个",
-      "excerpt": "酸奶为什么会沾在盖子上？为什么肉汁放到冰箱里会凝结成冻？生活中这些常见的现象背后蕴含了很多科学原理，中国科学院物理研究所为你解密！",
-      "date": "2026-10-26T03:22:11.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/life/2026/10-26/10721014.shtml",
-      "image": ""
-    },
-    {
-      "id": "硬核装备-特色鲜果齐亮相-第九届进博会首批展品进馆-143e6fda1642",
-      "language": "zh",
-      "title": "硬核装备、特色鲜果齐亮相 第九届进博会首批展品进馆",
-      "excerpt": "10月26日，第九届进博会首批展品进馆仪式在国家会展中心(上海)举行，来自奥地利、美国、德国等国的12件展品开始入馆，标志着本届进博会展馆搭建和布展工作进入最后冲刺阶段。第九届进博会将于11月5日至10日在上海举行。",
-      "date": "2026-10-26T03:19:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10721011.shtml",
-      "image": ""
-    },
-    {
-      "id": "椰城海关2026-2028年公务用车保险服务采购项目第二次比选公告-9a262e080ed6",
-      "language": "zh",
-      "title": "椰城海关2026-2028年公务用车保险服务采购项目第二次比选公告",
-      "excerpt": "一、采购条件",
-      "date": "2026-10-26T03:16:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-26/10721010.shtml",
-      "image": ""
-    },
-    {
-      "id": "第三届华侨华人学研究学术研讨会闭幕-68739b46e4e6",
-      "language": "zh",
-      "title": "第三届华侨华人学研究学术研讨会闭幕",
-      "excerpt": "中新网温州10月26日电 第三届华侨华人学研究学术研讨会25日晚在温州大学闭幕。",
-      "date": "2026-10-26T03:16:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/10-26/10721000.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国男子三人篮球联赛首支连冠队伍诞生-4b27e795f764",
-      "language": "zh",
-      "title": "中国男子三人篮球联赛首支连冠队伍诞生",
-      "excerpt": "中新网北京10月26日电(记者 岳川) 2026年中国男子三人篮球联赛(简称：超三联赛)总决赛25日在济南收官。上海久事队击败上海横沙誉民队斩获总冠军，成为联赛史上首支实现两连冠的队伍。",
-      "date": "2026-10-26T03:15:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-26/10721008.shtml",
-      "image": ""
-    },
-    {
-      "id": "快速行动-农业银行全力配合做好西藏巴青7-0级地震抢险救灾工作-fab595fb721b",
-      "language": "zh",
-      "title": "快速行动！农业银行全力配合做好西藏巴青7.0级地震抢险救灾工作",
-      "excerpt": "10月22日22时33分，西藏那曲市巴青县发生7.0级地震。农业银行党委高度重视，第一时间启动抗震救灾应急机制，统筹各级行力量投入抢险救灾，全力做好应急金融保障，主动配合地方党委政府开展救援安置工作，以国有大行担当守护灾区群众、助力共渡难关。",
-      "date": "2026-10-26T03:13:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10720915.shtml",
-      "image": ""
-    },
-    {
-      "id": "零经验-年轻人扎堆闯野山-徒步乱象该如何治理-e2a1d1cf6eb2",
-      "language": "zh",
-      "title": "“零经验”年轻人扎堆闯野山 徒步乱象该如何治理？",
-      "excerpt": "10月13日，一名21岁广西男子在进入亚丁未开发区域徒步时发生严重高原反应，下撤途中不幸离世；10月4日，19岁的韩某轻信“网红野线”，擅自闯入哈巴雪山核心未开放禁区，失足滑坠被困，幸在70余人的极限救援下生还；国庆假期，超300名徒步者闯入年保玉则未开放的三江源核心水源涵养地带……",
-      "date": "2026-10-26T03:12:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-26/10721007.shtml",
       "image": ""
     }
   ]
