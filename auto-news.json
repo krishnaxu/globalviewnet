@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-10-26T18:55:54.068Z",
+  "generated_at": "2026-10-26T19:48:52.839Z",
   "items": [
+    {
+      "id": "trump-administration-illegally-fired-james-co-be36d8aa05a0",
+      "language": "en",
+      "title": "Trump administration illegally fired James Comey's daughter, judge rules",
+      "excerpt": "Maurene Comey believes she was let go from her job as a federal prosecutor because her father is the former FBI director.",
+      "date": "2026-10-26T19:27:21.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck78px6glw3lo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ad39/live/ee5424f0-d165-11f1-87df-afb7a168a1f2.jpg"
+    },
+    {
+      "id": "uh-oh-it-sounds-like-the-iphone-duo-keeps-cra-832700669637",
+      "language": "en",
+      "title": "Uh oh, it sounds like the iPhone Duo keeps cracking and users aren’t happy about it",
+      "excerpt": "A small number of early adopters of the much hyped new foldable phone from Apple have complained of screens cracking.",
+      "date": "2026-10-26T19:22:40.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/26/uh-oh-it-sounds-like-the-iphone-duo-keeps-cracking-and-users-arent-happy-about-it/",
+      "image": ""
+    },
+    {
+      "id": "maxxing-selected-as-dictionary-com-word-of-th-15b67cb5df2f",
+      "language": "en",
+      "title": "'Maxxing' selected as Dictionary.com word of the year",
+      "excerpt": "The term \"maxxing\" is used as an adjective, adverb, noun and verb by many in Gen Z and Gen Alpha to describe an emphasis in optimisation.",
+      "date": "2026-10-26T19:16:28.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmy4xwp22xyqo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f03d/live/90fce170-d165-11f1-87df-afb7a168a1f2.jpg"
+    },
+    {
+      "id": "fusion-startups-are-giving-the-government-sha-8b6904d60e0c",
+      "language": "en",
+      "title": "Fusion startups are giving the government shares in exchange for awards. Is it worth it?",
+      "excerpt": "Fusion startups face a new challenge, one unrelated to plasma physics: Give the government shares in exchange for funding awards or go it alone?",
+      "date": "2026-10-26T18:59:52.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/26/fusion-startups-are-giving-the-government-shares-in-exchange-for-awards-is-it-worth-it/",
+      "image": ""
+    },
+    {
+      "id": "boston-dynamics-employees-want-to-block-sale--1e663d1fa1b0",
+      "language": "en",
+      "title": "Boston Dynamics employees want to block sale of robot dogs to ICE",
+      "excerpt": "US robotics company stands by ICE deal as more than 300 employees warn of risk.",
+      "date": "2026-10-26T18:50:41.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Radeco-Cerberus-robot-500x500.jpg"
+    },
     {
       "id": "j-j-s-potential-game-changer-drug-plus-what-m-83d2173c593f",
       "language": "en",
@@ -30,6 +80,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/26/ftc-dollar-general-lawsuit.html",
       "image": ""
+    },
+    {
+      "id": "musk-accuses-ukraine-of-violating-starlink-te-e3f9459dab53",
+      "language": "en",
+      "title": "Musk accuses Ukraine of violating Starlink terms with deadly drone strikes",
+      "excerpt": "Ukraine says Starshield back to normal, denies misuse of Starlink commercial service.",
+      "date": "2026-10-26T18:09:08.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/musk-accuses-ukraine-of-violating-starlink-terms-with-deadly-drone-strikes/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ukraine-starlink-500x500-1793037282.jpg"
     },
     {
       "id": "sydney-s-new-5bn-airport-has-one-big-problem--107af134361b",
@@ -72,6 +132,16 @@
       "image": ""
     },
     {
+      "id": "highway-thieves-are-spoofing-gps-to-steal-mil-c492858dd664",
+      "language": "en",
+      "title": "Highway thieves are spoofing GPS to steal millions in data center-bound cargo",
+      "excerpt": "Investigators explain how highway thieves stole $100M in data center equipment.",
+      "date": "2026-10-26T17:26:36.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/highway-thieves-are-spoofing-gps-to-steal-millions-in-data-center-bound-cargo/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/via-Cook-County-Sheriffs-Office-X-500x500.jpeg"
+    },
+    {
       "id": "cramer-i-asked-some-tech-insiders-what-to-buy-fa53b4c754ff",
       "language": "en",
       "title": "Cramer: I asked some tech insiders what to buy. They surprisingly said this drug stock",
@@ -80,6 +150,26 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/investingclub/2026/10/26/cramer-i-asked-tech-insiders-what-to-buy-they-said-eli-lilly.html",
       "image": ""
+    },
+    {
+      "id": "prediction-market-traders-say-an-anthropic-ip-3c6d693a1a31",
+      "language": "en",
+      "title": "Prediction market traders say an Anthropic IPO is near-certain this year after company filed with SEC",
+      "excerpt": "Anthropic on Monday filed its Form S-1 with the Securities and Exchange Commission.",
+      "date": "2026-10-26T16:51:52.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/26/prediction-markets-think-anthropic-ipo-near-certain-in-2026.html",
+      "image": ""
+    },
+    {
+      "id": "some-iphone-duo-screens-are-already-failing-f5a5fbb92953",
+      "language": "en",
+      "title": "Some iPhone Duo screens are already failing",
+      "excerpt": "Apple's \"precision-engineered\" hinge is apparently damaging some iPhone Duo screens.",
+      "date": "2026-10-26T16:51:49.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/some-iphone-duo-screens-are-already-failing/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/iphone-duo-oops-500x500.jpg"
     },
     {
       "id": "anthropic-s-ipo-filing-reveals-its-strategy-f-b2ed8daad1cc",
@@ -2909,96 +2999,6 @@
       "date": "2026-10-26T03:12:49.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/10-26/10721007.shtml",
-      "image": ""
-    },
-    {
-      "id": "比亚迪携手东润杯-助力校园足球少年圆梦工体-fc3a6a2c580c",
-      "language": "zh",
-      "title": "比亚迪携手东润杯 助力校园足球少年圆梦工体",
-      "excerpt": "10月24日，2026东润杯全国青少年足球总决赛暨颁奖仪式在北京工人体育场圆满落幕。比亚迪作为东润杯顶级战略合作伙伴，见证了广大校园足球少年们在国家级专业赛场追逐绿茵梦想。",
-      "date": "2026-10-26T03:07:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10720978.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026世界海外华人研究学会年会闭幕-下届年会定址智利-8ff5d435c3bf",
-      "language": "zh",
-      "title": "2026世界海外华人研究学会年会闭幕 下届年会定址智利",
-      "excerpt": "中新网温州10月26日电 (记者 门睿)2026世界海外华人研究学会(ISSCO)年会25日晚在温州大学闭幕。世界海外华人研究学会会长黄子坚在闭幕式上宣布，下届年会将在智利圣地亚哥举办。",
-      "date": "2026-10-26T03:07:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/10-26/10721001.shtml",
-      "image": ""
-    },
-    {
-      "id": "当艺术走进养老社区-明亮的房间-摄影展在京开幕-bd8b1babace6",
-      "language": "zh",
-      "title": "当艺术走进养老社区——“明亮的房间” 摄影展在京开幕",
-      "excerpt": "10月25日，由泰康保险集团与泰康美术馆联合主办的摄影驻留委任创作展览“明亮的房间：长寿时代泰康建筑与人文摄影展”(英文展名Life Takes Place)在泰康美术馆正式对公众开放。展期将持续至11月30日，观众可免费预约参观。",
-      "date": "2026-10-26T03:06:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10720985.shtml",
-      "image": ""
-    },
-    {
-      "id": "ai健康-反诈-进养老院-百度健康让-求证-这件事不再丢人-62f0ca77edb8",
-      "language": "zh",
-      "title": "AI健康“反诈”进养老院：百度健康让“求证”这件事不再丢人",
-      "excerpt": "这场“考试”，允许带手机，允许讨论，还能现场问医生。",
-      "date": "2026-10-26T03:05:12.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10720906.shtml",
-      "image": ""
-    },
-    {
-      "id": "长征路上学党史-00后谈长征精神-青春奔赴家国的责任担当-24363dcfc83e",
-      "language": "zh",
-      "title": "长征路上学党史｜00后谈长征精神：青春奔赴家国的责任担当",
-      "excerpt": "2026年适逢红军长征胜利90周年。近日，在甘肃会宁红军三大主力会师旧址，兰州交通大学的老师带着来自不同专业的十余名党员学生代表，专程奔赴于此。师生在会师塔下聆听讲解，追忆1936年红军三大主力胜利会师的光辉历史，在会宁红军长征胜利景园，沉浸式体验微缩版万里长征。抚今追昔，同学们更加理解理想和信念的重量——“长征精神是一种可感可知的精神力量”，“是困境中不躺平、攻坚中不退缩的坚韧底色；是胸怀理想、脚踏实地的笃定坚守；更是小我融入大我，青春奔赴家国的责任与担当”。",
-      "date": "2026-10-26T03:04:39.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/sh/shipin/2026/10-26/news1072984.shtml",
-      "image": ""
-    },
-    {
-      "id": "水利部制定出台跨省河湖生态流量保障目标-dc1b478a00e4",
-      "language": "zh",
-      "title": "水利部制定出台跨省河湖生态流量保障目标",
-      "excerpt": "中新网10月26日电 据中国水利微信公众号消息，2025年以来，水利部组织各流域管理机构和省级水行政主管部门开展了跨省河湖生态流量确定与保障工作，完成382条(个)跨省河湖、558个控制断面生态流量保障目标确定并于近日印发实施，为强化跨省河湖生态用水保障、复苏河湖生态环境提供了重要依据。",
-      "date": "2026-10-26T03:02:46.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-26/10720993.shtml",
-      "image": ""
-    },
-    {
-      "id": "我爱我家2026前三季度归母净利润同比增长155-4-4815466697fd",
-      "language": "zh",
-      "title": "我爱我家2026前三季度归母净利润同比增长155.4%",
-      "excerpt": "10月25日，我爱我家(000560.SZ)发布2026年三季度报告。报告期内，公司累计实现住房总交易金额(GTV)约为1887亿元，其中第三季度 GTV约为609亿元，同比增长约4.1%；实现营业收入71.09亿元；实现归母净利润约1.08亿元，同比增长155.4%，实现扣非归母净利润约1.39亿元，同比增长155.62%，公司盈利能力进一步提升。",
-      "date": "2026-10-26T03:02:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-26/10720907.shtml",
-      "image": ""
-    },
-    {
-      "id": "大熊猫-冉冉-将赴比参加保护研究合作-abf816384257",
-      "language": "zh",
-      "title": "大熊猫“冉冉”将赴比参加保护研究合作",
-      "excerpt": "中新网10月26日电 据中国野生动物保护协会微信公众号消息，根据中国野生动物保护协会与比利时天堂公园2026年9月签订的《关于开展大熊猫保护研究合作的补充协议》，来自中国大熊猫保护研究中心的大熊猫“冉冉”(2017年5月31日出生，谱系号1062)，将赴比延续此前合作项目。",
-      "date": "2026-10-26T03:02:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-26/10720988.shtml",
-      "image": ""
-    },
-    {
-      "id": "华夏遇见-诗琳画卷-光明行-锦绣章-李小琳诗书画展-走进四川成都-9c7d5f5348e9",
-      "language": "zh",
-      "title": "“华夏遇见·诗琳画卷——光明行·锦绣章 李小琳诗书画展”走进四川成都",
-      "excerpt": "",
-      "date": "2026-10-26T02:59:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cnhttps://www.chinanews.com.cn/tp/hd2011/2026/10-26/1208908.shtml",
       "image": ""
     }
   ]
