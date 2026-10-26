@@ -202,9 +202,12 @@
 
   function splitPrefix(line) {
     // 保留标题、引用和列表前缀。
-const match = line.match(
-  /^(\s*(?:(?:>\s*)*)(?:(?:[-+*]|\d+[.)])\s+)?(?:#{1,6}\s+)?)(.*)$/
-);
+    const prefixPattern = new RegExp(
+      "^(\\s*(?:(?:>\\s*)*)(?:(?:[-+*]|\\d+[.)])\\s+)?(?:#{1,6}\\s+)?)(.*)$"
+    );
+
+    const match = line.match(prefixPattern);
+
     if (!match) {
       return ["", line];
     }
