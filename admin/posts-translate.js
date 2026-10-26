@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const MAX_CHARS = 2000;
+  const MAX_CHARS =700;
 
   function createError(message, code) {
     const error = new Error(message);
@@ -60,47 +60,92 @@
   }
 
   async function translateChunk(text) {
-    const response = await fetch("/api/translate", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ text }),
-      signal: AbortSignal.timeout(100000)
-    });
+    let lastError;
 
-    let result = {};
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const response = await fetch("/api/translate", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ text }),
+          signal: AbortSignal.timeout(100000)
+        });
 
-    try {
-      result = await response.json();
-    } catch {
-      // 服务端没有返回 JSON 时，使用通用错误提示。
+        let result = {};
+
+        try {
+          result = await response.json();
+        } catch {
+          // 服务端没有返回 JSON 时，使用通用错误提示。
+        }
+
+        if (response.status === 401) {
+          throw createError(
+            "CMS 翻译会话已失效。请重新登录 CMS，再保存文章以重新翻译。",
+            "AUTH_REQUIRED"
+          );
+        }
+
+        if (!response.ok) {
+          const detail =
+            typeof result.error === "string" && result.error.trim()
+              ? result.error.trim()
+              : "HTTP " + response.status;
+
+          const error = createError(
+            "翻译服务请求失败：" + detail,
+            "HTTP_" + response.status
+          );
+
+          // 只重试超时或临时服务错误，不重试普通客户端错误。
+          if (
+            response.status !== 429 &&
+            response.status !== 502 &&
+            response.status !== 503 &&
+            response.status !== 504
+          ) {
+            throw error;
+          }
+
+          throw error;
+        }
+
+        if (
+          typeof result.translation !== "string" ||
+          !result.translation.trim()
+        ) {
+          throw createError("翻译服务没有返回有效译文", "EMPTY_RESULT");
+        }
+
+        return result.translation.trim();
+      } catch (error) {
+        if (error && error.code === "AUTH_REQUIRED") {
+          throw error;
+        }
+
+        lastError = error;
+
+        const retryable =
+          error?.name === "TimeoutError" ||
+          error?.name === "AbortError" ||
+          error?.code === "HTTP_429" ||
+          error?.code === "HTTP_502" ||
+          error?.code === "HTTP_503" ||
+          error?.code === "HTTP_504" ||
+          error?.code === "EMPTY_RESULT";
+
+        if (!retryable || attempt === 1) {
+          throw error;
+        }
+
+        // 等待 1 秒后仅重试一次。
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
     }
 
-    if (response.status === 401) {
-      throw createError(
-        "CMS 翻译会话已失效。请重新登录 CMS，再保存文章以重新翻译。",
-        "AUTH_REQUIRED"
-      );
-    }
-
-    if (!response.ok) {
-      const detail =
-        typeof result.error === "string" && result.error.trim()
-          ? result.error.trim()
-          : "HTTP " + response.status;
-
-      throw createError("翻译服务请求失败：" + detail);
-    }
-
-    if (
-      typeof result.translation !== "string" ||
-      !result.translation.trim()
-    ) {
-      throw new Error("翻译服务没有返回有效译文");
-    }
-
-    return result.translation.trim();
+    throw lastError || new Error("翻译失败");
   }
 
   async function translatePlainText(text) {
