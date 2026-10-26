@@ -1,7 +1,8 @@
-
+```javascript
 const ALLOWED_ORIGIN = "https://globalviewnet.pages.dev";
 const SESSION_COOKIE = "gv_translate_session";
 const MAX_TEXT_LENGTH = 2000;
+const TRANSLATION_TIMEOUT = 90000;
 
 function jsonResponse(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -35,7 +36,9 @@ function decodeBase64Url(value) {
     .replace(/-/g, "+")
     .replace(/_/g, "/");
 
-  const padded = base64 + "=".repeat((4 - base64.length % 4) % 4);
+  const padded =
+    base64 + "=".repeat((4 - base64.length % 4) % 4);
+
   const binary = atob(padded);
   const bytes = new Uint8Array(binary.length);
 
@@ -120,8 +123,15 @@ export async function onRequestPost({ request, env }) {
   try {
     authenticated = await verifySession(request, env);
   } catch (error) {
-    console.error("Translation session verification failed:", error);
-    return jsonResponse({ error: "Authentication unavailable" }, 500);
+    console.error(
+      "Translation session verification failed:",
+      error?.message || String(error)
+    );
+
+    return jsonResponse(
+      { error: "Authentication unavailable" },
+      500
+    );
   }
 
   if (!authenticated) {
@@ -156,6 +166,12 @@ export async function onRequestPost({ request, env }) {
     return jsonResponse({ error: "Invalid text" }, 400);
   }
 
+  const controller = new AbortController();
+  const timeoutId = setTimeout(
+    () => controller.abort(),
+    TRANSLATION_TIMEOUT
+  );
+
   try {
     const response = await fetch(
       "https://api.siliconflow.cn/v1/chat/completions",
@@ -182,53 +198,17 @@ export async function onRequestPost({ request, env }) {
           max_tokens: 1200,
           temperature: 0.2
         }),
-        signal: AbortSignal.timeout(60000)
+        signal: controller.signal
       }
     );
 
     if (!response.ok) {
-      console.error("Translation provider returned:", response.status);
-      return jsonResponse(
-        { error: "Translation provider failed" },
-        502
-      );
-    }
+      let providerMessage = "";
 
-    const result = await response.json();
-    const choice = result.choices?.[0];
-    const translation = choice?.message?.content?.trim();
-    const finishReason = choice?.finish_reason || null;
+      try {
+        providerMessage = await response.text();
+      } catch {
+        providerMessage = "Unable to read provider response";
+      }
 
-    if (!translation) {
-      return jsonResponse({ error: "Empty translation" }, 502);
-    }
-
-    return jsonResponse({ translation, finishReason });
-  } catch (error) {
-    console.error("Translation request failed:", error);
-
-    return jsonResponse(
-      { error: "Translation request failed" },
-      502
-    );
-  }
-}
-
-export async function onRequestOptions({ request }) {
-  const origin = request.headers.get("Origin");
-
-  if (origin !== ALLOWED_ORIGIN) {
-    return new Response(null, { status: 403 });
-  }
-
-  return new Response(null, {
-    status: 204,
-    headers: {
-      "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
-      "Access-Control-Allow-Methods": "POST, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type",
-      "Access-Control-Max-Age": "86400",
-      "Vary": "Origin"
-    }
-  });
-}
+      console
