@@ -66,7 +66,7 @@
         "Content-Type": "application/json"
       },
       body: JSON.stringify({ text }),
-      signal: AbortSignal.timeout(60000)
+      signal: AbortSignal.timeout(100000)
     });
 
     let result = {};
