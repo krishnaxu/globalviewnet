@@ -1,7 +1,7 @@
 
 const ALLOWED_ORIGIN = "https://globalviewnet.pages.dev";
 const SESSION_COOKIE = "gv_translate_session";
-const MAX_TEXT_LENGTH = 2000;
+const MAX_TEXT_LENGTH = 700;
 const TRANSLATION_TIMEOUT = 90000;
 
 function jsonResponse(data, status = 200) {
