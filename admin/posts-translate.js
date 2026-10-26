@@ -1,12 +1,18 @@
+
 (function () {
   "use strict";
 
   const MAX_CHARS = 2000;
+  const MAX_TRANSLATION_RETRIES = 1;
 
   function createError(message, code) {
     const error = new Error(message);
     if (code) error.code = code;
     return error;
+  }
+
+  function containsChinese(text) {
+    return /[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]/.test(text);
   }
 
   function splitText(text, maxChars) {
@@ -20,8 +26,6 @@
       }
 
       let end = maxChars;
-
-      // 避免在 UTF-16 代理对中间切分字符。
       const previousCode = rest.charCodeAt(end - 1);
       const nextCode = rest.charCodeAt(end);
 
@@ -34,7 +38,6 @@
         end--;
       }
 
-      // 尽量在空白处切分，减少单词被截断的情况。
       let lastSpace = -1;
 
       for (let i = end - 1; i >= Math.floor(end / 2); i--) {
@@ -59,13 +62,21 @@
     return chunks;
   }
 
-  async function translateChunk(text) {
+  async function requestTranslation(text, retry) {
+    const instruction = retry
+      ? "Translate the entire text into natural English. Do not leave any Chinese words or characters untranslated. Preserve names, numbers, URLs, punctuation, and the original meaning. Return only the English translation."
+      : null;
+
     const response = await fetch("/api/translate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ text }),
+      body: JSON.stringify({
+        text: instruction
+          ? instruction + "\n\nText to translate:\n" + text
+          : text
+      }),
       signal: AbortSignal.timeout(60000)
     });
 
@@ -101,6 +112,24 @@
     }
 
     return result.translation.trim();
+  }
+
+  async function translateChunk(text) {
+    let translated = await requestTranslation(text, false);
+
+    for (let attempt = 0; containsChinese(translated) &&
+         attempt < MAX_TRANSLATION_RETRIES; attempt++) {
+      translated = await requestTranslation(text, true);
+    }
+
+    if (containsChinese(translated)) {
+      throw createError(
+        "译文仍包含中文，已停止保存不完整的英文译文。请检查对应字段后重新保存。",
+        "CHINESE_REMAINS"
+      );
+    }
+
+    return translated;
   }
 
   async function translatePlainText(text) {
@@ -149,13 +178,10 @@
             ? 2
             : 1;
 
-        const marker = value.slice(0, markerLength);
-        const inner = value.slice(markerLength, -markerLength);
-
         parts.push({
           type: "emphasis",
-          marker: marker,
-          value: inner
+          marker: value.slice(0, markerLength),
+          value: value.slice(markerLength, -markerLength)
         });
       } else {
         parts.push({
@@ -191,7 +217,6 @@
   }
 
   function splitPrefix(line) {
-    // 保留标题、引用和列表前缀。
     const prefixPattern = new RegExp(
       "^(\\s*(?:(?:>\\s*)*)(?:(?:[-+*]|\\d+[.)])\\s+)?(?:#{1,6}\\s+)?)(.*)$"
     );
@@ -237,22 +262,28 @@
         continue;
       }
 
+      const [prefix, content] = splitPrefix(line);
+
+      if (!content.trim()) {
+        output.push(line);
+        continue;
+      }
+
       try {
-        const [prefix, content] = splitPrefix(line);
-
-        if (!content.trim()) {
-          output.push(line);
-          continue;
-        }
-
         output.push(prefix + await translateInline(content));
       } catch (error) {
         if (error && error.code === "AUTH_REQUIRED") {
           throw error;
         }
 
-        console.warn("该行翻译失败，保留原文：", error);
-        output.push(line);
+        if (error && error.code === "CHINESE_REMAINS") {
+          throw createError(
+            "正文翻译未完成：某一行重试后仍有中文。为避免生成不完整的英文正文，本次不会写入新的英文正文。请检查后重新保存。",
+            "CHINESE_REMAINS"
+          );
+        }
+
+        throw error;
       }
     }
 
@@ -272,20 +303,12 @@
       return data;
     }
 
-    try {
-      const translated = isMarkdown
-        ? await translateMarkdown(chinese)
-        : await translateInline(chinese);
+    const translated = isMarkdown
+      ? await translateMarkdown(chinese)
+      : await translateInline(chinese);
 
-      if (translated && translated.trim()) {
-        return data.set(enKey, translated);
-      }
-    } catch (error) {
-      if (error && error.code === "AUTH_REQUIRED") {
-        throw error;
-      }
-
-      console.warn("自动翻译失败，保留中文并继续：" + zhKey, error);
+    if (translated && translated.trim()) {
+      return data.set(enKey, translated);
     }
 
     return data;
@@ -317,11 +340,18 @@
         if (error && error.code === "AUTH_REQUIRED") {
           window.alert(
             "自动翻译已停止：CMS 翻译会话已失效。\n\n" +
-            "请重新登录 CMS，然后再次保存文章。\n" +
-            "本次不会使用 MyMemory 备用翻译。"
+            "请重新登录 CMS，然后再次保存文章。"
+          );
+        } else if (error && error.code === "CHINESE_REMAINS") {
+          window.alert(
+            "自动翻译未完成：译文中仍有中文，或某个字段翻译失败。\n\n" +
+            "为避免将不完整译文写入英文栏位，本次停止后续翻译。请检查英文标题、摘要和正文，再重新保存。"
           );
         } else {
-          console.warn("翻译流程异常，保留现有内容并继续保存：", error);
+          console.warn("翻译流程异常：", error);
+          window.alert(
+            "自动翻译遇到错误，本次没有完成全部英文翻译。请检查英文栏位后再保存。"
+          );
         }
       }
 
@@ -329,5 +359,5 @@
     }
   });
 
-  console.log("文章自动翻译脚本已加载（2000 字符分段版，无备用翻译）");
+  console.log("文章自动翻译脚本已加载（2000 字符分段版，无备用翻译，含中文残留检查）");
 })();
