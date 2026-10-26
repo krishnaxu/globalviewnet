@@ -178,7 +178,7 @@ export async function onRequestPost({ request, env }) {
       {
         method: "POST",
         headers: {
-          "Authorization": `Bearer ${env.SILICONFLOW_API_KEY}`,
+         "Authorization": "Bearer " + env.SILICONFLOW_API_KEY,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
