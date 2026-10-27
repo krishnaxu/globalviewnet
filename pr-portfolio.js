@@ -173,93 +173,37 @@
     container.append(previous, status, next, jumpLabel, jumpInput, jumpButton);
   }
 
-  function renderMoreLinks(section, companyCount, industryCount) {
-    let container = section.querySelector(".pr-portfolio-more-links");
 
-    if (!container) {
-      container = document.createElement("div");
-      container.className = "pr-portfolio-more-links";
-      section.insertAdjacentElement("afterend", container);
-    }
+function renderMoreLinks(section, companyCount, industryCount) {
+  const grid = section.querySelector("#prPortfolioGrid");
+  if (!grid) return;
 
-    const companyLabel = isChinese() ? "查看全部公司新闻" : "All Company News";
-    const industryLabel = isChinese() ? "查看全部行业新闻" : "All Industry News";
+  // 只保留一个“查看全部”入口容器，避免重复添加。
+  let container = section.querySelector(".pr-portfolio-more-links");
 
-    container.innerHTML = `
-      <a href="pr-portfolio-list.html?source=${encodeURIComponent(COMPANY)}">${companyLabel} (${companyCount}) →</a>
-      <a href="pr-portfolio-list.html?source=${encodeURIComponent(INDUSTRY)}">${industryLabel} (${industryCount}) →</a>
-    `;
+  if (!container) {
+    container = document.createElement("div");
+    container.className = "pr-portfolio-more-links";
   }
 
-  async function init() {
-    const section = document.getElementById(SECTION_ID);
-    const grid = document.getElementById(GRID_ID);
+  // 固定放在文章列表之后，且只放在当前 PR Portfolio 区块内。
+  if (grid.nextElementSibling !== container) {
+    grid.insertAdjacentElement("afterend", container);
+  }
 
-    if (!section || !grid) return;
+  const companyLabel = isChinese()
+    ? "查看全部公司新闻"
+    : "All Company News";
 
-    try {
-      const response = await fetch(API_URL, {
-        headers: { Accept: "application/json" },
-        cache: "no-store"
-      });
+  const industryLabel = isChinese()
+    ? "查看全部行业新闻"
+    : "All Industry News";
 
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-      const data = await response.json();
-
-      if (!data.success || !Array.isArray(data.entries)) {
-        throw new Error(data.error || "Invalid API response");
-      }
-
-      const articles = data.entries;
-      const isListPage = section.dataset.pageMode === "list";
-      const params = new URLSearchParams(window.location.search);
-
-      if (isListPage) {
-        const requestedSource = params.get("source");
-        const selectedSource = requestedSource === INDUSTRY ? INDUSTRY : COMPANY;
-        const filtered = articles.filter(item => item.source === selectedSource);
-        const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-        const requestedPage = Number.parseInt(params.get("page") || "1", 10);
-        const currentPage = Math.min(
-          totalPages,
-          Math.max(1, Number.isInteger(requestedPage) ? requestedPage : 1)
-        );
-        const start = (currentPage - 1) * PAGE_SIZE;
-        const pageArticles = filtered.slice(start, start + PAGE_SIZE);
-
-        const heading = document.getElementById("prPortfolioListTitle");
-        if (heading) heading.textContent = sourceLabel(selectedSource);
-
-        grid.innerHTML = pageArticles.length
-          ? pageArticles.map((article, index) => renderArticle(article, start + index)).join("")
-          : `<p class="muted">${isChinese() ? "该分类暂时没有文章。" : "No articles in this category yet."}</p>`;
-
-        bindExpandButtons(grid);
-
-        const count = document.getElementById("prPortfolioCount");
-        if (count) {
-          count.textContent = isChinese()
-            ? `共 ${filtered.length} 篇文章`
-            : `${filtered.length} articles`;
-        }
-
-        const pagination = document.getElementById("prPortfolioPagination");
-        if (pagination) {
-          renderPagination(pagination, totalPages, currentPage, nextPage => {
-            const url = new URL(window.location.href);
-            url.searchParams.set("source", selectedSource);
-            url.searchParams.set("page", String(nextPage));
-            window.location.href = url.href;
-          });
-        }
-
-        return;
-      }
-
-      const companyArticles = articles.filter(item => item.source === COMPANY);
-      const industryArticles = articles.filter(item => item.source === INDUSTRY);
-      const tabs = section.querySelectorAll("[data-pr-source]");
+  container.innerHTML = `
+    <a href="pr-portfolio-list.html?source=${encodeURIComponent(COMPANY)}">${companyLabel} (${companyCount}) →</a>
+    <a href="pr-portfolio-list.html?source=${encodeURIComponent(INDUSTRY)}">${industryLabel} (${industryCount}) →</a>
+  `;
+}
 
       function renderHome(source) {
         let selected;
