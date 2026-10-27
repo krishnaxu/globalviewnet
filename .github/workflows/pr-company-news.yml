@@ -2,8 +2,8 @@ name: PR Company News Fetch
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "37 2 * * *"
+ schedule:
+  - cron: "37 2 * * 1"
 
 permissions:
   contents: write
