@@ -126,6 +126,7 @@ async function readEntry(file, token) {
   return entry;
 }
 
+
 export async function onRequestGet({ env }) {
   try {
     const token = env.GITHUB_CONTENT_TOKEN;
@@ -146,7 +147,8 @@ export async function onRequestGet({ env }) {
     if (!Array.isArray(files)) {
       return json({
         success: false,
-        error: "作品集目录格式异常"
+        error: "作品集目录格式异常",
+        result: files
       }, 502);
     }
 
@@ -156,11 +158,37 @@ export async function onRequestGet({ env }) {
       file.name.toLowerCase().endsWith(".md")
     );
 
-    const results = await Promise.all(
-      markdownFiles.map(file => readEntry(file, token))
-    );
+    const diagnostics = [];
+    const entries = [];
 
-    const entries = results.filter(Boolean);
+    for (const file of markdownFiles) {
+      try {
+        const entry = await readEntry(file, token);
+
+        if (entry) {
+          entries.push(entry);
+          diagnostics.push({
+            file: file.name,
+            status: "included",
+            title: entry.title
+          });
+        } else {
+          diagnostics.push({
+            file: file.name,
+            status: "excluded",
+            reason: "published is not true, or title/source_url is missing"
+          });
+        }
+      } catch (error) {
+        diagnostics.push({
+          file: file.name,
+          status: "error",
+          reason: error instanceof Error
+            ? error.message
+            : String(error)
+        });
+      }
+    }
 
     entries.sort((a, b) =>
       (Date.parse(b.date) || 0) - (Date.parse(a.date) || 0)
@@ -168,8 +196,14 @@ export async function onRequestGet({ env }) {
 
     return json({
       success: true,
+      scannedFiles: files.map(file => ({
+        name: file.name,
+        type: file.type
+      })),
+      markdownFileCount: markdownFiles.length,
       total: entries.length,
-      entries
+      entries,
+      diagnostics
     });
   } catch (error) {
     return json({
