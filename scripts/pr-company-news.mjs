@@ -35,6 +35,29 @@ function stripHTML(value = "") {
     .trim();
 }
 
+// 正文专用：保留段落、小标题和换行。
+function htmlToFormattedText(value = "") {
+  return decodeHTML(
+    value
+      .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
+      .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
+      .replace(/<!--[\s\S]*?-->/g, "")
+      .replace(/<(br|hr)\b[^>]*>/gi, "\n")
+      .replace(
+        /<\/(p|div|section|article|li|h[1-6]|blockquote|tr)>/gi,
+        "\n\n"
+      )
+      .replace(/<[^>]+>/g, "")
+  )
+    .replace(/\u00a0/g, " ")
+    .replace(/\r/g, "")
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/\n[ \t]+/g, "\n")
+    .replace(/[ \t]{2,}/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 function getMeta(html, name) {
   const tags = html.match(/<meta\b[^>]*>/gi) || [];
 
@@ -57,32 +80,81 @@ function getTitle(html) {
   return (
     getMeta(html, "og:title") ||
     getMeta(html, "twitter:title") ||
-    stripHTML(
-      html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1] || ""
-    )
+    stripHTML(html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "")
   )
     .replace(/\s*[-|｜]\s*金斯瑞.*$/i, "")
     .trim();
 }
 
+function normalizeDate(value = "") {
+  const match = value.match(
+    /(20\d{2})\s*(?:年|[-/.])\s*(\d{1,2})\s*(?:月|[-/.])\s*(\d{1,2})\s*日?/
+  );
+
+  if (!match) return "";
+
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+
+  if (
+    month < 1 ||
+    month > 12 ||
+    day < 1 ||
+    day > 31
+  ) {
+    return "";
+  }
+
+  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
 function getArticleDate(html) {
-  const candidates = [
+  // 只优先接受明确的发布时间元数据。
+  const metaCandidates = [
     getMeta(html, "article:published_time"),
     getMeta(html, "date"),
-    getMeta(html, "publishdate"),
-    html.match(/\b20\d{2}[-/.]\d{1,2}[-/.]\d{1,2}\b/)?.[0] || ""
+    getMeta(html, "publishdate")
   ];
 
-  for (const candidate of candidates) {
-    const match = candidate.match(
-      /(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})/
+  for (const candidate of metaCandidates) {
+    const date = normalizeDate(candidate);
+    if (date) return date;
+  }
+
+  // 找到包含文章标题的 h1，再检查其后方的日期。
+  const title = getTitle(html);
+  const headings = html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/gi) || [];
+
+  for (const heading of headings) {
+    if (!title || !stripHTML(heading).includes(title)) continue;
+
+    const headingIndex = html.indexOf(heading);
+    const nearbyHTML = html.slice(
+      headingIndex + heading.length,
+      headingIndex + heading.length + 2000
     );
 
-    if (match) {
-      return `${match[1]}-${match[2].padStart(2, "0")}-${match[3].padStart(2, "0")}`;
+    const chineseDate = nearbyHTML.match(
+      /20\d{2}\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日/
+    );
+
+    if (chineseDate) {
+      const date = normalizeDate(chineseDate[0]);
+      if (date) return date;
+    }
+
+    const standardDate = nearbyHTML.match(
+      /\b20\d{2}[-/.]\d{1,2}[-/.]\d{1,2}\b/
+    );
+
+    if (standardDate) {
+      const date = normalizeDate(standardDate[0]);
+      if (date) return date;
     }
   }
 
+  // 不再从整页随意选取第一个日期。
   return "";
 }
 
@@ -116,90 +188,101 @@ function extractBalancedElement(html, openingMatch, tagName) {
   return "";
 }
 
+function looksLikeNavigation(text) {
+  return (
+    /登录\s*注册|用户中心|在线订购|返回顶部/.test(text) ||
+    /产品类型.{0,30}服务类型/.test(text)
+  );
+}
 
 function getArticleBody(html) {
   const candidates = [];
 
-  const articleMatch = /<article\b[^>]*>/i.exec(html);
-  if (articleMatch) {
+  // 优先尝试 article 容器。
+  const articlePattern = /<article\b[^>]*>/gi;
+  let articleMatch;
+
+  while ((articleMatch = articlePattern.exec(html)) !== null) {
     candidates.push(
       extractBalancedElement(html, articleMatch, "article")
     );
   }
 
+  // 再尝试常见的新闻正文容器。
   const classPattern =
     /<div\b[^>]*class=["'][^"']*(?:article-content|article-detail|news-content|news-detail|content-detail|article-body|news-body|detail-content|rich-text|news-detail-content|article_content|news_content)[^"']*["'][^>]*>/gi;
 
   let classMatch;
+
   while ((classMatch = classPattern.exec(html)) !== null) {
     candidates.push(
       extractBalancedElement(html, classMatch, "div")
     );
   }
 
-  const mainMatch = /<main\b[^>]*>/i.exec(html);
-  if (mainMatch) {
-    candidates.push(
-      extractBalancedElement(html, mainMatch, "main")
-    );
-  }
-
-  // 优先使用原有的正文区域提取方法。
+  // 只接受内容长度合理且未明显混入导航的候选区域。
   for (const candidate of candidates) {
     if (!candidate) continue;
 
-    const text = stripHTML(candidate);
+    const text = htmlToFormattedText(candidate);
 
-    if (text.length > 100) {
+    if (text.length > 100 && !looksLikeNavigation(text)) {
       return text;
     }
   }
 
-  // 备用方法：从整页可见文本中定位新闻标题，再截取后续内容。
-  const pageText = stripHTML(html);
+  // 备用方案：必须找到真正的 h1 标题，不能从整页纯文本截取。
   const title = getTitle(html);
+  if (!title) return "";
 
-  if (!title || pageText.length === 0) {
-    return "";
+  const headings = html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/gi) || [];
+  let articleHTML = "";
+
+  for (const heading of headings) {
+    if (!stripHTML(heading).includes(title)) continue;
+
+    const headingIndex = html.indexOf(heading);
+    articleHTML = html.slice(headingIndex + heading.length);
+    break;
   }
 
-  const titleIndex = pageText.indexOf(title);
+  if (!articleHTML) return "";
 
-  if (titleIndex < 0) {
-    return "";
-  }
-
-  let body = pageText.slice(titleIndex + title.length).trim();
-
-  // 移除标题后紧跟的日期。
-  body = body.replace(
-    /^\s*20\d{2}年\d{1,2}月\d{1,2}日\s*/,
+  // 先去掉标题后紧跟的发布日期。
+  articleHTML = articleHTML.replace(
+    /^\s*(?:<[^>]+>\s*){0,5}20\d{2}\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日/,
     ""
-  ).trim();
+  );
 
-  // 遇到常见的文章导航或页脚标记时停止。
-  const endMarkers = [
-    "上一篇",
-    "下一篇",
-    "相关阅读",
-    "相关新闻",
-    "返回顶部"
+  // 遇到文章导航、推荐内容或页脚时停止。
+  const endPatterns = [
+    /<footer\b/i,
+    /<div\b[^>]*(?:id|class)=["'][^"']*footer[^"']*["'][^>]*>/i,
+    /上一篇/,
+    /下一篇/,
+    /相关阅读/,
+    /相关新闻/
   ];
 
-  let endIndex = body.length;
+  let endIndex = articleHTML.length;
 
-  for (const marker of endMarkers) {
-    const index = body.indexOf(marker);
+  for (const pattern of endPatterns) {
+    const match = pattern.exec(articleHTML);
 
-    if (index > 100 && index < endIndex) {
-      endIndex = index;
+    if (match && match.index > 100 && match.index < endIndex) {
+      endIndex = match.index;
     }
   }
 
-  body = body.slice(0, endIndex).trim();
+  articleHTML = articleHTML.slice(0, endIndex);
 
-  // 避免将过短的片段误判为完整正文。
-  return body.length > 100 ? body : "";
+  const text = htmlToFormattedText(articleHTML);
+
+  if (text.length <= 100 || looksLikeNavigation(text)) {
+    return "";
+  }
+
+  return text;
 }
 
 async function fetchHTML(url) {
@@ -258,7 +341,7 @@ function extractListing(html) {
     );
 
     const date = dateMatch
-      ? `${dateMatch[1]}-${dateMatch[2].padStart(2, "0")}-${dateMatch[3].padStart(2, "0")}`
+      ? normalizeDate(dateMatch[0])
       : "";
 
     if (!date) continue;
@@ -270,7 +353,16 @@ function extractListing(html) {
     });
   }
 
-  return results;
+  // 同一链接只保留一条。
+  const unique = new Map();
+
+  for (const item of results) {
+    if (!unique.has(item.source_url)) {
+      unique.set(item.source_url, item);
+    }
+  }
+
+  return [...unique.values()];
 }
 
 async function readExisting() {
@@ -285,7 +377,22 @@ async function readExisting() {
 }
 
 function hasBody(item) {
-  return typeof item.body === "string" && item.body.trim().length > 100;
+  if (
+    typeof item.body !== "string" ||
+    item.body.trim().length <= 100
+  ) {
+    return false;
+  }
+
+  if (looksLikeNavigation(item.body)) {
+    return false;
+  }
+
+  if (/公司新闻\s*20\d{2}年\d{1,2}月\d{1,2}日/.test(item.body)) {
+    return false;
+  }
+
+  return true;
 }
 
 async function main() {
@@ -340,7 +447,7 @@ async function main() {
 
       const existingItem = byURL.get(article.source_url);
 
-      // 已有完整正文的文章不重复抓取。
+      // 正文通过基本检查的文章不重复抓取。
       if (existingItem && hasBody(existingItem)) {
         continue;
       }
@@ -354,22 +461,34 @@ async function main() {
       try {
         const html = await fetchHTML(article.source_url);
         const title = getTitle(html) || article.title;
-        const date = getArticleDate(html) || article.date;
+        const pageDate = getArticleDate(html);
         const body = getArticleBody(html);
+
         const excerpt =
           getMeta(html, "description") ||
           getMeta(html, "og:description");
-        const coverImage = getMeta(html, "og:image");
 
-        if (date < START_DATE) {
-          reachedStartDate = true;
+        const coverImage = getMeta(html, "og:image");
+        const previous = existingItem || {};
+
+        // 列表日期作为文章日期的后备来源，优先于旧归档日期。
+        const date = pageDate || article.date || previous.date || "";
+
+        if (!date || date < START_DATE) {
+          if (date && date < START_DATE) {
+            reachedStartDate = true;
+          }
+
+          console.warn(
+            `日期不符合归档范围，跳过本条：${article.source_url}`
+          );
           continue;
         }
 
-        const previous = existingItem || {};
-
-        // 正文提取失败时保留旧正文，不覆盖已有有效内容。
-        const finalBody = body || previous.body || "";
+        // 新正文提取失败时，只保留通过基本检查的旧正文。
+        const finalBody = body || (
+          hasBody(previous) ? previous.body : ""
+        );
 
         const updatedItem = {
           ...previous,
@@ -379,7 +498,7 @@ async function main() {
           title: title || previous.title || article.title,
           source: previous.source || SOURCE,
           source_url: article.source_url,
-          date: date || previous.date || article.date,
+          date,
           excerpt: stripHTML(excerpt) || previous.excerpt || "",
           body: finalBody,
           cover_image: coverImage || previous.cover_image || "",
@@ -399,12 +518,14 @@ async function main() {
           }
         } else {
           bodyFailures++;
+
           console.warn(
-            `正文仍未提取到，保留记录并等待下次重试：${article.source_url}`
+            `正文仍未可靠提取，保留有效旧正文或空正文，等待下次重试：${article.source_url}`
           );
         }
       } catch (error) {
         fetchFailures++;
+
         console.error(
           `文章抓取失败：${article.source_url}；${error.message}`
         );
