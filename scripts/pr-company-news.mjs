@@ -116,6 +116,7 @@ function extractBalancedElement(html, openingMatch, tagName) {
   return "";
 }
 
+
 function getArticleBody(html) {
   const candidates = [];
 
@@ -127,7 +128,7 @@ function getArticleBody(html) {
   }
 
   const classPattern =
-    /<div\b[^>]*class=["'][^"']*(?:article-content|article-detail|news-content|news-detail|content-detail|article-body|news-body|detail-content|rich-text)[^"']*["'][^>]*>/gi;
+    /<div\b[^>]*class=["'][^"']*(?:article-content|article-detail|news-content|news-detail|content-detail|article-body|news-body|detail-content|rich-text|news-detail-content|article_content|news_content)[^"']*["'][^>]*>/gi;
 
   let classMatch;
   while ((classMatch = classPattern.exec(html)) !== null) {
@@ -143,6 +144,7 @@ function getArticleBody(html) {
     );
   }
 
+  // 优先使用原有的正文区域提取方法。
   for (const candidate of candidates) {
     if (!candidate) continue;
 
@@ -153,7 +155,51 @@ function getArticleBody(html) {
     }
   }
 
-  return "";
+  // 备用方法：从整页可见文本中定位新闻标题，再截取后续内容。
+  const pageText = stripHTML(html);
+  const title = getTitle(html);
+
+  if (!title || pageText.length === 0) {
+    return "";
+  }
+
+  const titleIndex = pageText.indexOf(title);
+
+  if (titleIndex < 0) {
+    return "";
+  }
+
+  let body = pageText.slice(titleIndex + title.length).trim();
+
+  // 移除标题后紧跟的日期。
+  body = body.replace(
+    /^\s*20\d{2}年\d{1,2}月\d{1,2}日\s*/,
+    ""
+  ).trim();
+
+  // 遇到常见的文章导航或页脚标记时停止。
+  const endMarkers = [
+    "上一篇",
+    "下一篇",
+    "相关阅读",
+    "相关新闻",
+    "返回顶部"
+  ];
+
+  let endIndex = body.length;
+
+  for (const marker of endMarkers) {
+    const index = body.indexOf(marker);
+
+    if (index > 100 && index < endIndex) {
+      endIndex = index;
+    }
+  }
+
+  body = body.slice(0, endIndex).trim();
+
+  // 避免将过短的片段误判为完整正文。
+  return body.length > 100 ? body : "";
 }
 
 async function fetchHTML(url) {
