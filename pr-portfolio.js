@@ -61,7 +61,7 @@
       : `<p class="pr-portfolio-excerpt">${excerpt}</p>`;
 
     const originalLink = sourceURL
-      ? `<a class="pr-portfolio-original" href="${escapeHTML(sourceURL)}" target="_blank" rel="noopener noreferrer">Read Original ↗</a>`
+      ? `<a class="pr-portfolio-original" href="${escapeHTML(sourceURL)}" target="_blank" rel="noopener noreferrer">${document.documentElement.lang.startsWith("zh") ? "阅读原文 ↗" : "Read Original ↗"}</a>
       : "";
 
     return `
