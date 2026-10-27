@@ -1,4 +1,6 @@
-/* PR Portfolio：参考“我的作品”的简洁列表样式 */
+
+/* PR Portfolio：编号列表，点击标题展开正文 */
+
 .pr-portfolio-section {
   margin: 32px 0;
   min-width: 0;
@@ -45,8 +47,6 @@
 }
 
 .pr-portfolio-card {
-  display: flex;
-  flex-direction: column;
   min-width: 0;
   padding: 15px 0;
   border-bottom: 1px solid var(--border);
@@ -55,6 +55,21 @@
 
 .pr-portfolio-card[hidden] {
   display: none !important;
+}
+
+.pr-portfolio-list-row {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  column-gap: 12px;
+  align-items: start;
+}
+
+.pr-portfolio-number {
+  padding-top: 1px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+  font-variant-numeric: tabular-nums;
 }
 
 .pr-portfolio-card-content {
@@ -74,21 +89,69 @@
   line-height: 1.65;
 }
 
-.pr-portfolio-card h3 {
-  margin: 0 0 5px;
-  font-size: 12px;
-  line-height: 1.65;
+.pr-portfolio-title-button {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.75;
   font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pr-portfolio-title-button > span:first-child {
+  min-width: 0;
   overflow-wrap: anywhere;
+}
+
+.pr-portfolio-title-button:hover {
+  color: var(--blue);
+}
+
+.pr-portfolio-title-button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.pr-portfolio-toggle-icon {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  transition: transform 0.2s ease;
+}
+
+.pr-portfolio-title-button[aria-expanded="true"] .pr-portfolio-toggle-icon {
+  transform: rotate(45deg);
+}
+
+.pr-portfolio-detail {
+  min-width: 0;
+  padding-top: 12px;
+}
+
+.pr-portfolio-detail[hidden] {
+  display: none !important;
 }
 
 .pr-portfolio-body,
 .pr-portfolio-excerpt {
-  margin: 5px 0 0;
+  margin: 0;
   color: var(--muted);
-  font-size: 10px;
-  line-height: 1.8;
+  font-size: 11px;
+  line-height: 1.9;
   overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .pr-portfolio-card-footer {
@@ -96,13 +159,15 @@
   justify-content: flex-end;
   align-items: center;
   gap: 8px;
-  margin-top: 8px;
+  margin-top: 12px;
+  padding-top: 9px;
+  border-top: 1px solid var(--border);
 }
 
 .pr-portfolio-original {
   color: var(--blue);
-  font-size: 10px;
-  line-height: 1.65;
+  font-size: 11px;
+  line-height: 1.7;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -116,7 +181,25 @@
     margin: 24px 0;
   }
 
+  .pr-portfolio-grid {
+    padding: 0 14px;
+  }
+
+  .pr-portfolio-tabs {
+    margin-right: 14px;
+    margin-left: 14px;
+  }
+
   .pr-portfolio-card {
     padding: 13px 0;
+  }
+
+  .pr-portfolio-list-row {
+    grid-template-columns: 25px minmax(0, 1fr);
+    column-gap: 9px;
+  }
+
+  .pr-portfolio-title-button {
+    font-size: 12px;
   }
 }
