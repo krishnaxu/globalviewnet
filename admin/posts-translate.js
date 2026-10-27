@@ -148,16 +148,29 @@
     throw lastError || new Error("翻译失败");
   }
 
-  async function translatePlainText(text) {
-    const chunks = splitText(text, MAX_CHARS);
-    const result = [];
 
-    for (const chunk of chunks) {
-      result.push(await translateChunk(chunk));
+async function translatePlainText(text) {
+  const chunks = splitText(text, MAX_CHARS);
+  const result = [];
+
+  for (const chunk of chunks) {
+    try {
+      const translated = await translateChunk(chunk);
+
+      if (typeof translated === "string" && translated.trim()) {
+        result.push(translated);
+      } else {
+        result.push(chunk);
+      }
+    } catch (error) {
+      // 单段失败时保留原文，继续翻译后续分段。
+      console.warn("文本分段翻译失败，保留该段原文：", error);
+      result.push(chunk);
     }
-
-    return result.join("");
   }
+
+  return result.join("");
+}
 
   // 保护行内 Markdown，只翻译标记之间的文本。
   async function translateInline(text) {
