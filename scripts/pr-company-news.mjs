@@ -1,3 +1,4 @@
+
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -27,8 +28,11 @@ function stripHTML(value = "") {
     value
       .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
       .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
+      .replace(/<!--[\s\S]*?-->/g, "")
       .replace(/<[^>]+>/g, " ")
-  ).replace(/\s+/g, " ").trim();
+  )
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function getMeta(html, name) {
@@ -53,8 +57,12 @@ function getTitle(html) {
   return (
     getMeta(html, "og:title") ||
     getMeta(html, "twitter:title") ||
-    stripHTML(html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "")
-  ).replace(/\s*[-|｜]\s*金斯瑞.*$/i, "").trim();
+    stripHTML(
+      html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1] || ""
+    )
+  )
+    .replace(/\s*[-|｜]\s*金斯瑞.*$/i, "")
+    .trim();
 }
 
 function getArticleDate(html) {
@@ -66,7 +74,9 @@ function getArticleDate(html) {
   ];
 
   for (const candidate of candidates) {
-    const match = candidate.match(/(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})/);
+    const match = candidate.match(
+      /(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})/
+    );
 
     if (match) {
       return `${match[1]}-${match[2].padStart(2, "0")}-${match[3].padStart(2, "0")}`;
@@ -76,20 +86,70 @@ function getArticleDate(html) {
   return "";
 }
 
+function extractBalancedElement(html, openingMatch, tagName) {
+  if (!openingMatch) return "";
+
+  const start = openingMatch.index + openingMatch[0].length;
+  const tokenPattern = new RegExp(
+    `<\\/?${tagName}\\b[^>]*>`,
+    "gi"
+  );
+
+  tokenPattern.lastIndex = start;
+  let depth = 1;
+  let match;
+
+  while ((match = tokenPattern.exec(html)) !== null) {
+    const token = match[0];
+
+    if (/^<\//.test(token)) {
+      depth--;
+
+      if (depth === 0) {
+        return html.slice(start, match.index);
+      }
+    } else if (!/\/\s*>$/.test(token)) {
+      depth++;
+    }
+  }
+
+  return "";
+}
+
 function getArticleBody(html) {
-  const selectors = [
-    /<article\b[^>]*>([\s\S]*?)<\/article>/i,
-    /<div\b[^>]*class=["'][^"']*(?:article-content|article-detail|news-content|news-detail|content-detail)[^"']*["'][^>]*>([\s\S]*?)<\/div>/i,
-    /<main\b[^>]*>([\s\S]*?)<\/main>/i
-  ];
+  const candidates = [];
 
-  for (const pattern of selectors) {
-    const match = html.match(pattern);
+  const articleMatch = /<article\b[^>]*>/i.exec(html);
+  if (articleMatch) {
+    candidates.push(
+      extractBalancedElement(html, articleMatch, "article")
+    );
+  }
 
-    if (match?.[1]) {
-      const text = stripHTML(match[1]);
+  const classPattern =
+    /<div\b[^>]*class=["'][^"']*(?:article-content|article-detail|news-content|news-detail|content-detail|article-body|news-body|detail-content|rich-text)[^"']*["'][^>]*>/gi;
 
-      if (text.length > 100) return text;
+  let classMatch;
+  while ((classMatch = classPattern.exec(html)) !== null) {
+    candidates.push(
+      extractBalancedElement(html, classMatch, "div")
+    );
+  }
+
+  const mainMatch = /<main\b[^>]*>/i.exec(html);
+  if (mainMatch) {
+    candidates.push(
+      extractBalancedElement(html, mainMatch, "main")
+    );
+  }
+
+  for (const candidate of candidates) {
+    if (!candidate) continue;
+
+    const text = stripHTML(candidate);
+
+    if (text.length > 100) {
+      return text;
     }
   }
 
@@ -178,8 +238,13 @@ async function readExisting() {
   }
 }
 
+function hasBody(item) {
+  return typeof item.body === "string" && item.body.trim().length > 100;
+}
+
 async function main() {
   const existing = await readExisting();
+
   const byURL = new Map(
     existing
       .filter(item => item.source_url)
@@ -188,6 +253,9 @@ async function main() {
 
   let reachedStartDate = false;
   let discovered = 0;
+  let repaired = 0;
+  let bodyFailures = 0;
+  let fetchFailures = 0;
 
   for (let page = 1; page <= MAX_PAGES; page++) {
     const listURL = new URL(LIST_URL);
@@ -213,6 +281,7 @@ async function main() {
     }
 
     const pageDates = articles.map(item => item.date);
+
     console.log(
       `本页识别到 ${articles.length} 篇文章，日期范围：${pageDates.at(-1)} 至 ${pageDates[0]}`
     );
@@ -223,40 +292,79 @@ async function main() {
         continue;
       }
 
-      if (byURL.has(article.source_url)) continue;
+      const existingItem = byURL.get(article.source_url);
 
-      console.log(`抓取正文：${article.title}`);
+      // 已有完整正文的文章不重复抓取。
+      if (existingItem && hasBody(existingItem)) {
+        continue;
+      }
+
+      const isRepair = Boolean(existingItem);
+
+      console.log(
+        `${isRepair ? "补抓缺失正文" : "抓取新文章"}：${article.title}`
+      );
 
       try {
         const html = await fetchHTML(article.source_url);
         const title = getTitle(html) || article.title;
         const date = getArticleDate(html) || article.date;
         const body = getArticleBody(html);
-        const excerpt = getMeta(html, "description") ||
+        const excerpt =
+          getMeta(html, "description") ||
           getMeta(html, "og:description");
+        const coverImage = getMeta(html, "og:image");
 
         if (date < START_DATE) {
           reachedStartDate = true;
           continue;
         }
 
-        byURL.set(article.source_url, {
-          slug: `company-${Buffer.from(article.source_url).toString("hex").slice(-20)}`,
-          title,
-          source: SOURCE,
-          source_url: article.source_url,
-          date,
-          excerpt: stripHTML(excerpt),
-          body,
-          cover_image: getMeta(html, "og:image"),
-          published: true,
-          fetched_at: new Date().toISOString()
-        });
+        const previous = existingItem || {};
 
-        discovered++;
+        // 正文提取失败时保留旧正文，不覆盖已有有效内容。
+        const finalBody = body || previous.body || "";
+
+        const updatedItem = {
+          ...previous,
+          slug:
+            previous.slug ||
+            `company-${Buffer.from(article.source_url).toString("hex").slice(-20)}`,
+          title: title || previous.title || article.title,
+          source: previous.source || SOURCE,
+          source_url: article.source_url,
+          date: date || previous.date || article.date,
+          excerpt: stripHTML(excerpt) || previous.excerpt || "",
+          body: finalBody,
+          cover_image: coverImage || previous.cover_image || "",
+          published: previous.published ?? true,
+          fetched_at: new Date().toISOString()
+        };
+
+        byURL.set(article.source_url, updatedItem);
+
+        if (body) {
+          console.log(`正文提取成功，字符数：${body.length}`);
+
+          if (isRepair) {
+            repaired++;
+          } else {
+            discovered++;
+          }
+        } else {
+          bodyFailures++;
+          console.warn(
+            `正文仍未提取到，保留记录并等待下次重试：${article.source_url}`
+          );
+        }
       } catch (error) {
-        console.error(`文章抓取失败：${article.source_url}；${error.message}`);
+        fetchFailures++;
+        console.error(
+          `文章抓取失败：${article.source_url}；${error.message}`
+        );
       }
+
+      await new Promise(resolve => setTimeout(resolve, 300));
     }
 
     if (pageDates.every(date => date < START_DATE) || reachedStartDate) {
@@ -268,18 +376,26 @@ async function main() {
   }
 
   const output = [...byURL.values()]
-    .filter(item => item.date >= START_DATE)
+    .filter(item => item.date && item.date >= START_DATE)
     .sort((a, b) => b.date.localeCompare(a.date));
 
   await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
+
   await fs.writeFile(
     OUTPUT_FILE,
     `${JSON.stringify(output, null, 2)}\n`,
     "utf8"
   );
 
-  console.log(`本次新增：${discovered} 篇`);
-  console.log(`当前累计：${output.length} 篇`);
+  const missingBodyCount = output.filter(item => !hasBody(item)).length;
+
+  console.log("========== 抓取结果 ==========");
+  console.log(`本次新增且正文成功：${discovered} 篇`);
+  console.log(`本次补齐旧正文：${repaired} 篇`);
+  console.log(`本次正文提取失败：${bodyFailures} 篇`);
+  console.log(`本次请求失败：${fetchFailures} 篇`);
+  console.log(`归档文章总数：${output.length} 篇`);
+  console.log(`归档中仍缺正文：${missingBodyCount} 篇`);
   console.log(`数据文件：${OUTPUT_FILE}`);
 
   if (!reachedStartDate) {
