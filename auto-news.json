@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-10-27T20:43:54.081Z",
+  "generated_at": "2026-10-27T21:43:31.415Z",
   "items": [
+    {
+      "id": "trump-administration-may-let-more-russian-die-b5895b85ef87",
+      "language": "en",
+      "title": "Trump administration may let more Russian diesel onto market, energy secretary tells CNBC",
+      "excerpt": "The diesel volumes in the Trump-Putin deal won't materially lower prices because the shipments are small compared to total demand, analysts say.",
+      "date": "2026-10-27T21:42:29.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/27/trump-putin-zelenskyy-russia-ukraine-diesel.html",
+      "image": ""
+    },
+    {
+      "id": "who-s-really-in-charge-at-anthropic-after-the-4f33acf6a2b5",
+      "language": "en",
+      "title": "Who’s really in charge at Anthropic after the IPO?",
+      "excerpt": "Here's a clear explanation of Anthropic's incredibly complex governance structure.",
+      "date": "2026-10-27T21:38:28.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+      "image": ""
+    },
+    {
+      "id": "polymarket-faces-renewed-cftc-probe-over-u-s--79e5a5fa22a0",
+      "language": "en",
+      "title": "Polymarket faces renewed CFTC probe over U.S. access to offshore platform",
+      "excerpt": "The federal agency had previously investigated whether Polymarket allowed U.S. users on to its offshore platform in 2024, but dropped the measures in July 2025.",
+      "date": "2026-10-27T21:24:06.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/27/cftc-probes-polymarket-over-2022-settlement.html",
+      "image": ""
+    },
+    {
+      "id": "discord-is-making-its-public-communities-more-a7454cf8d71d",
+      "language": "en",
+      "title": "Discord is making its public communities more searchable, and people have concerns",
+      "excerpt": "In December, messages from Discord's public discoverable servers will begin appearing in search engine results.",
+      "date": "2026-10-27T21:22:35.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/27/discord-is-making-its-public-communities-more-searchable-and-people-have-concerns/",
+      "image": ""
+    },
+    {
+      "id": "chart-anthropic-s-cash-pile-towers-over-nearl-ab4a5782d74a",
+      "language": "en",
+      "title": "Chart: Anthropic's cash pile towers over nearly every U.S. company",
+      "excerpt": "Anthropic's cash pile $131.7 billion is more than every non-bank U.S. company except for Berkshire Hathaway and Alphabet.",
+      "date": "2026-10-27T21:22:03.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/27/anthropic-cash-investments-ipo.html",
+      "image": ""
+    },
+    {
+      "id": "alexander-brothers-each-sentenced-to-30-years-1e7097c9e108",
+      "language": "en",
+      "title": "Alexander brothers each sentenced to 30 years in prison for sex trafficking case",
+      "excerpt": "The three brothers were found guilty of drugging and raping several women over the course of decades.",
+      "date": "2026-10-27T21:12:39.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqn498mng08ro?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c228/live/e6371090-d249-11f1-8ba3-9fd3e261415f.jpg"
+    },
+    {
+      "id": "ex-wife-of-zimbabwe-s-vice-president-freed-af-7024b81b90b3",
+      "language": "en",
+      "title": "Ex-wife of Zimbabwe's vice-president freed after collapse of attempted murder case",
+      "excerpt": "Marry Mubaiwa had been held on remand for seven years after being charged in 2019 for her then husband's attempted murder.",
+      "date": "2026-10-27T21:09:12.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6e3xgq11jqlo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/46a2/live/fff967e0-d239-11f1-904a-5b90e72e87ff.jpg"
+    },
     {
       "id": "robinhood-shares-fall-5-as-crypto-slump-weigh-3106e6a63834",
       "language": "en",
@@ -30,6 +100,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/27/walmart-ai-training-workers.html",
       "image": ""
+    },
+    {
+      "id": "code-execution-flaw-in-uefi-firmware-threaten-041404daf6ce",
+      "language": "en",
+      "title": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+      "excerpt": "Critical flaw in EDK2 allows attackers to execute code early in the boot process.",
+      "date": "2026-10-27T20:25:55.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/04/malware-500x500.jpg"
     },
     {
       "id": "ceasefire-extended-across-ukraine-s-kherson-r-f1415d1a806a",
@@ -2919,86 +2999,6 @@
       "date": "2026-10-27T07:12:09.000Z",
       "source_name": "中新网财经新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721630.shtml",
-      "image": ""
-    },
-    {
-      "id": "a股收评-超4900只个股飘绿-三大指数收跌-e4cb3c933421",
-      "language": "zh",
-      "title": "A股收评：超4900只个股飘绿，三大指数收跌",
-      "excerpt": "A股收评：超4900只个股飘绿，三大指数收跌；半导体设备概念股重挫，医药、通信设备下跌；银行、贵金属飘红",
-      "date": "2026-10-27T07:11:03.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721651.shtml",
-      "image": ""
-    },
-    {
-      "id": "企步新长征-向着富强再出发-f2f52b26240b",
-      "language": "zh",
-      "title": "企步新长征·向着富强再出发",
-      "excerpt": "",
-      "date": "2026-10-27T07:10:55.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721650.shtml",
-      "image": ""
-    },
-    {
-      "id": "企步新长征-使命必达强产业-139de89db54c",
-      "language": "zh",
-      "title": "企步新长征·使命必达强产业",
-      "excerpt": "",
-      "date": "2026-10-27T07:06:51.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721646.shtml",
-      "image": ""
-    },
-    {
-      "id": "企步新长征-江河旧貌换新颜-1d7d5ec4511f",
-      "language": "zh",
-      "title": "企步新长征·江河旧貌换新颜",
-      "excerpt": "",
-      "date": "2026-10-27T07:03:44.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721644.shtml",
-      "image": ""
-    },
-    {
-      "id": "企步新长征-红色精神护发展-8248f027406f",
-      "language": "zh",
-      "title": "企步新长征·红色精神护发展",
-      "excerpt": "",
-      "date": "2026-10-27T07:01:18.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721641.shtml",
-      "image": ""
-    },
-    {
-      "id": "印度东北部发生枪击事件致5死1伤-49840cd82d3f",
-      "language": "zh",
-      "title": "印度东北部发生枪击事件致5死1伤",
-      "excerpt": "中新社北京10月27日电 新德里消息：据当地媒体27日报道，印度东北部古瓦哈提26日发生一起枪击事件，造成5人死亡，另有1人受伤。",
-      "date": "2026-10-27T06:59:18.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-27/10721596.shtml",
-      "image": ""
-    },
-    {
-      "id": "企步新长征-向新前行富民生-6cc6b55b1223",
-      "language": "zh",
-      "title": "企步新长征·向新前行富民生",
-      "excerpt": "",
-      "date": "2026-10-27T06:58:02.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721640.shtml",
-      "image": ""
-    },
-    {
-      "id": "第七届中国-中东欧国家中小企业跨境撮合对接会举行-469ff740a591",
-      "language": "zh",
-      "title": "第七届中国—中东欧国家中小企业跨境撮合对接会举行",
-      "excerpt": "中新网沧州10月27日电 (李玉素)27日，第七届中国—中东欧国家中小企业跨境撮合对接会在河北省沧州市举行。",
-      "date": "2026-10-27T06:50:04.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721621.shtml",
       "image": ""
     }
   ]
