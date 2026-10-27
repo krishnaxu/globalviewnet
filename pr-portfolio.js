@@ -60,9 +60,11 @@
       ? `<div class="pr-portfolio-body">${body.replace(/\n/g, "<br>")}</div>`
       : `<p class="pr-portfolio-excerpt">${excerpt}</p>`;
 
-    const originalLink = sourceURL
-      ? `<a class="pr-portfolio-original" href="${escapeHTML(sourceURL)}" target="_blank" rel="noopener noreferrer">${document.documentElement.lang.startsWith("zh") ? "阅读原文 ↗" : "Read Original ↗"}</a>
-      : "";
+const isChinese = document.documentElement.lang.toLowerCase().startsWith("zh");
+
+const originalLink = sourceURL
+  ? `<a class="pr-portfolio-original" href="${escapeHTML(sourceURL)}" target="_blank" rel="noopener noreferrer">${isChinese ? "阅读原文 ↗" : "Read Original ↗"}</a>`
+  : "";
 
     return `
       <article class="pr-portfolio-card">
