@@ -236,6 +236,52 @@ collections:
         name: "body"
         widget: "markdown"
         required: false
+  
+  - name: "pr_portfolio"
+    label: "PR Portfolio"
+    label_singular: "PR Portfolio Article"
+    folder: "content/pr-portfolio"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    identifier_field: "title"
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: ["date", "title", "source"]
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Source"
+        name: "source"
+        widget: "select"
+        options:
+          - label: "GenScript Official Website"
+            value: "GenScript Official Website"
+          - label: "Industry News"
+            value: "Industry News"
+      - label: "Original URL"
+        name: "source_url"
+        widget: "string"
+      - label: "Publication Date"
+        name: "date"
+        widget: "datetime"
+        required: false
+      - label: "Summary"
+        name: "excerpt"
+        widget: "text"
+        required: false
+      - label: "Article Body"
+        name: "body"
+        widget: "markdown"
+      - label: "Cover Image URL"
+        name: "cover_image"
+        widget: "string"
+        required: false
+      - label: "Show on Homepage"
+        name: "published"
+        widget: "boolean"
+        default: true
 
   - name: "works"
     label: "我的作品"
