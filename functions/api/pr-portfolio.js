@@ -104,9 +104,9 @@ async function readEntry(file, token) {
   const markdown = decodeBase64(fileData.content || "");
   const { meta, body } = parseMarkdown(markdown);
 
-  if (!isTrue(meta.published)) {
-    return null;
-  }
+if (meta.published !== "true" && meta.published !== true) {
+  return null;
+}
 
   const entry = {
     slug: file.name.replace(/\.md$/i, ""),
