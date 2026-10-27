@@ -1,4 +1,10 @@
 
 {
-  "reviews": []
+  "reviews": [
+    {
+      "title": "测试隐藏功能",
+      "url": "https://mp.weixin.qq.com/s/JLRp57XUFpo_qEamlVpIzw",
+      "include_in_portfolio": false
+    }
+  ]
 }
