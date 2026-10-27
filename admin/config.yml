@@ -283,6 +283,34 @@ collections:
         widget: "boolean"
         default: true
 
+  
+  - name: "pr_portfolio_review"
+    label: "PR Portfolio文章审核"
+    label_singular: "审核记录"
+    files:
+      - label: "PR Portfolio审核记录"
+        name: "review_records"
+        file: "content/pr-portfolio/review.json"
+        fields:
+          - label: "审核记录"
+            name: "reviews"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - label: "文章标题"
+                name: "title"
+                widget: "string"
+                required: true
+              - label: "原文链接（用于识别文章）"
+                name: "url"
+                widget: "string"
+                required: true
+              - label: "是否保留展示"
+                name: "include_in_portfolio"
+                widget: "boolean"
+                default: true
+                required: true
+
   - name: "works"
     label: "我的作品"
     label_singular: "作品"
