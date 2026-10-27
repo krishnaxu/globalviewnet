@@ -105,9 +105,10 @@ async function readEntry(file, token) {
   const { meta, body } = parseMarkdown(markdown);
 
 if (meta.published !== "true" && meta.published !== true) {
-  return null;
+  throw new Error(
+    `解析字段失败：published=${JSON.stringify(meta.published)}, title=${JSON.stringify(meta.title)}, source_url=${JSON.stringify(meta.source_url)}`
+  );
 }
-
   const entry = {
     slug: file.name.replace(/\.md$/i, ""),
     title: text(meta.title),
