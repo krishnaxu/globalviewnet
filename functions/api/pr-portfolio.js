@@ -2,6 +2,7 @@
 const REPO = "krishnaxu/globalviewnet";
 const BRANCH = "main";
 const PORTFOLIO_PATH = "content/pr-portfolio";
+const REVIEW_FILE = "review.json";
 
 const ARCHIVE_FILES = [
   {
@@ -30,10 +31,7 @@ function json(data, status = 200) {
 
 function decodeBase64(content) {
   const binary = atob(content.replace(/\s/g, ""));
-  const bytes = Uint8Array.from(
-    binary,
-    char => char.charCodeAt(0)
-  );
+  const bytes = Uint8Array.from(binary, char => char.charCodeAt(0));
   return new TextDecoder("utf-8").decode(bytes);
 }
 
@@ -126,6 +124,35 @@ function excerptFrom(body) {
     .slice(0, 240);
 }
 
+// 统一文章链接格式，避免末尾斜杠不同导致审核记录失效。
+function normalizeUrl(value) {
+  const raw = text(value);
+
+  if (!raw) return "";
+
+  try {
+    const url = new URL(raw);
+    url.hash = "";
+
+    // 去除常见跟踪参数，但保留其他可能影响文章识别的参数。
+    for (const key of [...url.searchParams.keys()]) {
+      if (/^(utm_.+|fbclid|gclid)$/i.test(key)) {
+        url.searchParams.delete(key);
+      }
+    }
+
+    url.hostname = url.hostname.toLowerCase();
+
+    if (url.pathname.length > 1) {
+      url.pathname = url.pathname.replace(/\/+$/, "");
+    }
+
+    return url.toString().replace(/\/$/, "");
+  } catch {
+    return raw.replace(/\/+$/, "");
+  }
+}
+
 async function readEntry(file, token) {
   const fileData = await githubRequest(file.url, token);
   const markdown = decodeBase64(fileData.content || "");
@@ -171,34 +198,74 @@ function getArchiveItems(data) {
   throw new Error("JSON 归档格式异常：未找到文章数组");
 }
 
-async function readArchive(file, token, archive) {
-  let data;
-
-  // 优先读取 GitHub 返回的原始文件地址，避免大 JSON 文件受 Contents API 内容大小限制。
+async function readJsonFile(file, token) {
   if (file.download_url) {
     const response = await fetch(file.download_url, {
-      headers: {
-        "Cache-Control": "no-cache"
-      }
+      headers: { "Cache-Control": "no-cache" }
     });
 
     if (!response.ok) {
-      throw new Error(`读取归档文件失败：HTTP ${response.status}`);
+      throw new Error(`读取 ${file.name} 失败：HTTP ${response.status}`);
     }
 
-    data = await response.json();
-  } else {
-    const fileData = await githubRequest(file.url, token);
-    data = JSON.parse(decodeBase64(fileData.content || ""));
+    return response.json();
   }
 
+  const fileData = await githubRequest(file.url, token);
+  return JSON.parse(decodeBase64(fileData.content || ""));
+}
+
+// 读取独立审核记录。只有明确设置为 false 的文章才会被隐藏。
+async function readReviewMap(files, token) {
+  const reviewFile = files.find(file =>
+    file.type === "file" && file.name === REVIEW_FILE
+  );
+
+  if (!reviewFile) {
+    return new Map();
+  }
+
+  const data = await readJsonFile(reviewFile, token);
+  const reviews = Array.isArray(data)
+    ? data
+    : Array.isArray(data?.reviews)
+      ? data.reviews
+      : null;
+
+  if (!reviews) {
+    throw new Error(
+      `${REVIEW_FILE} 格式异常：需要包含 reviews 数组`
+    );
+  }
+
+  const reviewMap = new Map();
+
+  for (const review of reviews) {
+    if (!review || typeof review !== "object") continue;
+
+    const url = normalizeUrl(
+      review.url || review.source_url || review.sourceUrl
+    );
+
+    if (!url) continue;
+
+    reviewMap.set(url, {
+      title: text(review.title),
+      include: review.include_in_portfolio !== false &&
+        String(review.include_in_portfolio).toLowerCase() !== "false"
+    });
+  }
+
+  return reviewMap;
+}
+
+async function readArchive(file, token, archive) {
+  const data = await readJsonFile(file, token);
   const items = getArchiveItems(data);
   const entries = [];
 
   for (const item of items) {
-    if (!item || typeof item !== "object") {
-      continue;
-    }
+    if (!item || typeof item !== "object") continue;
 
     const title = text(item.title || item.name);
     const sourceUrl = text(
@@ -209,9 +276,7 @@ async function readArchive(file, token, archive) {
       item.articleUrl
     );
 
-    if (!title || !sourceUrl) {
-      continue;
-    }
+    if (!title || !sourceUrl) continue;
 
     const body = text(
       item.body ||
@@ -300,7 +365,7 @@ export async function onRequestGet({ env }) {
     const diagnostics = [];
     const entries = [];
 
-    // 第一部分：读取现有 CMS Markdown 文章，保留原有逻辑。
+    // 第一部分：读取现有 CMS Markdown 文章。
     for (const file of markdownFiles) {
       try {
         const entry = await readEntry(file, token);
@@ -325,21 +390,18 @@ export async function onRequestGet({ env }) {
         diagnostics.push({
           file: file.name,
           status: "error",
-          reason: error instanceof Error
-            ? error.message
-            : String(error),
+          reason: error instanceof Error ? error.message : String(error),
           type: "cms"
         });
       }
     }
 
-    // 第二部分：读取公司新闻和微信公众号 JSON 归档。
+    // 第二部分：读取公司新闻和行业新闻 JSON 归档。
     const archiveCounts = {};
 
     for (const archive of ARCHIVE_FILES) {
       const file = files.find(item =>
-        item.type === "file" &&
-        item.name === archive.name
+        item.type === "file" && item.name === archive.name
       );
 
       if (!file) {
@@ -357,9 +419,7 @@ export async function onRequestGet({ env }) {
         const result = await readArchive(file, token, archive);
         archiveCounts[archive.name] = result.entries.length;
 
-        for (const entry of result.entries) {
-          entries.push(entry);
-        }
+        entries.push(...result.entries);
 
         diagnostics.push({
           file: archive.name,
@@ -373,32 +433,82 @@ export async function onRequestGet({ env }) {
         diagnostics.push({
           file: archive.name,
           status: "error",
-          reason: error instanceof Error
-            ? error.message
-            : String(error),
+          reason: error instanceof Error ? error.message : String(error),
           type: "archive"
         });
       }
     }
 
-    // 去重：同一来源 URL 只保留一条；CMS 手动维护的文章优先。
+    // 第三部分：读取人工审核记录。
+    let reviewMap = new Map();
+
+    try {
+      reviewMap = await readReviewMap(files, token);
+      diagnostics.push({
+        file: REVIEW_FILE,
+        status: "included",
+        reviewCount: reviewMap.size,
+        type: "review"
+      });
+    } catch (error) {
+      // 审核文件存在但读取失败时，不静默忽略，以免被剔除文章重新显示。
+      diagnostics.push({
+        file: REVIEW_FILE,
+        status: "error",
+        reason: error instanceof Error ? error.message : String(error),
+        type: "review"
+      });
+
+      return json({
+        success: false,
+        error: "读取 PR Portfolio 人工审核记录失败；为避免错误展示，已停止返回文章",
+        detail: error instanceof Error ? error.message : String(error),
+        diagnostics
+      }, 500);
+    }
+
+    // 第四部分：按原文 URL 去重，CMS Markdown 优先。
     const uniqueEntries = [];
     const seenUrls = new Set();
 
     for (const entry of entries) {
-      const key = text(entry.source_url).replace(/\/+$/, "");
+      const key = normalizeUrl(entry.source_url);
 
-      if (!key || seenUrls.has(key)) {
-        continue;
-      }
+      if (!key || seenUrls.has(key)) continue;
 
       seenUrls.add(key);
       uniqueEntries.push(entry);
     }
 
-    uniqueEntries.sort((a, b) =>
+    // 第五部分：过滤人工取消展示的文章。
+    const hiddenEntries = [];
+    const visibleEntries = [];
+
+    for (const entry of uniqueEntries) {
+      const key = normalizeUrl(entry.source_url);
+      const review = reviewMap.get(key);
+
+      if (review && review.include === false) {
+        hiddenEntries.push({
+          title: entry.title,
+          source_url: entry.source_url
+        });
+        continue;
+      }
+
+      visibleEntries.push(entry);
+    }
+
+    visibleEntries.sort((a, b) =>
       (Date.parse(b.date) || 0) - (Date.parse(a.date) || 0)
     );
+
+    diagnostics.push({
+      type: "review-summary",
+      totalBeforeReview: uniqueEntries.length,
+      hiddenCount: hiddenEntries.length,
+      visibleCount: visibleEntries.length
+    });
 
     return json({
       success: true,
@@ -408,17 +518,17 @@ export async function onRequestGet({ env }) {
       })),
       markdownFileCount: markdownFiles.length,
       archiveCounts,
-      total: uniqueEntries.length,
-      entries: uniqueEntries,
+      reviewCount: reviewMap.size,
+      hiddenCount: hiddenEntries.length,
+      total: visibleEntries.length,
+      entries: visibleEntries,
       diagnostics
     });
   } catch (error) {
     return json({
       success: false,
       error: "获取 PR Portfolio 失败",
-      detail: error instanceof Error
-        ? error.message
-        : String(error)
+      detail: error instanceof Error ? error.message : String(error)
     }, 500);
   }
 }
