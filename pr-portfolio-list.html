@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GlobalViewNet 公司新闻与行业新闻文章列表。">
+  <title>新闻列表 | Global View</title>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("lang") === "en") {
+        document.documentElement.lang = "en";
+      }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="pr-portfolio.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg, #f5f7fb);
+      color: var(--text, #17233d);
+      font-family: Arial, "Noto Sans SC", sans-serif;
+      line-height: 1.7;
+    }
+
+    .pr-list-page {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    .pr-list-topbar {
+      margin-bottom: 28px;
+    }
+
+    .pr-list-back {
+      display: inline-block;
+      color: var(--blue, #2563eb);
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .pr-list-back:hover {
+      text-decoration: underline;
+    }
+
+    .pr-list-title {
+      margin: 0 0 8px;
+      font-size: clamp(24px, 4vw, 32px);
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+    }
+
+    .pr-list-subtitle {
+      margin: 0 0 20px;
+      color: var(--muted, #64748b);
+      font-size: 13px;
+    }
+
+    .pr-list-panel {
+      padding: 18px;
+      border: 1px solid var(--border, #e2e8f0);
+      border-radius: 12px;
+      background: var(--bg, #fff);
+    }
+
+    .pr-list-panel .section-heading {
+      margin-top: 0;
+    }
+
+    .pr-list-panel .section-heading h2 {
+      margin: 0;
+      font-size: 17px;
+    }
+
+    .pr-list-panel .pr-portfolio-grid {
+      padding: 0;
+    }
+
+    .pr-list-panel .pr-portfolio-pagination {
+      padding-top: 16px;
+      border-top: 1px solid var(--border, #e2e8f0);
+    }
+
+    @media (max-width: 640px) {
+      .pr-list-page {
+        padding-top: 18px;
+      }
+
+      .pr-list-panel {
+        padding: 13px;
+      }
+
+      .pr-list-panel .pr-portfolio-pagination {
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="pr-list-page">
+    <div class="pr-list-topbar">
+      <a class="pr-list-back" href="#" id="prBackLink">← 返回上一级</a>
+    </div>
+
+    <h1 class="pr-list-title" id="prPortfolioListTitle">公司新闻</h1>
+    <p class="pr-list-subtitle" id="prPortfolioCount">正在加载文章……</p>
+
+    <section
+      class="pr-portfolio-section pr-list-panel"
+      id="prPortfolioSection"
+      data-page-mode="list"
+    >
+      <div class="section-heading">
+        <h2 id="prListSectionHeading">文章列表</h2>
+      </div>
+
+      <div class="pr-portfolio-grid" id="prPortfolioGrid"></div>
+
+      <nav
+        class="pr-portfolio-pagination"
+        id="prPortfolioPagination"
+        aria-label="文章分页"
+      ></nav>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const isEnglish = document.documentElement.lang === "en";
+      const source = params.get("source");
+
+      document.getElementById("prPortfolioListTitle").textContent =
+        isEnglish
+          ? (source === "Industry News" ? "Industry News" : "Company News")
+          : (source === "Industry News" ? "行业新闻" : "公司新闻");
+
+      document.getElementById("prListSectionHeading").textContent =
+        isEnglish ? "Articles" : "文章列表";
+
+      document.getElementById("prPortfolioCount").textContent =
+        isEnglish ? "Loading articles…" : "正在加载文章……";
+
+      document.getElementById("prBackLink").textContent =
+        isEnglish ? "← Back to Previous Page" : "← 返回上一级";
+
+      // 只返回浏览器历史中的上一级，不额外提供首页入口。
+      document.getElementById("prBackLink").addEventListener("click", function (event) {
+        event.preventDefault();
+
+        if (window.history.length > 1) {
+          window.history.back();
+        }
+      });
+    })();
+  </script>
+
+  <script src="pr-portfolio.js"></script>
+</body>
+</html>
