@@ -42,55 +42,37 @@ async function githubRequest(url, token) {
 }
 
 function parseMarkdown(markdown) {
-  const match = markdown.match(
-    /^\uFEFF?---\s*\r?\n([\s\S]*?)\r?\n---(?:\s*\r?\n|$)/
+  const lines = markdown.replace(/^\uFEFF/, "").split(/\r?\n/);
+
+  if (lines[0]?.trim() !== "---") {
+    return { meta: {}, body: markdown.trim() };
+  }
+
+  const endIndex = lines.findIndex(
+    (line, index) => index > 0 && line.trim() === "---"
   );
 
-  if (!match) {
+  if (endIndex === -1) {
     return { meta: {}, body: markdown.trim() };
   }
 
   const meta = {};
-  let currentKey = "";
-  let blockLines = [];
 
-  function saveBlock() {
-    if (currentKey) {
-      meta[currentKey] = blockLines.join("\n").trim();
-    }
-    currentKey = "";
-    blockLines = [];
-  }
+  for (const line of lines.slice(1, endIndex)) {
+    const match = line.match(/^([A-Za-z0-9_-]+)\s*:\s*(.*)$/);
 
-  for (const line of match[1].split(/\r?\n/)) {
-    const field = line.match(/^([A-Za-z0-9_-]+)\s*:\s*(.*)$/);
-
-    if (field) {
-      saveBlock();
-
-      const key = field[1];
-      const value = field[2].trim();
-
-      if (["|", "|-", ">", ">-"].includes(value)) {
-        currentKey = key;
-      } else {
-        meta[key] = value
-          .replace(/^(['"])([\s\S]*)\1$/, "$2")
-          .trim();
-      }
-    } else if (currentKey) {
-      blockLines.push(line.replace(/^(  |\t)/, ""));
+    if (match) {
+      meta[match[1]] = match[2]
+        .trim()
+        .replace(/^(['"])(.*)\1$/, "$2");
     }
   }
-
-  saveBlock();
 
   return {
     meta,
-    body: markdown.slice(match[0].length).trim()
+    body: lines.slice(endIndex + 1).join("\n").trim()
   };
 }
-
 function text(value) {
   return typeof value === "string" ? value.trim() : "";
 }
