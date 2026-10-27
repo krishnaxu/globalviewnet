@@ -1,4 +1,3 @@
-
 ---
 title: "GlobalViewNet PR Portfolio Test"
 source: "GenScript Official Website"
