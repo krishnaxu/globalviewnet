@@ -163,7 +163,12 @@ async function translatePlainText(text) {
         result.push(chunk);
       }
     } catch (error) {
-      // 单段失败时保留原文，继续翻译后续分段。
+      // 登录会话失效时必须向上抛出，不能当作普通分段失败。
+      if (error && error.code === "AUTH_REQUIRED") {
+        throw error;
+      }
+
+      // 其他分段失败时保留原文，继续翻译后续分段。
       console.warn("文本分段翻译失败，保留该段原文：", error);
       result.push(chunk);
     }
@@ -387,5 +392,5 @@ async function translatePlainText(text) {
     }
   });
 
-  console.log("文章自动翻译脚本已加载（2000 字符分段版，无备用翻译）");
+ console.log("文章自动翻译脚本已加载（700 字符分段版，失败分段保留原文，无备用翻译）");
 })();
