@@ -952,24 +952,23 @@ html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before
           </div>
           <!-- PR Portfolio -->
 <section class="pr-portfolio-section" id="prPortfolioSection">
-  <div class="section-heading">
-    <h2 class="serif">
-  <span data-i18n="prPortfolio">PR作品</span>
-</h2>
-    <span class="muted">Selected Communications</span>
-  </div>
+<div class="section-heading">
+  <h2 class="serif">
+    <span data-i18n="prPortfolio">PR作品</span>
+  </h2>
+</div>
 
-  <div class="pr-portfolio-tabs">
-    <button type="button" class="pr-portfolio-tab active" data-pr-source="all">
-      All
-    </button>
-    <button type="button" class="pr-portfolio-tab" data-pr-source="GenScript">
-      Company News
-    </button>
-    <button type="button" class="pr-portfolio-tab" data-pr-source="Industry News">
-      Industry News
-    </button>
-  </div>
+<div class="pr-portfolio-tabs">
+  <button type="button" class="pr-portfolio-tab active" data-pr-source="all" data-i18n="prFilterAll">
+    全部
+  </button>
+  <button type="button" class="pr-portfolio-tab" data-pr-source="GenScript Official Website" data-i18n="prFilterCompany">
+    公司新闻
+  </button>
+  <button type="button" class="pr-portfolio-tab" data-pr-source="Industry News" data-i18n="prFilterIndustry">
+    行业新闻
+  </button>
+</div>
 
   <div class="pr-portfolio-grid" id="prPortfolioGrid">
     <p class="muted">Loading portfolio...</p>
@@ -1242,6 +1241,9 @@ html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before
         catLife: "生活", catLifeEn: "Life",
         latestArticles: "最新资讯",
         prPortfolio: "PR作品",
+        prFilterAll: "全部",
+        prFilterCompany: "公司新闻",
+        prFilterIndustry: "行业新闻",
         latestNews: "最新动态", searchPlaceholder: "搜索感兴趣的内容...",
         eyebrow: "全球视野 · 双语阅读",
         homeTitle: "连接世界，发现更多可能",
@@ -1315,6 +1317,9 @@ en: {
 
   latestArticles: "Latest Articles",
   prPortfolio: "PR Portfolio",
+  prFilterAll: "All",
+  prFilterCompany: "Company News",
+  prFilterIndustry: "Industry News",
   latestNews: "Latest",
   searchPlaceholder: "Search articles...",
 
