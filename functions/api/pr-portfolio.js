@@ -176,7 +176,12 @@ export async function onRequestGet({ env }) {
           diagnostics.push({
             file: file.name,
             status: "excluded",
-            reason: "published is not true, or title/source_url is missing"
+            reason: "字段检查失败",
+parsed: {
+  published: meta.published,
+  title: meta.title,
+  source_url: meta.source_url
+}
           });
         }
       } catch (error) {
