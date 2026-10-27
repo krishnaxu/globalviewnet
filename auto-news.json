@@ -1,6 +1,96 @@
 {
-  "generated_at": "2026-10-27T18:52:27.263Z",
+  "generated_at": "2026-10-27T19:48:21.454Z",
   "items": [
+    {
+      "id": "google-s-android-registered-app-stores-progra-5abe96edb6fa",
+      "language": "en",
+      "title": "Google's Android Registered App Stores program launches Dec. 1, applications now open",
+      "excerpt": "Easier app installs are coming to third-party stores, pending Google's stamp of approval.",
+      "date": "2026-10-27T19:32:07.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/googles-android-registered-app-stores-program-launches-dec-1-applications-now-open/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/05/google-logo-big-g-floating-500x500.jpg"
+    },
+    {
+      "id": "dutch-zookeeper-dies-after-being-mauled-in-le-edea632a5379",
+      "language": "en",
+      "title": "Dutch zookeeper dies after being mauled in leopard enclosure",
+      "excerpt": "The woman began her career at the park when she was 17 and had worked there on-and-off for four decades.",
+      "date": "2026-10-27T19:30:37.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/crwyq90gwg8jo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4d5f/live/cfa3dd20-d22d-11f1-b8e4-17c9744a7f8e.jpg"
+    },
+    {
+      "id": "midterm-elections-how-affordability-and-the-e-b43ad6b79c8b",
+      "language": "en",
+      "title": "Midterm elections: How affordability and the economy could impact voters",
+      "excerpt": "Several economic issues could impact midterm elections voters. Here's what to expect on Nov. 3.",
+      "date": "2026-10-27T19:22:56.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/guide/midterm-elections-economy-affordability/",
+      "image": ""
+    },
+    {
+      "id": "boeing-shares-slide-on-a-disappointing-cash-f-827fca49f9d8",
+      "language": "en",
+      "title": "Boeing shares slide on a disappointing cash flow update. Why this dip is buyable",
+      "excerpt": "Boeing reset investor expectations on free cash flow growth in the coming years. We're hopeful this represents a clearing event.",
+      "date": "2026-10-27T19:21:20.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/27/boeing-shares-slide-on-a-disappointing-cash-flow-update-why-this-dip-is-buyable-.html",
+      "image": ""
+    },
+    {
+      "id": "deaths-in-detention-cells-in-nigeria-were-ent-8ede90dab6ec",
+      "language": "en",
+      "title": "Deaths in detention cells in Nigeria were entirely preventable, inquiry finds",
+      "excerpt": "Overcrowding and poor ventilation caused the deaths of 33 detainees in a prison cell in Minna state.",
+      "date": "2026-10-27T19:01:16.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmgel8pqj5rwo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a16e/live/5844f360-d226-11f1-a701-fddedf244c16.jpg"
+    },
+    {
+      "id": "disruptive-raises-10b-fund-to-make-big-bets-o-373a8b625d14",
+      "language": "en",
+      "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
+      "excerpt": "Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.",
+      "date": "2026-10-27T18:55:35.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+      "image": ""
+    },
+    {
+      "id": "margin-debt-growth-slows-sharply-as-stock-mar-3207a75b220f",
+      "language": "en",
+      "title": "Margin debt growth slows sharply as stock market warning signs build",
+      "excerpt": "Slowing margin-debt growth could signal growing risks for stocks.",
+      "date": "2026-10-27T18:53:18.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/27/margin-debt-growth-cools-after-2026-surge-may-signal-market-top.html",
+      "image": ""
+    },
+    {
+      "id": "vibe-genes-natural-ish-language-comes-to-prot-7ded73819dc6",
+      "language": "en",
+      "title": "Vibe genes? Natural(ish) language comes to protein, genome design software",
+      "excerpt": "You can apparently now tell AI tools what sort of protein you want them to make.",
+      "date": "2026-10-27T18:49:08.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/10/GettyImages-615307388-500x500.jpg"
+    },
+    {
+      "id": "ghanaian-twin-brothers-and-us-woman-plead-gui-a547d38bcaf2",
+      "language": "en",
+      "title": "Ghanaian twin brothers and US woman plead guilty to $9m romance scam",
+      "excerpt": "The group targeted elderly people across US and Europe, luring them into romantic relationship before persuading them to transfer large sums of money.",
+      "date": "2026-10-27T18:43:41.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwz0vg2j442lo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1bbe/live/217282b0-d22d-11f1-b441-2b33b063138f.png"
+    },
     {
       "id": "amazon-s-anti-tokenmaxxing-memo-says-engineer-b4e5877b1cf1",
       "language": "en",
@@ -22,6 +112,16 @@
       "image": ""
     },
     {
+      "id": "controversial-islamic-cleric-shot-dead-in-nor-351dfd6d6046",
+      "language": "en",
+      "title": "Controversial Islamic cleric shot dead in northern Nigeria",
+      "excerpt": "Yahaya Masussuka had posted videos in which he rejected some elements of mainstream Islam.",
+      "date": "2026-10-27T18:35:02.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cxdd8nq55d74o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/719f/live/5b2284f0-d233-11f1-b441-2b33b063138f.png"
+    },
+    {
       "id": "early-third-quarter-earnings-show-a-resilient-596cebb2b302",
       "language": "en",
       "title": "Early third-quarter earnings show a 'resilient' U.S. consumer, with signs of strain",
@@ -30,6 +130,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
       "image": ""
+    },
+    {
+      "id": "warner-bros-drops-final-trailer-for-dune-part-d62a96b6078a",
+      "language": "en",
+      "title": "Warner Bros. drops final trailer for Dune: Part Three",
+      "excerpt": "\"After years of combat, I've become the oppressor Chani had sworn to fight.\"",
+      "date": "2026-10-27T18:05:55.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/culture/2026/10/warner-bros-drops-final-trailer-for-dune-part-three/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/dune1-500x500-1793122976.jpg"
     },
     {
       "id": "speaker-mike-johnson-calls-election-transfer--773cc215ea04",
@@ -62,6 +172,16 @@
       "image": ""
     },
     {
+      "id": "watch-the-mbappé-chairman-mao-controversy-exp-e0e9a7569737",
+      "language": "en",
+      "title": "Watch: The Mbappé-Chairman Mao controversy explained",
+      "excerpt": "Kylian Mbappé has apologised for \"ill-judged\" comments he made about late Chinese leader Mao Zedong.",
+      "date": "2026-10-27T17:11:27.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cqy43w2wpy3vo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2306/live/4e8e4460-d227-11f1-93e1-3b657b665bcf.jpg"
+    },
+    {
       "id": "flávio-bolsonaro-s-passports-cancelled-after--c0334e402a88",
       "language": "en",
       "title": "Flávio Bolsonaro's passports cancelled after he fails to surrender them",
@@ -79,6 +199,16 @@
       "date": "2026-10-27T17:08:08.000Z",
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+      "image": ""
+    },
+    {
+      "id": "as-holiday-shopping-approaches-seasonal-hirin-c8130b996b23",
+      "language": "en",
+      "title": "As holiday shopping approaches, seasonal hiring gives 'mixed signals,' experts say",
+      "excerpt": "Companies have posted more seasonal jobs in 2026 than in 2025, boosted by non-retail jobs. Major retailers are, instead, relying on permanent staff.",
+      "date": "2026-10-27T16:40:57.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/make-it/2026/10/27/seasonal-hiring-2026-holiday-jobs.html",
       "image": ""
     },
     {
@@ -2869,136 +2999,6 @@
       "date": "2026-10-27T06:46:04.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gn/2026/10-27/10721589.shtml",
-      "image": ""
-    },
-    {
-      "id": "乡村行-看振兴-浙江磐安寻药香-探访大盘山的-本草基因-2011283e7095",
-      "language": "zh",
-      "title": "（乡村行·看振兴）浙江磐安寻药香：探访大盘山的“本草基因”",
-      "excerpt": "中新网金华10月27日电(张煜欢 胡莘菻)清晨的浙江金华磐安，山雾漫过群山褶皱。走进大盘山浙产道地药材及珍稀药用植物保育科研基地，两个年轻身影正俯身采集样本。浙江农林大学资源利用与植物保护专业硕士研究生孟祥瑞正在弯腰记录数据。他和大盘山的本草已“相识”三年，一年六七次往返杭州与磐安之间，把毕业论文的实验样地、整套研究项目扎根于此。",
-      "date": "2026-10-27T06:45:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-27/10721588.shtml",
-      "image": ""
-    },
-    {
-      "id": "秦巴腹地秋韵浓-陕西汉中推动-生态颜值-转变为经济产值-52ef082204d6",
-      "language": "zh",
-      "title": "秦巴腹地秋韵浓 陕西汉中推动“生态颜值”转变为经济产值",
-      "excerpt": "中新网陕西汉中10月27日电 (记者 李一璠)秦巴层峦叠彩，汉水秋意盎然，今年秋季以来，陕西省汉中市依托得天独厚的生态秋景、创新票根经济新模式，文旅市场持续火爆，游客接待量、旅游综合消费稳步攀升，实现了生态颜值、文旅人气、经济产值的同步跃升，接待游客人次同比增长15%。",
-      "date": "2026-10-27T06:44:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721587.shtml",
-      "image": ""
-    },
-    {
-      "id": "军费-加码-与民生-承压-北约军备扩张计划遇难题-05cfb5a6b172",
-      "language": "zh",
-      "title": "军费“加码”与民生“承压” 北约军备扩张计划遇难题",
-      "excerpt": "欧洲头条丨军费“加码”与民生“承压” 北约军备扩张计划遇难题",
-      "date": "2026-10-27T06:43:33.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-27/10721615.shtml",
-      "image": ""
-    },
-    {
-      "id": "东西问丨维杰-普拉萨德-超越-依附-走向-自主-全球南方需要什么-049d3a0ac9d9",
-      "language": "zh",
-      "title": "东西问丨维杰·普拉萨德：超越“依附”走向“自主”，全球南方需要什么？",
-      "excerpt": "中新社江西新余10月27日电 题：超越“依附”走向“自主”，全球南方需要什么？",
-      "date": "2026-10-27T06:36:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dxw/2026/10-27/10721586.shtml",
-      "image": ""
-    },
-    {
-      "id": "探访四川省人形机器人训练场-495cee6c9234",
-      "language": "zh",
-      "title": "探访四川省人形机器人训练场",
-      "excerpt": "图为工程师在维修机器人。中新社记者 安源 摄 图为机器人训练现场。中新社记者 安源 摄 图为工程师对机器人进行抓物训练。中新社记者 安源 摄 图为参观者与机器人互动。中新社记者 安源 摄 图为工程师在维修机器人。中新社记者 安源 摄 图为工程师对机器人进行抓物训练。中新社记者 安源 摄 图为机器人展示抓取的物品。中新社记者 安源 摄 图为工程师对机器人进行检测。中新社记者 安源 摄 图为工程师对机器人进行训练。中新社记者 安源 摄 图为小朋友隔窗参观机器人。中新社记者 安源 摄 图为参观者走进人形机器人训练场。中新社记者 安源 摄 图为工程师对机器狗进行调试。中新社记者 安源 摄",
-      "date": "2026-10-27T06:35:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-27/10721598.shtml",
-      "image": ""
-    },
-    {
-      "id": "x-is-nudging-users-to-promote-their-posts-wit-df54f981e014",
-      "language": "en",
-      "title": "X is nudging users to promote their posts with a pointing hand, and people are confused",
-      "excerpt": "Whose hand is behind this travesty?",
-      "date": "2026-10-27T06:34:44.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/10/26/x-is-nudging-users-to-promote-their-posts-with-a-pointing-hand-and-people-are-confused/",
-      "image": ""
-    },
-    {
-      "id": "山西省消协发布-双十一-消费警示-辨清价格虚实-理性储值办卡-fd8c419868dd",
-      "language": "zh",
-      "title": "山西省消协发布“双十一”消费警示：辨清价格虚实、理性储值办卡",
-      "excerpt": "中新网太原10月27日电 (记者 李庭耀 杨杰英)“双十一”大促开启，预售、直播、满减等各类促销陆续上线，可能有消费套路潜藏其中。山西省消费者协会27日发布2026年“双十一”消费警示，提醒广大消费者擦亮双眼，理性网购，守住消费安全底线。",
-      "date": "2026-10-27T06:34:27.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721595.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴掌好物-带来更好旅行体验-08c54206926c",
-      "language": "zh",
-      "title": "“巴掌好物”带来更好旅行体验",
-      "excerpt": "现在人们出行，尤其是短途出行，最明显的变化是箱子变轻变小了。",
-      "date": "2026-10-27T06:28:33.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721597.shtml",
-      "image": ""
-    },
-    {
-      "id": "中新健康-植入3年-全球首例微创硬膜外脑机接口受试者康复情况公布-1ca4e7425bd8",
-      "language": "zh",
-      "title": "中新健康｜植入3年，全球首例微创硬膜外脑机接口受试者康复情况公布",
-      "excerpt": "中新网北京10月27日电(记者 赵方园)植入3年，全球首例微创硬膜外脑机接口患者现在怎么样了？",
-      "date": "2026-10-27T06:28:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/10-27/10721569.shtml",
-      "image": ""
-    },
-    {
-      "id": "畅通外籍人员来华-第一站-中国银行多维金融创新护航2026深圳apec盛会-c0089e6898ca",
-      "language": "zh",
-      "title": "畅通外籍人员来华“第一站” 中国银行多维金融创新护航2026深圳APEC盛会",
-      "excerpt": "世界目光，聚焦深圳。",
-      "date": "2026-10-27T06:25:38.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721570.shtml",
-      "image": ""
-    },
-    {
-      "id": "中新健康-34岁女士子宫里长满肌瘤-到底得了啥病-c6359c96c0ea",
-      "language": "zh",
-      "title": "中新健康 | 34岁女士子宫里长满肌瘤，到底得了啥病？",
-      "excerpt": "中新网北京10月27日电(罗春昊)月经来了就停不下来，一拖十几天，经量多到贫血，备孕也迟迟没有消息……34岁的陈女士到浙江大学医学院附属第四医院妇科就诊，检查发现：子宫腔内长满肌瘤，大的直径3—4厘米，小的如芝麻粒，最终医生从其子宫腔内“挖”出68个肌瘤。",
-      "date": "2026-10-27T06:23:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/10-27/10721567.shtml",
-      "image": ""
-    },
-    {
-      "id": "逾340家展商汇聚香港第21届国际环保博览-展示环球绿色科技-830d6e75b870",
-      "language": "zh",
-      "title": "逾340家展商汇聚香港第21届国际环保博览 展示环球绿色科技",
-      "excerpt": "",
-      "date": "2026-10-27T06:13:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cnhttps://www.chinanews.com.cn/tp/hd2011/2026/10-27/1208990.shtml",
-      "image": ""
-    },
-    {
-      "id": "apec采购商广交会-淘金-中国智能家居热销亚太-7c05b3145a6b",
-      "language": "zh",
-      "title": "APEC采购商广交会“淘金” 中国智能家居热销亚太",
-      "excerpt": "中新社广州10月27日电 (记者 张璐)以“品质家居”为主题的第140届中国进出口商品交易会(“广交会”)第二期正在广州举办。记者探馆看到，来自亚太经济合作组织(APEC)经济体成员的采购商步履不停，穿梭于各个展位寻找心仪产品；参展商带着最新低碳技术与场景化解决方案，通过广交会平台寻觅贸易合作新机遇。",
-      "date": "2026-10-27T05:59:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721566.shtml",
       "image": ""
     }
   ]
