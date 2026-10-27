@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-10-27T17:52:41.966Z",
+  "generated_at": "2026-10-27T18:52:27.263Z",
   "items": [
+    {
+      "id": "amazon-s-anti-tokenmaxxing-memo-says-engineer-b4e5877b1cf1",
+      "language": "en",
+      "title": "Amazon's anti-tokenmaxxing memo says engineers should be pickier about using AI",
+      "excerpt": "Amazon has rapidly integrated AI across the e-commerce giant's sprawling business operations under CEO Andy Jassy.",
+      "date": "2026-10-27T18:41:02.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html",
+      "image": ""
+    },
+    {
+      "id": "what-s-behind-the-ai-trade-comeback-plus-our--003fdf203b42",
+      "language": "en",
+      "title": "What's behind the AI trade comeback — plus, our take on Intel's latest deal",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "date": "2026-10-27T18:35:40.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/27/the-ai-trade-comeback-plus-our-take-on-latest-intel-deal.html",
+      "image": ""
+    },
+    {
+      "id": "early-third-quarter-earnings-show-a-resilient-596cebb2b302",
+      "language": "en",
+      "title": "Early third-quarter earnings show a 'resilient' U.S. consumer, with signs of strain",
+      "excerpt": "Companies from Royal Caribbean to Coca-Cola and UPS say they are seeing steady consumer spending despite high inflation.",
+      "date": "2026-10-27T18:12:20.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
+      "image": ""
+    },
+    {
+      "id": "speaker-mike-johnson-calls-election-transfer--773cc215ea04",
+      "language": "en",
+      "title": "Speaker Mike Johnson calls election-transfer concerns ‘absurd’",
+      "excerpt": "Democrats and voting rights groups have raised concerns that President Donald Trump and congressional Republicans could challenge election results if they lose.",
+      "date": "2026-10-27T18:03:02.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/27/speaker-johnson-peaceful-transfer-midterms.html",
+      "image": ""
+    },
+    {
+      "id": "glp-1-drug-coverage-is-being-dropped-by-emplo-c020ec737389",
+      "language": "en",
+      "title": "GLP-1 drug coverage is being dropped by employer plans: What to know about 2027 weight-loss options",
+      "excerpt": "Coverage of GLP-1 drugs for weight loss is being dropped by many employer-sponsored healthcare plans as premiums soar, though workers have some new options.",
+      "date": "2026-10-27T17:57:57.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/27/glp1-drug-coverage-weight-loss-options.html",
+      "image": ""
+    },
     {
       "id": "anthropic-s-ipo-could-be-speculative-fiction--958bb0d47c72",
       "language": "en",
@@ -62,6 +112,16 @@
       "image": ""
     },
     {
+      "id": "ford-simplifies-using-your-ev-as-a-home-batte-83999bb0ad06",
+      "language": "en",
+      "title": "Ford simplifies using your EV as a home battery with the $30K Fathom",
+      "excerpt": "The Fathom pickup won’t need a wall-mounted inverter to output 10 kW to your house.",
+      "date": "2026-10-27T16:17:58.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/10/ford-builds-bidrectional-charging-into-its-30k-electric-truck/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/UEV_Ebox_1-500x500.jpg"
+    },
+    {
       "id": "one-week-out-prediction-markets-see-democrats-600837504ebb",
       "language": "en",
       "title": "One week out, prediction markets see Democrats as favored to sweep Congress",
@@ -102,6 +162,16 @@
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3b1e/live/f0d3b6c0-d21c-11f1-b8e4-17c9744a7f8e.jpg"
     },
     {
+      "id": "deepmind-unveils-genie-4-world-model-promisin-5fb7508ef465",
+      "language": "en",
+      "title": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
+      "excerpt": "Genie 4 will roll out to developers and Google AI Ultra subscribers soon.",
+      "date": "2026-10-27T16:00:22.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/vlcsnap-2026-10-27-10h06m52s461-500x500.png"
+    },
+    {
       "id": "全国短池游泳锦标赛-张雨霏-张展硕创新纪录-徐嘉余率队破纪录-3a96aaaba2ff",
       "language": "zh",
       "title": "全国短池游泳锦标赛：张雨霏、张展硕创新纪录 徐嘉余率队破纪录",
@@ -110,6 +180,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/ty/2026/10-27/10721959.shtml",
       "image": ""
+    },
+    {
+      "id": "from-cheap-tool-to-premium-subscription-when--8f31e731770c",
+      "language": "en",
+      "title": "From cheap tool to premium subscription: When a beloved app's price skyrockets",
+      "excerpt": "Huge price hikes force loyal users to reconsider their favorite apps.",
+      "date": "2026-10-27T15:50:19.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/from-cheap-tool-to-premium-subscription-when-a-beloved-apps-price-skyrockets/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1321941710-500x500.jpg"
     },
     {
       "id": "honda-warns-50-canada-auto-tariffs-would-be-c-8895c2c57d4d",
@@ -2919,86 +2999,6 @@
       "date": "2026-10-27T05:59:15.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721566.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026青科会ai时代青年科学家创业创新生态论坛举行-7164c9074fee",
-      "language": "zh",
-      "title": "2026青科会AI时代青年科学家创业创新生态论坛举行",
-      "excerpt": "中新网温州10月27日电(张益聪)近日，2026世界青年科学家峰会平行论坛——AI时代青年科学家创业创新生态论坛在浙江省温州市龙湾区举行。论坛聚焦人工智能赋能科技创新与青年科学家成长，现场启动全球多智能体可信互联成果转化平台，并推动一批产学研合作项目签约。",
-      "date": "2026-10-27T05:58:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-27/10721584.shtml",
-      "image": ""
-    },
-    {
-      "id": "十五五-期间四川从四方面拓宽农民工就业增收渠道-d4cbf8e7f98d",
-      "language": "zh",
-      "title": "“十五五”期间四川从四方面拓宽农民工就业增收渠道",
-      "excerpt": "中新网成都10月27日电(陈选斌)四川省政府新闻办公室27日在成都举行“万千气象看四川·起步奋进‘十五五’”系列主题新闻发布会。四川省人力资源和社会保障厅副厅长全晓锋表示，四川常年有2500万左右农民工在外务工，工资性收入是农民增收的大头。“十五五”期间，四川将从四个方面持续拓宽农民工就业增收渠道，推动农民工工资性收入不断增长。",
-      "date": "2026-10-27T05:55:07.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721582.shtml",
-      "image": ""
-    },
-    {
-      "id": "杨凌农高会国际客商云集-双向-掘金-西部市场-76a47945acd3",
-      "language": "zh",
-      "title": "杨凌农高会国际客商云集 双向“掘金”西部市场",
-      "excerpt": "中新网陕西杨凌10月27日电 题：杨凌农高会国际客商云集 双向“掘金”西部市场",
-      "date": "2026-10-27T05:48:30.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721573.shtml",
-      "image": ""
-    },
-    {
-      "id": "广东激活富硒资源-走出乡村振兴新路径-39597013f845",
-      "language": "zh",
-      "title": "广东激活富硒资源 走出乡村振兴新路径",
-      "excerpt": "中新网广州10月27日电 (孙秋霞 李璐)广东省富硒土地资源禀赋优越，已探明富硒土地资源面积位居全国前列。当前，富硒产业化已成为地方依托资源禀赋推进“百县千镇万村高质量发展工程”的重要抓手。",
-      "date": "2026-10-27T05:47:48.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721571.shtml",
-      "image": ""
-    },
-    {
-      "id": "零碳新能源产业链供应链融通发展交流会在河北沧州举办-bf18ed247c94",
-      "language": "zh",
-      "title": "零碳新能源产业链供应链融通发展交流会在河北沧州举办",
-      "excerpt": "中新网沧州10月27日电 (李玉素 田博)27日，在第七届中国—中东欧国家(沧州)中小企业合作论坛召开之际，零碳新能源产业链供应链融通发展交流会在河北沧州举办。本次交流会以“链通零碳产业 融通供需生态”为主题，旨在搭建新能源产业链上下游对接平台，共话零碳发展机遇、共商供应链协同路径、共探绿色产业跨境合作新路径。",
-      "date": "2026-10-27T05:47:38.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-27/10721568.shtml",
-      "image": ""
-    },
-    {
-      "id": "南苏丹瓦拉卜州政府通报一起武装袭击致72死38伤-9ee88ee65e86",
-      "language": "zh",
-      "title": "南苏丹瓦拉卜州政府通报一起武装袭击致72死38伤",
-      "excerpt": "中新网北京10月27日电 据南苏丹Eye Radio电台报道，南苏丹瓦拉卜州政府当地时间26日发表声明说，该州一社区遭武装袭击，造成至少72人死亡、38人受伤。",
-      "date": "2026-10-27T05:47:16.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-27/10721577.shtml",
-      "image": ""
-    },
-    {
-      "id": "israel-heads-to-polls-for-pivotal-election-de-5dfba2a00b89",
-      "language": "en",
-      "title": "Israel heads to polls for pivotal election defined by security and democracy",
-      "excerpt": "Many fear neither of the leading political blocs will win enough seats for a majority - meaning weeks or months of political wrangling may lie ahead.",
-      "date": "2026-10-27T05:45:08.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c3j47l4kdez4o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9543/live/7b21c3e0-d1cc-11f1-837e-832a94a7445c.png"
-    },
-    {
-      "id": "接住年轻人的表达-红色旅游才能跳出走马观花-8f855d8b6cbd",
-      "language": "zh",
-      "title": "接住年轻人的表达，红色旅游才能跳出走马观花",
-      "excerpt": "重点关注",
-      "date": "2026-10-27T05:12:10.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-27/10721565.shtml",
       "image": ""
     }
   ]
