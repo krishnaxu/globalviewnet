@@ -391,10 +391,13 @@ async function main() {
       const existingItem = byURL.get(article.source_url);
 
       // 正文通过基本检查的文章不重复抓取。
-      if (existingItem && hasBody(existingItem)) {
-        continue;
-      }
-
+   if (
+  existingItem &&
+  hasBody(existingItem) &&
+  /<\/?(p|h[1-6]|strong|b|em|ul|ol|li|img|table)\b/i.test(existingItem.body)
+) {
+  continue;
+}
       const isRepair = Boolean(existingItem);
 
       console.log(
