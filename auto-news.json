@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-10-28T15:58:34.613Z",
+  "generated_at": "2026-10-28T16:58:55.196Z",
   "items": [
+    {
+      "id": "watch-at-the-scene-of-spain-s-deadly-train-cr-c99623333e42",
+      "language": "en",
+      "title": "Watch: At the scene of Spain's deadly train crash",
+      "excerpt": "People have been killed after a Spanish high-speed train collided with another train south of the capital Madrid, making this the country's worst disaster since 2013.",
+      "date": "2026-10-28T16:45:16.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cw5ynjgy3vvgo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/97cd/live/4f78dd50-d2e9-11f1-b441-2b33b063138f.jpg"
+    },
+    {
+      "id": "alphabet-set-to-report-q3-earnings-after-the--2a727be03a40",
+      "language": "en",
+      "title": "Alphabet set to report Q3 earnings after the bell as shaky AI trade looks for signs of strength",
+      "excerpt": "Alphabet faces a skeptical Wall Street as it prepares to report quarterly results.",
+      "date": "2026-10-28T16:33:22.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html",
+      "image": ""
+    },
+    {
+      "id": "looking-for-yield-this-could-be-one-of-the-be-34f231ef2ce6",
+      "language": "en",
+      "title": "Looking for yield? This could be one of the best times in recent market history to buy corporate bonds",
+      "excerpt": "This could be one of the best times to buy corporate bonds in recent history, investing experts say, with treasuries yielding 5% boosting fixed income market.",
+      "date": "2026-10-28T16:19:29.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/buy-bonds-yields.html",
+      "image": ""
+    },
+    {
+      "id": "trump-is-using-tariffs-as-a-tool-for-grift-ra-d27fb6596080",
+      "language": "en",
+      "title": "Trump is using tariffs as a 'tool for grift,' Raskin says in demand for donor records",
+      "excerpt": "Rep. Jamie Raskin wrote to President Trump in the final days of a midterm election cycle where government corruption has emerged as a top issue for voters.",
+      "date": "2026-10-28T16:07:17.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/trump-tariffs-corruption-raskin.html",
+      "image": ""
+    },
+    {
+      "id": "ford-motor-is-set-to-report-earnings-after-th-152bcbfec3c8",
+      "language": "en",
+      "title": "Ford Motor is set to report earnings after the bell. Here's what Wall Street expects",
+      "excerpt": "Ford Motor is set to report third-quarter results after markets close Wednesday.",
+      "date": "2026-10-28T16:00:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/ford-motor-f-earnings-q3-2026.html",
+      "image": ""
+    },
+    {
+      "id": "microsoft-earnings-will-land-after-the-close-b3f68b86919a",
+      "language": "en",
+      "title": "Microsoft earnings will land after the close",
+      "excerpt": "Microsoft will report Azure revenue in dollars for the first time as it spends heavily to expand artificial intelligence infrastructure capacity.",
+      "date": "2026-10-28T16:00:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html",
+      "image": ""
+    },
+    {
+      "id": "reddit-is-the-latest-platform-to-embrace-the--c49f446e2fe7",
+      "language": "en",
+      "title": "Reddit is the latest platform to embrace the ‘For You’ feed",
+      "excerpt": "The For You feed combines posts from communities users have joined with recommendations tailored to their interests.",
+      "date": "2026-10-28T16:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/reddit-is-the-latest-platform-to-embrace-the-for-you-feed/",
+      "image": ""
+    },
     {
       "id": "jim-cramer-sees-buying-opportunities-in-these-3c26522a4170",
       "language": "en",
@@ -120,6 +190,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/28/amazon-debuts-the-alexa-photo-frame-and-echo-time-smart-clock-plus-other-upgraded-devices/",
       "image": ""
+    },
+    {
+      "id": "how-could-israel-break-election-deadlock-here-2ba00454c3d0",
+      "language": "en",
+      "title": "How could Israel break election deadlock? Here are four scenarios",
+      "excerpt": "With 85% of votes counted, all signs point to an impasse. The most likely outcome may be new elections.",
+      "date": "2026-10-28T14:30:31.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm62y46d97wwo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5c6a/live/eef90440-d2d5-11f1-b677-b762d2f83f6e.jpg"
     },
     {
       "id": "uk-brings-forward-defense-spending-target-ple-967dfe375d77",
@@ -2919,86 +2999,6 @@
       "date": "2026-10-28T03:17:39.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/ty/2026/10-28/10722083.shtml",
-      "image": ""
-    },
-    {
-      "id": "历史学家王笛新作-开山令-打捞正史中的边缘群体-e1ea74ee3679",
-      "language": "zh",
-      "title": "历史学家王笛新作《开山令》打捞正史中的边缘群体",
-      "excerpt": "中新网北京10月28日电 (记者 应妮)历史学家王笛关于哥老会起源研究的力作《开山令》日前由人民文学出版社首发出版。",
-      "date": "2026-10-28T03:17:11.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/10-28/10722082.shtml",
-      "image": ""
-    },
-    {
-      "id": "2027年度中央机关公开遴选和公开选调公务员今日开始报名-688b41800a52",
-      "language": "zh",
-      "title": "2027年度中央机关公开遴选和公开选调公务员今日开始报名",
-      "excerpt": "记者从国家公务员局了解到，2027年度中央机关公开遴选和公开选调公务员报名今天开始，计划选拔213人，笔试将于11月28日举行。",
-      "date": "2026-10-28T03:15:21.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722088.shtml",
-      "image": ""
-    },
-    {
-      "id": "前三季度1-6万个老旧小区-焕新-024af9a0059c",
-      "language": "zh",
-      "title": "前三季度1.6万个老旧小区“焕新”",
-      "excerpt": "视频：前三季度1.6万个老旧小区“焕新”来源：央视综合",
-      "date": "2026-10-28T03:14:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-28/10722087.shtml",
-      "image": ""
-    },
-    {
-      "id": "ai乌镇-科创桐乡-乌镇七子-亮相-人工智能产业闭环加速成形-74793d91c38e",
-      "language": "zh",
-      "title": "AI乌镇 科创桐乡｜“乌镇七子”亮相！人工智能产业闭环加速成形",
-      "excerpt": "杭州的“六小龙”“新八骏”曾在浙江科创版图上写下传奇，如今，桐乡也终于迎来了自己的“AI战队”。借着世界互联网大会乌镇峰会沉淀多年的产业底气，桐乡正式推出“乌镇七子”——尚元智行、新生纪智能、数翰科技、赛那德、大衍科技、福瑞泰克、芯寒智能(排名不分先后)。",
-      "date": "2026-10-28T03:11:52.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-28/10722086.shtml",
-      "image": ""
-    },
-    {
-      "id": "每万人口高价值发明专利拥有量大幅跃升-如何实现-5d9646f177e2",
-      "language": "zh",
-      "title": "每万人口高价值发明专利拥有量大幅跃升，如何实现",
-      "excerpt": "从16件到大于22件——",
-      "date": "2026-10-28T03:11:50.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/kong/2026/10-28/10722085.shtml",
-      "image": ""
-    },
-    {
-      "id": "中方呼吁为妇女营造和平稳定环境-19c4d08b0788",
-      "language": "zh",
-      "title": "中方呼吁为妇女营造和平稳定环境",
-      "excerpt": "中国常驻联合国代表傅聪27日在安理会“妇女、和平与安全”公开辩论会上发言，强调应为妇女营造和平稳定环境。",
-      "date": "2026-10-28T03:07:52.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-28/10722080.shtml",
-      "image": ""
-    },
-    {
-      "id": "trump-says-iran-war-will-end-when-i-want-it-t-7a4d880b88a2",
-      "language": "en",
-      "title": "Trump says Iran war will end 'when I want it to' as costs reportedly balloon to $47 billion",
-      "excerpt": "Trump's statement comes as a report from The Hill revealed that the costs of the Iran conflict has ballooned to $47 billion.",
-      "date": "2026-10-28T03:02:44.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/28/us-iran-war-trump-hormuz-costs-centcom.html",
-      "image": ""
-    },
-    {
-      "id": "外媒-弗拉维奥-博索纳罗败选后离开巴西-已抵达美国佛罗里达州-af3608204979",
-      "language": "zh",
-      "title": "外媒：弗拉维奥·博索纳罗败选后离开巴西 已抵达美国佛罗里达州",
-      "excerpt": "中新网10月28日电 综合外媒报道，在巴西总统选举中落败的自由党候选人弗拉维奥·博索纳罗已于当地时间27日傍晚抵达美国。",
-      "date": "2026-10-28T02:55:12.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-28/10722070.shtml",
       "image": ""
     }
   ]
