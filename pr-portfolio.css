@@ -18,7 +18,7 @@
 /* PR作品：主标题，与“我的作品”保持同级 */
 .pr-portfolio-section > .section-heading h2 {
   font-family: var(--serif);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
   border: none;
@@ -29,12 +29,17 @@
 /* 公司新闻、行业新闻：比主标题小一级 */
 .pr-portfolio-group .section-heading h3 {
   font-family: var(--serif);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.4;
   border: none;
   background: transparent;
   box-shadow: none;
+}
+
+.pr-portfolio-group {
+  padding: 0 18px;
+  margin-top: 20px;
 }
 .pr-portfolio-tabs {
   display: flex;
@@ -198,9 +203,9 @@
 .pr-portfolio-more-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 10px 18px;
-  margin: 12px 18px 18px;
+  margin: 12px 0 18px;
   padding-top: 12px;
   border-top: 1px solid var(--border);
 }
