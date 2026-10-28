@@ -475,10 +475,10 @@ async function init() {
           isChinese() ? "暂无公司新闻。" : "No company news available."
         }</p>`;
 
-    // 使用不同的编号，避免两个列表中的正文展开 ID 重复。
+       // 行业新闻编号从 01 开始。
     industryGrid.innerHTML = industryTopThree.length
-     industryTopThree
-  .map((article, index) => renderArticle(article, index))
+      ? industryTopThree
+          .map((article, index) => renderArticle(article, index + 1000))
           .join("")
       : `<p class="muted">${
           isChinese() ? "暂无行业新闻。" : "No industry news available."
