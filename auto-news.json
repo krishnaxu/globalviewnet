@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-10-28T18:57:47.187Z",
+  "generated_at": "2026-10-28T19:54:08.139Z",
   "items": [
+    {
+      "id": "bond-investor-jeff-gundlach-on-fed-s-rate-pau-9ec37aefd063",
+      "language": "en",
+      "title": "Bond investor Jeff Gundlach on Fed's rate pause: 'What are you waiting for?'",
+      "excerpt": "The DoubleLine founder spoke with CNBC's \"Closing Bell\" on Wednesday after the Fed held interest rates steady.",
+      "date": "2026-10-28T19:53:50.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/bond-investor-jeff-gundlach-talks-feds-rate-pause-with-cnbc.html",
+      "image": ""
+    },
+    {
+      "id": "three-media-outlets-seek-full-white-house-acc-9cf1f0be584e",
+      "language": "en",
+      "title": "Three media outlets seek full White House access in amended lawsuit",
+      "excerpt": "President Donald Trump banned MS NOW, CNN and Politico from the White House in September, only to have a judge he appointed order their return.",
+      "date": "2026-10-28T19:52:36.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/trump-white-house-media-ban-cnn-msnow-politico.html",
+      "image": ""
+    },
+    {
+      "id": "peltola-campaign-aides-dscc-officials-helped--a8def7ab9c4a",
+      "language": "en",
+      "title": "Peltola campaign aides, DSCC officials helped recruit second Dan Sullivan in Alaska race: NYT",
+      "excerpt": "The DOJ wants a judge to temporarily block certification of the Alaska Senate election if incumbent Sen. Dan Sullivan loses due to voter confusion.",
+      "date": "2026-10-28T19:52:06.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/mary-peltola-dan-sullivan-alaska-senate-campaign-recruitment.html",
+      "image": ""
+    },
+    {
+      "id": "chipotle-mexican-grill-is-about-to-report-ear-3d7fcfc4ef99",
+      "language": "en",
+      "title": "Chipotle Mexican Grill is about to report earnings. Here's what to expect",
+      "excerpt": "Chipotle's stock has fallen about 22% so far this year, dragging its market cap down to about $36 billion.",
+      "date": "2026-10-28T19:30:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/chipotle-mexican-grill-cmg-q3-2026-earnings.html",
+      "image": ""
+    },
+    {
+      "id": "anthropic-just-launched-tools-to-show-compani-3b6696291dbc",
+      "language": "en",
+      "title": "Anthropic just launched tools to show companies what their AI spending is buying",
+      "excerpt": "The frontier lab is lifting the curtain on how users spend money on its models ahead of a planned IPO.",
+      "date": "2026-10-28T19:19:58.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+      "image": ""
+    },
+    {
+      "id": "wiz-s-cto-on-php2shell-and-the-coming-vulnpoc-4f99b9d14ea0",
+      "language": "en",
+      "title": "Wiz’s CTO on PHP2Shell and the coming ‘vulnpocalypse’",
+      "excerpt": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, with some taking sites offline until the vulnerabilities could be patched. According to researchers who found the […]",
+      "date": "2026-10-28T19:05:46.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
+      "image": ""
+    },
     {
       "id": "oracle-stock-pops-10-on-forecast-for-35-avera-422bc2b73636",
       "language": "en",
@@ -12,6 +72,16 @@
       "image": ""
     },
     {
+      "id": "how-did-flávio-bolsonaro-end-up-in-miami-da1b46e68261",
+      "language": "en",
+      "title": "How did Flávio Bolsonaro end up in Miami?",
+      "excerpt": "BBC Verify has pieced together defeated presidential candidate Flávio Bolsonaro's journey through Brazil, Argentina and Ecuador to reach Miami.",
+      "date": "2026-10-28T18:51:05.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/ck4g1xe5xny4o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c9c9/live/0a0506e0-d2f8-11f1-a701-fddedf244c16.jpg"
+    },
+    {
       "id": "we-re-adding-a-new-high-profile-ai-play-to-ou-8b02d17a916a",
       "language": "en",
       "title": "We're adding a new, high-profile AI play to our Bullpen stocks to watch list",
@@ -19,6 +89,16 @@
       "date": "2026-10-28T18:33:53.000Z",
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/investingclub/2026/10/28/were-adding-a-new-high-profile-ai-stock-to-our-bullpen.html",
+      "image": ""
+    },
+    {
+      "id": "here-is-what-changed-in-the-new-fed-statement-64fc08617782",
+      "language": "en",
+      "title": "Here is what changed in the new Fed statement",
+      "excerpt": "This is a comparison of Wednesday's Federal Open Market Committee statement with the one issued after the Fed's previous policymaking meeting in September.",
+      "date": "2026-10-28T18:06:50.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/fed-statement-redline-october-2026.html",
       "image": ""
     },
     {
@@ -2920,86 +3000,6 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/cmwyv8ld22z1o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f0e4/live/7d77ba00-d249-11f1-8ba3-9fd3e261415f.jpg"
-    },
-    {
-      "id": "trump-jokes-5-000-would-buy-a-hamburger-and-m-185ceeea3b8e",
-      "language": "en",
-      "title": "Trump jokes $5,000 would buy 'a hamburger and maybe a small dessert' at Mar-a-Lago as cost of living looms over midterms",
-      "excerpt": "Trump joked that the $5,000 payments for U.S. adults would buy little more than \"a hamburger and maybe a small dessert\" as cost of living looms over midterms.",
-      "date": "2026-10-28T04:29:20.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/28/trump-jokes-5000-cash-would-buy-hamburger-and-dessert-at-mar-a-lago.html",
-      "image": ""
-    },
-    {
-      "id": "大连市召开党外知识分子联谊会金融经济专委会暨无党派人士-济心-驿站成立大会-46d632755832",
-      "language": "zh",
-      "title": "大连市召开党外知识分子联谊会金融经济专委会暨无党派人士“济心”驿站成立大会",
-      "excerpt": "近日，大连市党外知识分子联谊会(以下简称市知联会)金融经济专委会暨无党派人士“济心”驿站成立大会召开。东北财经大学党委副书记佟春光，市委统战部副部长赵旭，市知联会班子成员、会员代表及金融经济专委会委员等百余人参加会议。",
-      "date": "2026-10-28T04:26:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/txy/2026/10-28/10722102.shtml",
-      "image": ""
-    },
-    {
-      "id": "上海市加快发展新一代智能制造行动方案-出炉-998259ca35d3",
-      "language": "zh",
-      "title": "《上海市加快发展新一代智能制造行动方案》出炉",
-      "excerpt": "中新网上海10月28日电 (郑莹莹 娄瀚锟)据上海市经信委28日发布的消息，《上海市加快发展新一代智能制造行动方案》日前印发。",
-      "date": "2026-10-28T04:20:36.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722100.shtml",
-      "image": ""
-    },
-    {
-      "id": "新阶层-新经济-95后-新农人邵前宽-把农业-种-出风景和体验-9e0fd36676e7",
-      "language": "zh",
-      "title": "新阶层·新经济 | “95后”新农人邵前宽：把农业“种”出风景和体验",
-      "excerpt": "中新网10月28日电(郭其钰)清晨，天光刚擦亮浙江省杭州市钱塘区江东村的田埂，邵前宽已走进一个充满科技感的白色集装箱，指尖划过屏幕上跳动的数据，温度湿度均正常。这是一座集智能控温、无土栽培和精准灌溉于一体的“植物工厂”。",
-      "date": "2026-10-28T04:20:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722108.shtml",
-      "image": ""
-    },
-    {
-      "id": "102家沪市公司集中释放利好-持续向市场传递积极信号-10bbe7468162",
-      "language": "zh",
-      "title": "102家沪市公司集中释放利好 持续向市场传递积极信号",
-      "excerpt": "中新网上海10月28日电 (高志苗)记者28日从上海证券交易所获悉，27日晚间，沪市共102家公司披露利好公告，包括63份三季度业绩喜报、21份增持回购类公告、9份中期分红公告、6份承诺不减持或提前终止减持计划以及3份其他经营性利好，持续向市场传递积极信号。",
-      "date": "2026-10-28T04:19:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722099.shtml",
-      "image": ""
-    },
-    {
-      "id": "国台办回应大陆稀土出口管制-dc89a9af3ba5",
-      "language": "zh",
-      "title": "国台办回应大陆稀土出口管制",
-      "excerpt": "中新网10月28日电 10月28日，国务院台办举行例行新闻发布会。有记者问：路透社报道称，大陆去年起将部分稀土材料、磁铁及相关加工技术纳入出口管制。有舆论称，台积电要求设备供应商评估不使用大陆稀土的替代方案，以降低供应链风险。请予以证实。请问这会否影响到未来两岸在半导体等科技产业的合作？",
-      "date": "2026-10-28T04:17:48.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722110.shtml",
-      "image": ""
-    },
-    {
-      "id": "特朗普称没人在乎台海问题-国台办回应-3f51b343228e",
-      "language": "zh",
-      "title": "特朗普称没人在乎台海问题 国台办回应",
-      "excerpt": "中新网10月28日电 10月28日，国务院台办举行例行新闻发布会。有记者问：美国总统特朗普近日再度谈及台湾，批评台湾芯片以低价抢占美国市场，并称如果美国过去有聪明的总统，台湾与大陆之间的问题根本不会存在，“没人在乎台海问题”。请问如何看待特朗普此番言论？是否认为这反映美国将台湾视为经济利益工具，而非真正关心台海和平？",
-      "date": "2026-10-28T04:01:05.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722107.shtml",
-      "image": ""
-    },
-    {
-      "id": "国台办反驳台陆委会拒绝张凌赫赴台理由-站不住脚-bb87a56fc558",
-      "language": "zh",
-      "title": "国台办反驳台陆委会拒绝张凌赫赴台理由：站不住脚",
-      "excerpt": "中新网10月28日电 10月28日，国务院台办举行例行新闻发布会。有记者问，大陆艺人张凌赫申请赴台遭拒，引发两岸网友讨论。台陆委会称，拒绝的原因是张凌赫曾多次发表“贬损”台湾地位的言论，并称其申请行程除粉丝见面会外，还包括20名产业人士参与的两岸影音交流座谈，质疑其活动目的不明确。请问国台办是否掌握张凌赫赴台申请内容，对陆委会的说法有何回应？",
-      "date": "2026-10-28T03:59:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722105.shtml",
-      "image": ""
     }
   ]
 }
