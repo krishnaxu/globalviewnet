@@ -9,12 +9,11 @@
 .pr-portfolio-section .section-heading {
   display: flex;
   align-items: baseline;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 8px 16px;
   margin-bottom: 18px;
 }
-
 .pr-portfolio-tabs {
   display: flex;
   flex-wrap: wrap;
