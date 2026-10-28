@@ -316,7 +316,7 @@
 #prPortfolioSection > .section-heading h2,
 #prPortfolioSection > .section-heading h2 span {
   font-family: var(--serif) !important;
-  font-size: 24px !important;
+  font-size: 18px !important;
   font-weight: 700 !important;
   line-height: 1.4 !important;
   color: var(--text) !important;
@@ -325,7 +325,7 @@
 #prPortfolioSection .pr-portfolio-group .section-heading h3,
 #prPortfolioSection .pr-portfolio-group .section-heading h3 span {
   font-family: var(--serif) !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
   font-weight: 700 !important;
   line-height: 1.4 !important;
   color: var(--text) !important;
