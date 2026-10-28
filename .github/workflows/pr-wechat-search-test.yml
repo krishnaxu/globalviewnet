@@ -1,5 +1,5 @@
 
-name: PR WeChat History Search Test
+name: PR WeChat Search Test
 
 on:
   workflow_dispatch:
@@ -8,58 +8,207 @@ permissions:
   contents: read
 
 jobs:
-  inspect-bing-html:
+  search:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
-      - name: Diagnose Bing result HTML
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Search WeChat articles via Sogou
+        env:
+          TZ: Asia/Shanghai
         run: |
-          node --input-type=module <<'NODE'
-          const title = 'AI制药的“淘金热”里，金斯瑞正在抢一把什么样的铲子？';
-          const query = `site:mp.weixin.qq.com/s "${title}"`;
-          const url = 'https://www.bing.com/search?q=' + encodeURIComponent(query);
+          cat > /tmp/search-sogou.mjs <<'EOF'
+          import https from 'node:https';
 
-          const response = await fetch(url, {
-            headers: {
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36',
-              'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8'
-            },
-            redirect: 'follow',
-            signal: AbortSignal.timeout(25000)
-          });
+          const ACCOUNT = 'DrG的雍熙路';
+          const START = new Date('2022-11-01T00:00:00+08:00');
+          const END = new Date();
 
-          const html = await response.text();
+          function get(url) {
+            return new Promise((resolve, reject) => {
+              const req = https.get(url, {
+                headers: {
+                  'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36',
+                  'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
+                  'Referer': 'https://weixin.sogou.com/'
+                },
+                timeout: 15000
+              }, res => {
+                let data = '';
+                res.setEncoding('utf8');
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => resolve({
+                  status: res.statusCode,
+                  url: res.responseUrl || url,
+                  html: data
+                }));
+              });
+              req.on('timeout', () => req.destroy(new Error('Request timeout')));
+              req.on('error', reject);
+            });
+          }
 
-          console.log('HTTP 状态：' + response.status);
-          console.log('页面长度：' + html.length);
+          function decode(s = '') {
+            return s
+              .replace(/&amp;/g, '&')
+              .replace(/&quot;/g, '"')
+              .replace(/&#39;|&#x27;/g, "'")
+              .replace(/&lt;/g, '<')
+              .replace(/&gt;/g, '>')
+              .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+              .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)));
+          }
 
-          for (const term of [
-            'mp.weixin.qq.com',
-            'bing.com/ck/a',
-            'b_algo',
-            'b_results',
-            'AI制药',
-            'captcha',
-            '验证'
-          ]) {
-            const positions = [];
-            let start = 0;
+          function clean(s = '') {
+            return decode(s.replace(/<script[\s\S]*?<\/script>/gi, '')
+              .replace(/<style[\s\S]*?<\/style>/gi, '')
+              .replace(/<[^>]+>/g, ' '))
+              .replace(/\s+/g, ' ').trim();
+          }
 
-            while (positions.length < 5) {
-              const index = html.toLowerCase().indexOf(term.toLowerCase(), start);
-              if (index < 0) break;
-              positions.push(index);
-              start = index + term.length;
+          function extractDate(text) {
+            const patterns = [
+              /20\d{2}[-/.年]\d{1,2}[-/.月]\d{1,2}日?/,
+              /20\d{2}年\d{1,2}月\d{1,2}日/
+            ];
+            for (const pattern of patterns) {
+              const match = text.match(pattern);
+              if (match) {
+                const parts = match[0].match(/\d+/g).map(Number);
+                if (parts.length >= 3) {
+                  return `${parts[0]}-${String(parts[1]).padStart(2, '0')}-${String(parts[2]).padStart(2, '0')}`;
+                }
+              }
             }
+            return '';
+          }
 
-            console.log('\n关键词：' + term);
-            console.log('出现次数（最多显示5处）：' + positions.length);
+          function getCards(html) {
+            const cards = [];
+            const blocks = html.match(/<li\b[^>]*class=["'][^"']*(?:news-list|news-box|news-item)[^"']*["'][\s\S]*?<\/li>/gi) || [];
+            const fallback = html.match(/<div\b[^>]*class=["'][^"']*txt-box[^"']*["'][\s\S]*?<\/div>/gi) || [];
+            for (const block of [...blocks, ...fallback]) {
+              const a = block.match(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
+              if (!a) continue;
+              const title = clean(a[2]);
+              if (!title || title.length < 5) continue;
+              const href = decode(a[1]);
+              const text = clean(block);
+              const accountMatch = text.includes(ACCOUNT);
+              const date = extractDate(text);
+              cards.push({ title, href, text, date, accountMatch });
+            }
+            return cards;
+          }
 
-            for (const index of positions) {
-              console.log(
-                html.slice(Math.max(0, index - 250), Math.min(html.length, index + 600))
-                  .replace(/\s+/g, ' ')
-              );
-              console.log('---');
+          function canonicalCandidate(href) {
+            try {
+              const u = new URL(href, 'https://weixin.sogou.com');
+              if (u.hostname === 'mp.weixin.qq.com' && u.pathname.startsWith('/s/')) {
+                return u.href;
+              }
+              return '';
+            } catch {
+              return '';
             }
           }
-          NODE
+
+          const queries = [
+            ACCOUNT,
+            '"DrG的雍熙路" 生物医药',
+            '"DrG的雍熙路" 金斯瑞'
+          ];
+
+          const all = new Map();
+
+          for (const query of queries) {
+            console.log(`\n========== 搜索词：${query} ==========`);
+
+            for (let page = 1; page <= 5; page++) {
+              const url = new URL('https://weixin.sogou.com/weixin');
+              url.searchParams.set('type', '2');
+              url.searchParams.set('query', query);
+              url.searchParams.set('page', String(page));
+              url.searchParams.set('ie', 'utf8');
+
+              let result;
+              try {
+                result = await get(url.href);
+              } catch (err) {
+                console.log(`第 ${page} 页请求失败：${err.message}`);
+                break;
+              }
+
+              console.log(`第 ${page} 页 HTTP ${result.status}，HTML ${result.html.length} 字符`);
+
+              if (result.status !== 200 || result.html.length < 1000) {
+                console.log('页面内容不足，停止该查询。');
+                break;
+              }
+
+              if (/antispider|请输入验证码|访问过于频繁|异常访问/i.test(result.html)) {
+                console.log('搜狗触发反爬验证，停止继续请求。');
+                break;
+              }
+
+              const cards = getCards(result.html);
+              console.log(`解析到 ${cards.length} 条候选`);
+
+              for (const card of cards) {
+                const key = `${card.title}|${card.href}`;
+                if (!all.has(key)) all.set(key, card);
+              }
+
+              if (cards.length === 0) {
+                const titles = [...result.html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]{5,200}?)<\/a>/gi)]
+                  .map(m => clean(m[2]))
+                  .filter(t => t.length > 8 && !/登录|注册|首页|搜狗|微信|下一页|上一页/.test(t))
+                  .slice(0, 8);
+                console.log('未识别标准结果结构，页面标题样本：', titles);
+                break;
+              }
+
+              await new Promise(r => setTimeout(r, 1200));
+            }
+          }
+
+          const rows = [...all.values()];
+          console.log('\n========== 搜索汇总 ==========');
+          console.log(`候选去重后：${rows.length} 条`);
+
+          const filtered = rows.filter(r => r.accountMatch);
+          console.log(`文本中出现公众号名称：${filtered.length} 条`);
+
+          const dated = filtered.filter(r => r.date);
+          console.log(`提取到日期：${dated.length} 条`);
+
+          const inRange = dated.filter(r => {
+            const d = new Date(`${r.date}T12:00:00+08:00`);
+            return d >= START && d <= END;
+          });
+          console.log(`日期在 2022-11-01 至今：${inRange.length} 条`);
+
+          for (const [i, r] of rows.entries()) {
+            const original = canonicalCandidate(r.href);
+            console.log(`\n[${i + 1}] ${r.title}`);
+            console.log(`日期：${r.date || '未提取到'}`);
+            console.log(`公众号名称出现在结果文本：${r.accountMatch ? '是' : '否'}`);
+            console.log(`搜索结果链接：${r.href}`);
+            console.log(`是否直接得到微信原文链接：${original || '否（不能把搜狗跳转链接当作原文链接）'}`);
+            console.log(`摘要：${r.text.slice(0, 220)}`);
+          }
+
+          console.log('\n========== 判断 ==========');
+          if (rows.length === 0) {
+            console.log('失败：没有解析到结果。需要根据搜狗返回的实际 HTML 调整解析规则。');
+          } else if (dated.length === 0) {
+            console.log('部分成功：搜到候选，但没有可靠提取到日期；不能据此建立正式历史档案。');
+          } else {
+            console.log('测试完成：当前结果仅为搜索候选，不代表完整历史文章列表。请先核验标题、日期和原文链接。');
+          }
+          EOF
+
+          node /tmp/search-sogou.mjs
