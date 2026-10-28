@@ -1,0 +1,82 @@
+
+name: PR WeChat History Search Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-search:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test public WeChat search
+        run: |
+          node --input-type=module <<'NODE'
+          const query = "DrG的雍熙路";
+          const url = "https://weixin.sogou.com/weixin?" +
+            new URLSearchParams({
+              type: "2",
+              query,
+              ie: "utf8",
+              _sug_: "n",
+              _sug_type_: ""
+            });
+
+          console.log("搜索公众号：", query);
+          console.log("搜索地址：", url);
+
+          try {
+            const response = await fetch(url, {
+              headers: {
+                "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36",
+                "Accept-Language": "zh-CN,zh;q=0.9"
+              },
+              signal: AbortSignal.timeout(20000)
+            });
+
+            const html = await response.text();
+            console.log("HTTP 状态：", response.status);
+            console.log("网页长度：", html.length, "字符");
+            console.log("包含公众号名称：", html.includes(query));
+            console.log("包含验证码提示：", /验证码|访问过于频繁|异常访问/.test(html));
+
+            const anchors = [...html.matchAll(
+              /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi
+            )];
+
+            const results = anchors.map(match => {
+              const link = match[1].replace(/&amp;/g, "&");
+              const title = match[2]
+                .replace(/<[^>]+>/g, " ")
+                .replace(/&nbsp;|&#160;/g, " ")
+                .replace(/&amp;/g, "&")
+                .replace(/&quot;/g, '"')
+                .replace(/\s+/g, " ")
+                .trim();
+
+              return { title, link };
+            }).filter(item =>
+              item.title &&
+              (item.link.includes("mp.weixin.qq.com") ||
+               item.link.includes("weixin.sogou.com/link"))
+            );
+
+            console.log("疑似微信文章链接数：", results.length);
+            for (const item of results.slice(0, 20)) {
+              console.log("标题：", item.title);
+              console.log("链接：", item.link);
+            }
+
+            if (!response.ok) {
+              console.log("测试结果：搜索网站返回非成功状态。");
+            } else if (results.length) {
+              console.log("测试结果：已获取候选链接，仍需核实公众号和日期。");
+            } else {
+              console.log("测试结果：暂未提取到文章链接，需要检查搜索页面结构或访问限制。");
+            }
+          } catch (error) {
+            console.log("测试失败：", error.message);
+          }
+          NODE
