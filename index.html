@@ -950,29 +950,54 @@ html[lang="en"].cms-loading .featured-carousel:has(#featuredTrack:empty)::before
             </button>
             <div class="carousel-dots" id="carouselDots"></div>
           </div>
-          <!-- PR Portfolio -->
+
+<!-- PR Portfolio -->
 <section class="pr-portfolio-section" id="prPortfolioSection">
-<div class="section-heading">
-  <h2 class="serif">
-    <span data-i18n="prPortfolio">PR作品</span>
-  </h2>
-</div>
-
-<div class="pr-portfolio-tabs">
-  <button type="button" class="pr-portfolio-tab active" data-pr-source="all" data-i18n="prFilterAll">
-    全部
-  </button>
-  <button type="button" class="pr-portfolio-tab" data-pr-source="GenScript Official Website" data-i18n="prFilterCompany">
-    公司新闻
-  </button>
-  <button type="button" class="pr-portfolio-tab" data-pr-source="Industry News" data-i18n="prFilterIndustry">
-    行业新闻
-  </button>
-</div>
-
-  <div class="pr-portfolio-grid" id="prPortfolioGrid">
-    <p class="muted">Loading portfolio...</p>
+  <div class="section-heading">
+    <h2 class="serif">
+      <span data-i18n="prPortfolio">PR作品</span>
+    </h2>
   </div>
+
+  <!-- 公司新闻 -->
+  <section class="pr-portfolio-group" aria-labelledby="prPortfolioCompanyHeading">
+    <div class="section-heading">
+      <h3 class="serif" id="prPortfolioCompanyHeading">
+        <span data-i18n="prFilterCompany">公司新闻</span>
+      </h3>
+    </div>
+
+    <div class="pr-portfolio-grid" id="prPortfolioCompanyGrid">
+      <p class="muted">Loading portfolio...</p>
+    </div>
+
+    <div class="pr-portfolio-more-links">
+      <a id="prPortfolioCompanyMore"
+         href="pr-portfolio-list.html?source=GenScript%20Official%20Website">
+        查看全部公司新闻 →
+      </a>
+    </div>
+  </section>
+
+  <!-- 行业新闻 -->
+  <section class="pr-portfolio-group" aria-labelledby="prPortfolioIndustryHeading">
+    <div class="section-heading">
+      <h3 class="serif" id="prPortfolioIndustryHeading">
+        <span data-i18n="prFilterIndustry">行业新闻</span>
+      </h3>
+    </div>
+
+    <div class="pr-portfolio-grid" id="prPortfolioIndustryGrid">
+      <p class="muted">Loading portfolio...</p>
+    </div>
+
+    <div class="pr-portfolio-more-links">
+      <a id="prPortfolioIndustryMore"
+         href="pr-portfolio-list.html?source=Industry%20News">
+        查看全部行业新闻 →
+      </a>
+    </div>
+  </section>
 </section>
 
           <div class="section-heading">
