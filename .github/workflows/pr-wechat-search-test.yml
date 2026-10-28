@@ -16,20 +16,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch and export Sogou results
+      - name: Parse Sogou search results
         run: |
-          cat > /tmp/sogou-export.mjs <<'EOF'
+          cat > /tmp/sogou-test.mjs <<'EOF'
           import fs from 'node:fs/promises';
 
           const ACCOUNT = 'DrG的雍熙路';
-          const queries = [
-            ACCOUNT,
-            '"DrG的雍熙路" 生物医药',
-            '"DrG的雍熙路" 金斯瑞'
-          ];
-
-          const results = [];
+          const queries = [ACCOUNT, '"DrG的雍熙路" 生物医药'];
+          const articles = [];
           const seen = new Set();
+          const diagnostics = [];
           const errors = [];
 
           function decode(s = '') {
@@ -38,102 +34,111 @@ jobs:
               .replace(/&quot;/g, '"')
               .replace(/&#39;|&#x27;/g, "'")
               .replace(/&lt;/g, '<')
-              .replace(/&gt;/g, ' ')
-              .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+              .replace(/&gt;/g, '>')
+              .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n))
               .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)));
           }
 
           function clean(s = '') {
             return decode(s.replace(/<script[\s\S]*?<\/script>/gi, '')
               .replace(/<style[\s\S]*?<\/style>/gi, '')
-              .replace(/<[^>]+>/g, ' '))
+              .replace(/<[^>]*>/g, ' '))
               .replace(/\s+/g, ' ').trim();
           }
 
-          function getDate(text) {
-            const m = text.match(/20\d{2}\s*[年\-/.]\s*\d{1,2}\s*[月\-/.]\s*\d{1,2}\s*日?/);
+          function findDate(text) {
+            const m = text.match(/20\d{2}\s*(?:年|[-/.])\s*\d{1,2}\s*(?:月|[-/.])\s*\d{1,2}\s*日?/);
             if (!m) return null;
             const p = m[0].match(/\d+/g).map(Number);
             return `${p[0]}-${String(p[1]).padStart(2, '0')}-${String(p[2]).padStart(2, '0')}`;
           }
 
-          function extract(html, query, page) {
-            const cards = [];
-            const blocks = html.match(/<li\b[^>]*class=["'][^"']*(?:news-list|news-box|news-item)[^"']*["'][\s\S]*?<\/li>/gi) || [];
-
-            for (const block of blocks) {
-              const titleMatch = block.match(/<h[23]\b[^>]*>[\s\S]*?<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>[\s\S]*?<\/h[23]>/i)
-                || block.match(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
-
-              if (!titleMatch) continue;
-
-              const title = clean(titleMatch[2]);
-              if (!title || title.length < 5) continue;
-
-              const link = decode(titleMatch[1]);
-              const text = clean(block);
-
-              cards.push({
-                title,
-                search_result_url: link.startsWith('http') ? link : `https://weixin.sogou.com${link}`,
-                publish_date: getDate(text),
-                account_mentioned_in_result: text.includes(ACCOUNT),
-                query,
-                page,
-                result_text: text
-              });
+          function absolutize(href) {
+            try {
+              return new URL(decode(href), 'https://weixin.sogou.com/').href;
+            } catch {
+              return decode(href);
             }
-            return cards;
           }
 
-          function request(url) {
-            return new Promise((resolve, reject) => {
-              const req = fetch(url, {
-                headers: {
-                  'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36',
-                  'Accept-Language': 'zh-CN,zh;q=0.9',
-                  'Referer': 'https://weixin.sogou.com/'
-                },
-                signal: AbortSignal.timeout(15000)
-              }).then(async res => resolve({
-                status: res.status,
-                html: await res.text()
-              })).catch(reject);
+          async function fetchPage(url) {
+            const res = await fetch(url, {
+              headers: {
+                'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36',
+                'Accept-Language': 'zh-CN,zh;q=0.9',
+                'Referer': 'https://weixin.sogou.com/'
+              },
+              signal: AbortSignal.timeout(15000)
             });
+            return { status: res.status, html: await res.text() };
           }
 
           for (const query of queries) {
             for (let page = 1; page <= 5; page++) {
-              const url = new URL('https://weixin.sogou.com/weixin');
-              url.searchParams.set('type', '2');
-              url.searchParams.set('query', query);
-              url.searchParams.set('page', String(page));
-              url.searchParams.set('ie', 'utf8');
+              const u = new URL('https://weixin.sogou.com/weixin');
+              u.searchParams.set('type', '2');
+              u.searchParams.set('query', query);
+              u.searchParams.set('page', String(page));
+              u.searchParams.set('ie', 'utf8');
 
               try {
-                const res = await request(url.href);
-                console.log(`查询=${query} 第${page}页 HTTP=${res.status} HTML=${res.html.length}`);
+                const { status, html } = await fetchPage(u.href);
+                console.log(`查询=${query} 第${page}页 HTTP=${status} HTML=${html.length}`);
 
-                if (res.status !== 200 || res.html.length < 1000) {
-                  errors.push({ query, page, error: `HTTP ${res.status} 或页面内容过短` });
+                if (page === 1) {
+                  diagnostics.push({
+                    query,
+                    html_start: html.slice(0, 2500),
+                    title_tag_samples: [...html.matchAll(/<h[1-4]\b[^>]*>[\s\S]*?<\/h[1-4]>/gi)]
+                      .slice(0, 8).map(m => clean(m[0])),
+                    class_samples: [...html.matchAll(/\bclass=["']([^"']+)["']/gi)]
+                      .slice(0, 50).map(m => m[1])
+                  });
+                }
+
+                if (status !== 200 || html.length < 1000) {
+                  errors.push({ query, page, error: `HTTP ${status} 或页面内容不足` });
                   break;
                 }
 
-                if (/antispider|请输入验证码|访问过于频繁|异常访问/i.test(res.html)) {
+                if (/antispider|请输入验证码|访问过于频繁|异常访问/i.test(html)) {
                   errors.push({ query, page, error: '搜狗返回反爬验证页面' });
                   break;
                 }
 
-                const cards = extract(res.html, query, page);
-                console.log(`本页解析到 ${cards.length} 条候选`);
+                // 先按标题标签提取，避免依赖固定的结果容器 class。
+                const headings = [...html.matchAll(/<h[1-4]\b[^>]*>[\s\S]*?<\/h[1-4]>/gi)];
+                let count = 0;
 
-                for (const item of cards) {
-                  const key = `${item.title}|${item.search_result_url}`;
+                for (const heading of headings) {
+                  const a = heading[0].match(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
+                  if (!a) continue;
+
+                  const title = clean(a[2]);
+                  if (title.length < 6 || /搜狗|微信首页|登录|注册|下一页|上一页/.test(title)) continue;
+
+                  const href = absolutize(a[1]);
+                  if (!/weixin\.sogou\.com|mp\.weixin\.qq\.com/i.test(href)) continue;
+
+                  const pos = heading.index;
+                  const context = clean(html.slice(Math.max(0, pos - 1800), Math.min(html.length, pos + 3200)));
+                  const key = `${title}|${href}`;
                   if (seen.has(key)) continue;
                   seen.add(key);
-                  results.push(item);
+                  count++;
+
+                  articles.push({
+                    title,
+                    search_result_url: href,
+                    publish_date_candidate: findDate(context),
+                    account_name_in_context: context.includes(ACCOUNT),
+                    query,
+                    page,
+                    context_excerpt: context.slice(0, 900)
+                  });
                 }
 
+                console.log(`本页提取到 ${count} 条候选标题`);
                 await new Promise(r => setTimeout(r, 1000));
               } catch (e) {
                 errors.push({ query, page, error: String(e.message || e) });
@@ -142,25 +147,27 @@ jobs:
             }
           }
 
-          const start = '2022-11-01';
           const today = new Date().toISOString().slice(0, 10);
+          const from = '2022-11-01';
 
           const report = {
             generated_at: new Date().toISOString(),
             account: ACCOUNT,
-            requested_date_range: { from: start, to: today },
-            note: '搜索引擎候选结果，不保证覆盖公众号全部历史文章。日期和原文链接需要核验。',
+            requested_range: { from, to: today },
+            warning: '搜索候选不等于完整公众号历史档案；搜索结果链接、日期和公众号归属均需核验。',
             stats: {
-              unique_candidates: results.length,
-              account_mentioned: results.filter(x => x.account_mentioned_in_result).length,
-              date_extracted: results.filter(x => x.publish_date).length,
-              date_in_range: results.filter(x =>
-                x.publish_date && x.publish_date >= start && x.publish_date <= today
+              unique_candidates: articles.length,
+              dates_found: articles.filter(a => a.publish_date_candidate).length,
+              in_requested_range: articles.filter(a =>
+                a.publish_date_candidate &&
+                a.publish_date_candidate >= from &&
+                a.publish_date_candidate <= today
               ).length,
               errors: errors.length
             },
             errors,
-            articles: results
+            articles,
+            diagnostics
           };
 
           await fs.mkdir('sogou-test-output', { recursive: true });
@@ -170,14 +177,13 @@ jobs:
             'utf8'
           );
 
-          console.log('\n===== 汇总 =====');
-          console.log(JSON.stringify(report.stats, null, 2));
-          console.log('JSON 测试文件已生成。');
+          console.log('统计：', JSON.stringify(report.stats));
+          console.log('诊断片段和候选数据已写入 JSON。');
           EOF
 
-          node /tmp/sogou-export.mjs
+          node /tmp/sogou-test.mjs
 
-      - name: Upload test results
+      - name: Upload Sogou diagnostic results
         if: always()
         uses: actions/upload-artifact@v4
         with:
