@@ -201,37 +201,59 @@ function getArticleBody(html) {
     return "";
   }
 
-  const removeUnwanted = value => value
+  const startMatch = html.match(
+    /<p\b[^>]*class=["'][^"']*\bpText\b[^"']*["'][^>]*>/i
+  );
+
+  if (!startMatch || startMatch.index === undefined) {
+    return "";
+  }
+
+  // 从正文第一个 pText 段落开始，向后提取文章内容。
+  const startIndex = startMatch.index;
+  const tail = html.slice(startIndex);
+
+  // 查找正文区域的结束标志，避免把整页导航等内容一起抓进来。
+  const endPatterns = [
+    /<p\b[^>]*class=["'][^"']*\bpText\s+mb-80\b[^>]*>[\s\S]*?<\/p\s*>/i,
+    /<div\b[^>]*class=["'][^"']*\b(?:article-footer|article-share|share-box)\b[^>]*>/i
+  ];
+
+  let endIndex = -1;
+
+  for (const pattern of endPatterns) {
+    const match = pattern.exec(tail);
+
+    if (match && match.index !== undefined) {
+      const candidateEnd = pattern.source.includes("mb-80")
+        ? match.index + match[0].length
+        : match.index;
+
+      if (endIndex === -1 || candidateEnd < endIndex) {
+        endIndex = candidateEnd;
+      }
+    }
+  }
+
+  // 找不到结束标志时，先提取到最近的外层 div 结束位置。
+  if (endIndex === -1) {
+    const closingDiv = tail.lastIndexOf("</div>");
+    if (closingDiv > 0) {
+      endIndex = closingDiv;
+    }
+  }
+
+  const bodyHTML = (endIndex > 0 ? tail.slice(0, endIndex) : tail)
     .replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, "")
     .replace(/<style\b[^>]*>[\s\S]*?<\/style\s*>/gi, "")
     .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript\s*>/gi, "")
     .replace(/<!--[\s\S]*?-->/g, "")
     .replace(/\s+on[a-z]+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, "")
-    .replace(/\s+style\s*=\s*(?:"[^"]*"|'[^']*')/gi, "")
     .trim();
 
-  const patterns = [
-    /<article\b[^>]*>([\s\S]*?)<\/article\s*>/i,
-    /<div\b[^>]*class\s*=\s*["'][^"']*\b(?:article-content|article-detail|news-content|news-detail|content-detail)\b[^"']*["'][^>]*>([\s\S]*?)<\/div\s*>/i,
-    /<div\b[^>]*class\s*=\s*["'][^"']*\bpText\b[^"']*["'][^>]*>([\s\S]*?)<\/div\s*>/i,
-    /<main\b[^>]*>([\s\S]*?)<\/main\s*>/i
-  ];
+  const plainText = stripHTML(bodyHTML).replace(/\s+/g, " ").trim();
 
-  for (const pattern of patterns) {
-    const match = html.match(pattern);
-    if (!match?.[1]) continue;
-
-    const cleaned = removeUnwanted(match[1]);
-    const plainText = stripHTML(cleaned)
-      .replace(/\s+/g, " ")
-      .trim();
-
-    if (plainText.length >= 100) {
-      return cleaned;
-    }
-  }
-
-  return "";
+  return plainText.length >= 100 ? bodyHTML : "";
 }
 
 async function fetchHTML(url) {
