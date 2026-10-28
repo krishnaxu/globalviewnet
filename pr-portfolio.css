@@ -14,6 +14,15 @@
   gap: 8px 16px;
   margin-bottom: 18px;
 }
+
+/* PR作品：主标题 */
+.pr-portfolio-section > .section-heading h2 {
+  font-size: inherit;
+}
+/* 公司新闻、行业新闻：次级标题 */
+.pr-portfolio-group .section-heading h3 {
+  font-size: 20px;
+}
 .pr-portfolio-tabs {
   display: flex;
   flex-wrap: wrap;
