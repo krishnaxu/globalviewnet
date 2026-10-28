@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-10-28T15:00:41.827Z",
+  "generated_at": "2026-10-28T15:58:34.613Z",
   "items": [
+    {
+      "id": "jim-cramer-sees-buying-opportunities-in-these-3c26522a4170",
+      "language": "en",
+      "title": "Jim Cramer sees buying opportunities in these 2 beaten-down stocks",
+      "excerpt": "The Investing Club holds its \"Morning Meeting\" every weekday at 10:20 a.m. ET.",
+      "date": "2026-10-28T15:56:23.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/28/jim-cramer-sees-buying-opportunities-in-these-2-beaten-down-stocks.html",
+      "image": ""
+    },
+    {
+      "id": "ai-execs-may-be-too-out-of-touch-to-build-for-c3f3cbf4e178",
+      "language": "en",
+      "title": "AI execs may be too out of touch to build for the general public",
+      "excerpt": "Tech leaders are flaunting how out of touch they are when they brag about using AI to connect with their families.",
+      "date": "2026-10-28T15:53:52.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
+      "image": ""
+    },
+    {
+      "id": "trump-doe-loans-5b-to-nuclear-plants-that-wil-b90659780b41",
+      "language": "en",
+      "title": "Trump DOE loans $5B to nuclear plants that will power data centers",
+      "excerpt": "Constellation Energy will get $5 billion in government loans to modernize nuclear reactors. Most of the new capacity is already committed to Google, Amazon, and Meta.",
+      "date": "2026-10-28T15:53:21.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/trump-doe-loans-5b-to-nuclear-plants-that-will-power-data-centers/",
+      "image": ""
+    },
+    {
+      "id": "south-korea-s-financial-industry-hit-by-fresh-776aed39bd32",
+      "language": "en",
+      "title": "South Korea’s financial industry hit by fresh wave of cyberattacks",
+      "excerpt": "South Korea’s financial institutions have been hit by another wave of cyberattacks, highlighting the growing risk of AI-driven hacking in Asia.",
+      "date": "2026-10-28T15:41:18.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
+      "image": ""
+    },
+    {
+      "id": "the-uk-cuts-energy-bills-taxes-banks-and-boos-d832d6ba7b4b",
+      "language": "en",
+      "title": "The UK cuts energy bills, taxes banks and boosts defense in high-stakes budget",
+      "excerpt": "The U.K. budget cuts household energy costs, raises taxes on banks and directs billions toward defense, Ukraine and artificial intelligence",
+      "date": "2026-10-28T15:39:14.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/uk-autumn-budget-cost-living-defense-ai.html",
+      "image": ""
+    },
+    {
+      "id": "西班牙首相宣布为列车相撞事故遇难者全国哀悼三天-a7dabd751224",
+      "language": "zh",
+      "title": "西班牙首相宣布为列车相撞事故遇难者全国哀悼三天",
+      "excerpt": "当地时间10月28日，西班牙首相桑切斯宣布，自29日起全国哀悼三天，悼念列车相撞事故遇难者。",
+      "date": "2026-10-28T15:26:58.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-28/10722487.shtml",
+      "image": ""
+    },
+    {
+      "id": "here-s-what-options-traders-see-before-alphab-763b860a8083",
+      "language": "en",
+      "title": "Here's what options traders see before Alphabet, Microsoft report after the bell",
+      "excerpt": "The market's mini rally faces a key test after the bell when tech giants Alphabet and Microsoft report.",
+      "date": "2026-10-28T15:12:09.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/alphabet-microsoft-report-after-the-bell-what-options-trader-see.html",
+      "image": ""
+    },
     {
       "id": "voice-ai-in-vogue-nvidia-releases-new-open-tr-8fd264d14a34",
       "language": "en",
@@ -9,6 +79,16 @@
       "date": "2026-10-28T15:00:00.000Z",
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+      "image": ""
+    },
+    {
+      "id": "西班牙列车相撞事故死亡人数上升至68人-5c3d8e0a62b4",
+      "language": "zh",
+      "title": "西班牙列车相撞事故死亡人数上升至68人",
+      "excerpt": "据西班牙卡斯蒂利亚-拉曼查自治区方面28日消息，当天上午在其首府托莱多发生的高速铁路列车相撞事故死亡人数上升至68人。",
+      "date": "2026-10-28T14:59:15.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-28/10722486.shtml",
       "image": ""
     },
     {
@@ -2919,86 +2999,6 @@
       "date": "2026-10-28T02:55:12.000Z",
       "source_name": "中新网国际新闻",
       "source_url": "https://www.chinanews.com.cn/gj/2026/10-28/10722070.shtml",
-      "image": ""
-    },
-    {
-      "id": "labubu-maker-pop-mart-s-shares-extend-decline-3cd127afc2f7",
-      "language": "en",
-      "title": "Labubu-maker Pop Mart's shares extend declines as third-quarter sales plunge",
-      "excerpt": "The company reported a 45% to 50% year-on-year drop in third-quarter revenue.",
-      "date": "2026-10-28T02:53:25.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/28/labubu-pop-mart-third-quarter-earnings.html",
-      "image": ""
-    },
-    {
-      "id": "国台办-祖国终将统一也必将统一的历史大势不可阻挡-828d5570319c",
-      "language": "zh",
-      "title": "国台办：祖国终将统一也必将统一的历史大势不可阻挡",
-      "excerpt": "中新网10月28日电 10月28日，国务院台办举行例行新闻发布会。有记者问：近日，台陆委会主委邱垂正称，大陆对台政策将进一步强化“未统先治”策略，通过“形塑国内化的行政、司法管辖权”等途径实现。请问对此有何评论？",
-      "date": "2026-10-28T02:43:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722041.shtml",
-      "image": ""
-    },
-    {
-      "id": "国台办-越来越多台湾优质渔产品进入大陆-a60716145e5c",
-      "language": "zh",
-      "title": "国台办：越来越多台湾优质渔产品进入大陆",
-      "excerpt": "中新网10月28日电 10月28日，国务院台办举行例行新闻发布会。有记者问：近日，台湾渔产品输入大陆仪式在厦门举行，岛内业者纷纷表示，台湾拥有优质渔产品，盼两岸建立长久稳定的合作机制，增进台湾农渔民利益福祉。请问对此有何评论？今年以来台湾农渔产品输入大陆情况如何？",
-      "date": "2026-10-28T02:42:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722051.shtml",
-      "image": ""
-    },
-    {
-      "id": "广交会遇上apec-广货凭什么走俏亚太-6d608d37db8b",
-      "language": "zh",
-      "title": "广交会遇上APEC 广货凭什么走俏亚太",
-      "excerpt": "10月27日，第140届广交会二期落下帷幕。在“品质家居”主题下，展馆内超百万件的家具家居展品吸引了来自俄罗斯、澳大利亚、越南等APEC成员经济体的采购商穿梭洽谈，谈订单、探趋势、找合作，而他们的购物清单中，不乏广货的身影。",
-      "date": "2026-10-28T02:42:05.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/10-28/10722050.shtml",
-      "image": ""
-    },
-    {
-      "id": "国台办反驳台陆委会拒绝张凌赫赴台理由-站不住脚-649dceca49a4",
-      "language": "zh",
-      "title": "国台办反驳台陆委会拒绝张凌赫赴台理由：站不住脚",
-      "excerpt": "10月28日，国务院台办举行例行新闻发布会。针对台陆委会称拒绝张凌赫赴台申请是因其过去曾多次发表贬损台湾地位的言论，发言人陈斌华答问表示，台湾是中国领土不可分割的一部分。大陆演艺人员期盼国家统一，反对“台独”分裂，天经地义、理所当然。民进党当局以根本站不住脚的理由，拒绝广受台湾观众喜爱的大陆艺人赴台，不得人心，必遭反对。(记者赵博、尚昊）",
-      "date": "2026-10-28T02:40:39.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722049.shtml",
-      "image": ""
-    },
-    {
-      "id": "国台办回应蔡康永发文称-没有支持过-台独-668dc26ae0ca",
-      "language": "zh",
-      "title": "国台办回应蔡康永发文称“没有支持过‘台独’”",
-      "excerpt": "10月28日，国务院台办举行例行新闻发布会。针对蔡康永日前在社交媒体发文称“没有支持过‘台独’”，发言人陈斌华答问表示，维护国家主权和领土完整，是包括台湾同胞在内的全中国人民的共同义务。我们始终尊重和保障台湾同胞正当的言论与表达自由，但在事关国家主权、安全、发展利益的大是大非问题上，不存在任何模糊空间。希望台湾演艺界人士以做堂堂正正的中国人为荣，多做有利于增进两岸同胞亲情、促进两岸交流合作的事。",
-      "date": "2026-10-28T02:39:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722048.shtml",
-      "image": ""
-    },
-    {
-      "id": "国台办回应民进党花钱请美方看所谓-汉光演习-3eb5f4f6b111",
-      "language": "zh",
-      "title": "国台办回应民进党花钱请美方看所谓“汉光演习”",
-      "excerpt": "中新网10月28日电 10月28日，国务院台办举行例行新闻发布会。有记者问：据报道，台防务部门证实，编列8千多万元新台币预算，用于今明两年邀请美方人员赴台观摩所谓“汉光演习”。岛内舆论批评民进党当局“对人民哭穷、对外人大方”，是“花钱请人看戏”。请问对此有何评论？",
-      "date": "2026-10-28T02:36:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722046.shtml",
-      "image": ""
-    },
-    {
-      "id": "国台办-将持续推动十项措施落实落细-7fcaddd97cd9",
-      "language": "zh",
-      "title": "国台办：将持续推动十项措施落实落细",
-      "excerpt": "中新网10月28日电 10月28日，国务院台办举行例行新闻发布会。有记者问：继台湾文旦柚输入大陆后，台湾渔产品输入大陆仪式于10月23日在厦门举办，受到关注。请发言人介绍有关情况。",
-      "date": "2026-10-28T02:34:32.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722036.shtml",
       "image": ""
     }
   ]
