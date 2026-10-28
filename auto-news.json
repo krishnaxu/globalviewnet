@@ -1,6 +1,106 @@
 {
-  "generated_at": "2026-10-28T20:51:37.309Z",
+  "generated_at": "2026-10-28T21:49:57.069Z",
   "items": [
+    {
+      "id": "google-expands-ai-search-ads-globally-as-core-e46d29680afe",
+      "language": "en",
+      "title": "Google expands AI Search ads globally as core ad growth slows",
+      "excerpt": "The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.",
+      "date": "2026-10-28T21:48:37.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+      "image": ""
+    },
+    {
+      "id": "doordash-s-deal-to-buy-instacart-coming-as-ea-9e36afe7eeae",
+      "language": "en",
+      "title": "DoorDash's deal to buy Instacart coming as early as Thursday morning, sources tell CNBC",
+      "excerpt": "Speculation of a deal has swirled since last week, and several outlets reported the acquisition could value Instacart at roughly $17 billion.",
+      "date": "2026-10-28T21:47:47.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/doordash-instacart-maplebear.html",
+      "image": ""
+    },
+    {
+      "id": "high-speed-train-crash-kills-at-least-68-peop-99093cee53b4",
+      "language": "en",
+      "title": "High-speed train crash kills at least 68 people in Spain",
+      "excerpt": "The crash, between a moving train and another that was stopped further up the track, was caused by an \"inexplicable\" error, the transport minister said.",
+      "date": "2026-10-28T21:38:54.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0c0f/live/1f7e90f0-d2e8-11f1-8d86-83eebc838351.jpg"
+    },
+    {
+      "id": "microsoft-recorded-10-billion-in-revenue-from-020314ea17c3",
+      "language": "en",
+      "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+      "excerpt": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of the partnership.",
+      "date": "2026-10-28T21:34:30.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "image": ""
+    },
+    {
+      "id": "here-are-five-key-takeaways-from-the-fed-rate-6b773588cc7f",
+      "language": "en",
+      "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
+      "excerpt": "Even though the interest-rate vote went as expected, there were a few surprises out of this week's Federal Open Market Committee meeting.",
+      "date": "2026-10-28T21:31:46.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html",
+      "image": ""
+    },
+    {
+      "id": "microsoft-hits-10-quarters-of-record-breaking-f32d7efe87a5",
+      "language": "en",
+      "title": "Microsoft hits 10 quarters of record- breaking revenue in a row",
+      "excerpt": "Whatever the future of AI might be, the current situation is still very good for Microsoft. The tech giant reported yet another record for quarterly revenue on Wednesday: $92.3 billion, a 19% increase over the year-ago quarter.",
+      "date": "2026-10-28T21:25:30.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+      "image": ""
+    },
+    {
+      "id": "bloodied-dazed-and-angry-how-passengers-rail--acb566103b1e",
+      "language": "en",
+      "title": "Bloodied, dazed and angry - how passengers' rail journey turned to disaster in Spain",
+      "excerpt": "Survivors of the train crash in Spain have spoken of their shock, panic and anger at the accident in Toledo province on Wednesday.",
+      "date": "2026-10-28T21:24:41.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm9qzd47ng98o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c63d/live/bb688fa0-d312-11f1-a701-fddedf244c16.jpg"
+    },
+    {
+      "id": "death-of-us-actress-hayden-panettiere-ruled-a-172511e4d821",
+      "language": "en",
+      "title": "Death of US actress Hayden Panettiere ruled accidental, ending local police probe",
+      "excerpt": "The Heroes and Nashville star died in August from the toxic effects of fentanyl, Xanax and several other drugs.",
+      "date": "2026-10-28T21:16:30.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6lylxjkkp0vo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c143/live/4223ae30-d313-11f1-808a-1f9b061d2360.jpg"
+    },
+    {
+      "id": "fed-leaves-rates-unchanged-what-it-means-for--d6db15944be4",
+      "language": "en",
+      "title": "Fed leaves rates unchanged: What it means for credit cards, mortgages, auto loans and savings accounts",
+      "excerpt": "The Fed's benchmark affects many consumer borrowing costs, including the rates tied to mortgages, credit cards, auto loans and savings accounts.",
+      "date": "2026-10-28T20:59:23.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-consumer-borrowing-costs.html",
+      "image": ""
+    },
+    {
+      "id": "israel-s-election-deadlock-is-a-sign-of-the-c-ff9d0f685de6",
+      "language": "en",
+      "title": "Israel's election deadlock is a sign of the country's deep divisions",
+      "excerpt": "The election was a celebration of democracy in some ways - but it has left Israel with no clear path to a new government, writes James Landale.",
+      "date": "2026-10-28T20:53:02.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqz0ve94ygpjo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2a31/live/8148c250-d311-11f1-a701-fddedf244c16.jpg"
+    },
     {
       "id": "bessent-says-not-necessarily-a-mistake-if-the-fbfec549ec09",
       "language": "en",
@@ -2899,106 +2999,6 @@
       "date": "2026-10-28T05:44:37.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722124.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴西总统卢拉-弗拉维奥-博索纳罗离境是-可耻的行为-c60e26b44dda",
-      "language": "zh",
-      "title": "巴西总统卢拉：弗拉维奥·博索纳罗离境是“可耻的行为”",
-      "excerpt": "中新社圣保罗10月27日电 据巴西媒体报道，巴西总统卢拉27日晚间在首都巴西利亚发表讲话称，弗拉维奥·博索纳罗逃离巴西是“可耻的行为”。",
-      "date": "2026-10-28T05:44:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-28/10722125.shtml",
-      "image": ""
-    },
-    {
-      "id": "全国首单水利设施发电不动产投资信托基金上市-062e631ebb05",
-      "language": "zh",
-      "title": "全国首单水利设施发电不动产投资信托基金上市",
-      "excerpt": "记者从水利部了解到，今天(10月28日)，银华粤海水务水利封闭式基础设施证券投资基金在深圳证券交易所上市。这是全国首单水利设施发电不动产投资信托基金。",
-      "date": "2026-10-28T05:43:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722141.shtml",
-      "image": ""
-    },
-    {
-      "id": "泰国前总理川-立派高度评价泰国华侨华人所作贡献-ae5c1b2e3b20",
-      "language": "zh",
-      "title": "泰国前总理川·立派高度评价泰国华侨华人所作贡献",
-      "excerpt": "中新网曼谷10月28日电 (苏逸 李映民 王茜)泰国石狮同乡总会暨泰国石狮商会成立十二周年庆典暨第四届理事会就职典礼日前在曼谷举行，中泰两国政界、商界、侨界嘉宾，以及各国石狮乡亲共近千人欢聚一堂，共襄盛举。出席活动的泰国前总理、前国会主席川·立派在致辞中对泰国华侨华人所作的贡献给予高度评价。",
-      "date": "2026-10-28T05:43:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/10-28/10722140.shtml",
-      "image": ""
-    },
-    {
-      "id": "经济观察-广西香料产业探寻向海跃升新曲线-fc2643bcb465",
-      "language": "zh",
-      "title": "经济观察：广西香料产业探寻向海跃升新曲线",
-      "excerpt": "中新网南宁10月28日电(杨陈 李林轩)深秋，八角、肉桂的香气漫过桂南丘陵，沿着西部陆海新通道走向东盟、联通全球。",
-      "date": "2026-10-28T05:43:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-28/10722136.shtml",
-      "image": ""
-    },
-    {
-      "id": "海外华文媒体探访山东青岛-聚焦-中国康湾-建设-aa34acba0c4b",
-      "language": "zh",
-      "title": "海外华文媒体探访山东青岛 聚焦“中国康湾”建设",
-      "excerpt": "中新网青岛10月28日电 (王禹 张孝鹏)2026年海外华文媒体走进青岛媒体行活动27日在青岛继续进行。由韩国、菲律宾、科特迪瓦等多国媒体记者组成的采访团，实地探访青岛“中国康湾”建设，在教学实训、智慧医疗场景中感受当地康养医疗与生命科学产业的融合发展。",
-      "date": "2026-10-28T05:41:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/10-28/10722135.shtml",
-      "image": ""
-    },
-    {
-      "id": "超级个体-何以成群-长沙探索ai轻创业新范式-6f125e7cee8c",
-      "language": "zh",
-      "title": "“超级个体”何以成群 长沙探索AI轻创业新范式",
-      "excerpt": "中新网长沙10月28日电(记者 鲁毅)借助AI工具，单个创业者或微型团队即可完成过去需要团队协作才能承接的全链路业务，催生出“一人成军”的创业新范式。在长沙湘江西岸的大泽湖OPC(一人公司)创业中心和创沙洲OPC街区，这类AI轻量化创业团队加速聚集。",
-      "date": "2026-10-28T05:41:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722134.shtml",
-      "image": ""
-    },
-    {
-      "id": "农业农村部-全国秋粮收获已过八成-同比快于上年-2af3f15f2deb",
-      "language": "zh",
-      "title": "农业农村部：全国秋粮收获已过八成 同比快于上年",
-      "excerpt": "我国秋粮收获区域广、范围大，目前，秋收总体进展顺利，进度已过八成，同比快于上年。同时，秋冬种也正在有序推进，全国冬小麦播种已过三成。",
-      "date": "2026-10-28T05:41:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722138.shtml",
-      "image": ""
-    },
-    {
-      "id": "河南麦播进度过半-新一轮降水天气利于小麦出苗-19b52608c23d",
-      "language": "zh",
-      "title": "河南麦播进度过半 新一轮降水天气利于小麦出苗",
-      "excerpt": "中新网郑州10月28日电 (记者 韩章云)10月28日，记者从河南省气象台获悉，受暖湿气流和冷空气影响，10月31日至11月1日，该省有一次较明显降水和大风降温过程。此轮降水有利于缓解豫北局部旱情，利于已播小麦出苗。",
-      "date": "2026-10-28T05:40:43.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-28/10722132.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026年度秋冬季气垫船在黑河开船-为中俄两国构筑-水上高速通道-c65c648c76d2",
-      "language": "zh",
-      "title": "2026年度秋冬季气垫船在黑河开船 为中俄两国构筑“水上高速通道”",
-      "excerpt": "中新网10月28日电(记者 王妮娜)中国黑河—俄罗斯布拉戈维申斯克口岸2026年度秋冬季气垫船客运27日正式开启，为中俄两国人员往来构筑“水上高速通道”。",
-      "date": "2026-10-28T05:39:47.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-28/10722131.shtml",
-      "image": ""
-    },
-    {
-      "id": "cba常规赛-广州队加时赛险胜北京控股队-203346d2511d",
-      "language": "zh",
-      "title": "CBA常规赛：广州队加时赛险胜北京控股队",
-      "excerpt": "中新网广州10月28日电 (记者 张璐)2026-2027赛季中国男子篮球职业联赛(CBA)常规赛第5轮27日晚在广州举行，广州智都集团队(简称“广州队”)主场迎战北京控股队(简称“北控队”)。加时赛中，广州队凭借麦考尔的关键得分，以91:90战胜北控队。",
-      "date": "2026-10-28T05:39:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-28/10722130.shtml",
       "image": ""
     }
   ]
