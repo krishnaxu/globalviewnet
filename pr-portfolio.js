@@ -150,65 +150,72 @@
     return source || "";
   }
 
-  function renderArticle(article, index) {
-    const title = escapeHTML(article.title);
-    const source = escapeHTML(sourceLabel(article.source));
-    const date = escapeHTML(formatDate(article.date));
-    const rawBody = article.body || "";
-const hasHTML = /<\/?(p|h[1-6]|strong|b|em|ul|ol|li|img|table)\b/i.test(rawBody);
 
-const body = hasHTML
-  ? sanitizeArticleHTML(rawBody, article.source_url || window.location.origin)
-  : escapeHTML(rawBody).replace(/\n/g, "<br>");
-    const excerpt = escapeHTML(article.excerpt || "");
-    const sourceURL = safeURL(article.source_url);
-    const detailId = `pr-portfolio-detail-${index}`;
+function renderArticle(article, index) {
+  const title = escapeHTML(article.title);
+  const date = escapeHTML(formatDate(article.date));
+  const rawBody = article.body || "";
 
-   const content = body
-  ? `<div class="pr-portfolio-body">${body}</div>`
-  : `<p class="pr-portfolio-excerpt">${
-      excerpt || (isChinese() ? "暂无正文内容。" : "No article content available.")
-    }</p>`;
+  const hasHTML =
+    /<\/?(p|h[1-6]|strong|b|em|ul|ol|li|img|table)\b/i.test(rawBody);
 
-    const originalLink = sourceURL
-      ? `<a class="pr-portfolio-original"
-            href="${escapeHTML(sourceURL)}"
-            target="_blank"
-            rel="noopener noreferrer">${
-              isChinese() ? "阅读原文 ↗" : "Read Original ↗"
-            }</a>`
-      : "";
+  const body = hasHTML
+    ? sanitizeArticleHTML(
+        rawBody,
+        article.source_url || window.location.origin
+      )
+    : escapeHTML(rawBody).replace(/\n/g, "<br>");
 
-    return `
-      <article class="pr-portfolio-card">
-        <div class="pr-portfolio-list-row">
-          <span class="pr-portfolio-number" aria-hidden="true">${
-            String(index + 1).padStart(2, "0")
-          }</span>
-          <div class="pr-portfolio-card-content">
-            <div class="pr-portfolio-meta">
-              <span>${source}</span>
-              ${date ? `<time>${date}</time>` : ""}
-            </div>
+  const excerpt = escapeHTML(article.excerpt || "");
+  const sourceURL = safeURL(article.source_url);
+  const detailId = `pr-portfolio-detail-${index}`;
 
-            <button
-              class="pr-portfolio-title-button"
-              type="button"
-              aria-expanded="false"
-              aria-controls="${detailId}">
-              <span>${title}</span>
-              <span class="pr-portfolio-toggle-icon" aria-hidden="true">+</span>
-            </button>
+  const content = body
+    ? `<div class="pr-portfolio-body">${body}</div>`
+    : `<p class="pr-portfolio-excerpt">${
+        excerpt ||
+        (isChinese() ? "暂无正文内容。" : "No article content available.")
+      }</p>`;
 
-            <div class="pr-portfolio-detail" id="${detailId}" hidden>
-              ${content}
-              <div class="pr-portfolio-card-footer">${originalLink}</div>
-            </div>
+  const originalLink = sourceURL
+    ? `<a class="pr-portfolio-original"
+          href="${escapeHTML(sourceURL)}"
+          target="_blank"
+          rel="noopener noreferrer">${
+            isChinese() ? "阅读原文 ↗" : "Read Original ↗"
+          }</a>`
+    : "";
+
+  return `
+    <article class="pr-portfolio-card">
+      <div class="pr-portfolio-list-row">
+        <span class="pr-portfolio-number" aria-hidden="true">${
+          String(index + 1).padStart(2, "0")
+        }</span>
+
+        <div class="pr-portfolio-card-content">
+          <div class="pr-portfolio-meta">
+            ${date ? `<time>${date}</time>` : ""}
+          </div>
+
+          <button
+            class="pr-portfolio-title-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="${detailId}">
+            <span>${title}</span>
+            <span class="pr-portfolio-toggle-icon" aria-hidden="true">+</span>
+          </button>
+
+          <div class="pr-portfolio-detail" id="${detailId}" hidden>
+            ${content}
+            <div class="pr-portfolio-card-footer">${originalLink}</div>
           </div>
         </div>
-      </article>
-    `;
-  }
+      </div>
+    </article>
+  `;
+}
 
   function bindExpandButtons(grid) {
     grid.querySelectorAll(".pr-portfolio-title-button").forEach(button => {
@@ -303,226 +310,203 @@ const body = hasHTML
     );
   }
 
-  function renderMoreLinks(section, companyCount, industryCount) {
-    const grid = section.querySelector(`#${GRID_ID}`);
-    if (!grid) return;
 
-    // 全页面只保留一组动态生成的“查看全部”入口。
-    const containers = Array.from(
-      document.querySelectorAll(".pr-portfolio-more-links")
+function renderMoreLinks(section, companyCount, industryCount) {
+  const companyLink = section.querySelector("#prPortfolioCompanyMore");
+  const industryLink = section.querySelector("#prPortfolioIndustryMore");
+
+  if (companyLink) {
+    companyLink.href =
+      `pr-portfolio-list.html?source=${encodeURIComponent(COMPANY)}`;
+
+    companyLink.textContent = isChinese()
+      ? `查看全部公司新闻（${companyCount}）→`
+      : `More Company News (${companyCount}) →`;
+  }
+
+  if (industryLink) {
+    industryLink.href =
+      `pr-portfolio-list.html?source=${encodeURIComponent(INDUSTRY)}`;
+
+    industryLink.textContent = isChinese()
+      ? `查看全部行业新闻（${industryCount}）→`
+      : `More Industry News (${industryCount}) →`;
+  }
+}
+
+
+async function init() {
+  const section = document.getElementById(SECTION_ID);
+  if (!section) return;
+
+  const isListPage = section.dataset.pageMode === "list";
+
+  // 二级列表页使用原来的单列表；首页使用两个独立列表。
+  const grid = section.querySelector(`#${GRID_ID}`);
+  const companyGrid = section.querySelector("#prPortfolioCompanyGrid");
+  const industryGrid = section.querySelector("#prPortfolioIndustryGrid");
+
+  if (isListPage && !grid) return;
+  if (!isListPage && (!companyGrid || !industryGrid)) return;
+
+  const loadingText = isChinese()
+    ? "正在加载作品集……"
+    : "Loading portfolio...";
+
+  if (isListPage) {
+    grid.innerHTML = `<p class="muted">${loadingText}</p>`;
+  } else {
+    companyGrid.innerHTML = `<p class="muted">${loadingText}</p>`;
+    industryGrid.innerHTML = `<p class="muted">${loadingText}</p>`;
+  }
+
+  try {
+    const response = await fetch(API_URL, {
+      headers: { Accept: "application/json" },
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    if (!data.success || !Array.isArray(data.entries)) {
+      throw new Error(data.error || "Invalid API response");
+    }
+
+    const articles = data.entries;
+    const params = new URLSearchParams(window.location.search);
+
+    // 二级列表页：保留原有每页 25 篇和分页功能。
+    if (isListPage) {
+      const requestedSource = params.get("source");
+      const selectedSource =
+        requestedSource === INDUSTRY ? INDUSTRY : COMPANY;
+
+      const filtered = articles.filter(
+        item => item.source === selectedSource
+      );
+
+      const totalPages = Math.max(
+        1,
+        Math.ceil(filtered.length / PAGE_SIZE)
+      );
+
+      const parsedPage = Number.parseInt(
+        params.get("page") || "1",
+        10
+      );
+
+      const currentPage = Math.min(
+        totalPages,
+        Math.max(
+          1,
+          Number.isInteger(parsedPage) ? parsedPage : 1
+        )
+      );
+
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const pageArticles = filtered.slice(start, start + PAGE_SIZE);
+
+      const heading = document.getElementById("prPortfolioListTitle");
+      if (heading) {
+        heading.textContent = sourceLabel(selectedSource);
+      }
+
+      grid.innerHTML = pageArticles.length
+        ? pageArticles
+            .map((article, index) => renderArticle(article, start + index))
+            .join("")
+        : `<p class="muted">${
+            isChinese()
+              ? "该分类暂时没有文章。"
+              : "No articles in this category yet."
+          }</p>`;
+
+      bindExpandButtons(grid);
+
+      const count = document.getElementById("prPortfolioCount");
+      if (count) {
+        count.textContent = isChinese()
+          ? `共 ${filtered.length} 篇文章`
+          : `${filtered.length} articles`;
+      }
+
+      const pagination = document.getElementById(
+        "prPortfolioPagination"
+      );
+
+      if (pagination) {
+        renderPagination(
+          pagination,
+          totalPages,
+          currentPage,
+          nextPage => {
+            const url = new URL(window.location.href);
+            url.searchParams.set("source", selectedSource);
+            url.searchParams.set("page", String(nextPage));
+            window.location.href = url.href;
+          }
+        );
+      }
+
+      return;
+    }
+
+    // 首页：公司新闻和行业新闻分开，各显示最新 3 条。
+    const companyArticles = articles.filter(
+      item => item.source === COMPANY
     );
 
-    let container = containers.shift();
+    const industryArticles = articles.filter(
+      item => item.source === INDUSTRY
+    );
 
-    containers.forEach(item => item.remove());
+    const companyTopThree = companyArticles.slice(0, 3);
+    const industryTopThree = industryArticles.slice(0, 3);
 
-    if (!container) {
-      container = document.createElement("div");
-      container.className = "pr-portfolio-more-links";
-    }
+    companyGrid.innerHTML = companyTopThree.length
+      ? companyTopThree
+          .map((article, index) => renderArticle(article, index))
+          .join("")
+      : `<p class="muted">${
+          isChinese() ? "暂无公司新闻。" : "No company news available."
+        }</p>`;
 
-    // 将入口固定放在文章列表后面。
-    if (grid.nextElementSibling !== container) {
-      grid.insertAdjacentElement("afterend", container);
-    }
+    // 使用不同的编号，避免两个列表中的正文展开 ID 重复。
+    industryGrid.innerHTML = industryTopThree.length
+      ? industryTopThree
+          .map((article, index) => renderArticle(article, index + 1000))
+          .join("")
+      : `<p class="muted">${
+          isChinese() ? "暂无行业新闻。" : "No industry news available."
+        }</p>`;
 
-    const companyLabel = isChinese()
-      ? "查看全部公司新闻"
-      : "All Company News";
+    bindExpandButtons(companyGrid);
+    bindExpandButtons(industryGrid);
 
-    const industryLabel = isChinese()
-      ? "查看全部行业新闻"
-      : "All Industry News";
+    renderMoreLinks(
+      section,
+      companyArticles.length,
+      industryArticles.length
+    );
+  } catch (error) {
+    console.error("[PR Portfolio]", error);
 
-    container.innerHTML = `
-      <a href="pr-portfolio-list.html?source=${encodeURIComponent(COMPANY)}">${
-        companyLabel
-      } (${companyCount}) →</a>
-      <a href="pr-portfolio-list.html?source=${encodeURIComponent(INDUSTRY)}">${
-        industryLabel
-      } (${industryCount}) →</a>
-    `;
-  }
+    const errorText = isChinese()
+      ? "作品集暂时无法加载，请稍后重试。"
+      : "Portfolio is temporarily unavailable.";
 
-  async function init() {
-    const section = document.getElementById(SECTION_ID);
-    const grid = document.getElementById(GRID_ID);
-
-    if (!section || !grid) return;
-
-    // 先检查必要的页面结构，再请求 API。
-    grid.innerHTML = `<p class="muted">${
-      isChinese() ? "正在加载作品集……" : "Loading portfolio..."
-    }</p>`;
-
-    try {
-      const response = await fetch(API_URL, {
-        headers: { Accept: "application/json" },
-        cache: "no-store"
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`);
-      }
-
-      const data = await response.json();
-
-      if (!data.success || !Array.isArray(data.entries)) {
-        throw new Error(data.error || "Invalid API response");
-      }
-
-      const articles = data.entries;
-      const isListPage = section.dataset.pageMode === "list";
-      const params = new URLSearchParams(window.location.search);
-
-      // 二级列表页：按来源筛选，每页最多 25 篇。
-      if (isListPage) {
-        const requestedSource = params.get("source");
-        const selectedSource =
-          requestedSource === INDUSTRY ? INDUSTRY : COMPANY;
-
-        const filtered = articles.filter(
-          item => item.source === selectedSource
-        );
-
-        const totalPages = Math.max(
-          1,
-          Math.ceil(filtered.length / PAGE_SIZE)
-        );
-
-        const parsedPage = Number.parseInt(
-          params.get("page") || "1",
-          10
-        );
-
-        const currentPage = Math.min(
-          totalPages,
-          Math.max(
-            1,
-            Number.isInteger(parsedPage) ? parsedPage : 1
-          )
-        );
-
-        const start = (currentPage - 1) * PAGE_SIZE;
-        const pageArticles = filtered.slice(start, start + PAGE_SIZE);
-
-        const heading = document.getElementById("prPortfolioListTitle");
-        if (heading) {
-          heading.textContent = sourceLabel(selectedSource);
-        }
-
-        grid.innerHTML = pageArticles.length
-          ? pageArticles
-              .map((article, index) => renderArticle(article, start + index))
-              .join("")
-          : `<p class="muted">${
-              isChinese() ? "该分类暂时没有文章。" : "No articles in this category yet."
-            }</p>`;
-
-        bindExpandButtons(grid);
-
-        const count = document.getElementById("prPortfolioCount");
-        if (count) {
-          count.textContent = isChinese()
-            ? `共 ${filtered.length} 篇文章`
-            : `${filtered.length} articles`;
-        }
-
-        const pagination = document.getElementById(
-          "prPortfolioPagination"
-        );
-
-        if (pagination) {
-          renderPagination(
-            pagination,
-            totalPages,
-            currentPage,
-            nextPage => {
-              const url = new URL(window.location.href);
-              url.searchParams.set("source", selectedSource);
-              url.searchParams.set("page", String(nextPage));
-              window.location.href = url.href;
-            }
-          );
-        }
-
-        return;
-      }
-
-      // 首页：分别整理公司新闻和行业新闻。
-      const companyArticles = articles.filter(
-        item => item.source === COMPANY
-      );
-
-      const industryArticles = articles.filter(
-        item => item.source === INDUSTRY
-      );
-
-      const tabs = section.querySelectorAll("[data-pr-source]");
-
-      function renderHome(source) {
-        let selected;
-
-        if (source === "all") {
-          selected = [
-            ...companyArticles.slice(0, 3),
-            ...industryArticles.slice(0, 3)
-          ];
-        } else if (source === COMPANY) {
-          selected = companyArticles.slice(0, 3);
-        } else if (source === INDUSTRY) {
-          selected = industryArticles.slice(0, 3);
-        } else {
-          selected = [];
-        }
-
-        grid.innerHTML = selected.length
-          ? selected
-              .map((article, index) => renderArticle(article, index))
-              .join("")
-          : `<p class="muted">${
-              isChinese() ? "该分类暂时没有文章。" : "No articles in this category yet."
-            }</p>`;
-
-        bindExpandButtons(grid);
-
-        renderMoreLinks(
-          section,
-          companyArticles.length,
-          industryArticles.length
-        );
-      }
-
-      tabs.forEach(tab => {
-        tab.addEventListener("click", () => {
-          tabs.forEach(item => {
-            const active = item === tab;
-            item.classList.toggle("active", active);
-            item.setAttribute("aria-pressed", String(active));
-          });
-
-          renderHome(tab.dataset.prSource || "all");
-        });
-
-        tab.setAttribute(
-          "aria-pressed",
-          String(tab.classList.contains("active"))
-        );
-      });
-
-      const activeTab = section.querySelector("[data-pr-source].active");
-
-      renderHome(activeTab?.dataset.prSource || "all");
-    } catch (error) {
-      console.error("[PR Portfolio]", error);
-
-      grid.innerHTML = `<p class="muted">${
-        isChinese()
-          ? "作品集暂时无法加载，请稍后重试。"
-          : "Portfolio is temporarily unavailable."
-      }</p>`;
+    if (isListPage) {
+      grid.innerHTML = `<p class="muted">${errorText}</p>`;
+    } else {
+      companyGrid.innerHTML = `<p class="muted">${errorText}</p>`;
+      industryGrid.innerHTML = `<p class="muted">${errorText}</p>`;
     }
   }
+}
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init, { once: true });
