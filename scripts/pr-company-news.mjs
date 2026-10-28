@@ -195,39 +195,45 @@ function looksLikeNavigation(text) {
   );
 }
 
+
 function getArticleBody(html) {
-  const selectors = [
-    /<article\b[^>]*>([\s\S]*?)<\/article>/i,
-    /<div\b[^>]*class=["'][^"']*(?:article-content|article-detail|news-content|news-detail|content-detail)[^"']*["'][^>]*>([\s\S]*?)<\/div>/i,
-    /<main\b[^>]*>([\s\S]*?)<\/main>/i
-  ];
+  if (typeof html !== "string" || !html.trim()) {
+    return "";
+  }
 
   const removeUnwanted = value => value
-    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
-    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
-    .replace(/<(nav|header|footer|aside)\b[^>]*>[\s\S]*?<\/\1>/gi, "")
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, "")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style\s*>/gi, "")
+    .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript\s*>/gi, "")
     .replace(/<!--[\s\S]*?-->/g, "")
-    .replace(/<[^>]+\b(?:onclick|onerror|onload|onmouseover)\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, "")
+    .replace(/\s+on[a-z]+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, "")
     .replace(/\s+style\s*=\s*(?:"[^"]*"|'[^']*')/gi, "")
-    .replace(/\s+class\s*=\s*(?:"[^"]*"|'[^']*')/gi, "")
-    .replace(/\s+id\s*=\s*(?:"[^"]*"|'[^']*')/gi, "")
     .trim();
 
-  for (const pattern of selectors) {
+  const patterns = [
+    /<article\b[^>]*>([\s\S]*?)<\/article\s*>/i,
+    /<div\b[^>]*class\s*=\s*["'][^"']*\b(?:article-content|article-detail|news-content|news-detail|content-detail)\b[^"']*["'][^>]*>([\s\S]*?)<\/div\s*>/i,
+    /<div\b[^>]*class\s*=\s*["'][^"']*\bpText\b[^"']*["'][^>]*>([\s\S]*?)<\/div\s*>/i,
+    /<main\b[^>]*>([\s\S]*?)<\/main\s*>/i
+  ];
+
+  for (const pattern of patterns) {
     const match = html.match(pattern);
+    if (!match?.[1]) continue;
 
-    if (match?.[1]) {
-      const cleaned = removeUnwanted(match[1]);
-      const text = stripHTML(cleaned);
+    const cleaned = removeUnwanted(match[1]);
+    const plainText = stripHTML(cleaned)
+      .replace(/\s+/g, " ")
+      .trim();
 
-      if (text.length > 100) {
-        return cleaned;
-      }
+    if (plainText.length >= 100) {
+      return cleaned;
     }
   }
 
   return "";
 }
+
 async function fetchHTML(url) {
   const response = await fetch(url, {
     headers: {
