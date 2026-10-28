@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-10-28T19:54:08.139Z",
+  "generated_at": "2026-10-28T20:51:37.309Z",
   "items": [
+    {
+      "id": "bessent-says-not-necessarily-a-mistake-if-the-fbfec549ec09",
+      "language": "en",
+      "title": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
+      "excerpt": "Treasury Secretary Scott Bessent joined CNBC for an interview on Oct. 28, 2026.",
+      "date": "2026-10-28T20:51:23.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html",
+      "image": ""
+    },
+    {
+      "id": "fedex-beats-expectations-raises-outlook-in-fi-4a7158349254",
+      "language": "en",
+      "title": "FedEx beats expectations, raises outlook in first report since calendar adjustment",
+      "excerpt": "FedEx on Wednesday beat Wall Street expectations on the top and bottom lines for the third quarter of its newly aligned fiscal year.",
+      "date": "2026-10-28T20:35:33.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/fedex-fdx-sept-2026-earnings.html",
+      "image": ""
+    },
+    {
+      "id": "nvidia-s-12-9-billion-hugging-face-deal-draws-95a0feea428e",
+      "language": "en",
+      "title": "Nvidia's $12.9 billion Hugging Face deal draws DOJ scrutiny",
+      "excerpt": "Nvidia faces DOJ inquiry over its $12.9 billion purchase of Hugging Face.",
+      "date": "2026-10-28T20:23:00.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html",
+      "image": ""
+    },
+    {
+      "id": "flávio-bolsonaro-lands-in-miami-after-defeat--0fb97cbc377b",
+      "language": "en",
+      "title": "Flávio Bolsonaro lands in Miami after defeat in Brazil's presidential election",
+      "excerpt": "Bolsonaro's arrival in the US ends speculation about his whereabouts after he failed to comply with an order to surrender his passports.",
+      "date": "2026-10-28T20:22:49.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2c2c/live/4c19c1e0-d2eb-11f1-b441-2b33b063138f.jpg"
+    },
+    {
+      "id": "hacker-stole-personnel-data-about-thousands-o-1cbacb75bb50",
+      "language": "en",
+      "title": "Hacker stole personnel data about thousands of Homeland Security employees, including CBP and ICE agents",
+      "excerpt": "A hacker obtained personally identifiable information about more than 40,000 Homeland Security staffers, which has since been published online.",
+      "date": "2026-10-28T20:01:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/hacker-stole-personnel-data-about-thousands-of-homeland-security-employees-including-cbp-and-ice-agents/",
+      "image": ""
+    },
     {
       "id": "bond-investor-jeff-gundlach-on-fed-s-rate-pau-9ec37aefd063",
       "language": "en",
@@ -32,6 +82,26 @@
       "image": ""
     },
     {
+      "id": "fed-holds-rates-steady-despite-concerns-over--c8dc713f2b64",
+      "language": "en",
+      "title": "Fed holds rates steady despite concerns over inflation",
+      "excerpt": "Two of the 12 Federal Open Market Committee voters dissented from the decision. Both wanted to raise rates by a quarter percentage point.",
+      "date": "2026-10-28T19:43:48.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+      "image": ""
+    },
+    {
+      "id": "trump-admin-sues-utah-to-save-kalshi-from-the-ba823d52c401",
+      "language": "en",
+      "title": "Trump admin sues Utah to save Kalshi from the state's total ban on gambling",
+      "excerpt": "US agency has sued 10 states for trying to stop gambling on prediction markets.",
+      "date": "2026-10-28T19:30:33.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/kalshi-500x500-1788462770.jpg"
+    },
+    {
       "id": "chipotle-mexican-grill-is-about-to-report-ear-3d7fcfc4ef99",
       "language": "en",
       "title": "Chipotle Mexican Grill is about to report earnings. Here's what to expect",
@@ -42,6 +112,16 @@
       "image": ""
     },
     {
+      "id": "the-last-best-hope-for-space-tourism-just-rol-12f247c9e5fe",
+      "language": "en",
+      "title": "The last, best hope for space tourism just rolled onto a runway in Arizona",
+      "excerpt": "It has been nearly a year since any space tourism flights occurred.",
+      "date": "2026-10-28T19:20:36.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/10/the-last-best-hope-for-space-tourism-just-rolled-onto-a-runway-in-arizona/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/VIRGIN-GALACTIC_CORDWELL_10232026_APEIRON_STILLS-SELECT-1653-500x500.jpg"
+    },
+    {
       "id": "anthropic-just-launched-tools-to-show-compani-3b6696291dbc",
       "language": "en",
       "title": "Anthropic just launched tools to show companies what their AI spending is buying",
@@ -50,6 +130,26 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
       "image": ""
+    },
+    {
+      "id": "fed-chairman-talks-tough-on-inflation-plus-wh-39529b1056e2",
+      "language": "en",
+      "title": "Fed chairman talks tough on inflation — plus, what's behind Micron's big rally",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "date": "2026-10-28T19:17:35.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/28/fed-chairman-talks-tough-on-inflation-plus-whats-behind-microns-big-rally.html",
+      "image": ""
+    },
+    {
+      "id": "touchscreen-macbook-pro-hands-on-oled-looks-g-8d8489c29ef1",
+      "language": "en",
+      "title": "Touchscreen MacBook Pro hands-on: OLED looks great on a Mac",
+      "excerpt": "It's not as different from the previous model as you might have expected.",
+      "date": "2026-10-28T19:10:29.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/apple/2026/10/touchscreen-macbook-pro-hands-on-oled-looks-great-on-a-mac/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/16-inch-MacBook-Pro-lid-closed-500x500-1793212500.jpg"
     },
     {
       "id": "wiz-s-cto-on-php2shell-and-the-coming-vulnpoc-4f99b9d14ea0",
@@ -80,6 +180,16 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/videos/ck4g1xe5xny4o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c9c9/live/0a0506e0-d2f8-11f1-a701-fddedf244c16.jpg"
+    },
+    {
+      "id": "google-announces-gemini-4-carbon-its-latest-f-721146dc4df9",
+      "language": "en",
+      "title": "Google announces Gemini 4 Carbon, its latest frontier AI model that you can't use",
+      "excerpt": "Gemini 4 Carbon is essentially a slightly better version of Argon.",
+      "date": "2026-10-28T18:47:27.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-2-500x500.jpg"
     },
     {
       "id": "we-re-adding-a-new-high-profile-ai-play-to-ou-8b02d17a916a",
@@ -2890,116 +3000,6 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/ty/2026/10-28/10722130.shtml",
       "image": ""
-    },
-    {
-      "id": "沈阳举办新产业工人暨农民工专场招聘会-28960ff63649",
-      "language": "zh",
-      "title": "沈阳举办新产业工人暨农民工专场招聘会",
-      "excerpt": "中新网沈阳10月28日电 (记者 李晛)就业是最基本的民生，农民工就业一头连着产业发展，一头连着千家万户生计。近日，由沈阳市人力资源和社会保障局主办，沈阳市就业和人才服务中心、中国沈阳人才市场承办的“金秋送岗促就业 政企同心促振兴”新产业工人暨农民工专场招聘会在沈阳举办。",
-      "date": "2026-10-28T05:38:30.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722126.shtml",
-      "image": ""
-    },
-    {
-      "id": "土耳其官员-cop31气候大会将聚焦落实-67f5f8c3cdc7",
-      "language": "zh",
-      "title": "土耳其官员：COP31气候大会将聚焦落实",
-      "excerpt": "土耳其外交部副部长贝里斯·埃金吉22日说，即将在土耳其举办的《联合国气候变化框架公约》第三十一次缔约方大会(COP31)将重点关注气候政策的具体落实，力争办成一届“落实的COP”。",
-      "date": "2026-10-28T05:37:12.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-28/10722128.shtml",
-      "image": ""
-    },
-    {
-      "id": "为大佛-巡检-帮造像-洗脸-他们让造像-活-得有尊严-9e124a5b8da2",
-      "language": "zh",
-      "title": "为大佛“巡检”、帮造像“洗脸” 他们让造像“活”得有尊严",
-      "excerpt": "相比去地质队、勘察设计院等单位工作的地质工程专业毕业生，四川省文物考古研究院(以下简称省考古院)副研究馆员刘建成总会在同学聚会时，收到关于三星堆、江口沉银的好奇询问。说到他从事的石窟寺保护和修复工作，大家都觉得晦涩难懂，但一详细介绍工作内容——修复石窟造像、加固危岩体、渗水治理等，同学们便豁然开朗：“这不就是地质老本行嘛。”",
-      "date": "2026-10-28T05:33:36.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-28/10722123.shtml",
-      "image": ""
-    },
-    {
-      "id": "一个指令完成-变身-高科技-下地-干活服务农户-9460587fcf72",
-      "language": "zh",
-      "title": "一个指令完成“变身” 高科技“下地”干活服务农户",
-      "excerpt": "第33届中国杨凌农高会正在陕西杨凌举行。展会上的首发、首秀、首展都是让高科技真正落到田里、服务到农户。1000多项我国最新农业科技成果在这里集中发布。那么高科技怎么“下地”？",
-      "date": "2026-10-28T05:26:38.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722121.shtml",
-      "image": ""
-    },
-    {
-      "id": "jio-shares-surge-21-in-market-debut-after-blo-4d0cc269936e",
-      "language": "en",
-      "title": "Jio shares surge 21% in market debut after blockbuster India IPO",
-      "excerpt": "Jio has debuted as India's second-most valuable listed company, behind its parent, Reliance Industries.",
-      "date": "2026-10-28T05:20:32.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/10/27/jio-shares-surge-21-in-market-debut-after-blockbuster-india-ipo/",
-      "image": ""
-    },
-    {
-      "id": "澳大利亚向我国返还2件流失文物-a43c7970924b",
-      "language": "zh",
-      "title": "澳大利亚向我国返还2件流失文物",
-      "excerpt": "中新网10月28日电 据国家文物局微信公众号消息，当地时间10月28日，国家文物局在堪培拉接收澳大利亚国家美术馆向我国返还的2件中国流失文物，国家文物局副局长唐炜、中国驻澳大利亚大使刘劲松、澳大利亚国家美术馆馆长尼克·米采维奇等出席返还接收仪式并致辞。来自澳大利亚外交贸易部、联邦艺术部等相关机构的代表参加仪式。",
-      "date": "2026-10-28T05:18:41.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/10-28/10722119.shtml",
-      "image": ""
-    },
-    {
-      "id": "从校园到军营-成为军官要接受哪些考验-feff07af4738",
-      "language": "zh",
-      "title": "从校园到军营 成为军官要接受哪些考验？",
-      "excerpt": "近年来，一批批地方优秀人才通过“直招军官”渠道奔赴军营。日前，在天山脚下，陆军某综合训练基地组织“直招军官”开展新训结业考核。地方青年想要成为一名军官，需要接受哪些考验，记者深入考核现场进行了探访。",
-      "date": "2026-10-28T05:09:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722118.shtml",
-      "image": ""
-    },
-    {
-      "id": "a股午评-近4500只个股飘红-三大指数集体收涨-创业板指涨3-a2a5a7a41292",
-      "language": "zh",
-      "title": "A股午评：近4500只个股飘红，三大指数集体收涨，创业板指涨3%",
-      "excerpt": "A股午评：近4500只个股飘红，三大指数集体收涨，创业板指涨3%；人形机器人概念股爆发，通信设备、半导体大涨；白酒走低，大金融下挫",
-      "date": "2026-10-28T05:04:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722117.shtml",
-      "image": ""
-    },
-    {
-      "id": "meta-and-google-backed-jio-platforms-shares-s-794fbde82364",
-      "language": "en",
-      "title": "Meta- and Google-backed Jio Platforms’ shares soar over 21% on trading debut after record IPO",
-      "excerpt": "Jio had offered 270 million shares in the IPO priced at 1,119 rupees apiece, raising 302 billion rupees ($3.2 billion) in the country's largest-ever IPO.",
-      "date": "2026-10-28T04:51:42.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/28/jio-ipo-india-listing-.html",
-      "image": ""
-    },
-    {
-      "id": "韩国瑜再提-我是中国人-批台湾民主-肾虚-要吃六味地黄丸-0f8e04e7ea60",
-      "language": "zh",
-      "title": "韩国瑜再提“我是中国人”，批台湾民主“肾虚”要吃六味地黄丸",
-      "excerpt": "中新网10月28日电(燕新台)综合台媒报道，日前，台立法机构负责人韩国瑜在岛内辅选时再度开呛民进党发动“大罢免”“不副署”等事件，已经让台湾民主“肾虚”。他还开出吃六味地黄丸的药方，呼吁让更多正派政治人物当选。",
-      "date": "2026-10-28T04:44:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722111.shtml",
-      "image": ""
-    },
-    {
-      "id": "king-acknowledges-suffering-of-the-past-as-ca-04c238830b7b",
-      "language": "en",
-      "title": "King acknowledges 'suffering of the past' as Caribbean tour begins",
-      "excerpt": "The King is on a nine-day tour that will take him to three countries, including the Bahamas, Guyana and Antigua and Barbuda.",
-      "date": "2026-10-28T04:32:36.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmwyv8ld22z1o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f0e4/live/7d77ba00-d249-11f1-8ba3-9fd3e261415f.jpg"
     }
   ]
 }
