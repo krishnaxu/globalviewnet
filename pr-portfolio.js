@@ -477,9 +477,9 @@ async function init() {
 
        // 行业新闻编号从 01 开始。
     industryGrid.innerHTML = industryTopThree.length
-      ? industryTopThree
-          .map((article, index) => renderArticle(article, index + 1000))
-          .join("")
+     industryTopThree
+  .map((article, index) => renderArticle(article, index))
+  .join("")
       : `<p class="muted">${
           isChinese() ? "暂无行业新闻。" : "No industry news available."
         }</p>`;
