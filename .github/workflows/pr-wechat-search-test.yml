@@ -1,3 +1,4 @@
+
 name: PR WeChat History Search Test
 
 on:
@@ -7,10 +8,10 @@ permissions:
   contents: read
 
 jobs:
-  search-original-links:
+  inspect-search-results:
     runs-on: ubuntu-latest
     steps:
-      - name: Search Bing and DuckDuckGo
+      - name: Inspect Bing search result links
         run: |
           node --input-type=module <<'NODE'
           const titles = [
@@ -18,71 +19,150 @@ jobs:
             '死亡风险降低32%，生存期延长近7个月！默沙东/科伦博泰TROP2 ADC攻克子宫内膜癌治疗难关'
           ];
 
-          const engines = [
-            {
-              name: 'Bing',
-              url: q => 'https://www.bing.com/search?q=' + encodeURIComponent(q)
-            },
-            {
-              name: 'DuckDuckGo',
-              url: q => 'https://html.duckduckgo.com/html/?q=' + encodeURIComponent(q)
-            }
-          ];
-
           function decodeHtml(s) {
             return s
               .replace(/&amp;/g, '&')
               .replace(/&quot;/g, '"')
-              .replace(/&#39;|&apos;/g, "'")
+              .replace(/&#39;|&#x27;/gi, "'")
               .replace(/&lt;/g, '<')
-              .replace(/&gt;/g, '>');
+              .replace(/&gt;/g, '>')
+              .replace(/&#x([0-9a-f]+);/gi, (_, h) =>
+                String.fromCodePoint(parseInt(h, 16)))
+              .replace(/&#([0-9]+);/g, (_, n) =>
+                String.fromCodePoint(Number(n)));
+          }
+
+          function cleanText(s) {
+            return decodeHtml(s)
+              .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+              .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+              .replace(/<[^>]*>/g, ' ')
+              .replace(/\s+/g, ' ')
+              .trim();
+          }
+
+          function inspectUrl(raw) {
+            let value = decodeHtml(raw).replace(/\\u0026/g, '&');
+
+            try {
+              if (value.startsWith('//')) {
+                value = 'https:' + value;
+              }
+
+              const parsed = new URL(value, 'https://www.bing.com');
+
+              // 解析常见搜索引擎跳转参数
+              for (const key of ['url', 'u', 'uddg', 'target', 'q']) {
+                const parameter = parsed.searchParams.get(key);
+                if (parameter && parameter.includes('mp.weixin.qq.com/s/')) {
+                  try {
+                    value = decodeURIComponent(parameter);
+                  } catch {
+                    value = parameter;
+                  }
+                  break;
+                }
+              }
+            } catch {}
+
+            return value;
           }
 
           for (const title of titles) {
             console.log('\n====================================');
-            console.log('标题：' + title);
+            console.log('查询标题：' + title);
 
-            for (const engine of engines) {
-              console.log('\n搜索引擎：' + engine.name);
+            const query = `site:mp.weixin.qq.com/s "${title}"`;
+            const searchUrl = 'https://www.bing.com/search?q=' +
+              encodeURIComponent(query);
 
-              try {
-                const query = `site:mp.weixin.qq.com/s "${title}"`;
-                const response = await fetch(engine.url(query), {
-                  headers: {
-                    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36',
-                    'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8'
-                  },
-                  redirect: 'follow',
-                  signal: AbortSignal.timeout(20000)
-                });
+            try {
+              const response = await fetch(searchUrl, {
+                headers: {
+                  'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36',
+                  'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8'
+                },
+                redirect: 'follow',
+                signal: AbortSignal.timeout(25000)
+              });
 
-                const html = decodeHtml(await response.text());
-                console.log('HTTP 状态：' + response.status);
-                console.log('最终页面：' + response.url);
-                console.log('页面长度：' + html.length);
+              const html = await response.text();
+              console.log('HTTP 状态：' + response.status);
+              console.log('页面长度：' + html.length);
+              console.log('页面最终地址：' + response.url);
 
-                const links = new Set();
-                const pattern = /https?:\/\/mp\.weixin\.qq\.com\/s\/[A-Za-z0-9_-]+/g;
+              const anchors = [
+                ...html.matchAll(
+                  /<a\b([^>]*?)href\s*=\s*["']([^"']+)["']([^>]*)>([\s\S]*?)<\/a>/gi
+                )
+              ];
 
-                for (const match of html.matchAll(pattern)) {
-                  links.add(match[0]);
+              const results = [];
+              const seen = new Set();
+
+              for (const match of anchors) {
+                const rawHref = match[2];
+                const label = cleanText(match[4]);
+                const href = inspectUrl(rawHref);
+
+                if (!label || label.length < 2) continue;
+                if (/^(图片|视频|地图|资讯|购物|登录|缓存|反馈)$/i.test(label)) continue;
+                if (/^(javascript:|mailto:|#)/i.test(href)) continue;
+
+                let host = '';
+                try {
+                  host = new URL(href).hostname;
+                } catch {
+                  continue;
                 }
 
-                console.log('识别到的微信原文链接数：' + links.size);
-                for (const link of [...links].slice(0, 10)) {
-                  console.log('原文链接：' + link);
+                if (
+                  host.includes('bing.com') &&
+                  !href.includes('mp.weixin.qq.com/s/')
+                ) {
+                  continue;
                 }
 
-                const cleanText = html
-                  .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-                  .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-                  .replace(/<[^>]+>/g, ' ')
-                  .replace(/\s+/g, ' ');
+                const key = href + '|' + label;
+                if (seen.has(key)) continue;
+                seen.add(key);
 
-                console.log('页面内容预览：' + cleanText.slice(0, 500));
-              } catch (error) {
-                console.log('查询失败：' + error.message);
+                results.push({ label, href, host });
               }
+
+              console.log('识别到的有效链接数：' + results.length);
+              console.log('---- 前20条链接及标题 ----');
+
+              for (const item of results.slice(0, 20)) {
+                console.log('标题：' + item.label.slice(0, 180));
+                console.log('域名：' + item.host);
+                console.log('链接：' + item.href.slice(0, 700));
+                console.log('---');
+              }
+
+              // 直接检查页面源代码中的微信链接，包括被 HTML 转义的地址
+              const normalized = decodeHtml(html)
+                .replace(/\\u0026/g, '&')
+                .replace(/\\\//g, '/');
+
+              const wxLinks = new Set(
+                normalized.match(
+                  /https?:\/\/mp\.weixin\.qq\.com\/s\/[A-Za-z0-9_-]+/g
+                ) || []
+              );
+
+              console.log('页面源码中的微信原文链接数：' + wxLinks.size);
+
+              for (const link of [...wxLinks].slice(0, 20)) {
+                console.log('微信原文：' + link);
+              }
+
+              console.log(
+                '页面是否含文章标题关键词：' +
+                html.includes(title.slice(0, 12))
+              );
+            } catch (error) {
+              console.log('查询失败：' + error.message);
             }
           }
           NODE
