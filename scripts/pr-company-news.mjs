@@ -196,95 +196,38 @@ function looksLikeNavigation(text) {
 }
 
 function getArticleBody(html) {
-  const candidates = [];
-
-  // 优先尝试 article 容器。
-  const articlePattern = /<article\b[^>]*>/gi;
-  let articleMatch;
-
-  while ((articleMatch = articlePattern.exec(html)) !== null) {
-    candidates.push(
-      extractBalancedElement(html, articleMatch, "article")
-    );
-  }
-
-  // 再尝试常见的新闻正文容器。
-  const classPattern =
-    /<div\b[^>]*class=["'][^"']*(?:article-content|article-detail|news-content|news-detail|content-detail|article-body|news-body|detail-content|rich-text|news-detail-content|article_content|news_content)[^"']*["'][^>]*>/gi;
-
-  let classMatch;
-
-  while ((classMatch = classPattern.exec(html)) !== null) {
-    candidates.push(
-      extractBalancedElement(html, classMatch, "div")
-    );
-  }
-
-  // 只接受内容长度合理且未明显混入导航的候选区域。
-  for (const candidate of candidates) {
-    if (!candidate) continue;
-
-    const text = htmlToFormattedText(candidate);
-
-    if (text.length > 100 && !looksLikeNavigation(text)) {
-      return text;
-    }
-  }
-
-  // 备用方案：必须找到真正的 h1 标题，不能从整页纯文本截取。
-  const title = getTitle(html);
-  if (!title) return "";
-
-  const headings = html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/gi) || [];
-  let articleHTML = "";
-
-  for (const heading of headings) {
-    if (!stripHTML(heading).includes(title)) continue;
-
-    const headingIndex = html.indexOf(heading);
-    articleHTML = html.slice(headingIndex + heading.length);
-    break;
-  }
-
-  if (!articleHTML) return "";
-
-  // 先去掉标题后紧跟的发布日期。
-  articleHTML = articleHTML.replace(
-    /^\s*(?:<[^>]+>\s*){0,5}20\d{2}\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日/,
-    ""
-  );
-
-  // 遇到文章导航、推荐内容或页脚时停止。
-  const endPatterns = [
-    /<footer\b/i,
-    /<div\b[^>]*(?:id|class)=["'][^"']*footer[^"']*["'][^>]*>/i,
-    /上一篇/,
-    /下一篇/,
-    /相关阅读/,
-    /相关新闻/
+  const selectors = [
+    /<article\b[^>]*>([\s\S]*?)<\/article>/i,
+    /<div\b[^>]*class=["'][^"']*(?:article-content|article-detail|news-content|news-detail|content-detail)[^"']*["'][^>]*>([\s\S]*?)<\/div>/i,
+    /<main\b[^>]*>([\s\S]*?)<\/main>/i
   ];
 
-  let endIndex = articleHTML.length;
+  const removeUnwanted = value => value
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
+    .replace(/<(nav|header|footer|aside)\b[^>]*>[\s\S]*?<\/\1>/gi, "")
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/<[^>]+\b(?:onclick|onerror|onload|onmouseover)\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, "")
+    .replace(/\s+style\s*=\s*(?:"[^"]*"|'[^']*')/gi, "")
+    .replace(/\s+class\s*=\s*(?:"[^"]*"|'[^']*')/gi, "")
+    .replace(/\s+id\s*=\s*(?:"[^"]*"|'[^']*')/gi, "")
+    .trim();
 
-  for (const pattern of endPatterns) {
-    const match = pattern.exec(articleHTML);
+  for (const pattern of selectors) {
+    const match = html.match(pattern);
 
-    if (match && match.index > 100 && match.index < endIndex) {
-      endIndex = match.index;
+    if (match?.[1]) {
+      const cleaned = removeUnwanted(match[1]);
+      const text = stripHTML(cleaned);
+
+      if (text.length > 100) {
+        return cleaned;
+      }
     }
   }
 
-  articleHTML = articleHTML.slice(0, endIndex);
-
-  const text = htmlToFormattedText(articleHTML);
-
-  if (text.length <= 100 || looksLikeNavigation(text)) {
-    return "";
-  }
-
-  return text;
+  return "";
 }
-
 async function fetchHTML(url) {
   const response = await fetch(url, {
     headers: {
