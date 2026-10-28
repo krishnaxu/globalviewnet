@@ -475,14 +475,14 @@ async function init() {
           isChinese() ? "暂无公司新闻。" : "No company news available."
         }</p>`;
 
-       // 行业新闻编号从 01 开始。
-    industryGrid.innerHTML = industryTopThree.length
-     industryTopThree
-  .map((article, index) => renderArticle(article, index))
-  .join("")
-      : `<p class="muted">${
-          isChinese() ? "暂无行业新闻。" : "No industry news available."
-        }</p>`;
+  // 行业新闻编号从 01 开始。
+industryGrid.innerHTML = industryTopThree.length
+  ? industryTopThree
+      .map((article, index) => renderArticle(article, index))
+      .join("")
+  : `<p class="muted">${
+      isChinese() ? "暂无行业新闻。" : "No industry news available."
+    }</p>`;
 
     bindExpandButtons(companyGrid);
     bindExpandButtons(industryGrid);
