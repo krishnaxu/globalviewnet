@@ -1,6 +1,136 @@
 {
-  "generated_at": "2026-10-28T21:49:57.069Z",
+  "generated_at": "2026-10-28T22:48:26.697Z",
   "items": [
+    {
+      "id": "apple-s-touchscreen-macbook-pro-pushes-laptop-b446eade4a48",
+      "language": "en",
+      "title": "Apple’s touchscreen MacBook Pro pushes laptop pricing to a new extreme",
+      "excerpt": "Prepare to cough up around $14,549 if you want the new touchscreen MacBook Pro to have every upgrade.",
+      "date": "2026-10-28T22:47:50.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/apples-touchscreen-macbook-pro-pushes-laptop-pricing-to-a-new-extreme/",
+      "image": ""
+    },
+    {
+      "id": "2-5亿人次已受益-多地以旧换新上新-最高补贴2000元-52da9d38051f",
+      "language": "zh",
+      "title": "2.5亿人次已受益 多地以旧换新上新 最高补贴2000元",
+      "excerpt": "10月28日，商务部召开全国消费品以旧换新工作推进电视电话会议。数据显示，2026年以来，消费品以旧换新带动相关品类销售额超2万亿元，惠及超2.5亿人次。近日，河南、山西、天津、黑龙江、四川等地出台以旧换新自主品类补贴政策，将智能门锁、智能净水机、运动相机、助听器等智能家居、适老产品纳入补贴范围，部分产品最高补2000元。各地规则有什么不一样？哪些商品能享补贴？申领补贴要注意哪些问题？",
+      "date": "2026-10-28T22:43:11.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722496.shtml",
+      "image": ""
+    },
+    {
+      "id": "美联储宣布维持联邦基金利率不变-7c7011043a2a",
+      "language": "zh",
+      "title": "美联储宣布维持联邦基金利率不变",
+      "excerpt": "中新社华盛顿10月28日电 (记者 沙晗汀)美国联邦储备委员会28日宣布，将联邦基金利率目标区间维持在3.75%至4%不变，符合市场普遍预期。",
+      "date": "2026-10-28T22:39:44.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722495.shtml",
+      "image": ""
+    },
+    {
+      "id": "hands-on-with-apple-s-first-touchscreen-lapto-bb28a168ce30",
+      "language": "en",
+      "title": "Hands-on with Apple's first touchscreen laptop: Touch is totally optional",
+      "excerpt": "Any button that can be clicked can also be touched.",
+      "date": "2026-10-28T22:38:41.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/apple-touchscreen-macbook-pro-hands-on.html",
+      "image": ""
+    },
+    {
+      "id": "网红食品-谁在为-新奇-买单-a3bbcd5da096",
+      "language": "zh",
+      "title": "网红食品，谁在为“新奇”买单？",
+      "excerpt": "从奶皮子糖葫芦到固体杨枝甘露，再到超长蛋挞——",
+      "date": "2026-10-28T22:37:12.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722494.shtml",
+      "image": ""
+    },
+    {
+      "id": "中方敦促国际法院确保国际法平等统一适用-69be78642be9",
+      "language": "zh",
+      "title": "中方敦促国际法院确保国际法平等统一适用",
+      "excerpt": "中国常驻联合国副代表孙磊28日在安理会国际法院院长通报会上发言，敦促国际法院确保国际法平等统一适用。",
+      "date": "2026-10-28T22:34:28.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722493.shtml",
+      "image": ""
+    },
+    {
+      "id": "俄美乌三方谈判日期将公布-俄方称不邀欧洲参加-168bde76fdd6",
+      "language": "zh",
+      "title": "俄美乌三方谈判日期将公布 俄方称不邀欧洲参加",
+      "excerpt": "当地时间10月28日，俄罗斯总统助理乌沙科夫表示，俄方不打算邀请欧洲方面参加乌克兰问题谈判。乌沙科夫说，俄美乌三方谈判的日期将很快公布，但他未确认谈判定于11月10日举行。",
+      "date": "2026-10-28T22:31:24.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722492.shtml",
+      "image": ""
+    },
+    {
+      "id": "我的声音被ai-偷-走了-咋维权-af8bc187aa08",
+      "language": "zh",
+      "title": "我的声音被AI“偷”走了，咋维权？",
+      "excerpt": "“在视频里听到了‘自己’的声音，可我从来没为其配过音，该如何维权？”近日，配音演员王女士起诉某公司人工智能生成声音侵权的案件，由上海市第一中级人民法院依法审结。这是上海市首例人工智能合成语音引发的自然人声音权益保护纠纷案件，法院判决平台运营方构成声音侵权，须赔偿权利人经济损失5万元。",
+      "date": "2026-10-28T22:25:22.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722491.shtml",
+      "image": ""
+    },
+    {
+      "id": "西班牙高铁事故关键录音曝光-调度员违规下令列车-恢复全速-a877f110ed0a",
+      "language": "zh",
+      "title": "西班牙高铁事故关键录音曝光：调度员违规下令列车“恢复全速”",
+      "excerpt": "当地时间28日，西班牙托莱多省高铁特大追尾事故的关键调度通话录音曝光。据悉，这三段核心通话录音包括控制中心与停在轨道上的伊尔约公司列车司机的两次通话，以及与后方追尾的西班牙国家铁路公司列车司机的一次通话，这些录音证实了事故发生前的关键操作失误。",
+      "date": "2026-10-28T22:17:13.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722490.shtml",
+      "image": ""
+    },
+    {
+      "id": "美联储宣布维持利率不变-82d2e4e82161",
+      "language": "zh",
+      "title": "美联储宣布维持利率不变",
+      "excerpt": "美国联邦储备委员会28日结束为期两天的货币政策会议，宣布将联邦基金利率目标区间维持在3.75%至4%不变。这一决定符合市场此前广泛预期。",
+      "date": "2026-10-28T22:15:41.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722489.shtml",
+      "image": ""
+    },
+    {
+      "id": "全国短池游泳锦标赛收官-连创纪录-多点突破-e0aed7fac04f",
+      "language": "zh",
+      "title": "全国短池游泳锦标赛收官：连创纪录，多点突破",
+      "excerpt": "中新社北京10月29日电 (记者 国璇)2026年全国游泳锦标赛(25米)28日在北京国家游泳中心“水立方”收官。作为爱知·名古屋亚运会后的首场全国性游泳大赛，本届赛事对于许多选手而言是一次找回比赛节奏的综合演练。老将和新星创造多项纪录，为12月的北京短池世锦赛预热。",
+      "date": "2026-10-28T22:14:37.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/10-29/10722488.shtml",
+      "image": ""
+    },
+    {
+      "id": "girl-seriously-injured-in-wolf-attack-at-germ-881b52d1edde",
+      "language": "en",
+      "title": "Girl seriously injured in wolf attack at German wildlife park",
+      "excerpt": "The eight-year-old was in an enclosure with other children and a staff member when she was attacked.",
+      "date": "2026-10-28T22:08:52.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c678prm55gzzo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ad45/live/27f788a0-d30f-11f1-ad4f-5d2bbacf0caf.jpg"
+    },
+    {
+      "id": "microsoft-just-shared-azure-s-actual-revenue--0c8f9ce2d60c",
+      "language": "en",
+      "title": "Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion",
+      "excerpt": "Microsoft has never disclosed Azure's quarterly revenue in dollars. But for the first time, we can see just how close it is getting to besting the biggest competitor in the market, AWS.",
+      "date": "2026-10-28T21:58:32.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+      "image": ""
+    },
     {
       "id": "google-expands-ai-search-ads-globally-as-core-e46d29680afe",
       "language": "en",
@@ -2869,136 +2999,6 @@
       "date": "2026-10-28T06:27:53.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722163.shtml",
-      "image": ""
-    },
-    {
-      "id": "第四届临沂商城国际采购商大会在山东临沂开幕-7c7c0e62067f",
-      "language": "zh",
-      "title": "第四届临沂商城国际采购商大会在山东临沂开幕",
-      "excerpt": "图为国际采购商与参展商洽谈。中新社记者 梁犇 摄 图为第四届临沂商城国际采购商大会开幕式现场。中新社记者 梁犇 摄 图为国际采购商与参展商洽谈。中新社记者 梁犇 摄 图为亮相会场的智能机器人吸引中外采购商观看。中新社记者 梁犇 摄 图为第四届临沂商城国际采购商大会现场。中新社记者 梁犇 摄 图为国际采购商与参展商洽谈。中新社记者 梁犇 摄 图为国际采购商与参展商洽谈。中新社记者 梁犇 摄 图为国际采购商与参展商洽谈。中新社记者 梁犇 摄 图为国际采购商与参展商洽谈。中新社记者 梁犇 摄 图为国际采购商与参展商洽谈。中新社记者 梁犇 摄 图为第四届临沂商城国际采购商大会开幕式现场。中新社记者 梁犇 摄 图为国际采购商与参展商通过手机翻译软件交流洽谈。中新社记者 梁犇 摄",
-      "date": "2026-10-28T06:16:47.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-28/10722143.shtml",
-      "image": ""
-    },
-    {
-      "id": "粤港澳大湾区-2026粤港澳大湾区全球招商大会11月3日在广州开幕-c977843e14cc",
-      "language": "zh",
-      "title": "（粤港澳大湾区）2026粤港澳大湾区全球招商大会11月3日在广州开幕",
-      "excerpt": "中新社广州10月28日电 (记者 许青青)广东省官方28日公布，广东省政府与香港特区政府、澳门特区政府定于11月3日在广州联合举办2026粤港澳大湾区全球招商大会。目前，各项筹备工作已基本就绪。",
-      "date": "2026-10-28T06:16:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-28/10722156.shtml",
-      "image": ""
-    },
-    {
-      "id": "纪念台湾光复81周年-国台办-两岸同胞对历史有共同的记忆-c648327e4b8c",
-      "language": "zh",
-      "title": "纪念台湾光复81周年 国台办：两岸同胞对历史有共同的记忆",
-      "excerpt": "中新社北京10月28日电 (记者 黄欣欣 朱贺)今年10月25日是台湾光复81周年、台湾光复纪念日设立1周年。国务院台办发言人陈斌华28日在北京表示，两岸同胞血脉相连、骨肉相亲，对历史有共同的记忆，对民族有共同的责任，对未来有共同的期盼，这是任何人、任何势力都割裂不了也阻断不了的。",
-      "date": "2026-10-28T06:15:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722149.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国国际石油化工大会首次落地湛江-发布多项行业成果-77ae96885944",
-      "language": "zh",
-      "title": "中国国际石油化工大会首次落地湛江 发布多项行业成果",
-      "excerpt": "中新网湛江10月28日电(梁盛 谢剑锋)28日至31日，第十七届中国国际石油化工大会在广东湛江举行，目前已有超过1100名海内外嘉宾报名线下参会。",
-      "date": "2026-10-28T06:15:04.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722155.shtml",
-      "image": ""
-    },
-    {
-      "id": "深圳福田校园高尔夫球联赛收官-ai规则课堂亮相-3707ce6c82a9",
-      "language": "zh",
-      "title": "深圳福田校园高尔夫球联赛收官 AI规则课堂亮相",
-      "excerpt": "中新网深圳10月28日电 2026年深圳市福田区中小学生校园高尔夫球联赛近日在福田区景莲小学举行。这是全国首个由教育局主办、在校园内举行的高尔夫品牌赛事，今年第四度举办。本届赛事首次增设女子组，并引入AI辅助规则课堂，共有12所学校165名队员、60名小小赛事官参与。",
-      "date": "2026-10-28T06:13:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-28/10722153.shtml",
-      "image": ""
-    },
-    {
-      "id": "从-一人成军-到-群落共生-湘江畔兴起ai轻创业-c85b0c913874",
-      "language": "zh",
-      "title": "从“一人成军”到“群落共生” 湘江畔兴起AI轻创业",
-      "excerpt": "中新社长沙10月28日电 题：从“一人成军”到“群落共生” 湘江畔兴起AI轻创业",
-      "date": "2026-10-28T06:12:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722152.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国-四川-泰国经贸合作交流会在曼谷举办-d9bf8090e91e",
-      "language": "zh",
-      "title": "中国（四川）—泰国经贸合作交流会在曼谷举办",
-      "excerpt": "中新网曼谷10月28日电 (王茜 李映民)中国(四川)—泰国经贸合作交流会27日下午在曼谷举行。本次活动由四川省经济合作局主办，来自泰国政府机构、商协会、龙头企业以及在泰中资机构共100余名中泰嘉宾参会，汇聚政企商协会多方力量，搭建川泰双向投资、贸易拓展、产业协同的务实合作平台。",
-      "date": "2026-10-28T06:12:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-28/10722148.shtml",
-      "image": ""
-    },
-    {
-      "id": "走进中国乡村-从-土特产-到大产业-张家口小杂粮-香飘-海外-661093754bd0",
-      "language": "zh",
-      "title": "（走进中国乡村）从“土特产”到大产业 张家口小杂粮“香飘”海外",
-      "excerpt": "中新社河北张家口10月28日电 (记者 陈林)阳原“鹦哥绿豆”远销海外，康保荞麦米走上日本、韩国客户餐桌，蔚县小米出口美国、韩国等国家……在中国塞外山城张家口，传统小杂粮正从“土特产”发展为大产业，“闯”出国际大市场。",
-      "date": "2026-10-28T06:09:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-28/10722151.shtml",
-      "image": ""
-    },
-    {
-      "id": "村超-当-红娘-贵州榕江香杉牵手南康家具产业-764a39e6e5ed",
-      "language": "zh",
-      "title": "“村超”当“红娘” 贵州榕江香杉牵手南康家具产业",
-      "excerpt": "中新网贵阳10月28日电 (记者 袁超)10月26日至28日，贵州“村超”团队赴江西省赣州市南康区进行交流。作为盛产香杉的榕江县，此行以足球为纽带，在素有“中国实木家居之都”美誉的南康区，寻找产业合作商机，推动两地特色资源优势互补。",
-      "date": "2026-10-28T06:08:24.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722147.shtml",
-      "image": ""
-    },
-    {
-      "id": "oil-prices-rise-as-houthi-attacks-on-saudi-ar-f6b44ffa5008",
-      "language": "en",
-      "title": "Oil prices rise as Houthi attacks on Saudi Arabian refinery raise supply worries",
-      "excerpt": "Oil prices climbed Wednesday as investors weighed the prospect of a prolonged conflict in the Middle East.",
-      "date": "2026-10-28T05:52:51.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/28/oil-price-today-wti-brent-hormuz.html",
-      "image": ""
-    },
-    {
-      "id": "全国首单水利设施发电reits在深交所上市-89ca7db63e8d",
-      "language": "zh",
-      "title": "全国首单水利设施发电REITs在深交所上市",
-      "excerpt": "中新网深圳10月28日电 (记者 王坚)银华粤海水务水利封闭式基础设施证券投资基金(简称“银华粤海水务水利REIT”)28日在深圳证券交易所上市。",
-      "date": "2026-10-28T05:45:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722139.shtml",
-      "image": ""
-    },
-    {
-      "id": "印度自卡塔尔进口液化天然气量创近八个月新高-5e13725045e7",
-      "language": "zh",
-      "title": "印度自卡塔尔进口液化天然气量创近八个月新高",
-      "excerpt": "中新网北京10月28日电 新德里消息：据印度媒体当地时间28日报道，随着卡塔尔增加经霍尔木兹海峡运输的液化天然气(LNG)运输量，印度10月从卡塔尔进口的液化天然气量大幅回升，达到近八个月来的最高水平。",
-      "date": "2026-10-28T05:44:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-28/10722137.shtml",
-      "image": ""
-    },
-    {
-      "id": "今年前三季度大陆自台湾进口渔产品同比增35-5-de20784250f7",
-      "language": "zh",
-      "title": "今年前三季度大陆自台湾进口渔产品同比增35.5%",
-      "excerpt": "中新社北京10月28日电 (记者 黄欣欣 徐雪莹)国务院台办发言人陈斌华28日介绍，今年前三季度，大陆自台湾进口农产品同比增长18.5%，其中进口渔产品同比增长35.5%。",
-      "date": "2026-10-28T05:44:37.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722124.shtml",
       "image": ""
     }
   ]
