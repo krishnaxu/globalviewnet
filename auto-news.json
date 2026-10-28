@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-28T17:53:54.056Z",
+  "generated_at": "2026-10-28T18:57:47.187Z",
   "items": [
+    {
+      "id": "oracle-stock-pops-10-on-forecast-for-35-avera-422bc2b73636",
+      "language": "en",
+      "title": "Oracle stock pops 10% on forecast for 35% average revenue growth through 2030",
+      "excerpt": "Oracle issued a revenue forecast for fiscal year 2030 of $225 billion, and said it will limit additional fundraising over that stretch to $20 billion.",
+      "date": "2026-10-28T18:55:49.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/28/oracle-forecast-growth-2030.html",
+      "image": ""
+    },
+    {
+      "id": "we-re-adding-a-new-high-profile-ai-play-to-ou-8b02d17a916a",
+      "language": "en",
+      "title": "We're adding a new, high-profile AI play to our Bullpen stocks to watch list",
+      "excerpt": "With the Club portfolio now down to 31 positions, we are working on new ideas to add to the Bullpen.",
+      "date": "2026-10-28T18:33:53.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/28/were-adding-a-new-high-profile-ai-stock-to-our-bullpen.html",
+      "image": ""
+    },
+    {
+      "id": "amazon-turns-its-most-capable-smart-speaker-i-6047c8e896d2",
+      "language": "en",
+      "title": "Amazon turns its most capable smart speaker into a smart camera, too",
+      "excerpt": "The Echo Studio with Home Camera can \"see and understand what's in front of the camera.\"",
+      "date": "2026-10-28T18:05:22.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/amazon-adds-a-camera-to-its-best-sounding-smart-speaker-for-30-extra/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/download-500x500-1793206642.png"
+    },
+    {
+      "id": "cadillac-escalade-iq-review-huge-battery-huge-73965435a173",
+      "language": "en",
+      "title": "Cadillac Escalade IQ review: Huge battery, huge range, huge SUV",
+      "excerpt": "With more than 200 kWh, this luxury three-row can go 460 miles on a charge.",
+      "date": "2026-10-28T17:55:45.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/10/cadillac-escalade-iq-review-4-tons-of-electric-american-luxury-on-wheels/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/2026-Cadillac-Escalade-IQ-1-of-26-500x500.jpg"
+    },
     {
       "id": "ge-vernova-shares-slip-despite-a-beat-and-rai-32f244331143",
       "language": "en",
@@ -10,6 +50,36 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/investingclub/2026/10/28/ge-vernova-shares-slip-despite-a-beat-and-raise-what-the-sellers-are-getting-wrong.html",
       "image": ""
+    },
+    {
+      "id": "google-ai-gets-cagey-when-asked-who-won-the-2-f4fbe885f8a3",
+      "language": "en",
+      "title": "Google AI gets cagey when asked who won the 2020 elections",
+      "excerpt": "But the AI responses get more forthright when asked outside the US.",
+      "date": "2026-10-28T17:46:32.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2181827335-500x500.jpg"
+    },
+    {
+      "id": "florida-county-won-t-investigate-sketchy-floc-576adeb8bf9a",
+      "language": "en",
+      "title": "Florida county won’t investigate sketchy Flock cameras removed by mystery owners",
+      "excerpt": "Florida county claims it lacks resources to find owners of unpermitted Flock cameras.",
+      "date": "2026-10-28T17:37:49.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/florida-county-wont-investigate-sketchy-flock-cameras-removed-by-mystery-owners/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2290773984-500x500.jpg"
+    },
+    {
+      "id": "myanmar-diplomat-breaks-down-as-he-urges-worl-40d77dc941fe",
+      "language": "en",
+      "title": "Myanmar diplomat breaks down as he urges world to 'end our suffering'",
+      "excerpt": "Kyaw Moe Tun - Myanmar's representative to the UN - makes an emotional appeal after saying the international community had failed the country's people.",
+      "date": "2026-10-28T17:34:41.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cqz0ve10jxn2o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/de84/live/96c3b450-d2f3-11f1-a701-fddedf244c16.jpg"
     },
     {
       "id": "apple-brings-touch-to-the-mac-reversing-years-a196f029144b",
@@ -30,6 +100,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/28/apple-launches-its-new-touchscreen-macbook-pro/",
       "image": ""
+    },
+    {
+      "id": "apple-announces-touchscreen-macbook-pro-with--cabf6302d419",
+      "language": "en",
+      "title": "Apple announces touchscreen MacBook Pro with OLED display",
+      "excerpt": "The OLED display is the main draw, but the price is a lot to reckon with.",
+      "date": "2026-10-28T17:25:04.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/apple/2026/10/apple-announces-touchscreen-macbook-pro-with-oled-display/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/2026-MacBook-Pro-500x500-1793208141.jpg"
     },
     {
       "id": "as-ai-agents-reshape-the-web-google-opens-gem-dc7790b3a03a",
@@ -90,6 +170,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html",
       "image": ""
+    },
+    {
+      "id": "what-we-know-as-flávio-bolsonaro-lands-in-us--6bb2e9a9f628",
+      "language": "en",
+      "title": "What we know as Flávio Bolsonaro lands in US after Brazil election loss",
+      "excerpt": "The BBC's Ione Wells unpacks Bolsonaro's journey to Miami after losing Brazil's presidential election and facing a passport surrender order.",
+      "date": "2026-10-28T16:30:29.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/c6x29djyx7g9o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2708/live/9df1e7e0-d2eb-11f1-b441-2b33b063138f.jpg"
     },
     {
       "id": "looking-for-yield-this-could-be-one-of-the-be-34f231ef2ce6",
@@ -2909,96 +2999,6 @@
       "date": "2026-10-28T03:59:55.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722105.shtml",
-      "image": ""
-    },
-    {
-      "id": "国台办-所谓-敌意螺旋-由民进党当局蓄意制造-ff9ce7854a80",
-      "language": "zh",
-      "title": "国台办：所谓“敌意螺旋”由民进党当局蓄意制造",
-      "excerpt": "中新网10月28日电 10月28日，国务院台办举行例行新闻发布会。有记者问：最近有一个特别的现象，一方面是台湾绿营近期不断强调大陆的“跨境镇压”，另一方面是大陆影视近期也热播关于“抓捕台湾间谍”的电视剧。这种双方各自加强安全宣传、形塑安全威胁的做法，会否激化两岸民间的集体对立与不信任感？请问在大陆倡导两岸融合发展的同时，如何看待这种由两岸官方宣传与舆论攻防所共同推高的“敌意螺旋”？这对于两岸未来的民间正常交流会带来怎样的冲击？",
-      "date": "2026-10-28T03:53:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722106.shtml",
-      "image": ""
-    },
-    {
-      "id": "庄河新联会开展-新阶层-建设力-主题月系列直播活动-b9790032ff0a",
-      "language": "zh",
-      "title": "庄河新联会开展“新阶层·建设力”主题月系列直播活动",
-      "excerpt": "为深入落实大连市“新阶层·建设力”主题月活动要求，充分发挥新的社会阶层人士新媒体传播、资源链接、社会服务优势，庄河市新联会围绕“凝‘新’聚力·筑梦大连”主题，推出“新善大连·云聚庄河”“新艺大连·艺承庄河”两场专场直播，云端推介庄河乡村风貌、特色物产与非遗。",
-      "date": "2026-10-28T03:46:38.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/txy/2026/10-28/10722096.shtml",
-      "image": ""
-    },
-    {
-      "id": "世界中文报业协会年会在澳门举行-共商百年变局下中文报业发展-eff860b42f8f",
-      "language": "zh",
-      "title": "世界中文报业协会年会在澳门举行 共商百年变局下中文报业发展",
-      "excerpt": "中新网澳门10月28日电 (记者 郑嘉伟)世界中文报业协会第59届年会27日在澳门举行。来自世界各地的中文媒体代表和专家学者围绕“百年变局下中文报业如何扩大影响力”这一主题展开交流。",
-      "date": "2026-10-28T03:44:14.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/10-28/10722095.shtml",
-      "image": ""
-    },
-    {
-      "id": "中新网评-别成为下一个姆巴佩-7285480015e0",
-      "language": "zh",
-      "title": "中新网评：别成为下一个姆巴佩",
-      "excerpt": "中新网北京10月28日电(钟兴真)10月27日，法国球员姆巴佩就其发表的涉华不当言论道歉，声明以法、中、英三种语言发布。他说：“我的言论欠妥，如今我明白，这些话伤害了中国以及世界各地华人社区的许多人。我向所有被我的言论所伤害的人道歉。我对中国人民及其历史怀有深深的敬意，我真心感到抱歉。”",
-      "date": "2026-10-28T03:43:52.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-28/10722104.shtml",
-      "image": ""
-    },
-    {
-      "id": "澳大利亚首任驻华文化参赞梅卓琳-推开理解中国的那扇窗-a1c3a212e689",
-      "language": "zh",
-      "title": "澳大利亚首任驻华文化参赞梅卓琳：推开理解中国的那扇窗",
-      "excerpt": "中新社悉尼10月28日电 题：澳大利亚首任驻华文化参赞梅卓琳：推开理解中国的那扇窗",
-      "date": "2026-10-28T03:40:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/10-28/10722081.shtml",
-      "image": ""
-    },
-    {
-      "id": "第三季度国家标准下载量超1200万人次-同比增长78-c6daea0d905b",
-      "language": "zh",
-      "title": "第三季度国家标准下载量超1200万人次 同比增长78%",
-      "excerpt": "中新网10月28日电 据市场监管总局网站消息，第三季度，国家标准下载量超过1200万人次，比去年同期增长78%；在线阅读量超过860万人次，与去年同期基本持平。这是国家标准免费公开以来，季度下载量首次超过在线阅读量，表明社会公众的标准需求正从“知晓”为主不断向“掌握”为主深化。",
-      "date": "2026-10-28T03:38:50.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-28/10722097.shtml",
-      "image": ""
-    },
-    {
-      "id": "美疾控中心最新报告-19种病原体每年致美国超5万人死亡-8a296454089c",
-      "language": "zh",
-      "title": "美疾控中心最新报告：19种病原体每年致美国超5万人死亡",
-      "excerpt": "中新网10月28日电 综合美媒报道，美国疾病控制和预防中心27日发布2026年度抗微生物药物耐药性威胁报告。据报告估算，共有19种病原体每年在美国造成约970万例感染、5.08万人死亡。在这些死亡病例中，与医疗环境(如医院)密切相关的感染造成的死亡人数超过4.2万人，相关医疗费用接近120亿美元。",
-      "date": "2026-10-28T03:38:36.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-28/10722079.shtml",
-      "image": ""
-    },
-    {
-      "id": "kylian-mbappé-faces-china-backlash-as-sponsor-3c5220424edc",
-      "language": "en",
-      "title": "Kylian Mbappé faces China backlash as sponsors cut ties over viral meme",
-      "excerpt": "Chinese state media has warned Kylian Mbappé that his apology over remarks referring to Mao Zedong as a dictator will be judged against his actions.",
-      "date": "2026-10-28T03:33:53.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/28/china-mbappe-football-sponsor-meme-controversy.html",
-      "image": ""
-    },
-    {
-      "id": "澳大利亚向我国返还2件流失文物-e1d36327ca85",
-      "language": "zh",
-      "title": "澳大利亚向我国返还2件流失文物",
-      "excerpt": "",
-      "date": "2026-10-28T03:33:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-28/10722103.shtml",
       "image": ""
     }
   ]
