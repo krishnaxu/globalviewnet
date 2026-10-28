@@ -477,8 +477,8 @@ async function init() {
 
     // 使用不同的编号，避免两个列表中的正文展开 ID 重复。
     industryGrid.innerHTML = industryTopThree.length
-      ? industryTopThree
-          .map((article, index) => renderArticle(article, index + 1000))
+     industryTopThree
+  .map((article, index) => renderArticle(article, index))
           .join("")
       : `<p class="muted">${
           isChinese() ? "暂无行业新闻。" : "No industry news available."
