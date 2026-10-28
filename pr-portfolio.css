@@ -312,3 +312,13 @@
     gap: 8px;
   }
 }
+/* 强制 PR作品主标题大于两个二级标题 */
+#prPortfolioSection > .section-heading h2 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+
+#prPortfolioSection .pr-portfolio-group .section-heading h3 {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
