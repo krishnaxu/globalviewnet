@@ -29,6 +29,102 @@
       return "";
     }
   }
+  function sanitizeArticleHTML(html, baseURL) {
+  const doc = new DOMParser().parseFromString(
+    `<div>${html}</div>`,
+    "text/html"
+  );
+
+  const allowedTags = new Set([
+    "P", "BR", "STRONG", "B", "EM", "I", "U",
+    "H2", "H3", "H4", "UL", "OL", "LI",
+    "BLOCKQUOTE", "A", "IMG", "TABLE", "THEAD",
+    "TBODY", "TR", "TH", "TD", "DIV", "SPAN"
+  ]);
+
+  const root = doc.body.firstElementChild;
+
+  function clean(node) {
+    for (const child of [...node.childNodes]) {
+      if (child.nodeType === Node.COMMENT_NODE) {
+        child.remove();
+        continue;
+      }
+
+      if (child.nodeType !== Node.ELEMENT_NODE) continue;
+
+      if (!allowedTags.has(child.tagName)) {
+        if (["SCRIPT", "STYLE", "IFRAME", "OBJECT", "SVG"].includes(
+          child.tagName
+        )) {
+          child.remove();
+        } else {
+          child.replaceWith(...child.childNodes);
+        }
+        continue;
+      }
+
+      for (const attr of [...child.attributes]) {
+        if (
+          child.tagName === "A" &&
+          ["href", "title"].includes(attr.name.toLowerCase())
+        ) {
+          continue;
+        }
+
+        if (
+          child.tagName === "IMG" &&
+          ["src", "alt", "title", "width", "height"].includes(
+            attr.name.toLowerCase()
+          )
+        ) {
+          continue;
+        }
+
+        child.removeAttribute(attr.name);
+      }
+
+      if (child.tagName === "A") {
+        const href = child.getAttribute("href");
+        try {
+          const url = new URL(href, baseURL);
+          if (["http:", "https:"].includes(url.protocol)) {
+            child.setAttribute("href", url.href);
+            child.setAttribute("target", "_blank");
+            child.setAttribute("rel", "noopener noreferrer");
+          } else {
+            child.removeAttribute("href");
+          }
+        } catch {
+          child.removeAttribute("href");
+        }
+      }
+
+      if (child.tagName === "IMG") {
+        const src = child.getAttribute("src");
+        try {
+          const url = new URL(src, baseURL);
+          if (["http:", "https:"].includes(url.protocol)) {
+            child.setAttribute("src", url.href);
+            child.setAttribute("loading", "lazy");
+            child.setAttribute("referrerpolicy", "no-referrer");
+          } else {
+            child.remove();
+            continue;
+          }
+        } catch {
+          child.remove();
+          continue;
+        }
+      }
+
+      clean(child);
+    }
+  }
+
+  clean(root);
+  return root.innerHTML;
+}
 
   function formatDate(value) {
     if (!value) return "";
@@ -58,16 +154,21 @@
     const title = escapeHTML(article.title);
     const source = escapeHTML(sourceLabel(article.source));
     const date = escapeHTML(formatDate(article.date));
-    const body = escapeHTML(article.body || "");
+    const rawBody = article.body || "";
+const hasHTML = /<\/?(p|h[1-6]|strong|b|em|ul|ol|li|img|table)\b/i.test(rawBody);
+
+const body = hasHTML
+  ? sanitizeArticleHTML(rawBody, article.source_url || window.location.origin)
+  : escapeHTML(rawBody).replace(/\n/g, "<br>");
     const excerpt = escapeHTML(article.excerpt || "");
     const sourceURL = safeURL(article.source_url);
     const detailId = `pr-portfolio-detail-${index}`;
 
-    const content = body
-      ? `<div class="pr-portfolio-body">${body.replace(/\n/g, "<br>")}</div>`
-      : `<p class="pr-portfolio-excerpt">${
-          excerpt || (isChinese() ? "暂无正文内容。" : "No article content available.")
-        }</p>`;
+   const content = body
+  ? `<div class="pr-portfolio-body">${body}</div>`
+  : `<p class="pr-portfolio-excerpt">${
+      excerpt || (isChinese() ? "暂无正文内容。" : "No article content available.")
+    }</p>`;
 
     const originalLink = sourceURL
       ? `<a class="pr-portfolio-original"
