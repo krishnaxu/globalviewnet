@@ -1,6 +1,126 @@
 {
-  "generated_at": "2026-10-29T19:55:43.436Z",
+  "generated_at": "2026-10-29T20:52:40.426Z",
   "items": [
+    {
+      "id": "intel-stock-plunges-16-as-chipmaker-blames-pc-0d4ba8de9f75",
+      "language": "en",
+      "title": "Intel stock plunges 16% as chipmaker blames PC slowdown for weak guidance",
+      "excerpt": "Intel has been a Wall Street darling this year due to its emergence as a player in AI, but the company is being weighed down by a struggling PC market.",
+      "date": "2026-10-29T20:47:13.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/intel-intc-q3-earnings-report-2026-.html",
+      "image": ""
+    },
+    {
+      "id": "fan-fiction-site-archive-of-our-own-could-be--14fa7a1cc7db",
+      "language": "en",
+      "title": "Fan fiction site Archive of Our Own could be offline for up to 4 weeks",
+      "excerpt": "Archive of Our Own, the popular online home of fan fiction readers and writers, has bad news for its community.",
+      "date": "2026-10-29T20:43:56.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/fan-fiction-site-archive-of-our-own-could-be-offline-for-up-to-4-weeks/",
+      "image": ""
+    },
+    {
+      "id": "reddit-shares-sink-on-weak-sales-guidance-and-5c84ed9979b6",
+      "language": "en",
+      "title": "Reddit shares sink on weak sales guidance and plans login requirement test as Google search traffic shrinks",
+      "excerpt": "Reddit posts third-quarter earnings and reveals plans to require all users to create official accounts as Google search traffic shrinks",
+      "date": "2026-10-29T20:35:59.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/reddit-rddt-q3-2026.html",
+      "image": ""
+    },
+    {
+      "id": "rivian-third-quarter-earnings-beat-estimates--a0c09a9c3c0d",
+      "language": "en",
+      "title": "Rivian third-quarter earnings beat estimates as software revenue, R2 deliveries rise",
+      "excerpt": "Rivian also revised its 2026 guidance to mark expected improvements in its vehicle deliveries, pre-tax adjusted earnings and capital expenditures.",
+      "date": "2026-10-29T20:35:04.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/rivian-rivn-earnings-q3-2026.html",
+      "image": ""
+    },
+    {
+      "id": "starbucks-sales-fall-short-of-expectations-bu-32d43b4df4fe",
+      "language": "en",
+      "title": "Starbucks sales fall short of expectations, but its U.S. turnaround continues to gain steam",
+      "excerpt": "Starbucks' U.S. stores topped Wall Street's comparable sales expectations but its international business fell short of estimates.",
+      "date": "2026-10-29T20:29:10.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/starbucks-sbux-q4-2026-earnings.html",
+      "image": ""
+    },
+    {
+      "id": "windows-11-gets-right-click-menu-improvements-77d6bd61a607",
+      "language": "en",
+      "title": "Windows 11 gets right-click menu improvements as PC revenue slides",
+      "excerpt": "The latest update also brings a cloud recovery option for PCs that won't boot.",
+      "date": "2026-10-29T20:18:49.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/windows-11-gets-right-click-menu-improvements-as-pc-revenue-slides/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Hero-Bloom-Logo-1000x563_Windows_11_MS-500x500.jpg"
+    },
+    {
+      "id": "as-search-traffic-dries-up-reddit-announces-i-4a81ec2699fd",
+      "language": "en",
+      "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
+      "excerpt": "As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business.",
+      "date": "2026-10-29T20:08:31.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+      "image": ""
+    },
+    {
+      "id": "pentagon-ig-refuses-to-investigate-starlink-s-467b398d06b7",
+      "language": "en",
+      "title": "Pentagon IG refuses to investigate Starlink/Starshield slowdown in Ukraine",
+      "excerpt": "Inspector general rejected request from Democratic and Republican senators.",
+      "date": "2026-10-29T20:08:10.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/pentagon-ig-refuses-to-investigate-starlink-starshield-slowdown-in-ukraine/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/starlink-ukraine-500x500-1792605024.jpg"
+    },
+    {
+      "id": "the-city-is-alive-a-brief-peace-in-kherson-bu-6a9e1f4905d4",
+      "language": "en",
+      "title": "'The city is alive': A brief peace in Kherson, but residents fear what comes next",
+      "excerpt": "A temporary ceasefire has brought rare quiet to Kherson, offering its residents a glimpse of normal life before fighting resumes.",
+      "date": "2026-10-29T20:05:57.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck1l393pyrylo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cbb9/live/fe693560-d3c2-11f1-93e1-3b657b665bcf.jpg"
+    },
+    {
+      "id": "rivian-expands-joint-venture-with-vw-to-inclu-eb97518808c8",
+      "language": "en",
+      "title": "Rivian expands joint venture with VW to include AI assistant",
+      "excerpt": "Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result.",
+      "date": "2026-10-29T20:05:47.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
+      "image": ""
+    },
+    {
+      "id": "the-r2-suv-is-already-rivian-s-best-selling-v-2523f5393219",
+      "language": "en",
+      "title": "The R2 SUV is already Rivian’s best-selling vehicle",
+      "excerpt": "Rivian is seeing strong enough sales of the new EV that it improved its guidance to Wall Street for the second time this year.",
+      "date": "2026-10-29T20:02:03.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/the-r2-suv-is-already-rivians-best-selling-vehicle/",
+      "image": ""
+    },
+    {
+      "id": "openai-backed-thrive-holdings-acquires-adt-c64d19fa0032",
+      "language": "en",
+      "title": "OpenAI-backed Thrive Holdings acquires ADT",
+      "excerpt": "OpenAI-backed Thrive Holdings is buying ADT in a $15.3 billion deal, with plans to bring AI to the home security business.",
+      "date": "2026-10-29T19:56:19.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+      "image": ""
+    },
     {
       "id": "some-polymarket-user-funds-stolen-by-hackers--90f8dbc8ba88",
       "language": "en",
@@ -9,6 +129,16 @@
       "date": "2026-10-29T19:54:56.000Z",
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/29/polymarket-reports-outage-on-international-exchange-halts-trading.html",
+      "image": ""
+    },
+    {
+      "id": "jim-cramer-why-investors-are-punishing-alphab-65b9db2bb4fc",
+      "language": "en",
+      "title": "Jim Cramer: Why investors are punishing Alphabet and giving Microsoft a pass",
+      "excerpt": "Microsoft is faring better because of its financial spending, Jim Cramer said Thursday, a day after earnings.",
+      "date": "2026-10-29T19:30:33.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/29/jim-cramer-why-investors-are-punishing-alphabet-and-giving-microsoft-a-pass.html",
       "image": ""
     },
     {
@@ -40,6 +170,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/investingclub/2026/10/29/were-downgrading-alphabet-after-a-rough-quarter-where-wed-buy-again.html",
       "image": ""
+    },
+    {
+      "id": "trump-declares-robot-imports-a-national-secur-85248bd11eaa",
+      "language": "en",
+      "title": "Trump declares robot imports a national security threat",
+      "excerpt": "President orders trade talks on foreign-made factory robots, threatens tariffs.",
+      "date": "2026-10-29T19:07:53.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/6k_quick_delivery_robots-500x500.jpg"
     },
     {
       "id": "rare-stanley-druckenmiller-post-sends-crypto--b9cefaeacf10",
@@ -2859,146 +2999,6 @@
       "date": "2026-10-29T07:17:04.000Z",
       "source_name": "中新网财经新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722725.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家再次对成品油价格实施调控-8f115d3c3a13",
-      "language": "zh",
-      "title": "国家再次对成品油价格实施调控",
-      "excerpt": "中新网10月29日电 据国家发改委网站消息，10月15日国内成品油价格调整以来，中东地缘紧张局势升级，国际市场原油价格大幅上涨。为减缓对国内的冲击，国家再次对成品油价格采取调控措施。根据现行价格机制计算，自10月29日24时起，国内汽、柴油(标准品)价格每吨分别应上调440元、420元，统筹兼顾减轻下游用户负担和保障成品油安全稳定供应，调控后实际上调345元、335元。",
-      "date": "2026-10-29T07:03:32.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722719.shtml",
-      "image": ""
-    },
-    {
-      "id": "tencent-visa-deepen-payments-push-in-china-af-4b3916097362",
-      "language": "en",
-      "title": "Tencent, Visa deepen payments push in China after regulatory green light",
-      "excerpt": "Tencent and Visa are expanding their payments partnership following recent regulatory approvals for foreign financial firms in China.",
-      "date": "2026-10-29T07:01:50.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/29/tencent-visa-citi-mastercard-.html",
-      "image": ""
-    },
-    {
-      "id": "2026年7月至9月-338部国产微短剧-网络动画片获得发行许可-d24f69cac0a0",
-      "language": "zh",
-      "title": "2026年7月至9月，338部国产微短剧、网络动画片获得发行许可",
-      "excerpt": "中新网10月29日电 据国家广播电视总局微信公众号消息，根据国家广播电视总局网络剧片发行许可管理有关要求，现将2026年7月至9月全国国产微短剧、网络动画片发行许可情况通告如下：",
-      "date": "2026-10-29T06:57:57.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/10-29/10722713.shtml",
-      "image": ""
-    },
-    {
-      "id": "外籍摄影师镜头里的中国-丰富多彩-有温度-变化大-f8a81dc37dd3",
-      "language": "zh",
-      "title": "外籍摄影师镜头里的中国：丰富多彩、有温度、变化大",
-      "excerpt": "中新社唐山10月29日电 题：外籍摄影师镜头里的中国：丰富多彩、有温度、变化大",
-      "date": "2026-10-29T06:55:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722709.shtml",
-      "image": ""
-    },
-    {
-      "id": "武汉地铁12号线二期开通-亚洲最长地铁环线闭环-24900314dc73",
-      "language": "zh",
-      "title": "武汉地铁12号线二期开通 亚洲最长地铁环线闭环",
-      "excerpt": "中新社武汉10月29日电 (张芹 袁永华)武汉轨道交通12号线二期29日开通初期运营，与此前通车的一期贯通。至此，全长59.9公里、设站37座的亚洲最长地铁环线“画圆”，串联起武汉市的武昌、汉口、汉阳“三镇”。",
-      "date": "2026-10-29T06:52:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722673.shtml",
-      "image": ""
-    },
-    {
-      "id": "三代侨眷一条心-戈壁荒滩变-金滩-14ef97f57a9a",
-      "language": "zh",
-      "title": "三代侨眷一条心 戈壁荒滩变“金滩”",
-      "excerpt": "走进昌吉州玛纳斯县塔西河乡大草滩村，笔直的巷道串联起整齐的安居房，5G信号满格，半数以上家庭开上了小轿车。很难想象，这个几代侨眷村民共耕共居的侨乡，曾是“白碱遍地、漫无人烟”的不毛之地。",
-      "date": "2026-10-29T06:52:43.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/txy/2026/10-29/10722716.shtml",
-      "image": ""
-    },
-    {
-      "id": "居民留得住-住得好-山西平遥古城重塑-地下经络-2dff8c53dc0c",
-      "language": "zh",
-      "title": "居民留得住、住得好 山西平遥古城重塑“地下经络”",
-      "excerpt": "中国式现代化，民生为大。地下管网改造，修的不只是管道，也是一座城市的温度。",
-      "date": "2026-10-29T06:52:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722715.shtml",
-      "image": ""
-    },
-    {
-      "id": "首单-首批-串起金融开放脉络-北京朝阳-两区-建设筑牢高水平发展金融支撑-e48d694902a7",
-      "language": "zh",
-      "title": "“首单”“首批”串起金融开放脉络 北京朝阳“两区”建设筑牢高水平发展金融支撑",
-      "excerpt": "中新网北京10月29日电 (记者 杜燕)今年10月，北京国际大数据交易所落地北京首单数字人民币结算的数据交易，将数据流通和数字人民币对公支付绑定，创新建立数据交易数币结算模式，实现交易订单与数字人民币对公支付通道无缝衔接。",
-      "date": "2026-10-29T06:50:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722700.shtml",
-      "image": ""
-    },
-    {
-      "id": "应对主汛期-大考-荆门地下筑起-万方水库-e2125a9a6c92",
-      "language": "zh",
-      "title": "应对主汛期“大考” 荆门地下筑起“万方水库”",
-      "excerpt": "截至2025年底，我国已建成地下管网总长度近390万公里。《城市更新“十五五”规划》提出，要开展城市地下管网体检，建设改造城市地下管网约77万公里。湖北荆门每年6到8月是主汛期，面对降雨大风，地下管网该如何应对“大考”？",
-      "date": "2026-10-29T06:50:05.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722714.shtml",
-      "image": ""
-    },
-    {
-      "id": "第十七届海峡两岸-厦门-文化产业博览交易会开幕-7138bb55731c",
-      "language": "zh",
-      "title": "第十七届海峡两岸（厦门）文化产业博览交易会开幕",
-      "excerpt": "中新网厦门10月29日电 (吴冠标)10月29日，第十七届海峡两岸(厦门)文化产业博览交易会(简称“海峡两岸文博会”)在厦门国际会展中心开幕。",
-      "date": "2026-10-29T06:49:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722708.shtml",
-      "image": ""
-    },
-    {
-      "id": "梯田风韵登浦江舞台-沪滇协作三十周年专场演出亮相长宁-554bff1cc2e1",
-      "language": "zh",
-      "title": "梯田风韵登浦江舞台 沪滇协作三十周年专场演出亮相长宁",
-      "excerpt": "中新网上海10月29日电(范宇斌)近日，沪滇协作三十周年“千里山海·宁红同心”专场演出在上海市长宁区举行。海派风华与哈尼族、彝族原生态歌舞同台交响，为现场观众留下一场别样的山海记忆。",
-      "date": "2026-10-29T06:47:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/10-29/10722707.shtml",
-      "image": ""
-    },
-    {
-      "id": "农业农村部和中国气象局联合发布农牧业雪灾风险预警-eff59b44597a",
-      "language": "zh",
-      "title": "农业农村部和中国气象局联合发布农牧业雪灾风险预警",
-      "excerpt": "中新网10月29日电 据中国气象局微博消息，预计10月29-31日，黑龙江西北部、内蒙古东北部、西藏西部和南部的部分地区有大到暴雪，西藏南部局地特大暴雪，上述地区农牧业雪灾风险较高，其中西藏日喀则市亚东县、聂拉木县、吉隆县，阿里地区札达县西部等地农牧业雪灾风险高。建议提前做好温室棚舍加固除雪、防寒保暖工作，同时备足草料，防范饲草短缺。",
-      "date": "2026-10-29T06:47:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722710.shtml",
-      "image": ""
-    },
-    {
-      "id": "第三届中俄教育文化论坛在北京举行-61dd32f5095a",
-      "language": "zh",
-      "title": "第三届中俄教育文化论坛在北京举行",
-      "excerpt": "中新网北京10月29日电 (记者 苏婧欣)10月28日，第三届中俄教育文化论坛在北京举行，30余所俄罗斯高校代表及中方合作伙伴参加活动，围绕教育创新及俄中合作发展前景展开讨论。",
-      "date": "2026-10-29T06:47:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722705.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026京洽会启幕-搭建双向投资贸易合作平台-a804c88d925f",
-      "language": "zh",
-      "title": "2026京洽会启幕 搭建双向投资贸易合作平台",
-      "excerpt": "中新网北京10月29日电 (记者 吕少威)为期两天的2026北京国际投资贸易洽谈会(简称“京洽会”)29日在北京昆仑饭店启幕。本届京洽会由北京市贸促会、北京国际商会主办，朝阳区人民政府联合主办，以“共商 共享 共赢”为主题，打造双向投资贸易合作平台，促进中外资本、产业深度对接，以高水平对外开放赋能首都高质量发展。",
-      "date": "2026-10-29T06:46:47.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722704.shtml",
       "image": ""
     }
   ]
