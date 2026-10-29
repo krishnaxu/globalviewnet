@@ -1,6 +1,86 @@
 {
-  "generated_at": "2026-10-29T16:00:43.704Z",
+  "generated_at": "2026-10-29T17:00:07.749Z",
   "items": [
+    {
+      "id": "u-s-investigated-chinese-spy-plot-aimed-at-nv-8b38a3a44bca",
+      "language": "en",
+      "title": "U.S. investigated Chinese spy plot aimed at Nvidia CEO",
+      "excerpt": "A top executive of a Singapore AI cloud company that was accused of illegally selling Nvidia chips to China could also have been a Chinese spy, sources have told the New York Times.",
+      "date": "2026-10-29T16:42:32.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
+      "image": ""
+    },
+    {
+      "id": "norwegian-shares-surge-13-on-earnings-beat-gu-214358685426",
+      "language": "en",
+      "title": "Norwegian shares surge 13% on earnings beat, guidance raise",
+      "excerpt": "Norwegian said the company's bookings had \"improved modestly\" but remain below its optimal range.",
+      "date": "2026-10-29T16:23:37.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/norwegian-earnings-guidance-shares.html",
+      "image": ""
+    },
+    {
+      "id": "nvidia-responds-to-report-jensen-huang-was-ta-b0386c69dd65",
+      "language": "en",
+      "title": "Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were 'investigated and debunked'",
+      "excerpt": "Nvidia disputed a New York Times report that U.S. intelligence agencies surveilled a person close to CEO Jensen Huang over concerns she could be a Chinese spy.",
+      "date": "2026-10-29T16:22:19.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html",
+      "image": ""
+    },
+    {
+      "id": "ex-palantir-execs-launch-dream-with-17m-from--8dc21525d02f",
+      "language": "en",
+      "title": "Ex-Palantir execs launch Dream with $17M from a16z to build AI world models for construction",
+      "excerpt": "rained on 100 million square feet of building permits, dream wants to disrupt Autodesk with AI.",
+      "date": "2026-10-29T16:21:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+      "image": ""
+    },
+    {
+      "id": "superme-raises-20m-for-its-network-of-ai-expe-ff158af3f95b",
+      "language": "en",
+      "title": "SuperMe raises $20M for its network of AI expert profiles",
+      "excerpt": "SuperMe is a network of AI profiles built from the knowledge of real-life experts. When you ask a question, the platform determines which experts are best suited to answer and creates a group chat with their AI profiles.",
+      "date": "2026-10-29T16:19:43.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/superme-raises-20m-for-its-network-of-ai-expert-profiles/",
+      "image": ""
+    },
+    {
+      "id": "irs-ceo-bisignano-donates-to-trump-accounts-i-1af4c140d5e7",
+      "language": "en",
+      "title": "IRS CEO Bisignano donates to Trump Accounts in his childhood Brooklyn ZIP code",
+      "excerpt": "IRS CEO Frank Bisignano has donated to Trump Accounts for Brooklyn kids from his hometown ZIP code. Here's what families need to know.",
+      "date": "2026-10-29T16:06:02.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/trump-accounts-frank-bisignano-brooklyn.html",
+      "image": ""
+    },
+    {
+      "id": "cramer-sees-opportunity-amid-tech-turmoil-and-bf924ede4825",
+      "language": "en",
+      "title": "Cramer sees opportunity amid tech turmoil and predicts a holiday win for FedEx",
+      "excerpt": "The Investing Club holds its \"Morning Meeting\" every weekday at 10:20 a.m. ET.",
+      "date": "2026-10-29T16:01:51.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/29/cramer-sees-opportunity-amid-tech-turmoil-and-predicts-a-holiday-win-for-fedex.html",
+      "image": ""
+    },
+    {
+      "id": "amazon-to-report-q3-earnings-after-the-bell-w-d1e433e371c8",
+      "language": "en",
+      "title": "Amazon to report Q3 earnings after the bell with AI spend under scrutiny",
+      "excerpt": "Amazon Web Services sales are projected to grow 38%, marking a fifth consecutive quarter of revenue expansion.",
+      "date": "2026-10-29T16:00:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html",
+      "image": ""
+    },
     {
       "id": "inside-the-scramble-that-moved-thursday-s-wnb-aab76528031d",
       "language": "en",
@@ -819,6 +899,16 @@
       "date": "2026-10-29T13:00:00.000Z",
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-subscriptions-and-update-delivery-instructions/",
+      "image": ""
+    },
+    {
+      "id": "amazon-updates-alexa-to-help-you-manage-shopp-f303d11137ac",
+      "language": "en",
+      "title": "Amazon updates Alexa to help you manage shopping lists and subscriptions and update delivery instructions",
+      "excerpt": "The update allows you to use Alexa to create lists, register them, see what's on them, and add or edit items. You can also manage subscriptions.",
+      "date": "2026-10-29T13:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-and-subscriptions-and-update-delivery-instructions/",
       "image": ""
     },
     {
@@ -2909,96 +2999,6 @@
       "date": "2026-10-29T05:41:54.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "http://www.chinanews.com.cn/sh/shipin/cns-d/2026/10-29/news1073257.shtml",
-      "image": ""
-    },
-    {
-      "id": "西藏巴青震区房屋安全如何判定-住建部专家详解-9c24bc5b81e9",
-      "language": "zh",
-      "title": "西藏巴青震区房屋安全如何判定？住建部专家详解",
-      "excerpt": "10月22日，西藏那曲市巴青县发生7.0级地震。地震发生后，房屋能否安全居住、受损建筑如何修复，以及后续如何开展灾后重建，成为震区民众关心的问题。近日，住房城乡建设部派出专家赴巴青震区实地了解情况，并就震后房屋安全评估、修复加固及灾后重建等问题作出专业解读。(谢牧 西藏那曲报道）",
-      "date": "2026-10-29T05:41:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/sh/shipin/cns/2026/10-29/news1073256.shtml",
-      "image": ""
-    },
-    {
-      "id": "让陌生人把关购物车-能拦住冲动消费吗-f7a65723c16b",
-      "language": "zh",
-      "title": "让陌生人把关购物车，能拦住冲动消费吗？",
-      "excerpt": "“今年双十一，实行审批制。”10月21日，网名叫作慧慧的网友在社交媒体上发帖，给自己的双十一购物立了条规矩。",
-      "date": "2026-10-29T05:39:27.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722664.shtml",
-      "image": ""
-    },
-    {
-      "id": "海外华文媒体走访青岛科创大走廊-感受中国智造出海活力-d2e8f9c40336",
-      "language": "zh",
-      "title": "海外华文媒体走访青岛科创大走廊 感受中国智造出海活力",
-      "excerpt": "中新网青岛10月29日电 (王禹 张孝鹏)2026年海外华文媒体走进青岛媒体行活动28日在山东青岛落下帷幕。由韩国、菲律宾、科特迪瓦等多国媒体记者组成的采访团，走进青岛科创大走廊，实地探访当地在工业互联网、新能源装备、人形机器人等领域的创新成果，感受这条“创新主动脉”的产业活力。",
-      "date": "2026-10-29T05:34:21.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/10-29/10722653.shtml",
-      "image": ""
-    },
-    {
-      "id": "2680元请来个兼职学生-社媒上-婚礼摄影工作室-水有多深-04eb2030b612",
-      "language": "zh",
-      "title": "2680元请来个兼职学生，社媒上“婚礼摄影工作室”水有多深？",
-      "excerpt": "2680元请婚礼摄影，来了个兼职学生",
-      "date": "2026-10-29T05:32:45.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722663.shtml",
-      "image": ""
-    },
-    {
-      "id": "辽宁秋假文化活动开启-让青少年走出课堂享受艺术时光-bb53e66e2b7a",
-      "language": "zh",
-      "title": "辽宁秋假文化活动开启 让青少年走出课堂享受艺术时光",
-      "excerpt": "中新网沈阳10月29日电 (记者 韩宏)辽宁省文化中心围绕2026年度秋假，聚焦舞台展演、文博研学、非遗手作、阅读推广、艺术展览、线上互动等六大板块，于10月29日至11月2日秋假期间集中推出系列文化活动。",
-      "date": "2026-10-29T05:31:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722658.shtml",
-      "image": ""
-    },
-    {
-      "id": "台湾教师扎根黄河岸边-三尺讲台-83acb64c0f4b",
-      "language": "zh",
-      "title": "台湾教师扎根黄河岸边“三尺讲台”",
-      "excerpt": "中新网济南10月29日电 题：台湾教师扎根黄河岸边“三尺讲台”",
-      "date": "2026-10-29T05:30:47.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722660.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国选手施晗首进广网巡回赛八强-8a476f979c3e",
-      "language": "zh",
-      "title": "中国选手施晗首进广网巡回赛八强",
-      "excerpt": "中新网广州10月29日电 (记者 王坚)2026年广州国际女子网球公开赛28日展开第二轮的争夺，中国选手施晗取得职业生涯重大突破，首进巡回赛八强；大威廉姆斯/曾丽美挺进双打四强。",
-      "date": "2026-10-29T05:29:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-29/10722656.shtml",
-      "image": ""
-    },
-    {
-      "id": "广东省清远市江南水厂全面完工投产-惠及超百万人-d547b863bd33",
-      "language": "zh",
-      "title": "广东省清远市江南水厂全面完工投产 惠及超百万人",
-      "excerpt": "中新网清远10月29日电 (程景伟 刘晓红 伍雁亭)由中铁上海工程局集团市政环保工程有限公司承建的广东省清远市江南水厂二期工程近日举行“聚力保供水，清泉润万家”清远市江南水厂全面完工投产仪式，标志着清远市江南水厂二期扩建工程圆满收官，江南水厂总供水规模实现翻倍，日供水产能达80万吨，成为粤北地区供水规模领先的现代化水厂。",
-      "date": "2026-10-29T05:28:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722654.shtml",
-      "image": ""
-    },
-    {
-      "id": "广州举办华侨健康周活动-精准匹配侨胞返乡就医需求-554085128074",
-      "language": "zh",
-      "title": "广州举办华侨健康周活动 精准匹配侨胞返乡就医需求",
-      "excerpt": "中新网广州10月29日电 (记者 郭军)2026年广州华侨健康周暨广州医科大学附属中医医院涉侨中医服务周活动28日在广州举办。来自22个国家和地区的近80名侨胞代表齐聚现场，沉浸式体验中医适宜技术、聆听养生讲座、感受中医药文化魅力。",
-      "date": "2026-10-29T05:28:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/10-29/10722651.shtml",
       "image": ""
     }
   ]
