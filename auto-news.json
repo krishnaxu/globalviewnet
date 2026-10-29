@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-10-29T20:52:40.426Z",
+  "generated_at": "2026-10-29T21:51:35.428Z",
   "items": [
+    {
+      "id": "young-athlete-and-former-minister-among-victi-b884c124cf38",
+      "language": "en",
+      "title": "Young athlete and former minister among victims of Spain train crash",
+      "excerpt": "As some of the victims' names are released publicly, an outpouring of grief and anger is sweeping across Spain.",
+      "date": "2026-10-29T21:33:35.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cr78plp1p9yvo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e9c9/live/e9ad7380-d3c6-11f1-867c-77016fb236d7.jpg"
+    },
+    {
+      "id": "amazon-reported-booming-cloud-revenue-but-oth-48e8d6e488b1",
+      "language": "en",
+      "title": "Amazon reported booming cloud revenue but otherwise missed expectations",
+      "excerpt": "The biggest ouch of the report was its negative free cash flow of $2.4 billion.",
+      "date": "2026-10-29T21:20:47.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/amazon-reported-booming-cloud-revenue-but-otherwise-missed-expectations/",
+      "image": ""
+    },
+    {
+      "id": "gm-reaches-220m-settlement-over-selling-drive-e0ae3c716413",
+      "language": "en",
+      "title": "GM reaches $220M settlement over selling drivers’ private data",
+      "excerpt": "As part of the settlement, GM must get drivers’ express consent before it collects or shares their driving and location data.",
+      "date": "2026-10-29T21:01:04.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/gm-reaches-220m-settlement-over-selling-drivers-private-data/",
+      "image": ""
+    },
+    {
+      "id": "watch-what-leaked-audio-reveals-about-spain-t-67dccefc1b2a",
+      "language": "en",
+      "title": "Watch: What leaked audio reveals about Spain train crash",
+      "excerpt": "Recordings between a control centre and the train drivers appear to show one train was given clearance to move even though another train had stalled on the track.",
+      "date": "2026-10-29T20:50:25.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/c6vgjeg0myzgo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/221a/live/4d1466f0-d3da-11f1-93e1-3b657b665bcf.jpg"
+    },
     {
       "id": "intel-stock-plunges-16-as-chipmaker-blames-pc-0d4ba8de9f75",
       "language": "en",
@@ -50,6 +90,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/29/starbucks-sbux-q4-2026-earnings.html",
       "image": ""
+    },
+    {
+      "id": "israeli-opposition-accuses-netanyahu-of-tryin-0429e0fa053c",
+      "language": "en",
+      "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+      "excerpt": "The PM's Likud party has alleged foreign interference and said Arab-led parties \"stole\" the election after his coalition lost its majority.",
+      "date": "2026-10-29T20:21:54.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/213a/live/ecf64a00-d3d3-11f1-9c32-1532a6164171.jpg"
     },
     {
       "id": "windows-11-gets-right-click-menu-improvements-77d6bd61a607",
@@ -2949,56 +2999,6 @@
       "date": "2026-10-29T07:37:00.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-29/10722726.shtml",
-      "image": ""
-    },
-    {
-      "id": "hegseth-reportedly-fires-u-s-top-military-pla-543e9a1c6b13",
-      "language": "en",
-      "title": "Hegseth reportedly fires U.S. top military planner as Trump downplays Iran peace talks",
-      "excerpt": "Lieutenant General Brett Sylvia was removed as head of strategy, plans and policy on the Joint Chiefs of Staff.",
-      "date": "2026-10-29T07:35:45.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/29/us-iran-war-trump-hormuz.html",
-      "image": ""
-    },
-    {
-      "id": "bbc-in-the-philippines-where-thomas-markle-is-cffa4a70e2ee",
-      "language": "en",
-      "title": "BBC in the Philippines where Thomas Markle is expected to be investigated",
-      "excerpt": "Jonathan Head is in Cebu, reporting from outside the home where Markle last resided.",
-      "date": "2026-10-29T07:28:26.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/videos/cm0rlxxpng5eo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a90c/live/b93f5b80-d369-11f1-93e1-3b657b665bcf.jpg"
-    },
-    {
-      "id": "a股收评-超4700只个股飘绿-三大指数收跌-7641e0abf9d3",
-      "language": "zh",
-      "title": "A股收评：超4700只个股飘绿，三大指数收跌",
-      "excerpt": "A股收评：超4700只个股飘绿，三大指数收跌；CPO、光通信概念股重挫，天孚通信跌超19%，半导体大跌；银行、保险、白酒飘红",
-      "date": "2026-10-29T07:20:21.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722730.shtml",
-      "image": ""
-    },
-    {
-      "id": "上海强化海外安全保障-助力民营企业全球化发展-b1ee4cf623d9",
-      "language": "zh",
-      "title": "上海强化海外安全保障 助力民营企业全球化发展",
-      "excerpt": "中新网上海10月29日电(范宇斌)“强化海外安全保障，助力民营企业全球化发展”专题圆桌会近日在上海市工商联召开，旨在进一步优化对外投资合作营商环境，提升民营企业国际合作竞争能力，促进上海民营经济高质量发展。上海市副市长卢山出席会议并讲话，上海市委统战部副部长、上海市工商联党组书记张峰主持会议。",
-      "date": "2026-10-29T07:19:39.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722720.shtml",
-      "image": ""
-    },
-    {
-      "id": "商务部-如欧方对中国产品采取歧视性限制措施-中方必将采取一切必要措施-620109968448",
-      "language": "zh",
-      "title": "商务部：如欧方对中国产品采取歧视性限制措施，中方必将采取一切必要措施",
-      "excerpt": "针对有媒体报道称，欧盟方面正研究将中欧在混合动力汽车领域达成的贸易谅解安排延伸至化工等领域，商务部新闻发言人黄玲在29日举行的例行新闻发布会上表示，对正常的贸易人为设限涉嫌违反世贸组织规则，不仅无益于提高欧盟产业竞争力，反而会加重下游产业负担，进而推高欧盟通胀水平，影响全球产业链供应链安全稳定。",
-      "date": "2026-10-29T07:17:04.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722725.shtml",
       "image": ""
     }
   ]
