@@ -1,6 +1,336 @@
 {
-  "generated_at": "2026-10-29T13:05:24.522Z",
+  "generated_at": "2026-10-29T14:10:22.523Z",
   "items": [
+    {
+      "id": "steve-eisman-gets-more-conservative-with-port-aa8630bdb828",
+      "language": "en",
+      "title": "Steve Eisman gets more conservative with portfolio as AI trade nears 'tipping point'",
+      "excerpt": "The noted investor, famous from \"The Big Short,\" says it would be \"impossible\" for an AI crash not to hurt the broader market",
+      "date": "2026-10-29T14:06:20.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/steve-eisman-gets-more-conservative-with-portfolio-as-ai-trade-nears-tipping-point.html",
+      "image": ""
+    },
+    {
+      "id": "open-enrollment-is-a-chance-to-get-this-sneak-45fc9dd9e293",
+      "language": "en",
+      "title": "Open enrollment is a chance to get this ‘sneaky-good’ investment account that can be ‘better than a Roth’",
+      "excerpt": "During open enrollment, financial planners say HSAs are worth a closer look for their unusual tax advantages and potential as a long-term investment account.",
+      "date": "2026-10-29T14:00:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/make-it/2026/10/29/hsa-retirement-investing.html",
+      "image": ""
+    },
+    {
+      "id": "2026两岸青年新文创成果发布会在厦门举行-beca4e028ab1",
+      "language": "zh",
+      "title": "2026两岸青年新文创成果发布会在厦门举行",
+      "excerpt": "中新网厦门10月29日电 (吴冠标)10月29日，以“正青春·同心创未来”为主题的2026两岸青年新文创成果发布会在厦门举行。活动集中发布赛事成果、表彰获奖选手，推动优秀作品与产业资源对接。",
+      "date": "2026-10-29T13:58:56.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cul/2026/10-29/10723017.shtml",
+      "image": ""
+    },
+    {
+      "id": "新疆-成渝地区双城经济圈氢能综合应用试点城市群工作部署会在渝举行-47efb2acd490",
+      "language": "zh",
+      "title": "新疆—成渝地区双城经济圈氢能综合应用试点城市群工作部署会在渝举行",
+      "excerpt": "中新网重庆10月29日电(景诗雁)新疆—成渝地区双城经济圈氢能综合应用试点城市群工作部署会29日在重庆举行，标志着该项试点工作步入落地实施阶段。",
+      "date": "2026-10-29T13:58:54.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10723021.shtml",
+      "image": ""
+    },
+    {
+      "id": "小微货品-拼单-西行-丝路拼箱-班列加速对接欧亚市场-34398f94515f",
+      "language": "zh",
+      "title": "小微货品“拼单”西行 “丝路拼箱”班列加速对接欧亚市场",
+      "excerpt": "中新网长沙10月29日电 (记者 鲁毅)走进位于湖南长沙的中南国际陆港集装箱拼箱基地，一件件打包好的电子配件、汽车零部件、五金产品等零散小微货品，正等待分拣编组、集中装箱。“铁路运输要求不能偏载，前后左右要完全保持平衡。但不同客户的产品重量不一、外形尺寸各异，需要我们精确计算，拼成最符合装箱逻辑的方式。”该基地操作部经理周宇告诉记者。",
+      "date": "2026-10-29T13:58:50.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ydyl/2026/10-29/10723020.shtml",
+      "image": ""
+    },
+    {
+      "id": "上海举办主题研讨会回顾宋庆龄与国际友人的长征往事-c9d6016a234b",
+      "language": "zh",
+      "title": "上海举办主题研讨会回顾宋庆龄与国际友人的长征往事",
+      "excerpt": "中新网上海10月29日电 (记者 许婧)“长征·上海·宋庆龄”纪念中国工农红军长征胜利90周年主题研讨会29日在上海举行。研讨会旨在弘扬伟大长征精神，探寻珍藏在上海的长征记忆，深入挖掘和铭记宋庆龄在上海支援红军长征的特殊历史贡献，共同回顾以埃德加·斯诺、马海德为代表的国际友人与长征结下的深厚渊源。",
+      "date": "2026-10-29T13:58:16.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/txy/2026/10-29/10723019.shtml",
+      "image": ""
+    },
+    {
+      "id": "广州站西鞋业商圈推进品牌国际化布局-93c0cf85880d",
+      "language": "zh",
+      "title": "广州站西鞋业商圈推进品牌国际化布局",
+      "excerpt": "中新网广州10月29日电 (记者 孙秋霞)2026广州国际鞋业节暨站西时尚采购季29日在广东鞋业国际采购中心园区启幕。本次活动由广东鞋业国际采购中心、广州鞋业商会主办，活动现场举行站西鞋业品牌出海启航仪式，正式拉开站西鞋业商圈品牌国际化发展序幕。",
+      "date": "2026-10-29T13:52:50.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10723016.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国共产党第二十届中央委员会第五次全体会议在京举行-714b8dd64bf5",
+      "language": "zh",
+      "title": "中国共产党第二十届中央委员会第五次全体会议在京举行",
+      "excerpt": "",
+      "date": "2026-10-29T13:50:42.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-29/1209224.shtml",
+      "image": ""
+    },
+    {
+      "id": "我国铁路物流提质增效步伐加快-0eca8dc9b104",
+      "language": "zh",
+      "title": "我国铁路物流提质增效步伐加快",
+      "excerpt": "央视网消息(新闻联播)：前三季度，我国铁路货运量稳步增长，物流产品不断丰富，通道效率显著提升。",
+      "date": "2026-10-29T13:48:22.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10723014.shtml",
+      "image": ""
+    },
+    {
+      "id": "超2万亿元-超2-5亿人次-绿色智能引领消费释放内需活力-a773ead35104",
+      "language": "zh",
+      "title": "超2万亿元，超2.5亿人次！绿色智能引领消费释放内需活力",
+      "excerpt": "观察·“焕”新热潮 | 超2万亿元，超2.5亿人次！绿色智能引领消费释放内需活力",
+      "date": "2026-10-29T13:48:00.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10723013.shtml",
+      "image": ""
+    },
+    {
+      "id": "rock-collapse-kills-two-in-turkey-s-cappadoci-240852db5139",
+      "language": "en",
+      "title": "Rock collapse kills two in Turkey's Cappadocia, local media reports",
+      "excerpt": "One of the regions famous rock formations, known as \"fairy chimneys\", reportedly collapsed outside an open-air museum.",
+      "date": "2026-10-29T13:44:39.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cknv08nvzld4o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ed8c/live/e21f62f0-d39d-11f1-abc7-23eff3a47521.jpg"
+    },
+    {
+      "id": "bluesky-blocks-links-to-leaked-dhs-employee-d-d18e43dd5f44",
+      "language": "en",
+      "title": "Bluesky blocks links to leaked DHS employee data as government seeks takedowns",
+      "excerpt": "The social networking site is facing criticism for blocking access to the site, which identifies thousands of ICE agents and other employees working for Homeland Security.",
+      "date": "2026-10-29T13:43:53.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/bluesky-blocks-links-to-leaked-dhs-employee-data-as-government-seeks-takedowns/",
+      "image": ""
+    },
+    {
+      "id": "10月29日夜读-fcce25fda189",
+      "language": "zh",
+      "title": "10月29日夜读",
+      "excerpt": "",
+      "date": "2026-10-29T13:43:01.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/iframe/2026/10-29/10723008.shtml",
+      "image": ""
+    },
+    {
+      "id": "european-central-bank-keeps-key-interest-rate-9ae7a797b95e",
+      "language": "en",
+      "title": "European Central Bank keeps key interest rate on hold at 2.5%",
+      "excerpt": "",
+      "date": "2026-10-29T13:41:39.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html",
+      "image": ""
+    },
+    {
+      "id": "doordash-to-acquire-instacart-for-17b-4316647e56a3",
+      "language": "en",
+      "title": "DoorDash to acquire Instacart for $17B",
+      "excerpt": "The acquisition would bring two major players in on-demand delivery under one roof, combining DoorDash’s dominance in restaurant takeout with Instacart’s reach in grocery delivery.",
+      "date": "2026-10-29T13:40:57.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/doordash-to-acquire-instacart-for-17b/",
+      "image": ""
+    },
+    {
+      "id": "央行上海总部-9月末-上海-五篇大文章-贷款余额同比增长11-6-52c8fae0fab8",
+      "language": "zh",
+      "title": "央行上海总部：9月末，上海“五篇大文章”贷款余额同比增长11.6%",
+      "excerpt": "中新网上海10月29日电 (高志苗)中国人民银行上海总部货币信贷调研部副主任周鹏29日在2026年第四季度新闻发布会暨上海金融“五篇大文章”专场发布会上介绍，9月末，上海“五篇大文章”贷款余额同比增长11.6%，持续明显高于各项贷款增速。",
+      "date": "2026-10-29T13:37:43.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10723007.shtml",
+      "image": ""
+    },
+    {
+      "id": "报告-2026年底中国非化石能源发电装机占比料约为63-3f340ca843cb",
+      "language": "zh",
+      "title": "报告：2026年底中国非化石能源发电装机占比料约为63%",
+      "excerpt": "中新社北京10月29日电 (记者 阮煜琳)中国电力企业联合会29日发布的《2026年三季度全国电力供需形势分析预测报告》预计，到2026年底，全国发电装机容量将达到43亿千瓦左右，其中非化石能源发电装机约27亿千瓦，占总装机的63%左右。",
+      "date": "2026-10-29T13:32:21.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10723003.shtml",
+      "image": ""
+    },
+    {
+      "id": "东西问-知味东方丨德国总统为何主动续杯-一缕-祁门香-里的-中国魂-与-世界味-1f58123a0260",
+      "language": "zh",
+      "title": "东西问·知味东方丨德国总统为何主动续杯？一缕“祁门香”里的“中国魂”与“世界味”",
+      "excerpt": "中新社合肥10月29日电 题：德国总统为何主动续杯？一缕“祁门香”里的“中国魂”与“世界味”",
+      "date": "2026-10-29T13:32:09.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/dxw/2026/10-29/10723000.shtml",
+      "image": ""
+    },
+    {
+      "id": "banks-and-healthcare-firms-are-outbidding-tec-1b6f14245f34",
+      "language": "en",
+      "title": "Banks and healthcare firms are outbidding tech for software talent, major recruiter says",
+      "excerpt": "Banks and healthcare firms are paying more than tech companies for AI talent as demand rises and layoffs reshape the talent market, per Randstad research.",
+      "date": "2026-10-29T13:29:18.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/ai-jobs-software-engineers-tech-layoffs.html",
+      "image": ""
+    },
+    {
+      "id": "海外客商在上海寻找机器人-工友-06962e108797",
+      "language": "zh",
+      "title": "海外客商在上海寻找机器人“工友”",
+      "excerpt": "中新社上海10月29日电 (李姝徵 狄权)2026智元创新日29日在上海举行，吸引来自全球各地的逾千名科研伙伴、开发者、商业伙伴参与。会场里，海外客商既了解机器人具备哪些新本领，也寻找能够带回国、解决实际问题的机器人“工友”。",
+      "date": "2026-10-29T13:27:52.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10723005.shtml",
+      "image": ""
+    },
+    {
+      "id": "横琴粤澳深合区5年来推出27项澳门青年专项实习计划-201b391f2ea6",
+      "language": "zh",
+      "title": "横琴粤澳深合区5年来推出27项澳门青年专项实习计划",
+      "excerpt": "中新社北京10月29日电 (王朝东 朱贺)横琴粤澳深度合作区(下称“合作区”)人才发展和社会保障局局长庞启富29日在北京介绍，合作区正式挂牌5年来，推出27项面向澳门青年的专项实习计划，提供近1000个岗位，吸引超过6000名青年报名参与。",
+      "date": "2026-10-29T13:27:50.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/dwq/2026/10-29/10723004.shtml",
+      "image": ""
+    },
+    {
+      "id": "广州南沙四期自动化码头打通外贸通道-1b4aa28b24bf",
+      "language": "zh",
+      "title": "广州南沙四期自动化码头打通外贸通道",
+      "excerpt": "中新社广州10月29日电 (记者 郭军 蔡敏婕)粤港澳大湾区首个全新建造的全自动化集装箱码头——广州港南沙港区四期码头29日正式开通外贸业务。",
+      "date": "2026-10-29T13:27:44.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10723006.shtml",
+      "image": ""
+    },
+    {
+      "id": "第十七届海峡两岸文博会开幕-台湾工艺师厦门以艺会友-adabc4796791",
+      "language": "zh",
+      "title": "第十七届海峡两岸文博会开幕 台湾工艺师厦门以艺会友",
+      "excerpt": "中新社厦门10月29日电 (吴冠标)第十七届海峡两岸(厦门)文化产业博览交易会(海峡两岸文博会)29日在厦门开幕。活动汇聚1000余家海内外机构，展出近千件工艺精品，打造兼具文化厚度、产业深度与科技热度的行业盛会。",
+      "date": "2026-10-29T13:27:16.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10723002.shtml",
+      "image": ""
+    },
+    {
+      "id": "呼和浩特发布42个航空航天产业合作方向-聚焦低空经济与商业航天-523e22fd2dd8",
+      "language": "zh",
+      "title": "呼和浩特发布42个航空航天产业合作方向 聚焦低空经济与商业航天",
+      "excerpt": "中新网呼和浩特10月29日电 (记者 刘文华)呼和浩特市航空航天产业集群产需对接会29日在呼和浩特举行。会议以“青筑新质 链聚空天”为主题，聚焦低空经济、商业航天两条赛道，面向相关企业及投资机构，发布航空航天产业集群引资项目需求清单与应用场景需求清单，共梳理遴选出42个重点合作方向。",
+      "date": "2026-10-29T13:26:20.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722998.shtml",
+      "image": ""
+    },
+    {
+      "id": "philippine-police-obtain-warrant-to-search-th-8dd76e232746",
+      "language": "en",
+      "title": "Philippine police obtain warrant to search Thomas Markle's devices",
+      "excerpt": "Images of child sexual abuse allegedly belonging to Meghan Markle's father had reportedly been found in his former home in the Philippines.",
+      "date": "2026-10-29T13:25:07.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm0j06y3pn75o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2a20/live/8e4e0d60-d38f-11f1-b31d-29088a2dcf13.jpg"
+    },
+    {
+      "id": "科创芯片etf将通过沪港互挂进入香港市场-7c105553a5ed",
+      "language": "zh",
+      "title": "科创芯片ETF将通过沪港互挂进入香港市场",
+      "excerpt": "中新社上海10月29日电 (高志苗 李姝徵)记者29日从上海证券交易所获悉，科创芯片ETF(交易型开放式指数基金)将通过沪港ETF互挂进入香港市场。",
+      "date": "2026-10-29T13:24:42.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10723001.shtml",
+      "image": ""
+    },
+    {
+      "id": "跨越南洋-鼓舞还乡-海南首支二十四节令鼓队擂响百年学府-6e68aca76cc5",
+      "language": "zh",
+      "title": "跨越南洋“鼓舞还乡” 海南首支二十四节令鼓队擂响百年学府",
+      "excerpt": "中新网海口10月29日电 题：跨越南洋“鼓舞还乡” 海南首支二十四节令鼓队擂响百年学府",
+      "date": "2026-10-29T13:23:36.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722999.shtml",
+      "image": ""
+    },
+    {
+      "id": "跨国-串门-说走就走-2026年满洲里口岸出入境人员破110万人次-9fc851b56df8",
+      "language": "zh",
+      "title": "跨国“串门”说走就走，2026年满洲里口岸出入境人员破110万人次",
+      "excerpt": "中新网满洲里10月29日电 题：跨国“串门”说走就走，2026年满洲里口岸出入境人员破110万人次",
+      "date": "2026-10-29T13:19:40.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722997.shtml",
+      "image": ""
+    },
+    {
+      "id": "一艘商船在保加利亚黑海沿岸被无人机击中后沉没-73d7141f34e9",
+      "language": "zh",
+      "title": "一艘商船在保加利亚黑海沿岸被无人机击中后沉没",
+      "excerpt": "中新网北京10月29日电 据美联社报道，保加利亚海事部门29日表示，一艘悬挂利比里亚国旗的船只在保加利亚黑海沿岸被无人机击中后沉没。",
+      "date": "2026-10-29T13:16:38.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722989.shtml",
+      "image": ""
+    },
+    {
+      "id": "jim-cramer-s-top-10-things-to-watch-in-the-st-873f26396fdf",
+      "language": "en",
+      "title": "Jim Cramer's top 10 things to watch in the stock market Thursday",
+      "excerpt": "Tech is taking it on the chin.",
+      "date": "2026-10-29T13:13:08.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/10/29/jim-cramers-top-10-things-to-watch-in-the-stock-market-thursday.html",
+      "image": ""
+    },
+    {
+      "id": "中国创新创业大赛持续赋能广西科创企业-涵养创新生态-3112c0bec04e",
+      "language": "zh",
+      "title": "中国创新创业大赛持续赋能广西科创企业 涵养创新生态",
+      "excerpt": "中新网南宁10月29日电(记者 杨陈)第十五届中国创新创业大赛广西赛区暨2026年广西创新创业大赛总决赛29日在广西南宁举行。经过多轮激烈比拼，共评选出60家广西赛区优胜企业，20家优质企业脱颖而出晋级本次总决赛，45家优秀企业将代表广西出征全国赛。",
+      "date": "2026-10-29T13:12:24.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722994.shtml",
+      "image": ""
+    },
+    {
+      "id": "今年前三季度内蒙古金融贷款余额超3-4万亿元-aa948509634e",
+      "language": "zh",
+      "title": "今年前三季度内蒙古金融贷款余额超3.4万亿元",
+      "excerpt": "中新网呼和浩特10月29日电 (记者 李爱平)中国人民银行内蒙古自治区分行29日召开新闻发布会通报，2026年前三季度，内蒙古金融机构人民币各项贷款余额34090.7亿元，较年初新增1451.8亿元，同比增长6.2%。",
+      "date": "2026-10-29T13:11:26.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722965.shtml",
+      "image": ""
+    },
+    {
+      "id": "第四届动力电池质量安全大会在湖南临武举行-f9b3c66c7432",
+      "language": "zh",
+      "title": "第四届动力电池质量安全大会在湖南临武举行",
+      "excerpt": "中新网郴州10月29日电 (记者 鲁毅)10月29日，第四届动力电池质量安全大会在湖南郴州临武县召开。本次大会由中国消费品质量安全促进会主办、郴州市人民政府承办，以“全链向新 质领安全”为主题，来自全国各地高校、科研机构、行业领军企业的400余名代表参会，围绕动力电池质量安全痛点与未来发展路径展开研讨。",
+      "date": "2026-10-29T13:09:27.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722986.shtml",
+      "image": ""
+    },
     {
       "id": "中俄界江黑龙江呼玛段进入冬季流冰期-889117931d88",
       "language": "zh",
@@ -220,6 +550,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/tp/2026/10-29/10722956.shtml",
       "image": ""
+    },
+    {
+      "id": "russian-drone-attack-on-ukrainian-train-stati-fab0cbed0e94",
+      "language": "en",
+      "title": "Russian drone attack on Ukrainian train station kills at least 13, officials say",
+      "excerpt": "Dnipro regional head Oleksandr Hanzha said at least 10 others were wounded in the attack, including an 11-year-old boy.",
+      "date": "2026-10-29T12:38:40.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c3f6/live/c8559bf0-d389-11f1-b5f4-fd541fd21001.jpg"
     },
     {
       "id": "手术出院不是终点-失管才是风险-ai如何接住康复-最后一公里-ff0a6fa5e6f7",
@@ -480,6 +820,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/ydyl/2026/10-29/10722886.shtml",
       "image": ""
+    },
+    {
+      "id": "us-sanctions-rwanda-s-defence-ministry-over-d-0f1a6ad0c47f",
+      "language": "en",
+      "title": "US sanctions Rwanda's defence ministry over DR Congo conflict",
+      "excerpt": "Congo accuses Rwanda of backing M23 rebels and plundering minerals in its conflict hit East",
+      "date": "2026-10-29T11:25:16.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm87zw51qw0jo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4b44/live/af8c7ae0-d35b-11f1-bf17-db0635e21017.jpg"
     },
     {
       "id": "甘肃民勤-戈壁沙乡奏-椒-响曲-126e0e567525",
@@ -2649,356 +2999,6 @@
       "date": "2026-10-29T02:32:31.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722596.shtml",
-      "image": ""
-    },
-    {
-      "id": "u币-交易-中夺款逃走-涉嫌何罪-ce5a87c35538",
-      "language": "zh",
-      "title": "U币“交易”中夺款逃走，涉嫌何罪？",
-      "excerpt": "U币“交易”中夺款逃走，涉嫌何罪？",
-      "date": "2026-10-29T02:32:21.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/fz/2026/10-29/10722598.shtml",
-      "image": ""
-    },
-    {
-      "id": "从一张工位到一笔订单-欧洲华媒感受长沙创业温度-eda1d019d814",
-      "language": "zh",
-      "title": "从一张工位到一笔订单 欧洲华媒感受长沙创业温度",
-      "excerpt": "中新网长沙10月29日电 (记者 鲁毅 徐志雄)10月28日，参加湘江“对话”塞纳河——2026欧洲华文媒体长沙行的华媒代表走进湖南长沙湘江西岸，探访大泽湖海归小镇与创沙洲OPC街区，感受长沙的创业活力与城市温度。",
-      "date": "2026-10-29T02:30:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/10-29/10722583.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026年风云卫星用户大会召开-新成果展现发展成效-d849289e473d",
-      "language": "zh",
-      "title": "2026年风云卫星用户大会召开 新成果展现发展成效",
-      "excerpt": "中新网长沙10月29日电 (付敬懿)以“风云瞰寰宇 聚智谋未来”为主题的2026年风云卫星用户大会29日在湖南长沙举行，风云三号H星及风云四号C星气象卫星数据产品、风云精工·风云卫星中试平台、风云气象卫星极端天气AI模型三项科技成果正式发布，展现风云气象卫星科技创新与综合应用发展成效。",
-      "date": "2026-10-29T02:30:05.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722581.shtml",
-      "image": ""
-    },
-    {
-      "id": "沙漠边缘为何成瓜蒌-天选之地-解密塔克拉玛干-黄灯笼-ddfbf3ea20e5",
-      "language": "zh",
-      "title": "沙漠边缘为何成瓜蒌“天选之地”？解密塔克拉玛干“黄灯笼”",
-      "excerpt": "瓜蒌是一种药食同源的植物，果皮、籽、果瓤、藤蔓、根块皆有妙用。",
-      "date": "2026-10-29T02:29:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722587.shtml",
-      "image": ""
-    },
-    {
-      "id": "探寻-中国之治-的成功密码-新时代全面从严治党为世界政党建设带来深刻启迪-64c7d8cee805",
-      "language": "zh",
-      "title": "探寻“中国之治”的成功密码——新时代全面从严治党为世界政党建设带来深刻启迪",
-      "excerpt": "金秋的北京，汇聚世界目光。",
-      "date": "2026-10-29T02:29:45.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722568.shtml",
-      "image": ""
-    },
-    {
-      "id": "文物安全的红线-碰不得-0f767cb3670b",
-      "language": "zh",
-      "title": "文物安全的红线，碰不得",
-      "excerpt": "原标题：文物安全的红线，碰不得(金台锐评)",
-      "date": "2026-10-29T02:29:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/10-29/10722586.shtml",
-      "image": ""
-    },
-    {
-      "id": "弗拉维奥抵美-巴西警方调查其违反离境禁令一事-9fa44cdc8654",
-      "language": "zh",
-      "title": "弗拉维奥抵美 巴西警方调查其违反离境禁令一事",
-      "excerpt": "中新网圣保罗10月28日电 当地时间28日，巴西联邦警察表示，正在调查总统选举落败候选人、自由党参议员弗拉维奥·博索纳罗违反司法禁令离开巴西的具体情况。弗拉维奥携家人当天抵达美国迈阿密，并发表公开信，质疑总统选举结果，感谢美国总统特朗普和阿根廷总统米莱为其离境提供支持。",
-      "date": "2026-10-29T02:29:07.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722547.shtml",
-      "image": ""
-    },
-    {
-      "id": "探访巴西电影资料馆-守护光影记忆-公众-能看能用-7449d15c3542",
-      "language": "zh",
-      "title": "探访巴西电影资料馆：守护光影记忆 公众“能看能用”",
-      "excerpt": "中新网圣保罗10月28日电 (记者 林春茵)高耸的三角形屋顶、古朴的拱形门窗、厚重的砖墙，位于巴西圣保罗市东南部的巴西电影资料馆(Cinemateca Brasileira)是一处百年红砖建筑群。在19世纪，此处是保障拉美最大城市圣保罗民生的屠宰场，今天已活化为南美洲最重要的电影文化机构之一，拥有南美洲规模最大的视听资料收藏，成为守护巴西百年光影记忆的重要场所。",
-      "date": "2026-10-29T02:27:49.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722546.shtml",
-      "image": ""
-    },
-    {
-      "id": "厄尔尼诺影响加剧-巴西未来三个月或遭遇持续高温和热浪-c2efa5716ef9",
-      "language": "zh",
-      "title": "厄尔尼诺影响加剧 巴西未来三个月或遭遇持续高温和热浪",
-      "excerpt": "中新网圣保罗10月28日电 巴西科学技术与创新部28日发布消息称，受厄尔尼诺现象影响，2026年11月至2027年1月，巴西大部分地区可能出现异常高温，平均气温预计比常年同期高出1至2摄氏度，部分地区可能出现持续性热浪。与此同时，巴西南部地区降雨偏多，亚马孙地区北部和东部则可能面临降雨不足。",
-      "date": "2026-10-29T02:23:33.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722539.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国对欧免签政策宣介视频在比利时布鲁塞尔机场播放-34edc1cdd101",
-      "language": "zh",
-      "title": "中国对欧免签政策宣介视频在比利时布鲁塞尔机场播放",
-      "excerpt": "中新网布鲁塞尔10月29日电 (记者 德永健)中国对欧免签政策宣介视频27日起在比利时布鲁塞尔国家机场播放，向过往游客宣传中国对欧免签政策。",
-      "date": "2026-10-29T02:22:44.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722536.shtml",
-      "image": ""
-    },
-    {
-      "id": "中部农博会打通农产品出海通道-搭建农业合作新桥梁-00f4a9cb6cfe",
-      "language": "zh",
-      "title": "中部农博会打通农产品出海通道 搭建农业合作新桥梁",
-      "excerpt": "中新网长沙10月29日电(龚倩)第二十七届中国中部(湖南)农业博览会将于11月6日至9日在长沙国际会展中心举办。组委会28日对外表示，本届展会以“科技引领、品牌赋能，助力乡村振兴”为主题，设置6大展馆，吸引3500余家国内外涉农企业参展。",
-      "date": "2026-10-29T02:18:10.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722564.shtml",
-      "image": ""
-    },
-    {
-      "id": "ai叩门之后-地信技术走向更多场景-ad55487cadb9",
-      "language": "zh",
-      "title": "AI叩门之后，地信技术走向更多场景",
-      "excerpt": "不久前，2026中国地理信息产业大会在重庆永川举行。如今，地理信息产业正迎来新的发展阶段：传统动能转型调整，新兴动能蓄势成长。边界正在被重新定义，而重新定义它的那股力量，绕不开四个字：人工智能。",
-      "date": "2026-10-29T02:17:54.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722578.shtml",
-      "image": ""
-    },
-    {
-      "id": "china-s-tech-darlings-are-losing-their-shine--35b4c318a3bf",
-      "language": "en",
-      "title": "China’s tech darlings are losing their shine. Here’s what’s behind the sell-off",
-      "excerpt": "China's tech rally is being tested as as investors question whether AI profits can justify lofty valuations.",
-      "date": "2026-10-29T02:14:14.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/29/china-tech-stocks-selloff.html",
-      "image": ""
-    },
-    {
-      "id": "从即时需求到临时社交需求-地铁商业-卖-的是什么-bb4d200f9195",
-      "language": "zh",
-      "title": "从即时需求到临时社交需求，地铁商业“卖”的是什么？",
-      "excerpt": "原标题：从一瓶水、一份早餐，到一捧花、一个盲盒——",
-      "date": "2026-10-29T02:13:52.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722577.shtml",
-      "image": ""
-    },
-    {
-      "id": "俄外交部批评日本借影视作品歪曲历史-de655238b40a",
-      "language": "zh",
-      "title": "俄外交部批评日本借影视作品歪曲历史",
-      "excerpt": "新华社莫斯科10月28日电(记者耿辉凰)俄罗斯外交部发言人扎哈罗娃28日在例行记者会上表示，俄方注意到日本在影视作品中多次出现歪曲历史的情况，如果日方继续“这种虚假的活动”，俄方将采取相应行动。",
-      "date": "2026-10-29T02:12:56.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722574.shtml",
-      "image": ""
-    },
-    {
-      "id": "日本自民党副总裁被曝政治资金丑闻-e436eeaa1e76",
-      "language": "zh",
-      "title": "日本自民党副总裁被曝政治资金丑闻",
-      "excerpt": "新华社北京10月28日电#8195;日本执政党自由民主党副总裁麻生太郎近期被曝政治资金争议，其领导的派阀被指利用政治资金派对筹款约20亿日元(约合8454万元人民币)，并将部分资金支付给一家私人会所。",
-      "date": "2026-10-29T02:09:14.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722573.shtml",
-      "image": ""
-    },
-    {
-      "id": "多地拓展-车票-门票-等一站式出行服务-交通票根链接消费新场景-696931bf3a54",
-      "language": "zh",
-      "title": "多地拓展“车票+门票”等一站式出行服务 交通票根链接消费新场景",
-      "excerpt": "原标题：多地拓展“车票+门票”等一站式出行服务",
-      "date": "2026-10-29T02:07:02.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722572.shtml",
-      "image": ""
-    },
-    {
-      "id": "日本拟在修订-安保三文件-时强调-拒止力-57a5c14a17ca",
-      "language": "zh",
-      "title": "日本拟在修订“安保三文件”时强调“拒止力”",
-      "excerpt": "据日本方面28日消息，日本政府已开始协调，计划在年内修订的“安保三文件”中，将“拒止力”理念作为加强防卫力建设的核心支柱。",
-      "date": "2026-10-29T02:06:02.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-29/10722571.shtml",
-      "image": ""
-    },
-    {
-      "id": "哈啰充电与中国石化-国家电网等达成合作-在营充电桩首超300万个-17a99b2bfde3",
-      "language": "zh",
-      "title": "哈啰充电与中国石化、国家电网等达成合作 在营充电桩首超300万个",
-      "excerpt": "10月28日消息，哈啰充电宣布与中国石化、国家电网、南网电动达成合作，正式接入三家的充电服务网点。据此，哈啰充电实现在营充电站点超过30万座、充电桩300万个，规模跻身行业头部。",
-      "date": "2026-10-29T01:59:19.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722551.shtml",
-      "image": ""
-    },
-    {
-      "id": "国产影片出海进入新阶段-科技赋能拓展传播新空间-3f5df15ec0ee",
-      "language": "zh",
-      "title": "国产影片出海进入新阶段 科技赋能拓展传播新空间",
-      "excerpt": "2026年中国电影票房已超315亿元。今年以来，国产电影出海速度明显提升，许多影片都不再是国内上映数月后才登陆海外，而是实现了“多窗口接力式全球公映”。",
-      "date": "2026-10-29T01:56:47.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722560.shtml",
-      "image": ""
-    },
-    {
-      "id": "宣称-除菌消杀率高达99-99-一张虚假宣传-空气消毒卡-的背后-9c5e2fd16a38",
-      "language": "zh",
-      "title": "宣称“除菌消杀率高达99.99%”……一张虚假宣传“空气消毒卡”的背后",
-      "excerpt": "原标题：宣称“除菌消杀率高达99.99%”“XX病毒消杀率高达99.99%”……",
-      "date": "2026-10-29T01:54:51.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/fz/2026/10-29/10722559.shtml",
-      "image": ""
-    },
-    {
-      "id": "全球经济版图下的中国角色之变-de7f89498256",
-      "language": "zh",
-      "title": "全球经济版图下的中国角色之变",
-      "excerpt": "国际随笔丨全球经济版图下的中国角色之变",
-      "date": "2026-10-29T01:51:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722558.shtml",
-      "image": ""
-    },
-    {
-      "id": "外资企业坚定投资深圳-深耕中国-见证-中国机遇-f347c20da884",
-      "language": "zh",
-      "title": "外资企业坚定投资深圳、深耕中国（见证·中国机遇）",
-      "excerpt": "深圳前海，德国西门子医疗器械保税维修中心支持磁共振设备全球售后；芬兰通力电梯的数字化新设备快速发往大湾区市场；来自英国、新加坡等地的外资银行、金融机构纷纷入驻深港国际金融城……开放程度高、经济活力强，深圳作为全球投资热土的吸引力与竞争力不断提升。",
-      "date": "2026-10-29T01:48:07.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722557.shtml",
-      "image": ""
-    },
-    {
-      "id": "西藏南部将有强雨雪天气-北方将有大风降温过程-9b791349f99d",
-      "language": "zh",
-      "title": "西藏南部将有强雨雪天气 北方将有大风降温过程",
-      "excerpt": "中新网10月29日电 据中央气象台网站消息，昨日，云南和海南的部分地区出现明显降雨，北方地区出现大风。预计未来三天，青藏高原中东部将有明显雨雪天气，其中西藏南部有强雨雪，注意防范次生灾害；受冷空气影响，东北、华北、内蒙古等地又将有大风降温，内蒙古、黑龙江等局地有较强降雪，注意防范对交通、能源供应、农牧业等的影响。",
-      "date": "2026-10-29T01:47:05.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722533.shtml",
-      "image": ""
-    },
-    {
-      "id": "主理人经济-激活闲置农房-安徽繁昌乡村文旅-日夜联动-引客留-ca470fc469c5",
-      "language": "zh",
-      "title": "“主理人经济”激活闲置农房 安徽繁昌乡村文旅“日夜联动”引客留",
-      "excerpt": "中新网安徽芜湖10月29日电 (江婉琪)“白天有内容、晚上有看点，就更愿意留下来住一晚。”游客刘明说。10月28日，安徽省芜湖市繁昌区美好生活主理人共创沙龙活动举办。",
-      "date": "2026-10-29T01:46:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722545.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国红十字基金会雪域健康基金携手爱心企业向西藏驻京办捐赠100台口袋充氧宝-578bb22ab877",
-      "language": "zh",
-      "title": "中国红十字基金会雪域健康基金携手爱心企业向西藏驻京办捐赠100台口袋充氧宝",
-      "excerpt": "中新网北京10月29日电 (记者 赵朗)28日，中国红十字基金会雪域健康基金联合爱心企业，向西藏自治区人民政府驻北京办事处(以下简称“西藏驻京办”)捐赠100台口袋充氧宝，用于保障在藏、往返西藏工作人员的高海拔通勤健康防护。",
-      "date": "2026-10-29T01:46:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722542.shtml",
-      "image": ""
-    },
-    {
-      "id": "重庆开州-菜单式学厨-成新时尚-学员按-菜-选课学手艺-c5e4f581df35",
-      "language": "zh",
-      "title": "重庆开州“菜单式学厨”成新时尚 学员按“菜”选课学手艺",
-      "excerpt": "10月28日，重庆开州烹饪职教城的实训教室里，学员练习厨艺技能。中新社记者 周毅 摄 10月28日，重庆开州烹饪职教城的学员展示拉面技艺。中新社记者 周毅 摄 10月28日，重庆开州烹饪职教城的实训教室里，学员练习炒菜技艺。中新社记者 周毅 摄 10月28日，重庆开州烹饪职教城的实训教室里，学员正在练习刀工。中新社记者 周毅 摄 10月28日，重庆开州烹饪职教城的实训教室里，学员们练习雕花技艺。中新社记者 周毅 摄 10月28日，重庆开州烹饪职教城的实训教室里，学员们学习雕花技艺。中新社记者 周毅 摄",
-      "date": "2026-10-29T01:45:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-29/10722552.shtml",
-      "image": ""
-    },
-    {
-      "id": "四川泸州织密立体气象监测网-短临预警精准叫应护民生-6fb4b38b7af6",
-      "language": "zh",
-      "title": "四川泸州织密立体气象监测网 短临预警精准叫应护民生",
-      "excerpt": "中新网泸州10月29日电 (记者 何浠)站在四川泸州叙永县的山头上，一座X波段天气雷达站静静转动着天线。不远处，六要素自动气象站立在一边，雨量、风速、气温数据实时上传。记者28日从泸州市气象局获悉，当地已建成自动气象监测站1015套，站网平均间距由2024年的7.4公里加密至3.5公里，126个乡镇(街道)实现六要素监测站点全覆盖。",
-      "date": "2026-10-29T01:45:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722550.shtml",
-      "image": ""
-    },
-    {
-      "id": "山河如愿-上海巡演圆满落幕-初心之地奏响红色乐章-a0f42ede5f2e",
-      "language": "zh",
-      "title": "《山河如愿》上海巡演圆满落幕 初心之地奏响红色乐章",
-      "excerpt": "中新网上海10月29日电 (狄权)为纪念中国工农红军长征胜利90周年，大型原创民族交响戏剧音乐会《山河如愿》28日晚在上海交响乐团音乐厅上演。近两个小时的音乐会以民族管弦乐为主体，融合戏剧、声乐、朗诵等艺术形式，带领观众重温长征岁月。",
-      "date": "2026-10-29T01:44:32.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/10-29/10722549.shtml",
-      "image": ""
-    },
-    {
-      "id": "传统与时尚邂逅-浙江杭州西子廊桥-匠师熔装-秀吸引民众-6891f4b785f0",
-      "language": "zh",
-      "title": "传统与时尚邂逅 浙江杭州西子廊桥“匠师熔装”秀吸引民众",
-      "excerpt": "10月28日，游人观看“匠师熔装”秀。中新社记者 王刚 摄 10月28日，模特展示“匠师熔装”。中新社记者 王刚 摄 10月28日，陆仙人在西子廊桥上展示“匠师熔装”。中新社记者 王刚 摄 10月28日，陆仙人在西子廊桥上展示“匠师熔装”。中新社记者 王刚 摄 10月28日，陆仙人（右）和超人冷（左）在西子廊桥上展示“匠师熔装”。中新社记者 王刚 摄 10月28日，超人冷在西子廊桥上展示“匠师熔装”。中新社记者 王刚 摄 10月28日，朱炳仁在西子廊桥上向游人致意。中新社记者 王刚 摄 10月28日，朱炳仁和模特们展示“匠师熔装”。中新社记者 王刚 摄 10月28日，朱炳仁、朱军岷与模特们合影。中新社记者 王刚 摄",
-      "date": "2026-10-29T01:43:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-29/10722548.shtml",
-      "image": ""
-    },
-    {
-      "id": "中外青年走进宁波-脚步丈量城市产业与人文温度-4ca104310f55",
-      "language": "zh",
-      "title": "中外青年走进宁波：脚步丈量城市产业与人文温度",
-      "excerpt": "10月28日，中外青年在韵升集团参观。中新社记者 吴君毅 摄 10月28日，中外青年走进韵升集团，其旗下的宁波韵升股份有限公司是全球最大的稀土永磁材料制造商之一。中新社记者 吴君毅 摄 10月28日，中外青年了解韵升集团产品。中新社记者 吴君毅 摄 10月28日，中外青年在宁波市城市展览馆体验互动装置“骑行宁波”。中新社记者 吴君毅 摄 10月28日，中外青年在宁波市城市展览馆了解宁波城市发展历史。中新社记者 吴君毅 摄 10月28日，中外青年在宁波东方理工大学图书馆前打卡。中新社记者 刘子琳 摄 10月28日，中外青年参观宁波东方理工大学图书馆。中新社记者 刘子琳 摄 10月28日，中外青年参观宁波帮博物馆。中新社记者 刘子琳 摄 10月28日，尼泊尔青年在宁波帮博物馆拍照记录。中新社记者 刘子琳 摄",
-      "date": "2026-10-29T01:42:30.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-29/10722554.shtml",
-      "image": ""
-    },
-    {
-      "id": "ai与数学相遇-将把彼此带向何方-1f8199b38beb",
-      "language": "zh",
-      "title": "AI与数学相遇，将把彼此带向何方？",
-      "excerpt": "【向科学家提问】",
-      "date": "2026-10-29T01:41:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722556.shtml",
-      "image": ""
-    },
-    {
-      "id": "20余名-非洲国家落实全球安全倡议伙伴关系访华团-学员参访河南-e33fa437505c",
-      "language": "zh",
-      "title": "20余名“非洲国家落实全球安全倡议伙伴关系访华团”学员参访河南",
-      "excerpt": "10月28日，来自冈比亚、肯尼亚和南苏丹等非洲国家的20余名“非洲国家落实全球安全倡议伙伴关系访华团”学员走进河南郑州航空港经济综合实验区，近距离触摸河南对外开放和智慧城市建设的真实样本。 图为工作人员向学员介绍郑州航空港经济综合实验区智慧城市运行状况。徐聪 摄 10月28日，来自冈比亚、肯尼亚和南苏丹等非洲国家的20余名“非洲国家落实全球安全倡议伙伴关系访华团”学员走进河南郑州航空港经济综合实验区，近距离触摸河南对外开放和智慧城市建设的真实样本。图为学员观看郑州航空港经济综合实验区智慧教育应用化场景。徐聪 摄 10月28日，来自冈比亚、肯尼亚和南苏丹等非洲国家的20余名“非洲国家落实全球安全倡议伙伴关系访华团”学员走进河南郑州航空港经济综合实验区，近距离触摸河南对外开放和智慧城市建设的真实样本。 图为学员参访郑州航空港经济综合实验区现代化物流枢纽。徐聪 摄 10月28日，来自冈比亚、肯尼亚和南苏丹等非洲国家的20余名“非洲国家落实全球安全倡议伙伴关系访华团”学员走进河南郑州航空港经济综合实验区，近距离触摸河南对外开放和智慧城市建设的真实样本。 图为学员参访郑州航空港经济综合实验区现代化物流枢纽。徐聪 摄 10月28日，来自冈比亚、肯尼亚和南苏丹等非洲国家的20余名“非洲国家落实全球安全倡议伙伴关系访华团”学员走进河南郑州航空港经济综合实验区，近距离触摸河南对外开放和智慧城市建设的真实样本。图为学员参访郑州航空港经济综合实验区现代化物流枢纽。徐聪 摄",
-      "date": "2026-10-29T01:39:56.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-29/10722555.shtml",
-      "image": ""
-    },
-    {
-      "id": "司徒美堂孙女的-口头禅-639b46a4972d",
-      "language": "zh",
-      "title": "司徒美堂孙女的“口头禅”",
-      "excerpt": "“咚咚咚”，秋日的午后，一阵敲门声在北京市大兴区观音寺街道的一栋居民楼中响起。开门的是一位满头银发的老人。",
-      "date": "2026-10-29T01:39:50.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722538.shtml",
-      "image": ""
-    },
-    {
-      "id": "10月29日央行开展1150亿元7天期逆回购操作-ad096a8c4f3c",
-      "language": "zh",
-      "title": "10月29日央行开展1150亿元7天期逆回购操作",
-      "excerpt": "中新网10月29日电 据中国人民银行网站消息，2026年10月29日中国人民银行以固定利率、数量招标方式开展了1150亿元7天期逆回购操作，全额满足了一级交易商需求。具体情况如下：",
-      "date": "2026-10-29T01:37:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722540.shtml",
       "image": ""
     }
   ]
