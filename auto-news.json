@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-10-29T21:51:35.428Z",
+  "generated_at": "2026-10-29T22:49:42.235Z",
   "items": [
+    {
+      "id": "circle-tether-freeze-funds-impacted-by-potent-a754d7f56046",
+      "language": "en",
+      "title": "Circle, Tether freeze funds impacted by potential Binance 'security issue'",
+      "excerpt": "Binance, the world's largest crypto exchange, said it was actively investigating the matter and that funds are \"completley safe.\"",
+      "date": "2026-10-29T22:47:32.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html",
+      "image": ""
+    },
+    {
+      "id": "乌克兰基辅遭弹道导弹袭击-0bfe20c08afd",
+      "language": "zh",
+      "title": "乌克兰基辅遭弹道导弹袭击",
+      "excerpt": "中新网10月30日电 综合乌克兰媒体报道，乌克兰首都基辅29日深夜传出爆炸声。",
+      "date": "2026-10-29T22:47:15.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-30/10723084.shtml",
+      "image": ""
+    },
+    {
+      "id": "binance-pauses-withdrawals-as-hackers-suspect-8488ef5b2588",
+      "language": "en",
+      "title": "Binance pauses withdrawals as hackers suspected of stealing billions in crypto",
+      "excerpt": "Some estimates say hackers stole billions in crypto from Binance, the world's largest cryptocurrency exchange, during a cyberattack on Thursday.",
+      "date": "2026-10-29T22:27:23.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/",
+      "image": ""
+    },
+    {
+      "id": "美军中央司令部司令向特朗普汇报对伊朗军事选项-7763f9e77ffc",
+      "language": "zh",
+      "title": "美军中央司令部司令向特朗普汇报对伊朗军事选项",
+      "excerpt": "总台记者当地时间10月29日获悉，美军中央司令部司令布拉德·库珀当天在白宫向美国总统特朗普汇报了针对伊朗的军事行动选项。美国国防部长赫格塞思和美军参谋长联席会议主席丹·凯恩也参加了此次会谈。",
+      "date": "2026-10-29T22:16:10.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-30/10723083.shtml",
+      "image": ""
+    },
+    {
+      "id": "elon-musk-is-truly-a-genius-says-vladimir-put-1487da005ecb",
+      "language": "en",
+      "title": "Elon Musk is ‘truly a genius,’ says Vladimir Putin",
+      "excerpt": "Putin said that he and Musk are in \"close contact\" about Rassvet, Russia's Starlink-like satellite connectivity project.",
+      "date": "2026-10-29T21:51:29.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/29/elon-musk-is-truly-a-genius-says-vladimir-putin/",
+      "image": ""
+    },
+    {
+      "id": "reddit-is-moving-to-a-logged-in-only-experien-ccef4b21c647",
+      "language": "en",
+      "title": "Reddit is moving to “a logged-in-only experience,” CEO says",
+      "excerpt": "Reddit's search traffic \"was down meaningfully\" last quarter.",
+      "date": "2026-10-29T21:47:57.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/10/reddit-will-require-you-to-log-in-eventually-ceo-confirms/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/07/reddit-icon-500x500.jpg"
+    },
     {
       "id": "young-athlete-and-former-minister-among-victi-b884c124cf38",
       "language": "en",
@@ -2939,66 +2999,6 @@
       "date": "2026-10-29T07:44:48.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722753.shtml",
-      "image": ""
-    },
-    {
-      "id": "记住-中风120-口诀-关键时刻能救命-7cd3b3fdda54",
-      "language": "zh",
-      "title": "记住“中风120”口诀，关键时刻能救命",
-      "excerpt": "今天(10月29日)是世界卒中日。卒中，俗称“中风”，是一种急性脑血管疾病，是我国成年人致死、致残的首要原因。",
-      "date": "2026-10-29T07:41:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/10-29/10722748.shtml",
-      "image": ""
-    },
-    {
-      "id": "美日将在日本联合生产导弹-中方回应-cb9079128155",
-      "language": "zh",
-      "title": "美日将在日本联合生产导弹 中方回应",
-      "excerpt": "中新网北京10月29日电 (记者 谢雁冰)中国外交部发言人郭嘉昆29日主持例行记者会。",
-      "date": "2026-10-29T07:40:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-29/10722747.shtml",
-      "image": ""
-    },
-    {
-      "id": "美国将中企列入所谓涉疆法案实体清单-中方强烈谴责-56cd12c42ffc",
-      "language": "zh",
-      "title": "美国将中企列入所谓涉疆法案实体清单 中方强烈谴责",
-      "excerpt": "中新社北京10月29日电 (记者 尹倩芸)就美国将中国企业列入所谓涉疆法案实体清单，中国商务部新闻发言人29日称，美方相关措施毫无事实依据，中方对此强烈谴责，坚决反对。",
-      "date": "2026-10-29T07:39:04.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722735.shtml",
-      "image": ""
-    },
-    {
-      "id": "商务部公布2027年货物出口配额总量-2e4dfd205f9f",
-      "language": "zh",
-      "title": "商务部公布2027年货物出口配额总量",
-      "excerpt": "中新网10月29日电 据商务部网站消息，依据《中华人民共和国对外贸易法》《中华人民共和国货物进出口管理条例》《出口商品配额管理办法》《出口商品配额招标办法》等法律、行政法规和规章的规定，现公布2027年货物出口配额总量及配额管理有关事项如下：",
-      "date": "2026-10-29T07:38:32.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-29/10722744.shtml",
-      "image": ""
-    },
-    {
-      "id": "海口管线入住地下-宿舍-更好守护城市安宁-7c078cc11ac5",
-      "language": "zh",
-      "title": "海口管线入住地下“宿舍” 更好守护城市安宁",
-      "excerpt": "截至2025年底，我国已建成地下管网总长度近390万公里。《城市更新“十五五”规划》提出，要开展城市地下管网体检，建设改造城市地下管网约77万公里。在海南海口，每年5到10月是台风季，地下管网怎么才能扛得住“台风季”？海口交出了什么样的答卷？",
-      "date": "2026-10-29T07:37:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-29/10722746.shtml",
-      "image": ""
-    },
-    {
-      "id": "投资云南-中国-云南-与泰国投资合作对话会-在曼谷举行-d5572beaf8bc",
-      "language": "zh",
-      "title": "“投资云南—中国（云南）与泰国投资合作对话会”在曼谷举行",
-      "excerpt": "中新网曼谷10月29日电 (王茜 李映民)“投资云南—中国(云南)与泰国投资合作对话会”27日下午在曼谷举行，会上介绍了云南及昆明的投资环境、泰国投资与贸易政策，以及泰国企业在云南的发展情况，探讨双方合作机会。",
-      "date": "2026-10-29T07:37:00.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-29/10722726.shtml",
       "image": ""
     }
   ]
