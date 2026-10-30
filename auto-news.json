@@ -1,6 +1,86 @@
 {
-  "generated_at": "2026-10-30T21:46:39.328Z",
+  "generated_at": "2026-10-30T22:46:47.942Z",
   "items": [
+    {
+      "id": "meta-outlook-revised-downward-by-s-p-on-cash--94fe7e50eeb0",
+      "language": "en",
+      "title": "Meta outlook revised downward by S&P on cash flow and capex concerns",
+      "excerpt": "Meta has been given a negative outlook by S&P Global Ratings due to the company's hefty capital expenditures and concerns about free cash flow.",
+      "date": "2026-10-30T22:42:26.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/30/meta-outlook-to-revised-to-negative-by-sp-after-cash-flow-negative.html",
+      "image": ""
+    },
+    {
+      "id": "俄罗斯总统助理-俄美已开始磋商三方会谈的具体日期-da5db223d607",
+      "language": "zh",
+      "title": "俄罗斯总统助理：俄美已开始磋商三方会谈的具体日期",
+      "excerpt": "当地时间30日，俄罗斯总统助理乌沙科夫表示，俄美已开始磋商预计在阿联酋阿布扎比举行的俄美乌三方会谈的具体日期。",
+      "date": "2026-10-30T22:41:40.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-31/10723717.shtml",
+      "image": ""
+    },
+    {
+      "id": "多个领域捷报频传-本周我国硬核成果持续上新-4ed8ce102d6e",
+      "language": "zh",
+      "title": "多个领域捷报频传！本周我国硬核成果持续上新",
+      "excerpt": "本周",
+      "date": "2026-10-30T22:39:16.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-31/10723716.shtml",
+      "image": ""
+    },
+    {
+      "id": "us-approves-sale-of-500-patriot-missiles-to-u-736c0e058d64",
+      "language": "en",
+      "title": "US approves sale of 500 Patriot missiles to Ukraine",
+      "excerpt": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles.",
+      "date": "2026-10-30T22:20:52.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/33b8/live/5acd5630-8cbd-11f1-b8ee-9b3c26ad07bb.jpg"
+    },
+    {
+      "id": "cramer-s-week-ahead-expect-more-volatility-as-9a79d637afe5",
+      "language": "en",
+      "title": "Cramer’s week ahead: Expect more volatility as tech earnings, midterms loom",
+      "excerpt": "Investors await earnings from Apple, AMD, and other major companies, as well as the midterm elections and the monthly jobs report.",
+      "date": "2026-10-30T22:17:13.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/30/jim-cramer-week-ahead-apple-amd-jobs-report.html",
+      "image": ""
+    },
+    {
+      "id": "intel-s-stock-crashes-knocking-12b-from-gover-d95f2af92ca0",
+      "language": "en",
+      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+      "excerpt": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+      "date": "2026-10-30T21:54:34.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+      "image": ""
+    },
+    {
+      "id": "anthropic-expected-to-receive-high-junk-ratin-f3e255de2b47",
+      "language": "en",
+      "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
+      "excerpt": "Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its business.",
+      "date": "2026-10-30T21:52:03.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "image": ""
+    },
+    {
+      "id": "applebee-s-exposed-customers-personal-data-af-fd5da6a441b6",
+      "language": "en",
+      "title": "Applebee’s exposed customers’ personal data after leaving database password in app",
+      "excerpt": "EXCLUSIVE: A security researcher discovered the hardcoded credential in Applebee's app, allowing unrestricted access to customers' personal data.",
+      "date": "2026-10-30T21:48:53.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/30/applebees-exposed-customers-personal-data-after-leaving-database-password-in-app/",
+      "image": ""
+    },
     {
       "id": "last-minute-halloween-costumes-for-tech-nerds-5732896b70a3",
       "language": "en",
@@ -2920,86 +3000,6 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/cxvgdzpy7241o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c53f/live/e8558d90-d427-11f1-93e1-3b657b665bcf.png"
-    },
-    {
-      "id": "湖南江永晚香姜错峰上市-特色产业铺就富民路-268423510997",
-      "language": "zh",
-      "title": "湖南江永晚香姜错峰上市 特色产业铺就富民路",
-      "excerpt": "中新网永州10月30日电(田海忠 陈丽华)眼下，湖南江永晚香姜迎来集中采收旺季，田间地头采收、分拣、装运有序开展，新鲜晚香姜陆续外销。",
-      "date": "2026-10-30T07:25:17.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723342.shtml",
-      "image": ""
-    },
-    {
-      "id": "前三季度全国可再生能源新增装机占全部新增装机比重超七成-26e0cf28c357",
-      "language": "zh",
-      "title": "前三季度全国可再生能源新增装机占全部新增装机比重超七成",
-      "excerpt": "中新网10月30日电 10月30日，国家能源局举行新闻发布会，介绍前三季度全国能源形势及发展成效、可再生能源并网运行、电力市场交易、迎峰度冬电力保供举措等情况，并回答记者提问。国家能源局新能源和可再生能源司副司长桂小阳在会上就2026年前三季度可再生能源并网运行情况作简要介绍。",
-      "date": "2026-10-30T07:19:05.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723292.shtml",
-      "image": ""
-    },
-    {
-      "id": "a股收评-超4500只个股飘绿-三大指数收跌-0d3e42f85f3c",
-      "language": "zh",
-      "title": "A股收评：超4500只个股飘绿，三大指数收跌",
-      "excerpt": "A股收评：超4500只个股飘绿，三大指数收跌；科创50跌超5%；海运、酒类、银行上涨；通信设备、半导体跌幅居前，贵金属、汽车、地产下跌",
-      "date": "2026-10-30T07:14:51.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723335.shtml",
-      "image": ""
-    },
-    {
-      "id": "伊利业绩说明会-液奶四季度增长有望提速-深加工高价值产品持续放量-0b5944bd6bae",
-      "language": "zh",
-      "title": "伊利业绩说明会：液奶四季度增长有望提速 深加工高价值产品持续放量",
-      "excerpt": "10月30日，伊利股份召开2026年三季报业绩说明会。公司表示，四季度液奶业务有望实现更好增长，将成为拉动收入增长的重要动力。全年来看，公司维持年初经营指引不变，核心经营利润率有望继续提升。",
-      "date": "2026-10-30T07:10:19.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723325.shtml",
-      "image": ""
-    },
-    {
-      "id": "启元第5000台个人机器人下线-欧菲光全栈感知方案助力量产提速-2198e5bac608",
-      "language": "zh",
-      "title": "启元第5000台个人机器人下线 欧菲光全栈感知方案助力量产提速",
-      "excerpt": "近日，启元机器人第5000台个人机器人正式下线。从9月20日启元T1、启元Q1两款个人机器人正式发售，到一个月后迎来第5000台个人机器人下线，启元机器人规模化量产交付能力加速形成，个人机器人迈向批量生产和真实用户交付，是物理AI的里程碑式的跨越。",
-      "date": "2026-10-30T07:09:29.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723321.shtml",
-      "image": ""
-    },
-    {
-      "id": "确诊重疾2天到账2万-贝壳因-守护金-被列为2026责任品牌-21ab9a6581f3",
-      "language": "zh",
-      "title": "确诊重疾2天到账2万，贝壳因“守护金”被列为2026责任品牌",
-      "excerpt": "10月29日，中国新闻周刊《全球责任无问西东：2026企业社会责任大趋势》(以下简称“报告”)在京发布，贝壳被纳入2026责任品牌案例。",
-      "date": "2026-10-30T07:08:49.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723322.shtml",
-      "image": ""
-    },
-    {
-      "id": "萨尔瓦多前总统萨卡刑满释放-曾因贪污3亿美元公款入狱-7e84f2a5ee4c",
-      "language": "zh",
-      "title": "萨尔瓦多前总统萨卡刑满释放 曾因贪污3亿美元公款入狱",
-      "excerpt": "中新网北京10月30日电 圣萨尔瓦多消息：据萨尔瓦多《世界报》等媒体报道，萨尔瓦多前总统安东尼奥·萨卡当地时间29日服刑期满获释，于当天下午前往首都圣萨尔瓦多一家法院报告获释情况。他此前曾因侵吞公款和洗钱被判处十年监禁。",
-      "date": "2026-10-30T07:02:44.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-30/10723293.shtml",
-      "image": ""
-    },
-    {
-      "id": "最新民调显示支持对华合作是韩国社会的共识-b3af5688f547",
-      "language": "zh",
-      "title": "最新民调显示支持对华合作是韩国社会的共识",
-      "excerpt": "中新网首尔10月30日电 据中国驻韩国大使馆30日消息，近期，中国驻韩国大使馆委托韩国权威民调机构盖洛普实施《韩民众对华认知民调》。10月1日至7日，盖洛普面向韩国1000名受访者开展民意调查，调查对象涵盖不同年龄、性别、地区及政治倾向的群体。现发布结果如下：",
-      "date": "2026-10-30T07:02:04.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-30/10723286.shtml",
-      "image": ""
     }
   ]
 }
