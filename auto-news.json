@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-10-30T16:54:52.962Z",
+  "generated_at": "2026-10-30T17:50:00.158Z",
   "items": [
+    {
+      "id": "zest-s-new-ai-agent-finds-restaurants-and-boo-4d0843b360d0",
+      "language": "en",
+      "title": "Zest’s new AI agent finds restaurants and books reservations over text",
+      "excerpt": "Can't agree on where to eat? Zest's AI concierge can combine everyone's tastes, put restaurant options to a vote, and make the reservation.",
+      "date": "2026-10-30T17:47:12.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+      "image": ""
+    },
+    {
+      "id": "crypto-giant-binance-attempting-to-recover-6--02ecd35b7079",
+      "language": "en",
+      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+      "excerpt": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
+      "date": "2026-10-30T17:39:43.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/61df/live/2d4de870-d487-11f1-b441-2b33b063138f.jpg"
+    },
+    {
+      "id": "g20-family-photo-cancelled-after-protests-ove-03f161c6332a",
+      "language": "en",
+      "title": "G20 'family photo' cancelled after protests over presence of Russian minister",
+      "excerpt": "European foreign ministers refused to be pictured with Sergei Lavrov at the summit being held in Atlanta.",
+      "date": "2026-10-30T17:25:20.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fa3e/live/bc4ea460-d487-11f1-80bc-6d398902272f.jpg"
+    },
+    {
+      "id": "tankers-defy-sharp-escalation-of-iranian-atta-14e0d6608c3e",
+      "language": "en",
+      "title": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait of Hormuz",
+      "excerpt": "Soaring freight rates are giving tankers a big financial incentive to run the gauntlet through the Strait of Hormuz.",
+      "date": "2026-10-30T17:21:47.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/30/tanker-attack-strait-hormuz-iran-war-oil.html",
+      "image": ""
+    },
+    {
+      "id": "canada-stops-using-avalanche-dogs-for-rescues-21a4d0a5e222",
+      "language": "en",
+      "title": "Canada stops using 'avalanche dogs' for rescues in Rocky Mountains, stirring outrage",
+      "excerpt": "A 55-year-old dog rescue programme that has found missing hikers and children in the Canadian wilderness was axed as part of government budget cuts.",
+      "date": "2026-10-30T17:00:32.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwdd8q8e9e9yo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/92b9/live/b42540a0-d3ce-11f1-9c32-1532a6164171.jpg"
+    },
+    {
+      "id": "google-s-first-data-center-satellite-is-onlin-235bb524b25e",
+      "language": "en",
+      "title": "Google’s first data center satellite is online and writing poetry",
+      "excerpt": "The first TPU in space is a running a Google DeepMind Gemma 4 model and writing cheesy poetry.",
+      "date": "2026-10-30T17:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+      "image": ""
+    },
     {
       "id": "st-louis-fed-s-musalem-another-rate-hike-need-009386a967cc",
       "language": "en",
@@ -1742,6 +1802,16 @@
       "image": ""
     },
     {
+      "id": "what-s-at-stake-for-trump-in-the-us-midterms-74b72705acb4",
+      "language": "en",
+      "title": "What's at stake for Trump in the US midterms?",
+      "excerpt": "Anthony Zurcher explains how the results of the midterm elections could reshape the rest of Trump's presidency.",
+      "date": "2026-10-30T10:19:48.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cq77pm2jmmd5o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bfb4/live/7add81a0-d3be-11f1-b441-2b33b063138f.jpg"
+    },
+    {
       "id": "官方通报-湘江三大桥桥墩疑似倾斜-非桥梁桥墩主体结构-ed65b24c9b5c",
       "language": "zh",
       "title": "官方通报“湘江三大桥桥墩疑似倾斜”：非桥梁桥墩主体结构",
@@ -2930,76 +3000,6 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-30/10723304.shtml",
       "image": ""
-    },
-    {
-      "id": "一新生摆拍大体老师头骨标本发朋友圈-校方通报-8863dc242369",
-      "language": "zh",
-      "title": "一新生摆拍大体老师头骨标本发朋友圈 校方通报",
-      "excerpt": "中新网10月30日电 据长沙民政职业技术学院医学院网站消息，10月29日，长沙民政职业技术学院医学院发布情况通报：",
-      "date": "2026-10-30T06:19:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723282.shtml",
-      "image": ""
-    },
-    {
-      "id": "乡村行-看振兴-从古人-朋友圈-到今人-生活圈-磁州窑凭啥-接地气-千年-84bafc275947",
-      "language": "zh",
-      "title": "（乡村行·看振兴）从古人“朋友圈”到今人“生活圈”：磁州窑凭啥“接地气”千年？",
-      "excerpt": "中新网邯郸10月30日电 题：从古人“朋友圈”到今人“生活圈”：磁州窑凭啥“接地气”千年？",
-      "date": "2026-10-30T06:19:52.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723300.shtml",
-      "image": ""
-    },
-    {
-      "id": "广东启动企联医疗健康服务平台-粤小医-同步落地-ee87c9e2a93f",
-      "language": "zh",
-      "title": "广东启动企联医疗健康服务平台 “粤小医”同步落地",
-      "excerpt": "中新网广州10月30日电 (记者 蔡敏婕)“2026健康产业创新发展大会”29日在广州举行。广东省企联医疗健康服务平台启动，平台首期落地项目“粤小医”同步发布。",
-      "date": "2026-10-30T06:19:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723299.shtml",
-      "image": ""
-    },
-    {
-      "id": "千年瑶韵舞动连南-盘王节11月启幕-393f0d56b89e",
-      "language": "zh",
-      "title": "千年瑶韵舞动连南 盘王节11月启幕",
-      "excerpt": "中新网清远10月30日电 (记者 张璐)第十九届“瑶族盘王节”文化活动暨2026年连南瑶族自治县第十六届“盘王节·耍歌堂”瑶族文化艺术活动将于11月15日至12月20日在广东连南瑶族自治县举办。",
-      "date": "2026-10-30T06:18:46.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723295.shtml",
-      "image": ""
-    },
-    {
-      "id": "浙江观察-镇-到-城-一个百年瓯越名埠的跃升逻辑-61d623afa39f",
-      "language": "zh",
-      "title": "浙江观察：“镇”到“城” 一个百年瓯越名埠的跃升逻辑",
-      "excerpt": "中新网温州10月30日电(胡丰盛)每天中午，浙江省平阳县鳌江镇兴隆社区老年食堂里，3.5元一顿的午饭准时开餐，两荤两素一汤，来吃饭的多是子女不在身边的老人；几公里外，温州益坤电气的车间里，一套机器视觉系统正替代人眼，给高铁避雷器的核心元件“验伤”；而在鳌江国际新城的工地上，239米的超高层已经结顶，站在上面往下看，车站大道纵贯南北，串联滨江商务区、高铁新城两大板块；银泰城、万达广场、中联影视城沿大道两侧次第铺展、遥相呼应，一条集聚人气商气、彰显都市气质的城市发展主轴蔚然成型。",
-      "date": "2026-10-30T06:14:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723294.shtml",
-      "image": ""
-    },
-    {
-      "id": "西安出台商品房销售新政-5a5e5721d277",
-      "language": "zh",
-      "title": "西安出台商品房销售新政",
-      "excerpt": "中新网10月30日电 据“西安住建”微信公众号消息，10月30日，西安市住房和城乡建设局、自然资源和规划局、地方金融管理局三部门联合印发《关于贯彻落实〈关于完善商品住房销售制度的通知〉的实施意见》，从预售管理、现房销售、土地供应、竣工验收、主办银行制度、融资支持及开发建设管理等七个方面，推出二十四条具体举措。",
-      "date": "2026-10-30T06:08:27.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723278.shtml",
-      "image": ""
-    },
-    {
-      "id": "syrians-struggle-with-soaring-prices-as-crisi-29f7fd3ebb19",
-      "language": "en",
-      "title": "Syrians struggle with soaring prices as crisis challenges post-Assad recovery",
-      "excerpt": "End of subsidies and rising prices drive discontent, testing support for Ahmed al-Sharaa's government.",
-      "date": "2026-10-30T06:02:23.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmn4egvez1yzo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/acad/live/bd8904b0-d20c-11f1-b3b6-c1e79e957e40.jpg"
     }
   ]
 }
