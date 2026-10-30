@@ -1,6 +1,376 @@
 {
-  "generated_at": "2026-10-30T11:50:13.440Z",
+  "generated_at": "2026-10-30T13:02:42.584Z",
   "items": [
+    {
+      "id": "5-days-left-your-last-chance-to-connect-scale-6edb7f80f01b",
+      "language": "en",
+      "title": "5 days left: Your last chance to connect, scale, and save at TechCrunch Founder Summit 2026",
+      "excerpt": "5 days to save up to $100, plus a second pass for free to TechCrunch Founder Summit 2026 in Boston on November 4. Register now.",
+      "date": "2026-10-30T13:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/",
+      "image": ""
+    },
+    {
+      "id": "can-ai-data-centers-be-mass-produced-like-car-93ad0842fdd4",
+      "language": "en",
+      "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
+      "excerpt": "Runware is building a factory to turn out prefabricated AI data centers on an assembly line. The real test will be whether it can deliver at that scale.",
+      "date": "2026-10-30T13:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+      "image": ""
+    },
+    {
+      "id": "中国国家能源局-今年迎峰度冬全国电力供需总体平衡-39b2ce020711",
+      "language": "zh",
+      "title": "中国国家能源局：今年迎峰度冬全国电力供需总体平衡",
+      "excerpt": "中新社北京10月30日电 (记者 王梦瑶)中国国家能源局电力司副司长谭洪江30日在北京表示，今年迎峰度冬全国电力供需总体保持平衡，但供应保障形势复杂，若出现极端寒潮天气过程、一次能源供应紧张等问题，局部地区高峰时段可能供需偏紧，通过余缺互济等措施可以有效解决。",
+      "date": "2026-10-30T12:59:01.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723603.shtml",
+      "image": ""
+    },
+    {
+      "id": "长征胜利90周年文物联展亮相中国国家博物馆-45bd71cb4db0",
+      "language": "zh",
+      "title": "长征胜利90周年文物联展亮相中国国家博物馆",
+      "excerpt": "中新社北京10月30日电 (记者 应妮 李纯)几株干枯的野草、一张发黄的川陕苏区布币、多语言版本的《红星照耀中国》……30日在中国国家博物馆开幕的“英名永存 薪火长歌——纪念中国工农红军长征胜利90周年文物联展”，用400余件展品构建历史与当代的对话。",
+      "date": "2026-10-30T12:58:59.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723605.shtml",
+      "image": ""
+    },
+    {
+      "id": "swiss-central-bank-posts-bumper-23bn-profit-t-c77b78b34b49",
+      "language": "en",
+      "title": "Swiss central bank posts bumper $23bn profit thanks to gold, foreign assets",
+      "excerpt": "Unlike other major central banks, the Swiss National Bank has a significant equity portfolio.",
+      "date": "2026-10-30T12:52:36.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/30/swiss-national-bank-q3-profit-gold-foreign-asset.html",
+      "image": ""
+    },
+    {
+      "id": "纪念中国工农红军长征胜利90周年文物联展-在北京开幕-d7044bb6814b",
+      "language": "zh",
+      "title": "“纪念中国工农红军长征胜利90周年文物联展”在北京开幕",
+      "excerpt": "",
+      "date": "2026-10-30T12:50:29.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-30/1209272.shtml",
+      "image": ""
+    },
+    {
+      "id": "中新健康-27岁抗癌博主悦悦去世-医生提醒-乳房肿块不能仅凭手感判断-8ac0ffe3e451",
+      "language": "zh",
+      "title": "中新健康｜27岁抗癌博主悦悦去世，医生提醒：乳房肿块不能仅凭手感判断",
+      "excerpt": "中新网北京10月30日电(罗春昊)10月29日，社交账号“cookie”发布讣告。讣告显示，抗癌博主悦悦已于今年10月27日安然离世，生命最终定格在了27岁。",
+      "date": "2026-10-30T12:46:01.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/jk/2026/10-30/10723604.shtml",
+      "image": ""
+    },
+    {
+      "id": "习近平会见瑞士联邦主席帕姆兰-1d143c9bcea9",
+      "language": "zh",
+      "title": "习近平会见瑞士联邦主席帕姆兰",
+      "excerpt": "新华社北京10月30日电(记者温馨、伍岳)10月30日下午，国家主席习近平在北京人民大会堂会见来华进行工作访问的瑞士联邦主席帕姆兰。",
+      "date": "2026-10-30T12:45:49.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723609.shtml",
+      "image": ""
+    },
+    {
+      "id": "gamble-on-democracy-inside-suspicious-electio-a0c7a137e466",
+      "language": "en",
+      "title": "Gamble on democracy: Inside suspicious election-contracts trading on prediction markets",
+      "excerpt": "Prediction markets' failure to call an LA primary correctly raised the possibility they can be manipulated to exaggerate the amount of support candidates have.",
+      "date": "2026-10-30T12:45:16.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/30/gamble-on-democracy-inside-suspicious-election-contracts-trading-on-prediction-markets-.html",
+      "image": ""
+    },
+    {
+      "id": "原创技术引领-中国推进编制审定首个钙钛矿膜结晶制造国家标准-660d93928d31",
+      "language": "zh",
+      "title": "原创技术引领 中国推进编制审定首个钙钛矿膜结晶制造国家标准",
+      "excerpt": "中新网北京10月30日电 (记者 孙自法)基于中国研发团队在全球首次提出的钙钛矿涂层抽气结晶技术，以及10多年的攻关成果及产业应用，全国首个钙钛矿膜结晶制造国家标准《抽气结晶物理液相沉积薄膜技术规范》正积极推进。",
+      "date": "2026-10-30T12:44:27.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723595.shtml",
+      "image": ""
+    },
+    {
+      "id": "全国人大常委会党组举行会议-学习贯彻习近平总书记在党的二十届五中全会上的重要讲话和全会精神-7568064f1510",
+      "language": "zh",
+      "title": "全国人大常委会党组举行会议 学习贯彻习近平总书记在党的二十届五中全会上的重要讲话和全会精神 赵乐际主持并讲话",
+      "excerpt": "新华社北京10月30日电 中共全国人大常委会党组30日举行会议，传达学习习近平总书记在党的二十届五中全会上的重要讲话和全会精神，结合人大工作实际研究贯彻落实措施。中共中央政治局常委、全国人大常委会委员长、党组书记赵乐际主持会议并讲话。",
+      "date": "2026-10-30T12:44:01.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723612.shtml",
+      "image": ""
+    },
+    {
+      "id": "天津前三季度跨境收支规模达1413亿美元-同比增长13-5-e953f3186af6",
+      "language": "zh",
+      "title": "天津前三季度跨境收支规模达1413亿美元 同比增长13.5%",
+      "excerpt": "中新网天津10月30日电 (记者 周亚强)记者从中国人民银行天津市分行29日举行的发布会上获悉，2026年前三季度，天津市涉外经济规模稳步增长，跨境收支总量1413.0亿美元，同比增长13.5%，增速较上年同期加快13.4个百分点。",
+      "date": "2026-10-30T12:42:57.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723593.shtml",
+      "image": ""
+    },
+    {
+      "id": "李希主持召开中央纪委常委会会议-传达学习贯彻党的二十届五中全会精神-f1d77eccfd91",
+      "language": "zh",
+      "title": "李希主持召开中央纪委常委会会议 传达学习贯彻党的二十届五中全会精神",
+      "excerpt": "新华社北京10月30日电 二十届中央纪委常委会10月30日召开会议，传达学习贯彻党的二十届五中全会精神，中共中央政治局常委、中央纪委书记李希主持会议。他强调，纪检监察机关要认真学习贯彻五中全会精神，深入学习贯彻习近平党建思想，深刻领悟“两个确立”的决定性意义、坚决做到“两个维护”，切实把思想和行动统一到党中央决策部署上来，以更高标准、更实举措推动纪检监察工作高质量发展，持之以恒推进全面从严治党，为以中国式现代化全面推进强国建设、民族复兴伟业提供坚强保障。",
+      "date": "2026-10-30T12:42:35.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723601.shtml",
+      "image": ""
+    },
+    {
+      "id": "京津冀国家级经开区数据产业联盟成立-成员单位31家-3e7106919724",
+      "language": "zh",
+      "title": "京津冀国家级经开区数据产业联盟成立 成员单位31家",
+      "excerpt": "中新网天津10月30日电 (孙翼飞)第五届京津冀国家级经开区优化营商环境改革创新工作会议29日至30日在天津市武清区举行。记者从会上获悉，京津冀国家级经开区数据产业联盟正式揭牌成立，成员单位31家。",
+      "date": "2026-10-30T12:42:19.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723592.shtml",
+      "image": ""
+    },
+    {
+      "id": "佛肇云高速项目首条高压迁改线路一次割接送电成功-597219af1337",
+      "language": "zh",
+      "title": "佛肇云高速项目首条高压迁改线路一次割接送电成功",
+      "excerpt": "中新网肇庆10月30日电 (记者 王坚)据中铁二局30日通报称，近日，佛肇云高速公路项目首条高压迁改线路——稔前线一次割接送电成功，为后续工程推进奠定良好基础。",
+      "date": "2026-10-30T12:41:29.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723591.shtml",
+      "image": ""
+    },
+    {
+      "id": "中共全国政协党组召开会议-传达学习贯彻党的二十届五中全会精神-王沪宁主持并讲话-61b3731d490e",
+      "language": "zh",
+      "title": "中共全国政协党组召开会议 传达学习贯彻党的二十届五中全会精神 王沪宁主持并讲话",
+      "excerpt": "新华社北京10月30日电 中共全国政协党组30日召开会议，传达学习贯彻党的二十届五中全会精神。中共中央政治局常委、全国政协主席、党组书记王沪宁主持并讲话。",
+      "date": "2026-10-30T12:40:46.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723600.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国与东盟冀在农业领域深入开展数智化合作-f910931a3b73",
+      "language": "zh",
+      "title": "中国与东盟冀在农业领域深入开展数智化合作",
+      "excerpt": "【东盟专线】中国与东盟冀在农业领域深入开展数智化合作",
+      "date": "2026-10-30T12:40:28.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-30/10723585.shtml",
+      "image": ""
+    },
+    {
+      "id": "山西10部门联合印发转型金融工作指引-明确-十五五-六方面措施-095742f9c9a3",
+      "language": "zh",
+      "title": "山西10部门联合印发转型金融工作指引 明确“十五五”六方面措施",
+      "excerpt": "中新网太原10月30日电 (记者 杨杰英)记者30日从中国人民银行山西省分行获悉，该行会同省地方金融管理局、省发展改革委、省工信厅等10部门联合印发《持续深化山西转型金融发展工作指引》(以下简称《指引》)，对“十五五”时期山西转型金融工作作出部署。",
+      "date": "2026-10-30T12:39:42.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723580.shtml",
+      "image": ""
+    },
+    {
+      "id": "中外人士新疆共话国际商事争端预防与解决-d048df9447bc",
+      "language": "zh",
+      "title": "中外人士新疆共话国际商事争端预防与解决",
+      "excerpt": "中新社乌鲁木齐10月30日电 (胡嘉琛)2026商事争端解决(新疆)国际对话会30日在新疆乌鲁木齐市举行。来自10余个国家和地区的近200名工商界、法律界人士及企业代表等参会，共同探讨国际商事争端预防与解决。",
+      "date": "2026-10-30T12:39:32.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723581.shtml",
+      "image": ""
+    },
+    {
+      "id": "李强主持召开国务院党组会议-学习贯彻习近平总书记在党的二十届五中全会上的重要讲话和全会精神-7a032dd25a85",
+      "language": "zh",
+      "title": "李强主持召开国务院党组会议 学习贯彻习近平总书记在党的二十届五中全会上的重要讲话和全会精神 丁薛祥出席",
+      "excerpt": "新华社北京10月30日电 10月30日，国务院总理、党组书记李强主持召开国务院党组会议，学习贯彻习近平总书记在党的二十届五中全会上的重要讲话和全会精神。",
+      "date": "2026-10-30T12:38:52.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723598.shtml",
+      "image": ""
+    },
+    {
+      "id": "福建海警位金门附近海域依法开展常态执法巡查-090ba2567fa2",
+      "language": "zh",
+      "title": "福建海警位金门附近海域依法开展常态执法巡查",
+      "excerpt": "中新社北京10月30日电 中国海警局东海分局新闻发言人朱安庆30日表示，当日，福建海警位金门附近海域依法开展常态执法巡查。10月以来，福建海警组织舰艇编队持续强化相关海域管控力度，切实维护两岸渔民合法正当权益和生命财产安全，有力保障厦金海域正常航行和作业秩序。(完)",
+      "date": "2026-10-30T12:37:04.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723584.shtml",
+      "image": ""
+    },
+    {
+      "id": "广东出台红树林湿地保护专项规划-谋划四大重点工程-e911b289d54d",
+      "language": "zh",
+      "title": "广东出台红树林湿地保护专项规划 谋划四大重点工程",
+      "excerpt": "中新网广州10月30日电 (程景伟 林荫)据广东省林业局30日消息，该局近日印发《广东省红树林湿地保护专项规划(2026—2035年)》(以下简称《规划》)。",
+      "date": "2026-10-30T12:37:00.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723590.shtml",
+      "image": ""
+    },
+    {
+      "id": "swedish-academic-says-he-has-been-barred-from-e59e29ad7cf9",
+      "language": "en",
+      "title": "Swedish academic says he has been barred from UK over event with Palestine Action founder",
+      "excerpt": "Andreas Malm was due to appear on a panel alongside a co-founder of the proscribed group next week.",
+      "date": "2026-10-30T12:36:55.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck1l32jdlvl1o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c9fe/live/78e57430-d458-11f1-93d9-89af68edb68a.jpg"
+    },
+    {
+      "id": "中共全国政协党组召开会议-传达学习贯彻党的二十届五中全会精神-王沪宁主持并讲话-ef9288d5935d",
+      "language": "zh",
+      "title": "中共全国政协党组召开会议 传达学习贯彻党的二十届五中全会精神 王沪宁主持并讲话",
+      "excerpt": "",
+      "date": "2026-10-30T12:35:28.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-30/1209271.shtml",
+      "image": ""
+    },
+    {
+      "id": "习近平同德国总统施泰因迈尔会谈-9606d7e14f20",
+      "language": "zh",
+      "title": "习近平同德国总统施泰因迈尔会谈",
+      "excerpt": "新华社北京10月30日电(记者温馨、伍岳)10月30日下午，国家主席习近平在北京人民大会堂同来华进行国事访问的德国总统施泰因迈尔举行会谈。",
+      "date": "2026-10-30T12:34:44.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723602.shtml",
+      "image": ""
+    },
+    {
+      "id": "规范人体疾病易感基因检测-两项生物芯片国家标准获批发布-30ea6797719f",
+      "language": "zh",
+      "title": "规范人体疾病易感基因检测 两项生物芯片国家标准获批发布",
+      "excerpt": "中新网10月30日电 据市场监管总局网站消息，近日，市场监管总局(国家标准委)批准发布《生物芯片基本术语》《人体疾病易感DNA多态性检测微阵列芯片》2项新版推荐性国家标准，将自2027年2月1日起实施。",
+      "date": "2026-10-30T12:34:38.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723577.shtml",
+      "image": ""
+    },
+    {
+      "id": "报告显示-中国知识产权保护指数升至全球第6位-62111abcd704",
+      "language": "zh",
+      "title": "报告显示：中国知识产权保护指数升至全球第6位",
+      "excerpt": "中新网10月30日电 中国贸促会于30日举行10月例行新闻发布会。中国贸促会新闻发言人王文帅表示，为科学评估全球知识产权保护水平，帮助中国企业全面了解重点国家知识产权保护的法律、政策与市场信息，中国贸促会自2022年起持续开展全球知识产权保护指数年度研究，现正式发布《全球知识产权保护指数报告(2025)》。",
+      "date": "2026-10-30T12:33:42.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723572.shtml",
+      "image": ""
+    },
+    {
+      "id": "广东茂名前三季度对apec其他成员经济体进出口增逾五成-d1ca4ee33ac3",
+      "language": "zh",
+      "title": "广东茂名前三季度对APEC其他成员经济体进出口增逾五成",
+      "excerpt": "中新网茂名10月30日电 (梁盛 周鲁丽)据广东茂名海关30日发布的统计数据显示，今年前三季度，茂名市对APEC其他成员经济体进出口86.6亿元，同比增长52.9%。其中，出口32.6亿元，同比增长23.6%；进口54亿元，同比增长78.4%。",
+      "date": "2026-10-30T12:31:46.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723579.shtml",
+      "image": ""
+    },
+    {
+      "id": "国际法制计量组织重要技术委员会秘书处落地中国-9860279b289d",
+      "language": "zh",
+      "title": "国际法制计量组织重要技术委员会秘书处落地中国",
+      "excerpt": "中新网北京10月30日电 (记者 刘亮)据中国国家市场监管总局30日消息，第61次国际法制计量委员会(CIML)大会近日在印度德里召开，近60个成员国100多名代表参会。",
+      "date": "2026-10-30T12:29:32.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723573.shtml",
+      "image": ""
+    },
+    {
+      "id": "印尼爪哇野牛诞下第三只幼崽-3a3fa101d491",
+      "language": "zh",
+      "title": "印尼爪哇野牛诞下第三只幼崽",
+      "excerpt": "中新社雅加达10月30日电 (记者 李志全)印度尼西亚林业部30日发布消息称，位于西爪哇省庞岸达兰的帕南宗自然保护区近日迎来第三只爪哇野牛幼崽。目前，该保护区爪哇野牛数量已增至7头。",
+      "date": "2026-10-30T12:29:00.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/10-30/10723583.shtml",
+      "image": ""
+    },
+    {
+      "id": "the-big-questions-remaining-after-anthropic-s-cdc166e9987b",
+      "language": "en",
+      "title": "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
+      "excerpt": "Uncertainties remain ahead of one of the most hotly anticipated IPOs in history.",
+      "date": "2026-10-30T12:27:36.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/30/anthropic-ipo-s1-revenue-compute.html",
+      "image": ""
+    },
+    {
+      "id": "荷源网储一体赋能-无锡东港打造苏南园区储能可复制样板-9a37cb27494d",
+      "language": "zh",
+      "title": "荷源网储一体赋能 无锡东港打造苏南园区储能可复制样板",
+      "excerpt": "近日，“2026新奥能源泛能行”活动走进无锡东港，实地探访苏南工业园区能源绿色转型典型实践。作为苏南制造业重镇、全国百强乡镇，无锡市锡山区东港镇工业产业密集、外向型企业集聚，庞大的工商业用能需求，让园区绿色转型、节能降本、稳定供能成为发展刚需。依托政企深度联动，东港镇联合新奥能源落地光伏+储能+配网+多能协同一体化泛能模式，建成10兆瓦时储能配套体系，打破传统园区单一供能瓶颈，实现绿电高效消纳、用能成本下降、碳排放减量三重突破。如今的东港项目，已成为适配苏南存量工业园区、可落地、可复制、可推广的储能示范样本，为长三角产业园区能源绿色转型提供全新路径。",
+      "date": "2026-10-30T12:22:39.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723563.shtml",
+      "image": ""
+    },
+    {
+      "id": "网线连山海-盐池借闽宁协作跑出电商加速度-07ea7055eb46",
+      "language": "zh",
+      "title": "网线连山海 盐池借闽宁协作跑出电商加速度",
+      "excerpt": "中新网宁夏盐池10月30日电 (记者 于晶)30日，记者走进宁夏盐池县狮城宁好电商网批(西部)运营基地，直播间里主播推介滩羊、黄花菜、小杂粮等特产，仓储区内包裹堆叠，正发往全国各地。依托闽宁协作，电商正为这座西北小城打开产销新通道。",
+      "date": "2026-10-30T12:20:55.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723571.shtml",
+      "image": ""
+    },
+    {
+      "id": "上海首个航空前置货站出口货值突破十亿元-3ce166e31316",
+      "language": "zh",
+      "title": "上海首个航空前置货站出口货值突破十亿元",
+      "excerpt": "中新网上海10月30日电 (记者 姜煜)上海海关所属松江海关30日发布的统计数据显示，上海首个航空前置货站——松江综合保税区前置货站自2025年11月13日正式运行，至今年10月29日，一年不到的时间，海关累计监管该货站出口货物1.6万吨、总货值达10.4亿元。",
+      "date": "2026-10-30T12:19:37.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723568.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国人寿前三季度剔除短期波动影响后的净利润同比增长15-8-发展韧性持续彰显-88598b3d08e2",
+      "language": "zh",
+      "title": "中国人寿前三季度剔除短期波动影响后的净利润同比增长15.8%，发展韧性持续彰显",
+      "excerpt": "10月30日晚间，中国人寿保险股份有限公司(以下简称“中国人寿”，股票代码：601628.SH，2628.HK)公布了第三季度业绩报告。",
+      "date": "2026-10-30T12:17:47.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723558.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国贸促会-中美工商界正形成-双向奔赴-的良性互动-84cd5e5e51e5",
+      "language": "zh",
+      "title": "中国贸促会：中美工商界正形成“双向奔赴”的良性互动",
+      "excerpt": "中新社北京10月30日电 (记者 尹倩芸)中国贸促会新闻发言人王文帅30日在例行新闻发布会上称，二十国集团工商峰会(B20峰会)与亚太经合组织(APEC)工商领导人峰会在美中两国相继举行，将完成工商界多边活动的一次跨洋“接力”，中国企业组团赴美、美国企业竞相来华，中美工商界正形成“双向奔赴”的良性互动。",
+      "date": "2026-10-30T12:14:07.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723588.shtml",
+      "image": ""
+    },
+    {
+      "id": "2027-nissan-rogue-hybrid-drives-like-an-ev-bu-3e7f75aad019",
+      "language": "en",
+      "title": "2027 Nissan Rogue Hybrid: Drives like an EV, but there's no plug involved",
+      "excerpt": "Nissan’s series hybrid e-Power system has been retuned for American roads.",
+      "date": "2026-10-30T12:00:18.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/10/2027-nissan-rogue-hybrid-drives-like-an-ev-but-theres-no-plug-involved/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/2027-Nissan-Rogue-Hybrid_34-500x500-1793298715.jpg"
+    },
     {
       "id": "央行-2026年第三季度全国新发放商业性个人住房贷款加权平均利率为3-05-f7ba95a6b405",
       "language": "zh",
@@ -110,6 +480,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/10/30/trump-tech-allies-swap-ai-for-super-intelligence-in-earnings-calls.html",
       "image": ""
+    },
+    {
+      "id": "review-you-can-see-everything-blurs-the-view--6e108b3d65de",
+      "language": "en",
+      "title": "Review: You Can See Everything blurs the view of Elizabeth Holmes' deceit",
+      "excerpt": "Elizabeth Holmes has some people falling for her act all over again.",
+      "date": "2026-10-30T11:30:01.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/culture/2026/10/review-you-can-see-everything-blurs-the-view-of-elizabeth-holmes-deceit/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/holmes1-500x500-1792610840.jpg"
     },
     {
       "id": "russian-strikes-plunge-ukrainian-city-into-bl-af6b71c9ee4b",
@@ -230,6 +610,16 @@
       "source_name": "中新网财经新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723528.shtml",
       "image": ""
+    },
+    {
+      "id": "rocket-report-winter-is-coming-for-themis-cow-5ba2be4ee7a1",
+      "language": "en",
+      "title": "Rocket Report: Winter is coming for Themis; Cowboy Space adds iron to the fire",
+      "excerpt": "It's been a good week for ULA with a big NASA contract and Vulcan nearing return-to-flight.",
+      "date": "2026-10-30T11:00:35.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/10/rocket-report-winter-is-coming-for-themis-cowboy-space-adds-iron-to-the-fire/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2302181665-500x500.jpg"
     },
     {
       "id": "tech-giants-need-legacy-businesses-to-keep-gr-2dc985a4d363",
@@ -2609,396 +2999,6 @@
       "date": "2026-10-30T01:53:45.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/ll/2026/10-30/10723140.shtml",
-      "image": ""
-    },
-    {
-      "id": "一个最被忽视的日常习惯-竟能降低多种疾病风险-84044f5c8bc1",
-      "language": "zh",
-      "title": "一个最被忽视的日常习惯，竟能降低多种疾病风险",
-      "excerpt": "零成本、零门槛！一个最被忽视的日常习惯，竟能降低多种疾病风险，还能减肥",
-      "date": "2026-10-30T01:51:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/10-30/10723136.shtml",
-      "image": ""
-    },
-    {
-      "id": "亚冠二级联赛小组赛-中国香港大埔队不敌泰国巴吞联队-eb2e682420d8",
-      "language": "zh",
-      "title": "亚冠二级联赛小组赛：中国香港大埔队不敌泰国巴吞联队",
-      "excerpt": "图为中国香港大埔队球员加布里埃尔（白衣33号）在比赛中拼抢。中新网记者 陈永诺 摄 图为中国香港大埔队球员穆里洛（白衣25号）在比赛中拼抢。中新网记者 陈永诺 摄 图为中国香港大埔队球员加布里埃尔（白衣33号）在比赛中拼抢。中新网记者 陈永诺 摄 图为中国香港大埔队球员韦弗顿（白衣44号）在比赛中拼抢。中新网记者 陈永诺 摄 图为中国香港大埔队球员瓦利森（白衣79号）在比赛中拼抢。中新网记者 陈永诺 摄 图为中国香港大埔队球员沈承贤（白衣13号）在比赛中拼抢。中新网记者 陈永诺 摄 图为中国香港大埔队球员费兰度（白衣10号）在比赛中拼抢。中新网记者 陈永诺 摄 图为中国香港大埔队球员加布里埃尔（右二）在比赛中拼抢。中新网记者 陈永诺 摄 图为中国香港大埔队球员莱昂纳多（右一）在比赛中拼抢。中新网记者 陈永诺 摄",
-      "date": "2026-10-30T01:49:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-30/10723131.shtml",
-      "image": ""
-    },
-    {
-      "id": "再访尼泊尔-8-26-泥石流努瓦果德县灾区-d0337243583d",
-      "language": "zh",
-      "title": "再访尼泊尔“8·26”泥石流努瓦果德县灾区",
-      "excerpt": "当地时间10月29日，中尼跨境灾害风险考察科考队吉隆分队的中尼两国学者在尼泊尔努瓦果德县崔树里镇以焦点小组方式对当地受灾民众进行访谈。该科考队由中国科学院、水利部成都山地灾害与环境研究所所长康世昌担任队长，设樟木、陈塘、吉隆三个跨境考察分队。中新社记者 崔楠 摄 当地时间10月29日，尼泊尔“8·26”泥石流努瓦果德县灾区，女子背着液化气罐经吊桥从比德尔镇前往崔树里镇。中新社记者 崔楠 摄 当地时间10月29日，尼泊尔“8·26”泥石流努瓦果德县灾区，比德尔镇居民苏丹·塔芒扛着物资前往崔树里镇。他的房屋在泥石流灾害中被毁，但一家三口均幸免于难。目前，他和家人暂居于一河之隔的崔树里镇。中新社记者 崔楠 摄 当地时间10月29日，尼泊尔“8·26”泥石流努瓦果德县灾区，工程人员在崔树里河两岸的比德尔镇和崔树里镇同时施工，准备在河上架设简易桥梁。中新社记者 崔楠 摄 当地时间10月29日，尼泊尔“8·26”泥石流努瓦果德县灾区，当地民众利用近期新搭建的吊桥往返于比德尔镇与崔树里镇之间。中新社记者 崔楠 摄 当地时间10月29日，尼泊尔“8·26”泥石流努瓦果德县灾区，一顶中国援助的帐篷在该县政府院内投入使用。中新社记者 崔楠 摄",
-      "date": "2026-10-30T01:49:11.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/10-30/10723133.shtml",
-      "image": ""
-    },
-    {
-      "id": "海南自贸港再迎政策支持-16条举措助力发展-4dbeef898628",
-      "language": "zh",
-      "title": "海南自贸港再迎政策支持 16条举措助力发展→",
-      "excerpt": "东西坏了要修，这是生活里再平常不过的事。可飞机发动机、汽车变速箱这些“大家伙”出了故障，过去往往要远渡重洋送回原厂，费时又费钱。",
-      "date": "2026-10-30T01:48:51.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723135.shtml",
-      "image": ""
-    },
-    {
-      "id": "10月30日央行开展150亿元7天期逆回购操作-6afd1250e240",
-      "language": "zh",
-      "title": "10月30日央行开展150亿元7天期逆回购操作",
-      "excerpt": "中新网10月30日电 据中国人民银行网站消息，2026年10月30日中国人民银行以固定利率、数量招标方式开展了150亿元7天期逆回购操作，全额满足了一级交易商需求。具体情况如下：",
-      "date": "2026-10-30T01:48:35.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723126.shtml",
-      "image": ""
-    },
-    {
-      "id": "10月30日人民币对美元中间价报6-7138-上调9个基点-a5f1e743efb0",
-      "language": "zh",
-      "title": "10月30日人民币对美元中间价报6.7138 上调9个基点",
-      "excerpt": "中新网10月30日电 据中国外汇交易中心网站消息，中国人民银行授权中国外汇交易中心公布，2026年10月30日银行间外汇市场人民币汇率中间价为1美元对人民币6.7138元，上调9个基点。",
-      "date": "2026-10-30T01:46:33.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723119.shtml",
-      "image": ""
-    },
-    {
-      "id": "女篮训练赛发生肢体冲突-中国篮协通报-77dc0c5a82a0",
-      "language": "zh",
-      "title": "女篮训练赛发生肢体冲突 中国篮协通报",
-      "excerpt": "中新网10月30日电 据中国篮球协会网站消息，中国篮球协会29日晚发布情况通报称，2026年10月13日，武汉盛帆职业篮球俱乐部有限责任公司女子篮球队(以下简称“武汉盛帆队”)与华中科技大学女子篮球队(以下简称“华中科大队”)在武汉盛帆篮球训练基地举行内部训练赛(未向湖北省体育局、湖北省篮球协会报备)。",
-      "date": "2026-10-30T01:45:21.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-30/10723116.shtml",
-      "image": ""
-    },
-    {
-      "id": "more-than-43-million-ballots-cast-so-far-in-m-d23f07c00074",
-      "language": "en",
-      "title": "More than 43 million ballots cast so far in midterms early voting surge",
-      "excerpt": "Hispanic voters have helped drive the early voting numbers, which appear to outpace overall turnout for previous elections in some battleground counties.",
-      "date": "2026-10-30T01:44:24.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c30rlxkjv2yko?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2dc0/live/b4358cf0-d3d1-11f1-a701-fddedf244c16.jpg"
-    },
-    {
-      "id": "与算力协同-用ai赋能-一张电网里的科技创新活力-9fdc0be67206",
-      "language": "zh",
-      "title": "与算力协同 用AI赋能 一张电网里的科技创新活力",
-      "excerpt": "在河北雄安新区，多个智能体活跃于电网调度和服务保障一线，人工智能(AI)技术深度嵌入未来之城能源底座；在河北省能源互联网仿真建模与控制重点实验室，一套“主配微”多级协同调控体系正在摸索搭建；建设中的蒙西—京津冀±800千伏特高压直流输电工程，核心装备入围国家能源局第六批能源领域首台(套)重大技术装备清单……如今，科技创新正为新型电力系统建设探寻“最优解”。一张电网，照见时代发展大潮中的创新活力。",
-      "date": "2026-10-30T01:38:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723134.shtml",
-      "image": ""
-    },
-    {
-      "id": "watch-why-australia-s-mushroom-murderer-may-n-46d07e6855d9",
-      "language": "en",
-      "title": "Watch: Why Australia's mushroom murderer may now die in prison",
-      "excerpt": "Judges agreed with the prosecution’s appeal that Erin Patterson’s initial non-parole period of 33 years was insufficient.",
-      "date": "2026-10-30T01:38:54.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/videos/cmlykpd9kpy7o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e86c/live/220a00a0-d402-11f1-93e1-3b657b665bcf.jpg"
-    },
-    {
-      "id": "人民日报社论-把我们党建设得更好-更强-81363f563b30",
-      "language": "zh",
-      "title": "人民日报社论：把我们党建设得更好、更强",
-      "excerpt": "新华社北京10月29日电 人民日报10月30日社论：把我们党建设得更好、更强",
-      "date": "2026-10-30T01:38:37.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723125.shtml",
-      "image": ""
-    },
-    {
-      "id": "柴达木戈壁上的-追风人-中国石油单体最大风电项目施工见闻-93b687ee5997",
-      "language": "zh",
-      "title": "柴达木戈壁上的“追风人”：中国石油单体最大风电项目施工见闻",
-      "excerpt": "中新网青海茫崖10月30日电 题：柴达木戈壁上的“追风人”：中国石油单体最大风电项目施工见闻",
-      "date": "2026-10-30T01:35:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723128.shtml",
-      "image": ""
-    },
-    {
-      "id": "mushroom-murderer-fails-to-overturn-convictio-8d59b9f3c08d",
-      "language": "en",
-      "title": "Mushroom murderer fails to overturn convictions in Australian court challenge",
-      "excerpt": "Erin Patterson argued her trial was unfair due to seven grounds but three appeal judges dismissed them all.",
-      "date": "2026-10-30T01:35:40.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/ck8dz8j5n993o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2fd0/live/73fed000-d3fa-11f1-ad77-7dc2f7c343f8.jpg"
-    },
-    {
-      "id": "中国海警在仁爱礁仙宾礁海域开展海上综合执法训练-163123e09e73",
-      "language": "zh",
-      "title": "中国海警在仁爱礁仙宾礁海域开展海上综合执法训练",
-      "excerpt": "近日，中国海警东安舰编队在我仁爱礁、仙宾礁海域开展海上综合执法训练，巩固提高现场执法管控能力。",
-      "date": "2026-10-30T01:35:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723130.shtml",
-      "image": ""
-    },
-    {
-      "id": "党的二十届五中全会公报一图速览-64e73182b7b1",
-      "language": "zh",
-      "title": "党的二十届五中全会公报一图速览",
-      "excerpt": "",
-      "date": "2026-10-30T01:34:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723115.shtml",
-      "image": ""
-    },
-    {
-      "id": "前三季度全国规模以上文化及相关产业企业营业收入增长4-3-2c3be2df9724",
-      "language": "zh",
-      "title": "前三季度全国规模以上文化及相关产业企业营业收入增长4.3%",
-      "excerpt": "中新网10月30日电 国家统计局30日在官网发布数据显示，据对全国8.3万家规模以上文化及相关产业企业(以下简称“文化企业”)调查，2026年前三季度，文化企业实现营业收入108210亿元，按可比口径计算，同比增长4.3%。其中，文化新业态特征较为明显的16个行业小类实现营业收入53827亿元，同比增长8.9%，快于全部规模以上文化企业4.6个百分点。",
-      "date": "2026-10-30T01:33:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723129.shtml",
-      "image": ""
-    },
-    {
-      "id": "翰墨生香-丹青焕彩-2026年中华优秀传统文化走基层书画作品展开展-3dd6993ab482",
-      "language": "zh",
-      "title": "“翰墨生香·丹青焕彩” 2026年中华优秀传统文化走基层书画作品展开展",
-      "excerpt": "中新网贵阳10月30日电 (记者 张伟)“翰墨生香·丹青焕彩”2026年中华优秀传统文化走基层书画作品展29日在贵州美术馆开展。贵州省政协副主席、民盟贵州省委主委冉霞宣布活动开幕。中共贵州省委统战部常务副部长、省侨务办主任孙拥辉出席开幕式并致辞。",
-      "date": "2026-10-30T01:27:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723121.shtml",
-      "image": ""
-    },
-    {
-      "id": "香港美酒佳肴巡礼2026-开幕-在维港-品味世界之最-2be6417e3ac0",
-      "language": "zh",
-      "title": "“香港美酒佳肴巡礼2026”开幕 在维港“品味世界之最”",
-      "excerpt": "中新网香港10月30日电 (记者 赵静怡)以“品味世界之最”为主题的“香港美酒佳肴巡礼2026”29日在维港之畔的香港中环海滨活动空间开幕。超过340个摊位汇聚来自31个国家和地区的美酒与美食，吸引市民、旅客入场体验。",
-      "date": "2026-10-30T01:26:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/10-30/10723122.shtml",
-      "image": ""
-    },
-    {
-      "id": "河南洛阳-层林尽染小浪底-黄河秋景入画来-443f2688d4f6",
-      "language": "zh",
-      "title": "河南洛阳：层林尽染小浪底 黄河秋景入画来",
-      "excerpt": "",
-      "date": "2026-10-30T01:26:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-30/1209234.shtml",
-      "image": ""
-    },
-    {
-      "id": "全国-村ba-总决赛落幕-咸丰白茶队蝉联亚军-06da6a510757",
-      "language": "zh",
-      "title": "全国“村BA”总决赛落幕 咸丰白茶队蝉联亚军",
-      "excerpt": "中新网恩施10月30日电(税浪 叶莉 舒淑)第四届全国和美乡村篮球大赛(村BA)总决赛冠军争夺战29日晚在湖北省咸丰县高乐山镇小模村收官，广东东莞队拿下冠军，咸丰白茶队获得亚军。",
-      "date": "2026-10-30T01:24:22.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-30/10723118.shtml",
-      "image": ""
-    },
-    {
-      "id": "you-don-t-need-to-believe-in-a-god-to-get-a-r-c4d34ddeaf92",
-      "language": "en",
-      "title": "You don’t need to believe in a god to get a religious exemption from using AI at work",
-      "excerpt": "David Durman, a University of Kentucky administrator, recently earned a religious exemption from using AI in the workplace.",
-      "date": "2026-10-30T01:20:48.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
-      "image": ""
-    },
-    {
-      "id": "针对美方无端攻击-中国驻墨西哥使馆发布严正声明-1440578220fb",
-      "language": "zh",
-      "title": "针对美方无端攻击，中国驻墨西哥使馆发布严正声明",
-      "excerpt": "中新网10月30日电 据中国驻墨西哥大使馆微信公众号消息，10月28日，美国驻墨西哥大使约翰逊及美国务院副助理国务卿马塞多在墨出席活动时，无端攻击中国和中墨合作，妄称中国乐见墨西哥陷入混乱和不安全，诬称“中国企业不可信”。有关言论罔顾事实、颠倒黑白，蓄意挑拨中墨关系，中国驻墨西哥使馆对此表示强烈不满和坚决反对。",
-      "date": "2026-10-30T01:15:31.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-30/10723112.shtml",
-      "image": ""
-    },
-    {
-      "id": "金正恩出席朝鲜-无人航空技术发展-2026-展览会-bc0090193ed3",
-      "language": "zh",
-      "title": "金正恩出席朝鲜“无人航空技术发展－2026”展览会",
-      "excerpt": "中新网10月30日电 据朝中社30日报道，朝鲜“无人航空技术发展-2026”展览会29日举行，朝鲜劳动党总书记、国务委员长金正恩出席展览会。",
-      "date": "2026-10-30T01:15:19.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-30/10723117.shtml",
-      "image": ""
-    },
-    {
-      "id": "intel-plunges-on-a-major-guidance-miss-what-w-2b3ced750cb4",
-      "language": "en",
-      "title": "Intel plunges on a major guidance miss. What went wrong — and how to proceed",
-      "excerpt": "Further downside is certainly possible, but selling now won't erase the losses we've taken.",
-      "date": "2026-10-30T01:06:07.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/investingclub/2026/10/29/intel-plunges-on-a-major-guidance-miss-what-went-wrong-how-to-proceed.html",
-      "image": ""
-    },
-    {
-      "id": "西藏降雪进入核心影响时段-两股冷空气接连来袭北方多地冷上加冷-39a3e76bb1b1",
-      "language": "zh",
-      "title": "西藏降雪进入核心影响时段 两股冷空气接连来袭北方多地冷上加冷",
-      "excerpt": "中国天气网讯 今明天(10月30日至31日)，受孟加拉湾特强气旋风暴和高空槽共同影响，青藏高原有明显雨雪天气，其中今天为降雪核心时段，西藏高海拔地区局地有特大暴雪，公众需关注预警预报信息，外出避开强降雪时段。受两股冷空气影响，本周末至下周初，北方多地将冷上加冷，局地最高气温将跌至冰点以下，需加强保暖措施，谨防感冒。",
-      "date": "2026-10-30T00:53:56.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723111.shtml",
-      "image": ""
-    },
-    {
-      "id": "many-cubans-voted-for-trump-now-they-re-turni-b00a415b62bc",
-      "language": "en",
-      "title": "Many Cubans voted for Trump - now they're turning on Republican immigration policies",
-      "excerpt": "President Trump's fellow Republicans might feel the brunt of frustration among Cubans at the ballot box, writes the BBC's Will Grant.",
-      "date": "2026-10-30T00:43:04.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c574p7z1xm8wo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b579/live/dc6c6420-d2e9-11f1-8d86-83eebc838351.jpg"
-    },
-    {
-      "id": "专家吁推动新能源车险从-政策驱动-走向-法治定型-ebdcb01a27be",
-      "language": "zh",
-      "title": "专家吁推动新能源车险从“政策驱动”走向“法治定型”",
-      "excerpt": "智能网联新能源汽车产业发展“十五五”规划提出“深化新能源汽车车险改革” 专家呼吁",
-      "date": "2026-10-30T00:41:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723110.shtml",
-      "image": ""
-    },
-    {
-      "id": "去年共培育61-36万人-高素质农民助力乡村全面振兴-1769722bebb7",
-      "language": "zh",
-      "title": "去年共培育61.36万人 高素质农民助力乡村全面振兴",
-      "excerpt": "人才，正在点亮一个个乡村。中央农业广播电视学校近期发布的《2026年全国高素质农民发展研究报告》显示，近年来，各地推动高素质农民培育计划落地实施，去年培育高素质农民61.36万人。同时，持续推进农村实用人才带头人培训、乡村产业振兴带头人培育“头雁”项目，开展学用贯通综合试点，多层次培养各类乡土人才。",
-      "date": "2026-10-30T00:38:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723109.shtml",
-      "image": ""
-    },
-    {
-      "id": "microsoft-plans-to-raise-25-billion-in-debt-a-f3032c67e915",
-      "language": "en",
-      "title": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
-      "excerpt": "Microsoft boasts a strong credit rating and has managed to maintain positive free cash flow, unlike Meta, Alphabet and Amazon.",
-      "date": "2026-10-30T00:38:13.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html",
-      "image": ""
-    },
-    {
-      "id": "美媒-美国一高级将领被解职-涉嫌泄露涉伊朗战争机密-c4e48c473709",
-      "language": "zh",
-      "title": "美媒：美国一高级将领被解职，涉嫌泄露涉伊朗战争机密",
-      "excerpt": "中新网10月30日电 据美国哥伦比亚广播公司(CBS)29日报道，多名消息人士证实，美国国防部长赫格塞思已解除美国防部负责战略规划的高级将领布雷特·西尔维亚的职务。",
-      "date": "2026-10-30T00:29:07.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-30/10723106.shtml",
-      "image": ""
-    },
-    {
-      "id": "student-backed-election-winners-demand-sweepi-d37f5ead5b4c",
-      "language": "en",
-      "title": "Student-backed election winners demand sweeping resignations in Serbia",
-      "excerpt": "Days after ousting Aleksandar Vučić's party from power, Student List MPs call for top figures to stand down.",
-      "date": "2026-10-30T00:17:28.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmx2dwzp0z0vo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dec3/live/30285610-d42e-11f1-b441-2b33b063138f.jpg"
-    },
-    {
-      "id": "西藏南部将有强雨雪天气-北方将有大风降温过程-ab5f85c0b3ed",
-      "language": "zh",
-      "title": "西藏南部将有强雨雪天气 北方将有大风降温过程",
-      "excerpt": "中新网10月30日电 据中央气象台网站消息，昨日，海南中东部、广东西南部局地出现大暴雨，西藏、内蒙古、黑龙江出现较强降雪。预计今明两天，青藏高原中东部有明显雨雪天气，其中西藏南部有强雨雪，注意防范次生灾害；东北、华北北部、内蒙古等地有大风降温，内蒙古、黑龙江局地有较强降雪，渤海、黄海等海域风力大，注意防范对海陆交通、能源供应、农牧业等的影响。",
-      "date": "2026-10-30T00:17:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723103.shtml",
-      "image": ""
-    },
-    {
-      "id": "how-elections-worldwide-are-testing-trump-s-i-1649364005e3",
-      "language": "en",
-      "title": "How elections worldwide are testing Trump’s influence abroad",
-      "excerpt": "Recent election losses by leaders linked to Trump have prompted questions about whether his influence over the global right is weakening.",
-      "date": "2026-10-30T00:13:22.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/30/election-trump-brazil-serbia-hungary.html",
-      "image": ""
-    },
-    {
-      "id": "美国第三季度经济增长3-4-好于市场预期-618d7bf73fa9",
-      "language": "zh",
-      "title": "美国第三季度经济增长3.4% 好于市场预期",
-      "excerpt": "中新社华盛顿10月29日电(记者 沙晗汀)美国商务部当地时间29日公布的首次预估数据显示，今年第三季度美国实际国内生产总值(GDP)环比按年率计算增长3.4%，好于市场普遍预期。",
-      "date": "2026-10-30T00:10:14.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-30/10723102.shtml",
-      "image": ""
-    },
-    {
-      "id": "欧盟向毛里塔尼亚提供2000万欧元军事援助-7dd9205a848c",
-      "language": "zh",
-      "title": "欧盟向毛里塔尼亚提供2000万欧元军事援助",
-      "excerpt": "中新社布鲁塞尔10月29日电(记者 德永健)欧盟29日宣布动用其欧洲和平基金，向西非萨赫勒地区国家毛里塔尼亚提供2000万欧元军事援助。",
-      "date": "2026-10-30T00:08:56.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/10-30/10723101.shtml",
-      "image": ""
-    },
-    {
-      "id": "公安网安部门公布5起涉-那曲巴青地震-网络谣言典型案例-2c2dd93fa36c",
-      "language": "zh",
-      "title": "公安网安部门公布5起涉“那曲巴青地震”网络谣言典型案例",
-      "excerpt": "中新网10月30日电，据公安部网安局微信公众号消息，公安机关网安部门持续推进“净网—2026”专项行动，聚焦涉那曲巴青地震灾害网络谣言乱象，依法打击编造虚假灾情信息误导公众、扰乱网络秩序相关违法犯罪。现发布5起典型案例：",
-      "date": "2026-10-30T00:05:46.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/fz/2026/10-30/10723105.shtml",
-      "image": ""
-    },
-    {
-      "id": "中共中央今天上午10时将举行新闻发布会-介绍和解读党的二十届五中全会精神-5bac2b3ed0e5",
-      "language": "zh",
-      "title": "中共中央今天上午10时将举行新闻发布会，介绍和解读党的二十届五中全会精神",
-      "excerpt": "新华社快讯：中共中央今天上午10时将举行新闻发布会，介绍和解读党的二十届五中全会精神。",
-      "date": "2026-10-30T00:02:51.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723104.shtml",
-      "image": ""
-    },
-    {
-      "id": "indians-turn-to-start-ups-to-care-for-ageing--911480a83b80",
-      "language": "en",
-      "title": "Indians turn to start-ups to care for ageing parents as young become more mobile",
-      "excerpt": "Changing family structures in India are driving demand for start-ups offering services for eldercare.",
-      "date": "2026-10-30T00:02:35.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmx2qr4rp1xeo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/83eb/live/3d4d12b0-d37d-11f1-bf63-739fb2907d03.jpg"
-    },
-    {
-      "id": "2025年欧盟和欧元区宏观税负水平双双走高-3eb3409b1ab6",
-      "language": "zh",
-      "title": "2025年欧盟和欧元区宏观税负水平双双走高",
-      "excerpt": "中新社布鲁塞尔10月29日电 (记者 德永健)欧盟统计局29日公布的数据显示，2025年欧盟宏观税负(税收收入和社保净缴款之和占GDP比重)为40.7%，欧元区宏观税负为41.3%，较2024年双双走高。",
-      "date": "2026-10-29T23:59:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723100.shtml",
       "image": ""
     }
   ]
