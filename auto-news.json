@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-10-30T14:06:51.239Z",
+  "generated_at": "2026-10-30T15:02:16.216Z",
   "items": [
+    {
+      "id": "treasury-department-announces-new-series-i-bo-c0f3437f5d3f",
+      "language": "en",
+      "title": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
+      "excerpt": "The U.S. Department of the Treasury has announced new Series I bond rates through April 2027.",
+      "date": "2026-10-30T14:53:12.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
+      "image": ""
+    },
+    {
+      "id": "pope-leo-xiv-becomes-first-pontiff-to-vote-in-4cb0aca3bd91",
+      "language": "en",
+      "title": "Pope Leo XIV becomes first pontiff to vote in a US election",
+      "excerpt": "The Chicago-born pontiff, who has a tense relationship with Trump, mailed in a ballot for the midterm elections that will decide control of the US Congress.",
+      "date": "2026-10-30T14:48:22.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckwyq2509p7xo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c8a0/live/e3a84f00-d470-11f1-9dda-1ba6fcc7d159.jpg"
+    },
+    {
+      "id": "咽喉不适做ct-意外揪出腹腔-定时炸弹-这个病-不痛不痒却可能大出血-acbab2e16cac",
+      "language": "zh",
+      "title": "咽喉不适做CT，意外揪出腹腔“定时炸弹”！这个病，不痛不痒却可能大出血！",
+      "excerpt": "只是嗓子有异物感，去耳鼻喉科做食管CT，报告写着食管未见异常，谁能料到，腹腔里正藏着一枚无声的“定时炸弹”。",
+      "date": "2026-10-30T14:25:50.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/jk/2026/10-30/10723663.shtml",
+      "image": ""
+    },
+    {
+      "id": "赵乐际会见德国总统施泰因迈尔-d9119227af4f",
+      "language": "zh",
+      "title": "赵乐际会见德国总统施泰因迈尔",
+      "excerpt": "",
+      "date": "2026-10-30T14:17:37.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-30/1209282.shtml",
+      "image": ""
+    },
+    {
+      "id": "习近平同德国总统施泰因迈尔会谈-50eef9cbb185",
+      "language": "zh",
+      "title": "习近平同德国总统施泰因迈尔会谈",
+      "excerpt": "",
+      "date": "2026-10-30T14:09:41.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-30/1209279.shtml",
+      "image": ""
+    },
+    {
+      "id": "习近平会见瑞士联邦主席帕姆兰-dac0c22899b0",
+      "language": "zh",
+      "title": "习近平会见瑞士联邦主席帕姆兰",
+      "excerpt": "",
+      "date": "2026-10-30T14:07:31.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-30/1209281.shtml",
+      "image": ""
+    },
     {
       "id": "商务部就美国联邦通信委员会投票通过检测实验室限制措施事答记者问-2e239ca4014b",
       "language": "zh",
@@ -52,6 +112,16 @@
       "image": ""
     },
     {
+      "id": "gm-to-pay-220-million-after-selling-customer--5132f99a4ab9",
+      "language": "en",
+      "title": "GM to pay $220 million after selling customer Smart Driver data",
+      "excerpt": "Owners of GM cars found their driving data had been sold to insurance companies.",
+      "date": "2026-10-30T13:53:20.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/10/gm-to-pay-220-million-after-selling-customer-smart-driver-data/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2018/05/myBuick-App-01-500x500.jpg"
+    },
+    {
       "id": "三部门增加调拨1000套中央救灾物资板房-保障西藏受灾群众安全温暖过冬-a3d5f0d0b130",
       "language": "zh",
       "title": "三部门增加调拨1000套中央救灾物资板房 保障西藏受灾群众安全温暖过冬",
@@ -70,6 +140,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/tp/2026/10-30/10723623.shtml",
       "image": ""
+    },
+    {
+      "id": "hackers-steal-6-3-billion-from-binance-in-rec-e9008c3e8a48",
+      "language": "en",
+      "title": "Hackers steal $6.3 billion from Binance in record crypto heist",
+      "excerpt": "Binance scrambles to freeze billions after record-breaking hack linked to North Korea.",
+      "date": "2026-10-30T13:46:39.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/binance-500x500.jpg"
     },
     {
       "id": "alaska-senate-candidate-denies-knowing-about--e015812667bd",
@@ -920,6 +1000,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723534.shtml",
       "image": ""
+    },
+    {
+      "id": "prominent-russian-newspaper-shuts-down-under--8fef7464e6b8",
+      "language": "en",
+      "title": "Prominent Russian newspaper shuts down under pressure from authorities",
+      "excerpt": "Novaya Gazeta has been one of the most high-profile independent news outlets in Russia over the last three decades.",
+      "date": "2026-10-30T11:23:06.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/13b1/live/6aa032d0-d44d-11f1-bfc7-afe23fc6cf5b.jpg"
     },
     {
       "id": "多国发布旅行安全提醒-警告公民注意法国新一轮示威活动-c9dd2bac7e7e",
@@ -2909,96 +2999,6 @@
       "date": "2026-10-30T03:37:33.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723218.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国小将孙心然首进广网巡回赛单打八强-85d5a7d8ac33",
-      "language": "zh",
-      "title": "中国小将孙心然首进广网巡回赛单打八强",
-      "excerpt": "中新网广州10月30日电 (记者 王坚)2026年广州国际女子网球公开赛29日继续第二轮的争夺，中国小将孙心然挽救赛点，以6-3、4-6、7-6(3)击败蒂莫菲娃，职业生涯首进巡回赛单打八强。30日，两位中国选手施晗、孙心然将先后登场，分别向生涯首个巡回赛四强发起冲击。",
-      "date": "2026-10-30T03:37:07.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-30/10723217.shtml",
-      "image": ""
-    },
-    {
-      "id": "胡和平-决定-把-增强共产党人的党性-摆在战略任务部署的第一部分-79e5414144fe",
-      "language": "zh",
-      "title": "胡和平：《决定》把“增强共产党人的党性”摆在战略任务部署的第一部分",
-      "excerpt": "中新网10月30日电 中共中央10月30日上午举行新闻发布会，介绍和解读党的二十届五中全会精神。",
-      "date": "2026-10-30T03:36:47.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723210.shtml",
-      "image": ""
-    },
-    {
-      "id": "新一代冰穹风冷散热系统携手旗舰双芯-iqoo-neo12正式发布-e9fae1a4143c",
-      "language": "zh",
-      "title": "新一代冰穹风冷散热系统携手旗舰双芯 iQOO Neo12正式发布",
-      "excerpt": "2026年10月28日，“凭实力敢争锋”iQOO Neo12正式发布并已全渠道开售，叠加平台优惠和国补以及首销优惠，到手价低至3149元。Neo12首发采用“天空之镜”发光材料的2K185Hz超冠屏，开创手机屏幕“超高清超高刷兼得”的新时代，更在新一代冰穹风冷散热系统、第五代骁龙8至尊版与自研电竞芯片 Q3的共同努力下，实现 Ultra级性能统治力。Neo12将与 iQOO16共同形成双旗舰布局— iQOO数字旗舰面向未来科技探索，持续拓展性能旗舰体验的边界；Neo系列聚焦极致性能释放，满足极致玩家的性能游戏需求。",
-      "date": "2026-10-30T03:35:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/10-30/10723216.shtml",
-      "image": ""
-    },
-    {
-      "id": "new-york-police-will-now-investigate-cornell--5d2aee0cdf4a",
-      "language": "en",
-      "title": "New York police will now investigate Cornell sex complaints, governor says",
-      "excerpt": "The change was announced amid backlash over the school's handling of gang rape allegations involving a fraternity on campus.",
-      "date": "2026-10-30T03:32:44.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmwy42j9wewlo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/907c/live/50611bc0-d3ec-11f1-9b46-0570989d0351.jpg"
-    },
-    {
-      "id": "代扔垃圾成创业新风口-成都小伙-试水-月入两千元-f01645a0e3a6",
-      "language": "zh",
-      "title": "代扔垃圾成创业新风口? 成都小伙“试水”月入两千元",
-      "excerpt": "把垃圾打包好，放在家门口，有专人上门取走、投放、拍照确认——这门听起来“鸡毛蒜皮”的生意，正在多个城市悄悄生长。",
-      "date": "2026-10-30T03:32:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/10-30/10723229.shtml",
-      "image": ""
-    },
-    {
-      "id": "israel-faces-weeks-of-coalition-haggling-as-n-a16438edffe1",
-      "language": "en",
-      "title": "Israel faces weeks of coalition haggling as Netanyahu’s party claims election 'stolen'",
-      "excerpt": "Israel's election leaves the country facing weeks of coalition bargaining and an uphill battle for the opposition party to form a majority government.",
-      "date": "2026-10-30T03:28:10.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/10/30/israel-election-netanyahu-eisenkot-coalition-talks-.html",
-      "image": ""
-    },
-    {
-      "id": "台湾学者-中华文化创新表达增强两岸交流韧性-dbe6380c80ac",
-      "language": "zh",
-      "title": "台湾学者：中华文化创新表达增强两岸交流韧性",
-      "excerpt": "中新社北京10月30日电 (记者 李百加 陈建新)多位台湾学者、青年近日受访时表示，民进党当局不断设置交流壁垒，致两岸常态化往来承压。他们认为，中华文化的创新表达，使两岸交流更具韧性。",
-      "date": "2026-10-30T03:23:04.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723204.shtml",
-      "image": ""
-    },
-    {
-      "id": "首届中俄中学生篮球邀请赛落地东宁-65ff971c362e",
-      "language": "zh",
-      "title": "首届中俄中学生篮球邀请赛落地东宁",
-      "excerpt": "中新网牡丹江10月30日电 (王万鑫)10月29日，中俄教育年2026(中国·东宁)第一届中俄中学生篮球邀请赛在东宁市开幕。来自俄罗斯的15支青少年篮球队与中国31支参赛队伍同场竞技、以球会友。",
-      "date": "2026-10-30T03:22:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/10-30/10723200.shtml",
-      "image": ""
-    },
-    {
-      "id": "第十届中非青年大联欢在京启幕-2f67efc686b7",
-      "language": "zh",
-      "title": "第十届中非青年大联欢在京启幕",
-      "excerpt": "中新网北京10月30日电 (记者 官逸伦)由中国外交部、中国宋庆龄基金会主办的第十届中非青年大联欢29日在北京开幕。活动以“青春十载共筑梦，携手同心向未来”为主题，邀请数十名来自非洲国家的青年来华参访。",
-      "date": "2026-10-30T03:21:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/10-30/10723206.shtml",
       "image": ""
     }
   ]
