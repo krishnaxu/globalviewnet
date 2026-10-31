@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-31T20:44:14.432Z",
+  "generated_at": "2026-10-31T21:42:30.240Z",
   "items": [
+    {
+      "id": "apple-ceo-says-the-company-doesn-t-want-to-sh-d9269f49d95d",
+      "language": "en",
+      "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+      "excerpt": "Apple's new CEO defended the company's current position in the AI landscape.",
+      "date": "2026-10-31T21:41:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "image": ""
+    },
+    {
+      "id": "4-days-left-how-techcrunch-founder-summit-hel-2065ffa365f3",
+      "language": "en",
+      "title": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
+      "excerpt": "On November 4 at Boston’s SoWa Power Station, get ready for a full day packed with meaningful networking opportunities, actionable insights, and connections that could change the trajectory of your idea and startup. Register before all prices go up at the door.",
+      "date": "2026-10-31T21:36:07.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+      "image": ""
+    },
+    {
+      "id": "judge-allows-naacp-lawsuit-over-xai-data-cent-204d5faf405d",
+      "language": "en",
+      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+      "excerpt": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
+      "date": "2026-10-31T21:17:03.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "image": ""
+    },
     {
       "id": "trump-defamation-suit-against-murdoch-wsj-ove-c35ab1a02974",
       "language": "en",
@@ -2969,36 +2999,6 @@
       "date": "2026-10-31T01:31:33.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/dwq/2026/10-31/10723777.shtml",
-      "image": ""
-    },
-    {
-      "id": "日本民众举行抗议集会反对高市政府扩军修宪-5644f4571f4e",
-      "language": "zh",
-      "title": "日本民众举行抗议集会反对高市政府扩军修宪",
-      "excerpt": "",
-      "date": "2026-10-31T01:28:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-31/1209283.shtml",
-      "image": ""
-    },
-    {
-      "id": "global-nature-talks-reach-deal-but-money-rema-b0b7c3efd752",
-      "language": "en",
-      "title": "Global nature talks reach deal but money remains an issue",
-      "excerpt": "Countries have been trying to get a global agreement to halt nature decline back on track.",
-      "date": "2026-10-31T01:27:05.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cw1l32qyj8pqo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5c07/live/57283d20-d4b5-11f1-a58c-6d26609b0a57.jpg"
-    },
-    {
-      "id": "粤产-戏曲音乐微电影-帝女花-斩获第三届香港国际短片节最佳短片奖-34dec2fc0b60",
-      "language": "zh",
-      "title": "“粤产”戏曲音乐微电影《帝女花》斩获第三届香港国际短片节最佳短片奖",
-      "excerpt": "中新网广州10月31日电 (记者 程景伟)据广东广播电视台消息，由广东广播电视台出品，岭南戏曲频道拍摄制作的戏曲音乐微电影《帝女花》，近日夺得第三届香港国际短片节最高荣誉——最佳短片奖，同时获得“最佳音乐”“最佳女主角”两项提名。",
-      "date": "2026-10-31T01:26:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/10-31/10723759.shtml",
       "image": ""
     }
   ]
