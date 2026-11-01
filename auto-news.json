@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-11-01T17:40:40.454Z",
+  "generated_at": "2026-11-01T18:51:25.403Z",
   "items": [
+    {
+      "id": "judge-dismisses-doj-lawsuit-over-alaska-senat-3dd3569cdddd",
+      "language": "en",
+      "title": "Judge dismisses DOJ lawsuit over Alaska Senate election",
+      "excerpt": "Democratic nominee Mary Peltola is facing two candidates named Dan Sullivan in the Alaska Senate election, one of whom is the Republican incumbent.",
+      "date": "2026-11-01T18:41:04.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/01/alaska-senate-doj-lawsuit-dismissed-sullivan-peltola.html",
+      "image": ""
+    },
+    {
+      "id": "democrat-endorses-republican-candidate-in-key-189e284fa7d7",
+      "language": "en",
+      "title": "Democrat endorses Republican candidate in key Michigan Senate race as party spat escalates",
+      "excerpt": "Haley Stevens, a former congresswomen who lost out on the Democratic nomination to Abdul El-Sayed, endorses his opponent days before the vote.",
+      "date": "2026-11-01T18:24:08.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/359f/live/2470c810-d61e-11f1-905f-4bb31135b4e2.jpg"
+    },
+    {
+      "id": "democratic-rep-stevens-endorses-rogers-over-e-2e8fcbedcdbd",
+      "language": "en",
+      "title": "Democratic Rep. Stevens endorses Rogers over El-Sayed in Michigan Senate election",
+      "excerpt": "Haley Stevens had lost the Democratic nomination for Senate in Michigan to Abdul El-Sayed earlier this year.",
+      "date": "2026-11-01T18:16:05.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/01/michigan-senate-stevens-rogers-endorsement-el-sayed.html",
+      "image": ""
+    },
+    {
+      "id": "here-are-3-big-things-we-re-watching-in-the-s-2f0c2bd46471",
+      "language": "en",
+      "title": "Here are 3 big things we're watching in the stock market in the week ahead",
+      "excerpt": "The market could use a few victories in the days ahead, which will be filled with more earnings, an election, and jobs data.",
+      "date": "2026-11-01T18:12:05.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/01/3-big-things-were-watching-in-the-stock-market-this-week.html",
+      "image": ""
+    },
+    {
+      "id": "armed-police-start-patrols-in-sydney-after-bo-a9b69dcdd86f",
+      "language": "en",
+      "title": "Armed police start patrols in Sydney after Bondi Beach attack",
+      "excerpt": "The new police unit is a security measure in response to last year's deadly shooting attack at a Hanukkah festival.",
+      "date": "2026-11-01T17:56:47.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c9kgj7k7ry0ro?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ce75/live/a6edaf70-d618-11f1-93e1-3b657b665bcf.jpg"
+    },
+    {
+      "id": "lindsay-clancy-is-back-in-court-where-will-he-cce1a6a01f58",
+      "language": "en",
+      "title": "Lindsay Clancy is back in court - where will her case go next?",
+      "excerpt": "The Massachusetts mother, accused of murdering her three children, is expected back in court as she awaits a decision on whether her case will be retried.",
+      "date": "2026-11-01T17:29:08.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck3r5z3pw928o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f436/live/1948f1a0-d255-11f1-bb20-4320a74e5db1.jpg"
+    },
     {
       "id": "alaska-sen-sullivan-says-he-ll-accept-electio-fbc99d31eacf",
       "language": "en",
@@ -22,6 +82,16 @@
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c922/live/4fe4c8d0-d5fa-11f1-a701-fddedf244c16.jpg"
     },
     {
+      "id": "university-of-cambridge-scientist-among-those-d35ebe7fd60c",
+      "language": "en",
+      "title": "University of Cambridge scientist among those who died in Spanish train crash",
+      "excerpt": "Marta Shahbazi was an \"inspiring, talented and passionate scientist\", says the laboratory where she worked.",
+      "date": "2026-11-01T17:05:18.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq5ynzvkn1d8o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ea05/live/c6f18070-d5ec-11f1-bfdd-73f39e6db31d.jpg"
+    },
+    {
       "id": "techcrunch-mobility-a-new-bigger-av-boom-is-h-76994a5cf6fb",
       "language": "en",
       "title": "TechCrunch Mobility: A new, bigger AV boom is here",
@@ -29,6 +99,16 @@
       "date": "2026-11-01T17:04:00.000Z",
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/01/techcrunch-mobility-a-new-bigger-av-boom-is-here/",
+      "image": ""
+    },
+    {
+      "id": "for-jpmorgan-amazon-fighting-ai-bots-like-met-969e8e8a9410",
+      "language": "en",
+      "title": "For JPMorgan, Amazon, fighting AI bots like Meta Muse may not be a winning long-term strategy",
+      "excerpt": "As companies from Amazon to JPMorgan block AI personal agents like Meta's Muse, retail experts warn that technology that removes customer friction usually wins.",
+      "date": "2026-11-01T16:34:43.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/01/jpmorgan-amazon-ai-agents-meta-muse.html",
       "image": ""
     },
     {
@@ -2919,86 +2999,6 @@
       "date": "2026-11-01T01:00:44.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/dwq/2026/11-01/10724138.shtml",
-      "image": ""
-    },
-    {
-      "id": "多毒株活跃-今年流感季提前-最新提示-9f6f1d0ba658",
-      "language": "zh",
-      "title": "多毒株活跃，今年流感季提前！最新提示→",
-      "excerpt": "天气渐冷，正是流感高发季节。今年流行的流感毒株有什么新变化？流感疫苗还管用吗？",
-      "date": "2026-11-01T01:00:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-01/10724147.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026粤港澳大湾区青少年欢乐跑在穗举行-4769e01d09d9",
-      "language": "zh",
-      "title": "2026粤港澳大湾区青少年欢乐跑在穗举行",
-      "excerpt": "中新网广州11月1日电 (记者 郭军)今年适逢暨南大学建校120周年，2026粤港澳大湾区青少年欢乐跑活动10月31日在广州番禺举行，吸引近600名粤港澳青少年及其家庭参与。",
-      "date": "2026-11-01T00:59:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/11-01/10724136.shtml",
-      "image": ""
-    },
-    {
-      "id": "how-the-downfall-of-serbia-s-vučiċ-mirrored-t-fea61251420c",
-      "language": "en",
-      "title": "How the downfall of Serbia's Vučiċ mirrored that of Hungary's Orbán",
-      "excerpt": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary.",
-      "date": "2026-11-01T00:55:06.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c893z699q401o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b724/live/db1d9120-d456-11f1-906a-add2117fe3e6.jpg"
-    },
-    {
-      "id": "从-秒回-到-慢递-年轻人为何重新爱上笔友-962162e4af7f",
-      "language": "zh",
-      "title": "从“秒回”到“慢递”：年轻人为何重新爱上笔友？",
-      "excerpt": "从“秒回”到“慢递”：我们为何重新爱上笔友",
-      "date": "2026-11-01T00:52:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-01/10724144.shtml",
-      "image": ""
-    },
-    {
-      "id": "泡茶-练八段锦-用中医调理身体-当年轻人开始主动养生-ae4350f67be1",
-      "language": "zh",
-      "title": "泡茶、练八段锦、用中医调理身体 当年轻人开始主动养生",
-      "excerpt": "29岁的杭州职工李女士，每天下午都会泡上一杯浙江省中医药配制的乌梅汤。她告诉记者，自己并非生病了才想到中医，而是长期久坐，总觉得容易疲劳、胃口不好，“身边许多人都推荐新中药茶饮，就想试试看”。花几分钟泡一杯茶，正成为青年群体触手可及的健康投资。",
-      "date": "2026-11-01T00:51:40.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-01/10724143.shtml",
-      "image": ""
-    },
-    {
-      "id": "judge-dismisses-trump-s-lawsuit-against-wall--e5976f38079c",
-      "language": "en",
-      "title": "Judge dismisses Trump's lawsuit against Wall Street Journal over Epstein birthday book",
-      "excerpt": "Trump had sued the media outlet after it published a letter to Epstein purportedly written and signed by the president as part of a birthday book.",
-      "date": "2026-11-01T00:41:24.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cwr5yj2lj9myo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5cde/live/f5e426a0-d586-11f1-a6a4-9b195a139571.jpg"
-    },
-    {
-      "id": "腿脚常年冰凉-上热下寒-你的身体可能-堵-了-医生提醒-1fb4579beef1",
-      "language": "zh",
-      "title": "腿脚常年冰凉、上热下寒，你的身体可能“堵”了！医生提醒→",
-      "excerpt": "脸上动不动冒痘、嗓子干痛、反复长口疮，可腿脚却常年冰凉，腹部怕冷。",
-      "date": "2026-11-01T00:40:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-01/10724135.shtml",
-      "image": ""
-    },
-    {
-      "id": "三大创新特征显现-2027年度中国汽车十大技术趋势发布-5a564a4c4a52",
-      "language": "zh",
-      "title": "三大创新特征显现！2027年度中国汽车十大技术趋势发布",
-      "excerpt": "记者日前从中国汽车工程学会了解到，2027年度中国汽车十大技术趋势正式发布，以行业前瞻视角勾勒出我国汽车产业新一年度的技术创新脉络。",
-      "date": "2026-11-01T00:28:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-01/10724134.shtml",
       "image": ""
     }
   ]
