@@ -1,53 +1,5 @@
 [
   {
-    "filename": "technology-1.jpg",
-    "title": "File:Moscow International Business Centre, Marc 2008.JPG",
-    "source": "https://commons.wikimedia.org/wiki/File:Moscow_International_Business_Centre,_Marc_2008.JPG",
-    "author": "<a href=\"//commons.wikimedia.org/wiki/User:Dmottl\" title=\"User:Dmottl\">Dmitry A. Mottl</a>",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
-  },
-  {
-    "filename": "technology-2.jpg",
-    "title": "File:13-08-11-hongkong-50mm-38.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:13-08-11-hongkong-50mm-38.jpg",
-    "author": "<bdi><a href=\"https://www.wikidata.org/wiki/Q15080600\" class=\"extiw\" title=\"d:Q15080600\"><span title=\"German civil engineer and photographer\">Ralf Roletschek</span></a></bdi>",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
-  },
-  {
-    "filename": "tech-1.jpg",
-    "title": "File:Davos 2016 - The State of Artificial Intelligence.webm",
-    "source": "https://commons.wikimedia.org/wiki/File:Davos_2016_-_The_State_of_Artificial_Intelligence.webm",
-    "author": "World Economic Forum",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
-  },
-  {
-    "filename": "tech-2.png",
-    "title": "File:Anatomy-1751201 1280.png",
-    "source": "https://commons.wikimedia.org/wiki/File:Anatomy-1751201_1280.png",
-    "author": "GDJ",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
-  },
-  {
-    "filename": "tech-3.jpg",
-    "title": "File:Congressional Research Service Report R45178 - Artificial Intelligence and National.pdf",
-    "source": "https://commons.wikimedia.org/wiki/File:Congressional_Research_Service_Report_R45178_-_Artificial_Intelligence_and_National.pdf",
-    "author": "Kelley M. Sayler",
-    "license": "Public domain",
-    "licenseUrl": ""
-  },
-  {
-    "filename": "tech-4.jpg",
-    "title": "File:Adam (1).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Adam_(1).jpg",
-    "author": "Dhaval machhar",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-  },
-  {
     "filename": "tech-5.jpg",
     "title": "File:Applications of artificial intelligence in voice recognition systems in micro-computers. (IA applicationsofar00calc).pdf",
     "source": "https://commons.wikimedia.org/wiki/File:Applications_of_artificial_intelligence_in_voice_recognition_systems_in_micro-computers._(IA_applicationsofar00calc).pdf",
@@ -318,5 +270,53 @@
     "author": "Cyrilht",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "filename": "tech-39.jpg",
+    "title": "File:AI and Human Nature (4).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:AI_and_Human_Nature_(4).jpg",
+    "author": "Elekes Andor",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "filename": "tech-40.jpg",
+    "title": "File:Artificial intelligence prompt completion by dalle mini.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Artificial_intelligence_prompt_completion_by_dalle_mini.jpg",
+    "author": "Prompt by JPxG, model by Boris Dayma, upscaler by Xintao Wang, Liangbin Xie et al.",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  {
+    "filename": "tech-41.jpg",
+    "title": "File:AI Humans and Robots.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:AI_Humans_and_Robots.jpg",
+    "author": "Bovee and Thill",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  {
+    "filename": "tech-42.jpg",
+    "title": "File:Fish by Rens Dimmendaal & David Clode.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fish_by_Rens_Dimmendaal_%26_David_Clode.jpg",
+    "author": "Rens Dimmendaal and David Clode",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+    "filename": "tech-43.jpg",
+    "title": "File:Fakir Mahbub Anam at high-level meeting on global governance of artificial intelligence, World Artificial Intelligence Conference, Shanghai, 2026-07-18.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fakir_Mahbub_Anam_at_high-level_meeting_on_global_governance_of_artificial_intelligence,_World_Artificial_Intelligence_Conference,_Shanghai,_2026-07-18.jpg",
+    "author": "Press Information Department",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  {
+    "filename": "tech-44.jpg",
+    "title": "File:Artificial Intelligence, Automation, and the Economy.pdf",
+    "source": "https://commons.wikimedia.org/wiki/File:Artificial_Intelligence,_Automation,_and_the_Economy.pdf",
+    "author": "Executive Office of the President",
+    "license": "Public domain",
+    "licenseUrl": ""
   }
 ]

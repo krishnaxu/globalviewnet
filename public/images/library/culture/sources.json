@@ -1,77 +1,5 @@
 [
   {
-    "filename": "culture-1.jpg",
-    "title": "File:Korean culture (2).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Korean_culture_(2).jpg",
-    "author": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:ChocolateCherryNight\" title=\"User:ChocolateCherryNight\">ChocolateCherryNight</a>",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
-  },
-  {
-    "filename": "culture-2.jpg",
-    "title": "File:Naissance du Wetr.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Naissance_du_Wetr.jpg",
-    "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Oroffino&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Oroffino (page does not exist)\">Oroffino Michel</a>",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-  },
-  {
-    "filename": "culture-3.jpg",
-    "title": "File:Gustav Klimt - Beech Grove I - Google Art Project.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Beech_Grove_I_-_Google_Art_Project.jpg",
-    "author": "Gustav Klimt",
-    "license": "Public domain",
-    "licenseUrl": ""
-  },
-  {
-    "filename": "culture-4.jpg",
-    "title": "File:Bernardo Bellotto - Architectural Caprice with a Palace - Google Art Project.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Bernardo_Bellotto_-_Architectural_Caprice_with_a_Palace_-_Google_Art_Project.jpg",
-    "author": "Bernardo Bellotto",
-    "license": "Public domain",
-    "licenseUrl": ""
-  },
-  {
-    "filename": "culture-5.jpg",
-    "title": "File:Edouard Manet - Luncheon on the Grass - Google Art Project.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Edouard_Manet_-_Luncheon_on_the_Grass_-_Google_Art_Project.jpg",
-    "author": "Édouard Manet",
-    "license": "Public domain",
-    "licenseUrl": ""
-  },
-  {
-    "filename": "culture-6.jpg",
-    "title": "File:Edouard Manet - The Balcony - Google Art Project.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Edouard_Manet_-_The_Balcony_-_Google_Art_Project.jpg",
-    "author": "Édouard Manet",
-    "license": "Public domain",
-    "licenseUrl": ""
-  },
-  {
-    "filename": "culture-7.jpg",
-    "title": "File:Auguste Renoir - Large Nude - Google Art Project.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Auguste_Renoir_-_Large_Nude_-_Google_Art_Project.jpg",
-    "author": "Pierre-Auguste Renoir",
-    "license": "Public domain",
-    "licenseUrl": ""
-  },
-  {
-    "filename": "culture-8.jpg",
-    "title": "File:Fedele Fischetti - Design for an Illustration- \"Architecture\" - Google Art Project.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Fedele_Fischetti_-_Design_for_an_Illustration-_%22Architecture%22_-_Google_Art_Project.jpg",
-    "author": "Fedele Fischetti (1734 - 1789) Details on Google Art Project",
-    "license": "Public domain",
-    "licenseUrl": ""
-  },
-  {
-    "filename": "culture-9.jpg",
-    "title": "File:Albert Bierstadt - A Storm in the Rocky Mountains, Mt. Rosalie - Google Art Project.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains,_Mt._Rosalie_-_Google_Art_Project.jpg",
-    "author": "Albert Bierstadt",
-    "license": "Public domain",
-    "licenseUrl": ""
-  },
-  {
     "filename": "culture-10.jpg",
     "title": "File:Camille Pissarro - The Factory at Pontoise - Google Art Project.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_The_Factory_at_Pontoise_-_Google_Art_Project.jpg",
@@ -318,5 +246,77 @@
     "author": "Harriet Backer",
     "license": "Public domain",
     "licenseUrl": ""
+  },
+  {
+    "filename": "culture-41.jpg",
+    "title": "File:Giuseppe Arcimboldo - Four Seasons in One Head - Google Art Project.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_-_Four_Seasons_in_One_Head_-_Google_Art_Project.jpg",
+    "author": "Giuseppe Arcimboldo",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  {
+    "filename": "culture-42.jpg",
+    "title": "File:Harriet Backer - Blue Interior - NG.M.02582 - National Museum of Art, Architecture and Design.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Harriet_Backer_-_Blue_Interior_-_NG.M.02582_-_National_Museum_of_Art,_Architecture_and_Design.jpg",
+    "author": "Harriet Backer",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  {
+    "filename": "culture-43.jpg",
+    "title": "File:Hans Heyerdahl - At the Window - NG.M.01937 - National Museum of Art, Architecture and Design.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hans_Heyerdahl_-_At_the_Window_-_NG.M.01937_-_National_Museum_of_Art,_Architecture_and_Design.jpg",
+    "author": "Hans Heyerdahl",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  {
+    "filename": "culture-44.jpg",
+    "title": "File:Claude Monet - Rain, Étretat - NG.M.00368 - National Museum of Art, Architecture and Design.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Rain,_%C3%89tretat_-_NG.M.00368_-_National_Museum_of_Art,_Architecture_and_Design.jpg",
+    "author": "Claude Monet",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  {
+    "filename": "culture-45.jpg",
+    "title": "File:Gerhard Munthe - At the Farm, Ulvin - NG.M.00825 - National Museum of Art, Architecture and Design.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gerhard_Munthe_-_At_the_Farm,_Ulvin_-_NG.M.00825_-_National_Museum_of_Art,_Architecture_and_Design.jpg",
+    "author": "Gerhard Munthe",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  {
+    "filename": "culture-46.jpg",
+    "title": "File:Architecture of Zapurza Museum of Art & Culture.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Architecture_of_Zapurza_Museum_of_Art_%26_Culture.jpg",
+    "author": "DesiBoy101",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+    "filename": "culture-47.jpg",
+    "title": "File:August Cappelen - Tree Study - NG.K&H.A.03858 - National Museum of Art, Architecture and Design.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:August_Cappelen_-_Tree_Study_-_NG.K%26H.A.03858_-_National_Museum_of_Art,_Architecture_and_Design.jpg",
+    "author": "August Cappelen",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  {
+    "filename": "culture-48.jpg",
+    "title": "File:Felice Beato - Interior of the Angle of Taku North Fort Immediately After Its Capture by Storm - Google Art Project.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Felice_Beato_-_Interior_of_the_Angle_of_Taku_North_Fort_Immediately_After_Its_Capture_by_Storm_-_Google_Art_Project.jpg",
+    "author": "Felice Beato",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  {
+    "filename": "culture-49.jpg",
+    "title": "File:2026.03.15 Straw Pavuk in Interior of House from Sadavičy in Belarus Museum of Folk Architecture and Life.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2026.03.15_Straw_Pavuk_in_Interior_of_House_from_Sadavi%C4%8Dy_in_Belarus_Museum_of_Folk_Architecture_and_Life.jpg",
+    "author": "Tess Markina",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   }
 ]
