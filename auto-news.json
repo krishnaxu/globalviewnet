@@ -1,6 +1,96 @@
 {
-  "generated_at": "2026-11-02T18:02:34.385Z",
+  "generated_at": "2026-11-02T19:02:24.024Z",
   "items": [
+    {
+      "id": "texas-governor-race-tightens-in-prediction-ma-8897f5ef1f62",
+      "language": "en",
+      "title": "Texas governor race tightens in prediction markets, but Abbott remains favored",
+      "excerpt": "Prediction markets still show the Republican incumbent favored to win a fourth term, but the odds have narrowed in recent weeks.",
+      "date": "2026-11-02T18:54:04.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/02/texas-governor-prediction-markets-abbott-hinojosa.html",
+      "image": ""
+    },
+    {
+      "id": "russian-bombing-kills-24-people-at-ukraine-ai-9bcfdc55331d",
+      "language": "en",
+      "title": "Russian bombing kills 24 people at Ukraine aid centre, Kyiv says",
+      "excerpt": "Local officials say 27 people had been missing after at least nine 3,000kg aerial bombs hit a village in southern Ukraine.",
+      "date": "2026-11-02T18:48:00.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ee1e/live/8480acc0-d6eb-11f1-a741-236ee91c2e25.png"
+    },
+    {
+      "id": "trump-account-holders-to-receive-spacex-stock-5b7ca7850204",
+      "language": "en",
+      "title": "Trump Account holders to receive SpaceX stock from Gwynne Shotwell in December",
+      "excerpt": "Eligible Trump Account holders will begin receiving donated shares of SpaceX stock in December, President and COO Gwynne Shotwell said in a post on X.",
+      "date": "2026-11-02T18:38:19.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/02/trump-accounts-spacex-shares-shotwell.html",
+      "image": ""
+    },
+    {
+      "id": "fake-nuclear-warning-from-hacked-app-sparks-u-5772877934db",
+      "language": "en",
+      "title": "Fake nuclear warning from hacked app sparks unease but not panic in Ukraine",
+      "excerpt": "Many Ukrainians, who have faced years of Russian attacks, did not take the messages seriously and doubted their veracity.",
+      "date": "2026-11-02T18:34:24.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwx28mngxz8do?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b47a/live/2a240410-d6c9-11f1-ac20-7783925c811f.jpg"
+    },
+    {
+      "id": "coming-in-2027-apple-s-1-000-home-robot-for-f-e0d31c171577",
+      "language": "en",
+      "title": "Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights",
+      "excerpt": "Apple robot backed by CEO John Ternus may have hefty price tag and limited uses.",
+      "date": "2026-11-02T18:32:21.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Apple-CEO-John-Ternus-500x500.jpg"
+    },
+    {
+      "id": "if-hackers-can-take-control-of-a-supermarket--5b9f2f37879a",
+      "language": "en",
+      "title": "If hackers can take control of a supermarket freezer, how vulnerable is other tech?",
+      "excerpt": "Dozens of shops across European countries have been hit by a cyber-attack affecting their fridges.",
+      "date": "2026-11-02T18:25:01.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckpqg8lve73go?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/db6d/live/6afb9b70-d6cd-11f1-ac20-7783925c811f.jpg"
+    },
+    {
+      "id": "apple-reports-after-the-bell-options-traders--d2ac2b6d0b52",
+      "language": "en",
+      "title": "Apple reports after the bell. Options traders expect a big move",
+      "excerpt": "Apple reports after the bell. Options traders expect a big move.",
+      "date": "2026-11-02T18:19:03.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/02/apple-reports-after-the-bell-options-traders-expect-a-big-move.html",
+      "image": ""
+    },
+    {
+      "id": "options-traders-are-getting-anxious-on-palant-b4285d4633ec",
+      "language": "en",
+      "title": "Options traders are getting anxious on Palantir and Apple ahead of earnings",
+      "excerpt": "Apple, Palantir puts were in demand ahead of earnings.",
+      "date": "2026-11-02T18:16:02.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/02/options-traders-are-getting-anxious-on-palantir-and-apple-ahead-of-earnings.html",
+      "image": ""
+    },
+    {
+      "id": "claude-s-new-rules-against-game-cloning-won-t-3f64a695b0aa",
+      "language": "en",
+      "title": "Claude’s new rules against game cloning won’t stop the AI copying boom",
+      "excerpt": "The tsunami of imitators is way bigger than any one model maker can stem.",
+      "date": "2026-11-02T18:05:31.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1180626096-500x500.jpg"
+    },
     {
       "id": "in-one-of-the-largest-deals-in-tech-history-m-01cb927416ac",
       "language": "en",
@@ -50,6 +140,16 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/ckly0v2q2yxlo?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/055d/live/20e151f0-d6dd-11f1-b2be-0146bf989691.jpg"
+    },
+    {
+      "id": "china-publicly-discloses-plan-for-a-lunar-lan-da39f83d950e",
+      "language": "en",
+      "title": "China publicly discloses plan for a lunar landing within three years",
+      "excerpt": "The plan does not include a mission similar to Apollo 8 or Artemis II.",
+      "date": "2026-11-02T17:09:13.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/11/china-releases-timeline-for-lunar-landing-on-the-moon-targeting-before-2030/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/china-1-500x500.jpg"
     },
     {
       "id": "crowdstrike-lands-an-upgrade-and-jim-cramer-s-38fde8eeec88",
@@ -140,6 +240,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/02/fanatics-nhl-hometown-remix-jerseys.html",
       "image": ""
+    },
+    {
+      "id": "f1-in-mexico-city-yet-another-ferrari-fiasco--379032a1391d",
+      "language": "en",
+      "title": "F1 in Mexico City: Yet another Ferrari fiasco, but that’s not all",
+      "excerpt": "There was plenty of drama on and off the track for Formula 1 this weekend.",
+      "date": "2026-11-02T15:57:24.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/11/f1-in-mexico-city-we-have-a-new-world-champion/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2302218135-500x500-1793632200.jpg"
     },
     {
       "id": "冰箱变烤箱-欧洲多国超市冷柜再遭网络攻击-4b2d2920241f",
@@ -2889,116 +2999,6 @@
       "date": "2026-11-02T02:43:04.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/11-02/10724633.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国油梨-牛油果-国审品种实现-零的突破-6b772aea40a7",
-      "language": "zh",
-      "title": "中国油梨（牛油果）国审品种实现“零的突破”",
-      "excerpt": "中新网海口11月2日电 (记者 王晓斌)记者2日从中国热带农业科学院热带作物品种资源研究所获悉，由该所自主选育的“海牛1号”和“海牛2号”通过全国热带作物品种审定，成为中国首批获审定的油梨品种。",
-      "date": "2026-11-02T02:42:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724634.shtml",
-      "image": ""
-    },
-    {
-      "id": "林涛当选厦门市委书记-7ee8e88d3c1f",
-      "language": "zh",
-      "title": "林涛当选厦门市委书记",
-      "excerpt": "中新网厦门11月2日电 (吴冠标)11月1日，中国共产党厦门市第十四届委员会第一次全体会议举行，林涛当选厦门市委书记。",
-      "date": "2026-11-02T02:41:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-02/10724617.shtml",
-      "image": ""
-    },
-    {
-      "id": "贵州省发展和改革委员会原副主任彭显华被开除党籍-1f417029d45c",
-      "language": "zh",
-      "title": "贵州省发展和改革委员会原副主任彭显华被开除党籍",
-      "excerpt": "中新网11月2日电 据贵州省纪委监委消息：经贵州省委批准，贵州省纪委监委对贵州省发展和改革委员会原党组成员、副主任、一级巡视员，省粮食和物资储备局原党组书记、局长彭显华严重违纪违法问题进行了立案审查调查。",
-      "date": "2026-11-02T02:41:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-02/10724630.shtml",
-      "image": ""
-    },
-    {
-      "id": "贵州省黔南州政协原党组书记-主席瓦标龙被-双开-f2afc01596f5",
-      "language": "zh",
-      "title": "贵州省黔南州政协原党组书记、主席瓦标龙被“双开”",
-      "excerpt": "中新网11月2日电 据贵州省纪委监委消息：经贵州省委批准，贵州省纪委监委对贵州省黔南州政协原党组书记、主席瓦标龙严重违纪违法问题进行了立案审查调查。",
-      "date": "2026-11-02T02:40:42.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-02/10724629.shtml",
-      "image": ""
-    },
-    {
-      "id": "rubio-says-trump-wants-to-end-iran-war-peacef-5f2a221bdaf4",
-      "language": "en",
-      "title": "Rubio says Trump wants to end Iran war 'peacefully' even as both sides prepare for strikes",
-      "excerpt": "The remarks come as reports suggest that both sides are gearing up for additional military strikes after the U.S. midterm elections.",
-      "date": "2026-11-02T02:39:35.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/02/us-iran-war-trump-hormuz-rubio.html",
-      "image": ""
-    },
-    {
-      "id": "河北省邢台市委书记杨猛接受审查调查-b99ad9d53254",
-      "language": "zh",
-      "title": "河北省邢台市委书记杨猛接受审查调查",
-      "excerpt": "中新网11月2日电 据河北省纪委监委消息：河北省邢台市委书记杨猛涉嫌严重违纪违法，目前正接受河北省纪委监委纪律审查和监察调查。",
-      "date": "2026-11-02T02:39:26.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-02/10724625.shtml",
-      "image": ""
-    },
-    {
-      "id": "国有资产法草案二审-规定国家加强境外国有资产管理-29196247240b",
-      "language": "zh",
-      "title": "国有资产法草案二审 规定国家加强境外国有资产管理",
-      "excerpt": "中新网北京11月2日电 (记者 谢雁冰)国有资产法草案二次审议稿2日提请十四届全国人大常委会第二十五次会议审议。草案二审稿规定，国家加强境外国有资产管理，完善风险防范和利益保护机制，维护境外国有资产安全。",
-      "date": "2026-11-02T02:39:10.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-02/10724631.shtml",
-      "image": ""
-    },
-    {
-      "id": "全国国防体育运动锦标赛勇士定向专项赛在京落幕-6f85112a6370",
-      "language": "zh",
-      "title": "全国国防体育运动锦标赛勇士定向专项赛在京落幕",
-      "excerpt": "中新网北京11月2日电 2026年全国国防体育运动锦标赛勇士定向专项赛日前在北京南宫世界地热博览园举行，来自机关、企事业单位、学校和社会团体的500余名国防体育爱好者参加了比赛。",
-      "date": "2026-11-02T02:38:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-02/10724585.shtml",
-      "image": ""
-    },
-    {
-      "id": "大战略牵引新开局丨以-绿色工笔-绘就能源发展新画卷-fdfc636f5dca",
-      "language": "zh",
-      "title": "大战略牵引新开局丨以“绿色工笔”绘就能源发展新画卷",
-      "excerpt": "央广网天津11月1日消息(记者韩雨晨)俯瞰“盐光互补”项目现场，成片光伏板沿盐田排开，把阳光化作绿电；旷野之上，特高压工程的铁塔银线一路向津门延伸，将清风绿电昼夜不息汇入城市；与此同时，城市另一端，氢能重卡往来穿梭，尾气里只留下洁净的水汽。三个场景，勾勒出天津这座城市“十五五”能源布局的三条主线。",
-      "date": "2026-11-02T02:33:34.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724627.shtml",
-      "image": ""
-    },
-    {
-      "id": "网络开盒网暴致人抑郁6人获刑-055c7bca2bc4",
-      "language": "zh",
-      "title": "网络开盒网暴致人抑郁6人获刑",
-      "excerpt": "中新网11月2日电 (记者 高萌)11月2日，最高人民检察院发布一批依法保护公民个人信息典型案例。",
-      "date": "2026-11-02T02:31:22.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-02/10724626.shtml",
-      "image": ""
-    },
-    {
-      "id": "中欧班列沿线国家代表在敦煌共话丝路交融与当代合作-61e91ad8d7e5",
-      "language": "zh",
-      "title": "中欧班列沿线国家代表在敦煌共话丝路交融与当代合作",
-      "excerpt": "图为团队成员在敦煌鸣沙山徒步。中新社记者 李亚龙 摄 图为团队成员走访敦煌景点。中新社记者 李亚龙 摄 图为团队成员走访敦煌景点。中新社记者 李亚龙 摄 图为团队成员走访敦煌景点。中新社记者 李亚龙 摄 图为团队成员走访敦煌景点。中新社记者 李亚龙 摄 图为欧洲天邻智库创始人兼主席乔万卡·保时捷（Jovanka Porsche）参观敦煌景点。中新社记者 李亚龙 摄 图为团队成员走访敦煌景点。中新社记者 李亚龙 摄 图为欧洲科学院院士、德国人工智能技术中心联合创始人汉斯·乌斯克尔特（Hans Uszkoreit）（右一）在敦煌接受记者采访。中新社记者 李亚龙 摄 图为德国前副总理菲利普·勒斯勒尔（Philipp R#246;sler）（右一）参观敦煌景点。中新社记者 李亚龙 摄",
-      "date": "2026-11-02T02:30:36.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-02/10724609.shtml",
       "image": ""
     }
   ]
