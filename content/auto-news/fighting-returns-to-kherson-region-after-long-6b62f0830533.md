@@ -1,0 +1,15 @@
+---
+slug: "fighting-returns-to-kherson-region-after-long-6b62f0830533"
+language: "en"
+title: "Fighting returns to Kherson region after longest Ukraine war ceasefire"
+excerpt: "Though unprecedented, the six-day truce has done little to alter the wider trajectory of a war that continues to grinds on."
+date: "2026-11-02T17:33:19.000Z"
+source_name: "BBC World"
+source_url: "https://www.bbc.co.uk/news/articles/ckg5jlyp66jzo?at_medium=RSS&at_campaign=rss"
+image: "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e5be/live/174cc760-d6d2-11f1-a701-fddedf244c16.jpg"
+published: true
+---
+
+Though unprecedented, the six-day truce has done little to alter the wider trajectory of a war that continues to grinds on.
+
+原文链接：https://www.bbc.co.uk/news/articles/ckg5jlyp66jzo?at_medium=RSS&at_campaign=rss
