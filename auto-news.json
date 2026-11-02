@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-11-02T19:57:54.391Z",
+  "generated_at": "2026-11-02T20:52:27.875Z",
   "items": [
+    {
+      "id": "trump-focuses-on-reflecting-pool-in-final-pub-b7ecbff55cc2",
+      "language": "en",
+      "title": "Trump focuses on Reflecting Pool in final public speech before midterms",
+      "excerpt": "Trump seemed to acknowledge that Democrats had an advantage heading into Election Day. \"But we gave this a very strong shot,\" he said.",
+      "date": "2026-11-02T20:29:00.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/02/trump-midterm-election-speech-reflecting-pool.html",
+      "image": ""
+    },
+    {
+      "id": "intel-foundry-push-faces-critical-test-after--9db8ec3f2ba4",
+      "language": "en",
+      "title": "Intel foundry push faces critical test after stock's 45% plunge in October",
+      "excerpt": "Intel’s turnaround now hinges on proving its foundry strategy can deliver, as customers look for signs the company will add fab capacity and catch TSMC",
+      "date": "2026-11-02T20:20:34.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/02/intel-foundry-faces-critical-test-after-stocks-45percent-plunge-in-october.html",
+      "image": ""
+    },
+    {
+      "id": "man-guilty-of-stealing-cash-from-farm-owned-b-9b03c5f551b4",
+      "language": "en",
+      "title": "Man guilty of stealing cash from farm owned by South African president",
+      "excerpt": "The case, part of the \"Farmgate\" scandal, has left President Cyril Ramaphosa mired in an impeachment saga.",
+      "date": "2026-11-02T20:08:51.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c9vgrvpk4l6eo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ee6f/live/1399f160-d6fa-11f1-b983-c357054e4d1e.jpg"
+    },
+    {
+      "id": "googling-zelda-today-offers-a-glimpse-of-how--ae79e5a5d337",
+      "language": "en",
+      "title": "Googling \"Zelda\" today offers a glimpse of how search worked in 1998",
+      "excerpt": "\"The flow of time is always cruel.\"",
+      "date": "2026-11-02T19:52:23.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gaming/2026/11/googles-legend-of-zelda-easter-egg-transports-you-back-to-1998/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/zelda-google-500x500.jpg"
+    },
+    {
+      "id": "what-florida-jet-audio-and-flight-data-tells--b9de2b92c746",
+      "language": "en",
+      "title": "What Florida jet audio and flight data tells us about its final moments",
+      "excerpt": "A private jet crashed in Florida on Sunday, killing all nine people on board, according to US authorities. BBC Verify has used air traffic control audio and flight tracking data to reconstruct the final moments before the plane crashed.",
+      "date": "2026-11-02T19:49:22.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/c52e9lgxjz82o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7d14/live/f2671810-d6ea-11f1-b441-2b33b063138f.jpg"
+    },
     {
       "id": "germany-says-lawmakers-iphones-may-have-been--dffcdbc31146",
       "language": "en",
@@ -10,6 +60,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/02/germany-says-lawmakers-iphones-may-have-been-hacked-with-spyware/",
       "image": ""
+    },
+    {
+      "id": "trump-to-remove-rwanda-and-south-africa-from--2fe762314e02",
+      "language": "en",
+      "title": "Trump to remove Rwanda and South Africa from US trade deal",
+      "excerpt": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury.",
+      "date": "2026-11-02T19:33:10.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e727/live/e5cde5c0-d6ef-11f1-ae42-99a80c72db9e.jpg"
     },
     {
       "id": "web-host-squarespace-lays-off-19-of-its-emplo-4ca5045e7ee7",
@@ -50,6 +110,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html",
       "image": ""
+    },
+    {
+      "id": "most-of-our-measures-of-a-key-cognitive-proce-3e9dcdc397b3",
+      "language": "en",
+      "title": "Most of our measures of a key cognitive process don't agree",
+      "excerpt": "A big study with very little beyond negative results still gets published.",
+      "date": "2026-11-02T19:13:26.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/11/most-of-our-measures-of-a-key-cognitive-process-dont-agree/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2182089944-500x500.jpg"
     },
     {
       "id": "snap-settles-lawsuit-accusing-platform-of-fue-a2939ef1c875",
@@ -2929,76 +2999,6 @@
       "date": "2026-11-02T03:21:02.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/tp/2026/11-02/10724636.shtml",
-      "image": ""
-    },
-    {
-      "id": "我国拟修改可再生能源法-推动可再生能源参与电力市场交易-0b3e0a32a31c",
-      "language": "zh",
-      "title": "我国拟修改可再生能源法 推动可再生能源参与电力市场交易",
-      "excerpt": "中新网北京11月2日电 (记者 谢雁冰)11月2日，可再生能源法修订草案提请十四届全国人大常委会第二十五次会议初次审议。",
-      "date": "2026-11-02T03:19:50.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-02/10724665.shtml",
-      "image": ""
-    },
-    {
-      "id": "习近平同阿曼苏丹海赛姆会谈-1cb93afa08a6",
-      "language": "zh",
-      "title": "习近平同阿曼苏丹海赛姆会谈",
-      "excerpt": "新华社北京11月2日电 11月2日，国家主席习近平在北京同来华进行国事访问的阿曼苏丹海赛姆举行会谈。",
-      "date": "2026-11-02T03:19:14.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-02/10724652.shtml",
-      "image": ""
-    },
-    {
-      "id": "贷款利率迎来新变化-双锚改革-带来哪些影响-1410f6323b97",
-      "language": "zh",
-      "title": "贷款利率迎来新变化 “双锚改革”带来哪些影响？",
-      "excerpt": "最近，央行宣布贷款利率要从单一参考LPR定价向更多元的定价基准转型。什么是贷款的定价基准？什么是LPR？一起来了解。",
-      "date": "2026-11-02T03:19:04.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724663.shtml",
-      "image": ""
-    },
-    {
-      "id": "南极活动与环境保护法草案三审-规定国家统筹南极科学研究方向-0aa80823a209",
-      "language": "zh",
-      "title": "南极活动与环境保护法草案三审 规定国家统筹南极科学研究方向",
-      "excerpt": "中新网北京11月2日电 (记者 谢雁冰)南极活动与环境保护法草案三次审议稿2日提请十四届全国人大常委会第二十五次会议审议。三审稿规定，国家根据南极事业发展需要，统筹南极科学研究方向，支持、引导科研机构、高等学校和社会组织等依法有序开展南极考察活动及相关科学研究。",
-      "date": "2026-11-02T03:17:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-02/10724659.shtml",
-      "image": ""
-    },
-    {
-      "id": "新阶层主题月-专场活动之-寻美大连2026再出发-2e1d7c910783",
-      "language": "zh",
-      "title": "【新阶层主题月】专场活动之“寻美大连2026再出发”",
-      "excerpt": "近日，凝“新”聚力、筑梦大连“新阶层·建设力”主题月之“寻美大连2026再出发”专场活动在大连梭鱼湾足球场新闻发布厅举行。市委统战部副部长赵旭参加活动，甘井子区委常委、统战部部长任何佳参加活动并致辞，市区新联会、网联会代表等80人参加活动。",
-      "date": "2026-11-02T03:16:14.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/txy/2026/11-02/10724642.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家能源局-三季度煤电发电量及电煤用量持续下降-迎峰度冬煤炭库存总体有保障-1747980e3576",
-      "language": "zh",
-      "title": "国家能源局：三季度煤电发电量及电煤用量持续下降，迎峰度冬煤炭库存总体有保障",
-      "excerpt": "中新网11月2日电 据国家能源局微信公众号2日消息，2026年三季度，我国煤电发电量及占比同比下降，能源低碳转型取得新进展。随着近期煤炭增产保供举措加快实施，煤炭供应稳步恢复，与之同时，煤炭消费相对平稳，供需差进一步收窄，叠加电煤库存保持安全合理区间，为迎峰度冬保供提供坚实基础。",
-      "date": "2026-11-02T03:01:19.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724645.shtml",
-      "image": ""
-    },
-    {
-      "id": "sam-altman-makes-surprise-south-korea-visit-a-25e9c7c69ba5",
-      "language": "en",
-      "title": "Sam Altman makes surprise South Korea visit as OpenAI builds on chip partnerships",
-      "excerpt": "OpenAI CEO Sam Altman made an unannounced visit to South Korea over the weekend, meeting with Samsung executives and reportedly SK Group executives.",
-      "date": "2026-11-02T02:58:53.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/02/openai-sam-altman-samsung-sk-south-korea.html",
       "image": ""
     }
   ]
