@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-11-03T21:53:43.024Z",
+  "generated_at": "2026-11-03T22:52:32.123Z",
   "items": [
+    {
+      "id": "anthropic-is-working-on-a-system-to-prove-ai--52eb9ce7b224",
+      "language": "en",
+      "title": "Anthropic is working on a system to prove AI models’ identity",
+      "excerpt": "Called FlashProve, the system would let anyone check that an AI response really came from the model it claims to be from.",
+      "date": "2026-11-03T22:41:03.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+      "image": ""
+    },
+    {
+      "id": "strand-bookstore-to-pay-nearly-1-5-million-ov-55c09b468ed9",
+      "language": "en",
+      "title": "Strand bookstore to pay nearly $1.5 million over Covid loan tied to Sen. Wyden's wife",
+      "excerpt": "Nancy Bass Wyden, whose grandfather founded the New York City bookstore, had signed off on the PPP, which was off-limits because she is a senator's wife.",
+      "date": "2026-11-03T22:38:38.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/03/strand-bookstore-ppp-loan-ron-wyden-wife-settlement.html",
+      "image": ""
+    },
+    {
+      "id": "伊朗要求美明确回应7项条件-特朗普再次喊话不排除对伊动武-cddab33ac5e9",
+      "language": "zh",
+      "title": "伊朗要求美明确回应7项条件 特朗普再次喊话不排除对伊动武",
+      "excerpt": "当地时间3日，伊朗方面表示，目前有关伊美谈判尚未达成新进展。此外，伊朗各方就局势密集发声，传递伊方强硬立场：“伊朗绝不会投降”“美方必须完整、明确回应伊朗提出的7项条件并付诸实施，霍尔木兹海峡才会开放”“伊朗已做好战斗准备，并处在最高级别防御状态”……",
+      "date": "2026-11-03T22:36:50.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-04/10725695.shtml",
+      "image": ""
+    },
+    {
+      "id": "data-centers-are-turning-to-old-jet-engines-a-014d0f8ff9b1",
+      "language": "en",
+      "title": "Data centers are turning to old jet engines as the wait for power grows",
+      "excerpt": "The years-long wait for access to the grid and new turbines is causing data center builders to turn to an unusual, less efficient and less environmentally friendly solution: once-discarded jet engines.",
+      "date": "2026-11-03T22:19:53.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+      "image": ""
+    },
+    {
+      "id": "ntsb-says-crucial-plane-parts-found-three-mil-58fb556ee30c",
+      "language": "en",
+      "title": "NTSB says crucial plane parts found three miles from Florida crash site",
+      "excerpt": "The NTSB said because the parts were found far from the accident site, they fell off before the crash.",
+      "date": "2026-11-03T21:53:38.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c9e8lk5dpj7no?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5c38/live/b5b1d720-d7cb-11f1-b441-2b33b063138f.jpg"
+    },
     {
       "id": "ted-schlein-s-ballistic-ventures-seeks-490m-f-14409ffa4e77",
       "language": "en",
@@ -2949,56 +2999,6 @@
       "date": "2026-11-03T06:27:07.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725291.shtml",
-      "image": ""
-    },
-    {
-      "id": "合肥开通首条直飞南亚国际货运航线-9eb334cce37f",
-      "language": "zh",
-      "title": "合肥开通首条直飞南亚国际货运航线",
-      "excerpt": "中新社合肥11月3日电 (记者 赵强)一架装有53吨货物的飞机3日从安徽省合肥新桥国际机场起飞，直飞印度新孟买国际机场，标志着合肥至印度国际货运航线顺利首航。",
-      "date": "2026-11-03T06:20:51.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725290.shtml",
-      "image": ""
-    },
-    {
-      "id": "十五五-末中国新兴支柱产业产值有望超10万亿元-5bda6b5f8df3",
-      "language": "zh",
-      "title": "“十五五”末中国新兴支柱产业产值有望超10万亿元",
-      "excerpt": "中新社北京11月3日电 (记者 王梦瑶)中国国家发改委创新和高技术发展司副司长任中保3日在北京表示，“十五五”时期将重点培育集成电路、航空航天、生物医药等六大新兴支柱产业。到“十五五”末，新兴支柱产业的产值有望翻一番，达到10万亿元人民币以上，成为支撑经济高质量发展的重要力量。",
-      "date": "2026-11-03T06:19:07.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725289.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家发改委-对人工智能就业替代风险强化监测预警-32a1d114eb3a",
-      "language": "zh",
-      "title": "国家发改委：对人工智能就业替代风险强化监测预警",
-      "excerpt": "中新网11月3日电 11月3日，国家发展改革委就培育壮大新动能有关情况举行新闻发布会。会上，国家发展改革委创新和高技术发展司副司长王若蒙表示，要积极应对人工智能对社会的影响，确保以人为本、向上向善。",
-      "date": "2026-11-03T06:13:54.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725288.shtml",
-      "image": ""
-    },
-    {
-      "id": "建设银行携手伦敦金融城就自贸离岸债业务开展工作交流-0dacbff34f60",
-      "language": "zh",
-      "title": "建设银行携手伦敦金融城就自贸离岸债业务开展工作交流",
-      "excerpt": "10月23日，建设银行上海市分行、伦敦分行联合伦敦金融城，在上海举办“善建行远，沪伦互通”离岸人民币债券市场合作业务交流会。中国人民银行上海总部、上海市委金融办相关负责同志，前伦敦金融城市长、中英绿色金融工作小组联席主席，英国驻华使馆官员出席会议并致辞。来自伦敦金融城、伦敦证券交易所集团、英国驻华使馆、上海清算所、商业银行、大型企业等15家单位的40余位代表参加相关活动。",
-      "date": "2026-11-03T06:09:00.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725294.shtml",
-      "image": ""
-    },
-    {
-      "id": "建设银行伦敦分行获准开展非实需背景人民币购售业务试点-08ed92254834",
-      "language": "zh",
-      "title": "建设银行伦敦分行获准开展非实需背景人民币购售业务试点",
-      "excerpt": "10月30日，中国人民银行批准建设银行伦敦分行在境内银行间外汇市场试点开展非实需背景人民币购售交易，标志着建设银行境外人民币业务及金融市场服务能力进一步拓展。",
-      "date": "2026-11-03T06:06:42.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725292.shtml",
       "image": ""
     }
   ]
