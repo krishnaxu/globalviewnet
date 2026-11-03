@@ -1,6 +1,96 @@
 {
-  "generated_at": "2026-11-03T19:00:21.799Z",
+  "generated_at": "2026-11-03T19:59:36.453Z",
   "items": [
+    {
+      "id": "researchers-warned-of-north-korean-hacking-ta-9b0b38daeb34",
+      "language": "en",
+      "title": "Researchers warned of North Korean hacking tactics years before record $6.3B Binance heist",
+      "excerpt": "Cybersecurity experts have long warned of the persistent and patient threat from North Korea's long-running hacks. The world's largest crypto exchange was still caught off-guard.",
+      "date": "2026-11-03T19:45:48.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/03/researchers-warned-of-north-korean-hacking-tactics-years-before-record-6-3b-binance-heist/",
+      "image": ""
+    },
+    {
+      "id": "sen-chris-murphy-still-hospitalized-after-suf-d0843793c185",
+      "language": "en",
+      "title": "Sen. Chris Murphy still hospitalized after suffering a stroke over the weekend",
+      "excerpt": "Sen. Chris Murphy, a Connecticut Democrat, was still in the hospital as of Tuesday, his office confirmed.",
+      "date": "2026-11-03T19:36:16.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/03/chris-murphy-hospitalized-stroke.html",
+      "image": ""
+    },
+    {
+      "id": "crowdstrike-launches-ai-kill-switch-that-it-s-e631ae3b3ca2",
+      "language": "en",
+      "title": "CrowdStrike launches AI kill switch that it says can stop internal agents that go rogue",
+      "excerpt": "CrowdStrike launched an AI kill switch that the company says can stop internal agents, block relaunches and cut enterprise network access.",
+      "date": "2026-11-03T19:35:24.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/03/crowdstrike-ai-kill-switch-rogue-agents.html",
+      "image": ""
+    },
+    {
+      "id": "ai-inference-startup-fal-doubles-its-valuatio-05d1a3678a8e",
+      "language": "en",
+      "title": "AI inference startup Fal doubles its valuation to $16B as demand surges",
+      "excerpt": "The five-year-old startup raised a $1.3 billion round led by Bessemer.",
+      "date": "2026-11-03T19:34:43.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+      "image": ""
+    },
+    {
+      "id": "election-day-here-is-the-no-1-issue-we-re-wat-07be6469a337",
+      "language": "en",
+      "title": "Election Day: Here is the No. 1 issue we're watching as a signal for stocks",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "date": "2026-11-03T19:29:41.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/03/election-day-here-is-the-no-1-issue-were-watching-as-a-signal-for-stocks.html",
+      "image": ""
+    },
+    {
+      "id": "reddit-tests-ads-in-search-results-as-traffic-fad30a1cf8a3",
+      "language": "en",
+      "title": "Reddit tests ads in search results as traffic declines and growth concerns mount",
+      "excerpt": "The new ad placements could help Reddit squeeze more revenue from existing users as Google's AI search changes how people discover its content.",
+      "date": "2026-11-03T19:24:37.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/03/reddit-tests-ads-in-search-results-as-traffic-declines-and-growth-concerns-mount/",
+      "image": ""
+    },
+    {
+      "id": "options-traders-are-betting-heavily-on-these--9df84c993856",
+      "language": "en",
+      "title": "Options traders are betting heavily on these stocks ahead of election results",
+      "excerpt": "Solar stocks see heavy call activity as voting gets underway",
+      "date": "2026-11-03T19:22:30.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/03/options-traders-are-betting-heavily-on-these-stocks-ahead-of-election-results.html",
+      "image": ""
+    },
+    {
+      "id": "ten-years-later-pokémon-go-to-the-polls-still-c5d8221775f5",
+      "language": "en",
+      "title": "Ten years later, ‘Pokémon Go to the polls’ still haunts the internet",
+      "excerpt": "Hillary Clinton's 2016 political gaffe has become an irony-shrouded rallying cry for jaded young voters who still dare to hope for change.",
+      "date": "2026-11-03T19:04:52.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/03/ten-years-later-pokemon-go-to-the-polls-still-haunts-the-internet/",
+      "image": ""
+    },
+    {
+      "id": "sullivan-what-the-2026-midterms-could-mean-fo-fdb21a2a3a46",
+      "language": "en",
+      "title": "Sullivan: What the 2026 midterms could mean for energy investors",
+      "excerpt": "A Democratic Congress could be good for offshore wind and solar energy.",
+      "date": "2026-11-03T19:03:06.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/03/2026-midterms-energy-investors.html",
+      "image": ""
+    },
     {
       "id": "ferrari-s-controversial-luce-ev-is-sold-out-f-e9a77fb77a08",
       "language": "en",
@@ -42,6 +132,26 @@
       "image": ""
     },
     {
+      "id": "nyt-demands-brave-shut-down-its-paywall-block-7d2d3d4a9477",
+      "language": "en",
+      "title": "NYT demands Brave shut down its paywall blocker and end deals with AI firms",
+      "excerpt": "Lawsuit calls Brave \"supplier, dealer, and distributor\" of stolen news content.",
+      "date": "2026-11-03T18:30:27.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/nyt-demands-brave-shut-down-its-paywall-blocker-and-end-deals-with-ai-firms/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/brave-500x500.jpg"
+    },
+    {
+      "id": "buttons-are-back-and-storage-is-king-when-it--56749c9c140f",
+      "language": "en",
+      "title": "Buttons are back and storage is king when it comes to car interiors",
+      "excerpt": "We talk with Nissan designer Hiren Patel about how vehicle interior designs are changing.",
+      "date": "2026-11-03T18:19:31.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/11/yes-to-storage-no-to-piano-black-how-car-interior-design-is-changing/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/2027-Nissan-Rogue-Hybrid-05-500x500.jpg"
+    },
+    {
       "id": "ghosted-after-a-job-interview-there-s-a-websi-2c9c06be3bc2",
       "language": "en",
       "title": "Ghosted after a job interview? There's a website for that—and thousands of frustrated job seekers have weighed in",
@@ -72,6 +182,16 @@
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/db91/live/79069d70-d79d-11f1-84dd-e55f4bec0ecd.png"
     },
     {
+      "id": "google-will-let-schools-skip-ai-tools-but-the-f395370b6033",
+      "language": "en",
+      "title": "Google will let schools skip AI tools, but they have to give up search, too",
+      "excerpt": "Google will offer schools AI tools that purportedly don't give away the answers.",
+      "date": "2026-11-03T17:54:43.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/05/google-logo-big-g-grooves-500x500.jpg"
+    },
+    {
       "id": "ai-generated-slopaganda-in-political-ads-puts-a71fb88c0ead",
       "language": "en",
       "title": "AI-generated 'slopaganda' in political ads puts internet platforms on alert",
@@ -80,6 +200,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/03/ai-generated-slopaganda-in-political-ads-puts-platforms-on-alert.html",
       "image": ""
+    },
+    {
+      "id": "another-child-dies-of-measles-as-cdc-reported-1c3d136ae751",
+      "language": "en",
+      "title": "Another child dies of measles as CDC reportedly holds up health alert",
+      "excerpt": "NY gov. pointed to Kennedy's long-standing anti-vaccine work as spurring outbreaks.",
+      "date": "2026-11-03T17:21:29.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/health/2026/11/another-child-dies-of-measles-as-cdc-reportedly-holds-up-health-alert/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/02/GettyImages-2053751760-500x500.jpg"
     },
     {
       "id": "google-dismantles-botnet-secretly-running-on--c58a6048682a",
@@ -2869,136 +2999,6 @@
       "date": "2026-11-03T05:18:51.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gn/2026/11-03/10725266.shtml",
-      "image": ""
-    },
-    {
-      "id": "从-喝大水-热梗出圈开始-年轻人玩出-低成本极简养生-新赛道-b5b8103fab62",
-      "language": "zh",
-      "title": "从“喝大水”热梗出圈开始，年轻人玩出“低成本极简养生”新赛道",
-      "excerpt": "最近这一个月，年轻人的养生赛道，又出了新玩法。",
-      "date": "2026-11-03T05:13:39.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-03/10725264.shtml",
-      "image": ""
-    },
-    {
-      "id": "特朗普发表讲话-为中期选举造势-收官-cec4f4594835",
-      "language": "zh",
-      "title": "特朗普发表讲话 为中期选举造势“收官”",
-      "excerpt": "中新社华盛顿11月2日电 (记者 陈孟统)在美国2026年中期选举日前一天，美国总统特朗普在华盛顿发表讲话，为其过去一个月密集的助选造势活动“收官”。",
-      "date": "2026-11-03T05:07:35.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-03/10725259.shtml",
-      "image": ""
-    },
-    {
-      "id": "今后买菜-赶集-逛超市-将有这些新变化-c04ebd54a132",
-      "language": "zh",
-      "title": "今后买菜、赶集、逛超市 将有这些新变化",
-      "excerpt": "近日，国家发展改革委等5部门联合发布《关于加强消费基础设施建设 促进消费投资良性互动的指导意见》。今后买菜、赶集、逛超市等，将有哪些新变化，一起了解——",
-      "date": "2026-11-03T05:06:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725260.shtml",
-      "image": ""
-    },
-    {
-      "id": "广交会观察-机器人-ai算法层见叠出-中国智能化适老产品-出海-走俏-a7d19de01153",
-      "language": "zh",
-      "title": "广交会观察：机器人、AI算法层见叠出 中国智能化适老产品“出海”走俏",
-      "excerpt": "中新社广州11月3日电 (记者 张璐)智能康复机器人、便携制氧机、搭载AI算法的睡眠呼吸机……正在广州举办的第140届中国进出口商品交易会(广交会)第三期展会上，众多中国企业携功能创新、安全可靠的适老产品集中亮相，走俏海外市场。",
-      "date": "2026-11-03T05:02:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725258.shtml",
-      "image": ""
-    },
-    {
-      "id": "baked-by-melissa-enters-target-with-first-at--80e3837ecc5d",
-      "language": "en",
-      "title": "Baked by Melissa enters Target with first at-home cupcake mix",
-      "excerpt": "Baked by Melissa is launching bite-size cupcake kits at Target as the retailer heads into the critical holiday shopping season.",
-      "date": "2026-11-03T05:01:01.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/03/baked-by-melissa-cupcake-kits-target.html",
-      "image": ""
-    },
-    {
-      "id": "americans-head-to-the-polls-for-elections-tha-5e2571f9abdc",
-      "language": "en",
-      "title": "Americans head to the polls for elections that could define Trump's closing chapter",
-      "excerpt": "The midterms will shape Congress for the last years of his presidency, writes Sarah Smith, but they are also a test of what politics may look like without him.",
-      "date": "2026-11-03T05:00:43.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cq2d6k4r5n9ro?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/97bc/live/a5a46a40-d74f-11f1-93e1-3b657b665bcf.jpg"
-    },
-    {
-      "id": "走进中国乡村-乐园-携手-田园-中国主题乐园第一县-激活乡村农文旅-070ba072a051",
-      "language": "zh",
-      "title": "（走进中国乡村）乐园“携手”田园：“中国主题乐园第一县”激活乡村农文旅",
-      "excerpt": "中新社郑州11月3日电 题：乐园“携手”田园：“中国主题乐园第一县”激活乡村农文旅",
-      "date": "2026-11-03T04:51:46.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725257.shtml",
-      "image": ""
-    },
-    {
-      "id": "台湾-学长-的武汉-青春早餐店-d3c9c488cf3c",
-      "language": "zh",
-      "title": "台湾“学长”的武汉“青春早餐店”",
-      "excerpt": "中新社武汉11月3日电 题：台湾“学长”的武汉“青春早餐店”",
-      "date": "2026-11-03T04:48:34.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-03/10725256.shtml",
-      "image": ""
-    },
-    {
-      "id": "国务院免去何永贤香港特别行政区政府房屋局局长职务-89a1e3b37164",
-      "language": "zh",
-      "title": "国务院免去何永贤香港特别行政区政府房屋局局长职务",
-      "excerpt": "中新社北京11月3日电 依照《中华人民共和国香港特别行政区基本法》的有关规定，根据香港特别行政区行政长官李家超的建议，国务院2026年11月3日决定：免去何永贤的房屋局局长职务。(完)",
-      "date": "2026-11-03T04:47:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-03/10725255.shtml",
-      "image": ""
-    },
-    {
-      "id": "哈尔滨迎今秋首场降雪-45c41dfaf229",
-      "language": "zh",
-      "title": "哈尔滨迎今秋首场降雪",
-      "excerpt": "11月3日，哈尔滨迎今秋首场降雪，圣·索菲亚教堂广场被白雪装点，市民、游客专程来到广场，驻足赏雪、拍照打卡。图为游客在广场拍照。中新社记者 赵宇航 摄 11月3日，哈尔滨迎今秋首场降雪，圣·索菲亚教堂广场被白雪装点，市民、游客专程来到广场，驻足赏雪、拍照打卡。图为工作人员在广场清雪。中新社记者 赵宇航 摄 11月3日，哈尔滨迎今秋首场降雪，圣·索菲亚教堂广场被白雪装点，市民、游客专程来到广场，驻足赏雪、拍照打卡。图为游客在广场拍照。中新社记者 赵宇航 摄 11月3日，哈尔滨迎今秋首场降雪，圣·索菲亚教堂广场被白雪装点，市民、游客专程来到广场，驻足赏雪、拍照打卡。图为小朋友在广场玩雪。中新社记者 赵宇航 摄 11月3日，哈尔滨迎今秋首场降雪，圣·索菲亚教堂广场被白雪装点，市民、游客专程来到广场，驻足赏雪、拍照打卡。图为小朋友在广场玩雪。中新社记者 赵宇航 摄",
-      "date": "2026-11-03T04:31:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-03/10725231.shtml",
-      "image": ""
-    },
-    {
-      "id": "粗碳-到-细碳-老工业基地吉林造-能上天的丝-557fe5d1b1b5",
-      "language": "zh",
-      "title": "“粗碳”到“细碳”：老工业基地吉林造“能上天的丝”",
-      "excerpt": "中新网吉林11月3日电 (记者 苍雁 石洪宇)3日，吉林炭素年产30吨1K、3K宇航级碳纤维生产线进入设备调试关键阶段。该生产线主打航空航天高端材料，这家曾产出新中国第一根石墨电极的老牌工厂，完成了从“粗碳”向“细碳”的华丽转型。",
-      "date": "2026-11-03T04:16:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725246.shtml",
-      "image": ""
-    },
-    {
-      "id": "欣欣教育基金会理事长丁永庆-我在与时间赛跑-72cffacc2cd1",
-      "language": "zh",
-      "title": "欣欣教育基金会理事长丁永庆：“我在与时间赛跑”",
-      "excerpt": "中新网北京11月3日电 题：欣欣教育基金会理事长丁永庆：“我在与时间赛跑”",
-      "date": "2026-11-03T04:16:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/11-03/10725244.shtml",
-      "image": ""
-    },
-    {
-      "id": "海南创新实施-人工智能-普法-赋能自贸港网络法治宣传-53ab54615c27",
-      "language": "zh",
-      "title": "海南创新实施“人工智能+普法”赋能自贸港网络法治宣传",
-      "excerpt": "中新网海口11月3日电 (记者 符宇群)网民正式纳入社会教育体系、AI助力普法内容生产分发、本土网络普法 IP“麦小椰”持续出圈……海南省新闻办公室2日召开海南省“九五”普法规划专场发布会，海南省委网络安全和信息化委员会办公室副主任莫照定详解海南网络法治宣传布局，一系列创新举措勾勒出自贸港智能化、全媒体网络普法新图景。",
-      "date": "2026-11-03T04:15:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-03/10725243.shtml",
       "image": ""
     }
   ]
