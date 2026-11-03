@@ -1,6 +1,396 @@
 {
-  "generated_at": "2026-11-03T07:18:46.208Z",
+  "generated_at": "2026-11-03T08:59:17.969Z",
   "items": [
+    {
+      "id": "从老街坊到新邻居-甘肃临夏团结故事在烟火中延续-4755b22867e3",
+      "language": "zh",
+      "title": "从老街坊到新邻居 甘肃临夏团结故事在烟火中延续",
+      "excerpt": "中新网兰州11月3日电 (李文华 马龙)秋末时节，甘肃省临夏回族自治州的清晨一如往常热闹。不同民族的早餐店铺，食客络绎不绝；回汉等不同民族的儿童，手拉手一起走进校园。寻常烟火气里，流淌着各族民众守望相助的深厚情谊。",
+      "date": "2026-11-03T08:52:51.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/txy/2026/11-03/10725425.shtml",
+      "image": ""
+    },
+    {
+      "id": "绘就年度电影地图-海南岛国际电影节披露三大策展方向-70d51f4e1574",
+      "language": "zh",
+      "title": "绘就年度电影地图！海南岛国际电影节披露三大策展方向",
+      "excerpt": "中新网海口11月3日电(记者 符宇群)“本届电影节的选片，将为大家呈现出一张既有国际视野、又有清晰策展线索的‘年度电影地图’。”三亚市委常委、宣传部部长、海南岛国际电影节组委会副秘书长李英挺3日在海南省新闻办公室举办的新闻发布会上，详解第八届海南岛国际电影节“金椰奖”策展与选片思路。",
+      "date": "2026-11-03T08:51:23.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cul/2026/11-03/10725427.shtml",
+      "image": ""
+    },
+    {
+      "id": "我国已制定实施新型储能国家标准及行业标准150项-aff337a0a936",
+      "language": "zh",
+      "title": "我国已制定实施新型储能国家标准及行业标准150项",
+      "excerpt": "中新网11月3日电 据国家市场监督管理总局网站消息，我国已制定实施新型储能国家标准及行业标准150项，初步形成涵盖基础通用、规划设计、设备及检验、施工及验收、并网运行、运维及检修、退役及处置、安全与管理全链条的新型储能标准体系，有力支撑新型储能产业加速从“新赛道”迈向“主赛道”。目前，我国新型储能项目装机规模累计超过153吉瓦/396吉瓦时，占全球市场份额50%以上。",
+      "date": "2026-11-03T08:51:19.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725416.shtml",
+      "image": ""
+    },
+    {
+      "id": "2026现代科技馆体系联合行动主题工作坊在辽宁收官-b057a551120c",
+      "language": "zh",
+      "title": "2026现代科技馆体系联合行动主题工作坊在辽宁收官",
+      "excerpt": "中新网沈阳11月3日电(杨茜茜 王翕瞳)近日，为期5天的2026年现代科技馆体系联合行动“科学教育实践能力提升工作坊”——“面向未来的科学课程(活动)设计”主题工作坊在辽宁省科学技术馆圆满收官。来自吉林、黑龙江、甘肃、青海等地的科技馆辅导员代表和辽宁省内中小学科技教师共80余人线下参与，线上同步开展学习交流。",
+      "date": "2026-11-03T08:51:15.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-03/10725426.shtml",
+      "image": ""
+    },
+    {
+      "id": "我国牵头修订的放射性废物管理国际标准发布-a9174d07b483",
+      "language": "zh",
+      "title": "我国牵头修订的放射性废物管理国际标准发布",
+      "excerpt": "中新网11月3日电 据国家市场监督管理总局网站消息，近日，我国牵头修订的放射性废物管理国际标准《考虑作为非放射性废物回收、再利用或处置的固体材料的活度测量》(ISO 11932:2026)发布，为全球放射性污染物料精准分类管理提供了通用技术准则。该国际标准由我国专家担任项目负责人，美国、法国、日本、英国等国专家参与。",
+      "date": "2026-11-03T08:49:55.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-03/10725414.shtml",
+      "image": ""
+    },
+    {
+      "id": "专业运动服装与防护用品国家标准实施-助力产品提质升级-443f327b84c7",
+      "language": "zh",
+      "title": "专业运动服装与防护用品国家标准实施 助力产品提质升级",
+      "excerpt": "中新网11月3日电 据国家市场监督管理总局网站消息，2026年11月1日起，《专业运动服装和防护用品通用技术规范》(GB/T 21980—2026)国家标准正式实施。该标准围绕专业运动服装与防护用品产品特点，从基础服用性能和功能性能搭建系统技术规范体系，将为相关产品的生产、检测和选购提供统一技术依据，推动产业优化升级、产品质量提升。",
+      "date": "2026-11-03T08:48:19.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725409.shtml",
+      "image": ""
+    },
+    {
+      "id": "东北最大煤制天然气示范项目首条生产线实现投产保供-70d884fe5510",
+      "language": "zh",
+      "title": "东北最大煤制天然气示范项目首条生产线实现投产保供",
+      "excerpt": "中新网阜新11月3日电 (陈昊星)11月2日，国家能源战略重点工程、东北最大煤制天然气示范项目——中国大唐阜新项目首条生产线正式建成投产，产出的天然气顺利接入国家管网，为东北、华北区域天然气保供再添自主可靠气源。",
+      "date": "2026-11-03T08:47:21.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725423.shtml",
+      "image": ""
+    },
+    {
+      "id": "从办证受阻到失物寻回-广州天河边检的-广交会服务经-8ca148f3e482",
+      "language": "zh",
+      "title": "从办证受阻到失物寻回 广州天河边检的“广交会服务经”",
+      "excerpt": "中新网广州11月3日电 题：从办证受阻到失物寻回 广州天河边检的“广交会服务经”",
+      "date": "2026-11-03T08:47:13.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-03/10725419.shtml",
+      "image": ""
+    },
+    {
+      "id": "从-产品出海-到-标准出海-广东推动中国标准落地海外-d33d64c8b0eb",
+      "language": "zh",
+      "title": "从“产品出海”到“标准出海” 广东推动中国标准落地海外",
+      "excerpt": "中新网广州11月3日电 (记者 孙秋霞)广东省人民政府新闻办公室3日在广州举行国家标准化创新发展试点成效新闻发布会，广东省市场监督管理局党组成员、副局长郭宇华介绍，近年来，广东把标准作为推进制度型开放的重要抓手，助力产业从“产品出海”稳步迈向“标准出海、规则共建”。",
+      "date": "2026-11-03T08:46:15.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725408.shtml",
+      "image": ""
+    },
+    {
+      "id": "我和先辈一样下南洋-d35938353ae9",
+      "language": "zh",
+      "title": "我和先辈一样下南洋",
+      "excerpt": "电影《给阿嬷的情书》热映之际，我正踏上南洋的土地。这部以侨批为线索、讲述潮汕青年远赴南洋谋生、好友代其写侨批守护妻儿十八年的影片，在马来西亚华人圈引发了强烈共鸣。我与槟城侨领闲谈时聊起这部作品，所有人都绕不开两个字：乡愁。6月，影片在吉隆坡举办海外首映，近千名各界代表到场，光影里的南洋往事，让无数人红了眼眶。百年前，先辈们为生计漂洋过海下南洋，在异乡守住中华文化的根；百年后，我作为聂耳故乡的美育工作者，受上级部门选派，以笔墨为舟奔赴马来西亚，在文冬、槟城、亚庇三地开展为期11天的中华才艺培训，教授中国画。同样的“下南洋”，跨越百年时空，藏着一脉相承的家国情怀。",
+      "date": "2026-11-03T08:44:59.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/txy/2026/11-03/10725407.shtml",
+      "image": ""
+    },
+    {
+      "id": "2026年度游戏ip生态大会在苏州开幕-36f6569b189a",
+      "language": "zh",
+      "title": "2026年度游戏IP生态大会在苏州开幕",
+      "excerpt": "中新网苏州11月3日电(记者 常慕城)以“数智共生 IP无界”为主题的2026年度游戏IP生态大会，3日上午在苏州启幕。来自全国各地的游戏行业组织、专家学者、企业代表约500人参会，探索数智化浪潮下游戏IP价值深度挖掘、跨界融合与创新发展新路径。",
+      "date": "2026-11-03T08:44:45.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-03/10725418.shtml",
+      "image": ""
+    },
+    {
+      "id": "湖北随州以文旅盛宴解锁秋日经济-48e996ba3d34",
+      "language": "zh",
+      "title": "湖北随州以文旅盛宴解锁秋日经济",
+      "excerpt": "中新网随州11月3日电 (张倩龙 王思言 柳茜茜)“随州是炎帝神农故里，我们把‘寻根’做成世界华人的精神原乡。随州是编钟礼乐之乡，我们把‘礼乐’做成可听可触的沉浸体验。”湖北省随州市委副书记、代理市长尹达3日表示。",
+      "date": "2026-11-03T08:44:13.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-03/10725415.shtml",
+      "image": ""
+    },
+    {
+      "id": "第九届进博会-进博会开幕在即-上海提升水陆入沪通行效率-3a992027c34a",
+      "language": "zh",
+      "title": "（第九届进博会）进博会开幕在即 上海提升水陆入沪通行效率",
+      "excerpt": "中新网上海11月3日电(记者 李姝徵)第九届中国国际进口博览会(以下简称：进博会)开幕在即，上海如何让车辆、船舶入沪更顺畅？记者3日走访高速卡口和水上检查站，了解车辆分道查验、水路联合检查如何提升通行效率。",
+      "date": "2026-11-03T08:43:57.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725413.shtml",
+      "image": ""
+    },
+    {
+      "id": "领航ai安全与智能体应用-360获世界互联网大会杰出贡献奖-1558d572d5e9",
+      "language": "zh",
+      "title": "领航AI安全与智能体应用，360获世界互联网大会杰出贡献奖",
+      "excerpt": "11月3日，2026年世界互联网大会乌镇峰会开幕式上，360集团凭借在AI安全与智能体应用领域的创新成果和持续贡献，荣获“世界互联网大会杰出贡献奖”，是本届唯一获此殊荣的AI安全企业。360集团高级副总裁、数字安全集团总裁胡振泉代表集团领奖。",
+      "date": "2026-11-03T08:43:03.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725405.shtml",
+      "image": ""
+    },
+    {
+      "id": "2026年世界互联网大会乌镇峰会开幕-a5d0e0d1e52f",
+      "language": "zh",
+      "title": "2026年世界互联网大会乌镇峰会开幕",
+      "excerpt": "中新社浙江乌镇11月3日电 (刘亮 奚金燕)2026年世界互联网大会乌镇峰会3日在浙江省桐乡市乌镇开幕。本次峰会的主题为“开源开放 共建共享——携手构建网络空间命运共同体”。",
+      "date": "2026-11-03T08:42:02.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725392.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国国家发改委-正推动世界人工智能合作组织实体化运行进程-c694101cd6f3",
+      "language": "zh",
+      "title": "中国国家发改委：正推动世界人工智能合作组织实体化运行进程",
+      "excerpt": "中新社北京11月3日电 (记者 王梦瑶)中国国家发改委创新和高技术发展司副司长王若蒙3日在北京指出，目前，中国正在推动世界人工智能合作组织的实体化运行进程，已有38国作为创始成员国加入。他表示，将与各方加强人工智能发展战略、治理规则、技术标准的对接协调，尽快打造一批接地气、可触达的合作成果。",
+      "date": "2026-11-03T08:41:48.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725393.shtml",
+      "image": ""
+    },
+    {
+      "id": "第九届敦煌文博会启幕-促丝路沿线国家多领域交流-c3fa42b036c8",
+      "language": "zh",
+      "title": "第九届敦煌文博会启幕 促丝路沿线国家多领域交流",
+      "excerpt": "中新社甘肃敦煌11月3日电 (记者 丁思 闫姣)第九届丝绸之路(敦煌)国际文化博览会(以下简称“敦煌文博会”)3日在敦煌启幕。本届丝路文化盛会以“加强文化交流，促进文明互鉴”为主题，推动共建“一带一路”国家在文化遗产保护、文艺交流、文旅产业等多领域务实合作。",
+      "date": "2026-11-03T08:41:06.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ydyl/2026/11-03/10725390.shtml",
+      "image": ""
+    },
+    {
+      "id": "第九届进博会-前瞻-从展台到日常-进博会增添上海消费吸引力-94a4d3395bf4",
+      "language": "zh",
+      "title": "（第九届进博会）前瞻：从展台到日常，进博会增添上海消费吸引力",
+      "excerpt": "中新社上海11月3日电 (记者 李姝徵)第九届中国国际进口博览会(进博会)开幕在即。全球新品如何从展台进入日常生活，海外品牌如何从参展走向长期经营，成为人们关注进博会助力上海建设国际消费中心城市的话题之一。",
+      "date": "2026-11-03T08:40:46.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725395.shtml",
+      "image": ""
+    },
+    {
+      "id": "2026-一带一路-媒体合作论坛在福州举行-c9d03bc04564",
+      "language": "zh",
+      "title": "2026“一带一路”媒体合作论坛在福州举行",
+      "excerpt": "中新社福州11月3日电 (闫旭 郑江洛)2026“一带一路”媒体合作论坛3日在福州举行。来自100个国家、国际及地区组织，以及182家媒体和机构的200余位外方代表参会。",
+      "date": "2026-11-03T08:40:38.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ydyl/2026/11-03/10725396.shtml",
+      "image": ""
+    },
+    {
+      "id": "亚足联-沙特男足亚洲杯延期至2027年12月举行-31eace3c1ac2",
+      "language": "zh",
+      "title": "亚足联：沙特男足亚洲杯延期至2027年12月举行",
+      "excerpt": "中新社北京11月3日电 亚足联3日宣布，原定于2027年1月7日至2月5日在沙特阿拉伯举办的2027年男足亚洲杯，将延期至2027年12月23日至2028年1月21日举行。",
+      "date": "2026-11-03T08:40:34.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/11-03/10725399.shtml",
+      "image": ""
+    },
+    {
+      "id": "第九届进博会-通过-进博直通车-累计申报参展进博会珠宝展品增逾七成-a9e99d692ad5",
+      "language": "zh",
+      "title": "（第九届进博会）通过“进博直通车”累计申报参展进博会珠宝展品增逾七成",
+      "excerpt": "中新社上海11月3日电 (记者 姜煜)据上海海关3日发布的统计数据，张园、豫园、东浩兰生3家保税仓通过“进博直通车”已累计申报参展第九届中国国际进口博览会(简称“进博会”)的珠宝展品货值超过3100万元人民币，比去年同期增长74.6%。",
+      "date": "2026-11-03T08:37:56.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725400.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国物流业景气指数连续6个月处于扩张区间-ef471b6e02e1",
+      "language": "zh",
+      "title": "中国物流业景气指数连续6个月处于扩张区间",
+      "excerpt": "中新社北京11月3日电 (记者 阮煜琳)中国物流与采购联合会3日发布的数据显示，10月份，中国物流业景气指数为51.2%，较上月回落0.3个百分点。",
+      "date": "2026-11-03T08:37:44.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725401.shtml",
+      "image": ""
+    },
+    {
+      "id": "一口铁锅-炒出百亿元-香脆产业-f6e56349b9aa",
+      "language": "zh",
+      "title": "一口铁锅，炒出百亿元“香脆产业”",
+      "excerpt": "中国经济样本观察·“镇”了不起｜一口铁锅，炒出百亿元“香脆产业”",
+      "date": "2026-11-03T08:35:42.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725403.shtml",
+      "image": ""
+    },
+    {
+      "id": "brookfield-targets-27-billion-ai-data-center--4b0e2a3723c1",
+      "language": "en",
+      "title": "Brookfield targets $27 billion AI data center at power station. Energy firm Drax surges 8%",
+      "excerpt": "Europe is scrambling to develop infrastructure to support the rollout of AI amid high energy and land costs.",
+      "date": "2026-11-03T08:28:31.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/03/brookfield-ai-data-center-yorkshire-drax.html",
+      "image": ""
+    },
+    {
+      "id": "广交会70年-外贸企业金融需求经历了三级跳-9c494e5dd6b0",
+      "language": "zh",
+      "title": "广交会70年，外贸企业金融需求经历了三级跳",
+      "excerpt": "10月15日，第140届中国进出口商品交易会(广交会)启幕，分三期延续至11月4日。1957年创办的广交会，每年春秋两季在广州举行，至今已是70周年。",
+      "date": "2026-11-03T08:20:17.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725379.shtml",
+      "image": ""
+    },
+    {
+      "id": "尺素金声丨利润增长15-5-折射产业结构向新向优向好-63be89ce4309",
+      "language": "zh",
+      "title": "尺素金声丨利润增长15.5%，折射产业结构向新向优向好",
+      "excerpt": "近日，国家统计局发布数据显示，今年前9月，全国规模以上工业企业实现利润总额同比增长15.5%，其中9月同比增长14.4%，今年以来持续保持两位数增长。",
+      "date": "2026-11-03T08:15:21.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725378.shtml",
+      "image": ""
+    },
+    {
+      "id": "伊朗-首支-为伊朗捐躯-旅完成组建-021ac0741944",
+      "language": "zh",
+      "title": "伊朗：首支“为伊朗捐躯”旅完成组建",
+      "excerpt": "中新网11月3日电 综合多家伊朗媒体2日报道，德黑兰大区伊斯兰革命卫队司令哈桑扎德说，伊朗首支“为伊朗捐躯”旅已完成组建。",
+      "date": "2026-11-03T08:06:11.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-03/10725367.shtml",
+      "image": ""
+    },
+    {
+      "id": "广东外贸千年-十三行开门-广交会接棒-窗口越开越大-78d7569704b3",
+      "language": "zh",
+      "title": "广东外贸千年：十三行开门，广交会接棒，窗口越开越大",
+      "excerpt": "中新网广州11月3日电 题：广东外贸千年：十三行开门，广交会接棒，窗口越开越大",
+      "date": "2026-11-03T08:04:38.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725352.shtml",
+      "image": ""
+    },
+    {
+      "id": "yvonne-bajela-is-bringing-17m-in-fresh-capita-edab9fbf6f68",
+      "language": "en",
+      "title": "Yvonne Bajela is bringing $17M in fresh capital to Europe’s startup scene",
+      "excerpt": "Evertrue Capital announces $17M debut fund to back early stage AI and fintech.",
+      "date": "2026-11-03T08:01:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/03/yvonne-bajela-is-bringing-17m-in-fresh-capital-to-europes-startup-scene/",
+      "image": ""
+    },
+    {
+      "id": "先行先试-内蒙古打造向北开放新高地-6e003b52ed28",
+      "language": "zh",
+      "title": "先行先试 内蒙古打造向北开放新高地",
+      "excerpt": "中新网呼和浩特11月3日电 (记者 程小路 奥蓝)“内联八省近京畿，外接俄蒙通欧亚。”具有独特区位优势的内蒙古自治区是我国向北开放重要桥头堡。今年4月，中国(内蒙古)自由贸易试验区(以下简称“内蒙古自贸试验区”)揭牌。这是我国第23个自贸试验区，也是“十五五”开局之年首个新设自贸试验区。乘着“先行先试”的东风，地处“祖国正北方”的内蒙古全力推动向北开放更进一步。",
+      "date": "2026-11-03T07:59:26.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725366.shtml",
+      "image": ""
+    },
+    {
+      "id": "世界数据组织能源专业委员会启动运行-ef7430f12aed",
+      "language": "zh",
+      "title": "世界数据组织能源专业委员会启动运行",
+      "excerpt": "记者今天从世界数据组织了解到，世界数据组织能源专业委员会正式启动运行。",
+      "date": "2026-11-03T07:48:12.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725365.shtml",
+      "image": ""
+    },
+    {
+      "id": "朝中社-日本正快速变为战争国家-d4f6e27535fa",
+      "language": "zh",
+      "title": "朝中社：日本正快速变为战争国家",
+      "excerpt": "新华社平壤11月3日电(记者王天僚)据朝中社3日报道，朝鲜军事评论员当天发表文章说，日本撕去“和平国家”的外衣，正在快速变成战争国家。其冒险谋求先发制人打击能力的举动，进一步加剧地区紧张局势。",
+      "date": "2026-11-03T07:46:01.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-03/10725361.shtml",
+      "image": ""
+    },
+    {
+      "id": "国务院报告-去年10月以来金融市场运行总体稳定-b5a83ba5ec16",
+      "language": "zh",
+      "title": "国务院报告：去年10月以来金融市场运行总体稳定",
+      "excerpt": "中新网北京11月3日电 (记者 谢雁冰)《国务院关于金融工作情况的报告》11月3日提请十四届全国人大常委会审议。报告称，2025年10月以来，金融机构经营和监管指标保持在合理区间，金融市场运行总体稳定。",
+      "date": "2026-11-03T07:45:45.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725357.shtml",
+      "image": ""
+    },
+    {
+      "id": "南京罗廊巷-螺蛳壳里做道场-老街更新留住年轻人-ae0e249b8bbd",
+      "language": "zh",
+      "title": "南京罗廊巷：螺蛳壳里做道场 老街更新留住年轻人",
+      "excerpt": "中新网南京11月3日电 (张传明 唐娟)近日，南京市罗廊巷的城市更新项目正式开街迎客。临近黄昏，南京老城区罗廊巷口袋公园的滑板场上，几个孩子正踩着滑板车来回穿梭。头顶的廊桥上，有人端着咖啡散步，有人靠在栏杆上聊天。桥下，几家小店的户外座位几乎坐满了悠闲的客人。",
+      "date": "2026-11-03T07:44:11.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725354.shtml",
+      "image": ""
+    },
+    {
+      "id": "why-a-us-russia-showdown-left-morocco-celebra-ae43a1144d34",
+      "language": "en",
+      "title": "Why a US-Russia showdown left Morocco celebrating",
+      "excerpt": "An impasse between the US and Russia at the UN means its peacekeeping mission in Western Sahara has ended after 35 years.",
+      "date": "2026-11-03T07:29:46.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqp8genleg2ro?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3276/live/8e9ad0f0-d6c8-11f1-ac20-7783925c811f.jpg"
+    },
+    {
+      "id": "韩总统李在明等168人信息遭大规模泄露-韩政府回应-2ee4d24522e8",
+      "language": "zh",
+      "title": "韩总统李在明等168人信息遭大规模泄露 韩政府回应",
+      "excerpt": "中新网11月3日电 综合韩联社报道，韩国总统李在明夫妇、国务委员、总统府青瓦台工作人员等人的个人信息一度在网上遭大规模泄露，引发争议。",
+      "date": "2026-11-03T07:26:04.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-03/10725335.shtml",
+      "image": ""
+    },
+    {
+      "id": "广交会观察-70年-一扇-窗-世界看见一个怎样的中国-000411aff2d5",
+      "language": "zh",
+      "title": "广交会观察：70年，一扇“窗”，世界看见一个怎样的中国？",
+      "excerpt": "中新网广州11月3日电 题：广交会观察：70年，一扇“窗”，世界看见一个怎样的中国？",
+      "date": "2026-11-03T07:24:14.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725340.shtml",
+      "image": ""
+    },
+    {
+      "id": "apple-watch-s-ai-features-for-rewinding-and-r-aafb2d2c8fa2",
+      "language": "en",
+      "title": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
+      "excerpt": "Now in beta: Apple's new Audio Intelligence features can help you remember what someone said or take notes on conversations.",
+      "date": "2026-11-03T07:20:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
+      "image": ""
+    },
+    {
+      "id": "asian-cup-postponed-in-wake-of-attacks-on-sau-bea48636cc0f",
+      "language": "en",
+      "title": "Asian Cup postponed in wake of attacks on Saudi Arabia",
+      "excerpt": "The 2027 Asian Cup in Saudi Arabia is postponed because of a series of deadly attacks on the host country.",
+      "date": "2026-11-03T07:15:17.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c6y0e79yjg44o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9647/live/0ce22d10-d754-11f1-8bf4-5f3ca896096e.jpg"
+    },
     {
       "id": "2026长三角-科普星人充电站-活动在沪启动-首发科普创作智能体-01b39f9e9468",
       "language": "zh",
@@ -420,6 +810,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-03/10725258.shtml",
       "image": ""
+    },
+    {
+      "id": "americans-head-to-the-polls-for-elections-tha-5e2571f9abdc",
+      "language": "en",
+      "title": "Americans head to the polls for elections that could define Trump's closing chapter",
+      "excerpt": "The midterms will shape Congress for the last years of his presidency, writes Sarah Smith, but they are also a test of what politics may look like without him.",
+      "date": "2026-11-03T05:00:43.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq2d6k4r5n9ro?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/97bc/live/a5a46a40-d74f-11f1-93e1-3b657b665bcf.jpg"
     },
     {
       "id": "走进中国乡村-乐园-携手-田园-中国主题乐园第一县-激活乡村农文旅-070ba072a051",
@@ -2599,406 +2999,6 @@
       "date": "2026-11-02T14:00:00.000Z",
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/02/2-days-till-techcrunch-founder-summit-boston-founders-dont-need-a-silicon-valley-address-to-build-something-big/",
-      "image": ""
-    },
-    {
-      "id": "前三季度陕西税费收入超6300亿元-税费红利赋能产业创新发展-a945742ddeb2",
-      "language": "zh",
-      "title": "前三季度陕西税费收入超6300亿元 税费红利赋能产业创新发展",
-      "excerpt": "中新网西安11月2日电 (记者 杨英琦)记者2日从陕西省人民政府新闻办公室举办的新闻发布会获悉，2026年前三季度，陕西全省累计组织税费收入超6300亿元(人民币，下同)，同比增长3.2%。该省一系列减税降费、智慧办税等举措落地见效，折射出当地产业升级、创新驱动、民生改善的发展态势。",
-      "date": "2026-11-02T13:58:53.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724983.shtml",
-      "image": ""
-    },
-    {
-      "id": "openai-is-finally-merging-chatgpt-s-chat-and--e732affa3e39",
-      "language": "en",
-      "title": "OpenAI is finally merging ChatGPT’s chat and Work tabs",
-      "excerpt": "OpenAI said that ChatGPT and Codex will draw usage from the same allocation pool after this change.",
-      "date": "2026-11-02T13:57:53.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
-      "image": ""
-    },
-    {
-      "id": "jim-cramer-s-top-10-things-to-watch-in-the-st-8d0e6f99ea3b",
-      "language": "en",
-      "title": "Jim Cramer's top 10 things to watch in the stock market Monday",
-      "excerpt": "Marvell makes its blockbuster deal for Lumentum official.",
-      "date": "2026-11-02T13:56:54.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/investingclub/2026/11/02/jim-cramers-top-10-things-to-watch-in-the-stock-market-monday.html",
-      "image": ""
-    },
-    {
-      "id": "we-re-buying-the-dip-in-a-stock-after-an-expe-fddfa44778db",
-      "language": "en",
-      "title": "We're buying the dip in a stock after an expectations reset",
-      "excerpt": "We waited for the dust to settle after its earnings sell-off.",
-      "date": "2026-11-02T13:56:01.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/investingclub/2026/11/02/were-buying-the-dip-in-a-stock-after-an-expectations-reset.html",
-      "image": ""
-    },
-    {
-      "id": "英国制造业复苏-隐忧犹存-90164b7b2921",
-      "language": "zh",
-      "title": "英国制造业复苏 隐忧犹存",
-      "excerpt": "中新社伦敦11月2日电 (记者 欧阳开宇)最新数据显示，英国制造业在四季度开端迎来明显复苏，产出增长达到两年多来最好水平，海内外订单需求同步改善，但投入成本快速走高，通胀隐忧再起，使市场强化英国央行加息的预期。",
-      "date": "2026-11-02T13:55:33.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-02/10725013.shtml",
-      "image": ""
-    },
-    {
-      "id": "舞蹈诗-大合之舞-澳大利亚悉尼上演-33b835452d5c",
-      "language": "zh",
-      "title": "舞蹈诗《大合之舞》澳大利亚悉尼上演",
-      "excerpt": "中新网悉尼11月2日电 (记者 薄雯雯)由悉尼华星艺术团旗下紫藤舞苑原创的大型舞蹈诗《大合之舞》11月1日晚在澳大利亚悉尼上演。",
-      "date": "2026-11-02T13:54:59.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-02/10724992.shtml",
-      "image": ""
-    },
-    {
-      "id": "泰国前十个月接待外国游客2546万人次-同比下降4-59-45c3739bef77",
-      "language": "zh",
-      "title": "泰国前十个月接待外国游客2546万人次 同比下降4.59%",
-      "excerpt": "中新社曼谷11月2日电 (梁峻祥 李映民)泰国旅游与体育部2日公布的统计数据显示，2026年1月至10月，泰国累计接待外国游客2546.43万人次，较去年同期减少4.59%。其中，中国游客累计达424.44万人次，同比增长12.44%。",
-      "date": "2026-11-02T13:54:35.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-02/10724976.shtml",
-      "image": ""
-    },
-    {
-      "id": "海外客商齐聚汕头贴身服饰外贸秋交会-产地直采-拓新局-e2d23fbaac6b",
-      "language": "zh",
-      "title": "海外客商齐聚汕头贴身服饰外贸秋交会 “产地直采”拓新局",
-      "excerpt": "中新社汕头11月2日电 (李怡青 林大森)2026汕头贴身服饰首届外贸秋交会暨广交会采购商走进外贸基地供采对接活动2日在汕头贴身服饰交易市场(下称“交易市场”)启幕。活动立足汕头千亿纺织服装产业集群，推动海外客商走进生产一线，探索企业从“展会参展”转向“产地迎客”外贸发展路径。",
-      "date": "2026-11-02T13:53:57.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724977.shtml",
-      "image": ""
-    },
-    {
-      "id": "香港金管局推出多项金融科技新举措-23bd271bc9e5",
-      "language": "zh",
-      "title": "香港金管局推出多项金融科技新举措",
-      "excerpt": "中新社香港11月2日电 (记者 戴小橦)香港金融管理局(简称“金管局”)2日在香港公布一系列金融科技新措施，持续通过数据与支付、人工智能、韧性及代币化，提升香港金融科技实力，惠及企业与市民。",
-      "date": "2026-11-02T13:53:01.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10725046.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国首批18只主动etf合计募资已超350亿元-07d7a3b0858b",
-      "language": "zh",
-      "title": "中国首批18只主动ETF合计募资已超350亿元",
-      "excerpt": "中新社北京11月2日电 (记者 陈康亮)中国证监会有关部门负责人2日晚间表示，首批18只主动管理交易型开放式股票证券投资基金(下称主动ETF)于10月23日启动募集，整体募集态势良好。截至11月2日，合计募集资金超过350亿元(人民币，下同)。",
-      "date": "2026-11-02T13:51:15.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10725047.shtml",
-      "image": ""
-    },
-    {
-      "id": "a-paralympian-vs-a-former-tv-news-anchor-and--0e66e15a18dd",
-      "language": "en",
-      "title": "A Paralympian vs a former TV news anchor - and other US Senate races to watch",
-      "excerpt": "All eyes are on a handful of Senate races that will decide control of the prized upper chamber. Here's a quick guide.",
-      "date": "2026-11-02T13:49:19.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cqy7ljkprvjko?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a7ce/live/259c6b00-d1e5-11f1-a701-fddedf244c16.png"
-    },
-    {
-      "id": "首届-中韩大学生校园足球友谊赛-落幕-306ac696ed0a",
-      "language": "zh",
-      "title": "首届“中韩大学生校园足球友谊赛”落幕",
-      "excerpt": "中新网首尔11月2日电 (记者 金旭)当地时间11月1日，首届“中韩大学生校园足球友谊赛”决赛及闭幕式在韩国京畿大学举行。中国驻韩国大使馆公使包旭辉为获奖代表颁奖并致辞，中国驻韩国大使馆公使衔参赞马贵生及中韩有关机构代表、参赛球员、高校师生200多人参加。",
-      "date": "2026-11-02T13:48:40.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-02/10724985.shtml",
-      "image": ""
-    },
-    {
-      "id": "宁波舟山港-绿电码头-东海的风-驱动-全球贸易-e2fa23ddff23",
-      "language": "zh",
-      "title": "宁波舟山港“绿电码头”：东海的风“驱动”全球贸易",
-      "excerpt": "中新网宁波11月2日电 (唐雨弦 张斌 刘子琳)“梅山港区现有5台风机，单机容量6.25兆瓦。2025年港区的年用电量约1.1亿度，五台风机去年发电量达3700万度，约相当于港区年用电量的三分之一。”",
-      "date": "2026-11-02T13:47:12.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724974.shtml",
-      "image": ""
-    },
-    {
-      "id": "印尼前9个月接待外国游客1201万人次-创2020年以来同期新高-85c98671c4b0",
-      "language": "zh",
-      "title": "印尼前9个月接待外国游客1201万人次 创2020年以来同期新高",
-      "excerpt": "中新社雅加达11月2日电 (记者 李志全)印度尼西亚外国游客接待量持续增长。印尼中央统计局2日公布的数据显示，2026年1月至9月，印尼累计接待外国游客1201万人次，同比增长5.01%。",
-      "date": "2026-11-02T13:46:16.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-02/10725014.shtml",
-      "image": ""
-    },
-    {
-      "id": "玉竹gap基地落地-湖南靖州林下轮作种出共富新路-ad0837f9a0d0",
-      "language": "zh",
-      "title": "玉竹GAP基地落地 湖南靖州林下轮作种出共富新路",
-      "excerpt": "中新网怀化11月2日电 (付敬懿 钦苏芬)初冬，阳光斜洒过湖南怀化市靖州苗族侗族自治县贯堡渡中药材产业示范基地的杨梅林，连片树荫下，农户俯身埋苗、覆土，脚边的玉竹种苗被整齐码放。这是全国首个通过中药材 GAP(中药材生产质量管理规范)认证的玉竹基地，林下套种、错峰轮作的生态路子，正把片片山林变成持续增收的“绿色银行”。",
-      "date": "2026-11-02T13:43:36.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724970.shtml",
-      "image": ""
-    },
-    {
-      "id": "山西金融-稳煤促转-并举-统筹能源安全与转型发展-d4c50071d131",
-      "language": "zh",
-      "title": "山西金融“稳煤促转”并举 统筹能源安全与转型发展",
-      "excerpt": "中新网太原11月2日电 (记者 杨杰英 李庭耀)能源保供连着千家万户取暖用电，转型发展关系山西长远活力。金融资源如何在两者之间分配？11月2日，在山西举行的“开局起步‘十五五’”系列主题新闻发布会上，中国人民银行山西省分行党委书记、行长雷曜回答记者提问时表示，金融资源既要保能源安全，又要促转型发展，同时兼顾金融体系健康运行。",
-      "date": "2026-11-02T13:43:28.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724969.shtml",
-      "image": ""
-    },
-    {
-      "id": "青海首单-aeo-企业简易复核落地-37ddfb630670",
-      "language": "zh",
-      "title": "青海首单“AEO”企业简易复核落地",
-      "excerpt": "中新网西宁11月2日电 (韩晓珍 孙睿)西宁海关2日消息，西宁海关所属西海海关按照首次适用简易复核程序，对青海百通高纯新材料开发有限公司完成AEO高级认证企业复核并出具《通过复核决定书》，标志着新修订的《中华人民共和国海关注册登记和备案企业信用管理办法》(简称《信用管理办法》)在青海正式落地见效。",
-      "date": "2026-11-02T13:42:46.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724968.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026-国际互联网小镇-发布活动在浙江乌镇举行-bcfab0accbed",
-      "language": "zh",
-      "title": "2026“国际互联网小镇”发布活动在浙江乌镇举行",
-      "excerpt": "中新网嘉兴11月2日电(胡丰盛)11月2日，2026“国际互联网小镇”发布活动在浙江乌镇云舟宾客中心举办，集中发布人工智能前沿创新成果，举行行业操作系统发布与重点项目集中签约，推进AI生态之城、 AI文化之城、AI生活之城建设，展现“AI乌镇、科创桐乡”发展图景。",
-      "date": "2026-11-02T13:41:56.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724967.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国证监会-会同央行组织用好支持资本市场两项工具-dbb0c86ecef3",
-      "language": "zh",
-      "title": "中国证监会：会同央行组织用好支持资本市场两项工具",
-      "excerpt": "中新社北京11月2日电 (记者 陈康亮)中国证监会有关部门负责人2日晚间表示，将会同中国央行组织相关市场主体用好用足支持资本市场两项工具(证券、基金、保险公司互换便利和股票回购增持再贷款)，协同发挥好稳市支持作用。",
-      "date": "2026-11-02T13:40:58.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10725024.shtml",
-      "image": ""
-    },
-    {
-      "id": "山西-十五五-金融改革路线图出炉-锚定-1234-思路-守住风险底线-1d8530bb4dd7",
-      "language": "zh",
-      "title": "山西“十五五”金融改革路线图出炉：锚定“1234”思路 守住风险底线",
-      "excerpt": "中新网太原11月2日电 (记者 杨杰英 李庭耀)聚焦防风险、强监管、促高质量发展三项工作主线，统筹推进地方金融治理体系、制度体系、履职体系、拒腐崇廉体系“四项体系”建设——“十五五”时期，山西金融改革发展的总体谋划思路确定为“1234”，并聚焦“五个着力”，在筑牢金融风险防线、健全多元融资体系等方面重点发力，为全省高质量发展、全方位转型提供坚实金融支撑。",
-      "date": "2026-11-02T13:40:10.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724956.shtml",
-      "image": ""
-    },
-    {
-      "id": "好想来母公司被证监会立案-旗下量贩零食门店超30000家-02dffe05c228",
-      "language": "zh",
-      "title": "好想来母公司被证监会立案，旗下量贩零食门店超30000家",
-      "excerpt": "中新网北京11月2日电(记者 谢艺观)2日晚间，万辰集团发布公告，公司于2026年11月2日收到证监会下发的《立案告知书》，因涉嫌未及时履行关联交易临时信息披露义务等信息披露违法违规事项，证监会决定对公司立案。",
-      "date": "2026-11-02T13:35:50.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724964.shtml",
-      "image": ""
-    },
-    {
-      "id": "重庆大渡口26个项目集中签约-总投资额超60亿元-1ade69fc01f2",
-      "language": "zh",
-      "title": "重庆大渡口26个项目集中签约 总投资额超60亿元",
-      "excerpt": "中新网重庆11月2日电 (杨梦逸)2日，重庆市大渡口区举行2026年第三次招商引资项目集中签约活动。26个项目集中签约，涵盖医药健康、智能建造、人工智能、无线传感等领域，总投资额60.48亿元。",
-      "date": "2026-11-02T13:35:14.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724946.shtml",
-      "image": ""
-    },
-    {
-      "id": "cf40报告-中国四季度广义财政支出有望提速-8fc9afdd4cc4",
-      "language": "zh",
-      "title": "CF40报告：中国四季度广义财政支出有望提速",
-      "excerpt": "中新网北京11月2日电 (陶思阅)中国金融四十人论坛(CF40)11月2日在北京举行2026年第三季度宏观政策报告发布会。报告指出，四季度广义财政支出增速改善是可以预期的，对刺激内需有一定支持性。",
-      "date": "2026-11-02T13:35:02.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724986.shtml",
-      "image": ""
-    },
-    {
-      "id": "投资中国-达能上海研发与创新中心启用-b60389a7b349",
-      "language": "zh",
-      "title": "（投资中国）达能上海研发与创新中心启用",
-      "excerpt": "中新社上海11月2日电 (高志苗)达能上海研发与创新中心2日在浦东启用，这也是跨国食品饮料公司达能持续深耕中国、加码科研创新的又一重要里程碑。该中心立足中国，联结达能全球研发创新网络，不仅服务中国及亚太市场，也将为达能全球科研与创新议程贡献力量。",
-      "date": "2026-11-02T13:21:11.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10725016.shtml",
-      "image": ""
-    },
-    {
-      "id": "英国数百雇主因非法欠薪遭处罚-dfdaaf805fcd",
-      "language": "zh",
-      "title": "英国数百雇主因非法欠薪遭处罚",
-      "excerpt": "中新网伦敦11月2日电 (记者 欧阳开宇)英国政府2日通报称，数百名雇主因长期非法低于法定标准发放最低工资被查处，官方集中开出大额罚单，严厉整治市场欠薪乱象。",
-      "date": "2026-11-02T13:18:59.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-02/10725019.shtml",
-      "image": ""
-    },
-    {
-      "id": "中欧班列沿线国家友好行参访团成员走进青海西宁-开展多领域合作交流-4c1b7720231a",
-      "language": "zh",
-      "title": "中欧班列沿线国家友好行参访团成员走进青海西宁 开展多领域合作交流",
-      "excerpt": "图为代表团成员参观塔尔寺。中新社记者 张忠苹 摄 11月2日，“未来之路”中欧班列沿线国家友好行(青海)绿色算力与数字互联互通圆桌会议在青海西宁举行。来自德国、奥地利等国前政要、前驻华使节及欧洲政治、经济、文化、科技、学术界知名人士和青海省有关厅局、企业负责人参会。会议聚焦绿色算力、数字互联互通、文化旅游、清洁能源、商贸物流等合作议题开展交流研讨。中新社记者 张忠苹 摄 图为代表团成员参访青海省清洁能源和绿色算力调度中心。中新社记者 张忠苹 摄 图为代表团成员参观塔尔寺。中新社记者 张忠苹 摄 图为代表团成员参访青海省清洁能源和绿色算力调度中心。中新社记者 张忠苹 摄 图为代表团成员参访青海省清洁能源和绿色算力调度中心。中新社记者 张忠苹 摄",
-      "date": "2026-11-02T13:11:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-02/10725001.shtml",
-      "image": ""
-    },
-    {
-      "id": "台湾自媒体人走进四川西昌大石板古村-触摸600年古村烟火-df32e06fd7b6",
-      "language": "zh",
-      "title": "台湾自媒体人走进四川西昌大石板古村 触摸600年古村烟火",
-      "excerpt": "图为台湾自媒体人在古村中拍照留念。韩金雨 摄 图为台湾自媒体人参观古村中的周家大院。韩金雨 摄 图为台湾自媒体人在周家大院拍照留念。韩金雨 摄 图为台湾自媒体人正在古村一处打卡点录制视频。韩金雨 摄 图为两岸自媒体人和媒体记者在古村中合照留影。韩金雨 摄 图为航拍大石板古村风光。(无人机照片)韩金雨 摄 图为航拍大石板古村风光。(无人机照片)韩金雨 摄",
-      "date": "2026-11-02T13:09:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-02/10724982.shtml",
-      "image": ""
-    },
-    {
-      "id": "内蒙古呼和浩特-市民漫步公园赏秋景-ececaed5ab7d",
-      "language": "zh",
-      "title": "内蒙古呼和浩特：市民漫步公园赏秋景",
-      "excerpt": "11月2日，内蒙古呼和浩特市，民众在青城公园内休闲。中新社记者 刘文华 摄 11月2日，内蒙古呼和浩特市，民众在青城公园内游览。中新社记者 刘文华 摄 11月2日，内蒙古呼和浩特市，民众在青城公园内游览。中新社记者 刘文华 摄 11月2日，内蒙古呼和浩特市，青城公园内秋景醉人。中新社记者 刘文华 摄",
-      "date": "2026-11-02T13:08:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-02/10724981.shtml",
-      "image": ""
-    },
-    {
-      "id": "云南昆明-民族特色课间操跳出校园活力-664cf3008b5d",
-      "language": "zh",
-      "title": "云南昆明：民族特色课间操跳出校园活力",
-      "excerpt": "11月2日，学生跟着音乐欢快起舞。中新社记者 刘冉阳 摄 11月2日，云南省歌舞剧院副院长、一级演员袁志平受邀到校，与师生一起打歌起舞。中新社记者 刘冉阳 摄 11月2日，学生跟着音乐欢快起舞。中新社记者 刘冉阳 摄 11月2日，学生跟着音乐欢快起舞。中新社记者 刘冉阳 摄 11月2日，学生跟着音乐欢快起舞。中新社记者 刘冉阳 摄 11月2日，学生跟着音乐欢快起舞。中新社记者 刘冉阳 摄 11月2日，学生跟着音乐欢快起舞。中新社记者 刘冉阳 摄 11月2日，学生跟着音乐欢快起舞。中新社记者 刘冉阳 摄 11月2日，学生跟着音乐欢快起舞。中新社记者 刘冉阳 摄",
-      "date": "2026-11-02T13:06:26.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-02/10724972.shtml",
-      "image": ""
-    },
-    {
-      "id": "英国内政部在重点街区启动反持刀犯罪行动-8e58c353ae45",
-      "language": "zh",
-      "title": "英国内政部在重点街区启动反持刀犯罪行动",
-      "excerpt": "中新社伦敦11月2日电 (记者 欧阳开宇)英国内政部2日正式启动“刀具无处遁形”专项整治行动，重点覆盖伦敦威斯敏斯特、克罗伊登等持刀犯罪高发区域，并在伯明翰同步落地，成为英国政府维护社区安全的重要举措。",
-      "date": "2026-11-02T13:04:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-02/10724918.shtml",
-      "image": ""
-    },
-    {
-      "id": "白色精灵-如约栖息新疆天鹅湾-51583f3b7909",
-      "language": "zh",
-      "title": "“白色精灵”如约栖息新疆天鹅湾",
-      "excerpt": "天鹅在水面上空飞翔。白克斌 摄 天鹅在水面嬉戏。白克斌 摄 天鹅振翅起舞。白克斌 摄 天鹅湾已成为天鹅越冬栖息的家园。白克斌 摄",
-      "date": "2026-11-02T13:04:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-02/10724965.shtml",
-      "image": ""
-    },
-    {
-      "id": "苏俊涛-刘莉莉海岸赛艇摘金-夺得中国代表团达喀尔青奥会首金-057267040b2e",
-      "language": "zh",
-      "title": "苏俊涛/刘莉莉海岸赛艇摘金 夺得中国代表团达喀尔青奥会首金",
-      "excerpt": "新华社达喀尔11月2日电 在刚刚结束的2026年达喀尔青奥会海岸赛艇沙滩冲刺混合双人双桨比赛中，中国组合苏俊涛/刘莉莉摘金，赢得中国体育代表团本届青奥会首枚金牌，同时也是该项目的青奥会历史首金。",
-      "date": "2026-11-02T13:03:32.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-02/10725009.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-九届-全勤生-再赴进博之约-跨国企业以本土创新回应中国需求-38ce6e353640",
-      "language": "zh",
-      "title": "（第九届进博会）九届“全勤生”再赴进博之约 跨国企业以本土创新回应中国需求",
-      "excerpt": "中新网上海11月2日电 (李秋莹 李佳佳)第九届中国国际进口博览会将于11月5日至10日在国家会展中心(上海)举办。据悉，本届进博会共有162个国家、地区和国际组织参与，连续九届参展的“全勤”企业和机构近200家。对这些“全勤生”来说，进博会早已不只是展示新产品的窗口，连续九年赴约的背后，是一批跨国企业正把研发、生产与合作的重心更多地放到中国。",
-      "date": "2026-11-02T12:57:22.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10725002.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-ai赋能智慧监管-第九届进博会筑牢食安等多重防线-15129750d06e",
-      "language": "zh",
-      "title": "（第九届进博会）AI赋能智慧监管 第九届进博会筑牢食安等多重防线",
-      "excerpt": "中新网上海11月2日电 (记者 许婧)第九届中国国际进口博览会举办在即。记者2日实地走访获悉，上海市市场监督管理局进博会服务保障综合指挥平台已完成智慧升级，食安保障“一拍即核”，特种设备安全“一扫即知”，综合巡检“一键识别”。AI深度嵌入进博保障全流程，以数字化手段筑牢食品安全、特种设备安全、展会秩序多重防线。",
-      "date": "2026-11-02T12:56:50.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-02/10725003.shtml",
-      "image": ""
-    },
-    {
-      "id": "黄河干流海拔最高水电站年累计发电量创历史新高-1180eb1457b8",
-      "language": "zh",
-      "title": "黄河干流海拔最高水电站年累计发电量创历史新高",
-      "excerpt": "中新社西宁11月2日电 (祁增蓓 马福海)中国国家能源集团青海公司玛尔挡水电站2日消息，截至11月1日，该电站年累计发电量突破60亿千瓦时，较去年同期增长25.5%，创投产以来历史同期发电量新高。",
-      "date": "2026-11-02T12:49:33.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724917.shtml",
-      "image": ""
-    },
-    {
-      "id": "浙江三澳核电项目2号机组完成首次核燃料装载-fa8a3e932a0f",
-      "language": "zh",
-      "title": "浙江三澳核电项目2号机组完成首次核燃料装载",
-      "excerpt": "中新社浙江温州11月2日电 (胡丰盛 池婷婷)中广核浙江三澳核电项目2号机组11月2日完成首次核燃料装载工作，标志着机组正式进入带核运行调试新阶段，三澳核电向着实现一期工程全面建成投产发电的目标又迈出关键一步。",
-      "date": "2026-11-02T12:49:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724916.shtml",
-      "image": ""
-    },
-    {
-      "id": "祁连山下绿叶子漂洋过海变-金票子-b837b08c2fd7",
-      "language": "zh",
-      "title": "祁连山下绿叶子漂洋过海变“金票子”",
-      "excerpt": "中新网兰州11月2日电 (杨欣雨)祁连雪水灌溉的甘肃省张掖市高台县，光热资源充沛，高原夏菜、脱水蔬菜、制种玉米等优质农产品却面临现实难题：种植分散、外贸渠道不畅、企业合规能力薄弱。",
-      "date": "2026-11-02T12:48:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-02/10724908.shtml",
-      "image": ""
-    },
-    {
-      "id": "东西问丨世界-桥见中国-不止于-基建狂魔-c43e96dabd81",
-      "language": "zh",
-      "title": "东西问丨世界“桥见中国”：不止于“基建狂魔”",
-      "excerpt": "中新社北京11月2日电 题：世界“桥见中国”：不止于“基建狂魔”",
-      "date": "2026-11-02T12:47:45.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dxw/2026/11-02/10724949.shtml",
-      "image": ""
-    },
-    {
-      "id": "联邦政府预算分歧难弥合-比利时首相递交辞呈-22b085a4db23",
-      "language": "zh",
-      "title": "联邦政府预算分歧难弥合，比利时首相递交辞呈",
-      "excerpt": "中新网11月2日电 据比利时王宫当地时间11月2日发布的声明，比利时首相德韦弗当天因联邦政府预算谈判未能达成协议，向国王菲利普递交辞呈。国王暂缓决定是否接受辞呈，并将于3日开始与执政联盟各党主席举行磋商。",
-      "date": "2026-11-02T12:46:27.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-02/10724996.shtml",
-      "image": ""
-    },
-    {
-      "id": "山东泰山迎智能攀登者-机器人实景比拼山地通行能力-93eab144d0d6",
-      "language": "zh",
-      "title": "山东泰山迎智能攀登者 机器人实景比拼山地通行能力",
-      "excerpt": "中新社山东泰安11月2日电 (李明芮 梁犇)首届CMG世界机器人登泰山大赛11月2日在山东泰安开赛。近90支参赛队伍的机器人迈开“铁腿”，丈量“五岳之尊”。",
-      "date": "2026-11-02T12:46:11.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-02/10724959.shtml",
       "image": ""
     }
   ]
