@@ -10,14 +10,24 @@ const ARCHIVE_FILE = path.join(
   "wechat-articles.json"
 );
 
+const SEED_FILE = path.join(
+  process.cwd(),
+  "content",
+  "pr-portfolio",
+  "wechat-seed-urls.txt"
+);
+
 const STATE_FILE = path.join(process.cwd(), "wechat-backfill-state.json");
 
 const QUERY = "DrG的雍熙路";
 const START_DATE = "2022-12-01";
+const FILTER_LABEL = "一周内";
 const MAX_OPEN_PER_RUN = 12;
-const MAX_PAGES_PER_WINDOW = 10;
-const MAX_ATTEMPTS = 3;
-const SETTLE_DAYS = 31;
+const MAX_FILTER_PAGES = 3;
+const MAX_DEFAULT_PAGES = 6;
+const MAX_SEEDS_PER_RUN = 15;
+const MAX_SEED_ERRORS = 5;
+const DEPRIORITIZE_AFTER = 3;
 const ARTICLE_TIMEOUT_MS = 45000;
 const TOTAL_LIMIT_MS = 480000;
 
@@ -81,66 +91,39 @@ function beijingToday() {
   return new Date(Date.now() + 8 * 3600 * 1000).toISOString().slice(0, 10);
 }
 
-function addDays(dateText, days) {
-  var date = new Date(dateText + "T00:00:00Z");
-  date.setUTCDate(date.getUTCDate() + days);
-  return date.toISOString().slice(0, 10);
-}
+function describeUrl(value) {
+  try {
+    var url = new URL(value, "https://weixin.sogou.com");
+    var keep = ["type", "tsn", "page"];
+    var parts = [];
 
-function lastDayOfMonth(year, month) {
-  return new Date(Date.UTC(year, month, 0)).getUTCDate();
-}
-
-function buildWindows(startDate, today) {
-  var windows = [];
-  var year = Number(startDate.slice(0, 4));
-  var month = Number(startDate.slice(5, 7));
-  var endYear = Number(today.slice(0, 4));
-  var endMonth = Number(today.slice(5, 7));
-
-  while (year < endYear || (year === endYear && month <= endMonth)) {
-    var key = year + "-" + pad2(month);
-    var first = key + "-01";
-    var last = key + "-" + pad2(lastDayOfMonth(year, month));
-
-    windows.push({
-      key: key,
-      ft: first < startDate ? startDate : first,
-      et: last > today ? today : last
+    url.searchParams.forEach(function (v, k) {
+      parts.push(k + "=" + (keep.indexOf(k) >= 0 ? v : "…"));
     });
 
-    month += 1;
-
-    if (month > 12) {
-      month = 1;
-      year += 1;
-    }
+    return url.hostname + url.pathname + (parts.length ? "?" + parts.join("&") : "");
+  } catch (error) {
+    return "（无法解析）";
   }
-
-  windows.reverse();
-  return windows;
 }
 
-function buildListUrl(ft, et, pageNo) {
-  var params = {
-    type: "2",
-    query: QUERY,
-    ie: "utf8",
-    _sug_: "n",
-    _sug_type_: ""
-  };
+function withPageParam(value, pageNo) {
+  var url = new URL(value);
+  url.searchParams.set("page", String(pageNo));
+  return url.toString();
+}
 
-  if (ft && et) {
-    params.tsn = "5";
-    params.ft = ft;
-    params.et = et;
-  }
-
-  if (pageNo > 1) {
-    params.page = String(pageNo);
-  }
-
-  return "https://weixin.sogou.com/weixin?" + new URLSearchParams(params).toString();
+function buildDefaultUrl() {
+  return (
+    "https://weixin.sogou.com/weixin?" +
+    new URLSearchParams({
+      type: "2",
+      query: QUERY,
+      ie: "utf8",
+      _sug_: "n",
+      _sug_type_: ""
+    }).toString()
+  );
 }
 
 function readArchive() {
@@ -167,7 +150,14 @@ function writeArchive(items) {
 }
 
 function readState() {
-  var empty = { version: 1, windows: {}, rejected: {}, attempts: {} };
+  var empty = {
+    version: 2,
+    windows: {},
+    rejected: {},
+    attempts: {},
+    seeds: {},
+    seedErrors: {}
+  };
 
   if (!fs.existsSync(STATE_FILE)) {
     return empty;
@@ -175,12 +165,29 @@ function readState() {
 
   try {
     var data = JSON.parse(fs.readFileSync(STATE_FILE, "utf8"));
+    var rejected = data.rejected || {};
+    var released = 0;
+
+    Object.keys(rejected).forEach(function (key) {
+      if (String(rejected[key].reason || "").indexOf("连续") === 0) {
+        delete rejected[key];
+        released += 1;
+      }
+    });
+
+    if (released > 0) {
+      console.log(
+        "[wechat] 已恢复 " + released + " 篇此前因“连续失败”被放弃的文章，本轮会重新尝试"
+      );
+    }
 
     return {
-      version: 1,
+      version: 2,
       windows: data.windows || {},
-      rejected: data.rejected || {},
-      attempts: data.attempts || {}
+      rejected: rejected,
+      attempts: data.attempts || {},
+      seeds: data.seeds || {},
+      seedErrors: data.seedErrors || {}
     };
   } catch (error) {
     console.log("[wechat] 进度文件无法解析，重新开始记录：" + error.message);
@@ -253,6 +260,222 @@ var extractInPage = function () {
   };
 };
 
+/* ---------- 链接文件：粘贴文章链接即可收录 ---------- */
+
+function decodeEntities(value) {
+  return String(value || "")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&#(\d+);/g, function (_, n) {
+      return String.fromCodePoint(Number(n));
+    })
+    .replace(/&#x([0-9a-f]+);/gi, function (_, n) {
+      return String.fromCodePoint(parseInt(n, 16));
+    });
+}
+
+function unescapeJs(value) {
+  return String(value || "")
+    .replace(/\\x([0-9a-f]{2})/gi, function (_, h) {
+      return String.fromCharCode(parseInt(h, 16));
+    })
+    .replace(/\\u([0-9a-f]{4})/gi, function (_, h) {
+      return String.fromCharCode(parseInt(h, 16));
+    });
+}
+
+function stripTags(value) {
+  return decodeEntities(
+    String(value || "")
+      .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
+      .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
+      .replace(/<br\s*\/?>/gi, "\n")
+      .replace(/<\/p\s*>/gi, "\n")
+      .replace(/<[^>]+>/g, " ")
+  )
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/\n[ \t]+/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .replace(/[ \t]{2,}/g, " ")
+    .trim();
+}
+
+function htmlMeta(html, key) {
+  var tags = html.match(/<meta\b[^>]*>/gi) || [];
+
+  for (var i = 0; i < tags.length; i += 1) {
+    var tag = tags[i];
+    var nameMatch =
+      tag.match(/\bproperty=["']([^"']+)["']/i) ||
+      tag.match(/\bname=["']([^"']+)["']/i);
+
+    if (!nameMatch || nameMatch[1].toLowerCase() !== key.toLowerCase()) {
+      continue;
+    }
+
+    var contentMatch = tag.match(/\bcontent=["']([^"']*)["']/i);
+    return decodeEntities(contentMatch ? contentMatch[1] : "").trim();
+  }
+
+  return "";
+}
+
+function extractSeedUrls(text) {
+  var decoded = String(text || "").replace(/&amp;/gi, "&");
+
+  var matches =
+    decoded.match(
+      /https?:\/\/mp\.weixin\.qq\.com\/s(?:\/|\?)[^\s"'<>，。；、）】》“”‘’（【]+/gi
+    ) || [];
+
+  var seen = new Set();
+  var output = [];
+
+  matches.forEach(function (raw) {
+    var url = raw
+      .replace(/#.*$/, "")
+      .replace(/[)\]）】。，、；;,.!！?？]+$/, "")
+      .replace(/^http:/i, "https:");
+
+    if (isArticleUrl(url) && !seen.has(url)) {
+      seen.add(url);
+      output.push(url);
+    }
+  });
+
+  return output;
+}
+
+function parseSeedHtml(html) {
+  var titleCandidates = [
+    htmlMeta(html, "og:title"),
+    unescapeJs(
+      ((html.match(/\bvar\s+msg_title\s*=\s*(['"])([\s\S]*?)\1/i) || [])[2]) || ""
+    ),
+    htmlMeta(html, "twitter:title"),
+    ((html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i) || [])[1]) || ""
+  ];
+
+  var title = "";
+
+  for (var i = 0; i < titleCandidates.length && !title; i += 1) {
+    title = stripTags(titleCandidates[i]);
+  }
+
+  if (!title) {
+    return { error: "读不到标题" };
+  }
+
+  var date = "";
+  var dateSource = "";
+
+  var ctMatch = html.match(/\bct\s*=\s*["']?(\d{10})/);
+  var publishMatch = html.match(/\bvar\s+publish_time\s*=\s*["']?(\d{10})/i);
+
+  if (ctMatch) {
+    date = toDate(ctMatch[1], "");
+    dateSource = "ct 时间戳";
+  } else if (publishMatch) {
+    date = toDate(publishMatch[1], "");
+    dateSource = "publish_time 时间戳";
+  }
+
+  if (!date) {
+    var metaDate = [
+      htmlMeta(html, "article:published_time"),
+      htmlMeta(html, "publishdate"),
+      htmlMeta(html, "date")
+    ].join(" ");
+
+    var metaMatch = metaDate.match(/(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})/);
+
+    if (metaMatch) {
+      date = metaMatch[1] + "-" + pad2(metaMatch[2]) + "-" + pad2(metaMatch[3]);
+      dateSource = "meta 标签";
+    }
+  }
+
+  if (!date) {
+    var loose = html.match(/\b(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})\b/);
+
+    if (loose) {
+      date = loose[1] + "-" + pad2(loose[2]) + "-" + pad2(loose[3]);
+      dateSource = "页面文字推断（请核对）";
+    }
+  }
+
+  if (!date) {
+    return { error: "读不到发布日期" };
+  }
+
+  var bodyMatch = html.match(
+    /<div\b[^>]*id=["']js_content["'][^>]*>([\s\S]*?)<\/div>\s*(?:<script|<div|<\/body)/i
+  );
+
+  var body = bodyMatch ? stripTags(bodyMatch[1]) : "";
+
+  if (body.length < 300) {
+    return { error: "正文过短或读不到（" + body.length + " 字符）" };
+  }
+
+  return {
+    title: title,
+    date: date,
+    dateSource: dateSource,
+    body: body,
+    excerpt: stripTags(htmlMeta(html, "og:description") || htmlMeta(html, "description")),
+    cover: htmlMeta(html, "og:image") || htmlMeta(html, "twitter:image")
+  };
+}
+
+async function fetchSeed(url) {
+  var response;
+
+  try {
+    response = await fetch(url, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
+          "AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"
+      },
+      redirect: "follow",
+      signal: AbortSignal.timeout(30000)
+    });
+  } catch (error) {
+    return { status: "error", message: "请求失败：" + error.message };
+  }
+
+  var html = await response.text().catch(function () {
+    return "";
+  });
+
+  var hasContent = html.indexOf("js_content") >= 0;
+
+  if (
+    isCaptchaUrl(response.url) ||
+    (!hasContent && /wappoc_appmsgcaptcha|环境异常|完成验证|验证码/.test(html))
+  ) {
+    return { status: "blocked" };
+  }
+
+  if (!response.ok) {
+    return { status: "error", message: "HTTP " + response.status };
+  }
+
+  if (!hasContent) {
+    return { status: "error", message: "页面里没有正文（文章可能已删除或被限制）" };
+  }
+
+  return { status: "ok", html: html };
+}
+
+/* ---------- 搜狗：打开文章 ---------- */
+
 async function openAndRead(context, page, link) {
   var popupPromise = context
     .waitForEvent("page", { timeout: 10000 })
@@ -284,7 +507,7 @@ async function openAndRead(context, page, link) {
   }
 
   if (!isArticleUrl(finalUrl)) {
-    return { status: "skip", reason: "最终地址不是微信文章：" + finalUrl };
+    return { status: "skip", reason: "最终地址不是微信文章：" + describeUrl(finalUrl) };
   }
 
   try {
@@ -324,8 +547,7 @@ async function main() {
   var archive = readArchive();
   var state = readState();
   var today = beijingToday();
-  var settleBefore = addDays(today, -SETTLE_DAYS);
-  var windows = buildWindows(START_DATE, today);
+  var seedOnly = process.env.GITHUB_EVENT_NAME === "push";
 
   var knownTitles = new Set(
     archive.map(function (item) {
@@ -339,25 +561,186 @@ async function main() {
     })
   );
 
-  var added = 0;
+  var addedFromSeeds = 0;
+  var addedFromSogou = 0;
   var opened = 0;
   var blocked = false;
   var context = null;
   var page = null;
   var links = null;
   var currentUrl = "";
+  var lastListUrl = "https://weixin.sogou.com/";
 
-  async function openList(url) {
-    currentUrl = url;
+  function saveRecord(record) {
+    archive.push(record);
 
-    await page.goto(url, {
-      waitUntil: "domcontentloaded",
-      timeout: 30000,
-      referer: "https://weixin.sogou.com/"
+    archive.sort(function (a, b) {
+      return String(b.date || "").localeCompare(String(a.date || ""));
     });
 
-    await page.waitForTimeout(2000);
+    writeArchive(archive);
 
+    knownTitles.add(normalizeTitle(record.title));
+    knownUrls.add(record.source_url);
+  }
+
+  /* ----- A. 链接文件 ----- */
+
+  async function collectSeeds() {
+    var result = { found: 0, pending: 0, saved: 0, blocked: false };
+
+    if (!fs.existsSync(SEED_FILE)) {
+      console.log(
+        "[wechat] 没有链接文件 content/pr-portfolio/wechat-seed-urls.txt，跳过这一步"
+      );
+      return result;
+    }
+
+    var urls = extractSeedUrls(fs.readFileSync(SEED_FILE, "utf8"));
+    result.found = urls.length;
+
+    var pending = urls.filter(function (url) {
+      return !(state.seeds[url] && state.seeds[url].done);
+    });
+
+    result.pending = pending.length;
+
+    console.log(
+      "[wechat] 链接文件：识别到 " + urls.length + " 个文章链接，待处理 " + pending.length + " 个"
+    );
+
+    var handled = 0;
+
+    for (var i = 0; i < pending.length; i += 1) {
+      var url = pending[i];
+
+      if (handled >= MAX_SEEDS_PER_RUN) {
+        console.log(
+          "[wechat] 本轮已处理 " + handled + " 个链接，其余 " +
+            (pending.length - i) + " 个留给下一轮"
+        );
+        break;
+      }
+
+      handled += 1;
+
+      var fetched = await fetchSeed(url);
+
+      if (fetched.status === "blocked") {
+        result.blocked = true;
+        console.log(
+          "[wechat] 微信返回验证码页面，链接文件本轮到此为止，其余留给下一轮：" +
+            describeUrl(url)
+        );
+        break;
+      }
+
+      var problem = "";
+      var info = null;
+
+      if (fetched.status === "error") {
+        problem = fetched.message;
+      } else {
+        info = parseSeedHtml(fetched.html);
+
+        if (info.error) {
+          problem = info.error;
+        }
+      }
+
+      if (problem) {
+        var errors = (state.seedErrors[url] || 0) + 1;
+        state.seedErrors[url] = errors;
+
+        if (errors >= MAX_SEED_ERRORS) {
+          state.seeds[url] = {
+            done: true,
+            result: "failed",
+            reason: problem,
+            at: new Date().toISOString()
+          };
+
+          console.log(
+            "[wechat] 链接已失败 " + errors + " 次，不再重试（" + problem + "）：" + url
+          );
+        } else {
+          console.log(
+            "[wechat] 链接暂时失败（第 " + errors + " 次，" + problem + "）：" + describeUrl(url)
+          );
+        }
+
+        writeState(state);
+        await pause(1500, 3000);
+        continue;
+      }
+
+      if (info.date < START_DATE) {
+        state.seeds[url] = {
+          done: true,
+          result: "tooOld",
+          date: info.date,
+          at: new Date().toISOString()
+        };
+
+        console.log("[wechat] 早于起始日期 " + START_DATE + "，不收录（" + info.date + "）：" + info.title);
+        writeState(state);
+        await pause(1500, 3000);
+        continue;
+      }
+
+      if (knownUrls.has(url) || knownTitles.has(normalizeTitle(info.title))) {
+        state.seeds[url] = {
+          done: true,
+          result: "exists",
+          at: new Date().toISOString()
+        };
+
+        console.log("[wechat] 已在归档，跳过：" + info.title);
+        writeState(state);
+        await pause(1500, 3000);
+        continue;
+      }
+
+      saveRecord({
+        slug:
+          "wechat-" +
+          crypto.createHash("sha256").update(url).digest("hex").slice(0, 20),
+        title: info.title,
+        source: "Industry News",
+        source_url: url,
+        date: info.date,
+        excerpt: info.excerpt,
+        body: info.body,
+        cover_image: info.cover,
+        published: true,
+        fetched_at: new Date().toISOString()
+      });
+
+      state.seeds[url] = {
+        done: true,
+        result: "saved",
+        at: new Date().toISOString()
+      };
+
+      delete state.seedErrors[url];
+      writeState(state);
+      result.saved += 1;
+      addedFromSeeds += 1;
+
+      console.log(
+        "[wechat] 已保存（链接文件）：" + info.title + "（" + info.date +
+          "，日期来源：" + info.dateSource + "，正文 " + info.body.length + " 字符）"
+      );
+
+      await pause(1500, 3000);
+    }
+
+    return result;
+  }
+
+  /* ----- B. 搜狗 ----- */
+
+  async function guardCaptcha() {
     var landed = page.url();
 
     var text = await page
@@ -372,8 +755,200 @@ async function main() {
       error.code = "CAPTCHA";
       throw error;
     }
+  }
 
-    return landed.indexOf("weixin.sogou.com/weixin") >= 0;
+  async function openList(url) {
+    currentUrl = url;
+
+    await page.goto(url, {
+      waitUntil: "domcontentloaded",
+      timeout: 30000,
+      referer: lastListUrl
+    });
+
+    await page.waitForTimeout(2000);
+    await guardCaptcha();
+
+    var landed = page.url();
+    var onList = landed.indexOf("weixin.sogou.com/weixin") >= 0;
+
+    if (onList) {
+      lastListUrl = landed;
+    }
+
+    return onList;
+  }
+
+  async function warmUp() {
+    await page.goto("https://weixin.sogou.com/", {
+      waitUntil: "domcontentloaded",
+      timeout: 30000
+    });
+
+    await page.waitForTimeout(1500);
+
+    var onList = await openList(buildDefaultUrl());
+
+    var names = (await context.cookies("https://weixin.sogou.com"))
+      .map(function (cookie) {
+        return cookie.name;
+      })
+      .sort();
+
+    console.log(
+      "[wechat] 预热完成，搜索页" + (onList ? "正常" : "未能打开") +
+        "；搜狗 Cookie：" + (names.join("、") || "无")
+    );
+
+    return onList;
+  }
+
+  async function probeList() {
+    try {
+      var tsnLinks = page.locator("a[href*='tsn=']");
+      var nextCount = await page.locator("a#sogou_next").count();
+      var tsnCount = await tsnLinks.count();
+
+      console.log(
+        "[wechat] 页面结构：下一页链接 " + nextCount + " 个；含 tsn= 的时间筛选链接 " +
+          tsnCount + " 个"
+      );
+
+      for (var k = 0; k < Math.min(tsnCount, 6); k += 1) {
+        var anchor = tsnLinks.nth(k);
+
+        var label = String(
+          (await anchor.textContent().catch(function () {
+            return "";
+          })) || ""
+        ).trim();
+
+        var href = String(
+          (await anchor.getAttribute("href").catch(function () {
+            return "";
+          })) || ""
+        );
+
+        console.log("[wechat]   时间筛选 " + label + " -> " + describeUrl(href));
+      }
+    } catch (error) {
+      console.log("[wechat] 页面结构探测失败：" + error.message);
+    }
+  }
+
+  async function applyTimeFilter() {
+    var anchors = page.locator("a[href*='tsn=']");
+    var total = await anchors.count();
+
+    for (var k = 0; k < total; k += 1) {
+      var anchor = anchors.nth(k);
+
+      var label = String(
+        (await anchor.textContent().catch(function () {
+          return "";
+        })) || ""
+      ).trim();
+
+      if (label.indexOf(FILTER_LABEL) < 0) {
+        continue;
+      }
+
+      var before = page.url();
+
+      var navigated = page
+        .waitForURL(
+          function (u) {
+            var text = u.toString();
+            return text !== before && /tsn=/.test(text);
+          },
+          { timeout: 15000, waitUntil: "domcontentloaded" }
+        )
+        .then(function () {
+          return true;
+        })
+        .catch(function () {
+          return false;
+        });
+
+      await anchor.evaluate(function (element) {
+        element.click();
+      });
+
+      var reached = await navigated;
+
+      if (reached) {
+        await page.waitForTimeout(1800);
+      }
+
+      await guardCaptcha();
+
+      var landed = page.url();
+      var ok = reached && landed.indexOf("weixin.sogou.com/weixin") >= 0;
+
+      console.log(
+        "[wechat] 点击“" + FILTER_LABEL + "”后落点：" + describeUrl(landed) +
+          (ok ? "" : "（筛选没有生效）")
+      );
+
+      if (ok) {
+        currentUrl = landed;
+        lastListUrl = landed;
+      }
+
+      return ok;
+    }
+
+    console.log("[wechat] 页面上没有找到“" + FILTER_LABEL + "”筛选链接");
+    return false;
+  }
+
+  async function clickNext() {
+    var next = page.locator("a#sogou_next");
+
+    if ((await next.count()) === 0) {
+      next = page.locator("a:has-text('下一页')");
+    }
+
+    if ((await next.count()) === 0) {
+      return false;
+    }
+
+    var before = page.url();
+
+    var moved = page
+      .waitForURL(
+        function (u) {
+          return u.toString() !== before;
+        },
+        { timeout: 15000, waitUntil: "domcontentloaded" }
+      )
+      .then(function () {
+        return true;
+      })
+      .catch(function () {
+        return false;
+      });
+
+    try {
+      await next.first().click({ timeout: 10000 });
+    } catch (error) {
+      console.log("[wechat] 点击“下一页”失败：" + String(error.message).split("\n")[0]);
+      return false;
+    }
+
+    await moved;
+    await page.waitForTimeout(2000);
+    await guardCaptcha();
+
+    var landed = page.url();
+
+    if (landed.indexOf("weixin.sogou.com/weixin") < 0) {
+      return false;
+    }
+
+    currentUrl = landed;
+    lastListUrl = landed;
+    return true;
   }
 
   async function readTitles() {
@@ -422,17 +997,12 @@ async function main() {
     console.log("[wechat] 已记录并不再打开：" + reason + "：" + title);
   }
 
-  function retryOrReject(key, title, reason) {
+  function transient(key, title, reason) {
     var count = (state.attempts[key] || 0) + 1;
     state.attempts[key] = count;
 
-    if (count >= MAX_ATTEMPTS) {
-      reject(key, title, "连续 " + MAX_ATTEMPTS + " 次失败（" + reason + "）");
-      return "rejected";
-    }
-
     console.log(
-      "[wechat] 暂时跳过（第 " + count + " 次）：" + reason + "：" + title
+      "[wechat] 暂时没打开（累计失败 " + count + " 次，不会被放弃）：" + reason + "：" + title
     );
 
     return "retry";
@@ -443,7 +1013,18 @@ async function main() {
     var linkIndex = await findLinkIndex(listTitle);
 
     if (linkIndex < 0) {
-      return retryOrReject(key, listTitle, "列表已变化，找不到该文章");
+      try {
+        await openList(currentUrl);
+     "CAPTCHA") {
+          return "captcha";
+        }
+      }
+
+      linkIndex = await findLinkIndex(listTitle);
+
+      if (linkIndex < 0) {
+        return "lost";
+      }
     }
 
     opened += 1;
@@ -459,7 +1040,7 @@ async function main() {
       );
     } catch (error) {
       await closeExtraPages(context, page);
-      return retryOrReject(key, listTitle, error.message);
+      return transient(key, listTitle, error.message);
     }
 
     await closeExtraPages(context, page);
@@ -470,7 +1051,7 @@ async function main() {
     }
 
     if (result.status === "skip") {
-      return retryOrReject(key, listTitle, result.reason);
+      return transient(key, listTitle, result.reason);
     }
 
     var info = result.info;
@@ -514,7 +1095,7 @@ async function main() {
       return "exists";
     }
 
-    archive.push({
+    saveRecord({
       slug: makeSlug(sourceUrl),
       title: title,
       source: "Industry News",
@@ -527,60 +1108,65 @@ async function main() {
       fetched_at: new Date().toISOString()
     });
 
-    archive.sort(function (a, b) {
-      return String(b.date || "").localeCompare(String(a.date || ""));
-    });
-
-    writeArchive(archive);
-
     knownTitles.add(key);
-    knownTitles.add(normalizeTitle(title));
-    knownUrls.add(sourceUrl);
     delete state.attempts[key];
     writeState(state);
-    added += 1;
+    addedFromSogou += 1;
 
     console.log(
-      "[wechat] 已保存：" +
-        title +
-        "（" +
-        articleDate +
-        "，正文 " +
-        body.length +
-        " 字符）"
+      "[wechat] 已保存：" + title + "（" + articleDate + "，正文 " + body.length + " 字符）"
     );
 
     return "saved";
   }
 
   async function processTitles(titles) {
-    var summary = { retries: 0, captcha: false, budget: false, archived: 0 };
+    var summary = { retries: 0, captcha: false, budget: false, lost: false, archived: 0 };
 
-    for (var i = 0; i < titles.length; i += 1) {
-      var key = normalizeTitle(titles[i]);
+    var fresh = [];
+    var stubborn = [];
+
+    titles.forEach(function (title) {
+      var key = normalizeTitle(title);
 
       if (!key) {
-        continue;
+        return;
       }
 
       if (knownTitles.has(key)) {
         summary.archived += 1;
-        continue;
+        return;
       }
 
       if (state.rejected[key]) {
-        continue;
+        return;
       }
 
+      if ((state.attempts[key] || 0) >= DEPRIORITIZE_AFTER) {
+        stubborn.push(title);
+      } else {
+        fresh.push(title);
+      }
+    });
+
+    var ordered = fresh.concat(stubborn);
+
+    for (var i = 0; i < ordered.length; i += 1) {
       if (opened >= MAX_OPEN_PER_RUN) {
         summary.budget = true;
         break;
       }
 
-      var status = await handleItem(titles[i]);
+      var status = await handleItem(ordered[i]);
 
       if (status === "captcha") {
         summary.captcha = true;
+        break;
+      }
+
+      if (status === "lost") {
+        console.log("[wechat] 列表页丢失，无法继续点击这一页的文章，本页到此为止");
+        summary.lost = true;
         break;
       }
 
@@ -598,7 +1184,8 @@ async function main() {
           break;
         }
 
-        summary.retries += 1;
+        summary.lost = true;
+        break;
       }
 
       await pause(2500, 4000);
@@ -607,257 +1194,230 @@ async function main() {
     return summary;
   }
 
+  async function walkList(maxPages) {
+    var result = { captcha: false, pages: 0, listed: 0, archived: 0 };
+    var prevFirst = "";
+
+    for (var p = 1; p <= maxPages; p += 1) {
+      if (p > 1) {
+        var ok = false;
+
+        try {
+          ok = await clickNext();
+
+          if (!ok) {
+            console.log("[wechat] 没能点到“下一页”，改为在当前网址上换成第 " + p + " 页");
+            ok = await openList(withPageParam(currentUrl, p));
+          }
+        } catch (error) {
+          if (error.code === "CAPTCHA") {
+            result.captcha = true;
+            console.log("[wechat] 搜狗列表页触发验证码，本轮停止，已获取的文章保留");
+            break;
+          }
+
+          console.log("[wechat] 翻页出错，停止翻页：" + String(error.message).split("\n")[0]);
+          break;
+        }
+
+        if (!ok) {
+          console.log("[wechat] 第 " + p + " 页无法打开（可能已是最后一页），停止翻页");
+          break;
+        }
+      }
+
+      var titles = await readTitles();
+
+      if (titles.length === 0 || titles[0] === prevFirst) {
+        break;
+      }
+
+      prevFirst = titles[0];
+      result.pages = p;
+      result.listed += titles.length;
+
+      console.log("[wechat] 第 " + p + " 页：" + titles.length + " 条");
+
+      var pageSummary = await processTitles(titles);
+      result.archived += pageSummary.archived;
+
+      if (pageSummary.captcha) {
+        result.captcha = true;
+        break;
+      }
+
+      if (pageSummary.budget) {
+        console.log("[wechat] 本轮已达到打开上限，其余留给下一轮");
+        break;
+      }
+
+      if (pageSummary.lost || titles.length < 10) {
+        break;
+      }
+
+      await pause(3000, 5000);
+    }
+
+    return result;
+  }
+
+  async function collectFromSogou() {
+    var browser = await chromium.launch({ headless: true });
+    var source = "";
+
+    try {
+      context = await browser.newContext({
+        locale: "zh-CN",
+        userAgent:
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
+          "AppleWebKit/537.36 (KHTML, like Gecko) " +
+          "Chrome/130.0.0.0 Safari/537.36",
+        viewport: { width: 1365, height: 900 }
+      });
+
+      page = await context.newPage();
+      page.setDefaultTimeout(15000);
+      links = page.locator("li[id^='sogou_vr_'] h3 a");
+
+      var warmed = false;
+
+      try {
+        warmed = await warmUp();
+
+        if (warmed) {
+          await probeList();
+        }
+      } catch (error) {
+        if (error.code === "CAPTCHA") {
+          blocked = true;
+          console.log("[wechat] 预热时触发验证码，本轮停止，已获取的文章保留");
+          return source;
+        }
+
+        console.log("[wechat] 预热失败，继续尝试：" + error.message);
+      }
+
+      var filteredOk = false;
+      var listed = 0;
+      var filterArchived = 0;
+
+      if (warmed) {
+        try {
+          filteredOk = await applyTimeFilter();
+        } catch (error) {
+          if (error.code === "CAPTCHA") {
+            blocked = true;
+            console.log("[wechat] 点击时间筛选后出现验证码，本轮停止，已获取的文章保留");
+            return source;
+          }
+
+          console.log("[wechat] 时间筛选出错：" + error.message);
+        }
+      }
+
+      if (filteredOk) {
+        var weekly = await walkList(MAX_FILTER_PAGES);
+
+        listed = weekly.listed;
+        filterArchived = weekly.archived;
+        source = FILTER_LABEL + "筛选（" + weekly.pages + " 页，共 " + weekly.listed + " 条）";
+
+        if (weekly.captcha) {
+          blocked = true;
+          return source;
+        }
+
+        if (listed === 0) {
+          console.log("[wechat] “" + FILTER_LABEL + "”筛选后没有结果，再用默认排序补查一遍");
+        } else if (filterArchived === listed) {
+          console.log("[wechat] “" + FILTER_LABEL + "”内的文章都已在归档里");
+        }
+      } else if (warmed) {
+        console.log("[wechat] 时间筛选没有生效，改用默认排序");
+      }
+
+      if (!filteredOk || listed === 0) {
+        try {
+          var onList = await openList(buildDefaultUrl());
+
+          if (!onList) {
+            throw new Error("默认搜索页打不开，落点：" + describeUrl(page.url()));
+          }
+
+          var walked = await walkList(MAX_DEFAULT_PAGES);
+          source = "默认排序（" + walked.pages + " 页，共 " + walked.listed + " 条，相关性排序，不保证是最新）";
+
+          if (walked.captcha) {
+            blocked = true;
+          }
+        } catch (error) {
+          if (error.code === "CAPTCHA") {
+            blocked = true;
+            console.log("[wechat] 搜狗列表页触发验证码，本轮停止");
+          } else {
+            console.log("[wechat] 默认排序失败：" + error.message);
+          }
+        }
+      }
+    } finally {
+      await browser.close().catch(function () {});
+    }
+
+    return source;
+  }
+
   var watchdog = setTimeout(function () {
     console.log("[wechat] 达到总时长上限，结束本轮；已保存的文章和进度不受影响");
+    writeState(state);
     process.exit(0);
   }, TOTAL_LIMIT_MS);
 
-  var browser = await chromium.launch({ headless: true });
-
-  var doneCount = 0;
-  var unfinished = [];
-  var truncatedMonths = [];
-  var unsupported = false;
-  var suspect = false;
-  var probed = false;
-  var landing = "";
-  var lastSignature = "";
+  var sogouSource = "";
+  var seedResult = { found: 0, pending: 0, saved: 0, blocked: false };
 
   try {
-    context = await browser.newContext({
-      locale: "zh-CN",
-      userAgent:
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
-        "AppleWebKit/537.36 (KHTML, like Gecko) " +
-        "Chrome/130.0.0.0 Safari/537.36",
-      viewport: { width: 1365, height: 900 }
-    });
+    seedResult = await collectSeeds();
 
-    page = await context.newPage();
-    page.setDefaultTimeout(15000);
-    links = page.locator("li[id^='sogou_vr_'] h3 a");
-
-    for (var wi = 0; wi < windows.length; wi += 1) {
-      var win = windows[wi];
-      var ws = state.windows[win.key] || {};
-
-      if (ws.done) {
-        doneCount += 1;
-        continue;
-      }
-
-      if (blocked || unsupported || suspect || opened >= MAX_OPEN_PER_RUN) {
-        unfinished.push(win.key);
-        continue;
-      }
-
-      var listed = 0;
-      var archivedInList = 0;
-      var retries = 0;
-      var captcha = false;
-      var budget = false;
-      var ended = false;
-      var previousFirst = "";
-      var pageNo = 1;
-      var savedBefore = added;
-
-      try {
-        for (pageNo = 1; pageNo <= MAX_PAGES_PER_WINDOW; pageNo += 1) {
-          var onList = await openList(buildListUrl(win.ft, win.et, pageNo));
-
-          if (!onList) {
-            if (!probed) {
-              unsupported = true;
-              landing = page.url();
-            } else {
-              retries += 1;
-            }
-
-            break;
-          }
-
-          probed = true;
-
-          var titles = await readTitles();
-
-          if (pageNo === 1) {
-            var signature = titles.slice(0, 5).join("|");
-
-            if (signature && signature === lastSignature) {
-              suspect = true;
-              break;
-            }
-
-            if (signature) {
-              lastSignature = signature;
-            }
-          }
-
-          if (titles.length === 0 || titles[0] === previousFirst) {
-            ended = true;
-            break;
-          }
-
-          previousFirst = titles[0];
-          listed += titles.length;
-
-          var summary = await processTitles(titles);
-
-          retries += summary.retries;
-          archivedInList += summary.archived;
-
-          if (summary.captcha) {
-            captcha = true;
-            blocked = true;
-            break;
-          }
-
-          if (summary.budget) {
-            budget = true;
-            break;
-          }
-
-          if (titles.length < 10) {
-            ended = true;
-            break;
-          }
-
-          await pause(3000, 5000);
-        }
-      } catch (error) {
-        if (error.code === "CAPTCHA") {
-          captcha = true;
-          blocked = true;
-          console.log("[wechat] 搜狗列表页触发验证码，本轮停止，已获取的文章保留");
-        } else {
-          throw error;
-        }
-      }
-
-      var truncated =
-        !ended && !captcha && !budget && !unsupported && !suspect &&
-        pageNo > MAX_PAGES_PER_WINDOW;
-
-      var finished =
-        !captcha && !budget && !unsupported && !suspect && retries === 0 &&
-        (ended || truncated);
-
-      if (unsupported || suspect) {
-        unfinished.push(win.key);
-        continue;
-      }
-
-      if (finished && listed === 0) {
-        ws.zeroRuns = (ws.zeroRuns || 0) + 1;
-      } else if (listed > 0) {
-        ws.zeroRuns = 0;
-      }
-
-      var emptyConfirmed = listed > 0 || (ws.zeroRuns || 0) >= 2;
-
-      if (finished && emptyConfirmed && win.et < settleBefore) {
-        ws.done = true;
-        doneCount += 1;
-      }
-
-      ws.listed = listed;
-      ws.truncated = truncated;
-      ws.checkedAt = new Date().toISOString();
-      state.windows[win.key] = ws;
-      writeState(state);
-
-      if (!finished) {
-        unfinished.push(win.key);
-      }
-
-      console.log(
-        "[wechat] " + win.key +
-          " | 搜狗列出 " + listed + " 条 | 已在归档 " + archivedInList +
-          " | 本月新增 " + (added - savedBefore) +
-          " | " + (ws.done ? "已完成" : finished && !emptyConfirmed ? "无结果，下一轮再确认一次" : finished ? "本月未满 " + SETTLE_DAYS + " 天，下次继续核对" : "未完成")
-      );
-
-      if (!blocked && !budget) {
-        await pause(3000, 5000);
-      }
-    }
-
-    if (suspect) {
-      console.log(
-        "[wechat] 搜狗的日期筛选似乎没有生效：相邻两个月的第一页结果完全相同。已停止按月处理，没有把任何月份标记为完成"
-      );
-    }
-
-    if (unsupported) {
-      console.log(
-        "[wechat] 搜狗没有接受按月筛选，页面落点：" + landing +
-          "；改用默认排序，只处理第一页"
-      );
-
-      try {
-        var defaultOk = await openList(buildListUrl("", "", 1));
-
-        if (!defaultOk) {
-          throw new Error("默认搜索页也无法打开，落点：" + page.url());
-        }
-
-        var defaultTitles = await readTitles();
-        console.log("[wechat] 默认排序返回 " + defaultTitles.length + " 条");
-
-        var fallback = await processTitles(defaultTitles);
-
-        if (fallback.captcha) {
-          blocked = true;
-        }
-      } catch (error) {
-        if (error.code === "CAPTCHA") {
-          blocked = true;
-          console.log("[wechat] 搜狗列表页触发验证码，本轮停止");
-        } else {
-          throw error;
-        }
-      }
+    if (seedOnly) {
+      console.log("[wechat] 本次由链接文件的改动触发，只处理链接文件，不访问搜狗");
+    } else {
+      sogouSource = await collectFromSogou();
     }
   } finally {
-    await browser.close().catch(function () {});
     clearTimeout(watchdog);
     writeState(state);
   }
 
+  console.log(
+    "[wechat] 本轮新增 " + (addedFromSeeds + addedFromSogou) + " 篇（链接文件 " +
+      addedFromSeeds + " 篇，搜狗 " + addedFromSogou + " 篇）；归档累计 " +
+      archive.length + " 篇"
+  );
+
+  if (sogouSource) {
+    console.log("[wechat] 搜狗列表来源：" + sogouSource);
+  }
+
+  var newest = archive.slice().sort(function (a, b) {
+    return String(b.date || "").localeCompare(String(a.date || ""));
+  })[0];
+
+  console.log(
+    "[wechat] 北京时间今天：" + today + "；归档里最新的一篇：" +
+      (newest ? newest.date + "《" + newest.title + "》" : "（空）")
+  );
+
   var rejectedCount = Object.keys(state.rejected).length;
-
-  truncatedMonths = Object.keys(state.windows)
-    .filter(function (key) {
-      return state.windows[key].truncated;
-    })
-    .sort()
-    .reverse();
+  var stuck = Object.keys(state.attempts).filter(function (key) {
+    return state.attempts[key] >= DEPRIORITIZE_AFTER && !state.rejected[key];
+  }).length;
 
   console.log(
-    "[wechat] 本轮新增 " + added + " 篇；归档累计 " + archive.length + " 篇"
+    "[wechat] 已确定不收录 " + rejectedCount + " 篇；打不开次数较多、已降低优先级 " + stuck + " 篇"
   );
 
-  console.log(
-    "[wechat] 按月进度：已完成 " + doneCount + "/" + windows.length +
-      " 个月；已记录不再打开 " + rejectedCount + " 篇"
-  );
-
-  if (unfinished.length > 0 && !unsupported && !suspect) {
-    console.log(
-      "[wechat] 尚未完成 " + unfinished.length + " 个月，最近的几个：" +
-        unfinished.slice(0, 4).join("、")
-    );
-  }
-
-  if (truncatedMonths.length > 0) {
-    console.log(
-      "[wechat] 注意：这些月份翻满 " + MAX_PAGES_PER_WINDOW +
-        " 页仍有结果，搜狗不再继续提供，可能有遗漏：" + truncatedMonths.join("、")
-    );
-  }
-
-  if (blocked) {
-    console.log("[wechat] 本轮因验证码提前结束，下一次运行会从未完成的月份继续");
+  if (blocked || seedResult.blocked) {
+    console.log("[wechat] 本轮因验证码提前结束，下一次运行会继续");
   }
 }
 
