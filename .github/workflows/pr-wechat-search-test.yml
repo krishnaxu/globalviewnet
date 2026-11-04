@@ -1,21 +1,21 @@
-name: WeChat automatic collection
+name: WeChat candidate discovery
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 */4 * * *"
+    - cron: "25 0,6,12,18 * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: wechat-automatic-collection
+  group: wechat-candidate-discovery
   cancel-in-progress: false
 
 jobs:
-  collect-wechat-news:
+  discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repository
@@ -28,18 +28,17 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Collect WeChat articles
+      - name: Discover WeChat candidates
         run: |
           set -euo pipefail
           node scripts/wechat-search.mjs
 
-      - name: Validate generated files
+      - name: Validate candidates
         run: |
           set -euo pipefail
-          test -f auto-news.json
-          test -f wechat-news.json
+          test -f wechat-candidates.json
 
-          node -e 'const fs=require("fs"); const items=JSON.parse(fs.readFileSync("wechat-news.json","utf8")); if(!Array.isArray(items)) throw new Error("wechat-news.json 顶层不是数组"); const invalid=items.filter(item=>{try{const u=new URL(item.url||item.link);return u.hostname!=="mp.weixin.qq.com"||!(u.pathname==="/s"||u.pathname.startsWith("/s/"));}catch{return true;}}); if(invalid.length) throw new Error("发现非微信文章："+invalid.length+"条"); console.log("真实微信文章数量："+items.length);'
+          node -e 'const fs=require("fs");const items=JSON.parse(fs.readFileSync("wechat-candidates.json","utf8"));if(!Array.isArray(items)||items.length===0)throw new Error("候选文章为空");for(const item of items){if(!item.title||!item.search_url)throw new Error("候选文章缺少标题或搜索链接");}console.log("候选文章数量："+items.length);'
 
       - name: Commit and push changes
         run: |
@@ -48,13 +47,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add auto-news.json wechat-news.json
+          git add wechat-candidates.json
 
           if git diff --cached --quiet; then
-            echo "没有数据变化，不需要提交"
+            echo "候选文章没有变化"
             exit 0
           fi
 
-          git commit -m "chore: update verified WeChat news"
+          git commit -m "chore: update WeChat article candidates"
           git pull --rebase origin main
           git push origin HEAD:main
