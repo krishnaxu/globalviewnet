@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-04T20:04:06.227Z",
+  "generated_at": "2026-11-04T20:58:47.974Z",
   "items": [
+    {
+      "id": "hackers-stole-dreamhost-customer-files-and-in-b8f71cf239fb",
+      "language": "en",
+      "title": "Hackers stole DreamHost customer files and inboxes during months-long attack",
+      "excerpt": "The web host said hackers exploited a vulnerability to access customer emails and files during a \"deliberate attack.\"",
+      "date": "2026-11-04T20:36:57.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/04/hackers-stole-dreamhost-customer-files-and-inboxes-during-months-long-attack/",
+      "image": ""
+    },
+    {
+      "id": "why-we-re-kicking-cvs-out-of-our-bullpen-watc-d68d8b14d965",
+      "language": "en",
+      "title": "Why we're kicking CVS out of our Bullpen watchlist. Plus, Intel's CEO makes a stand",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "date": "2026-11-04T20:05:55.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/04/why-were-kicking-cvs-out-of-our-bullpen-watchlist-plus-intels-ceo-makes-a-stand.html",
+      "image": ""
+    },
     {
       "id": "cvs-health-plans-to-split-itself-up-here-s-wh-47238cc74bd3",
       "language": "en",
@@ -99,6 +119,16 @@
       "date": "2026-11-04T18:58:21.000Z",
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html",
+      "image": ""
+    },
+    {
+      "id": "waymo-confirms-it-s-shaking-up-its-uber-relat-d2bb59bf6097",
+      "language": "en",
+      "title": "Waymo confirms it’s shaking up its Uber relationship in January 2028",
+      "excerpt": "The change will set up direct competition in those markets, as Uber has many other autonomous vehicle partners on its network.",
+      "date": "2026-11-04T18:12:30.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/04/waymo-confirms-its-shaking-up-its-uber-relationship-in-january-2028/",
       "image": ""
     },
     {
@@ -2969,36 +2999,6 @@
       "date": "2026-11-04T04:19:27.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/txy/2026/11-04/10725880.shtml",
-      "image": ""
-    },
-    {
-      "id": "北京东城亮相京港洽谈会-集中发布14处产业空间-52130a7fa2e7",
-      "language": "zh",
-      "title": "北京东城亮相京港洽谈会 集中发布14处产业空间",
-      "excerpt": "中新网北京11月4日电 (记者 陈杭)第二十九届北京·香港经济合作研讨洽谈会东城区专题推介活动3日举行。活动、项目、成果发布环节，现场发布东城区文化产业京港创新合作机遇清单；正式启动2026“故宫以东”完美世界文创校园设计大赛香港赛场。",
-      "date": "2026-11-04T04:14:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-04/10725879.shtml",
-      "image": ""
-    },
-    {
-      "id": "新疆昌吉-数据标注员为ai当-老师-拓展就业新空间-942e5f7049d3",
-      "language": "zh",
-      "title": "新疆昌吉：数据标注员为AI当“老师” 拓展就业新空间",
-      "excerpt": "中新网新疆昌吉11月4日电(吴昕妮) AI短剧中的生动画面、智能驾驶对环境的精准识别、具身智能机器人灵活的动作……如今，人工智能正逐渐融入日常生活。这些应用背后，离不开一群特殊的“老师”——数据标注员。他们通过标记海量数据，帮助人工智能识别信息、理解指令。",
-      "date": "2026-11-04T04:12:32.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-04/10725875.shtml",
-      "image": ""
-    },
-    {
-      "id": "ai按摩机器人手法如何-记者在-互联网之光-现场体验-83378d43467e",
-      "language": "zh",
-      "title": "AI按摩机器人手法如何 记者在“互联网之光”现场体验",
-      "excerpt": "",
-      "date": "2026-11-04T04:10:38.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/iframe/2026/11-04/10725893.shtml",
       "image": ""
     }
   ]
