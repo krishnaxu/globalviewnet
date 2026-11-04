@@ -1,193 +1,89 @@
-
-name: PR WeChat Search Test
+name: WeChat automatic collection
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "15 */4 * * *"
 
 permissions:
-  contents: read
+  contents* write
+
+concurrency:
+  group: wech*t-automatic-collection
+  cancel-in*progress: false
 
 jobs:
-  search:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
+  collect-w*chat-news:
+    runs-on: ubuntu-lat*st
+    timeout-minutes: 15
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    st*ps:
+      - name: Checkout reposit*ry
+        uses: actions/checkout@*4
+        with:
+          fetch-de*th: 0
 
-      - name: Parse Sogou search results
+      - name: Setup Node.js*        uses: actions/setup-node@v*
+        with:
+          node-vers*on: "20"
+
+      - name: Show envir*nment
         run: |
-          cat > /tmp/sogou-test.mjs <<'EOF'
-          import fs from 'node:fs/promises';
+          nod* --version
+          pwd
+         *ls -la
+          ls -la scripts
 
-          const ACCOUNT = 'DrG的雍熙路';
-          const queries = [ACCOUNT, '"DrG的雍熙路" 生物医药'];
-          const articles = [];
-          const seen = new Set();
-          const diagnostics = [];
-          const errors = [];
+ *    - name: Collect WeChat article*
+        run: |
+          set -euo*pipefail
+          node scripts/we*hat-search.mjs
 
-          function decode(s = '') {
-            return s
-              .replace(/&amp;/g, '&')
-              .replace(/&quot;/g, '"')
-              .replace(/&#39;|&#x27;/g, "'")
-              .replace(/&lt;/g, '<')
-              .replace(/&gt;/g, '>')
-              .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n))
-              .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)));
-          }
+      - name: Vali*ate generated files
+        run: |*          set -euo pipefail
 
-          function clean(s = '') {
-            return decode(s.replace(/<script[\s\S]*?<\/script>/gi, '')
-              .replace(/<style[\s\S]*?<\/style>/gi, '')
-              .replace(/<[^>]*>/g, ' '))
-              .replace(/\s+/g, ' ').trim();
-          }
+     *    test -f auto-news.json
+       *  test -f wechat-news.json
 
-          function findDate(text) {
-            const m = text.match(/20\d{2}\s*(?:年|[-/.])\s*\d{1,2}\s*(?:月|[-/.])\s*\d{1,2}\s*日?/);
-            if (!m) return null;
-            const p = m[0].match(/\d+/g).map(Number);
-            return `${p[0]}-${String(p[1]).padStart(2, '0')}-${String(p[2]).padStart(2, '0')}`;
-          }
+      *   node - <<'NODE'
+          const*fs = require("fs");
 
-          function absolutize(href) {
-            try {
-              return new URL(decode(href), 'https://weixin.sogou.com/').href;
-            } catch {
-              return decode(href);
-            }
-          }
-
-          async function fetchPage(url) {
-            const res = await fetch(url, {
-              headers: {
-                'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36',
-                'Accept-Language': 'zh-CN,zh;q=0.9',
-                'Referer': 'https://weixin.sogou.com/'
-              },
-              signal: AbortSignal.timeout(15000)
-            });
-            return { status: res.status, html: await res.text() };
-          }
-
-          for (const query of queries) {
-            for (let page = 1; page <= 5; page++) {
-              const u = new URL('https://weixin.sogou.com/weixin');
-              u.searchParams.set('type', '2');
-              u.searchParams.set('query', query);
-              u.searchParams.set('page', String(page));
-              u.searchParams.set('ie', 'utf8');
-
-              try {
-                const { status, html } = await fetchPage(u.href);
-                console.log(`查询=${query} 第${page}页 HTTP=${status} HTML=${html.length}`);
-
-                if (page === 1) {
-                  diagnostics.push({
-                    query,
-                    html_start: html.slice(0, 2500),
-                    title_tag_samples: [...html.matchAll(/<h[1-4]\b[^>]*>[\s\S]*?<\/h[1-4]>/gi)]
-                      .slice(0, 8).map(m => clean(m[0])),
-                    class_samples: [...html.matchAll(/\bclass=["']([^"']+)["']/gi)]
-                      .slice(0, 50).map(m => m[1])
-                  });
-                }
-
-                if (status !== 200 || html.length < 1000) {
-                  errors.push({ query, page, error: `HTTP ${status} 或页面内容不足` });
-                  break;
-                }
-
-                if (/antispider|请输入验证码|访问过于频繁|异常访问/i.test(html)) {
-                  errors.push({ query, page, error: '搜狗返回反爬验证页面' });
-                  break;
-                }
-
-                // 先按标题标签提取，避免依赖固定的结果容器 class。
-                const headings = [...html.matchAll(/<h[1-4]\b[^>]*>[\s\S]*?<\/h[1-4]>/gi)];
-                let count = 0;
-
-                for (const heading of headings) {
-                  const a = heading[0].match(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
-                  if (!a) continue;
-
-                  const title = clean(a[2]);
-                  if (title.length < 6 || /搜狗|微信首页|登录|注册|下一页|上一页/.test(title)) continue;
-
-                  const href = absolutize(a[1]);
-                  if (!/weixin\.sogou\.com|mp\.weixin\.qq\.com/i.test(href)) continue;
-
-                  const pos = heading.index;
-                  const context = clean(html.slice(Math.max(0, pos - 1800), Math.min(html.length, pos + 3200)));
-                  const key = `${title}|${href}`;
-                  if (seen.has(key)) continue;
-                  seen.add(key);
-                  count++;
-
-                  articles.push({
-                    title,
-                    search_result_url: href,
-                    publish_date_candidate: findDate(context),
-                    account_name_in_context: context.includes(ACCOUNT),
-                    query,
-                    page,
-                    context_excerpt: context.slice(0, 900)
-                  });
-                }
-
-                console.log(`本页提取到 ${count} 条候选标题`);
-                await new Promise(r => setTimeout(r, 1000));
-              } catch (e) {
-                errors.push({ query, page, error: String(e.message || e) });
-                break;
-              }
-            }
-          }
-
-          const today = new Date().toISOString().slice(0, 10);
-          const from = '2022-11-01';
-
-          const report = {
-            generated_at: new Date().toISOString(),
-            account: ACCOUNT,
-            requested_range: { from, to: today },
-            warning: '搜索候选不等于完整公众号历史档案；搜索结果链接、日期和公众号归属均需核验。',
-            stats: {
-              unique_candidates: articles.length,
-              dates_found: articles.filter(a => a.publish_date_candidate).length,
-              in_requested_range: articles.filter(a =>
-                a.publish_date_candidate &&
-                a.publish_date_candidate >= from &&
-                a.publish_date_candidate <= today
-              ).length,
-              errors: errors.length
-            },
-            errors,
-            articles,
-            diagnostics
-          };
-
-          await fs.mkdir('sogou-test-output', { recursive: true });
-          await fs.writeFile(
-            'sogou-test-output/sogou-test-results.json',
-            JSON.stringify(report, null, 2),
-            'utf8'
+          con*t wechat = JSON.parse(
+           *fs.readFileSync("wechat-news.json"* "utf8")
           );
 
-          console.log('统计：', JSON.stringify(report.stats));
-          console.log('诊断片段和候选数据已写入 JSON。');
-          EOF
+          i* (!Array.isArray(wechat)) {
+      *     throw new Error("wechat-news.*son 顶层不是数组");
+          }
 
-          node /tmp/sogou-test.mjs
+       *  if (wechat.length === 0) {
+     *      throw new Error("wechat-news*json 中没有文章");
+          }
 
-      - name: Upload Sogou diagnostic results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: sogou-test-results
-          path: sogou-test-output/sogou-test-results.json
-          if-no-files-found: warn
-          retention-days: 7
+       *  for (const item of wechat) {
+   *        if (!item.title || !item.u*l) {
+              throw new Error*"存在缺少标题或链接的微信文章");
+            }
+ *        }
+
+          console.log(`*信文章数量：${wechat.length}`);
+        * console.log(`最新文章：${wechat[0].tit*e}`);
+          NODE
+
+      - name* Commit and push changes
+        r*n: |
+          set -euo pipefail
+
+*         git config user.name "git*ub-actions[bot]"
+          git con*ig user.email "41898282+github-act*ons[bot]@users.noreply.github.com"*
+          git add auto-news.json *echat-news.json
+
+          if git *iff --cached --quiet; then
+       *    echo "没有新增微信文章，不需要提交"
+        *   exit 0
+          fi
+
+          *it commit -m "chore: update automa*ically collected WeChat news"
+
+   *      git pull --rebase origin mai*
+          git push origin HEAD:ma*n
