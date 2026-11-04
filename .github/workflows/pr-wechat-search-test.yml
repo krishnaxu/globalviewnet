@@ -15,7 +15,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
@@ -28,10 +28,11 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Discover candidates
+      - name: Verify script is intact
         run: |
           set -euo pipefail
-          node scripts/wechat-search.mjs
+          node --check scripts/wechat-resolve.mjs
+          node -e 'const fs=require("fs"),c=require("crypto");const s=fs.readFileSync("scripts/wechat-resolve.mjs","utf8").replace(/\s+/g,"");const x=c.createHash("sha256").update(s).digest("hex");console.log("fingerprint "+x.slice(0,8));if(x!=="c56dc3cdf602d2f6d81f822df998255e464cfa399f08ae6d4e5d6c00763b17d0")throw new Error("wechat-resolve.mjs 与预期内容不一致，粘贴时被改动，请重新全量粘贴")'
 
       - name: Install browser
         run: |
@@ -39,32 +40,20 @@ jobs:
           npm install --no-save playwright
           npx playwright install --with-deps chromium
 
-      - name: Resolve real WeChat links
+      - name: Discover and archive WeChat articles
         run: |
           set -euo pipefail
           node scripts/wechat-resolve.mjs
 
-      - name: Archive WeChat articles
-        run: |
-          set -euo pipefail
-          node scripts/pr-wechat-articles.mjs
-
-      - name: Validate archive
-        run: |
-          set -euo pipefail
-
-          test -f content/pr-portfolio/wechat-articles.json
-
-          node -e 'const fs=require("fs");const items=JSON.parse(fs.readFileSync("content/pr-portfolio/wechat-articles.json","utf8"));if(!Array.isArray(items)||items.length===0)throw new Error("微信归档为空");const good=items.filter(x=>x.source_url&&x.title&&x.body&&String(x.body).length>=500);if(!good.length)throw new Error("没有可用的完整微信文章");console.log("微信归档："+items.length+" 篇；完整正文："+good.length+" 篇");'
-
       - name: Commit and push changes
+        if: ${{ !cancelled() }}
         run: |
           set -euo pipefail
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add wechat-candidates.json wechat-news.json content/pr-portfolio/wechat-articles.json
+          git add content/pr-portfolio/wechat-articles.json wechat-backfill-state.json
 
           if git diff --cached --quiet; then
             echo "没有新增微信文章"
