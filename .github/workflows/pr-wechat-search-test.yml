@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "25 0,6,12,18 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "content/pr-portfolio/wechat-seed-urls.txt"
 
 permissions:
   contents: write
@@ -32,7 +37,7 @@ jobs:
         run: |
           set -euo pipefail
           node --check scripts/wechat-resolve.mjs
-          node -e 'const fs=require("fs"),c=require("crypto");const s=fs.readFileSync("scripts/wechat-resolve.mjs","utf8").replace(/\s+/g,"");const x=c.createHash("sha256").update(s).digest("hex");console.log("fingerprint "+x.slice(0,8));if(x!=="c56dc3cdf602d2f6d81f822df998255e464cfa399f08ae6d4e5d6c00763b17d0")throw new Error("wechat-resolve.mjs 与预期内容不一致，粘贴时被改动，请重新全量粘贴")'
+          node -e 'const fs=require("fs"),c=require("crypto");const s=fs.readFileSync("scripts/wechat-resolve.mjs","utf8").replace(/\s+/g,"");const x=c.createHash("sha256").update(s).digest("hex");console.log("fingerprint "+x.slice(0,8));if(x!=="96991c545280c5377227feb00bbdc0bcc3d08459cee6f331c555ea534ea55b76")throw new Error("wechat-resolve.mjs 与预期内容不一致，粘贴时被改动，请重新全量粘贴")'
 
       - name: Install browser
         run: |
