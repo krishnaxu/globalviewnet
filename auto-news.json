@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-11-04T15:59:58.038Z",
+  "generated_at": "2026-11-04T17:02:18.835Z",
   "items": [
+    {
+      "id": "jim-cramer-says-this-bank-stock-is-a-buy-afte-c8a9384b7046",
+      "language": "en",
+      "title": "Jim Cramer says this bank stock is a buy after its post-election pullback",
+      "excerpt": "The Investing Club holds its \"Morning Meeting\" every weekday at 10:20 a.m. ET.",
+      "date": "2026-11-04T16:54:39.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/04/cramer-says-this-bank-stock-is-a-buy-after-its-post-election-pullback.html",
+      "image": ""
+    },
+    {
+      "id": "i-tried-apple-s-siri-recaps-they-re-surprisin-ef0e90236814",
+      "language": "en",
+      "title": "I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling",
+      "excerpt": "Apple's AI-powered Siri Recaps won me over in just one day, despite my privacy reservations. But there's still room for improvement.",
+      "date": "2026-11-04T16:51:35.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little-unsettling/",
+      "image": ""
+    },
+    {
+      "id": "what-republicans-huge-loss-means-for-trump-1d5cea30d9a0",
+      "language": "en",
+      "title": "What Republicans' huge loss means for Trump",
+      "excerpt": "Trump's handling of tariffs, the Iran war and an array of Washington-area construction projects are sure to face sudden pushback from newly empowered Democrats.",
+      "date": "2026-11-04T16:44:04.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/04/trump-midterm-election-results-congress.html",
+      "image": ""
+    },
+    {
+      "id": "google-faces-backlash-for-plan-that-would-tur-dca8692856b1",
+      "language": "en",
+      "title": "Google faces backlash for plan that would turn off Search for schools that restrict AI",
+      "excerpt": "Politicians on the left, like NYC mayor Zohran Mamdani and former FTC chair Lina Khan, accused Google of acting as an unregulated monopoly.",
+      "date": "2026-11-04T16:17:22.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+      "image": ""
+    },
+    {
+      "id": "中东欧四国总统峰会在斯洛伐克举行-a4040c3902b7",
+      "language": "zh",
+      "title": "中东欧四国总统峰会在斯洛伐克举行",
+      "excerpt": "维谢格拉德集团(波兰、匈牙利、捷克、斯洛伐克)总统峰会4日在斯洛伐克西部城市特伦钦拉开帷幕，峰会将持续至5日。此次峰会旨在重振四国合作机制，加强成员国在欧洲事务中的集体影响力，推动共同关心事项的落实。",
+      "date": "2026-11-04T16:09:38.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-05/10726334.shtml",
+      "image": ""
+    },
+    {
+      "id": "binance-says-hackers-who-stole-billions-in-cr-ef01caaeb603",
+      "language": "en",
+      "title": "Binance says hackers who stole billions in crypto spent months planning heist",
+      "excerpt": "Techniques included laptop infections, compromised internal tooling, and fake job interviews.",
+      "date": "2026-11-04T16:06:03.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/binance-500x500.jpg"
+    },
     {
       "id": "jim-cramer-s-top-10-things-to-watch-in-the-st-f432b8640368",
       "language": "en",
@@ -52,6 +112,16 @@
       "image": ""
     },
     {
+      "id": "what-i-learned-driving-the-slate-electric-tru-ba5b4b8fec00",
+      "language": "en",
+      "title": "What I learned driving the Slate electric truck prototype",
+      "excerpt": "After 45 minutes behind the wheel, I am more optimistic about the $25,000 EV.",
+      "date": "2026-11-04T15:42:18.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/11/what-i-learned-driving-the-slate-electric-truck-prototype/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/slate-in-car-500x500.jpg"
+    },
+    {
       "id": "kraft-heinz-to-divest-its-north-american-coff-31d9d6f2ecec",
       "language": "en",
       "title": "Kraft Heinz to divest its North American coffee business in $650 million deal",
@@ -69,6 +139,16 @@
       "date": "2026-11-04T15:34:23.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-04/10726323.shtml",
+      "image": ""
+    },
+    {
+      "id": "elon-musk-s-record-election-bet-backfired-the-7b6b3b8228d8",
+      "language": "en",
+      "title": "Elon Musk’s record election bet backfired. The backlash may reach beyond one billionaire",
+      "excerpt": "Elon Musk's $474 million election gamble falters as Democrats threaten his Texas empire.",
+      "date": "2026-11-04T15:29:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/04/elon-musk-midterms-ai-data-centers.html",
       "image": ""
     },
     {
@@ -130,6 +210,16 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/cq62yjnmg4ego?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dbb9/live/c954f440-d84f-11f1-b710-b15e87d8ef65.jpg"
+    },
+    {
+      "id": "the-dea-banned-a-drug-some-opioid-users-calle-0b20e1c9a9cc",
+      "language": "en",
+      "title": "The DEA banned a drug some opioid users called a miracle",
+      "excerpt": "Researchers say the Schedule I ban could kill studies of a promising opioid treatment.",
+      "date": "2026-11-04T15:08:48.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/health/2026/11/the-dea-banned-a-drug-some-opioid-users-called-a-miracle/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2017/11/GettyImages-679470044-500x500.jpg"
     },
     {
       "id": "analysis-the-democrats-have-one-chance-to-ext-ac354aba49eb",
@@ -2909,96 +2999,6 @@
       "date": "2026-11-04T03:17:53.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-04/10725850.shtml",
-      "image": ""
-    },
-    {
-      "id": "济南市人民检察院举行第三届特约检察员聘请仪式暨座谈会-357b86b709b2",
-      "language": "zh",
-      "title": "济南市人民检察院举行第三届特约检察员聘请仪式暨座谈会",
-      "excerpt": "11月3日下午，济南市人民检察院举行第三届特约检察员聘请仪式。市人民检察院党组书记、检察长蒋万云，市委统战部分管日常工作的副部长孔祥敏出席仪式并讲话。",
-      "date": "2026-11-04T03:16:51.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/txy/2026/11-04/10725856.shtml",
-      "image": ""
-    },
-    {
-      "id": "国台办-台胞大陆游从奔赴风景转向探寻文脉-d953ea86349b",
-      "language": "zh",
-      "title": "国台办：台胞大陆游从奔赴风景转向探寻文脉",
-      "excerpt": "中新网11月4日电 11月4日，国务院台办举行例行新闻发布会。有记者问：近日，台中旅展登场，其中赴大陆个人游受到岛内民众广泛关注，成为咨询热点。请问对此有何评论？",
-      "date": "2026-11-04T03:11:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-04/10725854.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴基斯坦成功试射首枚国产空对空导弹-0875192ada93",
-      "language": "zh",
-      "title": "巴基斯坦成功试射首枚国产空对空导弹",
-      "excerpt": "中新网11月4日电 据土耳其阿纳多卢通讯社报道，巴基斯坦军方3日宣布，巴方已成功试射首枚自主研发的空对空导弹。",
-      "date": "2026-11-04T03:10:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-04/10725852.shtml",
-      "image": ""
-    },
-    {
-      "id": "台退役-金门舰-转交菲律宾-国台办-对外部势力无底线献媚输诚-e5dbfd4e644c",
-      "language": "zh",
-      "title": "台退役“金门舰”转交菲律宾，国台办：对外部势力无底线献媚输诚",
-      "excerpt": "在国务院台办4日举行的例行新闻发布会上，有记者问：台媒报道，从台海巡署退役的“金门舰”转交菲律宾后，成为菲律宾海岸防卫队的“萨兰加尼舰”，引发岛内舆论疑虑与批评。请问对此有何评论？",
-      "date": "2026-11-04T03:08:35.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-04/10725851.shtml",
-      "image": ""
-    },
-    {
-      "id": "陆委会称现在没有-台独-问题-国台办回应-e33277174d38",
-      "language": "zh",
-      "title": "陆委会称现在没有“台独”问题 国台办回应",
-      "excerpt": "中新网11月4日电 11月4日，国务院台办举行例行新闻发布会。有记者问：近日，陆委会称，现在没有“台独”问题，只有要不要被强迫统一的问题，台方的两岸政策目标为“维持和平现状、捍卫民主自由”。请问对此有何评论？",
-      "date": "2026-11-04T03:07:47.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-04/10725849.shtml",
-      "image": ""
-    },
-    {
-      "id": "白宫-美总统夫人梅拉尼娅将在白宫邀请俄乌代表会谈-4581046a2aef",
-      "language": "zh",
-      "title": "白宫：美总统夫人梅拉尼娅将在白宫邀请俄乌代表会谈",
-      "excerpt": "中新网11月4日电 美国白宫当地时间3日发表声明称，美国总统夫人梅拉尼娅将于5日在白宫邀请俄罗斯和乌克兰代表会谈。",
-      "date": "2026-11-04T03:06:43.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-04/10725843.shtml",
-      "image": ""
-    },
-    {
-      "id": "中外24位艺术家39件-组-作品亮相第二届中法艺术设计展-fe649cd8e8ba",
-      "language": "zh",
-      "title": "中外24位艺术家39件（组）作品亮相第二届中法艺术设计展",
-      "excerpt": "中新网北京11月4日电 由中法文化遗产与创新中心主办的第二届中法艺术设计展《互境》日前在巴黎举行，展览汇聚中国、法国、荷兰等国家和地区的24位艺术家的39件(组)作品，以“展览—论坛—颁奖”的复合形式展开跨文化的艺术对话。",
-      "date": "2026-11-04T02:59:56.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-04/10725824.shtml",
-      "image": ""
-    },
-    {
-      "id": "金与正-美国持续发出对朝敌对信号-e6034903ecdc",
-      "language": "zh",
-      "title": "金与正：美国持续发出对朝敌对信号",
-      "excerpt": "中新网11月4日电 据朝中社4日报道，朝鲜劳动党中央委员会部长金与正当天发表谈话，称美国持续发出对朝敌对信号，促使朝鲜从多方面重新考虑美国这一实体。",
-      "date": "2026-11-04T02:57:06.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-04/10725841.shtml",
-      "image": ""
-    },
-    {
-      "id": "两岸各界围绕-两制-台湾方案研讨热烈-国台办回应-025fef9e7ee1",
-      "language": "zh",
-      "title": "两岸各界围绕“两制”台湾方案研讨热烈 国台办回应",
-      "excerpt": "中新网11月4日电 11月4日，国务院台办举行例行新闻发布会。有记者问：近日，第十二届中华文化论坛在北京举行。有与会学者表示，一段时间以来，两岸各界围绕“一国两制”台湾方案研讨热烈，折射出台湾社会普遍认知“台独”是死路，开始思考统一后安排。请问对此有何评论？",
-      "date": "2026-11-04T02:50:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-04/10725836.shtml",
       "image": ""
     }
   ]
