@@ -1009,13 +1009,14 @@ async function main() {
   }
 
   async function handleItem(listTitle) {
-    var key = normalizeTitle(listTitle);
+        var key = normalizeTitle(listTitle);
     var linkIndex = await findLinkIndex(listTitle);
 
     if (linkIndex < 0) {
       try {
         await openList(currentUrl);
-    if (error.code === "CAPTCHA") {
+      } catch (error) {
+        if (error.code === "CAPTCHA") {
           return "captcha";
         }
       }
