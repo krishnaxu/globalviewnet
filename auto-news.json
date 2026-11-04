@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-11-04T19:04:22.292Z",
+  "generated_at": "2026-11-04T20:04:06.227Z",
   "items": [
+    {
+      "id": "cvs-health-plans-to-split-itself-up-here-s-wh-47238cc74bd3",
+      "language": "en",
+      "title": "CVS Health plans to split itself up. Here's why a breakup could make sense now",
+      "excerpt": "Analysts say that after a roughly two-year turnaround the company's retail pharmacy business and other units may be strong enough to stand on their own.",
+      "date": "2026-11-04T19:58:41.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/04/cvs-health-pharmacy-aetna-split.html",
+      "image": ""
+    },
+    {
+      "id": "democrats-take-congress-in-a-blue-wave-here-s-901dabac4060",
+      "language": "en",
+      "title": "Democrats take Congress in a blue wave. Here's what it means for your money",
+      "excerpt": "Blue wave gives Democrats control of Congress. Here's how their agenda could affect your money, from health care and taxes to student loans and Social Security.",
+      "date": "2026-11-04T19:53:55.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/04/blue-wave-democrats-control-congress-your-money.html",
+      "image": ""
+    },
+    {
+      "id": "new-flutter-ceo-bets-on-fanduel-promotions-to-ac95d2138e87",
+      "language": "en",
+      "title": "New Flutter CEO bets on FanDuel promotions to win customers as profits suffer",
+      "excerpt": "Flutter's new CEO Dan Taylor issued his first earnings report as CEO on Wednesday.",
+      "date": "2026-11-04T19:53:32.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/04/flutter-fanduel-promotions-q3-2026.html",
+      "image": ""
+    },
+    {
+      "id": "hyperscalers-and-apple-surge-after-election-r-737185cc76fb",
+      "language": "en",
+      "title": "Hyperscalers and Apple surge after election results remove investor uncertainty",
+      "excerpt": "Apple, Amazon, Google, Meta and Microsoft stock was up after the midterms, while stocks tied to Trump advisor Elon Musk and data centers fell on Wednesday.",
+      "date": "2026-11-04T19:37:43.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/04/apple-and-other-big-tech-stocks-surge-after-2026-midterm-elections.html",
+      "image": ""
+    },
+    {
+      "id": "open-source-ai-is-booming-hugging-face-explai-5112f3d51982",
+      "language": "en",
+      "title": "Open source AI is booming. Hugging Face explains who profits.",
+      "excerpt": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture value? And with Chinese open models gaining ground, can American players keep up? On this episode of […]",
+      "date": "2026-11-04T19:30:04.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
+      "image": ""
+    },
+    {
+      "id": "duckduckgo-pitches-itself-to-schools-amid-bac-e582a56b9ede",
+      "language": "en",
+      "title": "DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy",
+      "excerpt": "DuckDuckGo is courting schools frustrated by Google's AI restrictions, pointing educators to its search engine and options to disable AI features.",
+      "date": "2026-11-04T19:29:52.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+      "image": ""
+    },
+    {
+      "id": "the-post-election-rally-masks-a-sharp-split-i-9d271aa289b0",
+      "language": "en",
+      "title": "The post-election rally masks a sharp split in the AI trade. Who stands to win?",
+      "excerpt": "Investors are making divergent bets on AI stocks Wednesday.",
+      "date": "2026-11-04T19:21:20.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/04/post-election-rally-masks-a-sharp-split-in-the-ai-trade-who-wins.html",
+      "image": ""
+    },
     {
       "id": "democrats-map-out-an-agenda-to-address-afford-35c442076c32",
       "language": "en",
@@ -42,6 +112,16 @@
       "image": ""
     },
     {
+      "id": "waymo-confirms-it-will-start-splitting-with-u-d5ca3246c2ed",
+      "language": "en",
+      "title": "Waymo confirms it will start splitting with Uber in January 2028",
+      "excerpt": "The split will set up direct competition in those markets, as Uber has many other autonomous vehicle partners on its network.",
+      "date": "2026-11-04T18:12:30.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/04/waymo-confirms-it-will-start-splitting-with-uber-in-january-2028/",
+      "image": ""
+    },
+    {
       "id": "you-can-see-everything-is-getting-an-outer-sp-0f7132badf3c",
       "language": "en",
       "title": "‘You Can See Everything’ is getting an outer space release and it hasn’t even come out in Europe yet",
@@ -50,6 +130,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/04/you-can-see-everything-is-getting-an-outer-space-release-and-it-hasnt-even-come-out-in-europe-yet/",
       "image": ""
+    },
+    {
+      "id": "people-say-they-want-small-smartphones-the-en-068f6f4a220e",
+      "language": "en",
+      "title": "People say they want small smartphones—the Enough Phone will put that to the test",
+      "excerpt": "It won't win the specs race, but it will actually fit in your hand.",
+      "date": "2026-11-04T18:00:40.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/11/people-say-they-want-small-smartphones-the-enough-phone-will-put-that-to-the-test/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Enough-Phone-in-Hand-500x500.jpg"
     },
     {
       "id": "ukraine-says-bodycam-video-shows-deadly-russi-16e3880f90bf",
@@ -2909,96 +2999,6 @@
       "date": "2026-11-04T04:10:38.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/iframe/2026/11-04/10725893.shtml",
-      "image": ""
-    },
-    {
-      "id": "直播海报-ai按摩机器人手法如何-记者在-互联网之光-现场体验-f0db4749410e",
-      "language": "zh",
-      "title": "直播海报：AI按摩机器人手法如何 记者在“互联网之光”现场体验",
-      "excerpt": "",
-      "date": "2026-11-04T04:07:46.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-04/10725892.shtml",
-      "image": ""
-    },
-    {
-      "id": "郭宁宁任福建省副省长-代省长-8a61143fe0f4",
-      "language": "zh",
-      "title": "郭宁宁任福建省副省长、代省长",
-      "excerpt": "福建省十四届人大常委会第二十五次会议11月4日决定，接受赵龙辞去福建省人民政府省长职务的请求，任命郭宁宁为福建省人民政府副省长、代理省长。",
-      "date": "2026-11-04T03:55:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-04/10725888.shtml",
-      "image": ""
-    },
-    {
-      "id": "新疆兵团阿拉尔沙漠边盐碱水养出生蚝-a69bcfc9f8d5",
-      "language": "zh",
-      "title": "新疆兵团阿拉尔沙漠边盐碱水养出生蚝",
-      "excerpt": "新疆兵团阿拉尔市地处塔克拉玛干沙漠西北缘，当地从宁波引入生蚝苗，科研团队改良盐碱水环境。历经近半年培育，生蚝养殖成功，单只最重 316 克。依托充足光照优势，生蚝长势优于沿海。随着阿拉尔盐碱地持续开发水产养殖，这片荒漠盐碱地正成为边疆的 “蓝色粮仓”。(戎睿 张康 新疆阿拉尔报道)",
-      "date": "2026-11-04T03:54:04.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/cj/shipin/cns/2026/11-04/news1073773.shtml",
-      "image": ""
-    },
-    {
-      "id": "weapon-or-wine-bottle-china-disputes-reports--c99cf4f2df7b",
-      "language": "en",
-      "title": "Weapon or wine bottle? China disputes reports of artillery shell in Papua New Guinea",
-      "excerpt": "Papua New Guinea police had earlier dismissed speculation that the 32kg object was \"merely a dummy\".",
-      "date": "2026-11-04T03:46:10.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cm0qkxzv3j99o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/03fb/live/ecd52fb0-d800-11f1-b851-6586c863d7ea.jpg"
-    },
-    {
-      "id": "国家发展改革委-十五五-时期我国将新建约15个民用运输机场-aa182a4e9f3e",
-      "language": "zh",
-      "title": "国家发展改革委：“十五五”时期我国将新建约15个民用运输机场",
-      "excerpt": "中新网11月4日电 国家发展改革委4日上午召开奋进“十五五”系列新闻发布会，介绍夯实发展支撑有关情况。基础设施发展司司长夏鑫表示，“十五五”时期，我国将新建约15个民用运输机场，行业安全水平、服务能力、基础设施要迈向国际一流。",
-      "date": "2026-11-04T03:37:12.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-04/10725874.shtml",
-      "image": ""
-    },
-    {
-      "id": "anthony-zurcher-democrats-surge-deep-into-rep-a57e01296f1d",
-      "language": "en",
-      "title": "Anthony Zurcher: Democrats surge deep into Republican territory with historic wins",
-      "excerpt": "Two Senate races that a year ago were thought to be battlegrounds turned out to be slam-dunks for the Democrats.",
-      "date": "2026-11-04T03:34:58.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cwz0v5lv30lyo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cb44/live/543807b0-d7fa-11f1-a701-fddedf244c16.jpg"
-    },
-    {
-      "id": "广东江门调味品技贸措施公共服务平台上线-fecf19555cb9",
-      "language": "zh",
-      "title": "广东江门调味品技贸措施公共服务平台上线",
-      "excerpt": "中新网广州11月4日电 (记者 郭军)记者4日从江门海关获悉，2026年广东省内海关技术性贸易措施工作会议近日在江门召开。会议期间，由江门海关推动建设的广东江门调味品技术性贸易措施公共服务平台正式上线运行。这是继今年全国首个调味品国家级技贸评议基地落户江门新会后，江门海关服务调味品出海的又一实招，标志着“中国味道”应对国外技术壁垒、参与国际规则对话有了常态化、数字化的平台支撑。",
-      "date": "2026-11-04T03:34:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-04/10725869.shtml",
-      "image": ""
-    },
-    {
-      "id": "贴息政策带动广州二手住宅10月网签同比正增长-eae83d31f897",
-      "language": "zh",
-      "title": "贴息政策带动广州二手住宅10月网签同比正增长",
-      "excerpt": "中新网广州11月4日电 (记者 许青青)据广州市房地产中介协会3日发布的10月二手住宅市场交易月报，本月广州市二手住宅网签套数达8513宗，网签面积82.90万平方米，同比分别增长5.65%、2.98%；环比方面，网签套数小幅上升0.98%，网签面积微降1.32%。",
-      "date": "2026-11-04T03:33:48.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-04/10725877.shtml",
-      "image": ""
-    },
-    {
-      "id": "京港洽谈会东城区专题推介活动举办-共话合作机遇与产业发展-101553dc15bc",
-      "language": "zh",
-      "title": "京港洽谈会东城区专题推介活动举办 共话合作机遇与产业发展",
-      "excerpt": "中新网北京11月4日电 (记者 陈杭)第二十九届北京·香港经济合作研讨洽谈会东城区专题推介活动3日在北京举行。活动以“紫金筑梦 紫荆同行”为主题，邀请行业专家、企业领军人物围绕“规划同频，产业共兴”展开精彩分享，共话合作机遇，共谋产业发展。",
-      "date": "2026-11-04T03:32:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-04/10725873.shtml",
       "image": ""
     }
   ]
