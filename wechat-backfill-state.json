@@ -1,6 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
   "windows": {},
   "rejected": {},
-  "attempts": {}
+  "attempts": {},
+  "seeds": {},
+  "seedErrors": {}
 }
