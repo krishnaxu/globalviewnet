@@ -1,21 +1,25 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const ROOT = process.cwd();
-const OUTPUT_FILE = path.join(ROOT, "wechat-news.json");
+const OUTPUT_FILE = path.join(
+  process.cwd(),
+  "wechat-news.json"
+);
 
 const QUERY = "DrG的雍熙路";
 
-const HEADERS = {
+const BASE_HEADERS = {
   "User-Agent":
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
     "AppleWebKit/537.36 (KHTML, like Gecko) " +
     "Chrome/130.0.0.0 Safari/537.36",
-  "Accept":
+  Accept:
     "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
   "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-  "Referer": "https://weixin.sogou.com/"
+  Referer: "https://weixin.sogou.com/"
 };
+
+let sessionCookie = "";
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -24,12 +28,26 @@ function sleep(ms) {
 function decodeHtml(value = "") {
   return String(value)
     .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, "\"")
+    .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/&nbsp;/g, " ")
     .trim();
+}
+
+function decodeJavascript(value = "") {
+  return decodeHtml(value)
+    .replace(/\\x([0-9a-f]{2})/gi, (_, hex) =>
+      String.fromCharCode(parseInt(hex, 16))
+    )
+    .replace(/\\u([0-9a-f]{4})/gi, (_, hex) =>
+      String.fromCharCode(parseInt(hex, 16))
+    )
+    .replace(/\\\//g, "/")
+    .replace(/\\"/g, '"')
+    .replace(/\\'/g, "'")
+    .replace(/\\\\/g, "\\");
 }
 
 function stripHtml(value = "") {
@@ -73,15 +91,69 @@ function isWechatUrl(raw = "") {
 function createId(value = "") {
   let hash = 2166136261;
 
-  for (let i = 0; i < value.length; i++) {
-    hash ^= value.charCodeAt(i);
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
     hash = Math.imul(hash, 16777619);
   }
 
   return `wechat-${(hash >>> 0).toString(16)}`;
 }
 
-async function request(url, redirect = "follow") {
+function saveCookies(response) {
+  let values = [];
+
+  if (
+    typeof response.headers.getSetCookie === "function"
+  ) {
+    values = response.headers.getSetCookie();
+  } else {
+    const value = response.headers.get("set-cookie");
+
+    if (value) {
+      values = value.split(
+        /,(?=[^;,]+=[^;,]+;)/
+      );
+    }
+  }
+
+  const cookieMap = new Map();
+
+  for (const existing of sessionCookie.split(";")) {
+    const part = existing.trim();
+    const separator = part.indexOf("=");
+
+    if (separator > 0) {
+      cookieMap.set(
+        part.slice(0, separator),
+        part.slice(separator + 1)
+      );
+    }
+  }
+
+  for (const cookie of values) {
+    const firstPart = cookie.split(";")[0];
+    const separator = firstPart.indexOf("=");
+
+    if (separator > 0) {
+      cookieMap.set(
+        firstPart.slice(0, separator).trim(),
+        firstPart.slice(separator + 1).trim()
+      );
+    }
+  }
+
+  sessionCookie = [...cookieMap.entries()]
+    .map(([key, value]) => `${key}=${value}`)
+    .join("; ");
+}
+
+async function request(
+  url,
+  {
+    redirect = "follow",
+    referer = "https://weixin.sogou.com/"
+  } = {}
+) {
   const controller = new AbortController();
 
   const timer = setTimeout(
@@ -90,11 +162,22 @@ async function request(url, redirect = "follow") {
   );
 
   try {
+    const headers = {
+      ...BASE_HEADERS,
+      Referer: referer
+    };
+
+    if (sessionCookie) {
+      headers.Cookie = sessionCookie;
+    }
+
     const response = await fetch(url, {
-      headers: HEADERS,
+      headers,
       redirect,
       signal: controller.signal
     });
+
+    saveCookies(response);
 
     const body = await response.text();
 
@@ -108,7 +191,7 @@ async function request(url, redirect = "follow") {
 }
 
 function parseSearchResults(html) {
-  const articles = [];
+  const output = [];
 
   const blocks = html.match(
     /<li\b[^>]*id=["']sogou_vr_[^"']*["'][^>]*>[\s\S]*?<\/li>/gi
@@ -117,86 +200,117 @@ function parseSearchResults(html) {
   for (const block of blocks) {
     const anchor =
       block.match(
-        /<h3[^>]*>[\s\S]*?<a[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i
+        /<h3\b[^>]*>[\s\S]*?<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i
       ) ||
       block.match(
-        /<a[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i
+        /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i
       );
 
     if (!anchor) continue;
 
-    const link = normalizeUrl(anchor[1]);
+    const searchLink = normalizeUrl(anchor[1]);
     const title = stripHtml(anchor[2]);
 
-    if (!link || !title) continue;
+    if (!searchLink || !title) continue;
 
     const summaryMatch = block.match(
-      /<p[^>]*class=["'][^"']*txt-info[^"']*["'][^>]*>([\s\S]*?)<\/p>/i
+      /<p\b[^>]*class=["'][^"']*txt-info[^"']*["'][^>]*>([\s\S]*?)<\/p>/i
     );
 
-    const accountMatches = [
-      ...block.matchAll(
-        /<a[^>]*>([\s\S]*?)<\/a>/gi
-      )
-    ];
-
-    let account = "";
-
-    for (const match of accountMatches) {
-      const text = stripHtml(match[1]);
-
-      if (
-        text.includes("DrG") ||
-        text.includes("雍熙路")
-      ) {
-        account = text;
-        break;
-      }
-    }
-
-    articles.push({
+    output.push({
       title,
-      searchLink: link,
+      searchLink,
       summary: summaryMatch
         ? stripHtml(summaryMatch[1])
-        : "",
-      account
+        : ""
     });
   }
 
-  return articles;
+  return output;
 }
 
-function extractDirectWechatUrl(text = "") {
-  const decoded = decodeHtml(text)
-    .replace(/\\\//g, "/")
-    .replace(/\\x26/gi, "&")
-    .replace(/\\x3d/gi, "=")
-    .replace(/\\u0026/gi, "&")
-    .replace(/\\u003d/gi, "=");
+function addSogouVerification(rawUrl) {
+  const url = normalizeUrl(rawUrl);
 
-  const matches = decoded.match(
-    /https?:\/\/mp\.weixin\.qq\.com\/s(?:\/[A-Za-z0-9_-]+|\?[^"'<> ]+)/gi
-  ) || [];
+  if (!url || !url.includes("/link?url=")) {
+    return url;
+  }
 
-  for (const match of matches) {
-    if (isWechatUrl(match)) {
-      return match;
+  if (
+    url.includes("&k=") &&
+    url.includes("&h=")
+  ) {
+    return url;
+  }
+
+  const random = Math.floor(
+    Math.random() * 100
+  ) + 1;
+
+  const urlIndex = url.indexOf("url=");
+
+  if (urlIndex < 0) {
+    return url;
+  }
+
+  /*
+   * 搜狗页面点击文章时，会根据链接位置生成 k 和 h。
+   */
+  const characterIndex =
+    urlIndex + 4 + 21 + random;
+
+  const verificationCharacter =
+    url.slice(
+      characterIndex,
+      characterIndex + 1
+    ) || "0";
+
+  const separator =
+    url.includes("?") ? "&" : "?";
+
+  return (
+    url +
+    separator +
+    `k=${randomionCharacter
+    )}`
+  );
+}
+
+function extractWechatUrl(text = "") {
+  const decoded = decodeJavascript(text);
+
+  const patterns = [
+    /https?:\/\/mp\.weixin\.qq\.com\/s\/[A-Za-z0-9_-]+(?:\?[^"'<> ]*)?/gi,
+    /https?:\/\/mp\.weixin\.qq\.com\/s\?[^"'<> ]+/gi
+  ];
+
+  for (const pattern of patterns) {
+    const matches = decoded.match(pattern) || [];
+
+    for (const match of matches) {
+      const cleaned = match
+        .replace(/[\\);,]+$/g, "")
+        .replace(/&amp;/g, "&");
+
+      if (isWechatUrl(cleaned)) {
+        return cleaned;
+      }
     }
   }
 
   return "";
 }
 
-function rebuildSogouJavascriptUrl(html = "") {
+function rebuildJavascriptUrl(html = "") {
   const fragments = [];
 
-  const patterns = [
-    /url\s*\+=\s*['"]([^'"]+)['"]/gi,
-    /url\s*=\s*url\s*\+\s*['"]([^'"]+)['"]/gi
+  const fragmentPatterns = [
+    /url\s*\+=\s*[^'"]*['"]/gi,
+    /url\s*=\s*url\s*\+\s*[^'"]*['"]/gi,
+    /url\s*=\s*[^'"]*mp\.weixin\.qq\.com[^'"]*['"]/gi
   ];
 
-  for (const pattern of patterns) {
+  for (const pattern of fragmentPatterns) {
     for (const match of html.matchAll(pattern)) {
       fragments.push(match[1]);
     }
@@ -206,44 +320,39 @@ function rebuildSogouJavascriptUrl(html = "") {
     return "";
   }
 
-  const combined = fragments
-    .join("")
-    .replace(/\\\//g, "/")
-    .replace(/\\x26/gi, "&")
-    .replace(/\\x3d/gi, "=")
-    .replace(/\\u0026/gi, "&")
-    .replace(/\\u003d/gi, "=");
+  const rebuilt = decodeJavascript(
+    fragments.join("")
+  );
 
-  const direct = extractDirectWechatUrl(combined);
-
-  if (direct) {
-    return direct;
-  }
-
-  const normalized = normalizeUrl(combined);
-
-  return isWechatUrl(normalized)
-    ? normalized
-    : "";
+  return extractWechatUrl(rebuilt);
 }
 
 async function resolveCandidate(candidate) {
   console.log(
-    `[wechat] 正在解析候选：${candidate.title}`
+    `[wechat] 正在解析：${candidate.title}`
+  );
+
+  const verifiedUrl = addSogouVerification(
+    candidate.searchLink
   );
 
   try {
-    if (isWechatUrl(candidate.searchLink)) {
-      return candidate.searchLink;
-    }
+    const result = await request(
+      verifiedUrl,
+      {
+        redirect: "manual",
+        referer:
+          "https://weixin.sogou.com/weixin?type=2&query=" +
+          encodeURIComponent(QUERY)
+      }
+    );
 
-    const first = await request(
-      candidate.searchLink,
-      "manual"
+    console.log(
+      `[wechat] 跳转页 HTTP ${result.response.status}`
     );
 
     const location =
-      first.response.headers.get("location");
+      result.response.headers.get("location");
 
     if (location) {
       const redirected = normalizeUrl(location);
@@ -253,41 +362,17 @@ async function resolveCandidate(candidate) {
       }
     }
 
-    let articleUrl =
-      extractDirectWechatUrl(first.body);
+    const direct = extractWechatUrl(result.body);
 
-    if (articleUrl) {
-      return articleUrl;
+    if (direct) {
+      return direct;
     }
 
-    articleUrl =
-      rebuildSogouJavascriptUrl(first.body);
+    const rebuilt =
+      rebuildJavascriptUrl(result.body);
 
-    if (articleUrl) {
-      return articleUrl;
-    }
-
-    /*
-     * 搜狗跳转页可能通过 JavaScript 分段生成 URL。
-     * 再尝试解析所有字符串片段。
-     */
-    const quotedStrings = [
-      ...first.body.matchAll(
-        /['"]([^'"]{5,})['"]/g
-      )
-    ].map(match => match[1]);
-
-    const combined = quotedStrings
-      .join("")
-      .replace(/\\\//g, "/")
-      .replace(/\\x26/gi, "&")
-      .replace(/\\x3d/gi, "=");
-
-    articleUrl =
-      extractDirectWechatUrl(combined);
-
-    if (articleUrl) {
-      return articleUrl;
+    if (rebuilt) {
+      return rebuilt;
     }
 
     console.log(
@@ -297,7 +382,7 @@ async function resolveCandidate(candidate) {
     return "";
   } catch (error) {
     console.log(
-      `[wechat] 候选解析失败：${error.message}`
+      `[wechat] 解析失败：${error.message}`
     );
 
     return "";
@@ -329,34 +414,36 @@ function readExisting() {
 function deduplicate(items) {
   const urls = new Set();
   const titles = new Set();
+  const output = [];
 
-  return items.filter(item => {
+  for (const item of items) {
     const url = item.url || item.link || "";
 
-    const title = String(item.title || "")
+    const titleKey = String(item.title || "")
       .replace(/\s+/g, "")
       .toLowerCase();
 
-    if (!isWechatUrl(url)) {
-      return false;
-    }
-
-    if (!title) {
-      return false;
-    }
+    if (!isWechatUrl(url)) continue;
+    if (!titleKey) continue;
 
     if (
       urls.has(url) ||
-      titles.has(title)
+      titles.has(titleKey)
     ) {
-      return false;
+      continue;
     }
 
     urls.add(url);
-    titles.add(title);
+    titles.add(titleKey);
 
-    return true;
-  });
+    output.push({
+      ...item,
+      url,
+      link: url
+    });
+  }
+
+  return output;
 }
 
 async function main() {
@@ -374,29 +461,27 @@ async function main() {
     "https://weixin.sogou.com/weixin?" +
     params.toString();
 
-  const { response, body } =
-    await request(searchUrl);
+  const searchResult = await request(searchUrl);
 
   console.log(
-    `[wechat] 搜索 HTTP ${response.status}`
+    `[wechat] 搜索 HTTP ${searchResult.response.status}`
   );
 
   console.log(
-    `[wechat] 搜索页面长度 ${body.length}`
+    `[wechat] 搜索页面长度 ${searchResult.body.length}`
   );
 
   if (
     /验证码|访问过于频繁|异常访问|请输入验证码|antispider/i.test(
-      body
+      searchResult.body
     )
   ) {
-    throw new Error(
-      "首次搜索即触发搜狗反爬"
-    );
+    throw new Error("首次搜索触发搜狗反爬");
   }
 
-  const candidates =
-    parseSearchResults(body);
+  const candidates = parseSearchResults(
+    searchResult.body
+  );
 
   console.log(
     `[wechat] 搜狗返回 ${candidates.length} 个候选`
@@ -404,11 +489,10 @@ async function main() {
 
   const discovered = [];
 
-  for (
-    const candidate of candidates.slice(0, 10)
-  ) {
-    const articleUrl =
-      await resolveCandidate(candidate);
+  for (const candidate of candidates) {
+    const articleUrl = await resolveCandidate(
+      candidate
+    );
 
     if (articleUrl) {
       console.log(
@@ -426,9 +510,7 @@ async function main() {
         link: articleUrl,
         summary: candidate.summary,
         description: candidate.summary,
-        source:
-          candidate.account ||
-          "DrG的雍熙路",
+        source: "DrG的雍熙路",
         platform: "wechat",
         category: "微信",
         keyword: QUERY,
@@ -439,42 +521,31 @@ async function main() {
       });
     }
 
-    /*
-     * 故意放慢速度，减少触发搜狗反爬。
-     */
-    await sleep(3500);
+    await sleep(5000);
   }
 
-  const existing =
-    readExisting();
-
-  const finalItems =
-    deduplicate([
-      ...discovered,
-      ...existing
-    ]).slice(0, 100);
+  const finalItems = deduplicate([
+    ...discovered,
+    ...readExisting()
+  ]).slice(0, 100);
 
   fs.writeFileSync(
     OUTPUT_FILE,
-    JSON.stringify(
-      finalItems,
-      null,
-      2
-    ) + "\n",
+    `${JSON.stringify(finalItems, null, 2)}\n`,
     "utf8"
   );
 
   console.log(
-    `[wechat] 本次成功发现 ${deduplicate(discovered).length} 篇真实微信文章`
+    `[wechat] 本次成功发现 ${
+      deduplicate(discovered).length
+    } 篇真实微信文章`
   );
 
   console.log(
     `[wechat] 微信文章累计 ${finalItems.length} 篇`
   );
 
-  console.log(
-    "[wechat] 微信自动发现完成"
-  );
+  console.log("[wechat] 微信自动发现完成");
 }
 
 main().catch(error => {
