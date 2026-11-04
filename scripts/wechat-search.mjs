@@ -4,37 +4,31 @@ import path from "node:path";
 const ROOT = process.cwd();
 const OUTPUT_FILE = path.join(ROOT, "wechat-news.json");
 
-const QUERIES = [
-  "DrG的雍熙路",
-  "金斯瑞 DrG的雍熙路",
-  "ADC DrG的雍熙路",
-  "AIDD DrG的雍熙路",
-  "细胞治疗 DrG的雍熙路",
-  "基因治疗 DrG的雍熙路",
-  "核酸药物 DrG的雍熙路",
-  "抗体药物 DrG的雍熙路"
-];
+const QUERY = "DrG的雍熙路";
 
 const HEADERS = {
   "User-Agent":
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
     "AppleWebKit/537.36 (KHTML, like Gecko) " +
     "Chrome/130.0.0.0 Safari/537.36",
-  Accept:
+  "Accept":
     "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
   "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-  Referer: "https://weixin.sogou.com/"
+  "Referer": "https://weixin.sogou.com/"
 };
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 function decodeHtml(value = "") {
   return String(value)
     .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
+    .replace(/&quot;/g, "\"")
     .replace(/&#39;/g, "'")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/&nbsp;/g, " ")
-    .replace(/\s+/g, " ")
     .trim();
 }
 
@@ -47,27 +41,29 @@ function stripHtml(value = "") {
     .trim();
 }
 
-function normalizeUrl(rawUrl = "") {
-  if (!rawUrl) return "";
+function normalizeUrl(raw = "") {
+  if (!raw) return "";
 
   try {
-    const value = decodeHtml(rawUrl);
-    const url = new URL(value, "https://weixin.sogou.com");
-
-    url.hash = "";
-    return url.toString();
+    return new URL(
+      decodeHtml(raw),
+      "https://weixin.sogou.com"
+    ).toString();
   } catch {
     return "";
   }
 }
 
-function isWechatArticleUrl(rawUrl = "") {
+function isWechatUrl(raw = "") {
   try {
-    const url = new URL(rawUrl);
+    const url = new URL(raw);
 
     return (
       url.hostname === "mp.weixin.qq.com" &&
-      (url.pathname === "/s" || url.pathname.startsWith("/s/"))
+      (
+        url.pathname === "/s" ||
+        url.pathname.startsWith("/s/")
+      )
     );
   } catch {
     return false;
@@ -77,26 +73,26 @@ function isWechatArticleUrl(rawUrl = "") {
 function createId(value = "") {
   let hash = 2166136261;
 
-  for (let index = 0; index < value.length; index += 1) {
-    hash ^= value.charCodeAt(index);
+  for (let i = 0; i < value.length; i++) {
+    hash ^= value.charCodeAt(i);
     hash = Math.imul(hash, 16777619);
   }
 
   return `wechat-${(hash >>> 0).toString(16)}`;
 }
 
-async function request(url, options = {}) {
+async function request(url, redirect = "follow") {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 20000);
+
+  const timer = setTimeout(
+    () => controller.abort(),
+    20000
+  );
 
   try {
     const response = await fetch(url, {
-      ...options,
-      headers: {
-        ...HEADERS,
-        ...(options.headers || {})
-      },
-      redirect: options.redirect || "follow",
+      headers: HEADERS,
+      redirect,
       signal: controller.signal
     });
 
@@ -112,133 +108,196 @@ async function request(url, options = {}) {
 }
 
 function parseSearchResults(html) {
-  const results = [];
+  const articles = [];
 
-  const itemRegex =
-    /<li\b[^>]*id=["']sogou_vr_[^"']*["'][^>]*>([\s\S]*?)<\/li>/gi;
+  const blocks = html.match(
+    /<li\b[^>]*id=["']sogou_vr_[^"']*["'][^>]*>[\s\S]*?<\/li>/gi
+  ) || [];
 
-  const blocks = [...html.matchAll(itemRegex)];
-
-  for (const blockMatch of blocks) {
-    const block = blockMatch[1];
-
-    const titleMatch =
+  for (const block of blocks) {
+    const anchor =
       block.match(
-        /<h3\b[^>]*>[\s\S]*?<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i
+        /<h3[^>]*>[\s\S]*?<a[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i
       ) ||
       block.match(
-        /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i
+        /<a[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i
       );
 
-    if (!titleMatch) continue;
+    if (!anchor) continue;
 
-    const searchLink = normalizeUrl(titleMatch[1]);
-    const title = stripHtml(titleMatch[2]);
+    const link = normalizeUrl(anchor[1]);
+    const title = stripHtml(anchor[2]);
 
-    if (!searchLink || !title) continue;
+    if (!link || !title) continue;
 
     const summaryMatch = block.match(
-      /<p\b[^>]*class=["'][^"']*txt-info[^"']*["'][^>]*>([\s\S]*?)<\/p>/i
+      /<p[^>]*class=["'][^"']*txt-info[^"']*["'][^>]*>([\s\S]*?)<\/p>/i
     );
 
-    const accountMatch = block.match(
-      /<a\b[^>]*class=["'][^"']*account[^"']*["'][^>]*>([\s\S]*?)<\/a>/i
-    );
+    const accountMatches = [
+      ...block.matchAll(
+        /<a[^>]*>([\s\S]*?)<\/a>/gi
+      )
+    ];
 
-    results.push({
+    let account = "";
+
+    for (const match of accountMatches) {
+      const text = stripHtml(match[1]);
+
+      if (
+        text.includes("DrG") ||
+        text.includes("雍熙路")
+      ) {
+        account = text;
+        break;
+      }
+    }
+
+    articles.push({
       title,
-      searchLink,
-      summary: summaryMatch ? stripHtml(summaryMatch[1]) : "",
-      account: accountMatch ? stripHtml(accountMatch[1]) : ""
+      searchLink: link,
+      summary: summaryMatch
+        ? stripHtml(summaryMatch[1])
+        : "",
+      account
     });
   }
 
-  return results;
+  return articles;
 }
 
-function extractWechatUrlFromText(text = "") {
+function extractDirectWechatUrl(text = "") {
   const decoded = decodeHtml(text)
-    .replace(/\\x26/g, "&")
-    .replace(/\\x3d/g, "=")
     .replace(/\\\//g, "/")
-    .replace(/\\u0026/g, "&");
+    .replace(/\\x26/gi, "&")
+    .replace(/\\x3d/gi, "=")
+    .replace(/\\u0026/gi, "&")
+    .replace(/\\u003d/gi, "=");
 
-  const directMatch = decoded.match(
-    /https?:\/\/mp\.weixin\.qq\.com\/s\/?[A-Za-z0-9_-]+(?:\?[^"'<> ]*)?/i
-  );
+  const matches = decoded.match(
+    /https?:\/\/mp\.weixin\.qq\.com\/s(?:\/[A-Za-z0-9_-]+|\?[^"'<> ]+)/gi
+  ) || [];
 
-  if (directMatch && isWechatArticleUrl(directMatch[0])) {
-    return directMatch[0];
-  }
-
-  const bizMatch = decoded.match(
-    /https?:\/\/mp\.weixin\.qq\.com\/s\?[^"'<> ]+/i
-  );
-
-  if (bizMatch && isWechatArticleUrl(bizMatch[0])) {
-    return bizMatch[0];
+  for (const match of matches) {
+    if (isWechatUrl(match)) {
+      return match;
+    }
   }
 
   return "";
 }
 
-async function resolveSogouLink(searchLink) {
-  if (isWechatArticleUrl(searchLink)) {
-    return searchLink;
+function rebuildSogouJavascriptUrl(html = "") {
+  const fragments = [];
+
+  const patterns = [
+    /url\s*\+=\s*['"]([^'"]+)['"]/gi,
+    /url\s*=\s*url\s*\+\s*['"]([^'"]+)['"]/gi
+  ];
+
+  for (const pattern of patterns) {
+    for (const match of html.matchAll(pattern)) {
+      fragments.push(match[1]);
+    }
   }
 
-  try {
-    const first = await request(searchLink, {
-      redirect: "manual"
-    });
+  if (!fragments.length) {
+    return "";
+  }
 
-    const location = first.response.headers.get("location");
+  const combined = fragments
+    .join("")
+    .replace(/\\\//g, "/")
+    .replace(/\\x26/gi, "&")
+    .replace(/\\x3d/gi, "=")
+    .replace(/\\u0026/gi, "&")
+    .replace(/\\u003d/gi, "=");
+
+  const direct = extractDirectWechatUrl(combined);
+
+  if (direct) {
+    return direct;
+  }
+
+  const normalized = normalizeUrl(combined);
+
+  return isWechatUrl(normalized)
+    ? normalized
+    : "";
+}
+
+async function resolveCandidate(candidate) {
+  console.log(
+    `[wechat] 正在解析候选：${candidate.title}`
+  );
+
+  try {
+    if (isWechatUrl(candidate.searchLink)) {
+      return candidate.searchLink;
+    }
+
+    const first = await request(
+      candidate.searchLink,
+      "manual"
+    );
+
+    const location =
+      first.response.headers.get("location");
 
     if (location) {
-      const resolvedLocation = normalizeUrl(location);
+      const redirected = normalizeUrl(location);
 
-      if (isWechatArticleUrl(resolvedLocation)) {
-        return resolvedLocation;
+      if (isWechatUrl(redirected)) {
+        return redirected;
       }
     }
 
-    const bodyUrl = extractWechatUrlFromText(first.body);
+    let articleUrl =
+      extractDirectWechatUrl(first.body);
 
-    if (bodyUrl) {
-      return bodyUrl;
+    if (articleUrl) {
+      return articleUrl;
     }
 
-    const urlParts = [
+    articleUrl =
+      rebuildSogouJavascriptUrl(first.body);
+
+    if (articleUrl) {
+      return articleUrl;
+    }
+
+    /*
+     * 搜狗跳转页可能通过 JavaScript 分段生成 URL。
+     * 再尝试解析所有字符串片段。
+     */
+    const quotedStrings = [
       ...first.body.matchAll(
-        /url\s*\+?=\s*['"]([^'"]+)['"]/gi
+        /['"]([^'"]{5,})['"]/g
       )
-    ].map((match) => match[1]);
+    ].map(match => match[1]);
 
-    if (urlParts.length > 0) {
-      const combined = decodeHtml(urlParts.join(""))
-        .replace(/\\x26/g, "&")
-        .replace(/\\x3d/g, "=")
-        .replace(/\\\//g, "/");
+    const combined = quotedStrings
+      .join("")
+      .replace(/\\\//g, "/")
+      .replace(/\\x26/gi, "&")
+      .replace(/\\x3d/gi, "=");
 
-      const combinedUrl = normalizeUrl(combined);
+    articleUrl =
+      extractDirectWechatUrl(combined);
 
-      if (isWechatArticleUrl(combinedUrl)) {
-        return combinedUrl;
-      }
+    if (articleUrl) {
+      return articleUrl;
     }
 
-    const second = await request(searchLink, {
-      redirect: "follow"
-    });
+    console.log(
+      `[wechat] 未解析出微信地址：${candidate.title}`
+    );
 
-    if (isWechatArticleUrl(second.response.url)) {
-      return second.response.url;
-    }
-
-    return extractWechatUrlFromText(second.body);
+    return "";
   } catch (error) {
-    console.warn(
-      `[wechat] 跳转链接解析失败：${error.message}`
+    console.log(
+      `[wechat] 候选解析失败：${error.message}`
     );
 
     return "";
@@ -255,48 +314,57 @@ function readExisting() {
       fs.readFileSync(OUTPUT_FILE, "utf8")
     );
 
-    return Array.isArray(data)
-      ? data.filter((item) =>
-          isWechatArticleUrl(item.url || item.link || "")
-        )
-      : [];
+    if (!Array.isArray(data)) {
+      return [];
+    }
+
+    return data.filter(item =>
+      isWechatUrl(item.url || item.link || "")
+    );
   } catch {
     return [];
   }
 }
 
 function deduplicate(items) {
-  const seenUrls = new Set();
-  const seenTitles = new Set();
-  const output = [];
+  const urls = new Set();
+  const titles = new Set();
 
-  for (const item of items) {
+  return items.filter(item => {
     const url = item.url || item.link || "";
-    const titleKey = String(item.title || "")
+
+    const title = String(item.title || "")
       .replace(/\s+/g, "")
       .toLowerCase();
 
-    if (!isWechatArticleUrl(url)) continue;
-    if (!titleKey) continue;
-    if (seenUrls.has(url) || seenTitles.has(titleKey)) continue;
+    if (!isWechatUrl(url)) {
+      return false;
+    }
 
-    seenUrls.add(url);
-    seenTitles.add(titleKey);
+    if (!title) {
+      return false;
+    }
 
-    output.push({
-      ...item,
-      url,
-      link: url
-    });
-  }
+    if (
+      urls.has(url) ||
+      titles.has(title)
+    ) {
+      return false;
+    }
 
-  return output;
+    urls.add(url);
+    titles.add(title);
+
+    return true;
+  });
 }
 
-async function searchQuery(query) {
+async function main() {
+  console.log("[wechat] 微信自动发现开始");
+
   const params = new URLSearchParams({
     type: "2",
-    query,
+    query: QUERY,
     ie: "utf8",
     _sug_: "n",
     _sug_type_: ""
@@ -306,12 +374,15 @@ async function searchQuery(query) {
     "https://weixin.sogou.com/weixin?" +
     params.toString();
 
-  console.log(`[wechat] 正在搜索：${query}`);
-
-  const { response, body } = await request(searchUrl);
+  const { response, body } =
+    await request(searchUrl);
 
   console.log(
-    `[wechat] HTTP ${response.status}，页面长度 ${body.length}`
+    `[wechat] 搜索 HTTP ${response.status}`
+  );
+
+  console.log(
+    `[wechat] 搜索页面长度 ${body.length}`
   );
 
   if (
@@ -319,110 +390,98 @@ async function searchQuery(query) {
       body
     )
   ) {
-    console.warn(
-      `[wechat] 搜索“${query}”触发搜狗反爬`
+    throw new Error(
+      "首次搜索即触发搜狗反爬"
     );
-
-    return [];
   }
 
-  const candidates = parseSearchResults(body);
+  const candidates =
+    parseSearchResults(body);
 
   console.log(
-    `[wechat] 解析到 ${candidates.length} 个候选结果`
+    `[wechat] 搜狗返回 ${candidates.length} 个候选`
   );
 
-  const articles = [];
-
-  for (const candidate of candidates.slice(0, 10)) {
-    if (
-      candidate.account &&
-      !candidate.account.includes("DrG") &&
-      !candidate.account.includes("雍熙路")
-    ) {
-      continue;
-    }
-
-    const articleUrl = await resolveSogouLink(
-      candidate.searchLink
-    );
-
-    if (!isWechatArticleUrl(articleUrl)) {
-      continue;
-    }
-
-    articles.push({
-      id: createId(articleUrl),
-      title: candidate.title,
-      url: articleUrl,
-      link: articleUrl,
-      summary: candidate.summary,
-      description: candidate.summary,
-      source: candidate.account || "DrG的雍熙路",
-      platform: "wechat",
-      category: "微信",
-      keyword: query,
-      publishedAt: "",
-      pubDate: "",
-      collectedAt: new Date().toISOString()
-    });
-
-    console.log(`[wechat] 找到：${candidate.title}`);
-    console.log(`[wechat] 链接：${articleUrl}`);
-
-    await new Promise((resolve) =>
-      setTimeout(resolve, 800)
-    );
-  }
-
-  return articles;
-}
-
-async function main() {
-  console.log("[wechat] 搜狗微信文章发现开始");
-
-  const existing = readExisting();
   const discovered = [];
 
-  for (const query of QUERIES) {
-    try {
-      const items = await searchQuery(query);
-      discovered.push(...items);
-    } catch (error) {
-      console.error(
-        `[wechat] 搜索“${query}”失败：${error.message}`
+  for (
+    const candidate of candidates.slice(0, 10)
+  ) {
+    const articleUrl =
+      await resolveCandidate(candidate);
+
+    if (articleUrl) {
+      console.log(
+        `[wechat] 成功解析：${candidate.title}`
       );
+
+      console.log(
+        `[wechat] 微信地址：${articleUrl}`
+      );
+
+      discovered.push({
+        id: createId(articleUrl),
+        title: candidate.title,
+        url: articleUrl,
+        link: articleUrl,
+        summary: candidate.summary,
+        description: candidate.summary,
+        source:
+          candidate.account ||
+          "DrG的雍熙路",
+        platform: "wechat",
+        category: "微信",
+        keyword: QUERY,
+        publishedAt: "",
+        pubDate: "",
+        collectedAt:
+          new Date().toISOString()
+      });
     }
 
-    await new Promise((resolve) =>
-      setTimeout(resolve, 2000)
-    );
+    /*
+     * 故意放慢速度，减少触发搜狗反爬。
+     */
+    await sleep(3500);
   }
 
-  const finalItems = deduplicate([
-    ...discovered,
-    ...existing
-  ]).slice(0, 100);
+  const existing =
+    readExisting();
+
+  const finalItems =
+    deduplicate([
+      ...discovered,
+      ...existing
+    ]).slice(0, 100);
 
   fs.writeFileSync(
     OUTPUT_FILE,
-    `${JSON.stringify(finalItems, null, 2)}\n`,
+    JSON.stringify(
+      finalItems,
+      null,
+      2
+    ) + "\n",
     "utf8"
   );
 
   console.log(
+    `[wechat] 本次成功发现 ${deduplicate(discovered).length} 篇真实微信文章`
   );
 
   console.log(
-    `[wechat] 微信候选文章累计 ${finalItems.length} 篇`
+    `[wechat] 微信文章累计 ${finalItems.length} 篇`
   );
 
   console.log(
-    `[wechat] 已写入 wechat-news.json`
+    "[wechat] 微信自动发现完成"
   );
 }
 
-main().catch((error) => {
-  console.error("[wechat] 程序失败：", error);
+main().catch(error => {
+  console.error(
+    "[wechat] 运行失败：",
+    error.message
+  );
+
   process.exitCode = 1;
 });
