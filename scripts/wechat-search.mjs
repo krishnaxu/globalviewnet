@@ -236,46 +236,31 @@ function addSogouVerification(rawUrl) {
     return url;
   }
 
-  if (
-    url.includes("&k=") &&
-    url.includes("&h=")
-  ) {
+  if (url.includes("&k=") && url.includes("&h=")) {
     return url;
   }
 
-  const random = Math.floor(
-    Math.random() * 100
-  ) + 1;
-
+  const random = Math.floor(Math.random() * 100) + 1;
   const urlIndex = url.indexOf("url=");
 
   if (urlIndex < 0) {
     return url;
   }
 
-  /*
-   * 搜狗页面点击文章时，会根据链接位置生成 k 和 h。
-   */
   const characterIndex =
     urlIndex + 4 + 21 + random;
 
   const verificationCharacter =
-    url.slice(
-      characterIndex,
-      characterIndex + 1
-    ) || "0";
-
-  const separator =
-    url.includes("?") ? "&" : "?";
+    url.charAt(characterIndex) || "0";
 
   return (
     url +
-    separator +
-    `k=${randomionCharacter
-    )}`
+    "&k=" +
+    random +
+    "&h=" +
+    encodeURIComponent(verificationCharacter)
   );
 }
-
 function extractWechatUrl(text = "") {
   const decoded = decodeJavascript(text);
 
