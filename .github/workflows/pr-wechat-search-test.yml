@@ -28,13 +28,6 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Show environment
-        run: |
-          node --version
-          pwd
-          ls -la
-          ls -la scripts
-
       - name: Collect WeChat articles
         run: |
           set -euo pipefail
@@ -43,11 +36,10 @@ jobs:
       - name: Validate generated files
         run: |
           set -euo pipefail
-
           test -f auto-news.json
           test -f wechat-news.json
 
-          node -e 'const fs=require("fs"); const wechat=JSON.parse(fs.readFileSync("wechat-news.json","utf8")); if(!Array.isArray(wechat)) throw new Error("wechat-news.json 顶层不是数组"); if(wechat.length===0) throw new Error("wechat-news.json 中没有文章"); for(const item of wechat){if(!item.title||!item.url) throw new Error("存在缺少标题或链接的微信文章");} console.log("微信文章数量："+wechat.length); console.log("最新文章："+wechat[0].title);'
+          node -e 'const fs=require("fs"); const items=JSON.parse(fs.readFileSync("wechat-news.json","utf8")); if(!Array.isArray(items)) throw new Error("wechat-news.json 顶层不是数组"); const invalid=items.filter(item=>{try{const u=new URL(item.url||item.link);return u.hostname!=="mp.weixin.qq.com"||!(u.pathname==="/s"||u.pathname.startsWith("/s/"));}catch{return true;}}); if(invalid.length) throw new Error("发现非微信文章："+invalid.length+"条"); console.log("真实微信文章数量："+items.length);'
 
       - name: Commit and push changes
         run: |
@@ -59,10 +51,10 @@ jobs:
           git add auto-news.json wechat-news.json
 
           if git diff --cached --quiet; then
-            echo "没有新增微信文章，不需要提交"
+            echo "没有数据变化，不需要提交"
             exit 0
           fi
 
-          git commit -m "chore: update automatically collected WeChat news"
+          git commit -m "chore: update verified WeChat news"
           git pull --rebase origin main
           git push origin HEAD:main
