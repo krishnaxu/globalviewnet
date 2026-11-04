@@ -1015,7 +1015,7 @@ async function main() {
     if (linkIndex < 0) {
       try {
         await openList(currentUrl);
-     "CAPTCHA") {
+    if (error.code === "CAPTCHA") {
           return "captcha";
         }
       }
