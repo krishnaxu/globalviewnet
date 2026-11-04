@@ -306,4 +306,109 @@ async function main() {
           "单篇文章"
         );
 
-        if (result.status === "captcha
+        if (result.status === "captcha") {
+          blocked = true;
+          console.log("[wechat] 微信弹出验证码，本轮停止，已获取的文章保留");
+        } else if (result.status === "skip") {
+          console.log("[wechat] 跳过：" + result.reason);
+        } else {
+          var info = result.info;
+          var account = String(info.account || "").trim();
+          var body = cleanBody(info.body);
+          var verified =
+            /DrG|雍熙路/.test(account) || body.indexOf("雍熙路") >= 0;
+
+          if (!verified) {
+            console.log("[wechat] 跳过：不是 DrG的雍熙路 的文章（" + account + "）");
+          } else if (body.length < 300) {
+            console.log("[wechat] 跳过：正文过短（" + body.length + " 字符）");
+          } else {
+            var title = String(info.title || listTitle).trim();
+            var articleDate = toDate(info.ct, info.publishText);
+
+            var sourceUrl = String(info.ogUrl || "")
+              .replace(/^http:/, "https:")
+              .replace(/#.*$/, "");
+
+            if (!isArticleUrl(sourceUrl)) {
+              sourceUrl = result.finalUrl;
+            }
+
+            if (!articleDate) {
+              console.log("[wechat] 跳过：读不到发布日期，不写入 " + title);
+            } else if (
+              knownUrls.has(sourceUrl) ||
+              knownTitles.has(normalizeTitle(title))
+            ) {
+              console.log("[wechat] 跳过：已存在 " + title);
+            } else {
+              var record = {
+                slug: makeSlug(sourceUrl),
+                title: title,
+                source: "Industry News",
+                source_url: sourceUrl,
+                date: articleDate,
+                excerpt: String(info.description || "").trim(),
+                body: body,
+                cover_image: info.cover || "",
+                published: true,
+                fetched_at: new Date().toISOString()
+              };
+
+              archive.push(record);
+
+              archive.sort(function (a, b) {
+                return String(b.date || "").localeCompare(String(a.date || ""));
+              });
+
+              writeArchive(archive);
+
+              knownTitles.add(normalizeTitle(title));
+              knownUrls.add(sourceUrl);
+              added += 1;
+
+              console.log(
+                "[wechat] 已保存：" +
+                  title +
+                  "（" +
+                  record.date +
+                  "，正文 " +
+                  body.length +
+                  " 字符）"
+              );
+            }
+          }
+        }
+      } catch (error) {
+        console.log("[wechat] 打开失败：" + error.message);
+      }
+
+      await closeExtraPages(context, page);
+
+      if (page.url().indexOf("weixin.sogou.com/weixin") < 0) {
+        await page
+          .goto(searchUrl, { waitUntil: "domcontentloaded", timeout: 30000 })
+          .catch(function () {});
+        await page.waitForTimeout(1800);
+      }
+
+      await sleep(2500 + Math.floor(Math.random() * 1500));
+    }
+  } finally {
+    await browser.close().catch(function () {});
+    clearTimeout(watchdog);
+  }
+
+  console.log(
+    "[wechat] 本轮新增 " + added + " 篇；归档累计 " + archive.length + " 篇"
+  );
+
+  if (blocked) {
+    console.log("[wechat] 本轮因微信验证码提前结束，下一次定时运行会继续补抓");
+  }
+}
+
+main().catch(function (error) {
+  console.error("[wechat] 运行失败：" + error.message);
+  process.exitCode = 1;
+});
