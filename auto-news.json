@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-11-05T19:59:48.350Z",
+  "generated_at": "2026-11-05T20:57:01.856Z",
   "items": [
+    {
+      "id": "california-governor-commutes-death-sentences--ffff2886fc4b",
+      "language": "en",
+      "title": "California governor commutes death sentences for all 548 people on death row",
+      "excerpt": "California has historically had the largest population of death row inmates in the US.",
+      "date": "2026-11-05T20:28:38.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqrkyyd2j8mvo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7e11/live/430c9930-d956-11f1-b7f4-8bd3c0617693.jpg"
+    },
+    {
+      "id": "top-democrats-call-to-rein-in-ai-buildout-aft-87e7d41b0757",
+      "language": "en",
+      "title": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
+      "excerpt": "Democratic winners and progressive lawmakers are calling for tougher limits on AI and data centers after the 2026 midterm elections.",
+      "date": "2026-11-05T20:17:16.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html",
+      "image": ""
+    },
+    {
+      "id": "how-wall-street-s-postelection-rally-got-obli-3d82b3a725e2",
+      "language": "en",
+      "title": "How Wall Street's postelection rally got obliterated — and what's next",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "date": "2026-11-05T20:06:31.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/05/how-wall-streets-postelection-rally-got-obliterated-and-whats-next.html",
+      "image": ""
+    },
+    {
+      "id": "software-squeezes-more-data-out-of-webb-teles-f93c3c74424d",
+      "language": "en",
+      "title": "Software squeezes more data out of Webb Telescope for imaging exoplanets",
+      "excerpt": "Software optimizes a physical model of the telescope to reduce noise.",
+      "date": "2026-11-05T19:59:22.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/11/getting-software-to-help-block-out-a-star-so-we-can-see-exoplanets/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/image-1-500x500.png"
+    },
+    {
+      "id": "who-could-be-behind-hoax-bomb-threats-to-euro-56898cfb97b9",
+      "language": "en",
+      "title": "Who could be behind hoax bomb threats to European air travel?",
+      "excerpt": "There is no hard evidence so far linking airline bomb threats to Russia, Iran or any proxy groups.",
+      "date": "2026-11-05T19:58:40.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx8dzzjg3g9zo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/feab/live/224ee450-d951-11f1-b441-2b33b063138f.jpg"
+    },
     {
       "id": "irs-announces-bigger-estate-and-gift-tax-exem-5b5823cb8785",
       "language": "en",
@@ -30,6 +80,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
       "image": ""
+    },
+    {
+      "id": "kalshi-court-losses-pile-up-as-judges-refuse--410d35f0bc76",
+      "language": "en",
+      "title": "Kalshi court losses pile up as judges refuse to block state gambling laws",
+      "excerpt": "Kalshi can't avoid gambling law by claiming it doesn't offer gambling, state AG says.",
+      "date": "2026-11-05T19:46:37.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/kalshi-court-losses-pile-up-as-judges-refuse-to-block-state-gambling-laws/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/kalshi-ad-500x500-1783536860.jpg"
     },
     {
       "id": "meta-warns-that-election-backlash-against-dat-7d05777f3cb4",
@@ -150,6 +210,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/05/the-ex-secret-service-agent-who-flipped-a-hacker-is-now-raising-a-second-250m-cybersecurity-fund/",
       "image": ""
+    },
+    {
+      "id": "shares-in-musk-s-spacex-plunge-as-tech-and-ai-7f806f4d6ebc",
+      "language": "en",
+      "title": "Shares in Musk's SpaceX plunge as tech and AI stocks fall",
+      "excerpt": "The market has been reacting to possible tougher scrutiny of data centre construction and the AI industry following the US mid-terms",
+      "date": "2026-11-05T17:57:57.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2258/live/1f0da230-d934-11f1-8bce-2396c9c50357.jpg"
     },
     {
       "id": "harbinger-raises-240m-after-expanding-into-de-af03e88c1941",
@@ -2929,76 +2999,6 @@
       "date": "2026-11-05T03:53:18.000Z",
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/05/semiconductor-china-korea-talents-rivalry.html",
-      "image": ""
-    },
-    {
-      "id": "第十届中国职工足球联赛总决赛柳州开赛-36支球队同场竞技-18bfa11baa14",
-      "language": "zh",
-      "title": "第十届中国职工足球联赛总决赛柳州开赛 36支球队同场竞技",
-      "excerpt": "中新网柳州11月5日电 2026年第十届“中国足球发展基金会-上汽通用五菱杯”中国职工足球联赛(中国企超)全国总决赛4日在广西柳州拉开帷幕。这也是中国企超全国总决赛首次落户广西。揭幕战中，上汽通用五菱1:0战胜广西投资集团。",
-      "date": "2026-11-05T03:48:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-05/10726509.shtml",
-      "image": ""
-    },
-    {
-      "id": "vance-walks-trump-tightrope-with-scathing-ele-e6b199bf98c8",
-      "language": "en",
-      "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
-      "excerpt": "The vice-president's blunt assessment of Republican election defeat marked one of the sharpest breaks with a sitting president in recent memory.",
-      "date": "2026-11-05T03:47:56.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f611/live/a9e3b7f0-d8cb-11f1-91f1-d78b0d8c70b4.jpg"
-    },
-    {
-      "id": "河北邯郸-不用一砖一瓦-万千布条拧出仿古戏楼-c767355e7ee2",
-      "language": "zh",
-      "title": "河北邯郸：不用一砖一瓦 万千布条拧出仿古戏楼",
-      "excerpt": "中新网邯郸11月5日电 题：河北邯郸：不用一砖一瓦 万千布条拧出仿古戏楼",
-      "date": "2026-11-05T03:47:46.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-05/10726508.shtml",
-      "image": ""
-    },
-    {
-      "id": "毛医生-一个叫错却无人改口的名字-7a8d271fc5e7",
-      "language": "zh",
-      "title": "“毛医生”，一个叫错却无人改口的名字",
-      "excerpt": "中新网吐鲁番11月5日电 题：“毛医生”，一个叫错却无人改口的名字",
-      "date": "2026-11-05T03:46:56.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/txy/2026/11-05/10726504.shtml",
-      "image": ""
-    },
-    {
-      "id": "蓝白巷弄间-三亚古老渔村写下-诗与远方-509bfedc9199",
-      "language": "zh",
-      "title": "蓝白巷弄间，三亚古老渔村写下“诗与远方”",
-      "excerpt": "中新网三亚11月5日电 题：蓝白巷弄间，三亚古老渔村写下“诗与远方”",
-      "date": "2026-11-05T03:46:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-05/10726501.shtml",
-      "image": ""
-    },
-    {
-      "id": "克林顿夫妇发文-祝贺民主党-fce122050f68",
-      "language": "zh",
-      "title": "克林顿夫妇发文：祝贺民主党",
-      "excerpt": "中新网11月5日电 美国民主党籍前总统克林顿及其妻子、前国务卿希拉里11月4日在社交媒体发文，祝贺民主党在中期选举中获胜。克林顿称：“向在全美各地当选的民主党同仁表示祝贺。”",
-      "date": "2026-11-05T03:46:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-05/10726507.shtml",
-      "image": ""
-    },
-    {
-      "id": "10月中国大宗商品价格指数同比上涨21-76422c5a6ab7",
-      "language": "zh",
-      "title": "10月中国大宗商品价格指数同比上涨21%",
-      "excerpt": "中新社北京11月5日电 中国物流与采购联合会5日发布数据显示，10月份，中国大宗商品价格指数为137.0点，环比回落0.5%，同比上涨21%，市场总体运行平稳。",
-      "date": "2026-11-05T03:45:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-05/10726498.shtml",
       "image": ""
     }
   ]
