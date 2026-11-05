@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-11-05T19:03:19.480Z",
+  "generated_at": "2026-11-05T19:59:48.350Z",
   "items": [
+    {
+      "id": "irs-announces-bigger-estate-and-gift-tax-exem-5b5823cb8785",
+      "language": "en",
+      "title": "IRS announces bigger estate and gift tax exemption for 2027",
+      "excerpt": "The IRS has announced bigger estate and gift tax exemptions for 2027. Here's what investors need to know.",
+      "date": "2026-11-05T19:54:26.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/05/2027-estate-and-gift-tax-exemption-irs-raises-limit.html",
+      "image": ""
+    },
+    {
+      "id": "irs-announces-new-federal-income-tax-brackets-c48501c6058a",
+      "language": "en",
+      "title": "IRS announces new federal income tax brackets for 2027",
+      "excerpt": "The IRS has announced higher federal income tax brackets and standard deductions for 2027. Here's what taxpayers need to know.",
+      "date": "2026-11-05T19:53:13.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/05/2027-federal-tax-brackets.html",
+      "image": ""
+    },
+    {
+      "id": "meta-says-us-users-can-now-video-chat-with-th-ce33817e4026",
+      "language": "en",
+      "title": "Meta says US users can now video chat with their Muse AI avatar",
+      "excerpt": "Meta's AI agent can now take calls as a customizable animated avatar, ahead of the launch of a Tamagotchi-like wearable designed to bring Muse to life.",
+      "date": "2026-11-05T19:48:28.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
+      "image": ""
+    },
+    {
+      "id": "meta-warns-that-election-backlash-against-dat-7d05777f3cb4",
+      "language": "en",
+      "title": "Meta warns that election backlash against data centers could make AI expansion harder",
+      "excerpt": "Meta warns that growing political opposition to data centers could threaten future AI investments, as communities push back against massive infrastructure projects.",
+      "date": "2026-11-05T19:12:39.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
+      "image": ""
+    },
+    {
+      "id": "melania-trump-calls-for-lasting-ukraine-truce-0b645ea2a769",
+      "language": "en",
+      "title": "Melania Trump calls for lasting Ukraine truce as she hosts Russian and Ukrainian officials",
+      "excerpt": "The US first lady was credited by all for playing a key though unspecified role in the ceasefire.",
+      "date": "2026-11-05T19:08:08.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c9p8g085mz07o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ec63/live/102786c0-d946-11f1-b441-2b33b063138f.jpg"
+    },
+    {
+      "id": "openai-released-a-new-cybersecurity-model-is--42370702883d",
+      "language": "en",
+      "title": "OpenAI released a new cybersecurity model. Is that enough?",
+      "excerpt": "OpenAI's newest cybersecurity model comes out as AI labs face scrutiny of their work to protect digital infrastructure.",
+      "date": "2026-11-05T19:06:12.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
+      "image": ""
+    },
     {
       "id": "blue-origin-pushes-launch-to-january-2027-as--622566ddfb6a",
       "language": "en",
@@ -2939,66 +2999,6 @@
       "date": "2026-11-05T03:45:28.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-05/10726498.shtml",
-      "image": ""
-    },
-    {
-      "id": "中非能源合作瞄准可再生能源领域快速拓展-c3bd1b392629",
-      "language": "zh",
-      "title": "中非能源合作瞄准可再生能源领域快速拓展",
-      "excerpt": "中新社湖南岳阳11月5日电 (张雪盈)第三届中非能源合作项目推介会正在湖南岳阳举行。来此参会的非盟发展署首席执行官娜多斯·贝凯莱-托马斯(Nardos Bekele-Thomas)在接受中新社采访时表示，在人工智能与自动化重塑产业的背景下，非洲要加快可再生能源体系建设，提升能源成本竞争力。",
-      "date": "2026-11-05T03:44:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-05/10726497.shtml",
-      "image": ""
-    },
-    {
-      "id": "反跨境腐败法草案引热议-为全球反跨境腐败事业贡献中国智慧-2f358b52537b",
-      "language": "zh",
-      "title": "反跨境腐败法草案引热议：为全球反跨境腐败事业贡献中国智慧",
-      "excerpt": "中新社北京11月5日电 (记者 谢雁冰)反跨境腐败法草案正提请十四届全国人大常委会二次审议。在分组审议中，与会人员认为，制定反跨境腐败法标志着中国反腐败涉外法治建设从实践探索迈向法治定型，为全球反跨境腐败事业贡献了中国智慧。",
-      "date": "2026-11-05T03:44:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-05/10726496.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-海外-老字号-进博会上寻新客-137b81593a23",
-      "language": "zh",
-      "title": "（第九届进博会）海外“老字号”进博会上寻新客",
-      "excerpt": "中新社上海11月5日电 (记者 李姝徵 康玉湛)第九届中国国际进口博览会(以下简称进博会)11月5日至10日在上海举行。带着家乡的口碑和几代人的手艺，海外“老字号”来到进博会，寻找中国市场的新客户。",
-      "date": "2026-11-05T03:42:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-05/10726495.shtml",
-      "image": ""
-    },
-    {
-      "id": "中共中央政治局原委员马兴瑞涉嫌受贿被公诉-09d7c39c92ea",
-      "language": "zh",
-      "title": "中共中央政治局原委员马兴瑞涉嫌受贿被公诉",
-      "excerpt": "中新社北京11月5日电 (记者 张素)中国最高人民检察院5日通报，中共中央政治局原委员、中央农村工作领导小组原副组长马兴瑞涉嫌受贿案，由国家监察委员会调查终结，移送检察机关审查起诉。最高检以涉嫌受贿罪对马兴瑞作出逮捕决定，并指定由湖北省宜昌市人民检察院审查起诉。",
-      "date": "2026-11-05T03:40:51.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-05/10726494.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-业界呼吁增强全球能源体系韧性-d844a2e15d6f",
-      "language": "zh",
-      "title": "（第九届进博会）业界呼吁增强全球能源体系韧性",
-      "excerpt": "中新社上海11月5日电 (记者 郑莹莹)在上海举办的第九届中国国际进口博览会相关活动上，面对复杂多变的全球局势，业界呼吁进一步增强全球能源体系韧性。",
-      "date": "2026-11-05T03:40:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-05/10726493.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国海拔最高的超超临界燃煤发电项目1号机组投运-c2b69716b02c",
-      "language": "zh",
-      "title": "中国海拔最高的超超临界燃煤发电项目1号机组投运",
-      "excerpt": "中新社西宁11月5日电 (孙睿 洪晓敏)青海华电格尔木一期2×660MW煤电项目1号机组5日顺利通过168小时试运行，标志着中国海拔最高的超超临界燃煤发电项目1号机组正式投入商业运营。",
-      "date": "2026-11-05T03:39:05.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-05/10726491.shtml",
       "image": ""
     }
   ]
