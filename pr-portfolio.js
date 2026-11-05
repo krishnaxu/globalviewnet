@@ -151,7 +151,7 @@
   }
 
 
-function renderArticle(article, index) {
+function renderArticle(article, index, group = "list") {
   const title = escapeHTML(article.title);
   const date = escapeHTML(formatDate(article.date));
   const rawBody = article.body || "";
@@ -168,7 +168,7 @@ function renderArticle(article, index) {
 
   const excerpt = escapeHTML(article.excerpt || "");
   const sourceURL = safeURL(article.source_url);
-  const detailId = `pr-portfolio-detail-${index}`;
+  const detailId = `pr-portfolio-detail-${group}-${index}`;
 
   const content = body
     ? `<div class="pr-portfolio-body">${body}</div>`
@@ -468,9 +468,9 @@ async function init() {
     const industryTopThree = industryArticles.slice(0, 3);
 
     companyGrid.innerHTML = companyTopThree.length
-      ? companyTopThree
-          .map((article, index) => renderArticle(article, index))
-          .join("")
+  ? companyTopThree
+      .map((article, index) => renderArticle(article, index, "company"))
+      .join("")
       : `<p class="muted">${
           isChinese() ? "暂无公司新闻。" : "No company news available."
         }</p>`;
@@ -478,7 +478,7 @@ async function init() {
   // 行业新闻编号从 01 开始。
 industryGrid.innerHTML = industryTopThree.length
   ? industryTopThree
-      .map((article, index) => renderArticle(article, index))
+      .map((article, index) => renderArticle(article, index, "industry"))
       .join("")
   : `<p class="muted">${
       isChinese() ? "暂无行业新闻。" : "No industry news available."
