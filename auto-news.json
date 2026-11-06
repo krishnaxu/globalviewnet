@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-11-06T20:54:23.455Z",
+  "generated_at": "2026-11-06T21:48:08.950Z",
   "items": [
+    {
+      "id": "sen-chris-murphy-released-from-hospital-after-c637c63a4db6",
+      "language": "en",
+      "title": "Sen. Chris Murphy released from hospital after stroke, will miss votes for 'several weeks' as he rehabs",
+      "excerpt": "The Connecticut Democrat Murphy has been discussed as a possible candidate for the White House in 2028.",
+      "date": "2026-11-06T21:40:09.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/chris-murphy-stroke-hospital-senate.html",
+      "image": ""
+    },
+    {
+      "id": "the-duo-apps-are-coming-says-apple-35b974b260f2",
+      "language": "en",
+      "title": "The Duo apps are coming, says Apple",
+      "excerpt": "There are now 100K Duo-optimized apps, says Apple, and thousands more arrive daily.",
+      "date": "2026-11-06T21:38:05.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/06/the-duo-apps-are-coming-says-apple/",
+      "image": ""
+    },
+    {
+      "id": "investors-brace-for-lower-anthropic-valuation-ca013cd14304",
+      "language": "en",
+      "title": "Investors brace for lower Anthropic valuation, calling $1.5 trillion a 'stretch'",
+      "excerpt": "Anthropic could list below a $1.5 trillion valuation, trailing previous expectations, as the AI trade sours on Wall Street.",
+      "date": "2026-11-06T21:07:07.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html",
+      "image": ""
+    },
+    {
+      "id": "chainalysis-says-hackers-stole-credentials-an-0d0fe76a4883",
+      "language": "en",
+      "title": "Chainalysis says hackers stole credentials and tokens for all of its customers",
+      "excerpt": "Company said a \"multifront cyberattack\" included AI agents and an on-path data snatch.",
+      "date": "2026-11-06T20:56:41.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/chainalysis-500x500.png"
+    },
+    {
+      "id": "here-s-a-rapid-fire-update-on-all-31-of-our-s-181a6a437eb2",
+      "language": "en",
+      "title": "Here's a rapid-fire update on all 31 of our stocks, including 2 to buy now",
+      "excerpt": "We closed out a wild market week on Friday at the Investing Club's fourth Annual Meeting at the New York Stock Exchange.",
+      "date": "2026-11-06T20:36:03.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/06/heres-a-rapid-fire-update-on-our-31-stocks-including-2-to-buy-now.html",
+      "image": ""
+    },
+    {
+      "id": "earth-s-churning-mantle-may-have-created-the--d96fde15d60c",
+      "language": "en",
+      "title": "Earth's churning mantle may have created the Great Unconformity",
+      "excerpt": "Explaining the Great Unconformity, where Cambrian deposits sit on top of older rocks.",
+      "date": "2026-11-06T20:24:20.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/11/earths-churning-mantle-may-have-created-the-great-unconformity/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1498933988-500x500.jpg"
+    },
+    {
+      "id": "nvidia-hardware-worth-11-4m-vanished-between--43ea3ada9c08",
+      "language": "en",
+      "title": "Nvidia hardware worth $11.4M vanished between Oakland and Texas",
+      "excerpt": "6 pallets of hardware vanished en route to Texas, with no arrests 2 months later.",
+      "date": "2026-11-06T20:05:30.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/11/nvidia-hardware-worth-11-4m-vanished-between-oakland-and-texas/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2303158972-500x500.jpg"
+    },
     {
       "id": "openai-bugging-suspect-alfozan-pleads-not-gui-4ea06a8f19e5",
       "language": "en",
@@ -22,6 +92,16 @@
       "image": ""
     },
     {
+      "id": "developer-ends-lucrative-screensaver-deal-wit-35b3d6631ca5",
+      "language": "en",
+      "title": "Developer ends lucrative screensaver deal with Roku because Fox bought it",
+      "excerpt": "Developer: “I can’t be part of the Fox world.”",
+      "date": "2026-11-06T19:50:18.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/11/artist-pulls-popular-screensaver-from-roku-os-because-of-fox-acquisition/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Screenshot-2026-11-06-134100-500x500.jpg"
+    },
+    {
       "id": "a-disturbing-employment-trend-is-hiding-benea-46689a7e510e",
       "language": "en",
       "title": "A disturbing employment trend is hiding beneath the latest strong job numbers",
@@ -40,6 +120,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/06/robert-garcia-trump-congress-oversight-investigations.html",
       "image": ""
+    },
+    {
+      "id": "faa-to-finally-ditch-floppy-disks-in-what-it--1de05e7ba82b",
+      "language": "en",
+      "title": "FAA to finally ditch floppy disks in what it calls \"historic\" tech upgrade",
+      "excerpt": "FAA information display systems to be floppy-free at 435 sites by end of 2028.",
+      "date": "2026-11-06T19:12:28.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/sean-duffy-faa-tech-500x500-1793989945.jpg"
     },
     {
       "id": "fake-job-interview-scams-like-the-one-that-hi-c77c990f4ae4",
@@ -89,6 +179,16 @@
       "date": "2026-11-06T18:40:58.000Z",
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
+      "image": ""
+    },
+    {
+      "id": "openai-arm-and-qualcomm-executives-react-to-p-08543f745d26",
+      "language": "en",
+      "title": "OpenAI, Arm and Qualcomm executives react to post-midterm AI sell-off",
+      "excerpt": "Executives of major tech companies are largely projecting optimism about continued growth in the artificial intelligence sector despite a post-midterm sell-off.",
+      "date": "2026-11-06T18:35:08.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/tech-executives-ai-data-center-selloff-midterms.html",
       "image": ""
     },
     {
@@ -2900,106 +3000,6 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/11-06/10727250.shtml",
       "image": ""
-    },
-    {
-      "id": "一破纪录-二揽金银-中国-00后-双姝闪耀举重世锦赛-3079b8b7777f",
-      "language": "zh",
-      "title": "一破纪录、二揽金银，中国“00后”双姝闪耀举重世锦赛",
-      "excerpt": "中新网宁波11月6日电(张煜欢 宣佳含)11月5日，2026年世界举重锦标赛女子77公斤级比赛在宁波奥体中心举行。两名中国女将发挥出色，杨秋霞以挺举145公斤和总成绩265公斤，收获两枚金牌；彭翠婷以126公斤刷新抓举世界纪录，斩获抓举金牌、总成绩银牌。",
-      "date": "2026-11-06T06:57:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-06/10727248.shtml",
-      "image": ""
-    },
-    {
-      "id": "探访重庆渝中opc社区-带着-大脑-来创业-链主订单送上门-a9b48bf9758d",
-      "language": "zh",
-      "title": "探访重庆渝中OPC社区：带着“大脑”来创业，链主订单送上门",
-      "excerpt": "中新网重庆11月6日电 题：探访重庆渝中OPC社区：带着“大脑”来创业，链主订单送上门",
-      "date": "2026-11-06T06:56:51.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-06/10727251.shtml",
-      "image": ""
-    },
-    {
-      "id": "哈尔滨机场积极应对降雪天气-航班运行平稳正常-45aa27720b2f",
-      "language": "zh",
-      "title": "哈尔滨机场积极应对降雪天气 航班运行平稳正常",
-      "excerpt": "中新网哈尔滨11月6日电 (温天禹 赫飞)11月5日晚至6日，哈尔滨迎来降雪天气，哈尔滨机场制定“一雪一策”保障方案，组织各运行保障单位积极应对此次降雪，全力保障航班平安起降，旅客顺畅出行。",
-      "date": "2026-11-06T06:56:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-06/10727253.shtml",
-      "image": ""
-    },
-    {
-      "id": "碧海之下-种-珊瑚-三亚蜈支洲岛续写人与海共生故事-d9dc6f1c7e32",
-      "language": "zh",
-      "title": "碧海之下“种”珊瑚 三亚蜈支洲岛续写人与海共生故事",
-      "excerpt": "中新网三亚11月6日电 题：碧海之下“种”珊瑚 三亚蜈支洲岛续写人与海共生故事",
-      "date": "2026-11-06T06:56:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-06/10727243.shtml",
-      "image": ""
-    },
-    {
-      "id": "西藏洛扎-谢翁温泉-走出-文旅融合发展新路-e435637bf3ab",
-      "language": "zh",
-      "title": "西藏洛扎：谢翁温泉“走出”文旅融合发展新路",
-      "excerpt": "中新网拉萨11月6日电 (李林)在西藏山南市洛扎县色乡，氤氲热泉为库拉岗日、白玛林错高原徒步自驾环线添上一抹康养暖意。山南市洛扎县文化和旅游局6日介绍，作为“秘境洛扎”精品文旅线路上的重要节点，谢翁温泉持续探索“温泉+住宿+文化”融合路径，走出一条特色鲜明的文旅融合发展之路，为县域文旅高质量发展注入持久动能。",
-      "date": "2026-11-06T06:55:57.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-06/10727256.shtml",
-      "image": ""
-    },
-    {
-      "id": "11月6日-农产品批发价格200指数-比前一天下降0-07个点-f0137e23bb3b",
-      "language": "zh",
-      "title": "11月6日“农产品批发价格200指数”比前一天下降0.07个点",
-      "excerpt": "中新网11月6日电 据农业农村部网站消息，农业农村部监测数据显示，11月6日“农产品批发价格200指数”为111.10，比昨天下降0.07个点，“菜篮子”产品批发价格指数为110.52，比昨天下降0.10个点。",
-      "date": "2026-11-06T06:55:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-06/10727246.shtml",
-      "image": ""
-    },
-    {
-      "id": "从铁锤到数据-吉林-钢铁小镇-的数智转身-3b6a0b25ce87",
-      "language": "zh",
-      "title": "从铁锤到数据：吉林“钢铁小镇”的数智转身",
-      "excerpt": "中新网吉林11月6日电 题：吉林“钢铁小镇”的数智转身",
-      "date": "2026-11-06T06:55:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-06/10727260.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-虹桥海外综合服务体系建设白皮书-2026-在沪发布-7c7d9328530f",
-      "language": "zh",
-      "title": "（第九届进博会）《虹桥海外综合服务体系建设白皮书（2026）》在沪发布",
-      "excerpt": "中新网上海11月6日电 (郑莹莹 蒋小威)第九届虹桥国际经济论坛·虹桥国际开放枢纽建设分论坛暨2026虹桥HUB大会于6日在国家会展中心(上海)召开。大会由上海市人民政府、中国商务部共同主办，上海虹桥国际中央商务区管理委员会承办，以“世界级开放枢纽：企业全球化的虹桥支点”为主题，深入探讨“十五五”开局之年中国企业的全球化新机遇和虹桥国际开放枢纽的独特战略价值。",
-      "date": "2026-11-06T06:55:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-06/10727240.shtml",
-      "image": ""
-    },
-    {
-      "id": "2030年我国充电基础设施将超4000万个-cfc67628d8b5",
-      "language": "zh",
-      "title": "2030年我国充电基础设施将超4000万个",
-      "excerpt": "中新网11月6日电 国家发展改革委6日上午召开奋进“十五五”系列新闻发布会，介绍筑牢安全底座有关情况。国家能源局发展规划司副司长葛炬在会上表示，将高质量推进充换电基础设施布局建设，构建城市面状、公路线状、乡村点状布局的充电基础设施网络，2030年充电基础设施超过4000万个，形成支撑超过1.1亿辆电动汽车的充电服务能力。",
-      "date": "2026-11-06T06:53:31.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-06/10727238.shtml",
-      "image": ""
-    },
-    {
-      "id": "macau-jails-pro-democracy-campaigner-in-city--d86ee1e3134a",
-      "language": "en",
-      "title": "Macau jails pro-democracy campaigner in city's first national security case",
-      "excerpt": "Au Kam San was sentenced to 12 years and six months' jail for \"subversion against the political power of the state\".",
-      "date": "2026-11-06T06:46:21.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmdx33v9vvr2o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0ae0/live/23a8aa80-d9aa-11f1-88e6-7913ca4cf3b6.jpg"
     }
   ]
 }
