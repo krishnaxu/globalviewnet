@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-11-06T17:54:12.662Z",
+  "generated_at": "2026-11-06T18:59:47.252Z",
   "items": [
+    {
+      "id": "hundreds-of-artex-ai-hacking-tools-found-publ-c262b9961ff7",
+      "language": "en",
+      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "excerpt": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+      "date": "2026-11-06T18:44:38.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "image": ""
+    },
+    {
+      "id": "meta-introduces-spaces-a-new-way-to-collabora-2d23850120e5",
+      "language": "en",
+      "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+      "excerpt": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
+      "date": "2026-11-06T18:44:20.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+      "image": ""
+    },
+    {
+      "id": "san-francisco-fed-president-daly-says-higher--f038df72f521",
+      "language": "en",
+      "title": "San Francisco Fed President Daly says higher rates 'are likely to be needed' in inflation fight",
+      "excerpt": "Daly called Friday's jobs report \"good news for American workers,\" but noted the pressure inflation is exerting on household finances",
+      "date": "2026-11-06T18:42:45.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/fed-daly-interest-rates-inflation.html",
+      "image": ""
+    },
+    {
+      "id": "microsoft-plans-to-use-fewer-neoclouds-as-ai--cc74e9ba243c",
+      "language": "en",
+      "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
+      "excerpt": "Microsoft is winding down the number of neoclouds it counts as partners, picking key suppliers and focusing on its own data centers.",
+      "date": "2026-11-06T18:40:58.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
+      "image": ""
+    },
+    {
+      "id": "ai-crush-is-powering-one-stock-to-sky-high-va-48d5d9219737",
+      "language": "en",
+      "title": "AI crush is powering one stock to sky-high valuations",
+      "excerpt": "Despite sky-high valuations, Mike Khouw argues Costco shares could present a compelling buy.",
+      "date": "2026-11-06T18:15:44.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/ai-crush-is-powering-one-stock-to-sky-high-valuations.html",
+      "image": ""
+    },
+    {
+      "id": "mississippi-senate-longshot-ty-pinkins-says-h-6a2be6e3f217",
+      "language": "en",
+      "title": "Mississippi Senate: Longshot Ty Pinkins says he aimed to spoil Hyde-Smith, boost Colom vote",
+      "excerpt": "Ty Pinkins said he avoided campaigning in heavily Black areas of Mississippi to avoid harming chances for Democrat Scott Colom, who like him is Black.",
+      "date": "2026-11-06T18:03:13.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/mississippi-senate-ty-pinkins-colom-hyde-smith.html",
+      "image": ""
+    },
     {
       "id": "after-the-midterms-is-the-ai-industry-in-for--b7e06d2c4d9d",
       "language": "en",
@@ -2939,66 +2999,6 @@
       "date": "2026-11-06T06:08:36.000Z",
       "source_name": "中新网财经新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-06/10727205.shtml",
-      "image": ""
-    },
-    {
-      "id": "india-as-an-ai-hedge-the-country-s-stocks-cou-8eabc0eb5c79",
-      "language": "en",
-      "title": "India as an AI hedge? The country's stocks could see robust inflows as markets globally tank",
-      "excerpt": "Over the last month, India's Nifty 50 has gained nearly 9%, while markets with heavy AI exposure, including the U.S., Japan, South Korea and Taiwan are deep in the red.",
-      "date": "2026-11-06T06:02:36.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/06/india-ai-tech-hedge-nifty50.html",
-      "image": ""
-    },
-    {
-      "id": "did-a-data-centre-revolt-affect-the-us-mid-te-7b014650a035",
-      "language": "en",
-      "title": "Did a data centre revolt affect the US mid-term election results?",
-      "excerpt": "BBC Verify examines whether US voters were influenced by the data centre boom - and the impact anti-AI sentiment could have on the industry.",
-      "date": "2026-11-06T06:01:13.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/crvg9yyz5437o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c66b/live/909d6da0-d90b-11f1-b72c-d16cdc75f35f.jpg"
-    },
-    {
-      "id": "a-wildfire-killed-their-loved-ones-in-spain-t-e0b609f23f25",
-      "language": "en",
-      "title": "A wildfire killed their loved ones in Spain. These British families demand to know why",
-      "excerpt": "Nine British nationals were among the 15 people who died when fire ripped through the village of Bédar this summer.",
-      "date": "2026-11-06T06:00:46.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cm3vq4wyeld1o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/424f/live/eb19eb30-d9ad-11f1-a701-fddedf244c16.jpg"
-    },
-    {
-      "id": "十五五-时期我国用电需求预计每年新增3个上海用电量-cd2fdc5ddfbd",
-      "language": "zh",
-      "title": "“十五五”时期我国用电需求预计每年新增3个上海用电量",
-      "excerpt": "中新网11月6日电 国家发展改革委6日上午召开奋进“十五五”系列新闻发布会，介绍筑牢安全底座有关情况。国家能源局发展规划司副司长葛炬在会上表示，“十五五”时期，在算力等新兴产业带动下，我国用电需求仍将刚性增长，预计年均增量将达到6000亿度左右，相当于每年新增3个上海市的用电量。",
-      "date": "2026-11-06T05:59:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-06/10727196.shtml",
-      "image": ""
-    },
-    {
-      "id": "携手全球协同创新-2026年6g发展大会将于24日至25日举行-08d1838a3f60",
-      "language": "zh",
-      "title": "携手全球协同创新 2026年6G发展大会将于24日至25日举行",
-      "excerpt": "记者从近期召开的2026年6G发展大会新闻通气会上获悉，2026年6G发展大会将于11月24日至25日在上海市松江区举行。本届大会以“智启星程，携手全球协同创新”为主题，聚焦6G全球统一标准制定与产业生态建设。",
-      "date": "2026-11-06T05:54:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-06/10727198.shtml",
-      "image": ""
-    },
-    {
-      "id": "本周末大范围雨雪将上线-这些地方或有暴雪-533915b13ce1",
-      "language": "zh",
-      "title": "本周末大范围雨雪将上线，这些地方或有暴雪",
-      "excerpt": "中新网北京11月6日电(记者 邵萌)11月以来，多地冷空气活动频繁。记者从中央气象台获悉，11月7日至9日，又有一股冷空气将影响我国中东部大部地区。",
-      "date": "2026-11-06T05:47:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-06/10727193.shtml",
       "image": ""
     }
   ]
