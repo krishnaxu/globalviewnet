@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-11-06T18:59:47.252Z",
+  "generated_at": "2026-11-06T19:56:53.266Z",
   "items": [
+    {
+      "id": "openai-bugging-suspect-alfozan-pleads-not-gui-4ea06a8f19e5",
+      "language": "en",
+      "title": "OpenAI bugging suspect Alfozan pleads not guilty",
+      "excerpt": "Saudi national Abdulrahman Alfozan is charged in an indictment with planting a recording device in a conference room at artificial intelligence giant OpenAI.",
+      "date": "2026-11-06T19:54:04.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/openai-bugging-alfozan-saudi.html",
+      "image": ""
+    },
+    {
+      "id": "trump-says-stephen-miller-to-replace-susie-wi-e020eb9ab894",
+      "language": "en",
+      "title": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
+      "excerpt": "Trump revealed the shake-up three days after Democrats' landslide victory in the midterm elections, winning majority control of the House and Senate.",
+      "date": "2026-11-06T19:51:29.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html",
+      "image": ""
+    },
+    {
+      "id": "a-disturbing-employment-trend-is-hiding-benea-46689a7e510e",
+      "language": "en",
+      "title": "A disturbing employment trend is hiding beneath the latest strong job numbers",
+      "excerpt": "The average jobless worker's bout of unemployment surpassed 27 weeks in October, the highest outside of the pandemic period in a decade.",
+      "date": "2026-11-06T19:49:09.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
+      "image": ""
+    },
+    {
+      "id": "top-house-oversight-democrat-warns-trump-fami-8816ee45fa51",
+      "language": "en",
+      "title": "Top House Oversight Democrat warns Trump family to 'lawyer up'",
+      "excerpt": "With Democrats set to take control of the House in January, Rep. Robert Garcia is promising sweeping probes into Trump, his family and his administration.",
+      "date": "2026-11-06T19:42:36.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/06/robert-garcia-trump-congress-oversight-investigations.html",
+      "image": ""
+    },
+    {
+      "id": "fake-job-interview-scams-like-the-one-that-hi-c77c990f4ae4",
+      "language": "en",
+      "title": "Fake job interview scams like the one that hit Binance are getting more sophisticated. Here are the new signs to watch for",
+      "excerpt": "Binance lost more than $6 billion in a hack partly caused by fake job interviews. Here's what job seekers can learn from it, and tips to avoid job search scams.",
+      "date": "2026-11-06T19:09:56.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/make-it/2026/11/06/binance-hack-fake-job-interview-scams.html",
+      "image": ""
+    },
     {
       "id": "hundreds-of-artex-ai-hacking-tools-found-publ-c262b9961ff7",
       "language": "en",
@@ -42,6 +92,26 @@
       "image": ""
     },
     {
+      "id": "the-folks-behind-john-wick-are-back-with-karō-7e8114761040",
+      "language": "en",
+      "title": "The folks behind John Wick are back with Karōshi trailer",
+      "excerpt": "Stuntman/director Chad Stahelski and 87Eleven bring us an action-packed dystopian, futuristic thriller.",
+      "date": "2026-11-06T18:30:19.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/culture/2026/11/the-folks-behind-john-wick-are-back-with-karoshi-trailer/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Screenshot-2026-11-06-at-12.24.52-PM-500x500.png"
+    },
+    {
+      "id": "you-know-the-launch-market-is-tough-when-sate-84a88c7c4fe9",
+      "language": "en",
+      "title": "You know the launch market is tough when satellite companies start building rockets",
+      "excerpt": "\"The Blacklift rocket is the springboard to significantly expand our total addressable market.\"",
+      "date": "2026-11-06T18:20:47.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/11/ast-spacemobile-is-so-desperate-for-launch-theyre-building-their-own-rocket/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Abel__Jason-500x500.jpg"
+    },
+    {
       "id": "ai-crush-is-powering-one-stock-to-sky-high-va-48d5d9219737",
       "language": "en",
       "title": "AI crush is powering one stock to sky-high valuations",
@@ -60,6 +130,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/06/mississippi-senate-ty-pinkins-colom-hyde-smith.html",
       "image": ""
+    },
+    {
+      "id": "does-meta-think-we-can-t-read-meta-abandons-s-562d9908327b",
+      "language": "en",
+      "title": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
+      "excerpt": "Meta won't force Facebook page owners to allow AI training on linked content.",
+      "date": "2026-11-06T17:43:02.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1363244761-500x500.jpg"
     },
     {
       "id": "after-the-midterms-is-the-ai-industry-in-for--b7e06d2c4d9d",
@@ -2920,86 +3000,6 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/cmdx33v9vvr2o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0ae0/live/23a8aa80-d9aa-11f1-88e6-7913ca4cf3b6.jpg"
-    },
-    {
-      "id": "日本参议员批评高市政权罔顾民意-急于推动修宪扩军-baeac67164a2",
-      "language": "zh",
-      "title": "日本参议员批评高市政权罔顾民意 急于推动修宪扩军",
-      "excerpt": "中新网11月6日电 据日本《赤旗报》报道，日本参议院宪法审查会4日召开会议，日本共产党籍参议员山添拓在会上批评高市早苗政府推动修宪和大规模扩军，并认为当前没有必要推动修宪议程。",
-      "date": "2026-11-06T06:44:30.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-06/10727244.shtml",
-      "image": ""
-    },
-    {
-      "id": "射程超100公里-巴基斯坦自研空对空导弹可打隐身飞机-0a6b23fbbc6d",
-      "language": "zh",
-      "title": "射程超100公里，巴基斯坦自研空对空导弹可打隐身飞机？",
-      "excerpt": "中新网11月6日电(记者 刁炜)近日，巴基斯坦成功试射首枚自主研发的空对空导弹。美国“战区”网站称，这不仅是巴防务工业取得的重大成就，更标志着巴基斯坦已跻身全球少数拥有自主研发空对空导弹能力的国家之列。",
-      "date": "2026-11-06T06:43:26.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-06/10727229.shtml",
-      "image": ""
-    },
-    {
-      "id": "从全球创新到中国创造-波士顿科学携百余项创新成果八赴进博-54a66cda9277",
-      "language": "zh",
-      "title": "从全球创新到中国创造，波士顿科学携百余项创新成果八赴进博",
-      "excerpt": "上海，2026年11月5日——全球领先的医疗科技公司波士顿科学以“为生命创新，共享健康未来”为主题，连续第八年亮相中国国际进口博览会(以下简称“进博会”)。本届参展，公司首次联动医疗器械馆主展台与创新孵化专区，集中展示逾百项创新成果，涵盖心血管、肿瘤、消化、泌尿及神经调控等领域。",
-      "date": "2026-11-06T06:34:02.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-06/10727232.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国工信部加强智能体终端设备进网管理-5defe8b233e4",
-      "language": "zh",
-      "title": "中国工信部加强智能体终端设备进网管理",
-      "excerpt": "中新社北京11月6日电 (记者 刘亮)中国工信部6日对外发布《关于加强智能体终端设备进网管理的通知》(下称“通知”)，促进智能体终端健康有序发展，切实维护用户合法权益。",
-      "date": "2026-11-06T06:33:46.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-06/10727217.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家发展改革委-我国将动态调整优化粮食储备规模结构布局-87b41f3afbff",
-      "language": "zh",
-      "title": "国家发展改革委：我国将动态调整优化粮食储备规模结构布局",
-      "excerpt": "中新网11月6日电 国家发展改革委6日上午召开奋进“十五五”系列新闻发布会，介绍筑牢安全底座有关情况。国家粮食和物资储备局粮食储备司司长罗守全在会上表示，“十五五”时期，将综合考虑粮食供需、流通形势、消费变化等情况，会同有关方面动态调整优化储备规模结构布局，促进优储适需。",
-      "date": "2026-11-06T06:31:27.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-06/10727224.shtml",
-      "image": ""
-    },
-    {
-      "id": "palo-alto-networks-in-talks-to-buy-ai-agent-s-c822924fc1f2",
-      "language": "en",
-      "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
-      "excerpt": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
-      "date": "2026-11-06T06:28:32.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
-      "image": ""
-    },
-    {
-      "id": "外媒聚焦进博会-中国搭建合作共赢平台-激活全球贸易新动能-fa238dfbd878",
-      "language": "zh",
-      "title": "外媒聚焦进博会：中国搭建合作共赢平台 激活全球贸易新动能",
-      "excerpt": "中新网11月6日电 第九届中国国际进口博览会正在上海举行，引发国际媒体高度关注。多家外媒认为，进博会不仅为全球企业展示产品、寻找合作伙伴提供了重要平台，也为各国企业进入中国市场、拓展国际贸易创造新机遇，进一步彰显中国扩大高水平对外开放的积极姿态。",
-      "date": "2026-11-06T06:12:00.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-06/10727210.shtml",
-      "image": ""
-    },
-    {
-      "id": "市场监管总局启动第四批全国商业秘密保护创新试点工作-3a14b8853b47",
-      "language": "zh",
-      "title": "市场监管总局启动第四批全国商业秘密保护创新试点工作",
-      "excerpt": "中新网11月6日电 据“市说新语”微信公众号消息，11月6日，市场监管总局在浙江省衢州市召开第四批全国商业秘密保护创新试点现场推进会暨第一批商业秘密保护创新试点经验推广会，部署开展第四批全国商业秘密保护创新试点工作。",
-      "date": "2026-11-06T06:08:36.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-06/10727205.shtml",
-      "image": ""
     }
   ]
 }
