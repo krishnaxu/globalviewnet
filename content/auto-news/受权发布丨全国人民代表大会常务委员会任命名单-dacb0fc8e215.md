@@ -1,0 +1,15 @@
+---
+slug: "受权发布丨全国人民代表大会常务委员会任命名单-dacb0fc8e215"
+language: "zh"
+title: "受权发布丨全国人民代表大会常务委员会任命名单"
+excerpt: "新华社北京11月6日电"
+date: "2026-11-06T11:44:58.000Z"
+source_name: "中新网即时新闻"
+source_url: "https://www.chinanews.com.cn/gn/2026/11-06/10727499.shtml"
+image: ""
+published: true
+---
+
+新华社北京11月6日电
+
+原文链接：https://www.chinanews.com.cn/gn/2026/11-06/10727499.shtml
