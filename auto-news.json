@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-08T18:52:26.698Z",
+  "generated_at": "2026-11-08T19:51:22.729Z",
   "items": [
+    {
+      "id": "democrats-amp-up-trump-investigation-threats--d0b4b5f686a9",
+      "language": "en",
+      "title": "Democrats amp up Trump investigation threats, Blanche counters he may probe lawmakers",
+      "excerpt": "Democrats have vowed to investigate both President Donald Trump's White House and businesses that have worked with the administration.",
+      "date": "2026-11-08T18:57:56.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/08/democrats-trump-oversight-blanche-doj-investigations.html",
+      "image": ""
+    },
     {
       "id": "nvidia-ceo-jensen-huang-faces-bipartisan-cong-c87aa85e8aed",
       "language": "en",
@@ -2990,16 +3000,6 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/07/amazons-new-basic-kindle-proves-you-dont-need-all-the-bells-and-whistles/",
       "image": ""
-    },
-    {
-      "id": "houthis-say-at-least-25-killed-in-saudi-air-s-6d8a06c46308",
-      "language": "en",
-      "title": "Houthis say at least 25 killed in Saudi air strike",
-      "excerpt": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
-      "date": "2026-11-07T17:09:24.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2670/live/bfaac760-dacc-11f1-bda8-29fb69dbc026.jpg"
     }
   ]
 }
