@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-11-08T20:45:44.630Z",
+  "generated_at": "2026-11-08T21:44:23.422Z",
   "items": [
+    {
+      "id": "trump-says-renewed-iran-strikes-highly-unlike-eb918a61ab7f",
+      "language": "en",
+      "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike",
+      "excerpt": "Trump tied avoiding renewed U.S. strikes to progress in talks over Iran’s nuclear program and the Strait of Hormuz.",
+      "date": "2026-11-08T21:28:12.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/08/trump-iran-strikes-unlikely-talks-hormuz.html",
+      "image": ""
+    },
+    {
+      "id": "nvidia-investigates-ceo-jensen-huang-s-relati-760e66f5e4a3",
+      "language": "en",
+      "title": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+      "excerpt": "Huang told Nvidia staff in an email that he had an affair and that the company's board has opened an investigation into allegations the woman is a Chinese spy.",
+      "date": "2026-11-08T21:13:38.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+      "image": ""
+    },
+    {
+      "id": "nvidia-will-investigate-ceo-jensen-huang-s-re-ab3c0090fa33",
+      "language": "en",
+      "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+      "excerpt": "In a memo to the company, Huang admitted that he had an affair.",
+      "date": "2026-11-08T21:00:11.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "image": ""
+    },
+    {
+      "id": "if-snap-s-specs-are-still-ridiculously-expens-173bdbed7479",
+      "language": "en",
+      "title": "If Snap’s Specs are still ridiculously expensive, they’re also a lot more comfortable than they used to be",
+      "excerpt": "Snap's Specs, which have been in development for many years now, are going to market this fall. Will they be a hit with users?",
+      "date": "2026-11-08T21:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/08/if-snaps-specs-are-still-ridiculously-expensive-theyre-also-a-lot-more-comfortable-than-they-used-to-be/",
+      "image": ""
+    },
     {
       "id": "coordinated-disturbances-haunt-grids-worldwid-abc33a0fbba4",
       "language": "en",
@@ -2959,46 +2999,6 @@
       "date": "2026-11-07T19:00:00.000Z",
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/07/parents-want-safer-phones-for-kids-these-companies-are-answering-the-call/",
-      "image": ""
-    },
-    {
-      "id": "what-we-know-about-krakow-mass-shooting-so-fa-d04570c52c8f",
-      "language": "en",
-      "title": "What we know about Krakow mass shooting so far",
-      "excerpt": "At least six people were killed by a gunman in military fatigues who opened fire in Poland's second largest city.",
-      "date": "2026-11-07T18:22:11.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f6c3/live/95455f00-dac5-11f1-bda8-29fb69dbc026.jpg"
-    },
-    {
-      "id": "us-offers-20m-reward-for-information-about-ir-082aa9ac9154",
-      "language": "en",
-      "title": "US offers $20m reward for information about Iran's nuclear programme",
-      "excerpt": "Donald Trump has repeatedly raised the prospecting of renewing strikes against Iran's nuclear facilities.",
-      "date": "2026-11-07T18:14:38.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0b84/live/0f887590-dad0-11f1-93e1-3b657b665bcf.jpg"
-    },
-    {
-      "id": "gaza-wedding-festival-sees-250-couples-marrie-6f87cce88ee4",
-      "language": "en",
-      "title": "Gaza wedding festival sees 250 couples married at the same time",
-      "excerpt": "A mass wedding for Palestinian brides and grooms has taken place in the rubble-strewn streets of Gaza.",
-      "date": "2026-11-07T17:58:41.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/videos/ckr5ygm78j76o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/354f/live/49a10e60-daba-11f1-b441-2b33b063138f.jpg"
-    },
-    {
-      "id": "meta-chief-strategy-officer-dave-wehner-leave-6e1c8c133af1",
-      "language": "en",
-      "title": "Meta chief strategy officer Dave Wehner leaves to join AI infrastructure startup Fireworks as CFO",
-      "excerpt": "Dave Wehner, Meta’s chief strategy officer, is leaving the company to become CFO of Fireworks, the AI infrastructure startup valued at $17.5 billion in July.",
-      "date": "2026-11-07T17:51:16.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html",
       "image": ""
     }
   ]
