@@ -1,6 +1,86 @@
 {
-  "generated_at": "2026-11-09T16:10:57.961Z",
+  "generated_at": "2026-11-09T17:16:55.050Z",
   "items": [
+    {
+      "id": "uber-launches-parking-service-following-spoth-fc938db516a5",
+      "language": "en",
+      "title": "Uber launches parking service following SpotHero acquisition, with an eye on robotaxis",
+      "excerpt": "Uber Parking is the latest example of the company offering products beyond its core ride-hailing service.",
+      "date": "2026-11-09T17:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/09/uber-launches-parking-service-following-spothero-acquisition-with-an-eye-on-robotaxis/",
+      "image": ""
+    },
+    {
+      "id": "men-recruited-to-french-gang-as-children-to-k-e116d0b14125",
+      "language": "en",
+      "title": "Men recruited to French gang as children to kill give rare insight into drug underworld",
+      "excerpt": "\"It destroys people, but we all make our own choices\" - Marseille drug-gang members spoke to the BBC.",
+      "date": "2026-11-09T16:59:46.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cwe9l98l5n2po?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fdb3/live/1bee1070-dc5a-11f1-93e1-3b657b665bcf.png"
+    },
+    {
+      "id": "anthropic-joins-ai-s-natural-gas-frenzy-buys--2f05eab281f5",
+      "language": "en",
+      "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
+      "excerpt": "Anthropic bought billions of dollars worth of natural gas turbines in a deal that could give it buyer's remorse.",
+      "date": "2026-11-09T16:56:54.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+      "image": ""
+    },
+    {
+      "id": "france-accuses-iran-of-supermarket-fridge-hac-afdc6ec15c3b",
+      "language": "en",
+      "title": "France accuses Iran of supermarket fridge hacking",
+      "excerpt": "The cyber-attack last month saw fridges and freezers in hundreds of supermarkets across France heated up.",
+      "date": "2026-11-09T16:55:07.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f0bc/live/eec149b0-dc5d-11f1-8fe6-5becaee5408f.jpg"
+    },
+    {
+      "id": "trump-questions-midterm-elections-integrity-a-563627d5634d",
+      "language": "en",
+      "title": "Trump questions midterm elections integrity after previously accepting results",
+      "excerpt": "Trump made the claims, without evidence, on Truth Social on Monday.",
+      "date": "2026-11-09T16:53:47.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/de62/live/5a7465d0-dc53-11f1-a869-656dc96bd12d.jpg"
+    },
+    {
+      "id": "jim-cramer-says-this-is-the-stock-to-buy-as-d-02a536ca59df",
+      "language": "en",
+      "title": "Jim Cramer says this is the stock to buy as data center development slows",
+      "excerpt": "Jim Cramer says a slowdown in data center construction gives Amazon an edge.",
+      "date": "2026-11-09T16:42:53.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/09/cramer-says-this-is-the-stock-to-buy-as-data-center-development-slows.html",
+      "image": ""
+    },
+    {
+      "id": "honda-to-invest-3-billion-in-new-vehicle-asse-0781a4861bac",
+      "language": "en",
+      "title": "Honda to invest $3 billion in new vehicle assembly plant in Ohio",
+      "excerpt": "The Japanese automaker said the plant will focus on hybrid vehicles and is expected to begin production in 2029.",
+      "date": "2026-11-09T16:39:12.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/honda-to-invest-3-billion-in-new-vehicle-assembly-plant-in-ohio.html",
+      "image": ""
+    },
+    {
+      "id": "medium-s-new-tk-app-brings-ai-assistance-dire-4d2c1dac0871",
+      "language": "en",
+      "title": "Medium’s new TK app brings AI assistance directly into the writing process",
+      "excerpt": "Medium's new writing app embraces AI-assisted writing, despite growing controversy over the technology's role in publishing.",
+      "date": "2026-11-09T16:12:28.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+      "image": ""
+    },
     {
       "id": "trump-questions-midterm-election-results-revi-27c9da168215",
       "language": "en",
@@ -10,6 +90,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/09/trump-election-results-democrats.html",
       "image": ""
+    },
+    {
+      "id": "spacex-now-fundamentally-an-infrastructure-co-bc64bea08326",
+      "language": "en",
+      "title": "SpaceX now fundamentally an \"infrastructure company,\" senior official says",
+      "excerpt": "\"Grok analyzing the same video is 99.9 percent perfect.\"",
+      "date": "2026-11-09T15:39:21.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/11/spacex-now-fundamentally-an-infrastructure-company-senior-official-says/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Flight_15_Website_Desktop_1_7111645b6d-500x500.png"
     },
     {
       "id": "meta-expands-instagram-s-ai-age-guessing-tech-415a41d06245",
@@ -40,6 +130,26 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/09/waymo-robotaxis-kept-illegally-passing-school-buses-after-software-fix-feds-say/",
       "image": ""
+    },
+    {
+      "id": "nvidia-ceo-s-affair-becomes-a-national-securi-637cc51b2fac",
+      "language": "en",
+      "title": "Nvidia CEO's affair becomes a national security problem",
+      "excerpt": "Nvidia is probing whether Chinese intelligence targeted its CEO through an affair.",
+      "date": "2026-11-09T15:23:20.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/ceo-jensen-huang-admits-affair-as-nvidia-probes-possible-chinese-espionage/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/03/huang-500x500.jpg"
+    },
+    {
+      "id": "f1-in-brazil-you-ve-got-to-keep-your-tires-al-b48b9f65c978",
+      "language": "en",
+      "title": "F1 in Brazil: You’ve got to keep your tires alive",
+      "excerpt": "A topsy-turvy grid and intermittent rain resulted in a very entertaining race.",
+      "date": "2026-11-09T15:16:31.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/11/f1-in-brazil-drivers-at-their-very-best-in-tricky-conditions/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2304145044-500x500.jpg"
     },
     {
       "id": "德国总理默茨正式提名艾格纳竞选总统-08e85964042b",
@@ -2889,116 +2999,6 @@
       "date": "2026-11-09T01:35:55.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728618.shtml",
-      "image": ""
-    },
-    {
-      "id": "a股周一开盘-超4800只个股飘红-三大指数集体高开-c6550f65e684",
-      "language": "zh",
-      "title": "A股周一开盘：超4800只个股飘红，三大指数集体高开",
-      "excerpt": "A股周一开盘：超4800只个股飘红，三大指数集体高开；通信设备、半导体、贵金属、航天军工上涨；石油天然气、酒类、银行下跌",
-      "date": "2026-11-09T01:35:51.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728621.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家统计局-10月份居民消费价格同比上涨0-7-400d1ab6fcd6",
-      "language": "zh",
-      "title": "国家统计局：10月份居民消费价格同比上涨0.7%",
-      "excerpt": "中新网11月9日电 据国家统计局网站消息，2026年10月份，全国居民消费价格同比上涨0.7%。其中，城市上涨0.7%，农村上涨0.7%；食品价格下降2.9%，非食品价格上涨1.5%；消费品价格上涨0.8%，服务价格上涨0.7%。1—10月平均，全国居民消费价格比上年同期上涨0.9%。",
-      "date": "2026-11-09T01:32:09.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728619.shtml",
-      "image": ""
-    },
-    {
-      "id": "11月9日人民币对美元中间价报6-7188-下调20个基点-4a1d31b12f75",
-      "language": "zh",
-      "title": "11月9日人民币对美元中间价报6.7188 下调20个基点",
-      "excerpt": "中新网11月9日电 据中国外汇交易中心网站消息，中国人民银行授权中国外汇交易中心公布，2026年11月9日银行间外汇市场人民币汇率中间价为1美元对人民币6.7188元，下调20个基点。",
-      "date": "2026-11-09T01:30:50.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728616.shtml",
-      "image": ""
-    },
-    {
-      "id": "私域直播屡被曝光查处仍能死灰复燃-如何斩断私域-神药-的链条-1c4d67d03f1b",
-      "language": "zh",
-      "title": "私域直播屡被曝光查处仍能死灰复燃 如何斩断私域“神药”的链条？",
-      "excerpt": "私域直播夸大疗效、坑骗老年消费者，屡被曝光查处仍能死灰复燃",
-      "date": "2026-11-09T01:07:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-09/10728611.shtml",
-      "image": ""
-    },
-    {
-      "id": "金观平-依法依规治理低价无序竞争-13507fe70a68",
-      "language": "zh",
-      "title": "金观平：依法依规治理低价无序竞争",
-      "excerpt": "近期召开的国务院常务会议讨论并原则通过《中华人民共和国价格法(修正草案)》，并提出要依法依规治理低价无序竞争。这标志着价格法律体系适应新形势迈出重要一步，将为深入整治“内卷式”竞争、维护公平竞争市场秩序提供更坚实的法治依据。",
-      "date": "2026-11-09T00:40:48.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728608.shtml",
-      "image": ""
-    },
-    {
-      "id": "特朗普称提议任命达纳-怀特为白宫新闻秘书-只是开玩笑-382be8cab0f9",
-      "language": "zh",
-      "title": "特朗普称提议任命达纳·怀特为白宫新闻秘书“只是开玩笑”",
-      "excerpt": "当地时间11月8日，美总统特朗普表示，此前提出任命美国终极格斗冠军赛(UFC)总裁达纳·怀特担任白宫新闻秘书“只是开玩笑”。",
-      "date": "2026-11-09T00:34:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-09/10728607.shtml",
-      "image": ""
-    },
-    {
-      "id": "全国大部进入晴朗模式-寒潮核心降温区域转移至南方-6bcc2ae42204",
-      "language": "zh",
-      "title": "全国大部进入晴朗模式 寒潮核心降温区域转移至南方",
-      "excerpt": "中国天气网讯 未来三天(11月9日至11日)，全国大部将进入降水稀少时段，晴天居多，但云南、贵州一带仍有频繁降雨。随着寒潮南下，降温核心区域向南推进，长江中下游等地最高气温将降至10℃出头，凉意十足，华南也会退去炎热转为凉爽。",
-      "date": "2026-11-09T00:33:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-09/10728606.shtml",
-      "image": ""
-    },
-    {
-      "id": "隔夜白开水不能喝-是真是假-谣言终结站-f45ea441f5e7",
-      "language": "zh",
-      "title": "隔夜白开水不能喝……是真是假？｜谣言终结站",
-      "excerpt": "只要保存得当，隔夜白开水是可以放心喝的，并非传言中那样会危害健康或致癌。",
-      "date": "2026-11-09T00:18:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-09/10728601.shtml",
-      "image": ""
-    },
-    {
-      "id": "中央气象台-寒潮继续影响我国南方地区-云南等地多降水-899d4c8e2e7d",
-      "language": "zh",
-      "title": "中央气象台：寒潮继续影响我国南方地区 云南等地多降水",
-      "excerpt": "中新网11月9日电 据中央气象台网站9日消息，寒潮将继续影响我国中东部地区和海域，预计9日，江南、华南东部、西南地区等地有较强降温，东部和南部海域有大风天气；未来三天，云南、四川等地多降水；需关注雨雪、大风降温对人体健康、交通出行、能源供应等的影响，云南等地需防范局地暴雨引发的次生灾害。",
-      "date": "2026-11-09T00:15:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-09/10728596.shtml",
-      "image": ""
-    },
-    {
-      "id": "开屏广告太添堵-怎么治-5245b0e06cd4",
-      "language": "zh",
-      "title": "开屏广告太添堵，怎么治？",
-      "excerpt": "开屏广告太添堵，怎么治？(融观中国)",
-      "date": "2026-11-09T00:11:42.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-09/10728599.shtml",
-      "image": ""
-    },
-    {
-      "id": "南非公布地方选举结果-过半数市镇现-悬峙议会-4c593efcf488",
-      "language": "zh",
-      "title": "南非公布地方选举结果 过半数市镇现“悬峙议会”",
-      "excerpt": "中新社约翰内斯堡11月8日电 (记者 孙翔)南非独立选举委员会8日晚公布2026年地方政府选举结果，执政党非洲人国民大会(简称非国大)得票率由2021年的45.59%降至30.76%，但仍位居首位。南非全国超过半数市镇议会出现“悬峙议会”，即没有任何政党获得绝对多数席位，地方政府组建面临多党谈判。",
-      "date": "2026-11-09T00:11:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-09/10728586.shtml",
       "image": ""
     }
   ]
