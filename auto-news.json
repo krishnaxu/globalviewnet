@@ -1,6 +1,96 @@
 {
-  "generated_at": "2026-11-09T18:06:28.605Z",
+  "generated_at": "2026-11-09T19:02:00.789Z",
   "items": [
+    {
+      "id": "anthropic-releases-first-frontier-models-sinc-dcdd5ba701c7",
+      "language": "en",
+      "title": "Anthropic releases first frontier models since Amodei's call for slowdown as IPO buzz builds",
+      "excerpt": "The launch comes as Anthropic is gearing up for what is widely expected to be a blockbuster IPO",
+      "date": "2026-11-09T19:00:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
+      "image": ""
+    },
+    {
+      "id": "a-massive-trade-in-nvidia-just-went-off-here--9acbe5213867",
+      "language": "en",
+      "title": "A massive trade in Nvidia just went off – here are the details",
+      "excerpt": "Despite Monday's sell-off, options traders are targeting new highs on Nvidia",
+      "date": "2026-11-09T18:37:59.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/a-massive-trade-in-nvidia-just-went-off-here-are-the-details.html",
+      "image": ""
+    },
+    {
+      "id": "republican-congressman-to-force-impeachment-v-64de75add4ac",
+      "language": "en",
+      "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
+      "excerpt": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process.",
+      "date": "2026-11-09T18:19:19.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/04a0/live/7de9a320-dc64-11f1-8fe6-5becaee5408f.jpg"
+    },
+    {
+      "id": "millions-of-dollars-poured-into-prediction-ma-73b8caf2883a",
+      "language": "en",
+      "title": "Millions of dollars poured into prediction markets on election night, trading on Democratic control of Congress and Texas governor's race",
+      "excerpt": "Election night showed how traders reacted in real time to midterm results, as trading activity surged and market prices shifted to Democrats on Nov. 3.",
+      "date": "2026-11-09T18:15:41.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/millions-of-dollars-poured-into-prediction-markets-on-election-night.html",
+      "image": ""
+    },
+    {
+      "id": "goldman-ceo-solomon-says-ai-financing-remains-89570fee08de",
+      "language": "en",
+      "title": "Goldman CEO Solomon says AI financing remains strong despite market jitters",
+      "excerpt": "Goldman CEO David Solomon says investor appetite for AI infrastructure remains strong despite a reset in AI stocks and political uncertainty around data centers.",
+      "date": "2026-11-09T18:14:47.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
+      "image": ""
+    },
+    {
+      "id": "nvidia-shares-tumble-over-investigation-into--c4bc507025bd",
+      "language": "en",
+      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+      "excerpt": "The share price dropped wiped hundreds of billions of dollars from the value of Nvidia.",
+      "date": "2026-11-09T18:11:11.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7f5c/live/7cc0b9e0-dc6c-11f1-b441-2b33b063138f.jpg"
+    },
+    {
+      "id": "jensen-huang-s-affair-with-alleged-chinese-sp-e5d7409756ab",
+      "language": "en",
+      "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
+      "excerpt": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.",
+      "date": "2026-11-09T18:09:52.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
+      "image": ""
+    },
+    {
+      "id": "russia-s-leading-independent-newspaper-closes-e5d0742cfbaa",
+      "language": "en",
+      "title": "Russia's leading independent newspaper closes after eviction",
+      "excerpt": "The outlet has been evicted from its offices of three decades and says it's been blocked from receiving donations.",
+      "date": "2026-11-09T18:08:07.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cvrlylj9r11go?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b69a/live/f62b4ff0-dc64-11f1-a701-fddedf244c16.jpg"
+    },
+    {
+      "id": "turkey-steel-factory-blast-kills-at-least-16--dbedcaa7a86d",
+      "language": "en",
+      "title": "Turkey steel factory blast kills at least 16 people",
+      "excerpt": "Eyewitnesses say the explosion shook the ground, with one believing an earthquake had hit near the Habas Demir Celik plant in Aliaga.",
+      "date": "2026-11-09T18:04:01.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq2d6d5z9y5jo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5625/live/fd460940-dc61-11f1-8fe6-5becaee5408f.jpg"
+    },
     {
       "id": "meta-releases-muse-ember-a-new-lightweight-mo-730323ba6c06",
       "language": "en",
@@ -22,6 +112,16 @@
       "image": ""
     },
     {
+      "id": "the-issues-a-really-frustrated-trump-may-actu-59177a075e83",
+      "language": "en",
+      "title": "The issues a 'really frustrated' Trump may actually work with Democrats on, according to former Speaker Paul Ryan",
+      "excerpt": "Former House Speaker Paul Ryan said President Donald Trump is likely to become frustrated governing with a Democratic-controlled Congress.",
+      "date": "2026-11-09T17:52:52.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/the-issues-a-really-frustrated-trump-may-actually-work-with-democrats-on-according-to-former-speaker-paul-ryan.html",
+      "image": ""
+    },
+    {
       "id": "we-re-adding-a-consumer-stock-to-diversify-be-bcace43f36f0",
       "language": "en",
       "title": "We're adding a consumer stock to diversify beyond the volatile AI trade",
@@ -30,6 +130,16 @@
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/investingclub/2026/11/09/were-starting-a-position-to-diversify-beyond-the-volatile-ai-trade.html",
       "image": ""
+    },
+    {
+      "id": "claude-code-is-accidentally-exposing-secrets--84f3b5d3194b",
+      "language": "en",
+      "title": "Claude Code is accidentally exposing secrets all over GitHub",
+      "excerpt": "\"Do not ask again\" prompt leads to passwords, API keys, and more being shared.",
+      "date": "2026-11-09T17:24:26.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/claude-github-leaks-500x500.jpg"
     },
     {
       "id": "uber-launches-parking-service-following-spoth-fc938db516a5",
@@ -2889,116 +2999,6 @@
       "date": "2026-11-09T02:07:08.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/tp/2026/11-09/10728634.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴西携56家企业亮相进博会-释放深耕中国市场的积极信号-8ff560a7cd3f",
-      "language": "zh",
-      "title": "巴西携56家企业亮相进博会 释放深耕中国市场的积极信号",
-      "excerpt": "人民网上海11月8日电 (记者张荣、张文捷)第九届中国国际进口博览会于11月5日在上海开幕。巴西此次组织56家企业参展，带来种类丰富的产品，旨在进一步拓展中国市场，挖掘新的合作机遇。",
-      "date": "2026-11-09T02:06:52.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728640.shtml",
-      "image": ""
-    },
-    {
-      "id": "浙江省高校-三大球-校园超级联赛在浙江杭州启幕-405a34d1e503",
-      "language": "zh",
-      "title": "浙江省高校“三大球”校园超级联赛在浙江杭州启幕",
-      "excerpt": "中新网杭州11月9日电(孙琳茹)11月8日，浙江省高校“三大球”校园超级联赛开幕式暨高校校园足球超级联赛揭幕赛在浙江杭州举行。赛事以“百校千场”为载体，推动实现“全员动起来、赛事热起来、校园活起来、体质强起来”。",
-      "date": "2026-11-09T02:05:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-09/10728635.shtml",
-      "image": ""
-    },
-    {
-      "id": "10月份工业生产者出厂价格同比上涨5-7-环比上涨0-7-943fc7457c87",
-      "language": "zh",
-      "title": "10月份工业生产者出厂价格同比上涨5.7%，环比上涨0.7%",
-      "excerpt": "中新网11月9日电 据国家统计局网站消息，2026年10月份，全国工业生产者出厂价格同比上涨5.7%，环比上涨0.7%。工业生产者购进价格同比上涨7.9%，环比上涨1.1%。1—10月平均，工业生产者出厂价格比上年同期上涨2.7%，工业生产者购进价格上涨4.0%。",
-      "date": "2026-11-09T02:04:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728637.shtml",
-      "image": ""
-    },
-    {
-      "id": "wtt法兰克福冠军赛-张本智和-早田希娜登顶-efe9a836acd4",
-      "language": "zh",
-      "title": "WTT法兰克福冠军赛：张本智和、早田希娜登顶",
-      "excerpt": "中新社德国法兰克福11月9日电 当地时间11月8日，2026年世界乒乓球职业大联盟(WTT)法兰克福冠军赛迎来最后一日的较量。日本选手张本智和、早田希娜分获男、女单打冠军。",
-      "date": "2026-11-09T02:02:46.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-09/10728615.shtml",
-      "image": ""
-    },
-    {
-      "id": "福建检察机关依法对尹建业涉嫌受贿案提起公诉-285076d63c6c",
-      "language": "zh",
-      "title": "福建检察机关依法对尹建业涉嫌受贿案提起公诉",
-      "excerpt": "中新网11月9日电 据最高人民检察院官方微博消息，江西省政协原党组成员、副主席尹建业涉嫌受贿一案，由国家监察委员会调查终结，移送检察机关审查起诉。最高人民检察院依法以涉嫌受贿罪对尹建业作出逮捕决定，并指定由福建省漳州市人民检察院审查起诉。近日，漳州市人民检察院已向漳州市中级人民法院提起公诉。",
-      "date": "2026-11-09T02:00:56.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-09/10728638.shtml",
-      "image": ""
-    },
-    {
-      "id": "绿色低碳-医疗健康-外国参展商眼中的-十五五-新机遇-595a8be339bd",
-      "language": "zh",
-      "title": "绿色低碳、医疗健康 外国参展商眼中的“十五五”新机遇",
-      "excerpt": "第九届中国国际进口博览会正在上海举行。今天是展会的第四天，也是首个公众开放日。今年是“十五五”开局之年，绿色低碳、医疗健康成为各国参展商的关注重点。不少跨国企业抢抓机遇，加大投资、落地新项目。",
-      "date": "2026-11-09T01:59:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728636.shtml",
-      "image": ""
-    },
-    {
-      "id": "全球媒体聚焦-进博会展现中国开放合作的强劲吸引力-e011d27ae90a",
-      "language": "zh",
-      "title": "全球媒体聚焦 |“进博会展现中国开放合作的强劲吸引力”",
-      "excerpt": "11月5日至10日，第九届中国国际进口博览会(进博会)在上海举行。步入第九个年头的进博会在展览规模、展品质量、展商参与度等多项指标中创出历史新高。",
-      "date": "2026-11-09T01:57:30.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728633.shtml",
-      "image": ""
-    },
-    {
-      "id": "国家统计局-10月份cpi同比继续上涨-ppi环比涨幅回落-5c26a004c165",
-      "language": "zh",
-      "title": "国家统计局：10月份CPI同比继续上涨 PPI环比涨幅回落",
-      "excerpt": "中新网11月9日电 据国家统计局网站消息，11月9日，国家统计局城市司首席统计师董莉娟解读2026年10月份CPI和PPI数据。10月份，居民消费价格指数(CPI)环比持平；同比上涨0.7%，涨幅比上月回落0.2个百分点；扣除食品和能源价格的核心CPI同比上涨0.8%，涨幅比上月回落0.2个百分点。工业生产者出厂价格指数(PPI)环比上涨0.7%，涨幅比上月回落0.5个百分点；同比上涨5.7%，涨幅比上月扩大0.7个百分点。",
-      "date": "2026-11-09T01:56:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728628.shtml",
-      "image": ""
-    },
-    {
-      "id": "从进博之门到开放之门丨研发首选中国-创新走向世界-5de2a56f01dc",
-      "language": "zh",
-      "title": "从进博之门到开放之门丨研发首选中国，创新走向世界",
-      "excerpt": "进博会上，首发新品年年刷屏。但比新品更值得看的，是背后的研发力量：它从哪来，又如何走向世界？今天，记者从美妆展台出发，去看看这些研发创新，为什么选择中国，如何在中国长成，又走向世界。",
-      "date": "2026-11-09T01:55:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728631.shtml",
-      "image": ""
-    },
-    {
-      "id": "三峡大坝青年集体婚礼-50对新人行古礼许终身-dcd2d6a6d183",
-      "language": "zh",
-      "title": "三峡大坝青年集体婚礼：50对新人行古礼许终身",
-      "excerpt": "图为婚礼现场。董晓斌 摄 图为新人们在婚礼现场抛洒喜糖。董晓斌 摄 图为新人们情定三峡坝区。董晓斌 摄 图为新人在三峡大坝前行合卺之礼。董晓斌 摄 图为新人行对拜礼。董晓斌 摄 图为集体婚礼现场（无人机照片）。谢阳 摄",
-      "date": "2026-11-09T01:49:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-09/10728626.shtml",
-      "image": ""
-    },
-    {
-      "id": "china-wholesale-inflation-hits-over-four-year-cde3c30c21e8",
-      "language": "en",
-      "title": "China wholesale inflation hits over four-year high as consumer measure slows",
-      "excerpt": "The PPI for October came in at 5.7%, compared to the 5.3% expected by economists polled by Reuters.",
-      "date": "2026-11-09T01:40:11.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
       "image": ""
     }
   ]
