@@ -1,6 +1,116 @@
 {
-  "generated_at": "2026-11-09T19:02:00.789Z",
+  "generated_at": "2026-11-09T20:00:31.376Z",
   "items": [
+    {
+      "id": "trump-administration-proposes-stricter-work-s-598c72453eeb",
+      "language": "en",
+      "title": "Trump administration proposes stricter work-search rules for unemployment benefits",
+      "excerpt": "A Labor Department proposal would require unemployment claimants to report at least five qualifying work-search activities each week.",
+      "date": "2026-11-09T19:59:55.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/trump-unemployment-work-search-rule.html",
+      "image": ""
+    },
+    {
+      "id": "hegseth-impeachment-articles-introduced-by-re-8a3a4172151e",
+      "language": "en",
+      "title": "Hegseth impeachment articles introduced by Rep. Massie",
+      "excerpt": "The House is likely to vote this week on articles of impeachment against Defense Secretary Pete Hegseth.",
+      "date": "2026-11-09T19:59:18.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/pete-hegseth-impeachment-articles-massie.html",
+      "image": ""
+    },
+    {
+      "id": "vulnerability-that-lets-hackers-ssh-into-linu-97eedb91375d",
+      "language": "en",
+      "title": "Vulnerability that lets hackers SSH into Linux devices is under active exploitation",
+      "excerpt": "\"*sshole\" poses a serious threat to Internet security.",
+      "date": "2026-11-09T19:41:34.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security-500x500.jpg"
+    },
+    {
+      "id": "youtube-streaming-data-returns-to-billboard-c-46993df858fe",
+      "language": "en",
+      "title": "YouTube streaming data returns to Billboard charts, ending major disagreement",
+      "excerpt": "YouTube will resume sharing streaming data with Billboard in 2027 after changes to the chart formula give more weight to free, ad-supported music streams.",
+      "date": "2026-11-09T19:39:41.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/09/youtube-streaming-data-returns-to-billboard-charts-ending-major-disagreement/",
+      "image": ""
+    },
+    {
+      "id": "elizabeth-warren-set-to-take-over-the-senate--7fa22aca659f",
+      "language": "en",
+      "title": "Elizabeth Warren set to take over the Senate banking committee. Here's what she plans to do",
+      "excerpt": "Sen. Elizabeth Warren telegraphed her agenda for the Senate banking committee as Congress transfers to Democratic control",
+      "date": "2026-11-09T19:34:43.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/elizabeth-warren-senate-banking-agenda.html",
+      "image": ""
+    },
+    {
+      "id": "jensen-huang-affair-puts-nvidia-s-future-at-r-a0de393a6f51",
+      "language": "en",
+      "title": "Jensen Huang affair puts Nvidia's future at risk, with no clear successor to the renowned CEO",
+      "excerpt": "Jensen Huang is practically synonymous with Nvidia, the chipmaker he co-founded in 1993 and turned into one of the most valuable companies on the planet.",
+      "date": "2026-11-09T19:33:23.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/jensen-huang-affair-nvidia-succession.html",
+      "image": ""
+    },
+    {
+      "id": "anthropic-releases-new-mythos-and-fable-model-58580c03fbdd",
+      "language": "en",
+      "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+      "excerpt": "Anthropic says the new models \"show improvements in areas like coding, reasoning, and vision,\" as well as in communicating more clearly with users.",
+      "date": "2026-11-09T19:24:51.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+      "image": ""
+    },
+    {
+      "id": "this-beaten-down-data-center-stock-could-be-w-0ef14cf20dca",
+      "language": "en",
+      "title": "This beaten-down data center stock could be worth a look, says Mike Khouw",
+      "excerpt": "United Rentals is trading at a below-market forward multiple. Effectively, one can buy superior, market-beating growth at a discounted market multiple.",
+      "date": "2026-11-09T19:23:57.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/this-beaten-down-data-center-stock-could-be-worth-a-look-says-mike-khouw.html",
+      "image": ""
+    },
+    {
+      "id": "ai-hardware-startup-nominal-triples-valuation-63271ce2eb02",
+      "language": "en",
+      "title": "AI hardware startup Nominal triples valuation to $3B in 8 months",
+      "excerpt": "Nominal, a startup that offers an AI platform for hardware engineering and claims Anduril as a major customer, has raised another big round of financing that triples its valuation.",
+      "date": "2026-11-09T19:21:46.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/",
+      "image": ""
+    },
+    {
+      "id": "france-blames-iran-for-mass-hacks-targeting-f-9bbeae0d9077",
+      "language": "en",
+      "title": "France blames Iran for mass-hacks targeting freezers in grocery stores and blood banks",
+      "excerpt": "France's foreign minister blamed Iran for launching at least two waves of cyberattacks targeting industrial refrigerated and freezer units across France and wider Europe.",
+      "date": "2026-11-09T19:19:24.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/09/france-blames-iran-for-mass-hacks-targeting-freezers-in-grocery-stores-and-blood-banks/",
+      "image": ""
+    },
+    {
+      "id": "pentagon-mulls-placing-fleet-of-military-sate-0305bd1e7fea",
+      "language": "en",
+      "title": "Pentagon mulls placing fleet of military satellites around the Moon",
+      "excerpt": "\"Please jump on my cislunar bandwagon because I need some more friends here.\"",
+      "date": "2026-11-09T19:08:37.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/11/us-military-notionally-interested-in-satellite-constellation-around-moon/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/55199774765_6e77d97b51_o-500x500.jpg"
+    },
     {
       "id": "anthropic-releases-first-frontier-models-sinc-dcdd5ba701c7",
       "language": "en",
@@ -9,6 +119,16 @@
       "date": "2026-11-09T19:00:01.000Z",
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
+      "image": ""
+    },
+    {
+      "id": "jensen-huang-exit-odds-are-low-on-prediction--31ebef8b892f",
+      "language": "en",
+      "title": "Jensen Huang exit odds are low on prediction markets after Nvidia probe",
+      "excerpt": "Prediction markets traders price relatively low odds that the Nvidia CEO will depart in the near term.",
+      "date": "2026-11-09T18:46:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/09/jensen-huang-nvidia-exit-prediction-markets.html",
       "image": ""
     },
     {
@@ -2879,126 +2999,6 @@
       "date": "2026-11-09T02:55:33.000Z",
       "source_name": "中新网财经新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728660.shtml",
-      "image": ""
-    },
-    {
-      "id": "cruise-ship-pianist-rescued-from-sea-after-ni-4688c3e49b47",
-      "language": "en",
-      "title": "Cruise ship pianist rescued from sea after nine hours in Pacific Ocean",
-      "excerpt": "Two US fishermen say they spotted the man treading water around 20 miles (32km) off the Californian coast.",
-      "date": "2026-11-09T02:50:13.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/ck1wvrrgln13o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d3d5/live/8cacf090-dbdf-11f1-b348-cb75a5659779.jpg"
-    },
-    {
-      "id": "在进博会-感受开放中国的诚心-恒心-暖心-a67713b64ffc",
-      "language": "zh",
-      "title": "在进博会，感受开放中国的诚心、恒心、暖心",
-      "excerpt": "原标题：第九届进博会｜新华社经济随笔：在进博会，感受开放中国的诚心、恒心、暖心",
-      "date": "2026-11-09T02:48:37.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728665.shtml",
-      "image": ""
-    },
-    {
-      "id": "国务院关税税则委员会-调整对原产于美国的进口商品加征关税措施-464a58376f7b",
-      "language": "zh",
-      "title": "国务院关税税则委员会：调整对原产于美国的进口商品加征关税措施",
-      "excerpt": "中新网11月9日电 据财政部网站消息，为落实中美两国元首华盛顿会晤达成的成果共识，根据《中华人民共和国关税法》、《中华人民共和国海关法》、《中华人民共和国对外贸易法》等法律法规和国际法基本原则，经国务院批准，国务院关税税则委员会发布公告，自2026年11月10日13时01分起，调整《国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告》(税委会公告2025年第4号)规定的加征关税措施，在2个月内继续暂停实施24%的对美加征关税税率，保留10%的对美加征关税税率。",
-      "date": "2026-11-09T02:38:06.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728657.shtml",
-      "image": ""
-    },
-    {
-      "id": "美军重兵压境-伊朗针锋相对-中东大战一触即发-203f4ea2775a",
-      "language": "zh",
-      "title": "美军重兵压境、伊朗针锋相对，中东大战一触即发？",
-      "excerpt": "中新网11月9日电(记者 刁炜)近日，一架美军RC-135U“战斗哨兵”侦察机飞越大西洋，降落在英国米尔登霍尔空军基地，此举进一步加重了外界关于“美国将对伊朗发起新一轮大规模打击”的担忧。",
-      "date": "2026-11-09T02:22:23.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-09/10728630.shtml",
-      "image": ""
-    },
-    {
-      "id": "埃及列车相撞事故死亡人数升至7人-83fd3d8fced4",
-      "language": "zh",
-      "title": "埃及列车相撞事故死亡人数升至7人",
-      "excerpt": "中新社北京11月9日电 开罗消息：埃及卫生部当地时间8日晚间发布的最新通报显示，该国吉萨省阿亚特(El-Ayyat)地区两列客运列车相撞事故死亡人数已升至7人，受伤人数升至125人。",
-      "date": "2026-11-09T02:21:01.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-09/10728625.shtml",
-      "image": ""
-    },
-    {
-      "id": "波士顿科学rezūm-evo国产设备亮相进博会-加速创新疗法本土化落地-5f3da29dc07a",
-      "language": "zh",
-      "title": "波士顿科学Rezūm EVO国产设备亮相进博会 加速创新疗法本土化落地",
-      "excerpt": "第九届中国国际进口博览会期间，波士顿科学举办“汽势向新，梦起东方——Rezūm EVO国产设备预上市活动”。波士顿科学中国外科事业部高级总监潘晓抒、波士顿科学中国研发部总监徐峰及上海交通大学医学院附属新华医院泌尿外科主任崔心刚等嘉宾共同参与，见证新一代Rezūm EVO热蒸汽治疗设备本土化落地的重要进展。",
-      "date": "2026-11-09T02:13:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728624.shtml",
-      "image": ""
-    },
-    {
-      "id": "浙江义乌-一城小商品-万里通非洲-f4add94d33e6",
-      "language": "zh",
-      "title": "浙江义乌 一城小商品 万里通非洲",
-      "excerpt": "今年是中非开启外交关系70周年，也是“中非人文交流年”。11月7日，以“经贸繁荣 文化互鉴 伙伴共赢 民心相通”为主题的2026中非经贸和文化论坛在浙江省义乌市举办。如今，时常集聚于义乌的采购商来自120多个国家和地区，常驻外籍客商达3.8万名，非洲客商的规模持续增长。一座城市与一片大陆的故事，写在一笔笔订单里。",
-      "date": "2026-11-09T02:12:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728643.shtml",
-      "image": ""
-    },
-    {
-      "id": "中超末轮综述-英博大逆转夺冠-蓉城不敌泰山功亏一篑-331073fff619",
-      "language": "zh",
-      "title": "中超末轮综述：英博大逆转夺冠 蓉城不敌泰山功亏一篑",
-      "excerpt": "中新网北京11月9日电 (刘梦青)2026赛季中超联赛末轮比赛8日全部战罢。成都蓉城2:3不敌山东泰山，大连英博3:1轻取天津津门虎。两队最终同积52分，英博凭两回合双杀蓉城的相互战绩优势，夺得本赛季中超联赛冠军，蓉城屈居亚军。",
-      "date": "2026-11-09T02:11:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-09/10728620.shtml",
-      "image": ""
-    },
-    {
-      "id": "文脉相牵-手足相亲-铸牢共同体-中华一家亲-3ff94fdc64b9",
-      "language": "zh",
-      "title": "文脉相牵 手足相亲（铸牢共同体 中华一家亲）",
-      "excerpt": "人民日报记者 李亚楠",
-      "date": "2026-11-09T02:11:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/mz/2026/11-09/10728642.shtml",
-      "image": ""
-    },
-    {
-      "id": "小白杨-词作者梁上泉告别会在重庆举行-各界人士前来送别-d34108bc8604",
-      "language": "zh",
-      "title": "《小白杨》词作者梁上泉告别会在重庆举行 各界人士前来送别",
-      "excerpt": "图为告别会现场，亲友及社会各界人士共同默哀。中新社记者 何蓬磊 摄 告别会现场，亲友及社会各界人士向梁上泉遗体三鞠躬，表达哀思。中新社记者 何蓬磊 摄 图为告别会现场。中新社记者 何蓬磊 摄 图为民众在告别会现场观看梁上泉先生时光印记展。中新社记者 何蓬磊 摄",
-      "date": "2026-11-09T02:10:07.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-09/10728639.shtml",
-      "image": ""
-    },
-    {
-      "id": "进博会让海外中小微企业-被看见-0f7c439132bc",
-      "language": "zh",
-      "title": "进博会让海外中小微企业“被看见”",
-      "excerpt": "新华社上海11月8日电 题：进博会让海外中小微企业“被看见”",
-      "date": "2026-11-09T02:08:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10728641.shtml",
-      "image": ""
-    },
-    {
-      "id": "南京-戏曲进商圈-好戏入日常-155721b12a4f",
-      "language": "zh",
-      "title": "南京：戏曲进商圈 好戏入日常",
-      "excerpt": "11月8日，江苏南京，戏曲演员表演节目。当日，“登临计划 戏聚栖霞——第二届中国戏剧经典保留剧目展演”场外活动在南京湖滨天地举办，戏曲、歌舞、魔术等轮番上演，把经典剧目与多彩文艺节目送到市民身边，让艺术在日常生活中自然绽放。中新社记者 泱波 摄 11月8日，江苏南京，川剧演员表演变脸节目。当日，“登临计划 戏聚栖霞——第二届中国戏剧经典保留剧目展演”场外活动在南京湖滨天地举办，戏曲、歌舞、魔术等轮番上演，把经典剧目与多彩文艺节目送到市民身边，让艺术在日常生活中自然绽放。中新社记者 泱波 摄 11月8日，江苏南京，戏曲演员表演节目。当日，“登临计划 戏聚栖霞——第二届中国戏剧经典保留剧目展演”场外活动在南京湖滨天地举办，戏曲、歌舞、魔术等轮番上演，把经典剧目与多彩文艺节目送到市民身边，让艺术在日常生活中自然绽放。中新社记者 泱波 摄 11月8日，江苏南京，戏曲演员表演节目。当日，“登临计划 戏聚栖霞——第二届中国戏剧经典保留剧目展演”场外活动在南京湖滨天地举办，戏曲、歌舞、魔术等轮番上演，把经典剧目与多彩文艺节目送到市民身边，让艺术在日常生活中自然绽放。中新社记者 泱波 摄 11月8日，江苏南京，川剧演员表演变脸节目。当日，“登临计划 戏聚栖霞——第二届中国戏剧经典保留剧目展演”场外活动在南京湖滨天地举办，戏曲、歌舞、魔术等轮番上演，把经典剧目与多彩文艺节目送到市民身边，让艺术在日常生活中自然绽放。中新社记者 泱波 摄 11月8日，江苏南京，戏曲演员表演节目。当日，“登临计划 戏聚栖霞——第二届中国戏剧经典保留剧目展演”场外活动在南京湖滨天地举办，戏曲、歌舞、魔术等轮番上演，把经",
-      "date": "2026-11-09T02:07:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-09/10728634.shtml",
       "image": ""
     }
   ]
