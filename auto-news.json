@@ -1,6 +1,206 @@
 {
-  "generated_at": "2026-11-10T14:20:54.587Z",
+  "generated_at": "2026-11-10T15:56:29.285Z",
   "items": [
+    {
+      "id": "house-oversight-calls-on-doj-to-interview-key-f29e64f3c3ec",
+      "language": "en",
+      "title": "House Oversight calls on DOJ to interview key Epstein witnesses, says govt. ‘failed’ survivors",
+      "excerpt": "\"The federal government has failed the survivors of Jeffrey Epstein and Ghislaine Maxwell's horrific crimes for decades,\" Rep. James Comer, R-Ky., said.",
+      "date": "2026-11-10T15:54:12.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/10/jeffrey-epstein-house-oversight-doj.html",
+      "image": ""
+    },
+    {
+      "id": "google-broadens-its-ai-hardware-portfolio-wit-4ea7969a421c",
+      "language": "en",
+      "title": "Google broadens its AI hardware portfolio with two new specialized chips",
+      "excerpt": "Google's new tensor processing units (TPUs) broaden its chip portfolio to more use cases: confidential model training and more memory capacity.",
+      "date": "2026-11-10T15:54:08.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+      "image": ""
+    },
+    {
+      "id": "n-able-takes-its-remote-access-service-offlin-a3eeb77a80fa",
+      "language": "en",
+      "title": "N-able takes its remote access service offline after researcher publishes dozens of zero-day bugs",
+      "excerpt": "The remote access giant also urged its self-hosted customers to take down their own servers amid a \"critical security incident,\" fearing the possibility of cyberattacks.",
+      "date": "2026-11-10T15:45:27.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/10/n-able-takes-its-remote-access-service-offline-after-researcher-publishes-dozens-of-zero-day-bugs/",
+      "image": ""
+    },
+    {
+      "id": "商家呼吁-取消外卖-实为mcn制造对立-虚假摆拍引流-4e7c88c33901",
+      "language": "zh",
+      "title": "商家呼吁“取消外卖”？实为MCN制造对立、虚假摆拍引流",
+      "excerpt": "近期，社交平台上出现了一批内容为“取消外卖”“下架外卖”等话题的短视频，引发广泛关注。这些视频呈现出明显的模板化，且通常由多个账号在短期内批量生产，看似是个别餐饮商家的表态和呼吁，实则是深谙“情绪即流量”的MCN机构炮制的舆论噱头。",
+      "date": "2026-11-10T15:33:43.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729864.shtml",
+      "image": ""
+    },
+    {
+      "id": "meta-s-ai-agent-muse-lands-on-apple-watch-and-679acb5039d2",
+      "language": "en",
+      "title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
+      "excerpt": "Users can now interact with Meta’s AI assistant through voice calls, text messages, or dictation on their Apple Watch.",
+      "date": "2026-11-10T15:29:30.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/",
+      "image": ""
+    },
+    {
+      "id": "胡军-产业向新向绿让中国经济增长动能更加强劲-514ea4c06c19",
+      "language": "zh",
+      "title": "胡军：产业向新向绿让中国经济增长动能更加强劲",
+      "excerpt": "中新网安塔利亚11月10日电(记者 魏园 陈溯 徐峻杰)当地时间11月10日，在土耳其安塔利亚举行的《联合国气候变化框架公约》第三十一次缔约方大会(COP31)中国角主题边会上，习近平生态文明思想研究中心主任、生态环境部环境与经济政策研究中心主任胡军发布题为《“绿水青山就是金山银山”——中国绿色发展之路》的智库报告，并围绕中国绿色发展的理念、实践与世界意义展开探讨。",
+      "date": "2026-11-10T15:28:40.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729860.shtml",
+      "image": ""
+    },
+    {
+      "id": "rivian-ceo-says-new-r2-suv-autonomy-make-2027-b50e5f34bdd3",
+      "language": "en",
+      "title": "Rivian CEO says new R2 SUV, autonomy make 2027 an ‘inflection year’ as EV maker marks five years since IPO",
+      "excerpt": "Rivian CEO RJ Scaringe says 2027 will be an “inflection year” as the EV maker scales R2 and invests in autonomy.",
+      "date": "2026-11-10T15:11:48.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/10/rivian-r2-autonomy-2027-rj-scaringe.html",
+      "image": ""
+    },
+    {
+      "id": "coreweave-earnings-put-debt-fueled-ai-build-o-ad3c6db0f500",
+      "language": "en",
+      "title": "CoreWeave earnings put debt-fueled AI build-out under scrutiny",
+      "excerpt": "CoreWeave’s earnings after the bell could calm fears about its debt-fueled AI buildout — or stoke more fear.",
+      "date": "2026-11-10T15:01:21.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/10/coreweave-earnings-preview-debt-capex.html",
+      "image": ""
+    },
+    {
+      "id": "deepmind-reveals-gemini-robotics-2-5-and-open-76165dd7fb3f",
+      "language": "en",
+      "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
+      "excerpt": "The new model is up to twice as successful at some tasks.",
+      "date": "2026-11-10T15:00:39.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Credit_-Apptronik_-Mercedes-Benz-Apollo-2-using-Gemini-Robotics-2.5-to-autonomously-perform-automotive-kitting-at-a-Mercedes-Benz-factory-500x500-1794257853.jpg"
+    },
+    {
+      "id": "new-whatsapp-head-wants-to-make-the-app-easie-c1a6acfce87b",
+      "language": "en",
+      "title": "New WhatsApp head wants to make the app easier to use, give its AI more chops",
+      "excerpt": "Kunal Shah said that AI on WhatsApp will remind people of their appointment than booking",
+      "date": "2026-11-10T15:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/10/new-whatsapp-head-wants-to-make-the-app-easier-to-use-give-its-ai-more-chops/",
+      "image": ""
+    },
+    {
+      "id": "reddit-is-turning-user-conversations-into-ai--f407fadf37df",
+      "language": "en",
+      "title": "Reddit is turning user conversations into AI-powered product reviews",
+      "excerpt": "Reddit's new AI-powered reviews summarize what users like and dislike about 10,000 products, helping shoppers research purchases ahead of the holidays.",
+      "date": "2026-11-10T15:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/10/reddit-is-turning-user-conversations-into-ai-powered-product-reviews/",
+      "image": ""
+    },
+    {
+      "id": "北京一零一中教育集团校长熊永昌-让生态文明扎根孩子心中-ea5b7accb328",
+      "language": "zh",
+      "title": "北京一零一中教育集团校长熊永昌：让生态文明扎根孩子心中",
+      "excerpt": "中新网安塔利亚11月10日电(记者 魏园 王庆凯)“让绿色成为校园底色，让生态文明扎根孩子心中。”",
+      "date": "2026-11-10T14:59:43.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/edu/2026/11-10/10729857.shtml",
+      "image": ""
+    },
+    {
+      "id": "nvidia-has-a-jensen-huang-problem-and-no-obvi-ac85a49a145a",
+      "language": "en",
+      "title": "Nvidia has a Jensen Huang problem—and no obvious successor",
+      "excerpt": "Huang faces a board probe as investors fret over Nvidia’s lack of a clear successor.",
+      "date": "2026-11-10T14:53:05.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/11/nvidia-has-a-jensen-huang-problem-and-no-obvious-successor/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/11/jensen_huang-500x500.jpg"
+    },
+    {
+      "id": "fda-warns-glp-1-drugs-may-pose-risk-of-rare-c-d7c8cc8d73a1",
+      "language": "en",
+      "title": "FDA warns GLP-1 drugs may pose risk of rare condition that causes vision loss",
+      "excerpt": "The risk appears small and data is mixed, but FDA wants patients to be aware.",
+      "date": "2026-11-10T14:43:49.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/health/2026/11/glp-1-drugs-may-increase-risk-of-vision-loss-from-rare-condition-fda-warns/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/02/GettyImages-1716643505-500x500.jpg"
+    },
+    {
+      "id": "does-anyone-feel-safe-from-layoffs-right-now-910be47e3f8a",
+      "language": "en",
+      "title": "Does anyone feel safe from layoffs right now?",
+      "excerpt": "AI fears and a lackluster job market are fueling a looming worry that layoffs are around the corner, even if you do your job well.",
+      "date": "2026-11-10T14:30:56.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/make-it/2026/11/10/layoff-announcements-are-slowing-this-year-workers-are-still-worried.html",
+      "image": ""
+    },
+    {
+      "id": "arrests-made-in-mohamed-al-fayed-probe-in-fra-119606f9f2d2",
+      "language": "en",
+      "title": "Arrests made in Mohamed Al Fayed probe in France, police say",
+      "excerpt": "The Ritz hotel in Paris, which is still owned by the Al Fayed family, is one of the properties searched by police.",
+      "date": "2026-11-10T14:29:00.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck1wvwyrd4ywo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1966/live/79e95480-dcfc-11f1-a701-fddedf244c16.jpg"
+    },
+    {
+      "id": "2026年度邵逸夫奖在港颁奖-获奖者-合作是成功关键-f07a4c081778",
+      "language": "zh",
+      "title": "2026年度邵逸夫奖在港颁奖 获奖者：合作是成功关键",
+      "excerpt": "中新社香港11月10日电 (记者 邱兆翔)2026年度邵逸夫奖颁奖典礼10日晚在香港举行，7名科学家分获天文学、生命科学与医学、数学科学3个奖项。多位获奖者表示，合作是他们能够取得丰硕学术成就的关键力量。",
+      "date": "2026-11-10T14:23:23.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/dwq/2026/11-10/10729853.shtml",
+      "image": ""
+    },
+    {
+      "id": "polestar-has-a-new-look-with-its-formula-2030-c22e35346fbd",
+      "language": "en",
+      "title": "Polestar has a new look with its Formula 2030 concept",
+      "excerpt": "The shape looks like a Saab Aero-X, but the nose previews the next Polestar 2.",
+      "date": "2026-11-10T14:22:02.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/11/polestar-has-a-new-look-with-its-formula-2030-concept/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Polestar-260929-HBL_B0001178_v003-500x500.jpg"
+    },
+    {
+      "id": "以味为桥-80名厨师烹制西部陆海新通道沿线美食-5849a7d5f38f",
+      "language": "zh",
+      "title": "以味为桥 80名厨师烹制西部陆海新通道沿线美食",
+      "excerpt": "图为比赛现场，参赛选手专注制作熊猫酥面点。 殷缘 摄 图为菜品融合戏曲脸谱元素，搭配精致摆盘与主题摆件。 殷缘 摄 图为比赛现场设置非遗面塑技艺展演，吊脚楼、山水舟船等以面塑形式立体呈现。 殷缘 摄 图为参赛选手讲解菜品创意，餐饮行业专家、美食评论家围绕作品呈现、口味质感等七个维度开展综合评判。 殷缘 摄 图为参赛选手讲解菜品创意，餐饮行业专家、美食评论家围绕作品呈现、口味质感等七个维度开展综合评判。 殷缘 摄",
+      "date": "2026-11-10T14:17:06.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/tp/2026/11-10/10729839.shtml",
+      "image": ""
+    },
+    {
+      "id": "2026澜沧江-湄公河地方政府合作论坛暨历史文化名城对话会在乐山开幕-8b9fcebe15cf",
+      "language": "zh",
+      "title": "2026澜沧江—湄公河地方政府合作论坛暨历史文化名城对话会在乐山开幕",
+      "excerpt": "图为参会的柬埔寨嘉宾在会场合影留念。中新社记者 刘忠俊 摄 图为“守护文化根脉 共促文明互鉴”议题嘉宾对话现场。中新社记者 刘忠俊 摄 图为“数智化转型与新质生产力”议题嘉宾对话现场。中新社记者 刘忠俊 摄 图为“织密友城网络 赋能务实合作”议题嘉宾对话现场。中新社记者 刘忠俊 摄",
+      "date": "2026-11-10T14:16:32.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/tp/2026/11-10/10729828.shtml",
+      "image": ""
+    },
     {
       "id": "how-much-you-can-make-in-2027-and-still-pay-0-a1e279078f6f",
       "language": "en",
@@ -2799,206 +2999,6 @@
       "date": "2026-11-10T05:04:37.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729347.shtml",
-      "image": ""
-    },
-    {
-      "id": "10月北京cpi环比持平-同比涨幅回落-9c20d102b88a",
-      "language": "zh",
-      "title": "10月北京CPI环比持平 同比涨幅回落",
-      "excerpt": "中新社北京11月10日电 (记者 徐婧)国家统计局北京调查总队10日发布数据显示，今年10月，北京居民消费价格指数(CPI)环比持平，同比涨幅回落。",
-      "date": "2026-11-10T05:03:46.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729346.shtml",
-      "image": ""
-    },
-    {
-      "id": "东西问丨西班牙汉学家阿莉西亚-雷林科-文明对话需要-和合-a4938b006e3c",
-      "language": "zh",
-      "title": "东西问丨西班牙汉学家阿莉西亚·雷林科：文明对话需要“和合”",
-      "excerpt": "中新社浙江台州11月10日电 题：文明对话需要“和合”",
-      "date": "2026-11-10T04:58:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dxw/2026/11-10/10729354.shtml",
-      "image": ""
-    },
-    {
-      "id": "trump-sees-strong-inclination-to-end-russia-u-cb9c21ebcc48",
-      "language": "en",
-      "title": "Trump sees 'strong inclination' to end Russia-Ukraine war ahead of U.S.-brokered peace talks",
-      "excerpt": "President Trump signaled optimism for the end of Russia's war in Ukraine ahead of trilateral negotiation talks set to commence later today in Abu Dhabi.",
-      "date": "2026-11-10T04:46:37.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/10/trump-russia-ukraine-abu-dhabi-war-talks.html",
-      "image": ""
-    },
-    {
-      "id": "十五五-时期我国将加力支持革命老区加快振兴发展-87ee732778a2",
-      "language": "zh",
-      "title": "“十五五”时期我国将加力支持革命老区加快振兴发展",
-      "excerpt": "国家发展改革委今天(10日)举行新闻发布会，相关负责人介绍，“十五五”时期，我国将从加大资金支持、加强对口合作等方面，加力支持革命老区加快振兴发展。",
-      "date": "2026-11-10T04:42:27.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729353.shtml",
-      "image": ""
-    },
-    {
-      "id": "四部门发文-加强创新药安全合理配备使用-67e7884eabdf",
-      "language": "zh",
-      "title": "四部门发文：加强创新药安全合理配备使用",
-      "excerpt": "国家卫生健康委、国家医保局、国家中医药局、国家疾控局今天(10日)发布了《关于进一步做好创新药安全合理配备使用工作的通知》，围绕创新药安全合理配备使用的重点环节，从促进合理配备、加强培训指导、优化使用条件、完善管理举措等方面提出了具体政策措施。",
-      "date": "2026-11-10T04:41:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-10/10729351.shtml",
-      "image": ""
-    },
-    {
-      "id": "联合国气候变化安塔利亚大会开幕-聚焦气候融资和能源转型等议题-030a9f59d1f3",
-      "language": "zh",
-      "title": "联合国气候变化安塔利亚大会开幕 聚焦气候融资和能源转型等议题",
-      "excerpt": "当地时间9日，《联合国气候变化框架公约》第三十一次缔约方大会在土耳其安塔利亚正式拉开帷幕。本次大会为期12天，聚焦落实公约及其《巴黎协定》，各方将围绕温室气体减排、气候融资、气候适应与韧性、公正转型等重要议题开展谈判磋商。",
-      "date": "2026-11-10T04:36:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729350.shtml",
-      "image": ""
-    },
-    {
-      "id": "jensen-huang-s-alleged-honeypot-scandal-has-i-60cb8c411575",
-      "language": "en",
-      "title": "Jensen Huang’s alleged honeypot scandal has inspired some top-notch memes",
-      "excerpt": "The internet is having a field day with Nvidia's Jensen Huang's alleged honeypot scandal.",
-      "date": "2026-11-10T04:34:15.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/09/jensen-huangs-alleged-honeypot-scandal-has-inspired-some-top-notch-memes/",
-      "image": ""
-    },
-    {
-      "id": "我们这个石头村-班子也硬-9e327593b4a1",
-      "language": "zh",
-      "title": "“我们这个石头村，班子也硬”",
-      "excerpt": "走进山东泰安肥城市孙伯镇五埠村，非遗工坊里岱宗传拓的扑墨声此起彼伏，煎饼厂内村民忙碌有序，村口独特的“伙大门”前，研学的学生络绎不绝。",
-      "date": "2026-11-10T04:27:33.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729348.shtml",
-      "image": ""
-    },
-    {
-      "id": "米夏埃尔-舒曼-信任是国际气候政策中的稀缺资源-f25bab2c3aea",
-      "language": "zh",
-      "title": "米夏埃尔·舒曼：信任是国际气候政策中的稀缺资源",
-      "excerpt": "中新网安塔利亚11月10日电 (记者 魏园)“信任是国际气候政策中的稀缺资源。”《联合国气候变化框架公约》第三十一次缔约方大会(COP31)正在土耳其安塔利亚召开，德国联邦经济发展和对外贸易协会(BWA)董事会主席米夏埃尔·舒曼(Michael Schumann)接受中新网记者专访时，围绕中国电动汽车入欧、中欧绿色发展合作以及美国对华AI芯片管制等话题展开交流。他反复强调：面对气候与贸易的交叉难题，“我们需要的不是战场，而是工作台”。",
-      "date": "2026-11-10T04:23:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729345.shtml",
-      "image": ""
-    },
-    {
-      "id": "英国大雾侵袭多地扰乱交通-2480b381417c",
-      "language": "zh",
-      "title": "英国大雾侵袭多地扰乱交通",
-      "excerpt": "中新网伦敦11月10日电 (记者 欧阳开宇)近日大范围浓雾笼罩英格兰、威尔士多地，引发多起交通事故并造成交通延误。英国气象局9日发布新一轮黄色大雾预警。",
-      "date": "2026-11-10T04:11:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729277.shtml",
-      "image": ""
-    },
-    {
-      "id": "国际最新研究-预计2026年全球二氧化碳排放量将暂时性下降0-4-6f17b02336e4",
-      "language": "zh",
-      "title": "国际最新研究：预计2026年全球二氧化碳排放量将暂时性下降0.4%",
-      "excerpt": "中新网北京11月10日电 (记者 孙自法)施普林格·自然旗下专业学术期刊《自然-气候变化》11月10日在线发表一篇论文称，一项研究显示，在全球化石燃料二氧化碳排放量于2019年至2025年间以年均0.8%的速度增长后，预计2026年将暂时下降，降幅预计为0.4%。",
-      "date": "2026-11-10T04:11:14.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729301.shtml",
-      "image": ""
-    },
-    {
-      "id": "中美两军举行-驼峰航线-美军援华抗日飞行员遗骸移交仪式-f15b3696aa70",
-      "language": "zh",
-      "title": "中美两军举行“驼峰航线”美军援华抗日飞行员遗骸移交仪式",
-      "excerpt": "中新社北京11月10日电 据中国国防部网站消息，11月10日，中美两军在四川成都举行美军遗骸移交仪式，中方向美方移交一批在“驼峰航线”沿线区域发掘的美军援华抗日飞行员遗骸。",
-      "date": "2026-11-10T04:07:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-10/10729337.shtml",
-      "image": ""
-    },
-    {
-      "id": "今年前十月两岸进出口贸易额同比增长32-d0af3675b050",
-      "language": "zh",
-      "title": "今年前十月两岸进出口贸易额同比增长32%",
-      "excerpt": "中新社北京11月10日电 海关总署10日公布的最新统计数据显示，今年前10个月，大陆与台湾进出口贸易额同比增长32%，内地与香港进出口贸易额同比增长55.3%。",
-      "date": "2026-11-10T04:05:41.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-10/10729335.shtml",
-      "image": ""
-    },
-    {
-      "id": "湖南新田做强淮山特色产业-拓宽乡村富民路-1e74e389ffda",
-      "language": "zh",
-      "title": "湖南新田做强淮山特色产业 拓宽乡村富民路",
-      "excerpt": "中新网永州11月10日电(蒋军君 周林凤 陶红星)眼下正是淮山采收季，湖南新田县金盆镇青山坪村庆熙农业开发中心的淮山种植基地里，一派繁忙采收景象。",
-      "date": "2026-11-10T04:05:35.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729331.shtml",
-      "image": ""
-    },
-    {
-      "id": "圭亚那-放射日-两国三地-云-聚-中国文化亮眼-43dba94a9a8f",
-      "language": "zh",
-      "title": "圭亚那“放射日”：两国三地“云”聚 中国文化亮眼",
-      "excerpt": "中新网圭亚那乔治敦11月9日电 (周树林 洪顾麒 徐斌)第15个国际放射日来临之际，中国(江苏)第22批援圭亚那医疗队与中国(江苏)第36批援桑给巴尔医疗队，于8日在圭亚那乔治敦与坦桑尼亚桑给巴尔温古贾岛、奔巴岛“云端”开展放射影像专题培训。",
-      "date": "2026-11-10T04:05:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729324.shtml",
-      "image": ""
-    },
-    {
-      "id": "你好-中国-水韵江苏文旅推介会在巴黎举办-18e52bd7db3d",
-      "language": "zh",
-      "title": "“你好！中国”水韵江苏文旅推介会在巴黎举办",
-      "excerpt": "中新网巴黎11月10日电 由中国驻巴黎旅游办事处和江苏省文化和旅游厅主办、江苏英法推广中心承办的“你好！中国”水韵江苏(巴黎)文旅推介会当地时间9日在法国巴黎举办。",
-      "date": "2026-11-10T04:05:07.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729313.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-从进博会看亚太经贸合作-你中有我-ce6d9bddfb83",
-      "language": "zh",
-      "title": "（第九届进博会）从进博会看亚太经贸合作“你中有我”",
-      "excerpt": "中新社上海11月10日电 (邸子瀛)“亚太经贸合作你中有我”，第九届中国国际进口博览会上，多家亚太经合组织(APEC)经济体参展企业分享的发展故事，折射出这一日益紧密的联系。",
-      "date": "2026-11-10T04:04:41.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729338.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国-土耳其绿色发展商务论坛在伊斯坦布尔举办-6737805e364c",
-      "language": "zh",
-      "title": "中国—土耳其绿色发展商务论坛在伊斯坦布尔举办",
-      "excerpt": "中新网北京11月10日电 伊斯坦布尔消息：当地时间9日，中国—土耳其绿色发展商务论坛在伊斯坦布尔成功举办。本次活动由中国国际贸易促进委员会(以下简称：中国贸促会)和土耳其对外经济关系委员会共同主办，中土两国政商界代表近300人参加。",
-      "date": "2026-11-10T04:04:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729305.shtml",
-      "image": ""
-    },
-    {
-      "id": "卷帙匠心-古今书籍装帧美学-展在柏林开幕-02674316d660",
-      "language": "zh",
-      "title": "“卷帙匠心——古今书籍装帧美学”展在柏林开幕",
-      "excerpt": "中新网柏林11月10日电(记者 马秀秀)“卷帙匠心——古今书籍装帧美学”展览9日在柏林中国文化中心开幕，通过实物展示、互动体验等形式，带领观众走进中国书籍装帧艺术的文化史。",
-      "date": "2026-11-10T04:03:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729303.shtml",
-      "image": ""
-    },
-    {
-      "id": "最新气候变化研究-全球区域性变暖或已与升温1-5-c的世界相仿-06573dc6882b",
-      "language": "zh",
-      "title": "最新气候变化研究：全球区域性变暖或已与升温1.5 °C的世界相仿",
-      "excerpt": "中新网北京11月10日电 (记者 孙自法)施普林格·自然旗下专业学术期刊《自然-气候变化》最新发表一篇论文称，一项研究结果表明，世界各地的一些地区可能已经经历了全球平均气温较工业化前水平升高1.5°C时预期升温幅度的约90%–94%，以及升温2°C时预期升温幅度的65%–76%。",
-      "date": "2026-11-10T04:03:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729295.shtml",
       "image": ""
     }
   ]
