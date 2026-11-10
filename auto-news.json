@@ -1,6 +1,306 @@
 {
-  "generated_at": "2026-11-10T05:59:54.730Z",
+  "generated_at": "2026-11-10T07:18:25.400Z",
   "items": [
+    {
+      "id": "第九届进博会按年计意向成交额突破854亿美元-958ce74a1537",
+      "language": "zh",
+      "title": "第九届进博会按年计意向成交额突破854亿美元",
+      "excerpt": "原标题：新华社权威快报｜第九届进博会按年计意向成交额突破854亿美元",
+      "date": "2026-11-10T07:14:28.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729440.shtml",
+      "image": ""
+    },
+    {
+      "id": "智能家居产业繁华之下有隐忧-互联互通何时能打通-46a1f1722b9e",
+      "language": "zh",
+      "title": "智能家居产业繁华之下有隐忧：互联互通何时能打通？",
+      "excerpt": "智能家居产业调研",
+      "date": "2026-11-10T07:13:08.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729438.shtml",
+      "image": ""
+    },
+    {
+      "id": "北冥有鱼-腾飞黄河口-5cd028e801a4",
+      "language": "zh",
+      "title": "“北冥有鱼”，腾飞黄河口",
+      "excerpt": "“北冥有鱼，其名为鲲。”",
+      "date": "2026-11-10T07:11:33.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729420.shtml",
+      "image": ""
+    },
+    {
+      "id": "江苏省南通市政协党组成员-副主席顾国标接受审查调查-3c518cdbc142",
+      "language": "zh",
+      "title": "江苏省南通市政协党组成员、副主席顾国标接受审查调查",
+      "excerpt": "中新网11月10日电 据江苏省纪委监委消息：江苏省南通市政协党组成员、副主席顾国标涉嫌严重违纪违法，目前正接受江苏省纪委监委纪律审查和监察调查。",
+      "date": "2026-11-10T07:08:13.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-10/10729421.shtml",
+      "image": ""
+    },
+    {
+      "id": "从住在一起-到心在一起-山西长治-红石榴-服务站里的多民族日常-b62372f263f5",
+      "language": "zh",
+      "title": "从住在一起，到心在一起——山西长治“红石榴”服务站里的多民族日常",
+      "excerpt": "中新网太原11月10日电 题：从住在一起，到心在一起——山西长治“红石榴”服务站里的多民族日常",
+      "date": "2026-11-10T07:03:49.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/txy/2026/11-10/10729416.shtml",
+      "image": ""
+    },
+    {
+      "id": "从秦巴腹地到黄龙山麓-陕西省自行车联赛由全域覆盖走向体系跃升-492c22b9564c",
+      "language": "zh",
+      "title": "从秦巴腹地到黄龙山麓：陕西省自行车联赛由全域覆盖走向体系跃升",
+      "excerpt": "中新网西安11月10日电 (记者 张一辰)九站赛道、七个月、近6000人次——2026陕西省自行车联赛日前在延安黄龙收官。这场以“全民健身 运动三秦”为主题的省级群众性自行车赛事，把体育赛事办进了秦巴山区、渭河两岸与黄土高原。",
+      "date": "2026-11-10T07:02:35.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/11-10/10729414.shtml",
+      "image": ""
+    },
+    {
+      "id": "广州举办建筑展览-纪念孙中山诞辰160周年-879029fcdfcb",
+      "language": "zh",
+      "title": "广州举办建筑展览 纪念孙中山诞辰160周年",
+      "excerpt": "中新网广州11月10日电 (程景伟 刘慧鹏)为纪念孙中山先生诞辰160周年，深入发掘中山纪念建筑的文化内涵与世界意义，“吕彦直与中山纪念建筑”展览暨学术活动9日在广州中山纪念堂拉开帷幕。",
+      "date": "2026-11-10T07:02:09.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729403.shtml",
+      "image": ""
+    },
+    {
+      "id": "黄河入晋第一县-山西偏关-接续数十年植绿治理-实现从生态痛点到示范蝶变-076c418a60d9",
+      "language": "zh",
+      "title": "“黄河入晋第一县”山西偏关：接续数十年植绿治理 实现从生态痛点到示范蝶变",
+      "excerpt": "中新网忻州11月10日电 (刘小红)山西省偏关县立足黄河入晋首站区位，承接黄河中游生态保护任务。经过数十年持续植绿攻坚，当地已从昔日黄河流域的生态“痛点”转变为生态治理样板。“十五五”期间，偏关将统筹治山、治水、治沙、治矿、治污，依托实体项目和量化指标，筑牢黄河中游生态安全首道屏障。",
+      "date": "2026-11-10T07:01:39.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729397.shtml",
+      "image": ""
+    },
+    {
+      "id": "双11首发限量30000瓶-剑南春携手国博打造生肖酒文化标杆-929e40ad2974",
+      "language": "zh",
+      "title": "双11首发限量30000瓶！ 剑南春携手国博打造生肖酒文化标杆",
+      "excerpt": "岁末将至，丁未羊年的脚步渐近，白酒生肖酒赛道也如期迎来布局窗口期。作为近年来最具市场热度的品类之一，生肖酒赛道早已驶入竞争红海。而真正能够穿越周期、沉淀口碑的生肖酒产品，必然要在文化厚度、品质定力与收藏价值上同时交出答卷。",
+      "date": "2026-11-10T07:00:35.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729386.shtml",
+      "image": ""
+    },
+    {
+      "id": "日本检方要求判处持刀强闯我驻日使馆人员村田晃大1年6个月刑期-e0fb8030fb28",
+      "language": "zh",
+      "title": "日本检方要求判处持刀强闯我驻日使馆人员村田晃大1年6个月刑期",
+      "excerpt": "当地时间11月10日，日本东京地方法院就原自卫队官员村田晃大非法持刀侵闯中国驻日本大使馆一案开庭审理。检方要求判处被告人村田晃大1年6个月“拘禁刑”。",
+      "date": "2026-11-10T07:00:15.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729415.shtml",
+      "image": ""
+    },
+    {
+      "id": "trump-says-iran-war-to-end-fairly-soon-plays--e3384daf122e",
+      "language": "en",
+      "title": "Trump says Iran war to end 'fairly soon,' plays down prospects of new strikes",
+      "excerpt": "“Iran militarily is effectively over,” Trump said, citing the destruction of its navy and surging inflation that he said has hollowed out Tehran's economy.",
+      "date": "2026-11-10T07:00:02.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/10/trump-iran-war-hormuz-.html",
+      "image": ""
+    },
+    {
+      "id": "otter-ai-can-now-follow-conversations-across--775ac0a39001",
+      "language": "en",
+      "title": "Otter AI can now follow conversations across 30+ languages",
+      "excerpt": "Otter AI just added support for 27 languages and revealed an upcoming feature that can follow along if speakers switch between languages.",
+      "date": "2026-11-10T07:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/",
+      "image": ""
+    },
+    {
+      "id": "伊朗最高领袖指示-结束与美国-不战不和-状态-1739f29244cf",
+      "language": "zh",
+      "title": "伊朗最高领袖指示：结束与美国“不战不和”状态",
+      "excerpt": "中新网11月10日电 综合伊朗媒体报道，伊朗总统佩泽希齐扬9日表示，伊朗最高领袖穆杰塔巴·哈梅内伊已经作出指示，要求结束目前与美国“不战不和”的状态。",
+      "date": "2026-11-10T06:54:45.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729387.shtml",
+      "image": ""
+    },
+    {
+      "id": "softbank-swings-to-7-billion-net-loss-in-seco-69e6c3eae1ea",
+      "language": "en",
+      "title": "SoftBank swings to $7 billion net loss in second quarter as tech selloff weighs on results",
+      "excerpt": "SoftBank Group announces fiscal second-quarter results for the year ending March 31, 2027.",
+      "date": "2026-11-10T06:54:32.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html",
+      "image": ""
+    },
+    {
+      "id": "盛事不断-香港创科发展动能澎湃-e2441f73ea02",
+      "language": "zh",
+      "title": "盛事不断，香港创科发展动能澎湃",
+      "excerpt": "图为由香港特区政府创新科技署主办的“创新科技嘉年华2026”活动现场。香港特区政府新闻处供图 本报记者 汪灵犀",
+      "date": "2026-11-10T06:51:44.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/dwq/2026/11-10/10729411.shtml",
+      "image": ""
+    },
+    {
+      "id": "日本男子强闯中国驻日使馆案开审-检方求刑18个月拘禁刑-76c49e4dc65a",
+      "language": "zh",
+      "title": "日本男子强闯中国驻日使馆案开审 检方求刑18个月拘禁刑",
+      "excerpt": "中新网11月10日电 据日本共同社报道，当地时间11月10日，日本东京地方法院就原自卫队官员村田晃大持刀闯入中国大使馆一案开庭审理，检方要求判处被告人18个月(一年零六个月)拘禁刑。",
+      "date": "2026-11-10T06:51:30.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729390.shtml",
+      "image": ""
+    },
+    {
+      "id": "九赴进博-再续十年之诺-拜耳以-黑科技-和十余项合作签约交出进博新答卷-742da72b7ae0",
+      "language": "zh",
+      "title": "九赴进博，再续十年之诺：拜耳以“黑科技”和十余项合作签约交出进博新答卷",
+      "excerpt": "2026年11月10日，第九届中国国际进口博览会落下帷幕。连续第九年赴约的拜耳，再次携处方药及影像诊断、健康消费品和作物科学三大事业部亮相，在医疗健康与现代农业领域带来近30项首展首发，并围绕创新药物可及性、临床研究、医疗数据与人工智能、基层医疗、科学循证、市场准入等话题开展和参与60场签约、成果发布及交流等展台内外活动，达成十余项合作签约。与此同时，拜耳已提前签约第十届进博会，即将从九届连续参展迈向十年“全勤”。",
+      "date": "2026-11-10T06:48:46.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729395.shtml",
+      "image": ""
+    },
+    {
+      "id": "高校学子-需要怎样的-生活教育课-85424b5e3a57",
+      "language": "zh",
+      "title": "高校学子,需要怎样的“生活教育课”",
+      "excerpt": "新学年开学季，华南农业大学一门课火了——学校把共享电动自行车的规范骑行纳入本科新生军训中，让学生学会平稳起步、直角转弯、S形绕弯、制动停车。一名来自浙江宁波的新生说，校园很大，自己从学校大门口走到寝室，需要半个多小时；学长骑电动车带他在校园里逛一圈，需要一个多小时。因此，“学这个(使用共享电动自行车)太有必要了”。",
+      "date": "2026-11-10T06:47:40.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-10/10729406.shtml",
+      "image": ""
+    },
+    {
+      "id": "广西关键金属产业谋转型-院士建言深化中国-东盟跨境产业链协作-7620aac1ecb9",
+      "language": "zh",
+      "title": "广西关键金属产业谋转型 院士建言深化中国—东盟跨境产业链协作",
+      "excerpt": "中新网南宁11月10日电(张广权 周立梅)智汇八桂·有色金属及关键金属材料领域院士专家广西行活动9日在广西南宁举行。多名与会院士在此间表示，广西应依托面向东盟的独特区位与关键金属资源禀赋，推动产业从“卖资源”向“卖材料”转型，深化区域跨境产业链协作。",
+      "date": "2026-11-10T06:46:42.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/11-10/10729398.shtml",
+      "image": ""
+    },
+    {
+      "id": "北京初冬胜景引游客-b2bcd6054dc0",
+      "language": "zh",
+      "title": "北京初冬胜景引游客",
+      "excerpt": "",
+      "date": "2026-11-10T06:43:41.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/11-10/1210427.shtml",
+      "image": ""
+    },
+    {
+      "id": "二十年-从沈阳走出的西藏孩子-474620472700",
+      "language": "zh",
+      "title": "二十年，从沈阳走出的西藏孩子",
+      "excerpt": "九月的燕园，爬墙虎绕上百年的老楼，大片大片的树——百年以上的古树就有500多棵，那些国槐、柏树、油松、银杏、桑……呼吸着生命的灵气。风簌簌摇动树叶，阳光被叶子剪碎，金风细雨一样落下来。未名湖边，夕阳西下，难以形容日落的辉煌金色，一枚叶子在风里摇动。对学生来说，仿佛是常年的渴求，在这一瞬间被满足。",
+      "date": "2026-11-10T06:39:18.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/txy/2026/11-10/10729383.shtml",
+      "image": ""
+    },
+    {
+      "id": "逾百名全国中老年足球爱好者佛山-以赛会友-748535ad6ff7",
+      "language": "zh",
+      "title": "逾百名全国中老年足球爱好者佛山“以赛会友”",
+      "excerpt": "中新网佛山11月10日电 (记者 张璐)第34届“中华杯”全国中老年足球赛(C组佛山赛区)正在三水健力宝足球青训中心举行。本次赛事吸引香港、澳门、北京、河南、湖北、辽宁、江西、深圳等地多支队伍参赛，100余名中老年足球爱好者齐聚佛山，以赛会友。",
+      "date": "2026-11-10T06:39:16.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/11-10/10729389.shtml",
+      "image": ""
+    },
+    {
+      "id": "第九届进博会-华商话进博-这里是-会客厅-明年一定-再来-70bb79f1b0b1",
+      "language": "zh",
+      "title": "【第九届进博会】华商话进博：这里是“会客厅”，明年一定“再来”",
+      "excerpt": "第九届中国国际进口博览会11月10日在上海落下帷幕。多位华商接受中新社采访时表示，进博会是属于华商的“会客厅”，每一次赴约都有新机遇可发掘、新合作可落地，大家相约明年再会 “四叶草”。",
+      "date": "2026-11-10T06:37:43.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/hr/shipin/cns-d/2026/11-10/news1074418.shtml",
+      "image": ""
+    },
+    {
+      "id": "我国已牵头制定25项医疗器械领域国际标准-596e1861649b",
+      "language": "zh",
+      "title": "我国已牵头制定25项医疗器械领域国际标准",
+      "excerpt": "记者今天(11月10日)从国家标准委了解到，今年以来，由我国提出的7项医疗器械领域国际标准提案获国际标准化组织(ISO)批准立项，数量创历史同期新高。截至目前，我国已牵头制定25项医疗器械领域国际标准，涵盖人工智能医疗器械、心血管植入物、组织工程医疗器械、基因测序等多个方面，不仅协调规范了全球相关技术内容，也进一步拓宽了我国生物医药产业的发展空间。其中11项标准已发布，14项正有序推进。",
+      "date": "2026-11-10T06:36:24.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729393.shtml",
+      "image": ""
+    },
+    {
+      "id": "斯诺克冠中冠赛-中国军团3人参赛-卫冕冠军塞尔比小组战折戟-dda79793448e",
+      "language": "zh",
+      "title": "斯诺克冠中冠赛：中国军团3人参赛 卫冕冠军塞尔比小组战折戟",
+      "excerpt": "中新社英国莱斯特11月10日电 当地时间11月9日，2026年斯诺克冠中冠邀请赛在英国莱斯特展开首日比赛。在率先进行的第一小组较量中，世界排名第12位的英格兰球手克里斯·韦克林连赢两场成功突围，成为本次赛事首位晋级四强的球手，卫冕冠军英格兰名将马克·塞尔比则止步小组决赛。",
+      "date": "2026-11-10T06:35:55.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/11-10/10729384.shtml",
+      "image": ""
+    },
+    {
+      "id": "印度南部一电子工厂发生事故-3人吸入有毒气体后身亡-a16abeafb5ab",
+      "language": "zh",
+      "title": "印度南部一电子工厂发生事故 3人吸入有毒气体后身亡",
+      "excerpt": "中新网11月10日电 据《新印度快报》报道，印度南部泰米尔纳德邦一工厂的3名外包工人9日晚在检修废水储罐时吸入有毒气体后死亡。",
+      "date": "2026-11-10T06:34:37.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729392.shtml",
+      "image": ""
+    },
+    {
+      "id": "在-四叶草-里-看见中国太保的-ai-与-心-温度-d99acee318a4",
+      "language": "zh",
+      "title": "在“四叶草”里，看见中国太保的“AI+”与“心”温度",
+      "excerpt": "第九届进博会技术装备展区，中国太保智慧服务展厅以“保险守护科技进步，智慧服务美好生活”为主题，把“大康养、国际化、人工智能+”三条战略线索铺成一条可走、可看、可体验的观展路线。现场展台热度最高的区域并不全是“硬核科技”，而是那些把保险服务从“事后理赔”往前推的居家健康体验。",
+      "date": "2026-11-10T06:29:55.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729377.shtml",
+      "image": ""
+    },
+    {
+      "id": "与世界共享机遇-进博会是中国坚持-开门发展-的生动注脚-新漫评-f125b1f15a9c",
+      "language": "zh",
+      "title": "与世界共享机遇：进博会是中国坚持“开门发展”的生动注脚 | 新漫评",
+      "excerpt": "11月5日至10日，第九届中国国际进口博览会在上海举行。4142家境外企业参展，超过2000家首次参展。在世界贸易市场因关税等因素持续承压的背景下，这样的规模本身就是一种态度。",
+      "date": "2026-11-10T06:22:51.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729380.shtml",
+      "image": ""
+    },
+    {
+      "id": "trump-s-c-span-call-marks-latest-surprise-pos-8b55836d695a",
+      "language": "en",
+      "title": "Trump’s C-SPAN call marks latest surprise post-midterm appearance",
+      "excerpt": "Trump called C-SPAN's new primetime show unannounced after a surprise White House briefing-room and ballroom appearances.",
+      "date": "2026-11-10T06:19:09.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/10/trump-cspan-call-elections.html",
+      "image": ""
+    },
+    {
+      "id": "突发-菲律宾一飞机坠毁-载有6名外国公民-9289e8920dca",
+      "language": "zh",
+      "title": "突发：菲律宾一飞机坠毁 载有6名外国公民",
+      "excerpt": "中新网11月10日电 据路透社报道，一名菲律宾灾害管理部门官员表示，一架载有6名外国公民的私人飞机于当地时间10日在菲律宾南部坠毁。",
+      "date": "2026-11-10T06:08:40.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729382.shtml",
+      "image": ""
+    },
     {
       "id": "tsmc-s-october-sales-jump-as-global-chip-boom-c0c46684cb2f",
       "language": "en",
@@ -1070,6 +1370,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729228.shtml",
       "image": ""
+    },
+    {
+      "id": "cruise-for-life-ship-seized-in-singapore-cf6e8a467b70",
+      "language": "en",
+      "title": "'Cruise for life' ship seized in Singapore",
+      "excerpt": "The Odyssey was meant to take guests around the world for years, but the trip was cut short after its operator ran out of money.",
+      "date": "2026-11-10T01:49:06.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqr7y7myer53o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/54ec/live/78680920-dca3-11f1-93a0-e3acb3757eea.jpg"
     },
     {
       "id": "侨聚进博时刻-一日双场联动-6581b8ead9b7",
@@ -2689,316 +2999,6 @@
       "date": "2026-11-09T13:13:19.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/ty/2026/11-09/10729112.shtml",
-      "image": ""
-    },
-    {
-      "id": "今年广州轨道交通产业产值将达3200亿元-0f4af935b1ec",
-      "language": "zh",
-      "title": "今年广州轨道交通产业产值将达3200亿元",
-      "excerpt": "中新网广州11月9日电(王华 张洁)2026广州轨道交通周8日至13日在穗举办。据悉，今年底，广州地铁运营里程将迈上800公里新台阶，轨道交通产业产值将达3200亿元。",
-      "date": "2026-11-09T13:12:10.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/11-09/10729114.shtml",
-      "image": ""
-    },
-    {
-      "id": "11月9日夜读-49b8da88e916",
-      "language": "zh",
-      "title": "11月9日夜读",
-      "excerpt": "",
-      "date": "2026-11-09T13:03:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/iframe/2026/11-09/10729110.shtml",
-      "image": ""
-    },
-    {
-      "id": "韩正同土耳其副总统耶尔马兹共同出席中国-土耳其绿色发展商务论坛并致辞-98dd9af2eb09",
-      "language": "zh",
-      "title": "韩正同土耳其副总统耶尔马兹共同出席中国－土耳其绿色发展商务论坛并致辞",
-      "excerpt": "中新社北京11月9日电 当地时间11月9日，中国国家副主席韩正在伊斯坦布尔同土耳其副总统耶尔马兹共同出席中国－土耳其绿色发展商务论坛并致辞。",
-      "date": "2026-11-09T13:01:30.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-09/10729095.shtml",
-      "image": ""
-    },
-    {
-      "id": "河北秦皇岛出现有气象记录以来最强降雪-dad8cf74eca3",
-      "language": "zh",
-      "title": "河北秦皇岛出现有气象记录以来最强降雪",
-      "excerpt": "中新社石家庄11月9日电 (记者 陈林)河北省气象局9日通报，受较强冷空气与暖湿气流共同影响，7日至8日，河北省秦皇岛市出现大范围强降雪，7个县区均达到大暴雪及以上量级，其中，青龙满族自治县、昌黎县、北戴河区、海港区为大暴雪，卢龙县、抚宁区、山海关区达到特大暴雪量级。",
-      "date": "2026-11-09T13:01:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-09/10729096.shtml",
-      "image": ""
-    },
-    {
-      "id": "青海-十五五-5-9亿亩草原全面监管-牧区民生改善-bd73e68a41f2",
-      "language": "zh",
-      "title": "青海“十五五”5.9亿亩草原全面监管 牧区民生改善",
-      "excerpt": "中新网西宁11月9日电 (记者 潘雨洁)9日，记者从青海省林业和草原局获悉，“十五五”期间，该省将统筹草原生态保护与牧区民生改善，实现草原资源5.9亿亩全面监管，并通过落实草原补奖政策，全省75万户农牧户每年补助约27.55亿元(人民币，下同)，户均达3674元。",
-      "date": "2026-11-09T13:00:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-09/10729100.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-海派中医进博会玩起-混搭-传统流派-特色疗法与智能问诊同台-4c1d9ec87186",
-      "language": "zh",
-      "title": "（第九届进博会）海派中医进博会玩起“混搭”：传统流派、特色疗法与智能问诊同台",
-      "excerpt": "中新网上海11月9日电 (记者 陈静)在第九届中国国际进口博览会的场馆里，一边海派中医把“诊室”搬进了场馆；另一边中医垂类大模型“岐元”、脑机接口临床研究、AI面诊智能体、中医教学机器人“小柒”一并被摆上台。在国家会展中心(上海)，中医的守正与创新相映生辉。",
-      "date": "2026-11-09T13:00:40.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-09/10729099.shtml",
-      "image": ""
-    },
-    {
-      "id": "新疆最潮非遗新势力-年轻人扎堆的刺绣创业高地-65eb4ff09d10",
-      "language": "zh",
-      "title": "新疆最潮非遗新势力，年轻人扎堆的刺绣创业高地",
-      "excerpt": "青春华章 疆来可期｜新疆最潮非遗新势力，年轻人扎堆的刺绣创业高地",
-      "date": "2026-11-09T13:00:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/edu/2026/11-09/10729106.shtml",
-      "image": ""
-    },
-    {
-      "id": "these-states-are-offering-extra-aca-premium-s-6950b4737693",
-      "language": "en",
-      "title": "These states are offering extra ACA premium subsidies in 2027",
-      "excerpt": "Roughly a dozen states are offering some premium assistance for Obamacare enrollees, following the lapse of enhanced federal subsidies at the end of 2025.",
-      "date": "2026-11-09T13:00:01.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/09/aca-state-subsidies-2027.html",
-      "image": ""
-    },
-    {
-      "id": "云南法院教育培训师资库建成-880ee03b0d27",
-      "language": "zh",
-      "title": "云南法院教育培训师资库建成",
-      "excerpt": "中新网昆明11月9日电 (柴婷婷)据云南省高级人民法院9日消息，“全省法院教育培训师资库”已建成，472名同志成为首批入库师资。",
-      "date": "2026-11-09T12:59:10.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-09/10729074.shtml",
-      "image": ""
-    },
-    {
-      "id": "大兴安岭阿木尔林业局连续第三次通过森林经营再认证-c78c5fe2e640",
-      "language": "zh",
-      "title": "大兴安岭阿木尔林业局连续第三次通过森林经营再认证",
-      "excerpt": "中新网漠河11月9日电 (王力 田德雨)11月9日，大兴安岭阿木尔林业局对外发布消息：该局顺利通过吉林松柏森林认证有限公司审核，取得CFCC/PEFC证书(CFCC为中国森林认证委员会，运行中国森林认证体系；PEFC为森林认证体系认可计划，是总部位于瑞士的国际性森林认证联盟。通过中国森林认证的林产品可同时使用CFCC和PEFC标识，在互认国家获得认可)，标志着该林业局森林经营及非木质林产品经营全面达到国家森林认证标准。",
-      "date": "2026-11-09T12:59:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-09/10729073.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴西华商聚集区-帕里开埠450周年-华社尽展-中国风-c42da913b229",
-      "language": "zh",
-      "title": "巴西华商聚集区：帕里开埠450周年 华社尽展“中国风”",
-      "excerpt": "中新网圣保罗11月9日电 圣保罗侨界参与的帕里(Pari)区建区450周年庆典暨大型文化美食嘉年华日前在圣保罗举行。巴西政要、侨社代表、嘉宾和社区民众共襄盛举，吸引近千人参与。",
-      "date": "2026-11-09T12:59:04.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/11-09/10729072.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国科研人员发现爬行动物新物种-黔北滑蜥-3b872ef7d1e3",
-      "language": "zh",
-      "title": "中国科研人员发现爬行动物新物种“黔北滑蜥”",
-      "excerpt": "中新网贵阳11月9日电 (朱梦怡 梁好好)贵州省林业局9日对外发布消息称，贵州宽阔水国家级自然保护区和贵州大沙河国家级自然保护区日前发现爬行动物新物种“黔北滑蜥”。相关研究成果已发表于国际动物分类学权威期刊《Zoosystematics and Evolution》上。",
-      "date": "2026-11-09T12:59:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-09/10729071.shtml",
-      "image": ""
-    },
-    {
-      "id": "杭州警方-一店铺发生刑案2人死亡-嫌疑人畏罪自杀-9406da3b1989",
-      "language": "zh",
-      "title": "杭州警方：一店铺发生刑案2人死亡，嫌疑人畏罪自杀",
-      "excerpt": "中新网杭州11月9日电 (钱晨菲)9日，杭州市公安局临平区分局发布警情通报，2026年11月8日12时54分，该局接报辖区临平街道某临街店铺内发生一起刑事案件，造成2人死亡。",
-      "date": "2026-11-09T12:59:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-09/10729075.shtml",
-      "image": ""
-    },
-    {
-      "id": "这场跨越圭亚那两城的救治-太暖了-d4542e4e7a28",
-      "language": "zh",
-      "title": "这场跨越圭亚那两城的救治，太暖了",
-      "excerpt": "中新网圭亚那林登11月9日电 (周树林 罗滨林)“真的太感谢祖国派来的医疗队了，有他们在，我们在海外打拼就有了最坚实的依靠！”圭亚那林登市中企员工黄先生8日回顾重伤获第22批中国援圭亚那医疗队救治时如是说。",
-      "date": "2026-11-09T12:58:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/11-09/10729077.shtml",
-      "image": ""
-    },
-    {
-      "id": "深圳中小科创企业借apec契机加速出海-07a87463004e",
-      "language": "zh",
-      "title": "深圳中小科创企业借APEC契机加速出海",
-      "excerpt": "11月9日，广东深圳，高彬在公司样品间演示一款在韩国、日本市场广受欢迎的水果清洁器。中新社记者 陈楚红 摄 11月9日，广东深圳，深圳鸿绪锦科技的水果清洁器演示清洁工作。中新社记者 陈楚红 摄 11月9日，广东深圳，高彬在公司样品间整理在韩国市场广受欢迎的美发棒、吹风筒等产品。中新社记者 陈楚红 摄 11月9日，广东深圳，高彬和公司研发的AI对话机器人聊APEC。中新社记者 陈楚红 摄 11月9日，广东深圳，高彬在公司样品间展示最新款的擦窗机器人。中新社记者 陈楚红 摄 11月9日，广东深圳，深圳鸿绪锦科技的工作人员在打包擦窗机器人。中新社记者 陈楚红 摄 11月9日，广东深圳，深圳鸿绪锦科技的工作人员在组装擦窗机器人。中新社记者 陈楚红 摄 11月9日，广东深圳，深圳鸿绪锦科技的工作人员在测试擦窗机器人。中新社记者 陈楚红 摄",
-      "date": "2026-11-09T12:58:04.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-09/10729089.shtml",
-      "image": ""
-    },
-    {
-      "id": "以山为媒促发展-2026国际山地旅游联盟年会在贵州兴义举行-f0b4db478d44",
-      "language": "zh",
-      "title": "以山为媒促发展 2026国际山地旅游联盟年会在贵州兴义举行",
-      "excerpt": "中新网贵州兴义11月9日电 (石小杰 曾琪男)“观光游时代把风景当背景，度假游时代把风景当生活。”中共贵州省委常委、省委宣传部部长卢雍政9日在2026国际山地旅游联盟年会上表示，当前，山地以其多样的地貌、气候、生境和文化而日益受到民众及游客的关注，山地旅游发展迎来了前所未有的大好机遇。期待通过国际山地旅游联盟这一平台，与大家一道深化交流合作，以山为媒、以诚相待，不断提高山地旅游业发展的含金量，含新量、含绿量，共同推动山地旅游开放发展。",
-      "date": "2026-11-09T12:57:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729070.shtml",
-      "image": ""
-    },
-    {
-      "id": "山东青岛秋假撬动文旅消费-研学-追秋-带动市场升温-a6faaf1437ba",
-      "language": "zh",
-      "title": "山东青岛秋假撬动文旅消费 “研学”“追秋”带动市场升温",
-      "excerpt": "中新网青岛11月9日电 (王禹)11月5日至9日，山东青岛中小学迎来首个秋假，当地文旅市场同步进入“秋假时间”。滨海休闲与集中研学需求叠加，带动文博场馆、亲子景区、赏秋目的地全线热度攀升。",
-      "date": "2026-11-09T12:56:48.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/edu/2026/11-09/10729078.shtml",
-      "image": ""
-    },
-    {
-      "id": "日本前首相石破茂受到党内警告处分-3b1523c2d8d4",
-      "language": "zh",
-      "title": "日本前首相石破茂受到党内警告处分",
-      "excerpt": "中新社东京11月9日电 (记者 朱晨曦)据日本共同社9日报道，日本执政党自民党当天表示，针对前首相石破茂等4人在消费税减税相关法案表决前离场、未投赞成票，对他们给予警告处分。这是日本首次有前首相受到这一处分。",
-      "date": "2026-11-09T12:56:46.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-09/10729097.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-进博会赋能民营企业-在开放平台上寻找全球商机-c966d7a0028e",
-      "language": "zh",
-      "title": "（第九届进博会）进博会赋能民营企业：在开放平台上寻找全球商机",
-      "excerpt": "中新网上海11月9日电 (高志苗)第九届中国国际进口博览会正在上海举行。欧坚集团旗下欣海国际报关展台前，工作人员轻点屏幕，一份报关单在AI辅助下快速生成。",
-      "date": "2026-11-09T12:49:39.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729091.shtml",
-      "image": ""
-    },
-    {
-      "id": "青海-十五五-壮大高原特色林草产业-助农端稳-生态碗-18aa59ef7087",
-      "language": "zh",
-      "title": "青海“十五五”壮大高原特色林草产业 助农端稳“生态碗”",
-      "excerpt": "中新网西宁11月9日电 (记者 潘雨洁)9日，记者从青海省林业和草原局获悉，到2030年，全省林草产业产值将达430亿元(人民币，下同)，让更多农牧民在家门口端上“生态碗”、吃上“产业饭”。",
-      "date": "2026-11-09T12:49:35.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729093.shtml",
-      "image": ""
-    },
-    {
-      "id": "nine-foreigners-caught-allegedly-trying-to-le-4a6aece1109d",
-      "language": "en",
-      "title": "Nine foreigners caught allegedly trying to leave South Africa to fight in Ukraine",
-      "excerpt": "Police declined to disclose their nationalities but said none of them lived in South Africa.",
-      "date": "2026-11-09T12:33:24.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cm93z3lp5lnpo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c8c0/live/5d2b0080-dc36-11f1-95cf-a38331e6cb4b.jpg"
-    },
-    {
-      "id": "第九届进博会-参展各方进博会签约忙-一批批合作成果加速落地-efa0395afb67",
-      "language": "zh",
-      "title": "（第九届进博会）参展各方进博会签约忙 一批批合作成果加速落地",
-      "excerpt": "中新网上海11月9日电(缪璐 李秋莹 李佳佳)第九届中国国际进口博览会期间，参展各方签约活动密集举行，从餐饮总部经济全球采购投资到航空产业链采购合作，从零碳园区创新服务到与海外供应商携手打造互利共赢的供应链生态，一批批合作成果加速签约落地，进博会溢出效应持续释放。",
-      "date": "2026-11-09T12:17:20.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729044.shtml",
-      "image": ""
-    },
-    {
-      "id": "研究显示中东资本在华进入战略直投与多元工具并行新阶段-eaa7f42fd4bf",
-      "language": "zh",
-      "title": "研究显示中东资本在华进入战略直投与多元工具并行新阶段",
-      "excerpt": "中新网上海11月9日电 (高志苗)2026上海国际股权投资研讨会9日举行，《中东资本私募股权投资研究(2026)》(以下简称“研究”)同期发布。研究显示中东资本在华进入战略直投与多元工具并行新阶段。",
-      "date": "2026-11-09T12:15:29.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729043.shtml",
-      "image": ""
-    },
-    {
-      "id": "中外专家齐聚长三角一体化示范区-共谋全球环境绿色转型-ea3d282528b3",
-      "language": "zh",
-      "title": "中外专家齐聚长三角一体化示范区 共谋全球环境绿色转型",
-      "excerpt": "中新网上海11月9日电(杨硕)“推动绿色转型是各国实现高质量发展必须回答的共同课题，国际社会比以往任何时候都更需要凝聚共识、深化合作。”同济大学党委书记、中国工程院院士郑庆华9日在上海表示。",
-      "date": "2026-11-09T12:14:01.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729045.shtml",
-      "image": ""
-    },
-    {
-      "id": "中意时尚产业对话在成都举行-探索设计交流与市场合作新路径-d5910b500513",
-      "language": "zh",
-      "title": "中意时尚产业对话在成都举行 探索设计交流与市场合作新路径",
-      "excerpt": "中新网成都11月9日电 (轩瑾婉)9日，“蓉欧产业对话：跨域共生·中意时尚设计与非遗创新产业对接会暨非遗创新展”在成都市金牛区中国西部高级定制中心举行。来自中意两国的时尚机构、院校、企业等围绕传统工艺创新、设计人才培养和文化产品国际化等话题展开交流，探讨现代时尚产业发展的更多可能。",
-      "date": "2026-11-09T12:13:19.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729041.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-在进博读懂中国-新引擎-以智造力量谋创新未来-23e60e18f5ba",
-      "language": "zh",
-      "title": "（第九届进博会）在进博读懂中国“新引擎”：以智造力量谋创新未来",
-      "excerpt": "中新网上海11月9日电 (记者 郑莹莹)开放的展台是观察产业发展的窗口。在第九届中国国际进口博览会上，从新一代移动通信底座到高端制造、智能终端，一批硬核展品勾勒出中国“新引擎”持续轰鸣的生动图景。",
-      "date": "2026-11-09T12:13:15.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729038.shtml",
-      "image": ""
-    },
-    {
-      "id": "沪港企业家圆桌会暨海联会走进普陀活动举行-7b707b0ddff3",
-      "language": "zh",
-      "title": "沪港企业家圆桌会暨海联会走进普陀活动举行",
-      "excerpt": "中新网上海11月9日电 (高志苗)“相聚上海 共谋发展”沪港企业家圆桌会暨上海海外联谊会走进普陀活动9日在普陀区“海聚英才”常态化路演大厅举行。活动以“发挥港澳台侨优势，金融专业服务企业出海”为主题，为沿沪宁产业创新带企业迈向全球市场提供专业支撑。",
-      "date": "2026-11-09T12:12:51.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729049.shtml",
-      "image": ""
-    },
-    {
-      "id": "9月末四川普惠小微贷款余额突破1-6万亿元-10184560099d",
-      "language": "zh",
-      "title": "9月末四川普惠小微贷款余额突破1.6万亿元",
-      "excerpt": "中新网成都11月9日电 (单鹏)四川省政府新闻办9日在成都举行新闻发布会。四川省委金融办副主任傅瑜表示，截至9月末，四川普惠小微贷款余额突破1.6万亿元；利率、担保费率分别降0.13、0.05个百分点，让利超2.8亿元。",
-      "date": "2026-11-09T12:12:49.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729052.shtml",
-      "image": ""
-    },
-    {
-      "id": "从-中草药-到-中医器具-我国中医药领域国际标准化建设提速-abc91f62d9e1",
-      "language": "zh",
-      "title": "从“中草药”到“中医器具” 我国中医药领域国际标准化建设提速",
-      "excerpt": "中新网11月9日电 据市场监管总局网站消息，近期，我国深度参与国际标准化组织(ISO)中医药领域标准化工作，积极推动国际标准立项、研制及发布实施。其中，我国牵头制定的ISO 24825《中医药—中草药标准物质建立通则》是全球首个中草药标准物质国际标准，另一项ISO/TS 25427《中医药—杵针器具》国际标准为国家级非遗疗法的器具确立了国际统一规范。",
-      "date": "2026-11-09T12:11:03.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729051.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-诺和诺德携7777份患者心愿亮相-创下吉尼斯世界纪录-2bb5e57956c7",
-      "language": "zh",
-      "title": "（第九届进博会）诺和诺德携7777份患者心愿亮相 创下吉尼斯世界纪录",
-      "excerpt": "中新网上海11月9日电 (记者 陈静)记者9日获悉，在第九届中国国际进口博览会(以下简称：进博会)期间，诺和诺德以“7777张心愿牌”创下糖尿病领域“最长的心愿牌队列”吉尼斯世界纪录。",
-      "date": "2026-11-09T12:03:11.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729029.shtml",
-      "image": ""
-    },
-    {
-      "id": "投资中国-飞诺美拟投资约1亿元扩容升级天津基地-6af8649e5fef",
-      "language": "zh",
-      "title": "（投资中国）飞诺美拟投资约1亿元扩容升级天津基地",
-      "excerpt": "中新网天津11月9日电 (孙翼飞)全球色谱创新企业飞诺美9日在天津宣布，计划投资约1亿元人民币扩容升级天津基地产线，提升液相色谱柱与色谱填料制造能力。",
-      "date": "2026-11-09T12:01:49.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-09/10729030.shtml",
       "image": ""
     }
   ]
