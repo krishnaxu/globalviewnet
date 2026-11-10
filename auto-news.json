@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-11-10T16:59:25.503Z",
+  "generated_at": "2026-11-10T17:54:05.087Z",
   "items": [
+    {
+      "id": "anthropic-launches-claude-meetings-to-turn-wo-c0148d18638a",
+      "language": "en",
+      "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
+      "excerpt": "As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's figures.",
+      "date": "2026-11-10T17:30:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+      "image": ""
+    },
+    {
+      "id": "credit-card-debt-climbs-to-a-record-1-29-tril-f9b7a0b3f9df",
+      "language": "en",
+      "title": "Credit card debt climbs to a record $1.29 trillion, New York Fed research finds",
+      "excerpt": "As high prices continue to strain household budgets, many consumers have turned to credit cards to help make ends meet.",
+      "date": "2026-11-10T17:16:18.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/10/credit-card-debt-record.html",
+      "image": ""
+    },
+    {
+      "id": "nvidia-ceo-jensen-huang-s-affair-with-alleged-9f7428ee17be",
+      "language": "en",
+      "title": "Nvidia CEO Jensen Huang’s affair with alleged Chinese spy: a timeline",
+      "excerpt": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "date": "2026-11-10T17:04:19.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "image": ""
+    },
+    {
+      "id": "inside-devastated-front-line-city-that-russia-793fbc27b19f",
+      "language": "en",
+      "title": "Inside devastated front-line city that Russia wants Ukraine to give up",
+      "excerpt": "The BBC gains rare access to a specialist drone unit defending the eastern city of Slovyansk from heavy Russian fire.",
+      "date": "2026-11-10T17:00:11.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq0memrywvzro?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/741e/live/b4c42480-dce9-11f1-bf22-25fb7d6062d2.png"
+    },
     {
       "id": "sundrop-turns-your-endless-baby-photos-into-r-d9c120dc2ec5",
       "language": "en",
@@ -92,6 +132,16 @@
       "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/KSC-20230521-PH-CSH01_0001large-500x500.jpg"
     },
     {
+      "id": "twelve-dead-after-motorway-pile-ups-in-bulgar-ad975dd0d3cf",
+      "language": "en",
+      "title": "Twelve dead after motorway pile-ups in Bulgaria fog",
+      "excerpt": "About 50 other people were injured in the pile-ups along a section of the Trakia motorway, officials have said.",
+      "date": "2026-11-10T16:07:51.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckx2q2velpjjo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3a87/live/b5143f50-dcf4-11f1-b441-2b33b063138f.jpg"
+    },
+    {
       "id": "马来西亚前总理纳吉布开始居家服刑-a8f208198cdd",
       "language": "zh",
       "title": "马来西亚前总理纳吉布开始居家服刑",
@@ -180,6 +230,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729860.shtml",
       "image": ""
+    },
+    {
+      "id": "board-of-peace-says-israel-s-aid-response-aft-af1eb0f1fbea",
+      "language": "en",
+      "title": "Board of Peace says Israel's aid response after Gaza floods 'insufficent'",
+      "excerpt": "The group, formed by Trump, issues rare criticism of Israel, while also blaming Hamas for the suffering of civilians in Gaza.",
+      "date": "2026-11-10T15:21:18.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw4g1g4ll5m1o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bd6f/live/934efd20-dcfd-11f1-933b-ff2499ee76f6.jpg"
     },
     {
       "id": "rivian-ceo-says-new-r2-suv-autonomy-make-2027-b50e5f34bdd3",
@@ -2939,66 +2999,6 @@
       "date": "2026-11-10T05:41:17.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729376.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-进博会读懂中国-聚侨力-侨心所向机遇共享-00488301dc52",
-      "language": "zh",
-      "title": "（第九届进博会）进博会读懂中国“聚侨力”：侨心所向机遇共享",
-      "excerpt": "中新网上海11月10日电 (记者 李佳佳)第九届中国国际进口博览会上，一批侨企如约而至，既有九届“全勤”的老朋友，也有新面孔。“侨”字成为观察进博会人气的独特线索。",
-      "date": "2026-11-10T05:41:07.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729372.shtml",
-      "image": ""
-    },
-    {
-      "id": "镇村开行-云公交-常州算对几笔账-6af6a17c9675",
-      "language": "zh",
-      "title": "镇村开行“云公交” 常州算对几笔账",
-      "excerpt": "中新网常州11月10日电 题：镇村开行“云公交” 常州算对几笔账",
-      "date": "2026-11-10T05:40:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729374.shtml",
-      "image": ""
-    },
-    {
-      "id": "polish-unity-on-show-in-silent-march-to-honou-d64ce7226b45",
-      "language": "en",
-      "title": "Polish unity on show in silent march to honour Krakow shooting victims",
-      "excerpt": "Fiercely proud of its reputation for safety, Poland has been profoundly shaken by Saturday's attack, writes Sarah Rainsford.",
-      "date": "2026-11-10T05:38:53.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cqkg5gm4nr4no?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aa84/live/ac8d61c0-dcc9-11f1-b441-2b33b063138f.png"
-    },
-    {
-      "id": "玉林海关2026年12月份-关领导接待日-公告-ca084abaf9fe",
-      "language": "zh",
-      "title": "玉林海关2026年12月份“关领导接待日”公告",
-      "excerpt": "为了解社会各界的建议和意见，并切实解决实际问题和困难，现就玉林海关2026年12月份关领导接待日有关事项预告如下：",
-      "date": "2026-11-10T05:29:56.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/11-10/10729371.shtml",
-      "image": ""
-    },
-    {
-      "id": "柬埔寨一运送学生车辆坠塘致多人死伤-0225cc396d81",
-      "language": "zh",
-      "title": "柬埔寨一运送学生车辆坠塘致多人死伤",
-      "excerpt": "中新社金边11月10日电 (杨强 张安琪 张堰林)柬埔寨干拉省克萨干丹县一辆运送学生的车辆当地时间10日意外坠入池塘。初步消息称，事故造成5名学生死亡，另有2人受伤。",
-      "date": "2026-11-10T05:25:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729363.shtml",
-      "image": ""
-    },
-    {
-      "id": "美共和党众议员再次对防长赫格塞思发起弹劾-ca49052a83ac",
-      "language": "zh",
-      "title": "美共和党众议员再次对防长赫格塞思发起弹劾",
-      "excerpt": "中新社华盛顿11月9日电 (记者 陈孟统)美国共和党籍联邦众议员托马斯·梅西(Thomas Massie)9日再次提出决议，推动众议院就弹劾国防部长皮特·赫格塞思举行投票。",
-      "date": "2026-11-10T05:24:14.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729358.shtml",
       "image": ""
     }
   ]
