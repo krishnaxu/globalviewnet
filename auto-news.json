@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-11-10T20:53:41.220Z",
+  "generated_at": "2026-11-10T21:49:01.845Z",
   "items": [
+    {
+      "id": "coreweave-beats-on-revenue-and-lifts-guidance-5a2f25afa8d2",
+      "language": "en",
+      "title": "CoreWeave beats on revenue and lifts guidance, easing AI slowdown concerns",
+      "excerpt": "CoreWeave's stock has been hammered heading into the neocloud's Q3 earnings report.",
+      "date": "2026-11-10T21:35:02.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html",
+      "image": ""
+    },
+    {
+      "id": "fossil-ceo-says-turnaround-is-ahead-of-plan-a-65905bc88380",
+      "language": "en",
+      "title": "Fossil CEO says turnaround is ahead of plan as sales return to growth",
+      "excerpt": "Watchmaker Fossil said Tuesday that the company is returning to profit and sales growth in the first signs of its turnaround strategy.",
+      "date": "2026-11-10T21:22:44.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/10/fossil-fosl-q3-2026-earnings.html",
+      "image": ""
+    },
+    {
+      "id": "why-does-australia-want-brits-to-swap-sydney--a0be7b97ea13",
+      "language": "en",
+      "title": "Why does Australia want Brits to swap Sydney for the outback?",
+      "excerpt": "Australia wants changes to UK deal that would push backpackers out of Bondi and into remote regions.",
+      "date": "2026-11-10T21:17:00.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm1j3jdp7w54o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a0fb/live/0de51890-dbfe-11f1-bb7b-19f7beb970a6.jpg"
+    },
+    {
+      "id": "openai-acquires-odessia-travel-startup-create-612bc333be17",
+      "language": "en",
+      "title": "OpenAI acquires Odessia, travel startup created by Sonder founder",
+      "excerpt": "OpenAI has not yet said what its plans are for the future of travel. But Sonder founder Francis Davidson is a well-known figure in the travel industry.",
+      "date": "2026-11-10T21:08:52.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "image": ""
+    },
     {
       "id": "openai-anthropic-face-new-oversight-as-new-yo-636bec9b1738",
       "language": "en",
@@ -20,6 +60,16 @@
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/",
       "image": ""
+    },
+    {
+      "id": "spain-s-king-and-queen-attend-memorial-servic-78377496e414",
+      "language": "en",
+      "title": "Spain's king and queen attend memorial service for rail crash victims",
+      "excerpt": "Sixty-nine people died in the collision near Toledo two weeks ago and 28 are still in hospital.",
+      "date": "2026-11-10T20:46:40.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckjwew54yd4wo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d303/live/f5a86570-dd42-11f1-9ac0-6b8f7fc58221.jpg"
     },
     {
       "id": "x-energy-gets-green-light-to-build-its-first--a74ea9bf7a9e",
@@ -60,6 +110,16 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/articles/c9j3433zy4vro?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1a2d/live/537ff930-6139-11ee-b101-6f93d6dfbcc2.png"
+    },
+    {
+      "id": "watch-e-bike-battery-explodes-into-massive-fi-27c7e57f89df",
+      "language": "en",
+      "title": "Watch: E-bike battery explodes into massive fireball inside Oregon home",
+      "excerpt": "Surveillance footage from inside the home shows a mother and son noticing smoke coming from the battery before it suddenly bursts into flames.",
+      "date": "2026-11-10T20:31:17.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cr0qkqqkn3j7o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a3af/live/ccebdc00-dd44-11f1-b441-2b33b063138f.jpg"
     },
     {
       "id": "white-house-vows-to-press-ahead-with-tariffs--436aee0c71cf",
@@ -2939,66 +2999,6 @@
       "date": "2026-11-10T07:30:45.000Z",
       "source_name": "中新网财经新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729429.shtml",
-      "image": ""
-    },
-    {
-      "id": "告别-手搓-ai比价算账能帮消费者省钱吗-5ad39826b11d",
-      "language": "zh",
-      "title": "告别“手搓” AI比价算账能帮消费者省钱吗",
-      "excerpt": "跨店满减、品类优惠券、直播补贴、会员专属福利……往年“双11”，所谓优惠变相成了做“奥数题”，消费者往往需花费时间拆分订单、反复凑单，才能勉强算出最低到手价。今年“双11”，随着大模型普及，消费者开始借助AI(人工智能)算账，以求能够真正享受到实惠。但记者调查发现，AI给出的低价、优惠购买方案仍会受到多重因素影响，只能当作参考。",
-      "date": "2026-11-10T07:27:46.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729449.shtml",
-      "image": ""
-    },
-    {
-      "id": "奥运冠军宣布竞选法国总统-马克龙表态-欢迎-61115dec6462",
-      "language": "zh",
-      "title": "奥运冠军宣布竞选法国总统 马克龙表态：欢迎",
-      "excerpt": "中新网11月10日电 综合外媒报道，法国柔道传奇人物、五届奥运柔道冠军特迪·里内9日在社交媒体宣布，他将参加下一届法国总统选举。此前，他曾对法国“极右翼势力抬头”表达担忧。",
-      "date": "2026-11-10T07:19:02.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729418.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会按年计意向成交额突破854亿美元-958ce74a1537",
-      "language": "zh",
-      "title": "第九届进博会按年计意向成交额突破854亿美元",
-      "excerpt": "原标题：新华社权威快报｜第九届进博会按年计意向成交额突破854亿美元",
-      "date": "2026-11-10T07:14:28.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729440.shtml",
-      "image": ""
-    },
-    {
-      "id": "智能家居产业繁华之下有隐忧-互联互通何时能打通-46a1f1722b9e",
-      "language": "zh",
-      "title": "智能家居产业繁华之下有隐忧：互联互通何时能打通？",
-      "excerpt": "智能家居产业调研",
-      "date": "2026-11-10T07:13:08.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729438.shtml",
-      "image": ""
-    },
-    {
-      "id": "北冥有鱼-腾飞黄河口-5cd028e801a4",
-      "language": "zh",
-      "title": "“北冥有鱼”，腾飞黄河口",
-      "excerpt": "“北冥有鱼，其名为鲲。”",
-      "date": "2026-11-10T07:11:33.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729420.shtml",
-      "image": ""
-    },
-    {
-      "id": "江苏省南通市政协党组成员-副主席顾国标接受审查调查-3c518cdbc142",
-      "language": "zh",
-      "title": "江苏省南通市政协党组成员、副主席顾国标接受审查调查",
-      "excerpt": "中新网11月10日电 据江苏省纪委监委消息：江苏省南通市政协党组成员、副主席顾国标涉嫌严重违纪违法，目前正接受江苏省纪委监委纪律审查和监察调查。",
-      "date": "2026-11-10T07:08:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-10/10729421.shtml",
       "image": ""
     }
   ]
