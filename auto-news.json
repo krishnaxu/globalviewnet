@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-11-11T20:07:20.710Z",
+  "generated_at": "2026-11-11T21:42:48.530Z",
   "items": [
+    {
+      "id": "feds-arrest-top-official-of-healthcare-compan-5a18063b4da6",
+      "language": "en",
+      "title": "Feds arrest top official of healthcare company, alleging illegal drug importation",
+      "excerpt": "U.S. officials are accusing two top officials of a Canadian company of operating a scheme to illegally import prescription drugs, court records show.",
+      "date": "2026-11-11T21:33:17.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/11/canarx-official-arrested-drug-importation.html",
+      "image": ""
+    },
+    {
+      "id": "costco-is-giving-shareholders-a-big-early-hol-4431f1c02a09",
+      "language": "en",
+      "title": "Costco is giving shareholders a big, early holiday gift. How to make sure you get it",
+      "excerpt": "Costco announced a special dividend, and it's not too late to get in on the action.",
+      "date": "2026-11-11T20:59:32.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/11/costco-is-giving-shareholders-a-big-early-holiday-gift-how-to-make-sure-you-get-it.html",
+      "image": ""
+    },
+    {
+      "id": "t-mobile-illegally-imposed-50-gb-cap-on-low-i-f54430acdba3",
+      "language": "en",
+      "title": "T-Mobile illegally imposed 50 GB cap on low-income home Internet plan, NY says",
+      "excerpt": "Law requires 25Mbps home Internet. T-Mobile lowers speed to 600Kbps after 50GB cap.",
+      "date": "2026-11-11T20:32:21.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/t-mobile-illegally-imposed-50-gb-cap-on-low-income-home-internet-plan-ny-says/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/06/t-mobile-5g-500x500-1752177364.jpg"
+    },
+    {
+      "id": "canada-s-ambassador-warns-trump-tariffs-are-d-8a945205651b",
+      "language": "en",
+      "title": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
+      "excerpt": "U.S.-Canada trade tensions persist as Trump's tariffs drive up costs, threaten investment and complicate negotiations between the two countries.",
+      "date": "2026-11-11T20:30:23.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
+      "image": ""
+    },
+    {
+      "id": "anduril-says-its-first-satellite-can-see-adve-ffcb46619fa0",
+      "language": "en",
+      "title": "Anduril says its first satellite can see adversaries maneuver in orbital night",
+      "excerpt": "\"What's unique is it's got a huge dynamic range. We can see things in full dark.\"",
+      "date": "2026-11-11T20:22:03.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/11/anduril-demos-night-vision-sensor-for-tracking-satellites-in-darkness/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/longwaveirsensor-500x500.jpg"
+    },
+    {
+      "id": "why-the-data-center-you-dread-might-never-eve-351392b31b9f",
+      "language": "en",
+      "title": "Why the data center you dread might never even be built",
+      "excerpt": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects being announced may never get built in the first place. With billions of dollars in AI infrastructure […]",
+      "date": "2026-11-11T20:15:15.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
+      "image": ""
+    },
+    {
+      "id": "meta-is-losing-its-longtime-head-of-infrastru-364092bc196c",
+      "language": "en",
+      "title": "Meta is losing its longtime head of infrastructure",
+      "excerpt": "Santosh Janardhan, who originally joined the company in 2009, will be stepping down from his role.",
+      "date": "2026-11-11T20:12:01.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/",
+      "image": ""
+    },
     {
       "id": "olaf-sakkers-is-betting-he-can-beat-the-emerg-cb8d9adb5666",
       "language": "en",
@@ -2929,76 +2999,6 @@
       "date": "2026-11-11T05:15:50.000Z",
       "source_name": "CNBC Top News",
       "source_url": "https://www.cnbc.com/2026/11/11/trump-xi-summit-ai-nvidia-.html",
-      "image": ""
-    },
-    {
-      "id": "委内瑞拉修法向私人开放电力领域-7d2a1bf0fdde",
-      "language": "zh",
-      "title": "委内瑞拉修法向私人开放电力领域",
-      "excerpt": "中新社北京11月11日电 加拉加斯消息：委内瑞拉全国代表大会11月10日一致通过对《国家电力系统与服务组织法》的部分修改，允许私人企业参与发电等活动。",
-      "date": "2026-11-11T05:15:00.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10730022.shtml",
-      "image": ""
-    },
-    {
-      "id": "伊朗最高国家安全委员会秘书否认将与万斯会面-30a53b16c140",
-      "language": "zh",
-      "title": "伊朗最高国家安全委员会秘书否认将与万斯会面",
-      "excerpt": "中新社北京11月11日电 综合消息：伊朗最高国家安全委员会秘书雷扎伊当地时间10日否认有关其计划与美国副总统万斯会面的传言，称相关说法“完全不实、毫无根据”。",
-      "date": "2026-11-11T05:14:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10730006.shtml",
-      "image": ""
-    },
-    {
-      "id": "中新健康-想赚医院的钱-不那么容易了-医疗信息化相关厂商业绩承压-ad531164e53e",
-      "language": "zh",
-      "title": "中新健康｜想赚医院的钱，不那么容易了！医疗信息化相关厂商业绩承压",
-      "excerpt": "中新网北京11月11日电(罗春昊)近日，医疗信息化相关的上市公司陆续公布三季报，多家企业亏损。",
-      "date": "2026-11-11T05:04:05.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-11/10730041.shtml",
-      "image": ""
-    },
-    {
-      "id": "报告-十五五-政策有望支撑中国2027至2029年实现碳达峰-70a23a915ace",
-      "language": "zh",
-      "title": "报告：“十五五”政策有望支撑中国2027至2029年实现碳达峰",
-      "excerpt": "中新社土耳其安塔利亚11月11日电 (记者 陈溯)《联合国气候变化框架公约》第三十一次缔约方大会(COP31)正在土耳其安塔利亚举行。大会期间，绿色创新发展研究院(iGDP)发布的《迎接转折点：中国碳排放中长期情景分析暨EPS国家模型报告(2026)》显示，中国“十五五”(2026年至2030年)政策有望支撑中国2027至2029年实现碳达峰。",
-      "date": "2026-11-11T04:56:21.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10730038.shtml",
-      "image": ""
-    },
-    {
-      "id": "戴手套-戴手套-72小时可夺命-医生提醒-5cae52f9c3e2",
-      "language": "zh",
-      "title": "戴手套！戴手套！“72小时可夺命” 医生提醒",
-      "excerpt": "开渔季过后，海鲜供应充足，很多人实现了“海鲜自由”。海鲜虽美味，但是一定要注意一件事：小心别被海鲜刺伤。",
-      "date": "2026-11-11T04:44:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-11/10730037.shtml",
-      "image": ""
-    },
-    {
-      "id": "诺华高管cop31现场分享-生态共赢-实践-期待继续与中国合作-新闻会客厅-95fa9da8c820",
-      "language": "zh",
-      "title": "诺华高管COP31现场分享“生态共赢”实践：期待继续与中国合作｜新闻会客厅",
-      "excerpt": "中新网安塔利亚11月11日电 (陈溯 王庆凯 柳棽)《联合国气候变化框架公约》第31次缔约方大会(COP31)正在土耳其安塔利亚召开。当地时间11月10日上午，由习近平生态文明思想研究中心、中国新闻社主办，生态环境部环境与经济政策研究中心、中国新闻网协办的“生态文明与美丽中国实践”边会在中国角举行。诺华全球社会影响负责人兼首席可持续发展官芭芭拉·弗雷德(Barbara Vrede)发表致辞，分享诺华在中国推进环境可持续发展的实践，并重点介绍了四川林业碳汇、社区与生物多样性项目，强调环境行动应兼顾生态、社会与经济价值。",
-      "date": "2026-11-11T04:33:11.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10730033.shtml",
-      "image": ""
-    },
-    {
-      "id": "浩瀚大洋连起21个经济体-带你读懂apec-74a72bdc337c",
-      "language": "zh",
-      "title": "浩瀚大洋连起21个经济体 带你读懂APEC",
-      "excerpt": "浩瀚的太平洋，连接亚洲、大洋洲、北美洲和南美洲。亚太经合组织(APEC)21个经济体，因海相望，因合作相聚。亚太经合组织第三十三次领导人非正式会议即将拉开帷幕。APEC是个什么样的组织？",
-      "date": "2026-11-11T04:25:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10730035.shtml",
       "image": ""
     }
   ]
