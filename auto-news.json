@@ -1,6 +1,266 @@
 {
-  "generated_at": "2026-11-11T02:10:42.632Z",
+  "generated_at": "2026-11-11T02:57:58.211Z",
   "items": [
+    {
+      "id": "国际随笔丨九届进博的-变-与-不变-f8437124fea7",
+      "language": "zh",
+      "title": "国际随笔丨九届进博的“变”与“不变”",
+      "excerpt": "新华社北京11月10日电 题：九届进博的“变”与“不变”",
+      "date": "2026-11-11T02:52:10.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10729979.shtml",
+      "image": ""
+    },
+    {
+      "id": "心梗发作前-身体会发出哪些警报-2d4e9021bd25",
+      "language": "zh",
+      "title": "心梗发作前，身体会发出哪些警报？",
+      "excerpt": "心梗发作前，身体会发出哪些警报？(健康驿站·急症早识别)",
+      "date": "2026-11-11T02:52:06.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/jk/2026/11-11/10729978.shtml",
+      "image": ""
+    },
+    {
+      "id": "亚行报告-东盟基础设施融资缺口巨大-332871f3e900",
+      "language": "zh",
+      "title": "亚行报告：东盟基础设施融资缺口巨大",
+      "excerpt": "中新网北京11月11日电 综合消息：亚洲开发银行10日发布的最新报告指出，东南亚各国到2040年需要在基础设施领域投资7.1万亿美元，但该地区面临巨大的资金缺口。",
+      "date": "2026-11-11T02:51:24.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/11-11/10729966.shtml",
+      "image": ""
+    },
+    {
+      "id": "公安机关依法严打网络售假犯罪-公布10起典型案例-148e1a5aeb0e",
+      "language": "zh",
+      "title": "公安机关依法严打网络售假犯罪 公布10起典型案例",
+      "excerpt": "中新网11月11日电 据公安部微信公众号消息，11日，公安部公布打击网络售假犯罪10起典型案例。",
+      "date": "2026-11-11T02:50:48.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10729962.shtml",
+      "image": ""
+    },
+    {
+      "id": "一艘运载4万吨俄柴油的油轮驶向纽约-却在-临门一脚-时停航-097cf4aca70d",
+      "language": "zh",
+      "title": "一艘运载4万吨俄柴油的油轮驶向纽约，却在“临门一脚”时停航？",
+      "excerpt": "中新网11月11日电 据路透社援引当地时间11月10日公布的航运数据，一艘装载约4万吨俄罗斯柴油、原计划驶往美国纽约的油轮已在美国东海岸外海停航。",
+      "date": "2026-11-11T02:50:10.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729931.shtml",
+      "image": ""
+    },
+    {
+      "id": "法国文成联谊会第十五届会长团就职典礼在巴黎举行-bf05fab15a16",
+      "language": "zh",
+      "title": "法国文成联谊会第十五届会长团就职典礼在巴黎举行",
+      "excerpt": "中新网巴黎11月11日电 法国文成联谊会第十五届会长团就职典礼当地时间9日晚在巴黎举行。中国驻法国大使馆公使沈钢、巴黎六区区长勒考克等中法各界嘉宾出席活动。",
+      "date": "2026-11-11T02:50:04.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/hr/2026/11-11/10729963.shtml",
+      "image": ""
+    },
+    {
+      "id": "2026年广东省女子篮球联赛八强出炉-dce5f62bb6c9",
+      "language": "zh",
+      "title": "2026年广东省女子篮球联赛八强出炉",
+      "excerpt": "中新网中山11月11日电 (记者 张璐)中国体育彩票·2026年广东省女子篮球联赛(以下简称“赛事”)于7日至10日进行小组赛及八强附加赛比拼。经过多场激烈角逐，八强席位全部产生。",
+      "date": "2026-11-11T02:49:24.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/11-11/10729955.shtml",
+      "image": ""
+    },
+    {
+      "id": "西藏藏医药大学第五届曼唐解说大赛圆满落幕-a247ced4fe2e",
+      "language": "zh",
+      "title": "西藏藏医药大学第五届曼唐解说大赛圆满落幕",
+      "excerpt": "中新网拉萨11月11日电 (谢牧)10日，西藏藏医药大学第五届曼唐解说大赛总决赛落下帷幕，本届大赛以“精美曼唐 药韵流芳”为主题，引导青年学子从先贤典籍、核心理论、药材鉴别、艺术审美、传统绝技等维度，解读曼唐蕴藏的藏医药智慧。",
+      "date": "2026-11-11T02:48:34.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-11/10729947.shtml",
+      "image": ""
+    },
+    {
+      "id": "headquarters-of-haitian-gang-destroyed-el-sal-ddbccf94961a",
+      "language": "en",
+      "title": "Headquarters of Haitian gang destroyed, El Salvador's president says",
+      "excerpt": "The infamous 400 Mawozo gang was targeted by the El Salvador military which has deployed thousands of troops to combat Haiti's gang violence crisis.",
+      "date": "2026-11-11T02:47:59.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2854/live/3f67c570-dd7a-11f1-ad5a-4712ee7e64fd.png"
+    },
+    {
+      "id": "十五五-时期我国将采取多项举措保障和改善民生-88ff478b4b7b",
+      "language": "zh",
+      "title": "“十五五”时期我国将采取多项举措保障和改善民生",
+      "excerpt": "央视新闻客户端消息(新闻联播)：记者从国家发展改革委了解到，“十五五”时期，国家将聚焦人民群众急难愁盼问题，实施更加公平普惠、精准有力的社会政策。",
+      "date": "2026-11-11T02:47:56.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-11/10729975.shtml",
+      "image": ""
+    },
+    {
+      "id": "singapore-wants-a-bigger-slice-of-the-global--63d537e9e377",
+      "language": "en",
+      "title": "Singapore wants a bigger slice of the global gold market. Is it too late to the party?",
+      "excerpt": "Singapore is stepping up efforts to become a key player in the global gold market, betting that vaulting service and tax incentives will help it attract flows.",
+      "date": "2026-11-11T02:46:56.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/11/singapore-gold-market-vault-storage.html",
+      "image": ""
+    },
+    {
+      "id": "我国已与150多个国家30多个国际组织签署共建-一带一路-合作文件-a6e62a306d9e",
+      "language": "zh",
+      "title": "我国已与150多个国家30多个国际组织签署共建“一带一路”合作文件",
+      "excerpt": "中新网11月11日电 11日上午，国家发改委召开奋进“十五五”系列新闻发布会，介绍共建“一带一路”有关情况。会上，国家发展改革委区域开放司司长梁林冲介绍，2013年以来，在各方共同努力下，共建“一带一路”务实合作越拓越宽，共赢蛋糕越做越大，既发展了中国，也造福了世界。",
+      "date": "2026-11-11T02:46:42.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ydyl/2026/11-11/10729970.shtml",
+      "image": ""
+    },
+    {
+      "id": "一首童谣传唱近百年-美国人柏大卫与青海湟源的双向牵挂-7dff5316a94e",
+      "language": "zh",
+      "title": "一首童谣传唱近百年：美国人柏大卫与青海湟源的双向牵挂",
+      "excerpt": "中新网西宁11月11日电 题：一首童谣传唱近百年：美国人柏大卫与青海湟源的双向牵挂",
+      "date": "2026-11-11T02:46:18.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-11/10729972.shtml",
+      "image": ""
+    },
+    {
+      "id": "人民空军-生日快乐-4a976b1eaf71",
+      "language": "zh",
+      "title": "人民空军，生日快乐！",
+      "excerpt": "2026年11月11日",
+      "date": "2026-11-11T02:41:29.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10729971.shtml",
+      "image": ""
+    },
+    {
+      "id": "2026年中英清洁能源合作论坛举行-20dbe3615bb0",
+      "language": "zh",
+      "title": "2026年中英清洁能源合作论坛举行",
+      "excerpt": "中新网伦敦11月10日电 (记者 欧阳开宇)11月10日，中国驻曼彻斯特总领事唐锐出席2026年中英清洁能源合作论坛。曼彻斯特市议会副议长罗林斯、英能源安全与净零排放部主管官员科维、武汉市人民政府外事办公室副主任李军、英国中国商会副会长杨亚美以及两国知名企业和专家学者150人参会。英国驻华贸易使节韩瑞芬发表视频致辞，李军宣读了武汉市长熊征宇的致辞。",
+      "date": "2026-11-11T02:38:13.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729960.shtml",
+      "image": ""
+    },
+    {
+      "id": "巴黎中国文化中心举办-中国味道-主题沙龙活动-e4427575d82e",
+      "language": "zh",
+      "title": "巴黎中国文化中心举办“中国味道”主题沙龙活动",
+      "excerpt": "中新网巴黎11月11日电 巴黎中国文化中心当地时间6日晚举办“聊聊”第五期“中国味道”主题沙龙。本次活动将趣味汉语学习与中华饮食文化相结合，邀请中文学习者和中国文化爱好者在轻松愉快的氛围中，以语言为桥梁、以味觉为线索，开启一场跨越古今的文化探索之旅。",
+      "date": "2026-11-11T02:38:07.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729956.shtml",
+      "image": ""
+    },
+    {
+      "id": "铸牢共同体-中华一家亲丨从巷口到地头-天山南北一脉同心-78598c7260db",
+      "language": "zh",
+      "title": "铸牢共同体 中华一家亲丨从巷口到地头 天山南北一脉同心",
+      "excerpt": "石榴云/新疆日报记者 蔡增乐",
+      "date": "2026-11-11T02:37:03.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/mz/2026/11-11/10729967.shtml",
+      "image": ""
+    },
+    {
+      "id": "双11-里的消费迁移-e8102bfa3fda",
+      "language": "zh",
+      "title": "“双11”里的消费迁移",
+      "excerpt": "许多网友观察到，今年的“双11”有了新变化：年轻人的购物车被米面粮油、家居日用等物品占据，电商平台的促销手段也更务实简单了。",
+      "date": "2026-11-11T02:34:25.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10729964.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国驻日使馆发言人敦促日方依法严惩侵闯使馆凶犯-13ed5f30a378",
+      "language": "zh",
+      "title": "中国驻日使馆发言人敦促日方依法严惩侵闯使馆凶犯",
+      "excerpt": "新华社东京11月10日电(记者陈泽安#8195;梁晨)中国驻日本大使馆发言人10日就村田晃大非法持刀侵闯中国驻日本大使馆案第二次开庭答记者问时表示，相关案情事实清楚，证据确凿，不容抵赖，再次敦促日方依法严惩凶犯，不得为其开脱罪责。",
+      "date": "2026-11-11T02:28:29.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10729958.shtml",
+      "image": ""
+    },
+    {
+      "id": "我国已与150多个国家30多个国际组织签署共建-一带一路-合作文件-000f1eeafc2f",
+      "language": "zh",
+      "title": "我国已与150多个国家30多个国际组织签署共建“一带一路”合作文件",
+      "excerpt": "国家发展改革委区域开放司司长梁林冲11月11日在新闻发布会上表示，我国已与150多个国家和30多个国际组织签署了共建“一带一路”合作文件，合作伙伴覆盖全球四分之三的国家及主要的国际组织。中欧班列开辟了亚欧陆路运输新通道，已累计开行超14万列，发送货物货值超5600亿元，通达欧洲26个国家237个城市，跨里海国际运输走廊班列实现“日日开行”，北、中、南通道总体保持安全稳定畅通运行。",
+      "date": "2026-11-11T02:28:11.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ydyl/2026/11-11/10729957.shtml",
+      "image": ""
+    },
+    {
+      "id": "从钱塘江到泰晤士河-诗画浙江-走进英国-befc81482745",
+      "language": "zh",
+      "title": "从钱塘江到泰晤士河—“诗画浙江”走进英国",
+      "excerpt": "中新网伦敦11月11日电 (记者 欧阳开宇)“诗画浙江”(英国)系列文旅推介交流活动日前在伦敦举办。活动由浙江省文化广电和旅游厅主办，通过专场推介、展会展示、业界洽谈、文化体验等多元形式，全方位展示浙江深厚文化底蕴与丰富文旅资源，加强浙江与英国等重点入境客源国的文旅交流合作。",
+      "date": "2026-11-11T02:28:03.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729952.shtml",
+      "image": ""
+    },
+    {
+      "id": "市场监管总局部署多项举措-共建放心消费生态圈-fe1cf189cc22",
+      "language": "zh",
+      "title": "市场监管总局部署多项举措 共建放心消费生态圈",
+      "excerpt": "围绕2026年全国优化消费环境月“放心消费、你我共享”主题，市场监管总局昨天(10日)召开平台企业放心消费承诺座谈会，引导平台企业作出放心消费承诺、改善消费体验。市场监管总局提出，平台要建立完善首问负责和先行赔付制度，在提高AI客服水平的同时做好与人工客服的衔接，及时处置消费纠纷。",
+      "date": "2026-11-11T02:25:30.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10729954.shtml",
+      "image": ""
+    },
+    {
+      "id": "日本学者-安保三文件-相关修订或将加剧地区紧张局势-93763eb76356",
+      "language": "zh",
+      "title": "日本学者：“安保三文件”相关修订或将加剧地区紧张局势",
+      "excerpt": "据日本方面消息，日本执政党自民党及其执政伙伴日本维新会10日就修订“安保三文件”举行首次工作层磋商。",
+      "date": "2026-11-11T02:24:38.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729953.shtml",
+      "image": ""
+    },
+    {
+      "id": "日本推动修订-安保三文件-威胁地区和平稳定-8978ed3defe1",
+      "language": "zh",
+      "title": "日本推动修订“安保三文件” 威胁地区和平稳定",
+      "excerpt": "日本政府“再军事化”动作不断。据日本方面消息，针对修订“安保三文件”，日本执政党自民党及其执政伙伴日本维新会10日举行首次工作层磋商。据悉，双方围绕当前安全保障形势，讨论了加强防卫和外交力量的方向。",
+      "date": "2026-11-11T02:19:44.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729949.shtml",
+      "image": ""
+    },
+    {
+      "id": "保加利亚连环车祸致12死50伤-11日为全国哀悼日-4541150652c1",
+      "language": "zh",
+      "title": "保加利亚连环车祸致12死50伤 11日为全国哀悼日",
+      "excerpt": "中新社北京11月11日电 索非亚消息：保加利亚当地时间10日发生两起严重连环车祸，造成12人死亡、50人受伤。该国政府当天宣布11月11日为全国哀悼日，以悼念遇难者。",
+      "date": "2026-11-11T02:11:52.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729928.shtml",
+      "image": ""
+    },
+    {
+      "id": "日本执意推进-再军事化-是在透支国家未来-国际论坛-c68b0757552c",
+      "language": "zh",
+      "title": "日本执意推进“再军事化”是在透支国家未来（国际论坛）",
+      "excerpt": "吴怀中 陈 祥",
+      "date": "2026-11-11T02:08:35.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729940.shtml",
+      "image": ""
+    },
     {
       "id": "涉嫌为俄罗斯从事间谍活动-一名美军士兵在英国被捕-03c332f7cb14",
       "language": "zh",
@@ -109,6 +369,16 @@
       "date": "2026-11-11T01:53:29.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/ll/2026/11-11/10729929.shtml",
+      "image": ""
+    },
+    {
+      "id": "anthropic-opens-australian-retail-ipo-offerin-488cd970551b",
+      "language": "en",
+      "title": "Anthropic opens Australian retail IPO offering as AI scrutiny intensifies",
+      "excerpt": "Anthropic opened its Australia retail IPO offering on Wednesday, allowing individual investors to apply for shares ahead of its planned IPO.",
+      "date": "2026-11-11T01:52:56.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/11/anthopic-australian-retail-ipo-offering-.html",
       "image": ""
     },
     {
@@ -2729,276 +2999,6 @@
       "date": "2026-11-10T10:45:35.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/hr/2026/11-10/10729645.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-借进博会架起沪港通道-家乡好物-供港出海-行动启动-5bb19d50c787",
-      "language": "zh",
-      "title": "（第九届进博会）借进博会架起沪港通道 “家乡好物·供港出海”行动启动",
-      "excerpt": "中新网上海11月10日电 (记者 许婧)11月5日至10日，第九届中国国际进口博览会在上海举办。作为第九届进博会重要会议活动之一，“第四届善用香港资源优势出海发展论坛暨供港产品供应链合作大会”在上海举办。大会启动“中国企业(香港)展贸中心——家乡好物·供港出海”。",
-      "date": "2026-11-10T10:45:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729650.shtml",
-      "image": ""
-    },
-    {
-      "id": "庆祝中国致公党广西壮族自治区委员会成立70周年大会召开-741bbf3c7941",
-      "language": "zh",
-      "title": "庆祝中国致公党广西壮族自治区委员会成立70周年大会召开",
-      "excerpt": "中新网南宁11月10日电(韦佳秀)11月9日，庆祝中国致公党广西壮族自治区委员会成立70周年大会在南宁召开。全国政协副主席、中国致公党中央主席蒋作君，广西壮族自治区党委副书记王心富出席并讲话，中国致公党中央常务副主席张恩迪出席。广西壮族自治区政协副主席、中国致公党广西壮族自治区委员会主委欧余军主持会议并作主题报告。",
-      "date": "2026-11-10T10:43:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/txy/2026/11-10/10729626.shtml",
-      "image": ""
-    },
-    {
-      "id": "澳门学者同盟会长叶桂平-澳门为破除-文明冲突论-提供可行方案-c2824f0defb9",
-      "language": "zh",
-      "title": "澳门学者同盟会长叶桂平：澳门为破除“文明冲突论”提供可行方案",
-      "excerpt": "中新网澳门11月10日电 (记者 郑嘉伟 莫倩)澳门学者同盟会长叶桂平10日出席“文明互鉴国际论坛2026”时表示，澳门不仅仅是一座城市，更是一种文明交流范式。这一范式的价值，不仅在于它证明了不同文明可以和谐共生，更在于它为全球化时代破解“文明冲突论”提供了切实可行的中国方案。",
-      "date": "2026-11-10T10:43:21.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/11-10/10729631.shtml",
-      "image": ""
-    },
-    {
-      "id": "宁夏农食产品畅销90个国家和地区-前三季度出口19-9亿元-b64d3b0cbbc7",
-      "language": "zh",
-      "title": "宁夏农食产品畅销90个国家和地区 前三季度出口19.9亿元",
-      "excerpt": "中新网银川11月10日电 (记者 李佩珊)记者10日从银川海关获悉，今年前三季度，宁夏农食产品进出口总量24.7万吨，同比增长26.5%，外贸总值19.9亿元(人民币，下同)。葡萄酒、枸杞、牛羊肉、乳制品、冷凉蔬菜等特色产品多点开花，商品畅销全球90个国家和地区。",
-      "date": "2026-11-10T10:43:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729625.shtml",
-      "image": ""
-    },
-    {
-      "id": "安徽九华山-雾凇上线-琼枝引客入仙境-d260b47ad268",
-      "language": "zh",
-      "title": "安徽九华山：雾凇上线 琼枝引客入仙境",
-      "excerpt": "池州九华山风景区出现雾凇景观，青松覆满冰晶，远山层叠，冬日山色如画卷。李春 摄 九华山现雾凇云海，皑皑冰花点缀青松，云海漫过山脊，景致空灵壮阔。李春 摄 九华山奇峰怪石与雾凇相映，冰雪覆于山林，连绵群山铺展冬日诗意风光。李春 摄 游客沿着登山石阶前行，沉浸式观赏玉树琼枝的冬日奇观。李春 摄",
-      "date": "2026-11-10T10:43:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-10/10729654.shtml",
-      "image": ""
-    },
-    {
-      "id": "湖南江华泮水村撂荒山地种野菊-金色花海铺就振兴路-a52f9e58ae54",
-      "language": "zh",
-      "title": "湖南江华泮水村撂荒山地种野菊 金色花海铺就振兴路",
-      "excerpt": "中新网长沙11月10日电 (杨露)连日来，湖南江华瑶族自治县水口镇泮水村引种的药用野菊花迎来首轮采收。昔日撂荒山地变身金色花海，小小野菊正成为带动村集体增收、助力乡村振兴的“致富花”。",
-      "date": "2026-11-10T10:43:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729627.shtml",
-      "image": ""
-    },
-    {
-      "id": "西部陆海新通道商会联盟在渝成立-e23501dd4e43",
-      "language": "zh",
-      "title": "西部陆海新通道商会联盟在渝成立",
-      "excerpt": "中新网重庆11月10日电 (马佳欣)西部陆海新通道商会联盟10日在重庆市铜梁区成立。该联盟由重庆市工商业联合会牵头组建，旨在整合通道沿线商协会及专业机构资源，为重庆民营企业“走出去”提供全链条出海服务。",
-      "date": "2026-11-10T10:43:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729628.shtml",
-      "image": ""
-    },
-    {
-      "id": "沙漠骆驼-段光硕-30年踏遍沙梁-只为绿染乌兰布和-b5c437163db9",
-      "language": "zh",
-      "title": "“沙漠骆驼”段光硕：30年踏遍沙梁，只为绿染乌兰布和",
-      "excerpt": "中新网巴彦淖尔11月10日电 题：“沙漠骆驼”段光硕：30年踏遍沙梁，只为绿染乌兰布和",
-      "date": "2026-11-10T10:41:21.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729636.shtml",
-      "image": ""
-    },
-    {
-      "id": "北京市场监管部门开展冬季供暖特种设备专项检查-守牢供暖-安全线-bcf135928f41",
-      "language": "zh",
-      "title": "北京市场监管部门开展冬季供暖特种设备专项检查 守牢供暖“安全线”",
-      "excerpt": "中新网北京11月10日电 (记者 吕少威 杜燕)今冬供暖已拉开序幕，锅炉、压力管道、压力容器等特种设备将进入高负荷运行期。为全面防范化解特种设备安全风险，牢牢守住冬季供暖“安全线”，北京市市场监管局组织各区市场监管局、特种设备检验机构，全面开展冬季供暖特种设备安全专项检查，截至目前，已完成2700余台供暖锅炉及相关供暖压力管道监督执法和定期检验工作，为全市冬季平稳供暖夯实安全基础。",
-      "date": "2026-11-10T10:41:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729652.shtml",
-      "image": ""
-    },
-    {
-      "id": "junction-china-2026国际极客嘉年华在京闭幕-逐梦科创未来-a85301a80bb1",
-      "language": "zh",
-      "title": "Junction China 2026国际极客嘉年华在京闭幕 逐梦科创未来",
-      "excerpt": "中新网北京11月10日电 (记者 陈杭)记者10日从北京市科委、中关村管委会获悉，Junction China 2026国际极客嘉年华在京闭幕。本届赛事为Junction这项欧洲顶级编程马拉松赛事品牌首次进入中国、落地北京。",
-      "date": "2026-11-10T10:41:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-10/10729629.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国马铃薯之乡-薯条借-冷链动脉-走出去-c373b0f89df0",
-      "language": "zh",
-      "title": "“中国马铃薯之乡”薯条借“冷链动脉”走出去",
-      "excerpt": "中新网银川11月10日电 (记者 杨迪)记者10日从银川铁路物流中心固原营业部获悉，宁夏首趟薯条铁路冷链运输开行以来，该营业部已累计发运薯条达17791吨。",
-      "date": "2026-11-10T10:41:11.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729630.shtml",
-      "image": ""
-    },
-    {
-      "id": "十五五-时期-郑州如何把-工业锈带-变为-城市秀场-4807501bd50d",
-      "language": "zh",
-      "title": "“十五五”时期，郑州如何把“工业锈带”变为“城市秀场”？",
-      "excerpt": "中新网郑州11月10日电(王佳宁)在人潮拥挤的河南郑州国棉三厂历史文化街区，纺织元素随处可见，工业记忆与生活美学在此交汇；保留了红砖墙与法桐树的郑州磨街文创园，初冬时节依旧客流不息；郑州二砂文化创意园则成为年轻人热衷打卡的网红潮流街区……",
-      "date": "2026-11-10T10:41:11.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729635.shtml",
-      "image": ""
-    },
-    {
-      "id": "厦金大桥-厦门段-海上主线桥贯通-3152a21db28e",
-      "language": "zh",
-      "title": "厦金大桥（厦门段）海上主线桥贯通",
-      "excerpt": "中新社厦门11月10日电 (记者 林永传)随着最后一榀重3318吨的钢箱梁精准落位，厦金大桥(厦门段)海上主线桥10日顺利合龙，标志着该桥海上主线桥主体结构建设完成，为今年底海上主线通车奠定基础。",
-      "date": "2026-11-10T10:40:39.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729620.shtml",
-      "image": ""
-    },
-    {
-      "id": "brent-crude-falls-below-90-for-first-time-sin-ce960c6872a6",
-      "language": "en",
-      "title": "Brent crude falls below $90 for first time since August on Iran war de-escalation hopes",
-      "excerpt": "President Trump said Monday he thought the conflict was \"going to be ending fairly soon,\" but some analysts still see little chance of a lasting peace deal.",
-      "date": "2026-11-10T10:38:49.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/10/oil-prices-trump-iran.html",
-      "image": ""
-    },
-    {
-      "id": "提升书店供给质量-中国八部门联合发文支持实体书店-ab9e305550ae",
-      "language": "zh",
-      "title": "提升书店供给质量 中国八部门联合发文支持实体书店",
-      "excerpt": "中新社北京11月10日电 近日，中央宣传部、中央社会工作部、教育部、财政部、住房城乡建设部、商务部、文化和旅游部、国家文物局联合印发《中共中央宣传部等关于支持实体书店服务全民阅读的通知》。",
-      "date": "2026-11-10T10:38:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-10/10729619.shtml",
-      "image": ""
-    },
-    {
-      "id": "全球视域下的中国音乐研究国际研讨会举行-e97c0a44e5f1",
-      "language": "zh",
-      "title": "全球视域下的中国音乐研究国际研讨会举行",
-      "excerpt": "中新网西安11月10日电 (记者 阿琳娜)全球视域下的中国音乐研究国际研讨会6日至8日在陕西师范大学举行。此次会议以“传承·对话·传播——中国音乐的全球视域与当代价值”为主题，特邀来自13所院校的20余位国内外知名音乐学专家，围绕中国音乐研究的国际现状与前沿议题展开交流，共话中国音乐研究的发展新篇。",
-      "date": "2026-11-10T10:36:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-10/10729646.shtml",
-      "image": ""
-    },
-    {
-      "id": "湖南桂东-高海拔岗梅采收忙-药香经济-助农增收-7a40c67a9959",
-      "language": "zh",
-      "title": "湖南桂东：高海拔岗梅采收忙 “药香经济”助农增收",
-      "excerpt": "中新网桂东11月10日电 (郭建东 扶秀玲 郭成)11月初，湖南桂东县沙田镇文昌村岗梅基地进入采收季。山坡上，砍倒的岗梅枝条散发着淡淡药香，村民三五成群砍收、捆扎、称重，装好的药材一车车运往晒场。",
-      "date": "2026-11-10T10:36:57.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-10/10729638.shtml",
-      "image": ""
-    },
-    {
-      "id": "山东召开全省侨务工作会议-04000fe6e638",
-      "language": "zh",
-      "title": "山东召开全省侨务工作会议",
-      "excerpt": "中新网济南11月10日电 (吕妍)11月10日，山东在济南市召开全省侨务工作会议，传达学习全国侨务工作会议精神，总结工作、分析形势，交流经验、部署任务。",
-      "date": "2026-11-10T10:36:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/txy/2026/11-10/10729637.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国团队研制出国际首台下一代射频超导加速器-0fc2088a8adb",
-      "language": "zh",
-      "title": "中国团队研制出国际首台下一代射频超导加速器",
-      "excerpt": "中新社北京11月10日电 (记者 孙自法)记者10日从中国科学院近代物理研究所获悉，该所和先进能源科学与技术广东省实验室联合团队历时近十年持续攻关，成功研制出国际首台无液氦铌三锡薄膜射频超导电子加速器，并实现稳定载束。",
-      "date": "2026-11-10T10:36:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-10/10729617.shtml",
-      "image": ""
-    },
-    {
-      "id": "许宁宁-前十月中国东盟贸易增速领跑-rcep红利持续放大-50f0e5b53421",
-      "language": "zh",
-      "title": "许宁宁：前十月中国东盟贸易增速领跑，RCEP红利持续放大",
-      "excerpt": "中新网北京11月10日电 (记者 刘文文)海关总署10日发布2026年前10个月全国进出口贸易统计数据。中国东盟首席商务专家许宁宁当日接受媒体采访，解读中国与东盟经贸增长态势，分析RCEP区域合作成效。",
-      "date": "2026-11-10T10:35:30.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729644.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会-从进博会到apec-中国开放合作步履不停-08ab09fe5f20",
-      "language": "zh",
-      "title": "（第九届进博会）从进博会到APEC 中国开放合作步履不停",
-      "excerpt": "中新社上海11月10日电 (记者 尹倩芸)第九届中国国际进口博览会10日在上海闭幕。几天后，亚太经合组织(APEC)第三十三次领导人非正式会议将在深圳举行。",
-      "date": "2026-11-10T10:35:28.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729615.shtml",
-      "image": ""
-    },
-    {
-      "id": "印尼副总统吉布兰提出辞职意向-9cd328f6be90",
-      "language": "zh",
-      "title": "印尼副总统吉布兰提出辞职意向",
-      "excerpt": "中新网雅加达11月10日电 (记者 李志全)印度尼西亚总统府10日消息称，副总统吉布兰当天向总统普拉博沃表达辞职意向。",
-      "date": "2026-11-10T10:34:36.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729660.shtml",
-      "image": ""
-    },
-    {
-      "id": "土耳其驻华大使-中国经验备受关注-土中绿色合作迎来新契机-新闻会客厅-c9034e47a700",
-      "language": "zh",
-      "title": "土耳其驻华大使：中国经验备受关注，土中绿色合作迎来新契机｜新闻会客厅",
-      "excerpt": "中新网11月10日电 题：土耳其驻华大使：中国经验备受关注，土中绿色合作迎来新契机",
-      "date": "2026-11-10T10:17:52.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729612.shtml",
-      "image": ""
-    },
-    {
-      "id": "第九届进博会闭幕-五项核心数据创历史新高-b27dccaab569",
-      "language": "zh",
-      "title": "第九届进博会闭幕 五项核心数据创历史新高",
-      "excerpt": "第九届进博会今天(11月10日)在上海落下帷幕。为期6天的展会，取得了丰硕成果。",
-      "date": "2026-11-10T10:05:49.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729611.shtml",
-      "image": ""
-    },
-    {
-      "id": "频繁侦察和空袭-美国盯上伊朗-永不沉没的航母-5f18243cdc80",
-      "language": "zh",
-      "title": "频繁侦察和空袭，美国盯上伊朗“永不沉没的航母”？",
-      "excerpt": "中新网11月10日电(记者 刁炜)作为伊朗最大的岛屿，面积近1500平方公里的格什姆岛“扼守霍尔木兹海峡的咽喉”，是一处战略意义显要的军事重地，被誉为伊朗“永不沉没的航空母舰”。",
-      "date": "2026-11-10T10:04:15.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729608.shtml",
-      "image": ""
-    },
-    {
-      "id": "前10个月我国外贸保持强劲增长-民营外资国企协同共进-5b556d1822af",
-      "language": "zh",
-      "title": "前10个月我国外贸保持强劲增长 民营外资国企协同共进",
-      "excerpt": "今年以来，我国外贸多元主体齐发力、同步向好，民营、外资、国企三类主体协同共进，结构韧性明显。",
-      "date": "2026-11-10T10:01:41.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-10/10729610.shtml",
-      "image": ""
-    },
-    {
-      "id": "肯尼亚宣布将永久关闭驻瑞士大使馆-401043cf41be",
-      "language": "zh",
-      "title": "肯尼亚宣布将永久关闭驻瑞士大使馆",
-      "excerpt": "当地时间11月10日，肯尼亚外交部首席秘书科里尔·辛戈埃表示，肯尼亚政府决定永久关闭驻瑞士伯尔尼大使馆。肯尼亚驻瑞士大使馆9日发布公告说，使馆将根据肯尼亚政府指令永久停止运营，领事部门将于11月30日停止提供服务。",
-      "date": "2026-11-10T09:57:12.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-10/10729607.shtml",
       "image": ""
     }
   ]
