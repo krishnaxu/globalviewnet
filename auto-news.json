@@ -1,6 +1,346 @@
 {
-  "generated_at": "2026-11-11T13:18:59.220Z",
+  "generated_at": "2026-11-11T14:58:57.190Z",
   "items": [
+    {
+      "id": "coreweave-ceo-says-new-political-reality-afte-6bcd9b6f1615",
+      "language": "en",
+      "title": "CoreWeave CEO says 'new political reality' after midterms won't slow buildout",
+      "excerpt": "After CoreWeave beat on revenue and upped its forecast, CEO Mike Intrator indicated the company will be fine despite last week's Democratic midterm sweep.",
+      "date": "2026-11-11T14:52:03.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/11/coreweave-ceo-election-data-center-buildout.html",
+      "image": ""
+    },
+    {
+      "id": "cftc-investigates-if-kalshi-improperly-self-c-eb598d748900",
+      "language": "en",
+      "title": "CFTC investigates if Kalshi improperly self-certified event contracts",
+      "excerpt": "News of the probe comes after the CFTC ordered Kalshi to take down a sports-related \"mention markets\" back in August.",
+      "date": "2026-11-11T14:49:16.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/11/cftc-investigates-if-kalshi-improperly-self-certified-event-contracts.html",
+      "image": ""
+    },
+    {
+      "id": "jim-cramer-s-top-10-things-to-watch-in-the-st-a9529d8e87bd",
+      "language": "en",
+      "title": "Jim Cramer's top 10 things to watch in the stock market Wednesday",
+      "excerpt": "CoreWeave lifts the AI trade, and my advice to Nvidia.",
+      "date": "2026-11-11T14:13:25.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/11/jim-cramers-top-10-things-to-watch-in-the-stock-market-wednesday.html",
+      "image": ""
+    },
+    {
+      "id": "google-deepmind-just-mathematically-verified--b5b225f8da04",
+      "language": "en",
+      "title": "Google DeepMind just mathematically verified key parts of Signal",
+      "excerpt": "The four-week project hints that AI could make formal verification far more practical.",
+      "date": "2026-11-11T14:08:57.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/signal_icon-500x500.jpg"
+    },
+    {
+      "id": "spain-sees-widespread-disruption-in-first-gen-3a0b6122a2ac",
+      "language": "en",
+      "title": "Spain sees widespread disruption in first general strike for 14 years",
+      "excerpt": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections.",
+      "date": "2026-11-11T14:06:27.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/49d4/live/b795f200-ddc1-11f1-a50f-85eebf9e50e5.jpg"
+    },
+    {
+      "id": "深圳apec-2026年apec领导人会议周新闻中心启用-067ec5cb2180",
+      "language": "zh",
+      "title": "（深圳APEC）2026年APEC领导人会议周新闻中心启用",
+      "excerpt": "中新社深圳11月11日电 (记者 蔡敏婕)2026年亚太经合组织(APEC)领导人会议周新闻中心11日在广东深圳启用，工作区域总面积1.5万平方米的新闻中心将为近5000名中外注册记者提供新闻服务保障。",
+      "date": "2026-11-11T14:05:50.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10730556.shtml",
+      "image": ""
+    },
+    {
+      "id": "俄美乌三方会谈结束-俄乌就大规模换俘达成一致-f80fd8b2abb6",
+      "language": "zh",
+      "title": "俄美乌三方会谈结束 俄乌就大规模换俘达成一致",
+      "excerpt": "中新社莫斯科11月11日电 俄罗斯、美国、乌克兰三方会谈代表11日在阿拉伯联合酋长国首都阿布扎比结束会谈。俄罗斯总统助理、俄方代表团团长梅金斯基在会谈结束后对媒体表示，欧洲安全体系是本次会谈的核心议题，各方在某些方面达成了共识。俄乌就新一轮大规模换俘达成一致。",
+      "date": "2026-11-11T14:03:46.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10730554.shtml",
+      "image": ""
+    },
+    {
+      "id": "纪念孙中山诞辰160周年图片展在菲律宾马尼拉开幕-4820bb45c998",
+      "language": "zh",
+      "title": "纪念孙中山诞辰160周年图片展在菲律宾马尼拉开幕",
+      "excerpt": "中新网马尼拉11月11日电 纪念孙中山先生诞辰160周年图片展、讲座及电影放映活动11日在菲律宾马尼拉开幕。中国驻菲律宾大使馆公使衔参赞兼总领事王玮、菲华联谊总会理事长蔡明丰、中正学院院长叶启明等出席开幕式并致辞。中正学院近千名师生参加活动并参观图片展。",
+      "date": "2026-11-11T14:03:42.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/hr/2026/11-11/10730555.shtml",
+      "image": ""
+    },
+    {
+      "id": "友城故事-成都与莫斯科再签三年行动计划促各领域合作深化-f877fb77c512",
+      "language": "zh",
+      "title": "（友城故事）成都与莫斯科再签三年行动计划促各领域合作深化",
+      "excerpt": "中新社成都11月11日电 (记者 岳依桐)《中华人民共和国成都市与俄罗斯联邦莫斯科市关于进一步深化友好合作关系的行动计划(2027—2029年)》11日在蓉签署，为未来三年交流合作提供指引，促进各领域合作深化。两市于2018年8月建立友好合作关系。",
+      "date": "2026-11-11T14:03:10.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ydyl/2026/11-11/10730552.shtml",
+      "image": ""
+    },
+    {
+      "id": "两岸民众在北京碧云寺追思中山先生-ef3e123e8129",
+      "language": "zh",
+      "title": "两岸民众在北京碧云寺追思中山先生",
+      "excerpt": "中新社北京11月11日电 题：两岸民众在北京碧云寺追思中山先生",
+      "date": "2026-11-11T14:01:56.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10730551.shtml",
+      "image": ""
+    },
+    {
+      "id": "报告显示-中国旅游市场人气旺盛-流量转化-考题待解-3dc29d301173",
+      "language": "zh",
+      "title": "报告显示：中国旅游市场人气旺盛 “流量转化”考题待解",
+      "excerpt": "中新社合肥11月11日电 (记者 张强)世界旅游联盟等机构11日在合肥联合发布三份旅游报告，勾勒出当前中国旅游市场的基本轮廓：客流维持高景气状态，但“人气”尚未完全转化为“财气”，如何把旅游流量转化为收益，成为行业必须直面的核心考题。",
+      "date": "2026-11-11T14:01:04.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10730553.shtml",
+      "image": ""
+    },
+    {
+      "id": "哈尔滨-一条长街的-中山印记-ec735c82c615",
+      "language": "zh",
+      "title": "哈尔滨：一条长街的“中山印记”",
+      "excerpt": "11月11日，黑龙江哈尔滨，市民在中山路一侧起点中山桥上行走。哈尔滨中山路始建于1898年，原名通道大街，后历经霍尔瓦特大街、陆军街、土肥原路等名称，抗战胜利后定名“中山路”，以纪念孙中山先生。道路沿线历史遗存与现代楼宇交相辉映，如今已是哈尔滨重要城市主干路。2026年是孙中山先生诞辰160周年，哈尔滨中山路、中山桥等地标，留存下这座北国城市的“中山印记”。中新社记者 赵宇航 摄 11月11日，黑龙江哈尔滨，中山路一侧空地设有新能源电车充电桩。哈尔滨中山路始建于1898年，原名通道大街，后历经霍尔瓦特大街、陆军街、土肥原路等名称，抗战胜利后定名“中山路”，以纪念孙中山先生。道路沿线历史遗存与现代楼宇交相辉映，如今已是哈尔滨重要城市主干路。2026年是孙中山先生诞辰160周年，哈尔滨中山路、中山桥等地标，留存下这座北国城市的“中山印记”。中新社记者 赵宇航 摄 11月11日，黑龙江哈尔滨，夜幕下，中山路上的解放小学校灯火通明。哈尔滨中山路始建于1898年，原名通道大街，后历经霍尔瓦特大街、陆军街、土肥原路等名称，抗战胜利后定名“中山路”，以纪念孙中山先生。道路沿线历史遗存与现代楼宇交相辉映，如今已是哈尔滨重要城市主干路。2026年是孙中山先生诞辰160周年，哈尔滨中山路、中山桥等地标，留存下这座北国城市的“中山印记”。中新社记者 赵宇航 摄 11月11日，黑龙江哈尔滨，“中山花店”内，店员整理鲜花。哈尔滨中山路始建于1898年，原名通道大街，后历经霍尔瓦特大街、陆军街、土肥原路等名称，抗战胜利后定名“中山路”，以纪念孙中山先生。道路沿线历史遗存与现代楼宇交相辉映，如今已是哈尔滨重",
+      "date": "2026-11-11T14:00:32.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/tp/2026/11-11/10730544.shtml",
+      "image": ""
+    },
+    {
+      "id": "王沪宁会见古巴党和政府特使-古共中央政治局委员-外交部长罗德里格斯-c0d1d5c9e32a",
+      "language": "zh",
+      "title": "王沪宁会见古巴党和政府特使、古共中央政治局委员、外交部长罗德里格斯",
+      "excerpt": "中新社北京11月11日电 中共中央政治局常委、全国政协主席王沪宁11日在北京会见古巴党和政府特使、古共中央政治局委员、外交部长罗德里格斯。",
+      "date": "2026-11-11T14:00:26.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10730549.shtml",
+      "image": ""
+    },
+    {
+      "id": "plurai-wants-to-help-ai-agents-work-better-us-274edf310d65",
+      "language": "en",
+      "title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
+      "excerpt": "Like the end-to-end models trained to drive cars, AI agents are probabilistic systems operating in unpredictable environments.",
+      "date": "2026-11-11T14:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+      "image": ""
+    },
+    {
+      "id": "中国新增三处世界地质遗产地-1bb0fb5b36a9",
+      "language": "zh",
+      "title": "中国新增三处世界地质遗产地",
+      "excerpt": "中新社北京11月11日电 中国自然资源部中国地质调查局11日消息，国际地质科学联合会近日公布了第三批100个世界地质遗产地名录，中国有三处“上榜”，分别是鲜水河断裂、云阳中侏罗世恐龙化石群和大别山三叠纪超高压变质带。",
+      "date": "2026-11-11T13:59:50.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10730550.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国发射探源计划探路者卫星-ed60a382dade",
+      "language": "zh",
+      "title": "中国发射探源计划探路者卫星",
+      "excerpt": "中新社北京11月11日电 (记者 马帅莎)据中国航天科技集团消息，北京时间11月11日19时41分，中国在酒泉卫星发射中心使用长征二号丁运载火箭，将探源计划探路者卫星发射升空，卫星顺利进入预定轨道，发射任务取得圆满成功。",
+      "date": "2026-11-11T13:59:18.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10730548.shtml",
+      "image": ""
+    },
+    {
+      "id": "中国-内蒙古-自由贸易试验区法治研究中心揭牌-1d9efd94dfbf",
+      "language": "zh",
+      "title": "中国（内蒙古）自由贸易试验区法治研究中心揭牌",
+      "excerpt": "中新网呼和浩特11月11日电 (记者 奥蓝)11日上午，“中国(内蒙古)自由贸易试验区法治研究中心”及分设在呼和浩特、满洲里、二连浩特的3个研究基地共同举行揭牌仪式。",
+      "date": "2026-11-11T13:58:34.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10730546.shtml",
+      "image": ""
+    },
+    {
+      "id": "云南-十五五-中医药发展规划-提升少数民族医药服务能力-1fc187478ec2",
+      "language": "zh",
+      "title": "云南“十五五”中医药发展规划：提升少数民族医药服务能力",
+      "excerpt": "中新网昆明11月11日电 (记者 刘冉阳)云南省人民政府办公厅近日印发《云南省中医药振兴发展“十五五”规划》(下称《规划》)指出，将实施少数民族医药服务能力提升行动，加强少数民族医医院建设，推进藏、傣、彝等少数民族医药资源共建共享。",
+      "date": "2026-11-11T13:57:58.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/txy/2026/11-11/10730547.shtml",
+      "image": ""
+    },
+    {
+      "id": "山西老年人口突破800万-围绕五大重点谋划-十五五-老龄工作布局-4ddc525dbf47",
+      "language": "zh",
+      "title": "山西老年人口突破800万 围绕五大重点谋划“十五五”老龄工作布局",
+      "excerpt": "中新网太原11月11日电 (刘小红 杨静)11日，在中共山西省委宣传部、山西省人民政府新闻办公室举行的“开局起步‘十五五’”系列主题新闻发布会上，针对山西老龄工作相关问题，山西省民政厅党组书记、厅长李建红表示，目前山西省老年人口突破800万，“十五五”时期是当地积极应对人口老龄化的重要窗口期。",
+      "date": "2026-11-11T13:57:50.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-11/10730545.shtml",
+      "image": ""
+    },
+    {
+      "id": "山西民政收官-十四五-惠及184万民众-五大方向布局-十五五-民生工作-15176742ad8b",
+      "language": "zh",
+      "title": "山西民政收官“十四五”惠及184万民众 五大方向布局“十五五”民生工作",
+      "excerpt": "中新网太原11月11日电 (刘小红 杨静)11日，在中共山西省委宣传部、山西省人民政府新闻办公室举行的“开局起步‘十五五’”系列主题新闻发布会上，山西省民政厅党组书记、厅长李建红介绍了全省民政事业发展情况。“十四五”期间，山西持续推进普惠性、基础性、兜底性民生建设，低保、特困、孤儿、残疾人等保障标准稳步提高，惠及困难民众184万人。发布会同步解读《山西省“十五五”民政事业发展规划》，明确五个重点发力方向，统筹推进养老服务、社会救助、特殊群体福利、社会事务、社会治理各项民政工作。",
+      "date": "2026-11-11T13:57:46.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-11/10730543.shtml",
+      "image": ""
+    },
+    {
+      "id": "广西北海女子刷短视频被骗100余万元-警方全额追回-064ef082fc43",
+      "language": "zh",
+      "title": "广西北海女子刷短视频被骗100余万元 警方全额追回",
+      "excerpt": "中新网北海11月11日电 (翟李强 缪春凤)广西北海警方11日披露，北海的林女士刷短视频被骗了109.7万元，警方4天横跨3省奔波千余公里，全额追回。",
+      "date": "2026-11-11T13:57:44.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-11/10730542.shtml",
+      "image": ""
+    },
+    {
+      "id": "高架上被风筝线-割车-别小看这根隐形伤人线-0cd13aa5eeb4",
+      "language": "zh",
+      "title": "高架上被风筝线“割车” 别小看这根隐形伤人线",
+      "excerpt": "不少人喜欢在公园、河堤等地放风筝，享受放飞乐趣的同时，也需警惕那根不起眼的风筝线。稍不留神，它就可能成为“隐形杀手”。日前，在浙江杭州发生一起相关案例。",
+      "date": "2026-11-11T13:48:17.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/life/2026/11-11/10730540.shtml",
+      "image": ""
+    },
+    {
+      "id": "学习贯彻党的二十届五中全会精神中央宣讲团在中宣部宣讲-2280e76a5580",
+      "language": "zh",
+      "title": "学习贯彻党的二十届五中全会精神中央宣讲团在中宣部宣讲",
+      "excerpt": "新华社北京11月11日电 学习贯彻党的二十届五中全会精神中央宣讲团报告会11月11日在中宣部举行。中央宣讲团成员、中共中央政治局委员、中宣部部长李书磊作宣讲报告。",
+      "date": "2026-11-11T13:44:29.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10730538.shtml",
+      "image": ""
+    },
+    {
+      "id": "apec会议倒计时一周-深圳街头繁花盛放迎八方宾朋-ffcb49f6b268",
+      "language": "zh",
+      "title": "APEC会议倒计时一周 深圳街头繁花盛放迎八方宾朋",
+      "excerpt": "",
+      "date": "2026-11-11T13:43:00.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/11-11/1210580.shtml",
+      "image": ""
+    },
+    {
+      "id": "重庆市永川区人大常委会原副主任王寒峰被-双开-4c339b3d4986",
+      "language": "zh",
+      "title": "重庆市永川区人大常委会原副主任王寒峰被“双开”",
+      "excerpt": "中新网11月11日电 据重庆市纪委监委消息：经重庆市委批准，重庆市纪委监委对重庆市永川区人大常委会原党组成员、副主任王寒峰严重违纪违法问题进行了立案审查调查。",
+      "date": "2026-11-11T13:34:31.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10730536.shtml",
+      "image": ""
+    },
+    {
+      "id": "河北廊坊-中试平台赋能-助力京津科创成果落地转化-c11191a29e0a",
+      "language": "zh",
+      "title": "河北廊坊：中试平台赋能 助力京津科创成果落地转化",
+      "excerpt": "11月11日，河北廊坊一处科技中试熟化基地内，工作人员正在检查产品外观、测试产品功能。中试指新产品在正式投产前的中间阶段试验，是科技成果通向产业化的关键环节。廊坊现已建成28家市级科技中试熟化基地，实现县域全覆盖，累计推动50余项京津科技成果在当地首试首用，创造经济效益逾8亿元人民币。当地依托专业化中试平台，打造 “京津研发、廊坊孵化转化产业化”的协同创新模式。中新社记者 翟羽佳 摄 11月11日，河北廊坊一处科技中试熟化基地内，自动化芯片压合设备正在加工产品。中试指新产品在正式投产前的中间阶段试验，是科技成果通向产业化的关键环节。廊坊现已建成28家市级科技中试熟化基地，实现县域全覆盖，累计推动50余项京津科技成果在当地首试首用，创造经济效益逾8亿元人民币。当地依托专业化中试平台，打造 “京津研发、廊坊孵化转化产业化”的协同创新模式。中新社记者 翟羽佳 摄 11月11日，河北廊坊一处科技中试熟化基地内，工作人员正在自动化机台上料。中试指新产品在正式投产前的中间阶段试验，是科技成果通向产业化的关键环节。廊坊现已建成28家市级科技中试熟化基地，实现县域全覆盖，累计推动50余项京津科技成果在当地首试首用，创造经济效益逾8亿元人民币。当地依托专业化中试平台，打造 “京津研发、廊坊孵化转化产业化”的协同创新模式。中新社记者 翟羽佳 摄 11月11日，河北廊坊一处科技中试熟化基地内，工作人员正在检查、确认产品型号。中试指新产品在正式投产前的中间阶段试验，是科技成果通向产业化的关键环节。廊坊现已建成28家市级科技中试熟化基地，实现县域全覆盖，累计推动50余项京津科技成果在当地首试首用，创造经",
+      "date": "2026-11-11T13:32:33.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/tp/2026/11-11/10730492.shtml",
+      "image": ""
+    },
+    {
+      "id": "浙江发布可持续发展开发区蓝皮书-擦亮绿色发展底色-3810c4ac3828",
+      "language": "zh",
+      "title": "浙江发布可持续发展开发区蓝皮书 擦亮绿色发展底色",
+      "excerpt": "中新网湖州11月11日电(蓝伊旎)作为经济发展的主战场，开发区应如何持续激发创新活力？11日，可持续发展开发区探索暨浙江开发区“百区千品”拓市场系列绿色低碳专场活动在浙江湖州安吉举办，《可持续发展开发区蓝皮书——新时期浙江开发区高质量发展实践》(以下简称《蓝皮书》)在会上正式发布。",
+      "date": "2026-11-11T13:31:06.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10730520.shtml",
+      "image": ""
+    },
+    {
+      "id": "ai-店长-助商家出海-双十一-海外潜力市场成交量大涨-cdf22ad8902a",
+      "language": "zh",
+      "title": "AI“店长”助商家出海 “双十一”海外潜力市场成交量大涨",
+      "excerpt": "中新网杭州11月11日电(郭其钰)近年来，随着“反向海淘”在海外持续走红，越来越多海外消费者通过跨境电商平台加入中国“双十一”购物狂欢。",
+      "date": "2026-11-11T13:27:28.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10730521.shtml",
+      "image": ""
+    },
+    {
+      "id": "中-非-埃塞芝麻研究联合实验室揭牌-6e2675daaa87",
+      "language": "zh",
+      "title": "中（非）埃塞芝麻研究联合实验室揭牌",
+      "excerpt": "中新网武汉11月11日电 (记者 梁婷)中非油料科技与产业发展研讨会11日在武汉举行，由中国科技部授牌的中(非)埃塞芝麻研究联合实验室正式揭牌，这是中非首个芝麻方向联合研究实验室。",
+      "date": "2026-11-11T13:27:06.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10730519.shtml",
+      "image": ""
+    },
+    {
+      "id": "宁夏贺兰山东麓葡萄酒产区2030年品牌价值瞄准400亿元-d00184a41df5",
+      "language": "zh",
+      "title": "宁夏贺兰山东麓葡萄酒产区2030年品牌价值瞄准400亿元",
+      "excerpt": "中新网银川11月11日电 (记者 李佩珊)记者11日从宁夏贺兰山东麓葡萄酒产业园区管委会获悉，根据宁夏回族自治区人民政府印发的《宁夏贺兰山东麓葡萄酒产业发展“十五五”规划》(下称《规划》)，到2030年，贺兰山东麓葡萄酒产区地理标志产品区域品牌价值将突破400亿元(人民币，下同)，建成酒庄160家左右，培育上市企业1家。",
+      "date": "2026-11-11T13:27:00.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10730518.shtml",
+      "image": ""
+    },
+    {
+      "id": "four-grizzly-bears-killed-in-canada-after-fat-2487502ed765",
+      "language": "en",
+      "title": "Four grizzly bears killed in Canada after fatal attack on mother and daughter",
+      "excerpt": "The sow and her three cubs were responsible for killing Jennifer Balcarras, 48, and her daughter Selah Reed, 20, earlier this month.",
+      "date": "2026-11-11T13:24:29.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwg5r8zrm11mo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3ce6/live/65c341e0-ddcf-11f1-a701-fddedf244c16.jpg"
+    },
+    {
+      "id": "长沙发布204项国际采购需求清单-全球500多家企业来湘对接-47fc6387acc1",
+      "language": "zh",
+      "title": "长沙发布204项国际采购需求清单 全球500多家企业来湘对接",
+      "excerpt": "中新社长沙11月11日电 (冯军)2026长沙国际采购暨贸易便利化区域协同会议11日在湖南长沙举行，现场发布《2026-2027年国际采购需求清单》，共204项，既涵盖工程机械、轨道交通、新能源设备等长沙优势产业，也包括机器人、芯片模组、AI算力设备等新兴产业。",
+      "date": "2026-11-11T13:24:26.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10730530.shtml",
+      "image": ""
+    },
+    {
+      "id": "香港-出海全球通-皖企经贸服务快线启动-acd699361968",
+      "language": "zh",
+      "title": "香港“出海全球通”皖企经贸服务快线启动",
+      "excerpt": "中新社合肥11月11日电 (记者 赵强)皖港经贸高质量发展合作对接会11日在合肥举办。其间，香港“出海全球通”皖企经贸服务快线(快线)启动。",
+      "date": "2026-11-11T13:24:16.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10730531.shtml",
+      "image": ""
+    },
+    {
+      "id": "国家发改委密集举行发布会-释放-十五五-大量信息-87ebfed20117",
+      "language": "zh",
+      "title": "国家发改委密集举行发布会 释放“十五五”大量信息",
+      "excerpt": "中新网北京11月11日电 (记者 王恩博)未来五年，中国经济发展的新动能从哪里来？支撑高质量发展的基础如何夯实？面对内外部风险挑战，如何统筹发展和安全？",
+      "date": "2026-11-11T13:22:02.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10730514.shtml",
+      "image": ""
+    },
     {
       "id": "fed-s-goolsbee-calls-inflation-report-borderl-9e718f170e91",
       "language": "en",
@@ -2659,346 +2999,6 @@
       "date": "2026-11-11T02:52:10.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10729979.shtml",
-      "image": ""
-    },
-    {
-      "id": "心梗发作前-身体会发出哪些警报-2d4e9021bd25",
-      "language": "zh",
-      "title": "心梗发作前，身体会发出哪些警报？",
-      "excerpt": "心梗发作前，身体会发出哪些警报？(健康驿站·急症早识别)",
-      "date": "2026-11-11T02:52:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-11/10729978.shtml",
-      "image": ""
-    },
-    {
-      "id": "亚行报告-东盟基础设施融资缺口巨大-332871f3e900",
-      "language": "zh",
-      "title": "亚行报告：东盟基础设施融资缺口巨大",
-      "excerpt": "中新网北京11月11日电 综合消息：亚洲开发银行10日发布的最新报告指出，东南亚各国到2040年需要在基础设施领域投资7.1万亿美元，但该地区面临巨大的资金缺口。",
-      "date": "2026-11-11T02:51:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/11-11/10729966.shtml",
-      "image": ""
-    },
-    {
-      "id": "公安机关依法严打网络售假犯罪-公布10起典型案例-148e1a5aeb0e",
-      "language": "zh",
-      "title": "公安机关依法严打网络售假犯罪 公布10起典型案例",
-      "excerpt": "中新网11月11日电 据公安部微信公众号消息，11日，公安部公布打击网络售假犯罪10起典型案例。",
-      "date": "2026-11-11T02:50:48.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10729962.shtml",
-      "image": ""
-    },
-    {
-      "id": "一艘运载4万吨俄柴油的油轮驶向纽约-却在-临门一脚-时停航-097cf4aca70d",
-      "language": "zh",
-      "title": "一艘运载4万吨俄柴油的油轮驶向纽约，却在“临门一脚”时停航？",
-      "excerpt": "中新网11月11日电 据路透社援引当地时间11月10日公布的航运数据，一艘装载约4万吨俄罗斯柴油、原计划驶往美国纽约的油轮已在美国东海岸外海停航。",
-      "date": "2026-11-11T02:50:10.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729931.shtml",
-      "image": ""
-    },
-    {
-      "id": "法国文成联谊会第十五届会长团就职典礼在巴黎举行-bf05fab15a16",
-      "language": "zh",
-      "title": "法国文成联谊会第十五届会长团就职典礼在巴黎举行",
-      "excerpt": "中新网巴黎11月11日电 法国文成联谊会第十五届会长团就职典礼当地时间9日晚在巴黎举行。中国驻法国大使馆公使沈钢、巴黎六区区长勒考克等中法各界嘉宾出席活动。",
-      "date": "2026-11-11T02:50:04.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/11-11/10729963.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026年广东省女子篮球联赛八强出炉-dce5f62bb6c9",
-      "language": "zh",
-      "title": "2026年广东省女子篮球联赛八强出炉",
-      "excerpt": "中新网中山11月11日电 (记者 张璐)中国体育彩票·2026年广东省女子篮球联赛(以下简称“赛事”)于7日至10日进行小组赛及八强附加赛比拼。经过多场激烈角逐，八强席位全部产生。",
-      "date": "2026-11-11T02:49:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-11/10729955.shtml",
-      "image": ""
-    },
-    {
-      "id": "西藏藏医药大学第五届曼唐解说大赛圆满落幕-a247ced4fe2e",
-      "language": "zh",
-      "title": "西藏藏医药大学第五届曼唐解说大赛圆满落幕",
-      "excerpt": "中新网拉萨11月11日电 (谢牧)10日，西藏藏医药大学第五届曼唐解说大赛总决赛落下帷幕，本届大赛以“精美曼唐 药韵流芳”为主题，引导青年学子从先贤典籍、核心理论、药材鉴别、艺术审美、传统绝技等维度，解读曼唐蕴藏的藏医药智慧。",
-      "date": "2026-11-11T02:48:34.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-11/10729947.shtml",
-      "image": ""
-    },
-    {
-      "id": "headquarters-of-haitian-gang-destroyed-el-sal-ddbccf94961a",
-      "language": "en",
-      "title": "Headquarters of Haitian gang destroyed, El Salvador's president says",
-      "excerpt": "The infamous 400 Mawozo gang was targeted by the El Salvador military which has deployed thousands of troops to combat Haiti's gang violence crisis.",
-      "date": "2026-11-11T02:47:59.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2854/live/3f67c570-dd7a-11f1-ad5a-4712ee7e64fd.png"
-    },
-    {
-      "id": "十五五-时期我国将采取多项举措保障和改善民生-88ff478b4b7b",
-      "language": "zh",
-      "title": "“十五五”时期我国将采取多项举措保障和改善民生",
-      "excerpt": "央视新闻客户端消息(新闻联播)：记者从国家发展改革委了解到，“十五五”时期，国家将聚焦人民群众急难愁盼问题，实施更加公平普惠、精准有力的社会政策。",
-      "date": "2026-11-11T02:47:56.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-11/10729975.shtml",
-      "image": ""
-    },
-    {
-      "id": "singapore-wants-a-bigger-slice-of-the-global--63d537e9e377",
-      "language": "en",
-      "title": "Singapore wants a bigger slice of the global gold market. Is it too late to the party?",
-      "excerpt": "Singapore is stepping up efforts to become a key player in the global gold market, betting that vaulting service and tax incentives will help it attract flows.",
-      "date": "2026-11-11T02:46:56.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/11/singapore-gold-market-vault-storage.html",
-      "image": ""
-    },
-    {
-      "id": "我国已与150多个国家30多个国际组织签署共建-一带一路-合作文件-a6e62a306d9e",
-      "language": "zh",
-      "title": "我国已与150多个国家30多个国际组织签署共建“一带一路”合作文件",
-      "excerpt": "中新网11月11日电 11日上午，国家发改委召开奋进“十五五”系列新闻发布会，介绍共建“一带一路”有关情况。会上，国家发展改革委区域开放司司长梁林冲介绍，2013年以来，在各方共同努力下，共建“一带一路”务实合作越拓越宽，共赢蛋糕越做越大，既发展了中国，也造福了世界。",
-      "date": "2026-11-11T02:46:42.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ydyl/2026/11-11/10729970.shtml",
-      "image": ""
-    },
-    {
-      "id": "一首童谣传唱近百年-美国人柏大卫与青海湟源的双向牵挂-7dff5316a94e",
-      "language": "zh",
-      "title": "一首童谣传唱近百年：美国人柏大卫与青海湟源的双向牵挂",
-      "excerpt": "中新网西宁11月11日电 题：一首童谣传唱近百年：美国人柏大卫与青海湟源的双向牵挂",
-      "date": "2026-11-11T02:46:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-11/10729972.shtml",
-      "image": ""
-    },
-    {
-      "id": "人民空军-生日快乐-4a976b1eaf71",
-      "language": "zh",
-      "title": "人民空军，生日快乐！",
-      "excerpt": "2026年11月11日",
-      "date": "2026-11-11T02:41:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10729971.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026年中英清洁能源合作论坛举行-20dbe3615bb0",
-      "language": "zh",
-      "title": "2026年中英清洁能源合作论坛举行",
-      "excerpt": "中新网伦敦11月10日电 (记者 欧阳开宇)11月10日，中国驻曼彻斯特总领事唐锐出席2026年中英清洁能源合作论坛。曼彻斯特市议会副议长罗林斯、英能源安全与净零排放部主管官员科维、武汉市人民政府外事办公室副主任李军、英国中国商会副会长杨亚美以及两国知名企业和专家学者150人参会。英国驻华贸易使节韩瑞芬发表视频致辞，李军宣读了武汉市长熊征宇的致辞。",
-      "date": "2026-11-11T02:38:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729960.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴黎中国文化中心举办-中国味道-主题沙龙活动-e4427575d82e",
-      "language": "zh",
-      "title": "巴黎中国文化中心举办“中国味道”主题沙龙活动",
-      "excerpt": "中新网巴黎11月11日电 巴黎中国文化中心当地时间6日晚举办“聊聊”第五期“中国味道”主题沙龙。本次活动将趣味汉语学习与中华饮食文化相结合，邀请中文学习者和中国文化爱好者在轻松愉快的氛围中，以语言为桥梁、以味觉为线索，开启一场跨越古今的文化探索之旅。",
-      "date": "2026-11-11T02:38:07.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729956.shtml",
-      "image": ""
-    },
-    {
-      "id": "铸牢共同体-中华一家亲丨从巷口到地头-天山南北一脉同心-78598c7260db",
-      "language": "zh",
-      "title": "铸牢共同体 中华一家亲丨从巷口到地头 天山南北一脉同心",
-      "excerpt": "石榴云/新疆日报记者 蔡增乐",
-      "date": "2026-11-11T02:37:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/mz/2026/11-11/10729967.shtml",
-      "image": ""
-    },
-    {
-      "id": "双11-里的消费迁移-e8102bfa3fda",
-      "language": "zh",
-      "title": "“双11”里的消费迁移",
-      "excerpt": "许多网友观察到，今年的“双11”有了新变化：年轻人的购物车被米面粮油、家居日用等物品占据，电商平台的促销手段也更务实简单了。",
-      "date": "2026-11-11T02:34:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10729964.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国驻日使馆发言人敦促日方依法严惩侵闯使馆凶犯-13ed5f30a378",
-      "language": "zh",
-      "title": "中国驻日使馆发言人敦促日方依法严惩侵闯使馆凶犯",
-      "excerpt": "新华社东京11月10日电(记者陈泽安#8195;梁晨)中国驻日本大使馆发言人10日就村田晃大非法持刀侵闯中国驻日本大使馆案第二次开庭答记者问时表示，相关案情事实清楚，证据确凿，不容抵赖，再次敦促日方依法严惩凶犯，不得为其开脱罪责。",
-      "date": "2026-11-11T02:28:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10729958.shtml",
-      "image": ""
-    },
-    {
-      "id": "我国已与150多个国家30多个国际组织签署共建-一带一路-合作文件-000f1eeafc2f",
-      "language": "zh",
-      "title": "我国已与150多个国家30多个国际组织签署共建“一带一路”合作文件",
-      "excerpt": "国家发展改革委区域开放司司长梁林冲11月11日在新闻发布会上表示，我国已与150多个国家和30多个国际组织签署了共建“一带一路”合作文件，合作伙伴覆盖全球四分之三的国家及主要的国际组织。中欧班列开辟了亚欧陆路运输新通道，已累计开行超14万列，发送货物货值超5600亿元，通达欧洲26个国家237个城市，跨里海国际运输走廊班列实现“日日开行”，北、中、南通道总体保持安全稳定畅通运行。",
-      "date": "2026-11-11T02:28:11.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ydyl/2026/11-11/10729957.shtml",
-      "image": ""
-    },
-    {
-      "id": "从钱塘江到泰晤士河-诗画浙江-走进英国-befc81482745",
-      "language": "zh",
-      "title": "从钱塘江到泰晤士河—“诗画浙江”走进英国",
-      "excerpt": "中新网伦敦11月11日电 (记者 欧阳开宇)“诗画浙江”(英国)系列文旅推介交流活动日前在伦敦举办。活动由浙江省文化广电和旅游厅主办，通过专场推介、展会展示、业界洽谈、文化体验等多元形式，全方位展示浙江深厚文化底蕴与丰富文旅资源，加强浙江与英国等重点入境客源国的文旅交流合作。",
-      "date": "2026-11-11T02:28:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729952.shtml",
-      "image": ""
-    },
-    {
-      "id": "市场监管总局部署多项举措-共建放心消费生态圈-fe1cf189cc22",
-      "language": "zh",
-      "title": "市场监管总局部署多项举措 共建放心消费生态圈",
-      "excerpt": "围绕2026年全国优化消费环境月“放心消费、你我共享”主题，市场监管总局昨天(10日)召开平台企业放心消费承诺座谈会，引导平台企业作出放心消费承诺、改善消费体验。市场监管总局提出，平台要建立完善首问负责和先行赔付制度，在提高AI客服水平的同时做好与人工客服的衔接，及时处置消费纠纷。",
-      "date": "2026-11-11T02:25:30.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10729954.shtml",
-      "image": ""
-    },
-    {
-      "id": "日本学者-安保三文件-相关修订或将加剧地区紧张局势-93763eb76356",
-      "language": "zh",
-      "title": "日本学者：“安保三文件”相关修订或将加剧地区紧张局势",
-      "excerpt": "据日本方面消息，日本执政党自民党及其执政伙伴日本维新会10日就修订“安保三文件”举行首次工作层磋商。",
-      "date": "2026-11-11T02:24:38.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729953.shtml",
-      "image": ""
-    },
-    {
-      "id": "日本推动修订-安保三文件-威胁地区和平稳定-8978ed3defe1",
-      "language": "zh",
-      "title": "日本推动修订“安保三文件” 威胁地区和平稳定",
-      "excerpt": "日本政府“再军事化”动作不断。据日本方面消息，针对修订“安保三文件”，日本执政党自民党及其执政伙伴日本维新会10日举行首次工作层磋商。据悉，双方围绕当前安全保障形势，讨论了加强防卫和外交力量的方向。",
-      "date": "2026-11-11T02:19:44.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729949.shtml",
-      "image": ""
-    },
-    {
-      "id": "保加利亚连环车祸致12死50伤-11日为全国哀悼日-4541150652c1",
-      "language": "zh",
-      "title": "保加利亚连环车祸致12死50伤 11日为全国哀悼日",
-      "excerpt": "中新社北京11月11日电 索非亚消息：保加利亚当地时间10日发生两起严重连环车祸，造成12人死亡、50人受伤。该国政府当天宣布11月11日为全国哀悼日，以悼念遇难者。",
-      "date": "2026-11-11T02:11:52.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729928.shtml",
-      "image": ""
-    },
-    {
-      "id": "日本执意推进-再军事化-是在透支国家未来-国际论坛-c68b0757552c",
-      "language": "zh",
-      "title": "日本执意推进“再军事化”是在透支国家未来（国际论坛）",
-      "excerpt": "吴怀中 陈 祥",
-      "date": "2026-11-11T02:08:35.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729940.shtml",
-      "image": ""
-    },
-    {
-      "id": "涉嫌为俄罗斯从事间谍活动-一名美军士兵在英国被捕-03c332f7cb14",
-      "language": "zh",
-      "title": "涉嫌为俄罗斯从事间谍活动，一名美军士兵在英国被捕",
-      "excerpt": "中新网11月11日电 据路透社报道，英国警方当地时间10日表示，一名美国陆军高级士兵因涉嫌为俄罗斯从事间谍活动，在英国被捕。",
-      "date": "2026-11-11T02:01:47.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-11/10729936.shtml",
-      "image": ""
-    },
-    {
-      "id": "广东检察机关依法对肖杰涉嫌受贿案提起公诉-a92ae72b9edc",
-      "language": "zh",
-      "title": "广东检察机关依法对肖杰涉嫌受贿案提起公诉",
-      "excerpt": "海南省人大常委会原党组成员、副主任肖杰涉嫌受贿一案，由国家监察委员会调查终结，移送检察机关审查起诉。最高人民检察院依法以涉嫌受贿罪对肖杰作出逮捕决定，并指定由广东省惠州市人民检察院审查起诉。近日，惠州市人民检察院已向惠州市中级人民法院提起公诉。",
-      "date": "2026-11-11T02:01:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10729935.shtml",
-      "image": ""
-    },
-    {
-      "id": "焦点访谈-进博之约-让世界共享中国发展机遇-b21ea4e8479f",
-      "language": "zh",
-      "title": "焦点访谈｜“进博之约”让世界共享中国发展机遇",
-      "excerpt": "央视网消息(焦点访谈)：11月10日，第九届进博会落下帷幕。“十五五”开局之年的这一届，既有新面孔、新产品，还有一群老朋友。他们连续参展9年一场不落，被称为“全勤生”。像这样的“全勤生”企业和境外机构有近200家。9年来，他们见证着越办越好的进博会；进博会也成就他们从试试看到留下来，从参展商变为投资商。这些“全勤生”们的成长记正是进博会与参展方双向奔赴、共同成长的生动注脚。",
-      "date": "2026-11-11T01:59:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10729934.shtml",
-      "image": ""
-    },
-    {
-      "id": "韩正会见联合国秘书长古特雷斯-f8421e25bf94",
-      "language": "zh",
-      "title": "韩正会见联合国秘书长古特雷斯",
-      "excerpt": "中新社北京11月11日电 当地时间11月10日，习近平主席特别代表、中国国家副主席韩正在土耳其安塔利亚出席《联合国气候变化框架公约》第三十一次缔约方大会(COP31)领导人峰会期间会见联合国秘书长古特雷斯。",
-      "date": "2026-11-11T01:58:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-11/10729908.shtml",
-      "image": ""
-    },
-    {
-      "id": "效率提升达百倍-一种-新型基础设施-来了-2e8e43c9d9d0",
-      "language": "zh",
-      "title": "“效率提升达百倍” 一种“新型基础设施”来了",
-      "excerpt": "随着人工智能技术的快速迭代，这两年，AI黑灯实验室正在加快落地，开辟智能科研服务新赛道。",
-      "date": "2026-11-11T01:58:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10729933.shtml",
-      "image": ""
-    },
-    {
-      "id": "开放朋友圈越扩越大-一组数据看进博-成绩单-4b8c73f9a94d",
-      "language": "zh",
-      "title": "开放朋友圈越扩越大 一组数据看进博 “成绩单”",
-      "excerpt": "11月10日，第九届中国国际进口博览会在上海闭幕。六天的展期，交出了一份怎样的进博“成绩单”？下面就通过一组数据来盘点一下。",
-      "date": "2026-11-11T01:57:51.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-11/10729932.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026年度邵逸夫奖颁奖典礼在香港举行-68463c3dee0e",
-      "language": "zh",
-      "title": "2026年度邵逸夫奖颁奖典礼在香港举行",
-      "excerpt": "图为伊曼纽尔·康德斯（左）获颁授数学科学奖。中新网记者 陈永诺 摄 图为陈竺（左）获颁授生命科学与医学奖。中新网记者 陈永诺 摄 图为戴宇阁（左）获颁授生命科学与医学奖。中新网记者 陈永诺 摄 图为安妮·德尚（左）获颁授生命科学与医学奖。中新网记者 陈永诺 摄 图为香港特区行政长官李家超（中）与邵逸夫奖获奖者卡米洛·德·雷列斯（左一）、伊曼纽尔·康德斯（左二）、陈竺（右三）、戴宇阁（右二）、安妮·德尚（右一）等合影。中新网记者 陈永诺 摄 图为天文学奖获奖者野本宪一以视频致辞。中新网记者 陈永诺 摄 图为卡米洛·德·雷列斯（左一）、伊曼纽尔·康德斯（左二）、邵逸夫奖评审会主席莱因哈德·根舍（左三）、陈竺（左四）、戴宇阁（左五）、安妮·德尚出席邵逸夫奖颁奖典礼。中新网记者 陈永诺 摄 图为卡米洛·德·雷列斯（左一）、伊曼纽尔·康德斯（左二）、邵逸夫奖评审会主席莱因哈德·根舍（左三）、陈竺（左四）、戴宇阁（左五）、安妮·德尚出席邵逸夫奖颁奖典礼。中新网记者 陈永诺 摄 图为天文学奖获奖者斯坦福·伍斯利以视频致辞。中新网记者 陈永诺 摄",
-      "date": "2026-11-11T01:56:39.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-11/10729924.shtml",
-      "image": ""
-    },
-    {
-      "id": "西安高校团队研发公路安全仿真平台-护航山区通行-8add67565b18",
-      "language": "zh",
-      "title": "西安高校团队研发公路安全仿真平台 护航山区通行",
-      "excerpt": "中新网西安11月11日电 (记者 党田野 张一辰)山区公路地形复杂，急弯、长下坡、桥隧密集，车辆通行的安全风险点多、管控难度大。长安大学“安行智构”团队研发国产化公路安全仿真平台，依托数字模拟技术提前识别道路隐患，为山区公路安全整治提供技术支撑。近日，记者走进实验室探访这支科研团队。",
-      "date": "2026-11-11T01:56:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-11/10729927.shtml",
-      "image": ""
-    },
-    {
-      "id": "追光-驭光-成为光-评论员观察-c45055b2caa1",
-      "language": "zh",
-      "title": "追光，驭光，成为光（评论员观察）",
-      "excerpt": "常 晋",
-      "date": "2026-11-11T01:54:51.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ll/2026/11-11/10729930.shtml",
       "image": ""
     }
   ]
