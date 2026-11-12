@@ -1,6 +1,446 @@
 {
-  "generated_at": "2026-11-12T17:11:42.535Z",
+  "generated_at": "2026-11-12T22:43:36.252Z",
   "items": [
+    {
+      "id": "democrats-launch-nvidia-investigation-write-s-32df4f7d6cd4",
+      "language": "en",
+      "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
+      "excerpt": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
+      "date": "2026-11-12T22:42:51.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+      "image": ""
+    },
+    {
+      "id": "faa-expands-ai-advice-to-manage-air-traffic-c-fcb6b3d907ab",
+      "language": "en",
+      "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+      "excerpt": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved.",
+      "date": "2026-11-12T22:28:47.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Pilots-during-DFW-departure-500x500.jpg"
+    },
+    {
+      "id": "widespread-microsoft-outage-takes-down-outloo-3fc4534f6a7b",
+      "language": "en",
+      "title": "Widespread Microsoft outage takes down Outlook and other 365 services",
+      "excerpt": "A Microsoft outage on Thursday affected users of services like Outlook, Teams and 365.",
+      "date": "2026-11-12T22:24:12.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+      "image": ""
+    },
+    {
+      "id": "muse-can-now-place-calls-to-u-s-businesses-if-ca2f28331a6d",
+      "language": "en",
+      "title": "Muse can now place calls to U.S. businesses — if you pay",
+      "excerpt": "Muse's AI can now place outbound calls to US businesses — but it's not free.",
+      "date": "2026-11-12T22:22:28.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+      "image": ""
+    },
+    {
+      "id": "alice-huang-tied-to-nvidia-s-biggest-chinese--fe5fb588f065",
+      "language": "en",
+      "title": "Alice Huang tied to Nvidia’s biggest Chinese competitor",
+      "excerpt": "The woman with whom Jensen Huang reportedly had a relationship also owned stakes in companies that provided computing power to Huawei, a key Nvidia competitor.",
+      "date": "2026-11-12T22:18:41.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/alice-huang-jensen-huang-nvidia-huawei.html",
+      "image": ""
+    },
+    {
+      "id": "without-jensen-huang-nvidia-s-organizational--948a4f76b8a5",
+      "language": "en",
+      "title": "Without Jensen Huang, Nvidia's organizational structure isn't 'built to last,' management expert says",
+      "excerpt": "Nvidia's flat management structure could pose challenges for Huang's successor, according to experts.",
+      "date": "2026-11-12T22:06:08.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/make-it/2026/11/12/nvidia-jensen-huang-management-structure.html",
+      "image": ""
+    },
+    {
+      "id": "国际油价12日上涨-4ea2c811c69b",
+      "language": "zh",
+      "title": "国际油价12日上涨",
+      "excerpt": "国际油价12日上涨。",
+      "date": "2026-11-12T22:04:18.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-13/10731244.shtml",
+      "image": ""
+    },
+    {
+      "id": "古巴外长批评七国集团涉古声明回避美国对古封锁影响-1962d9f5e220",
+      "language": "zh",
+      "title": "古巴外长批评七国集团涉古声明回避美国对古封锁影响",
+      "excerpt": "针对七国集团外长会议联合声明涉古巴内容，古巴外长罗德里格斯12日表示，该声明回避了美国政府对古巴实施封锁所造成的残酷影响，美国的封锁措施侵犯古巴人民的人权及第三国主权。",
+      "date": "2026-11-12T22:02:57.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731243.shtml",
+      "image": ""
+    },
+    {
+      "id": "金价再度跌破3900美元-e68f4470bc4d",
+      "language": "zh",
+      "title": "金价再度跌破3900美元",
+      "excerpt": "由于美国通胀持续，市场预期美联储或将进一步收紧货币政策，推动美元走强，美国国债收益率走高，黄金、白银期价12日大幅下跌。",
+      "date": "2026-11-12T22:02:21.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-13/10731242.shtml",
+      "image": ""
+    },
+    {
+      "id": "贵州毕节市威宁县发生4-5级地震-震源深度10公里-5cf426888134",
+      "language": "zh",
+      "title": "贵州毕节市威宁县发生4.5级地震 震源深度10公里",
+      "excerpt": "中国地震台网正式测定：11月13日4时03分，在贵州毕节市威宁县(北纬27.16度，东经104.03度)发生4.5级地震，震源深度10公里。",
+      "date": "2026-11-12T22:00:41.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-13/10731241.shtml",
+      "image": ""
+    },
+    {
+      "id": "cerebras-surges-18-after-beating-on-quarterly-13171f7dcfe2",
+      "language": "en",
+      "title": "Cerebras surges 18% after beating on quarterly revenue and announcing Microsoft deal",
+      "excerpt": "Cerebras announced a new deal with Microsoft after partnering with major cloud providers Amazon and Oracle.",
+      "date": "2026-11-12T21:33:44.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html",
+      "image": ""
+    },
+    {
+      "id": "nebius-tests-the-neocloud-playbook-with-40-bi-9f9ef1f7c9cc",
+      "language": "en",
+      "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
+      "excerpt": "Nebius plans to fund its $40 billion AI infrastructure expansion through customer prepayments and loans, even as delays at a Microsoft data center raise questions about its financing model.",
+      "date": "2026-11-12T21:27:10.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+      "image": ""
+    },
+    {
+      "id": "cisco-beats-on-earnings-says-ai-infrastructur-d5ee61e8a4b5",
+      "language": "en",
+      "title": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
+      "excerpt": "Cisco is trying to become a bigger player in AI after missing out on the early years of the boom.",
+      "date": "2026-11-12T21:20:35.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
+      "image": ""
+    },
+    {
+      "id": "菲律宾多个政府部门遭网络攻击-总统府称已做好应对准备-de8f95ef3239",
+      "language": "zh",
+      "title": "菲律宾多个政府部门遭网络攻击 总统府称已做好应对准备",
+      "excerpt": "中新社马尼拉11月13日电 (记者 周璟)菲律宾总统府12日表示，政府已做好应对针对政府机构网络攻击的准备。此前，菲律宾国家隐私委员会确认，已收到至少10个政府部门遭遇网络攻击并发生数据泄露的报告，大量企业和个人隐私数据遭泄露。",
+      "date": "2026-11-12T20:48:25.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731240.shtml",
+      "image": ""
+    },
+    {
+      "id": "美国华盛顿枪击事件致1亡4伤-嫌疑人自杀-1ef96e061d87",
+      "language": "zh",
+      "title": "美国华盛顿枪击事件致1亡4伤 嫌疑人自杀",
+      "excerpt": "中新社华盛顿11月12日电 美国首都华盛顿12日发生一起枪击事件，造成1名受害者身亡、4人受伤。嫌疑人在与警方对峙时开枪自杀。",
+      "date": "2026-11-12T20:47:55.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731239.shtml",
+      "image": ""
+    },
+    {
+      "id": "英国三季度经济延续复苏态势-4f10e8f07575",
+      "language": "zh",
+      "title": "英国三季度经济延续复苏态势",
+      "excerpt": "中新社伦敦11月12日电 (记者 欧阳开宇)英国官方最新公布数据显示，英国第三季度经济延续复苏态势，增速走强，创下2024年一季度以来最高水平，顶住地缘冲突、能源涨价等多重外部压力，经济韧性超市场预期。",
+      "date": "2026-11-12T20:46:59.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731238.shtml",
+      "image": ""
+    },
+    {
+      "id": "泰国借世界园艺博览会推旅游新线路-68073561f840",
+      "language": "zh",
+      "title": "泰国借世界园艺博览会推旅游新线路",
+      "excerpt": "中新社曼谷11月12日电 (王茜 李映民)泰国国家旅游局12日宣布，将借助乌隆他尼世界园艺博览会推出3项旅游促销计划，并设计9条跨府旅游线路，以带动2026年年末国内旅游市场。",
+      "date": "2026-11-12T20:46:19.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731237.shtml",
+      "image": ""
+    },
+    {
+      "id": "普京会见美特使-提议康斯坦丁诺夫卡人道行动-6b72d497a02b",
+      "language": "zh",
+      "title": "普京会见美特使：提议康斯坦丁诺夫卡人道行动",
+      "excerpt": "中新社莫斯科11月12日电 (记者 田冰)俄罗斯总统普京12日在克里姆林宫会见到访的美国总统特使威特科夫和总统特朗普的女婿库什纳，主要讨论乌克兰问题。",
+      "date": "2026-11-12T20:45:37.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731236.shtml",
+      "image": ""
+    },
+    {
+      "id": "英伟达宣布黄仁勋辞职-将遴选新ceo-9e665bca52b5",
+      "language": "zh",
+      "title": "英伟达宣布黄仁勋辞职 将遴选新CEO",
+      "excerpt": "中新社旧金山11月12日电 英伟达公司12日宣布，黄仁勋已辞去英伟达总裁、首席执行官(CEO)及董事会成员职务，公司董事会已启动新任CEO的遴选工作。",
+      "date": "2026-11-12T20:44:39.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-13/10731235.shtml",
+      "image": ""
+    },
+    {
+      "id": "jensen-huang-was-having-a-third-affair-reuter-ff447842ecb2",
+      "language": "en",
+      "title": "Jensen Huang was having a third affair, Reuters reports",
+      "excerpt": "Reuters is withholding the name of the new employee linked to Huang, but says she is an employee of Nvidia.",
+      "date": "2026-11-12T20:26:47.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
+      "image": ""
+    },
+    {
+      "id": "united-airlines-won-t-let-ai-agents-book-your-c9fd852622b8",
+      "language": "en",
+      "title": "United Airlines won’t let AI agents book your flight. Expert says you shouldn't let a bot do that for you, anyway",
+      "excerpt": "AI agents can save you time, but an expert says decisions involving your health, wealth and privacy still need human input.",
+      "date": "2026-11-12T20:24:59.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/make-it/2026/11/12/ai-agents-human-in-loop.html",
+      "image": ""
+    },
+    {
+      "id": "russian-warship-hit-by-ukrainian-drone-in-gul-88784d92e59c",
+      "language": "en",
+      "title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
+      "excerpt": "The attack is thought to be the first time Ukrainian drones have attacked a Russian ship in an open stretch of the Baltic Sea.",
+      "date": "2026-11-12T20:09:16.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d4c4/live/1934a9b0-deb3-11f1-8fb5-a771a656a227.jpg"
+    },
+    {
+      "id": "donald-trump-jr-exits-advisory-role-at-kalshi-4f45321b4026",
+      "language": "en",
+      "title": "Donald Trump Jr. exits advisory role at Kalshi prediction market",
+      "excerpt": "The president's son will no longer serve as an advisor at Kalshi.",
+      "date": "2026-11-12T20:03:57.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/donald-trump-jr-exits-kalshi-advisory-role.html",
+      "image": ""
+    },
+    {
+      "id": "jensen-huang-is-out-and-nvidia-stock-is-down--326aa6d6ba0c",
+      "language": "en",
+      "title": "Jensen Huang is out and Nvidia stock is down—what market pros say about buying dips",
+      "excerpt": "Nvidia stock fell 5% on Thursday following the departure of CEO Jensen Huang. Some see it as a signal to sell, others an opportunity to buy.",
+      "date": "2026-11-12T20:01:29.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/make-it/2026/11/12/nvidia-what-market-pros-say-about-buying-dips.html",
+      "image": ""
+    },
+    {
+      "id": "who-will-replace-jensen-huang-here-s-our-earl-95bc7d2fb07a",
+      "language": "en",
+      "title": "Who will replace Jensen Huang? Here's our early thoughts on the search for Nvidia's next CEO",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "date": "2026-11-12T20:00:42.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/12/jensen-huang-ceo-replacement-jim-cramer.html",
+      "image": ""
+    },
+    {
+      "id": "ars-live-what-drone-attacks-on-data-centers-m-d4774d28d264",
+      "language": "en",
+      "title": "Ars Live: What drone attacks on data centers mean for modern life in the cloud",
+      "excerpt": "A livestream Ars discussion is happening on November 17 at 1 pm Eastern Time.",
+      "date": "2026-11-12T19:59:59.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/11/ars-live-can-the-cloud-survive-drone-strikes-on-data-centers/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Ukraine-data-center-under-attack-500x500.jpg"
+    },
+    {
+      "id": "nvidia-ex-prosecutor-joon-kim-and-wachtell-li-0d60c6496425",
+      "language": "en",
+      "title": "Nvidia: Ex-prosecutor Joon Kim and Wachtell, Lipton bring big track record to investigation",
+      "excerpt": "The retention of Wachtell, Lipton for the Nvidia probe comes on the heels of the law firm's investigation for the NBA into the Los Angeles Clippers.",
+      "date": "2026-11-12T19:58:11.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-joon-kim-wachtell-china-spy.html",
+      "image": ""
+    },
+    {
+      "id": "the-elder-scrolls-most-obscure-adventure-gets-9d3832b3699c",
+      "language": "en",
+      "title": "The Elder Scrolls' most obscure adventure gets a 4K PC makeover",
+      "excerpt": "N-Gage exclusive Shadowkey gets an AI-coded glow-up with plenty of new features.",
+      "date": "2026-11-12T19:49:11.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gaming/2026/11/the-elder-scrolls-most-obscure-adventure-gets-a-4k-pc-makeover/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/torch-hall-500x500.webp"
+    },
+    {
+      "id": "here-s-what-nvidia-interim-ceo-colette-kress--ca85df7afa32",
+      "language": "en",
+      "title": "Here's what Nvidia interim CEO Colette Kress and board chair Harvey Jones wrote to Nvidia employees",
+      "excerpt": "Interim CEO Colette Kress and board chair Harvey Jones emailed Nvidia employees, expressing gratitude for \"resilience, professionalism and continued dedication",
+      "date": "2026-11-12T19:42:41.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/nvidia-kress-jones-employee-emails.html",
+      "image": ""
+    },
+    {
+      "id": "jensen-huang-has-resigned-what-s-next-for-nvi-01a476854ea6",
+      "language": "en",
+      "title": "Jensen Huang has resigned, what's next for Nvidia?",
+      "excerpt": "The BBC's Samira Hussain reports from Wall Street on what the fall of the tech superstar means for the company and AI.",
+      "date": "2026-11-12T19:33:37.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cmdx1r99kp9wo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2742/live/64baf7c0-dece-11f1-93e1-3b657b665bcf.jpg"
+    },
+    {
+      "id": "google-s-latest-search-upgrade-promises-bette-76f0f9d265ce",
+      "language": "en",
+      "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
+      "excerpt": "Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses.",
+      "date": "2026-11-12T19:27:45.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+      "image": ""
+    },
+    {
+      "id": "google-rolls-out-gemini-4-hydrogen-finally-re-6efd6e806be9",
+      "language": "en",
+      "title": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
+      "excerpt": "Gemini 4 Hydrogen isn't getting a slow, security-conscious release like Carbon and Argon.",
+      "date": "2026-11-12T19:23:03.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-6-500x500.jpg"
+    },
+    {
+      "id": "nectar-launches-an-ai-agent-to-automate-creat-5e287749a052",
+      "language": "en",
+      "title": "Nectar launches an AI agent to automate creator discovery and outreach for brands",
+      "excerpt": "Nectar's new AI agent automates influencer marketing, helping brands discover creators, manage outreach and partnerships, and track campaign results.",
+      "date": "2026-11-12T19:11:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
+      "image": ""
+    },
+    {
+      "id": "ukraine-says-it-can-t-stop-russian-strikes-be-90fe3ddc7fcf",
+      "language": "en",
+      "title": "Ukraine says it can’t stop Russian strikes because Starshield is limited again",
+      "excerpt": "Report: Ukraine suspects speeds limits are intended to help Russia in peace talks.",
+      "date": "2026-11-12T19:09:57.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/ukraine-says-spacex-starshield-is-restricted-again-spacex-claims-it-isnt/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/zelenskyy-500x500-1794506416.jpg"
+    },
+    {
+      "id": "in-a-policy-switch-the-fed-says-its-october-2-47ac57ef95c9",
+      "language": "en",
+      "title": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+      "excerpt": "There will be seven voting meetings next year, with the October session set up as extra time for policy deliberation without a formal vote or post-meeting statement.",
+      "date": "2026-11-12T19:05:25.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
+      "image": ""
+    },
+    {
+      "id": "microsoft-s-outlook-email-hit-by-new-outage-e7a7eed0983e",
+      "language": "en",
+      "title": "Microsoft’s Outlook email hit by new outage",
+      "excerpt": "Microsoft hasn't yet given a cause for the outage, which is affecting Outlook email users.",
+      "date": "2026-11-12T19:03:39.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/microsofts-outlook-email-hit-by-new-outage/",
+      "image": ""
+    },
+    {
+      "id": "google-faces-calls-for-ai-moratoriums-in-scho-bcd74023a99f",
+      "language": "en",
+      "title": "Google faces calls for AI moratoriums in schools after Gemini pilot backlash",
+      "excerpt": "Families confront Google after teen’s lawsuit labels Gemini a “suicide coach.”",
+      "date": "2026-11-12T18:57:45.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Win-win-500x500-1794505063.jpeg"
+    },
+    {
+      "id": "jensen-huang-s-exit-puts-nvidia-s-support-for-bd79903a17a4",
+      "language": "en",
+      "title": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
+      "excerpt": "Jensen Huang’s resignation raises questions about Nvidia’s commitment to open source AI, including its Hugging Face acquisition, open-weight models, and advocacy against restrictions, as the company navigates a leadership transition.",
+      "date": "2026-11-12T18:39:23.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+      "image": ""
+    },
+    {
+      "id": "netflix-releases-new-trailer-for-ray-gunn-c4fd060896ac",
+      "language": "en",
+      "title": "Netflix releases new trailer for Ray Gunn",
+      "excerpt": "\"It's hard being the only honest players in a crooked game.\"",
+      "date": "2026-11-12T18:38:38.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/culture/2026/11/netflix-releases-new-trailer-for-ray-gunn/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/raygunn-500x500-1794505572.jpg"
+    },
+    {
+      "id": "building-a-rocket-is-hard-ast-spacemobile-thi-ea7f3d9bcac7",
+      "language": "en",
+      "title": "Building a rocket is hard. AST SpaceMobile thinks it's \"simple.\"",
+      "excerpt": "\"We're not doing this thing because we like rockets.\"",
+      "date": "2026-11-12T18:28:22.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/11/building-a-rocket-is-hard-ast-spacemobile-thinks-its-simple/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/black-lift-500x500.webp"
+    },
+    {
+      "id": "man-s-secret-use-of-synthetic-testosterone-fo-25a808556232",
+      "language": "en",
+      "title": "Man's secret use of synthetic testosterone for cows nearly destroyed his heart",
+      "excerpt": "Doctors warn that such life-threatening cases are becoming more common.",
+      "date": "2026-11-12T18:17:19.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/health/2026/11/mans-secret-use-of-synthetic-testosterone-for-cows-nearly-destroyed-his-heart/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-595668825-500x500.jpg"
+    },
+    {
+      "id": "hugging-face-ceo-vows-to-keep-fighting-for-op-cf8aede2b245",
+      "language": "en",
+      "title": "Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang’s exit",
+      "excerpt": "Hugging Face's CEO pledged to keep fighting for open source AI after Huang's exit, raising questions about Nvidia's $12.9 billion acquisition.",
+      "date": "2026-11-12T17:36:40.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+      "image": ""
+    },
+    {
+      "id": "the-amazing-disappearing-exoplanet-937d80c2161f",
+      "language": "en",
+      "title": "The amazing disappearing exoplanet",
+      "excerpt": "An exoplanet seems to have stopped transiting in front of its host star.",
+      "date": "2026-11-12T17:18:10.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/11/the-amazing-disappearing-exoplanet/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/image-500x500.jpeg"
+    },
+    {
+      "id": "united-airlines-blocks-ai-agents-from-booking-0544f18fda8e",
+      "language": "en",
+      "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
+      "excerpt": "The airline said it will not allow customers to use AI agents to book flights and manage reservations.",
+      "date": "2026-11-12T17:17:58.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+      "image": ""
+    },
     {
       "id": "jensen-huang-s-nvidia-exit-casts-shadow-over--e1b2c516f993",
       "language": "en",
@@ -2559,446 +2999,6 @@
       "date": "2026-11-12T05:55:28.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/tp/2026/11-12/10730751.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国证监会-汇聚各方合力-全力维护市场平稳运行-f76af7325dc1",
-      "language": "zh",
-      "title": "中国证监会：汇聚各方合力 全力维护市场平稳运行",
-      "excerpt": "11月12日，中国证监会相关负责同志在上海证券交易所2026年国际投资者大会上表示，要完善稳市机制，增强股市内在稳定性，会同相关部门协同发力，打好稳市场、稳预期政策组合拳，用好用足两项结构性货币政策工具，证券、基金公司已开展第三批互换便利操作1000亿元，支持上市公司加大回购增持力度。今年以来，上市公司新披露的回购计划金额、实际回购金额、回购注销金额及占比均创历史新高。丰富市场投资工具，加大权益类产品供给和创新力度，引导和鼓励主动ETF加快投资建仓。进一步拓宽中长期资金来源、渠道和入市方式，促进融资融券逆周期调节功能发挥，汇聚各方合力，全力维护市场平稳运行。",
-      "date": "2026-11-12T05:52:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730755.shtml",
-      "image": ""
-    },
-    {
-      "id": "纪念孙中山先生诞辰160周年大会在北京举行-5f1657ae1841",
-      "language": "zh",
-      "title": "纪念孙中山先生诞辰160周年大会在北京举行",
-      "excerpt": "",
-      "date": "2026-11-12T05:52:42.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/11-12/1210621.shtml",
-      "image": ""
-    },
-    {
-      "id": "纪念孙中山先生诞辰160周年大会在北京举行-习近平发表重要讲话-46c68a6cdf16",
-      "language": "zh",
-      "title": "纪念孙中山先生诞辰160周年大会在北京举行 习近平发表重要讲话",
-      "excerpt": "中新社北京11月12日电 纪念孙中山先生诞辰160周年大会12日上午在北京人民大会堂隆重举行。中共中央总书记、国家主席、中央军委主席习近平发表重要讲话强调，海内外全体中华儿女要更加紧密地团结起来，继承孙中山先生的遗志，同心协力共襄中华民族伟大复兴盛举，不断把近代以来中国各族人民孜孜以求的伟大梦想变成美好现实。",
-      "date": "2026-11-12T05:52:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730743.shtml",
-      "image": ""
-    },
-    {
-      "id": "福建省两岸标准共通标准化技术委员会在福州成立-60d7e72601cf",
-      "language": "zh",
-      "title": "福建省两岸标准共通标准化技术委员会在福州成立",
-      "excerpt": "中新网福州11月12日电 (叶秋云)福建省两岸标准共通标准化技术委员会(以下简称“福建省两岸标委会”)成立大会暨第一届全体委员会议12日在福州举行。",
-      "date": "2026-11-12T05:51:10.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730749.shtml",
-      "image": ""
-    },
-    {
-      "id": "广州织密海上通信网-筑牢南海海区安全防线-67036fd23a95",
-      "language": "zh",
-      "title": "广州织密海上通信网 筑牢南海海区安全防线",
-      "excerpt": "中新网广州11月12日电(郭军 廖婉文)记者12日从南海航海保障中心广州通信中心了解到，作为“十五五”开局之年，该中心持续强化海上通信保障能力，守牢南海海上安全防线，以数字化航保服务支撑广东海洋经济高质量发展。",
-      "date": "2026-11-12T05:50:52.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730752.shtml",
-      "image": ""
-    },
-    {
-      "id": "新加坡港口指南-正式出版-2eeb1724900d",
-      "language": "zh",
-      "title": "《新加坡港口指南》正式出版",
-      "excerpt": "中新网广州11月12日电 (郭军 周斯禹)记者12日从交通运输部南海航海保障中心广州海事测绘中心获悉，作为“十五五”开局之年重点成果，由该中心编制的《新加坡港口指南》近日正式出版发行，为我国航运企业、船员新增一部海外港口中文专业航行工具书。",
-      "date": "2026-11-12T05:49:56.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730745.shtml",
-      "image": ""
-    },
-    {
-      "id": "葵花籽油期货及期权挂牌上市-8476e526fb49",
-      "language": "zh",
-      "title": "葵花籽油期货及期权挂牌上市",
-      "excerpt": "中新社郑州11月12日电 (记者 阚力)葵花籽油期货及期权12日在郑州商品交易所(简称郑商所)正式挂牌上市，当晚起开展夜盘交易。",
-      "date": "2026-11-12T05:49:12.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730744.shtml",
-      "image": ""
-    },
-    {
-      "id": "累计报告数千麻疹病例-美国或失去-麻疹消除国-地位-b487cbdbdfaf",
-      "language": "zh",
-      "title": "累计报告数千麻疹病例 美国或失去“麻疹消除国”地位",
-      "excerpt": "中新网11月12日电 据路透社报道，美国自2000年以来保持的“麻疹消除国”地位，因近期该国多地暴发疫情、数千人感染而受到威胁。全球卫生专家近日将评估美国是否会失去“麻疹消除国”地位。",
-      "date": "2026-11-12T05:43:00.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730747.shtml",
-      "image": ""
-    },
-    {
-      "id": "斯诺克冠中冠赛-中国球手吴宜泽-常冰玉出局-cf99b8166033",
-      "language": "zh",
-      "title": "斯诺克冠中冠赛：中国球手吴宜泽、常冰玉出局",
-      "excerpt": "中新社英国莱斯特11月12日电 当地时间11月11日，2026年斯诺克冠中冠邀请赛在英国莱斯特展开第三小组的较量，两位出场的中国球手吴宜泽和常冰玉先后落败出局，未能争得四强席位。英格兰名将肖恩·墨菲一日之内连赢两场，晋级半决赛。",
-      "date": "2026-11-12T05:38:42.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-12/10730742.shtml",
-      "image": ""
-    },
-    {
-      "id": "突发-美国纽约一建筑发生坍塌事故-已致至少2死17伤-8f9a8297461e",
-      "language": "zh",
-      "title": "突发：美国纽约一建筑发生坍塌事故 已致至少2死17伤",
-      "excerpt": "中新网11月12日电 据美国全国广播公司(NBC)报道，当地时间11月11日，美国纽约市布鲁克林区一处建筑发生坍塌事故，造成至少2人死亡、17人受伤。消防人员在现场废墟中展开紧急搜救。",
-      "date": "2026-11-12T05:29:45.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730741.shtml",
-      "image": ""
-    },
-    {
-      "id": "中新健康-ai十年内攻克癌症-anthropic-ceo预测引质疑-d8b2ffdddcaa",
-      "language": "zh",
-      "title": "中新健康｜AI十年内攻克癌症？Anthropic CEO预测引质疑",
-      "excerpt": "中新网北京11月12日电(罗春昊)近日，Anthropic首席执行官(CEO)达里奥·阿莫代伊(Dario Amodei)在公司IPO路演视频中表示，“今天我们看到的癌症、阿尔茨海默病、心脏病、精神疾病，我认为在不到十年内都会成为过去。”",
-      "date": "2026-11-12T05:22:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-12/10730740.shtml",
-      "image": ""
-    },
-    {
-      "id": "new-york-building-collapse-kills-at-least-two-d591981f32d4",
-      "language": "en",
-      "title": "New York building collapse kills at least two, officials say",
-      "excerpt": "A dangerous search for survivors continues after a three-storey building collapsed in Brooklyn on Wednesday afternoon.",
-      "date": "2026-11-12T05:12:56.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c8zx964glvwxo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7651/live/2883df70-de5a-11f1-9b47-0919bf7329d1.jpg"
-    },
-    {
-      "id": "李家超寄语香港下一代-传承孙中山先生矢志不渝振兴中华民族的精神-fd3263802fda",
-      "language": "zh",
-      "title": "李家超寄语香港下一代：传承孙中山先生矢志不渝振兴中华民族的精神",
-      "excerpt": "中新社香港11月12日电 (记者 刘玥晴)香港特区政府12日在香港中山纪念公园举行孙中山先生诞辰160周年纪念仪式。香港特区行政长官李家超在仪式上致辞表示，要珍视孙中山先生和香港的深厚渊源，让下一代充分认识这段历史，将孙中山先生为振兴中华民族矢志不渝的崇高精神传承下去。",
-      "date": "2026-11-12T05:07:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/11-12/10730739.shtml",
-      "image": ""
-    },
-    {
-      "id": "海外多地办展-回望孙中山与海外华侨的革命同行路-f74ce42ddd11",
-      "language": "zh",
-      "title": "海外多地办展 回望孙中山与海外华侨的革命同行路",
-      "excerpt": "中新社北京11月12日电 (记者 刘洋)今年是孙中山诞辰160周年，海外多地举办相关主题展览，回望孙中山先生奔走海外的岁月，再现华侨与革命先驱同心同德、共赴救国大业的壮阔往事。",
-      "date": "2026-11-12T05:06:38.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730738.shtml",
-      "image": ""
-    },
-    {
-      "id": "美国纽约一楼房倒塌致至少2死17伤-a5f4c7e8fc0b",
-      "language": "zh",
-      "title": "美国纽约一楼房倒塌致至少2死17伤",
-      "excerpt": "中新社纽约11月11日电 (记者 王帆)美国纽约市布鲁克林区一栋三层楼房11日发生倒塌，造成至少2人死亡、17人受伤。目前，救援人员仍在搜寻可能被困废墟之下的人。",
-      "date": "2026-11-12T05:06:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730734.shtml",
-      "image": ""
-    },
-    {
-      "id": "israeli-strike-on-hospital-kills-at-least-fiv-7c670ec87508",
-      "language": "en",
-      "title": "Israeli strike on hospital kills at least five Palestinians, Gaza civil defence agency says",
-      "excerpt": "The strike hit the surgery department of the hospital in Khan Younis, injuring at least 20 people and causing extensive damage, a spokesperson says.",
-      "date": "2026-11-12T05:06:27.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/61be/live/ca670730-de47-11f1-9cac-a1aa02a901fa.jpg"
-    },
-    {
-      "id": "尹艳林-中国经济增长动力结构正发生积极变化-e8a75f10832d",
-      "language": "zh",
-      "title": "尹艳林：中国经济增长动力结构正发生积极变化",
-      "excerpt": "中新社北京11月12日电 (陶思阅)全国政协委员尹艳林12日在北京举行的第十七届财新峰会上表示，中国经济发展为世界经济增长提供了重要支撑，中国经济增长的动力结构正在发生积极变化。",
-      "date": "2026-11-12T04:50:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730737.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国在风电领域实现国际标准新突破-129f65fc6824",
-      "language": "zh",
-      "title": "中国在风电领域实现国际标准新突破",
-      "excerpt": "中新社北京11月12日电 (记者 刘亮)中国国家市场监督管理总局12日公布，国际电工委员会近日正式发布由中国牵头制定的《风能发电系统第28-2部分：退役及回收准备》国际标准。该标准的研制充分借鉴了中国风电产业标准化实践成果，为全球应对大规模风电机组退役潮贡献了中国方案。",
-      "date": "2026-11-12T04:49:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730736.shtml",
-      "image": ""
-    },
-    {
-      "id": "中外团队研究证实-肥胖诊断不能只看体重-3ba204b4170c",
-      "language": "zh",
-      "title": "中外团队研究证实：肥胖诊断不能只看体重",
-      "excerpt": "中新社武汉11月12日电 (黄双子 马芙蓉)中外科研团队基于中国、英国、美国、西班牙4国、超84万人的数据研究证实，肥胖诊断不能只看体重，更不能单凭BMI(体重除以身高的平方)“一刀切”。相关成果于北京时间12日凌晨发表于国际期刊《自然》(Nature)。",
-      "date": "2026-11-12T04:34:32.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-12/10730735.shtml",
-      "image": ""
-    },
-    {
-      "id": "受权发布丨习近平-在纪念孙中山先生诞辰160周年大会上的讲话-d9434ce8afa1",
-      "language": "zh",
-      "title": "受权发布丨习近平：在纪念孙中山先生诞辰160周年大会上的讲话",
-      "excerpt": "新华社北京11月12日电",
-      "date": "2026-11-12T04:27:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730733.shtml",
-      "image": ""
-    },
-    {
-      "id": "纪念孙中山先生诞辰160周年大会在京举行-习近平发表重要讲话-268e3d708236",
-      "language": "zh",
-      "title": "纪念孙中山先生诞辰160周年大会在京举行 习近平发表重要讲话",
-      "excerpt": "原标题：纪念孙中山先生诞辰160周年大会在京举行",
-      "date": "2026-11-12T04:11:57.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730732.shtml",
-      "image": ""
-    },
-    {
-      "id": "华润集团原副总经理韩嵩被公诉-c7b53e4f729f",
-      "language": "zh",
-      "title": "华润集团原副总经理韩嵩被公诉",
-      "excerpt": "中新社北京11月12日电 (记者 张素)中国最高人民检察院12日通报华润(集团)有限公司原党委委员、副总经理韩嵩涉嫌受贿一案进展。经最高检指定管辖，湖南省人民检察院依法以涉嫌受贿罪对韩嵩作出逮捕决定。",
-      "date": "2026-11-12T04:10:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730730.shtml",
-      "image": ""
-    },
-    {
-      "id": "去不去养老院-老人和子女谁说了算-2cf99d599cd2",
-      "language": "zh",
-      "title": "去不去养老院，老人和子女谁说了算",
-      "excerpt": "去不去养老院，老人和子女谁说了算(以案说法·法治守护“夕阳红”①)",
-      "date": "2026-11-12T04:01:40.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730731.shtml",
-      "image": ""
-    },
-    {
-      "id": "第二艘国产大型邮轮完成首个试运营航次-抵达广州-a4a14b26c43e",
-      "language": "zh",
-      "title": "第二艘国产大型邮轮完成首个试运营航次 抵达广州",
-      "excerpt": "中新网广州11月12日电 (记者 程景伟)第二艘国产大型邮轮爱达·花城号12日顺利完成首个试运营航次，抵达广州南沙国际邮轮母港。",
-      "date": "2026-11-12T03:57:34.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730720.shtml",
-      "image": ""
-    },
-    {
-      "id": "建设银行举办2026年对公客户经理技能竞赛-40dc40df6df4",
-      "language": "zh",
-      "title": "建设银行举办2026年对公客户经理技能竞赛",
-      "excerpt": "11月11日上午，中国建设银行成功举办2026年对公客户经理技能竞赛全国总决赛。建设银行党委书记、董事长张金良，党委副书记孙孝坤，党委委员、副行长李建江、韩静、唐朔出席活动并为获奖团队和个人颁奖。",
-      "date": "2026-11-12T03:55:50.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730713.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026年广东省女子篮球联赛四强出炉-b80bf637602a",
-      "language": "zh",
-      "title": "2026年广东省女子篮球联赛四强出炉",
-      "excerpt": "中新网中山11月12日电 (记者 张璐)中国体育彩票·2026年广东省女子篮球联赛(简称“赛事”)11日进行八强赛较量。佛山队、深圳队、广州队、东莞队分别战胜各自对手，晋级四强。",
-      "date": "2026-11-12T03:54:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-12/10730722.shtml",
-      "image": ""
-    },
-    {
-      "id": "彩电大王-倪润峰逝世-享年82岁-fb63b3e8e932",
-      "language": "zh",
-      "title": "“彩电大王”倪润峰逝世 享年82岁",
-      "excerpt": "中新网成都11月12日电 被誉为“彩电大王”的四川长虹电器股份有限公司原董事长、总经理倪润峰11月11日在四川省绵阳市中心医院因抢救无效逝世，享年82岁。",
-      "date": "2026-11-12T03:52:48.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730724.shtml",
-      "image": ""
-    },
-    {
-      "id": "厄尔尼诺致菲律宾农业损失近100亿比索-玉米和水稻生产受冲击-f18368e97734",
-      "language": "zh",
-      "title": "厄尔尼诺致菲律宾农业损失近100亿比索 玉米和水稻生产受冲击",
-      "excerpt": "中新网马尼拉11月12日电 菲律宾农业部11日公布的数据显示，受厄尔尼诺现象影响，菲律宾农业损失已增至99.9亿比索(约合人民币10.5亿元)，较上月公布的85.7亿比索增加逾16%。随着极强厄尔尼诺预计于今年年底前后达到峰值，农业损失可能进一步扩大。",
-      "date": "2026-11-12T03:52:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730705.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴西前10月电动化轻型汽车销量同比增125-7-45168b96abf1",
-      "language": "zh",
-      "title": "巴西前10月电动化轻型汽车销量同比增125.7%",
-      "excerpt": "中新社圣保罗11月11日电 巴西全国汽车制造商协会(Anfavea)11日发布数据显示，2026年1月至10月，巴西电动化轻型汽车累计销量达49.57万辆，同比增长125.7%。这显示了巴西汽车市场电动化进程持续加快。",
-      "date": "2026-11-12T03:51:38.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730702.shtml",
-      "image": ""
-    },
-    {
-      "id": "也门胡塞武装称袭击沙特利雅得机场等目标-0a3154a259c0",
-      "language": "zh",
-      "title": "也门胡塞武装称袭击沙特利雅得机场等目标",
-      "excerpt": "中新社北京11月12日电 综合消息：也门胡塞武装军事发言人叶海亚·萨雷亚当地时间11日通过社交媒体宣布，该组织对多个沙特阿拉伯目标发动袭击，其中包括位于沙特首都利雅得的哈立德国王国际机场。",
-      "date": "2026-11-12T03:50:58.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730701.shtml",
-      "image": ""
-    },
-    {
-      "id": "a股午评-近3000只个股飘绿-三大指数集体收涨-c98656b3652f",
-      "language": "zh",
-      "title": "A股午评：近3000只个股飘绿，三大指数集体收涨",
-      "excerpt": "A股午评：近3000只个股飘绿，三大指数集体收涨；半导体大涨，GPU、光刻机、CPO、冰雪旅游走高；贵金属、汽车、软件下跌",
-      "date": "2026-11-12T03:47:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730728.shtml",
-      "image": ""
-    },
-    {
-      "id": "探访盐城鹤行书局-方寸书香点亮一座城-e5a1b5bc4bbd",
-      "language": "zh",
-      "title": "探访盐城鹤行书局：方寸书香点亮一座城",
-      "excerpt": "推开店门，暖光扑面，书架错落有致，读者或伏案自习，或驻足选书。近日，走进盐城市“百步芳草”实体书店提升行动重点培育书店——鹤行书局，探访这家以“一个书店点亮一座城”为定位的城市文化空间。它承载盐城丹顶鹤湿地文化意象，依托紧邻高校的区位优势，聚焦青年群体与周边群众阅读需求，正持续丰富15分钟阅读文化圈供给，拓展阅读服务边界。",
-      "date": "2026-11-12T03:45:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730725.shtml",
-      "image": ""
-    },
-    {
-      "id": "男子醉驾后伪造-送孕妻就医-记录-缘何被从重处罚-0785a9e39e90",
-      "language": "zh",
-      "title": "男子醉驾后伪造“送孕妻就医”记录 缘何被从重处罚→",
-      "excerpt": "如今在网络上有不少提供修改挂号记录、聊天时间甚至病历诊断书的服务，这些假凭证一旦流入司法、政务、保险理赔等正式程序，是否要承担法律责任？来看一起日前审结的危险驾驶案。",
-      "date": "2026-11-12T03:45:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730727.shtml",
-      "image": ""
-    },
-    {
-      "id": "收紧管控边界-新修正-陕西省秦始皇陵保护条例-施行-0e9b15e2e82d",
-      "language": "zh",
-      "title": "收紧管控边界 新修正《陕西省秦始皇陵保护条例》施行",
-      "excerpt": "秦始皇陵是珍贵的世界文化遗产。日前，经陕西省人大常委会修正的《陕西省秦始皇陵保护条例》正式施行。",
-      "date": "2026-11-12T03:41:39.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-12/10730726.shtml",
-      "image": ""
-    },
-    {
-      "id": "mcn机构如何织起-买号-洗稿-刷量-的黑灰产业链-dd609a0155ff",
-      "language": "zh",
-      "title": "MCN机构如何织起“买号—洗稿—刷量”的黑灰产业链？",
-      "excerpt": "近日，一起涉及企业网络舆情的案件牵出一条以MCN机构为外壳、以实名账号为载体、以AI洗稿和虚假流量为工具的黑灰产业链。山西晋中警方查明，犯罪嫌疑人注册82个个体工商户、55家MCN机构，收购2000多个实名账号，批量改写文章、借平台“按浏览量返现”规则牟利。",
-      "date": "2026-11-12T03:39:33.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730723.shtml",
-      "image": ""
-    },
-    {
-      "id": "外媒-马克龙迎接斯洛伐克总统-仪仗队队员当场晕倒-845118d9da07",
-      "language": "zh",
-      "title": "外媒：马克龙迎接斯洛伐克总统 仪仗队队员当场晕倒",
-      "excerpt": "中新网11月12日电 据哥伦比亚广播公司(CBS)及路透社报道，当地时间11日，斯洛伐克总统佩列格里尼抵达巴黎爱丽舍宫，准备与法国总统马克龙会面时，一名仪仗队队员突然晕倒。",
-      "date": "2026-11-12T03:38:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730718.shtml",
-      "image": ""
-    },
-    {
-      "id": "the-world-s-super-rich-are-piling-into-altern-d8b6df606109",
-      "language": "en",
-      "title": "The world's super-rich are piling into alternative investments. Here's why",
-      "excerpt": "Alternative investments now account for 60% of single-family office portfolios, surpassing traditional assets for the first time, according to BNY Wealth.",
-      "date": "2026-11-12T03:36:44.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/12/rich-wealth-alternative-assets-.html",
-      "image": ""
-    },
-    {
-      "id": "长征胜利90周年-红军烈士后代广西兴安界首渡口祭英烈-湘江没有忘记你-eede2e231183",
-      "language": "zh",
-      "title": "（长征胜利90周年）红军烈士后代广西兴安界首渡口祭英烈：湘江没有忘记你",
-      "excerpt": "中新网桂林11月12日电 题：红军烈士后代广西兴安界首渡口祭英烈：湘江没有忘记你",
-      "date": "2026-11-12T03:34:53.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730711.shtml",
-      "image": ""
-    },
-    {
-      "id": "早期像感冒-严重可致命-很多人分不清-9df426eb055c",
-      "language": "zh",
-      "title": "早期像感冒、严重可致命！很多人分不清",
-      "excerpt": "入冬后，咳嗽、发烧",
-      "date": "2026-11-12T03:32:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-12/10730716.shtml",
-      "image": ""
-    },
-    {
-      "id": "青春华章-我们的新长征丨走进百年南开中学-从一面镜子开始-4885dcbe06fa",
-      "language": "zh",
-      "title": "青春华章·我们的新长征丨走进百年南开中学，从一面镜子开始",
-      "excerpt": "中新网天津11月12日电(记者 张小雨)“面必净，发必理，衣必整，钮必结……”11日，“青春华章·我们的新长征”大思政课网络主题宣传和互动引导活动来到天津市南开中学。",
-      "date": "2026-11-12T03:32:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730636.shtml",
-      "image": ""
-    },
-    {
-      "id": "elon-musk-says-it-would-be-an-honor-to-hire-n-588fc78b57f9",
-      "language": "en",
-      "title": "Elon Musk says it would be an 'honor' to hire Nvidia's Jensen Huang",
-      "excerpt": "The post on X comes amid reports that Nvidia's board is preparing to oust Huang.",
-      "date": "2026-11-12T03:25:05.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html",
-      "image": ""
-    },
-    {
-      "id": "中国-墨西哥亚克斯科波伊尔联合考古项目发掘开工-ee42726cd0a5",
-      "language": "zh",
-      "title": "中国-墨西哥亚克斯科波伊尔联合考古项目发掘开工",
-      "excerpt": "新华社墨西哥城11月9日电(记者吴昊)中国-墨西哥亚克斯科波伊尔联合考古项目发布会暨开工仪式近日在墨西哥尤卡坦州亚克斯科波伊尔举行。该项目旨在深化中墨文物考古合作，促进文明交流互鉴。中国驻墨西哥大使馆、山东大学、墨西哥国家文物局、中国-墨西哥文化发展基金会等机构代表及两国各界人士百余人出席仪式。",
-      "date": "2026-11-12T03:24:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730712.shtml",
-      "image": ""
-    },
-    {
-      "id": "美国费城交响乐团2026年中国巡演海南首站启幕-dafa6d49bb59",
-      "language": "zh",
-      "title": "美国费城交响乐团2026年中国巡演海南首站启幕",
-      "excerpt": "中新网海口11月12日电 (记者 张茜翼)11日晚，海口湾演艺中心大剧场座无虚席。美国费城交响乐团2026年中国巡演海南首站在此启幕，首席客座指挥马林·阿尔索普(Marin Alsop)执棒，为椰城观众带来一场跨越山海与东西方的音乐对话。",
-      "date": "2026-11-12T03:18:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-12/10730700.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国海油在渤海中部海域取得超深层油气勘探重大突破-f67ab9c4e629",
-      "language": "zh",
-      "title": "中国海油在渤海中部海域取得超深层油气勘探重大突破",
-      "excerpt": "中新社北京11月12日电 (记者 王恩博)中国海洋石油有限公司12日宣布，在渤海超5000米的超深层地层钻探发现一口火山岩高产油气井，标志着中国在海上超深层天然气勘探领域取得重大突破。",
-      "date": "2026-11-12T03:17:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730704.shtml",
       "image": ""
     }
   ]
