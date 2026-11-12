@@ -1,6 +1,346 @@
 {
-  "generated_at": "2026-11-12T13:22:39.058Z",
+  "generated_at": "2026-11-12T15:02:30.627Z",
   "items": [
+    {
+      "id": "英伟达股价开盘暴跌13-或创2025年以来最大单日跌幅-852832b82f13",
+      "language": "zh",
+      "title": "英伟达股价开盘暴跌13% 或创2025年以来最大单日跌幅",
+      "excerpt": "中新网11月12日电 据外媒报道，英伟达股价开盘大幅下挫，暴跌13%。",
+      "date": "2026-11-12T14:51:26.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10731230.shtml",
+      "image": ""
+    },
+    {
+      "id": "jensen-and-lori-huang-s-nvidia-fortune-is-joi-495ee6b1f420",
+      "language": "en",
+      "title": "Jensen and Lori Huang's Nvidia fortune is jointly controlled. How that makes things complicated now that he's resigned",
+      "excerpt": "Jensen Huang’s $140 billion stake in Nvidia is largely held by trusts co-owned with his wife, Lori, creating added uncertainty for his financial future.",
+      "date": "2026-11-12T14:50:43.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/inside-jensen-and-lori-huangs-jointly-controlled-nvidia-fortune.html",
+      "image": ""
+    },
+    {
+      "id": "google-pushes-privacy-angle-as-gemini-powered-f890f008ac13",
+      "language": "en",
+      "title": "Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395",
+      "excerpt": "The first Gemini smartglasses are a collab between Google, Samsung, Gentle Monster, and Warby Parker.",
+      "date": "2026-11-12T14:50:17.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/WP_ALDEN-Carousel_Lifestyle-copy-500x500.jpg"
+    },
+    {
+      "id": "美国华盛顿特区发生多起枪击事件-4人中枪-7066d160c5c5",
+      "language": "zh",
+      "title": "美国华盛顿特区发生多起枪击事件 4人中枪",
+      "excerpt": "当地时间11月12日，美国方面消息称，美国华盛顿特区当天凌晨发生多起枪击事件，共有4人中枪。事发地点距离白宫约1.6公里。",
+      "date": "2026-11-12T14:30:48.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10731229.shtml",
+      "image": ""
+    },
+    {
+      "id": "the-unfolding-jensen-huang-scandal-a-timeline-07a62a8bb6b1",
+      "language": "en",
+      "title": "The unfolding Jensen Huang scandal: a timeline",
+      "excerpt": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "date": "2026-11-12T14:30:01.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "image": ""
+    },
+    {
+      "id": "菲律宾马尼拉街头发生警匪交火-致两死一伤-2b5b782e43f5",
+      "language": "zh",
+      "title": "菲律宾马尼拉街头发生警匪交火 致两死一伤",
+      "excerpt": "中新社马尼拉11月12日电 (记者 周璟)据菲律宾警方12日通报，首都马尼拉街头当天中午发生一起警匪交火事件，造成两名嫌疑人死亡，另有一名警察受伤。",
+      "date": "2026-11-12T14:27:58.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10731227.shtml",
+      "image": ""
+    },
+    {
+      "id": "北京将推进第四使馆区重点项目建设-d90d4374f594",
+      "language": "zh",
+      "title": "北京将推进第四使馆区重点项目建设",
+      "excerpt": "中新社北京11月12日电 (记者 陈杭)北京将在东部地区，统筹推进第四使馆区重点项目建设，把金盏国际合作服务区打造成为首都国际化发展新地标；强化首都国际机场国际航空枢纽门户功能，依托首都国际会展中心加快建设具有全球影响力的国际会展集聚区。",
+      "date": "2026-11-12T14:27:18.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10731226.shtml",
+      "image": ""
+    },
+    {
+      "id": "澳门特区政府举办纪念孙中山先生诞辰160周年图片展-ffa78977ff0b",
+      "language": "zh",
+      "title": "澳门特区政府举办纪念孙中山先生诞辰160周年图片展",
+      "excerpt": "中新社澳门11月12日电 (记者 郑嘉伟)澳门特区政府12日举办“从澳门出发——纪念孙中山先生诞辰160周年图片展”，缅怀孙中山先生为民族独立、社会进步、人民幸福建立的不朽功勋，弘扬革命精神和崇高品德，传承“天下为公”“振兴中华”的理念。",
+      "date": "2026-11-12T14:26:22.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/dwq/2026/11-12/10731224.shtml",
+      "image": ""
+    },
+    {
+      "id": "英伟达宣布黄仁勋临时接任人-2013年加入该公司的女高管-7fa67eaf0f95",
+      "language": "zh",
+      "title": "英伟达宣布黄仁勋临时接任人：2013年加入该公司的女高管",
+      "excerpt": "中新网11月12日电 英伟达官网11月12日发布声明称，黄仁勋已辞去总裁、首席执行官及董事会成员职务，即刻生效。声明称，现任执行副总裁兼首席财务官科莱特·克雷斯(Colette Kress)已同意担任临时首席执行官。在正式继任者确定之前，克雷斯将继续履行执行副总裁兼首席财务官的职责。",
+      "date": "2026-11-12T14:21:38.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10731225.shtml",
+      "image": ""
+    },
+    {
+      "id": "oil-prices-mixed-after-trump-says-no-iran-dea-e2d7316a4203",
+      "language": "en",
+      "title": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
+      "excerpt": "Oil prices were mixed on Thursday, after the latest comments from President Donald Trump raised worries that an end to the U.S.-Iran war was not in sight.",
+      "date": "2026-11-12T14:21:20.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
+      "image": ""
+    },
+    {
+      "id": "平陆运河重塑开放格局-南宁打造面向东盟国际物流枢纽-5d6f61e531cd",
+      "language": "zh",
+      "title": "平陆运河重塑开放格局 南宁打造面向东盟国际物流枢纽",
+      "excerpt": "中新社南宁11月12日电 (记者 黄艳梅)世纪工程平陆运河建成通航，广西南宁实现从内陆城市到江海枢纽的历史性突破。南宁市官方12日举行新闻发布会介绍，该市加快构建“公铁水空”一体化现代综合立体交通网络，致力打造面向东盟的国际物流枢纽。",
+      "date": "2026-11-12T14:18:00.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/11-12/10731218.shtml",
+      "image": ""
+    },
+    {
+      "id": "百余名中外专家昆明共议东南亚地中海贫血防控合作-912b37923e1c",
+      "language": "zh",
+      "title": "百余名中外专家昆明共议东南亚地中海贫血防控合作",
+      "excerpt": "中新社昆明11月12日电 (时文枝)2026年东南亚地中海贫血防控联盟学术研讨会12日在昆明开幕。来自中国及东南亚各国的百余名临床专家、科研人员等，围绕地中海贫血(地贫)防治新技术、区域合作机制展开交流，探讨科研创新如何衔接“筛—诊—治”全链条服务需求。",
+      "date": "2026-11-12T14:12:05.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/11-12/10731219.shtml",
+      "image": ""
+    },
+    {
+      "id": "外媒-特朗普与内塔尼亚胡在交谈中爆发-地狱般的争吵-6d55a25bce48",
+      "language": "zh",
+      "title": "外媒：特朗普与内塔尼亚胡在交谈中爆发“地狱般的争吵”",
+      "excerpt": "中新网11月12日电 据美国福克斯新闻11日援引以色列媒体报道，美国总统特朗普与以色列总理内塔尼亚胡上周末在一次电话交谈中爆发了“地狱般的激烈争吵”，双方就是否重启对伊朗的军事行动发生激烈冲突。",
+      "date": "2026-11-12T14:11:11.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10731223.shtml",
+      "image": ""
+    },
+    {
+      "id": "nvidia-s-jensen-huang-resigns-chipmaker-names-208a59594d1f",
+      "language": "en",
+      "title": "Nvidia’s Jensen Huang resigns, chipmaker names CFO Colette Kress as interim CEO",
+      "excerpt": "Nvidia gets a new chief executive, days after former CEO Jensen Huang admitted to a romantic affair with an alleged Chinese spy.",
+      "date": "2026-11-12T14:10:34.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/",
+      "image": ""
+    },
+    {
+      "id": "贵州雷山迎海内外游客欢庆苗年-95e6299edfd1",
+      "language": "zh",
+      "title": "贵州雷山迎海内外游客欢庆苗年",
+      "excerpt": "中新社贵州雷山11月12日电 题：贵州雷山迎海内外游客欢庆苗年",
+      "date": "2026-11-12T14:10:21.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/txy/2026/11-12/10731220.shtml",
+      "image": ""
+    },
+    {
+      "id": "英伟达宣布黄仁勋辞职-dbd35e747a2e",
+      "language": "zh",
+      "title": "英伟达宣布黄仁勋辞职",
+      "excerpt": "中新网11月12日电 英伟达官网11月12日发布声明称，黄仁勋已辞去总裁、首席执行官及董事会成员职务，即刻生效。",
+      "date": "2026-11-12T14:09:11.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10731222.shtml",
+      "image": ""
+    },
+    {
+      "id": "评论-纪念中山先生-中华儿女要交三份答卷-9b9dc5c00ff0",
+      "language": "zh",
+      "title": "评论：纪念中山先生，中华儿女要交三份答卷",
+      "excerpt": "中新社北京11月12日电 题：纪念中山先生，中华儿女要交三份答卷",
+      "date": "2026-11-12T14:07:17.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10731216.shtml",
+      "image": ""
+    },
+    {
+      "id": "学者析习近平重要讲话涉台内容-突出-团结-释放善意-162ceaf95db3",
+      "language": "zh",
+      "title": "学者析习近平重要讲话涉台内容：突出“团结” 释放善意",
+      "excerpt": "中新社北京11月12日电 题：学者析习近平重要讲话涉台内容：突出“团结” 释放善意",
+      "date": "2026-11-12T14:07:07.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10731217.shtml",
+      "image": ""
+    },
+    {
+      "id": "成渝三地联合进京推介文旅-西部国际ai漫剧产业园亮相-97169a2915d5",
+      "language": "zh",
+      "title": "成渝三地联合进京推介文旅 西部国际AI漫剧产业园亮相",
+      "excerpt": "中新网北京11月12日电(曹旭帆)12日，成都市锦江区、重庆市渝中区、成都市都江堰市联合在北京举办文化和旅游产业招商引资推介会，三地携区域文旅资源与产业项目亮相，与在京文旅、科技、金融等领域百余名代表对接洽谈。",
+      "date": "2026-11-12T14:05:47.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10731214.shtml",
+      "image": ""
+    },
+    {
+      "id": "7吨级大型运投无人机-长鹰-8-完成运输投送试验-49eab5715bfc",
+      "language": "zh",
+      "title": "7吨级大型运投无人机“长鹰-8”完成运输投送试验",
+      "excerpt": "中新网北京11月12日电 中国兵器工业集团所属北方工业公司北方长鹰12日消息，其自主研制的7吨级大型运投无人机“长鹰-8”近日在郑州完成运输投送试验。",
+      "date": "2026-11-12T14:05:07.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10731213.shtml",
+      "image": ""
+    },
+    {
+      "id": "马来西亚槟城举办展览记录华人机器公会历史-dd9fa9eb9619",
+      "language": "zh",
+      "title": "马来西亚槟城举办展览记录华人机器公会历史",
+      "excerpt": "中新网槟城11月12日电 (记者 刘育英)“槟城华人机器工业与反法西斯历史展”11日在马来西亚槟城庇能华人机器公会会所开幕，展览以历史资料、文献、照片及展品，呈现该公会151年来的发展历程，以及公会与南洋华侨机工之间的历史联系。",
+      "date": "2026-11-12T14:03:57.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/hr/2026/11-12/10731215.shtml",
+      "image": ""
+    },
+    {
+      "id": "罗大佑怒批民进党当局引发岛内共鸣-3d1082875e23",
+      "language": "zh",
+      "title": "罗大佑怒批民进党当局引发岛内共鸣",
+      "excerpt": "中新网11月12日电 (燕新台)台湾资深音乐人罗大佑近日接受台湾媒体人唐湘龙节目专访时“火力全开”，痛批民进党当局拿到权力后整个变样，直言“不要脸”。对此，岛内舆论认为罗大佑的发言“振聋发聩”，展现了文化人的风骨。",
+      "date": "2026-11-12T14:01:57.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10731211.shtml",
+      "image": ""
+    },
+    {
+      "id": "内蒙古搭建起自贸试验区建设的-四梁八柱-265098a9e55b",
+      "language": "zh",
+      "title": "内蒙古搭建起自贸试验区建设的“四梁八柱”",
+      "excerpt": "中新网呼和浩特11月12日电 (记者 李爱平)“经过7个月的拼搏努力，内蒙古已经搭建起自贸试验区建设的‘四梁八柱’。”11月12日下午，内蒙古自治区政府新闻办公室召开新闻发布会，内蒙古自治区政府副主席苏和作上述表示。",
+      "date": "2026-11-12T14:00:33.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10731210.shtml",
+      "image": ""
+    },
+    {
+      "id": "第七届黄寺论坛在中国藏语系高级佛学院举办-44a539a7975a",
+      "language": "zh",
+      "title": "第七届黄寺论坛在中国藏语系高级佛学院举办",
+      "excerpt": "中新网北京11月12日电 (记者 朱贺)第七届黄寺论坛10日至11日在北京西黄寺举办，以“藏传佛教僧才培养领域贯彻民族团结进步促进法的实践探讨”为主题。",
+      "date": "2026-11-12T14:00:25.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/txy/2026/11-12/10731209.shtml",
+      "image": ""
+    },
+    {
+      "id": "hundreds-of-streaming-services-and-nothing-to-1f60444f0b46",
+      "language": "en",
+      "title": "Hundreds of streaming services and nothing to watch",
+      "excerpt": "Most viewers wish there was a TV Guide for streaming.",
+      "date": "2026-11-12T14:00:19.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/11/hundreds-of-streaming-services-and-nothing-to-watch/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2230766677-500x500.jpg"
+    },
+    {
+      "id": "disney-s-star-wars-is-coming-to-cosm-domes-ah-2e246ca7fcc6",
+      "language": "en",
+      "title": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
+      "excerpt": "Cosm has secured a new studio partnership with Disney that will bring \"Star Wars: A New Hope\" to its domes as part of a multiyear, multifilm collaboration.",
+      "date": "2026-11-12T14:00:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
+      "image": ""
+    },
+    {
+      "id": "黄仁勋辞去英伟达公司总裁-首席执行官及董事会成员职务-a5fbe8f37982",
+      "language": "zh",
+      "title": "黄仁勋辞去英伟达公司总裁、首席执行官及董事会成员职务",
+      "excerpt": "当地时间11月12日，英伟达公司宣布：黄仁勋辞去总裁、首席执行官及董事会成员职务，即刻生效。(总台记者 张颖哲)",
+      "date": "2026-11-12T13:59:13.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10731212.shtml",
+      "image": ""
+    },
+    {
+      "id": "海南新组建空天集团-注册资金100亿元-f1010780a0ab",
+      "language": "zh",
+      "title": "海南新组建空天集团 注册资金100亿元",
+      "excerpt": "中新网海口11月12日(记者 王晓斌)记者从海南省新闻办12日举行的发布会获悉，海南省委、省政府已明确“以场带产”发展航天产业，新组建注册资金100亿元的海南空天集团。该集团将作为文昌航天城园区的投建运主体，推动火箭、卫星和信息产业链落地。",
+      "date": "2026-11-12T13:56:39.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10731206.shtml",
+      "image": ""
+    },
+    {
+      "id": "海南国资-十五五-将投266亿元锻造-五向图强-产业链-c0a1d8eda8ef",
+      "language": "zh",
+      "title": "海南国资“十五五”将投266亿元锻造“五向图强”产业链",
+      "excerpt": "中新网海口11月12日电 (记者 王晓斌)海南“五向图强”如何从蓝图进一步走向落地？海南国资国企给出了一份量化的项目清单。11月12日，在海南省新闻办举行的发布会上，海南省国资委副主任申琦介绍，“十五五”期间，海南省属企业将聚焦“五向图强”落地26个标志性项目，完成总投资266亿元，全面推动种业、深海、航天、绿色、数字等特色产业链向更深层次迈进。",
+      "date": "2026-11-12T13:50:04.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10731196.shtml",
+      "image": ""
+    },
+    {
+      "id": "海南国资国企-十五五-目标-资产总额突破1-5万亿元-657b6987679e",
+      "language": "zh",
+      "title": "海南国资国企“十五五”目标：资产总额突破1.5万亿元",
+      "excerpt": "中新网海口11月12日电 (记者 王晓斌)11月12日，在海南省新闻办举行的《海南省属国资国企“十五五”发展规划》专场新闻发布会上，海南省国资委主任马咏华介绍，海南力争到2030年省属企业资产总额突破1.5万亿元，较“十四五”末增长近89%；年营业收入突破3000亿元，年利润总额突破100亿元，实现大幅跨越。",
+      "date": "2026-11-12T13:49:06.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10731197.shtml",
+      "image": ""
+    },
+    {
+      "id": "新交所集团ceo罗文才-中国市场蕴含更多机遇-e6820aee10bf",
+      "language": "zh",
+      "title": "新交所集团CEO罗文才：中国市场蕴含更多机遇",
+      "excerpt": "中新社上海11月12日电 (高志苗)新加坡交易所集团首席执行官罗文才(Loh Boon Chye)12日接受中新社专访时表示，中国拥有深厚而强大的工业基础，叠加先进制造和技术，全球投资者正在中国市场发现更多机会。他表示，全球资本持续流入包括中国在内的亚洲市场，亚洲资产组合已成为全球投资组合的重要组成部分。",
+      "date": "2026-11-12T13:28:41.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10731161.shtml",
+      "image": ""
+    },
+    {
+      "id": "双碳-绿色技术赋能中小企业高质量发展交流会在济南举办-f1fe7bcae8cf",
+      "language": "zh",
+      "title": "“双碳”绿色技术赋能中小企业高质量发展交流会在济南举办",
+      "excerpt": "中新网济南11月12日电 (记者 孙婷婷)“双碳”绿色技术赋能中小企业高质量发展交流会12日在山东济南举办。交流会以“聚智‘双碳’时代，赋能企业发展”为主题，围绕中小企业在政策、技术、零碳园区建设等方面的现实需求，开展案例分享与供需对接，助力中小企业找准转型方向、化解现实难题、提升绿色市场竞争力。",
+      "date": "2026-11-12T13:27:25.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10731148.shtml",
+      "image": ""
+    },
+    {
+      "id": "nine-korean-startups-vie-for-a-spot-in-disrup-49ac9311c7b4",
+      "language": "en",
+      "title": "Nine Korean startups vie for a spot in Disrupt 2027’s Startup Battlefield 200 competition",
+      "excerpt": "The startups work across the deep tech sector, including healthcare, fintech, energy, semiconductors, and AI. All nine are looking to enter the US.",
+      "date": "2026-11-12T13:26:25.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/nine-korean-startups-vie-for-a-spot-in-disrupt-2027s-startup-battlefield-200-competition/",
+      "image": ""
+    },
+    {
+      "id": "西藏亚东县在拉萨举办文化旅游推介会-7a793a0e2f11",
+      "language": "zh",
+      "title": "西藏亚东县在拉萨举办文化旅游推介会",
+      "excerpt": "中新网拉萨11月12日电 (李林)12日，2026年西藏日喀则市亚东县文化旅游推介会在拉萨举行。活动现场正式启动“冬游西藏 相约亚东”首发活动，为广大游客提供“冬游西藏”新选择。",
+      "date": "2026-11-12T13:23:55.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10731165.shtml",
+      "image": ""
+    },
     {
       "id": "trump-says-we-don-t-need-a-deal-with-iran-b31b0737078e",
       "language": "en",
@@ -12,6 +352,16 @@
       "image": ""
     },
     {
+      "id": "从-秦岭清水-到-钢铁驼队-西安绘就生态与发展共生图景-33b04a6f9894",
+      "language": "zh",
+      "title": "从“秦岭清水”到“钢铁驼队” 西安绘就生态与发展共生图景",
+      "excerpt": "中新网西安11月12日电 (记者 梅镱泷)位于西安市鄠邑区的将军山水厂，是引汉济渭工程重要配套水厂，规划总设计规模100万立方米/日。“目前厂区日产供水能力已达70万立方米/日，供水覆盖三星工业园区、长安通讯园、西安主城区等地，为城市发展提供了坚实的水资源保障。”西安将军山水厂生产安全办公室主任毛育凡表示。",
+      "date": "2026-11-12T13:19:28.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10731153.shtml",
+      "image": ""
+    },
+    {
       "id": "报告-年轻一代医疗健康信息获取方式呈数字化特征-43ec147eee17",
       "language": "zh",
       "title": "报告：年轻一代医疗健康信息获取方式呈数字化特征",
@@ -19,6 +369,16 @@
       "date": "2026-11-12T13:15:32.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10731149.shtml",
+      "image": ""
+    },
+    {
+      "id": "as-credit-card-balances-hit-a-record-high-med-6adce420785d",
+      "language": "en",
+      "title": "As credit card balances hit a record high, medical bills can become 'shadow debt,' expert says",
+      "excerpt": "Medical bills can move onto credit cards and other borrowing, making the debt harder to track. Here's what consumers can check before financing care.",
+      "date": "2026-11-12T13:15:02.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/medical-bills-credit-card-debt.html",
       "image": ""
     },
     {
@@ -250,6 +610,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10731121.shtml",
       "image": ""
+    },
+    {
+      "id": "watch-the-latest-in-the-jensen-huang-nvidia-s-55a295d1c83d",
+      "language": "en",
+      "title": "Watch: The latest in the Jensen Huang Nvidia scandal",
+      "excerpt": "The BBC's China correspondent Laura Bicker explains the timeline of events and what's next for Nvidia as its board considers whether to oust the CEO.",
+      "date": "2026-11-12T12:42:44.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cqz0k70990zpo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0d9d/live/d11629a0-de95-11f1-93e1-3b657b665bcf.jpg"
     },
     {
       "id": "黑龙江民营企业家参加-龙商铸魂-北大荒精神行-研学活动-8d0cc9683fcb",
@@ -2629,376 +2999,6 @@
       "date": "2026-11-12T02:26:25.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730660.shtml",
-      "image": ""
-    },
-    {
-      "id": "韩正出席全民早期预警倡议高级别活动并致辞-e963ec1f77a0",
-      "language": "zh",
-      "title": "韩正出席全民早期预警倡议高级别活动并致辞",
-      "excerpt": "中新社北京11月12日电 当地时间11月11日，中国国家副主席韩正在土耳其安塔利亚应邀出席由联合国秘书长古特雷斯举办的全民早期预警倡议高级别活动并致辞。",
-      "date": "2026-11-12T02:24:07.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730623.shtml",
-      "image": ""
-    },
-    {
-      "id": "大洋彼岸-95岁的他还在想念-酸啾啾-df301a2a0eec",
-      "language": "zh",
-      "title": "大洋彼岸，95岁的他还在想念“酸啾啾”",
-      "excerpt": "标题：寻找照片中的TA丨大洋彼岸，95岁的他还在想念“酸啾啾”",
-      "date": "2026-11-12T02:23:37.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730658.shtml",
-      "image": ""
-    },
-    {
-      "id": "韩正出席应对气候变化南南合作高级别论坛并致辞-677ff9910f67",
-      "language": "zh",
-      "title": "韩正出席应对气候变化南南合作高级别论坛并致辞",
-      "excerpt": "中新社北京11月12日电 当地时间11月11日，中国国家副主席韩正在土耳其安塔利亚出席应对气候变化南南合作高级别论坛并致辞。",
-      "date": "2026-11-12T02:18:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730621.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴黎和平论坛-解读中国的全球角色和影响力-专题研讨会举办-53b1ab6ea08d",
-      "language": "zh",
-      "title": "巴黎和平论坛“解读中国的全球角色和影响力”专题研讨会举办",
-      "excerpt": "中新社巴黎11月11日电 (记者 李洋)第九届巴黎和平论坛10日至11日在巴黎举行，论坛于11日举办“解读中国的全球角色和影响力”专题研讨会。",
-      "date": "2026-11-12T02:06:50.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730598.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴拿马外长回应美防长-运河由巴拿马掌控-8201d179991f",
-      "language": "zh",
-      "title": "巴拿马外长回应美防长：运河由巴拿马掌控",
-      "excerpt": "中新社北京11月12日电 巴拿马城消息：巴拿马外交部长马丁内斯-阿查11日就美国国防部长赫格塞思涉巴拿马运河言论作出回应，强调该运河的主权和控制权完全属于巴拿马。",
-      "date": "2026-11-12T02:06:06.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730613.shtml",
-      "image": ""
-    },
-    {
-      "id": "荷兰禽流感疫情蔓延-近8万只家禽被扑杀-da8d997a70f2",
-      "language": "zh",
-      "title": "荷兰禽流感疫情蔓延 近8万只家禽被扑杀",
-      "excerpt": "中新网海牙11月12日电 荷兰禽流感疫情蔓延，东部海尔德兰省两家相邻农场接连暴发禽流感疫情，总计近8万只家禽被扑杀。",
-      "date": "2026-11-12T02:05:26.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730626.shtml",
-      "image": ""
-    },
-    {
-      "id": "在无名战士墓前说笑-美防长赫格塞思等人被士兵大声告诫-a78227c7cfe1",
-      "language": "zh",
-      "title": "在无名战士墓前说笑 美防长赫格塞思等人被士兵大声告诫",
-      "excerpt": "中新网11月12日电 据美国《华尔街日报》等美媒报道，当地时间11日，美国国防部长赫格塞思在美国退伍军人日参加纪念活动时，被美国阿灵顿国家公墓一名美军士兵大声告诫，要求他及随行人员保持“肃静和尊重”的氛围。",
-      "date": "2026-11-12T02:04:46.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730627.shtml",
-      "image": ""
-    },
-    {
-      "id": "全国冬小麦播种过八成-秋冬种进展顺利-59427633d2b7",
-      "language": "zh",
-      "title": "全国冬小麦播种过八成 秋冬种进展顺利",
-      "excerpt": "当前，我国粮食主产区正抢抓农时，加紧推进秋冬种。农业农村部最新农情调度显示，冬小麦播种过八成。",
-      "date": "2026-11-12T02:03:20.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730641.shtml",
-      "image": ""
-    },
-    {
-      "id": "从-双11-购物车看消费新意-f21874e04893",
-      "language": "zh",
-      "title": "从“双11”购物车看消费新意",
-      "excerpt": "财经聚焦｜从“双11”购物车看消费新意",
-      "date": "2026-11-12T02:03:18.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730640.shtml",
-      "image": ""
-    },
-    {
-      "id": "首店首展-各地拓展新场景新业态-激发消费活力-7890ccfe2bb5",
-      "language": "zh",
-      "title": "首店首展！各地拓展新场景新业态 激发消费活力",
-      "excerpt": "各地精准发力，推出一系列新举措，培育新场景、新业态，持续激发消费活力。",
-      "date": "2026-11-12T01:50:57.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730630.shtml",
-      "image": ""
-    },
-    {
-      "id": "95-8-受访者感觉ai卖家秀让自己-没底-8087fb5d367f",
-      "language": "zh",
-      "title": "95.8%受访者感觉AI卖家秀让自己“没底”",
-      "excerpt": "95.8%受访者感觉AI卖家秀让自己“没底”",
-      "date": "2026-11-12T01:41:31.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730607.shtml",
-      "image": ""
-    },
-    {
-      "id": "11月12日央行开展3840亿元隔夜逆回购操作-3d8c3ec1eef5",
-      "language": "zh",
-      "title": "11月12日央行开展3840亿元隔夜逆回购操作",
-      "excerpt": "中新网11月12日电 据中国人民银行网站消息，2026年11月12日中国人民银行以固定利率、数量招标方式开展了3840亿元隔夜逆回购操作，全额满足了一级交易商需求。具体情况如下：",
-      "date": "2026-11-12T01:37:04.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730617.shtml",
-      "image": ""
-    },
-    {
-      "id": "apec工商咨询理事会本周六起在深圳举办-7fefbff44e03",
-      "language": "zh",
-      "title": "APEC工商咨询理事会本周六起在深圳举办",
-      "excerpt": "2026年APEC工商领导人峰会将于11月17日至18日在深圳举办。",
-      "date": "2026-11-12T01:36:54.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730606.shtml",
-      "image": ""
-    },
-    {
-      "id": "11月12日人民币对美元中间价报6-7174-上调17个基点-e6ea8139a2f1",
-      "language": "zh",
-      "title": "11月12日人民币对美元中间价报6.7174 上调17个基点",
-      "excerpt": "中新网11月12日电 据中国外汇交易中心网站消息，中国人民银行授权中国外汇交易中心公布，2026年11月12日银行间外汇市场人民币汇率中间价为：1美元对人民币6.7174元，上调17个基点。",
-      "date": "2026-11-12T01:28:58.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730616.shtml",
-      "image": ""
-    },
-    {
-      "id": "第49届东盟峰会将于菲律宾马尼拉举行-国际媒体中心正式开放-0f555c8bfb2f",
-      "language": "zh",
-      "title": "第49届东盟峰会将于菲律宾马尼拉举行 国际媒体中心正式开放",
-      "excerpt": "",
-      "date": "2026-11-12T01:14:41.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/11-12/1210601.shtml",
-      "image": ""
-    },
-    {
-      "id": "cramer-s-stance-on-nvidia-s-stock-amid-report-8d8152192bf4",
-      "language": "en",
-      "title": "Cramer's stance on Nvidia's stock amid reports that CEO Jensen Huang may be ousted",
-      "excerpt": "Jim Cramer said Wednesday night that he was saddened by a news report that indicated Nvidia's board of directors is preparing to fire Huang.",
-      "date": "2026-11-12T01:14:21.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/investingclub/2026/11/11/jim-cramer-jensen-huang-nvidia-stock-advice.html",
-      "image": ""
-    },
-    {
-      "id": "2026年apec领导人会议周新闻中心启用-f1bf7c90d935",
-      "language": "zh",
-      "title": "2026年APEC领导人会议周新闻中心启用",
-      "excerpt": "",
-      "date": "2026-11-12T00:41:32.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/11-12/1210591.shtml",
-      "image": ""
-    },
-    {
-      "id": "学习手记丨向着全面建成世界一流空军奋飞-591bbb319467",
-      "language": "zh",
-      "title": "学习手记丨向着全面建成世界一流空军奋飞",
-      "excerpt": "11月11日，人民空军迎来77岁生日。",
-      "date": "2026-11-12T00:39:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730604.shtml",
-      "image": ""
-    },
-    {
-      "id": "nigeria-s-president-launches-re-election-mani-34ad3eed1e3c",
-      "language": "en",
-      "title": "Nigeria's president launches re-election manifesto but can he regain voters' trust?",
-      "excerpt": "For Nigerians to feel meaningful improvements, reforms will need to go beyond the promises outlined, analysts say.",
-      "date": "2026-11-12T00:36:11.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/ck5ynyw527wdo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5293/live/110e8ed0-dd8d-11f1-a56e-d7dc6014806d.jpg"
-    },
-    {
-      "id": "89-0-受访者感觉当前ai卖家秀与收到实物差距大-10b9627c47b0",
-      "language": "zh",
-      "title": "89.0%受访者感觉当前AI卖家秀与收到实物差距大",
-      "excerpt": "89.0%受访者感觉当前AI卖家秀与收到实物差距大",
-      "date": "2026-11-12T00:29:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730603.shtml",
-      "image": ""
-    },
-    {
-      "id": "第二艘国产大型邮轮-爱达-花城号-完成首个试运营航次-0df2717d21a1",
-      "language": "zh",
-      "title": "第二艘国产大型邮轮“爱达·花城号”完成首个试运营航次",
-      "excerpt": "今天(12日)，第二艘国产大型邮轮“爱达·花城号”顺利完成首个试运营航次，抵达广州南沙国际邮轮母港。在首个试运营航次中，“爱达·花城号”模拟真实运营状态，围绕海事安全运营、船岸联动、全船信息系统以及餐饮、客房、演艺等核心服务流程，开展了全方位的压力测试与演练。",
-      "date": "2026-11-12T00:26:27.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730602.shtml",
-      "image": ""
-    },
-    {
-      "id": "中央气象台-云南华南江南等地有降水-新疆等地多雨雪-华北黄淮等地有雾霾天气-ed8fa65ffa9f",
-      "language": "zh",
-      "title": "中央气象台：云南华南江南等地有降水 新疆等地多雨雪 华北黄淮等地有雾霾天气",
-      "excerpt": "中新网11月12日电 据中央气象台网站12日消息，昨日，云南西部和南部降雨明显，新疆北部出现雨雪天气。预计未来三天，云南、华南等地有较强降雨，注意防范局地强降雨可能引发的次生灾害；新疆、西北地区等地关注低温雨雪天气对交通、旅游、农牧业等的影响。另外，华北、黄淮及汾渭平原等地有轻至中度霾、局地重度霾，关注对人体健康、交通的影响。",
-      "date": "2026-11-12T00:23:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730596.shtml",
-      "image": ""
-    },
-    {
-      "id": "中央气象台对台风-查帕卡-停止编号-163b98d7919e",
-      "language": "zh",
-      "title": "中央气象台对台风“查帕卡”停止编号",
-      "excerpt": "中国天气网讯 今年第32号台风“查帕卡”已于昨天(11日)晚上在日本东南洋面变性为温带气旋，中央气象台对其停止编号。",
-      "date": "2026-11-12T00:21:34.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730601.shtml",
-      "image": ""
-    },
-    {
-      "id": "拜登在爱尔兰遭抗议者扔掷物品-一男子被起诉-e35eaa79083c",
-      "language": "zh",
-      "title": "拜登在爱尔兰遭抗议者扔掷物品 一男子被起诉",
-      "excerpt": "中新网11月12日电 据美国全国广播公司(NBC)当地时间11日报道，美国前总统拜登10日在爱尔兰首都都柏林出席一场活动时，遭部分支持巴勒斯坦的抗议者扔掷物品。",
-      "date": "2026-11-12T00:21:14.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730600.shtml",
-      "image": ""
-    },
-    {
-      "id": "大雾黄色预警-7省市有大雾-河北辽宁贵州部分地区有浓雾-fe40e386ec8f",
-      "language": "zh",
-      "title": "大雾黄色预警：7省市有大雾 河北辽宁贵州部分地区有浓雾",
-      "excerpt": "中国天气网讯 中央气象台11月12日06时继续发布大雾黄色预警：",
-      "date": "2026-11-12T00:19:00.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730599.shtml",
-      "image": ""
-    },
-    {
-      "id": "北京今天有雾昼夜温差大-明后天扩散条件逐渐转差能见度下降-f9c2921b43ef",
-      "language": "zh",
-      "title": "北京今天有雾昼夜温差大 明后天扩散条件逐渐转差能见度下降",
-      "excerpt": "中国天气网讯 今天(11月12日)，北京有轻雾或雾，晴天继续在线，昼夜温差大。明后天，随着扩散条件和能见度的逐渐转差，局地最低能见度不足500米，公众出行注意防范。",
-      "date": "2026-11-12T00:15:28.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730597.shtml",
-      "image": ""
-    },
-    {
-      "id": "坚持用党的创新理论凝心铸魂-学习贯彻党的二十届五中全会精神-7adf163a274e",
-      "language": "zh",
-      "title": "坚持用党的创新理论凝心铸魂（学习贯彻党的二十届五中全会精神）",
-      "excerpt": "李书磊",
-      "date": "2026-11-12T00:10:54.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730591.shtml",
-      "image": ""
-    },
-    {
-      "id": "伊朗高官宣布-目前波斯湾内没有美军存在-f57d1d68338e",
-      "language": "zh",
-      "title": "伊朗高官宣布：目前波斯湾内没有美军存在",
-      "excerpt": "中新网11月12日电 据伊朗媒体报道，当地时间11日，伊朗武装部队副总参谋长海达里表示，目前，波斯湾内没有美军存在。",
-      "date": "2026-11-12T00:07:52.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730595.shtml",
-      "image": ""
-    },
-    {
-      "id": "习言道-激励和团结海内外全体中华儿女为实现中华民族伟大复兴而共同奋斗-f63238b5766a",
-      "language": "zh",
-      "title": "习言道｜激励和团结海内外全体中华儿女为实现中华民族伟大复兴而共同奋斗",
-      "excerpt": "习近平总书记指出，缅怀孙中山先生等革命先驱的历史功勋，就是要学习和弘扬他们为振兴中华而矢志不渝的崇高精神，激励和团结海内外全体中华儿女为实现中华民族伟大复兴而共同奋斗。今天是孙中山先生诞辰160周年纪念日，一起聆听总书记重要讲话，学习和继承孙中山先生的宝贵精神，为振兴中华继续奋斗。",
-      "date": "2026-11-12T00:05:50.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/gn/shipin/2026/11-12/news1074633.shtml",
-      "image": ""
-    },
-    {
-      "id": "inside-india-newsletter-trump-s-poll-setback--b424ee054778",
-      "language": "en",
-      "title": "Inside India newsletter: Trump's poll setback fuels hope for U.S.-India trade deal by year end",
-      "excerpt": "While American voters are more affected by import duties on Canadian goods, experts said that a trade deal with India could blunt criticism against tariffs.",
-      "date": "2026-11-11T23:57:38.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/12/us-india-trade-tariffs-trump-modi.html",
-      "image": ""
-    },
-    {
-      "id": "democrat-scott-colom-wins-mississippi-senate--6b0875495d99",
-      "language": "en",
-      "title": "Democrat Scott Colom wins Mississippi Senate race in surprise victory for party",
-      "excerpt": "Colom's victory makes him the first black person from Mississippi to be elected to the US Senate in more than 140 years.",
-      "date": "2026-11-11T23:52:30.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dc59/live/150d2fe0-ddde-11f1-b465-b9821c2582d4.jpg"
-    },
-    {
-      "id": "一离职员工被索赔二十余万元-工作交接义务边界何在-21959528e6cd",
-      "language": "zh",
-      "title": "一离职员工被索赔二十余万元 工作交接义务边界何在",
-      "excerpt": "说案",
-      "date": "2026-11-11T23:51:43.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/fz/2026/11-12/10730590.shtml",
-      "image": ""
-    },
-    {
-      "id": "the-unfolding-jensen-huang-scandal-a-timeline-2c1c14009b34",
-      "language": "en",
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "excerpt": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "date": "2026-11-11T23:50:00.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "image": ""
-    },
-    {
-      "id": "薪酬-股份-背后的腐败账-两高-典型案例揭秘新型-隐性职务犯罪-89d839eca45c",
-      "language": "zh",
-      "title": "“薪酬”“股份”背后的腐败账 “两高”典型案例揭秘新型、隐性职务犯罪",
-      "excerpt": "解读",
-      "date": "2026-11-11T23:47:18.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/fz/2026/11-12/10730589.shtml",
-      "image": ""
-    },
-    {
-      "id": "基金会-如何赢得更多公信力-ea982b9893c4",
-      "language": "zh",
-      "title": "基金会，如何赢得更多公信力？",
-      "excerpt": "新闻1+1丨基金会，如何赢得更多公信力？",
-      "date": "2026-11-11T23:42:30.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730588.shtml",
-      "image": ""
-    },
-    {
-      "id": "jim-cramer-says-investors-need-to-pay-attenti-d423efe0e26a",
-      "language": "en",
-      "title": "Jim Cramer says investors need to pay attention to CoreWeave. Here's why",
-      "excerpt": "Cramer said he's becoming less skeptical of CoreWeave after strong earnings and reassuring comments from its CEO.",
-      "date": "2026-11-11T23:41:46.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/11/jim-cramer-coreweave-earnings-ceo-interview.html",
-      "image": ""
-    },
-    {
-      "id": "王毅同美国国务卿鲁比奥通电话-e0a7442203a1",
-      "language": "zh",
-      "title": "王毅同美国国务卿鲁比奥通电话",
-      "excerpt": "中新社北京11月11日电 中共中央政治局委员、外交部长王毅11日同美国国务卿鲁比奥通电话。双方就中美关系及两国元首互动深入交换意见，通话是积极和建设性的。",
-      "date": "2026-11-11T23:39:22.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730581.shtml",
       "image": ""
     }
   ]
