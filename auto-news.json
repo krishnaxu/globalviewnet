@@ -1,6 +1,116 @@
 {
-  "generated_at": "2026-11-12T16:10:32.000Z",
+  "generated_at": "2026-11-12T17:11:42.535Z",
   "items": [
+    {
+      "id": "jensen-huang-s-nvidia-exit-casts-shadow-over--e1b2c516f993",
+      "language": "en",
+      "title": "Jensen Huang's Nvidia exit casts shadow over Wall Street’s $500 billion AI financing bet",
+      "excerpt": "Nvidia's leadership crisis threatens to spill over into the AI financing boom.",
+      "date": "2026-11-12T17:06:18.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/nvidia-ceo-exit-ai-financing.html",
+      "image": ""
+    },
+    {
+      "id": "softbank-s-billion-dollar-loss-may-have-put-a-0039716ebb4a",
+      "language": "en",
+      "title": "SoftBank’s billion-dollar loss may have put a cap on AI’s natural gas ambitions",
+      "excerpt": "SoftBank lost over $3 billion pre-ordering natural gas turbines to power AI data centers. Here's what the loss means to power markets.",
+      "date": "2026-11-12T17:00:52.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
+      "image": ""
+    },
+    {
+      "id": "phota-labs-uses-ai-to-turn-everyday-photos-in-62853baff9e5",
+      "language": "en",
+      "title": "Phota Labs uses AI to turn everyday photos into professional-looking shots",
+      "excerpt": "Rather than giving consumers yet another photo-editing tool, Phota Labs aims to use advances in AI to automate the editing process so it’s easier for anyone to turn everyday moments into better photos.",
+      "date": "2026-11-12T17:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
+      "image": ""
+    },
+    {
+      "id": "jim-cramer-on-why-nvidia-shares-are-not-down--0ade73426bae",
+      "language": "en",
+      "title": "Jim Cramer on why Nvidia shares are not down more — plus, 3 stocks to buy",
+      "excerpt": "The Investing Club holds its \"Morning Meeting\" every weekday at 10:20 a.m. ET.",
+      "date": "2026-11-12T16:55:32.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/12/jim-cramer-on-why-nvidia-shares-are-not-down-more-plus-3-stocks-to-buy.html",
+      "image": ""
+    },
+    {
+      "id": "pentagon-backs-war-memorial-guard-who-reprima-8b16e7143986",
+      "language": "en",
+      "title": "Pentagon backs war memorial guard who reprimanded Hegseth's group",
+      "excerpt": "The guard told the defence secretary and his companions to maintain an atmosphere of \"silence and respect\" during a Veterans Day visit.",
+      "date": "2026-11-12T16:52:53.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cb93/live/054a0170-de1d-11f1-9d68-c1daaffc01f2.jpg"
+    },
+    {
+      "id": "jensen-huang-agrees-to-testify-before-congres-548fe94a79cb",
+      "language": "en",
+      "title": "Jensen Huang agrees to testify before Congress",
+      "excerpt": "Huang, who was ousted as CEO following reports of an alleged affair with a woman suspected of spying for China, agreed to testify Wednesday after several senior lawmakers threatened to subpoena him.",
+      "date": "2026-11-12T16:36:37.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/",
+      "image": ""
+    },
+    {
+      "id": "five-ways-jensen-huang-s-ouster-from-nvidia-c-c32c9bb4ff06",
+      "language": "en",
+      "title": "Five ways Jensen Huang’s ouster from Nvidia could damage the AI industry",
+      "excerpt": "Nvidia's ousted CEO Jensen Huang's downfall isn’t just your run-of-the-mill salacious billionaire sex scandal. He was using his influence to push the AI industry in some very specific ways.",
+      "date": "2026-11-12T16:32:33.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/five-ways-jensen-huangs-ouster-from-nvidia-could-damage-the-ai-industry/",
+      "image": ""
+    },
+    {
+      "id": "马斯克-招揽黄仁勋将是我的荣幸-16f4463f1b16",
+      "language": "zh",
+      "title": "马斯克：招揽黄仁勋将是我的荣幸",
+      "excerpt": "中新网11月13日电 综合报道，当地时间11月12日，美国企业家马斯克在社交媒体平台回应网友请他聘用黄仁勋时表示：“那将是我的荣幸”。",
+      "date": "2026-11-12T16:28:13.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731234.shtml",
+      "image": ""
+    },
+    {
+      "id": "特朗普-建议库克接替黄仁勋担任英伟达ceo-67c46a5f7f1e",
+      "language": "zh",
+      "title": "特朗普：建议库克接替黄仁勋担任英伟达CEO",
+      "excerpt": "中新网11月13日电 据外媒报道，美国总统特朗普当地时间12日对英伟达下一任首席执行官提出了自己的推荐人选——蒂姆·库克。",
+      "date": "2026-11-12T16:26:21.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731233.shtml",
+      "image": ""
+    },
+    {
+      "id": "trump-floats-apple-chairman-tim-cook-as-jense-17107c7279fd",
+      "language": "en",
+      "title": "Trump floats Apple chairman Tim Cook as Jensen Huang’s successor",
+      "excerpt": "In a post on Truth Social, President Trump says only one man can take Jensen Huang's place as head of Nvidia: Tim Cook.",
+      "date": "2026-11-12T16:12:44.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/12/trump-floats-apple-chairman-tim-cook-as-jensen-huangs-successor/",
+      "image": ""
+    },
+    {
+      "id": "the-rise-and-fall-of-jensen-huang-how-the-tec-00916c7a76a8",
+      "language": "en",
+      "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+      "excerpt": "Within days, Huang's status as a seemingly untouchable figure leading the global tech race has crumbled.",
+      "date": "2026-11-12T16:02:10.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b83b/live/928866f0-deac-11f1-b441-2b33b063138f.jpg"
+    },
     {
       "id": "whoop-just-launched-a-social-network-23cd30b64977",
       "language": "en",
@@ -39,6 +149,16 @@
       "date": "2026-11-12T15:37:29.000Z",
       "source_name": "TechCrunch",
       "source_url": "https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/",
+      "image": ""
+    },
+    {
+      "id": "yankees-president-randy-levine-pushes-college-d3d17b986734",
+      "language": "en",
+      "title": "Yankees President Randy Levine pushes college sports bill, discusses MLB labor negotiations",
+      "excerpt": "Yankees President Randy Levine discusses the Protect College Sports Act, and the state of MLB's labor negotiations.",
+      "date": "2026-11-12T15:34:31.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/12/yankees-randy-levine-discusses-college-sports-bill-mlb-labor-deal.html",
       "image": ""
     },
     {
@@ -380,6 +500,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10731212.shtml",
       "image": ""
+    },
+    {
+      "id": "eight-killed-in-colombian-air-strike-targetin-c853cc05493b",
+      "language": "en",
+      "title": "Eight killed in Colombian air strike targeting Gulf Clan gang",
+      "excerpt": "A suspected gang leader considered a \"priority target\" was among those killed, the Colombian president says.",
+      "date": "2026-11-12T13:58:49.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/crgj3v3z10dno?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cf6/live/b6195780-de9a-11f1-a701-fddedf244c16.jpg"
     },
     {
       "id": "海南新组建空天集团-注册资金100亿元-f1010780a0ab",
@@ -1110,6 +1240,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10731039.shtml",
       "image": ""
+    },
+    {
+      "id": "five-new-miniature-frog-species-found-in-east-c714eb74d985",
+      "language": "en",
+      "title": "Five new miniature frog species found in eastern Himalayas",
+      "excerpt": "Scientists say the frogs evolved as the Himalayas rose and the Asian monsoon took shape.",
+      "date": "2026-11-12T11:07:19.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c8kgkw7dr5rko?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6413/live/e56f4d60-de76-11f1-9115-cfe6d179af3a.jpg"
     },
     {
       "id": "首届-一带一路-纪实影像大会在乌鲁木齐举办-c963223ebb9e",
@@ -2859,146 +2999,6 @@
       "date": "2026-11-12T03:17:44.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730704.shtml",
-      "image": ""
-    },
-    {
-      "id": "柬埔寨风情汇聚昆明-上演异域文化盛宴-698612e9c0d2",
-      "language": "zh",
-      "title": "柬埔寨风情汇聚昆明 上演异域文化盛宴",
-      "excerpt": "11月11日，市民品尝柬埔寨食品。当日，“首届柬中经贸·文旅交流促进活动周”在云南省昆明市落幕，为期5天的活动集合传统演艺、特色市集，为市民带来柬埔寨文化盛宴。中新社记者 李嘉娴 摄 11月11日，演员带来《列队少女》舞蹈表演。当日，“首届柬中经贸·文旅交流促进活动周”在云南省昆明市落幕，为期5天的活动集合传统演艺、特色市集，为市民带来柬埔寨文化盛宴。中新社记者 李嘉娴 摄 11月11日，演员带来《列队少女》舞蹈表演。当日，“首届柬中经贸·文旅交流促进活动周”在云南省昆明市落幕，为期5天的活动集合传统演艺、特色市集，为市民带来柬埔寨文化盛宴。中新社记者 李嘉娴 摄 11月11日，柬埔寨传统服饰集中展示。当日，“首届柬中经贸·文旅交流促进活动周”在云南省昆明市落幕，为期5天的活动集合传统演艺、特色市集，为市民带来柬埔寨文化盛宴。中新社记者 李嘉娴 摄 11月11日，柬埔寨学生合唱《思念中国》。当日，“首届柬中经贸·文旅交流促进活动周”在云南省昆明市落幕，为期5天的活动集合传统演艺、特色市集，为市民带来柬埔寨文化盛宴。中新社记者 李嘉娴 摄 11月11日，来自柬埔寨暹粒的留学生介绍家乡的吴哥窟。当日，“首届柬中经贸·文旅交流促进活动周”在云南省昆明市落幕，为期5天的活动集合传统演艺、特色市集，为市民带来柬埔寨文化盛宴。中新社记者 李嘉娴 摄",
-      "date": "2026-11-12T03:17:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-12/10730698.shtml",
-      "image": ""
-    },
-    {
-      "id": "文明互鉴国际论坛二〇二六-在澳门举办-以文化为桥-跨山海对话-527759c50366",
-      "language": "zh",
-      "title": "“文明互鉴国际论坛二〇二六”在澳门举办 以文化为桥 跨山海对话",
-      "excerpt": "“文明互鉴国际论坛2026”11月9日至10日在澳门举办。来自20多个国家和地区的政府部门代表、国际组织代表以及专家学者与会，展开近40场专题演讲、文明对话、校园分享等，展现了跨领域专家汇聚、高水平国际交流、高端文明对话的鲜明特色。",
-      "date": "2026-11-12T03:15:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/11-12/10730707.shtml",
-      "image": ""
-    },
-    {
-      "id": "who-could-replace-jensen-huang-a-highly-unsci-a552875406bb",
-      "language": "en",
-      "title": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
-      "excerpt": "Nvidia has no succession plan and a CEO in hot water, so we’ve drafted a shortlist.",
-      "date": "2026-11-12T03:13:10.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
-      "image": ""
-    },
-    {
-      "id": "上海气质-国际风范-在进博会感受有序与活力-7c1b0c6eefb9",
-      "language": "zh",
-      "title": "上海气质 国际风范——在进博会感受有序与活力",
-      "excerpt": "新华社北京11月11日电 11月11日,《新华每日电讯》发表题为《上海气质 国际风范——在进博会感受有序与活力》的报道。",
-      "date": "2026-11-12T03:13:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730706.shtml",
-      "image": ""
-    },
-    {
-      "id": "what-we-know-so-far-about-nvidia-partner-mega-17557aa27799",
-      "language": "en",
-      "title": "What we know so far about Nvidia partner Megaspeed’s Asia footprint",
-      "excerpt": "Megaspeed is at the center of a U.S. probe over its role in sending billions of restricted Nvidia chips to China, and its executive's alleged affair with Jensen Huang.",
-      "date": "2026-11-12T03:02:03.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/12/nvidia-megaspeed-alice-huang-jensen-.html",
-      "image": ""
-    },
-    {
-      "id": "俄外交部-日本应放弃推进再军事化-dbc1ec0ed28e",
-      "language": "zh",
-      "title": "俄外交部：日本应放弃推进再军事化",
-      "excerpt": "当地时间11月11日，俄罗斯外交部发言人扎哈罗娃在例行记者会上表示，日本应汲取历史教训，放弃加速推进再军事化，停止试图掩盖日本军国主义在第二次世界大战期间犯下的罪行。",
-      "date": "2026-11-12T03:00:45.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730695.shtml",
-      "image": ""
-    },
-    {
-      "id": "美政商界人士呼吁共同推动稳定健康的美中关系-bef04c5580cf",
-      "language": "zh",
-      "title": "美政商界人士呼吁共同推动稳定健康的美中关系",
-      "excerpt": "新华社纽约11月10日电(记者施春#8195;刘亚南)美中关系全国委员会成立60周年暨2026年度颁奖晚宴10日晚在纽约举办，中美政商界人士近400人出席。与会嘉宾表示，两国元首对新阶段两国关系发展的战略引领至关重要，呼吁扩大共识、管控分歧，共同推动发展稳定健康的美中关系。",
-      "date": "2026-11-12T02:58:55.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-12/10730693.shtml",
-      "image": ""
-    },
-    {
-      "id": "中消协-网购-ab货-同价不同质-公平交易不容-欺生凌弱-59df9d477c08",
-      "language": "zh",
-      "title": "中消协：网购“AB货”同价不同质 公平交易不容“欺生凌弱”",
-      "excerpt": "中新网11月12日电 12日，中国消费者协会在其官方网站发布《中消协观点：网购“AB货”同价不同质公平交易不容“欺生凌弱”》，文章称，近期，网购“AB货”争议持续升温，成为消费领域热门话题。网购“AB货”是指部分电商经营者以同一链接、同一价格销售同一商品时，针对不同消费者区别发送品质明显不同的商品。",
-      "date": "2026-11-12T02:52:51.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730683.shtml",
-      "image": ""
-    },
-    {
-      "id": "中新健康-减肥神药-或致永久失明-司美格鲁肽副作用-冲上热搜-3f741adb95f3",
-      "language": "zh",
-      "title": "中新健康｜“减肥神药”或致永久失明 “司美格鲁肽副作用”冲上热搜",
-      "excerpt": "中新网北京11月11日电(罗春昊)“司美格鲁肽副作用”近日冲上热搜。",
-      "date": "2026-11-12T02:52:35.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-12/10730631.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国外贸-apec含量-十足-这组数据给出答案-41220cb87d82",
-      "language": "zh",
-      "title": "中国外贸“APEC含量”十足 这组数据给出答案",
-      "excerpt": "今年是APEC“中国年”。中国与APEC经济体间的贸易往来不断加深，结构也不断优化。中国外贸的APEC底色究竟有多浓，通过一组数据了解。",
-      "date": "2026-11-12T02:52:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-12/10730687.shtml",
-      "image": ""
-    },
-    {
-      "id": "长征路上-红军干部始终站在队伍最前列-冲在战斗第一线-77186d475922",
-      "language": "zh",
-      "title": "长征路上，红军干部始终站在队伍最前列，冲在战斗第一线",
-      "excerpt": "中新网11月12日电(记者 刁炜)在中国人民革命军事博物馆，“伟大的远征——纪念中国工农红军长征胜利90周年主题展览”吸引全国各地观众慕名而来，展厅内人流络绎不绝。在真实文物与历史场景的交织中，人们触摸信仰温度、聆听长征故事，被红军的伟大精神与感人事迹深深震撼。",
-      "date": "2026-11-12T02:50:56.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-12/10730625.shtml",
-      "image": ""
-    },
-    {
-      "id": "越剧-断桥-游湖-快闪西湖-文艺赋美-吸引游人-2f3d219de0a3",
-      "language": "zh",
-      "title": "越剧《断桥·游湖》快闪西湖 “文艺赋美”吸引游人",
-      "excerpt": "11月11日，越剧角色“白娘子”“小青”在断桥上演绎吸引游人。当日，越剧《断桥·游湖》在浙江杭州西湖进行快闪表演，经典传统文化走出剧院、走向公众，“文艺赋美”的演绎吸引游人观赏。中新社记者 王刚 摄 11月11日，越剧角色“许仙”“白娘子”“小青”在断桥桥头演绎吸引游人。当日，越剧《断桥·游湖》在浙江杭州西湖进行快闪表演，经典传统文化走出剧院、走向公众，“文艺赋美”的演绎吸引游人观赏。中新社记者 王刚 摄 11月11日，越剧角色“许仙”“白娘子”“小青”等在西湖小瀛洲演绎。当日，越剧《断桥·游湖》在浙江杭州西湖进行快闪表演，经典传统文化走出剧院、走向公众，“文艺赋美”的演绎吸引游人观赏。中新社记者 王刚 摄 11月11日，越剧角色“许仙”“白娘子”“小青”等在西湖小瀛洲演绎。当日，越剧《断桥·游湖》在浙江杭州西湖进行快闪表演，经典传统文化走出剧院、走向公众，“文艺赋美”的演绎吸引游人观赏。中新社记者 王刚 摄 11月11日，西湖游人观看越剧演绎。当日，越剧《断桥·游湖》在浙江杭州西湖进行快闪表演，经典传统文化走出剧院、走向公众，“文艺赋美”的演绎吸引游人观赏。中新社记者 王刚 摄 11月11日，越剧角色“许仙”“白娘子”在断桥桥头演绎。当日，越剧《断桥·游湖》在浙江杭州西湖进行快闪表演，经典传统文化走出剧院、走向公众，“文艺赋美”的演绎吸引游人观赏。中新社记者 王刚 摄 11月11日，越剧角色“许仙”“白娘子”在西湖小瀛洲演绎吸引游人。当日，越剧《断桥·游湖》在浙江杭州西湖进行快闪表演，经典传统文化走出剧院、走向公众，“文艺赋美”的演绎吸引游人观赏。中新社记者 王刚 摄 11月",
-      "date": "2026-11-12T02:49:06.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-12/10730672.shtml",
-      "image": ""
-    },
-    {
-      "id": "深圳华强北吸引海外客商参观采购-d9752a7deb35",
-      "language": "zh",
-      "title": "深圳华强北吸引海外客商参观采购",
-      "excerpt": "11月11日，广东深圳华强北吸引海外客商。华强北位于深圳福田，被称为“中国电子第一街”。这里聚集了数十家大型电子市场，从芯片、元器件到手机数码、智能硬件一应俱全。中新社记者 陈楚红 摄 11月11日，广东深圳华强北的电子产品吸引海外客商咨询。华强北位于深圳福田，被称为“中国电子第一街”。这里聚集了数十家大型电子市场，从芯片、元器件到手机数码、智能硬件一应俱全。中新社记者 陈楚红 摄 11月11日，广东深圳华强北的智能眼镜吸引海外客商体验。华强北位于深圳福田，被称为“中国电子第一街”。这里聚集了数十家大型电子市场，从芯片、元器件到手机数码、智能硬件一应俱全。中新社记者 陈楚红 摄 11月11日，广东深圳华强北的智能门禁锁等产品吸引海外客商采购。华强北位于深圳福田，被称为“中国电子第一街”。这里聚集了数十家大型电子市场，从芯片、元器件到手机数码、智能硬件一应俱全。中新社记者 陈楚红 摄 11月11日，广东深圳华强北的电子产品吸引海外客商咨询。华强北位于深圳福田，被称为“中国电子第一街”。这里聚集了数十家大型电子市场，从芯片、元器件到手机数码、智能硬件一应俱全。中新社记者 陈楚红 摄 11月11日，广东深圳华强北的电子产品吸引海外客商咨询。华强北位于深圳福田，被称为“中国电子第一街”。这里聚集了数十家大型电子市场，从芯片、元器件到手机数码、智能硬件一应俱全。中新社记者 陈楚红 摄",
-      "date": "2026-11-12T02:48:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-12/10730668.shtml",
-      "image": ""
-    },
-    {
-      "id": "让贸易成为促进全球发展繁荣的普惠引擎-f565cd5eabab",
-      "language": "zh",
-      "title": "让贸易成为促进全球发展繁荣的普惠引擎",
-      "excerpt": "让贸易成为促进全球发展繁荣的普惠引擎(国际论坛)",
-      "date": "2026-11-12T02:46:48.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-12/10730684.shtml",
       "image": ""
     }
   ]
