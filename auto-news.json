@@ -1,6 +1,146 @@
 {
-  "generated_at": "2026-11-14T15:03:33.011Z",
+  "generated_at": "2026-11-14T19:55:42.734Z",
   "items": [
+    {
+      "id": "copper-wire-upgrade-caused-nationwide-flight--1e4c1fc5abc4",
+      "language": "en",
+      "title": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
+      "excerpt": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
+      "date": "2026-11-14T19:12:25.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ea11/live/3adfb390-e05f-11f1-9e26-b3b65586122f.jpg"
+    },
+    {
+      "id": "nvidia-s-leadership-crisis-rattles-the-ai-tra-24c04d1c0273",
+      "language": "en",
+      "title": "Nvidia's leadership crisis rattles the AI trade. Here's how we're adjusting our portfolio",
+      "excerpt": "Despite the turbulence, the S&P 500 secured a weekly gain of 2.5%, while the tech-heavy Nasdaq added 2.3%.",
+      "date": "2026-11-14T18:48:39.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
+      "image": ""
+    },
+    {
+      "id": "italy-fines-meta-805m-over-accessing-users-ph-d66099d92304",
+      "language": "en",
+      "title": "Italy fines Meta €805m over accessing users' photos",
+      "excerpt": "The social media giant is accused of not informing 20 million users it had access to their photos.",
+      "date": "2026-11-14T18:28:06.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d6be/live/f51842e0-e041-11f1-88e1-eb4e155225b3.jpg"
+    },
+    {
+      "id": "philippines-wins-first-eurovision-song-contes-76599d9076d2",
+      "language": "en",
+      "title": "Philippines wins first Eurovision Song Contest Asia",
+      "excerpt": "Front-runner Carmelle emerges victorious with her women's empowerment anthem Sobra-Sobra.",
+      "date": "2026-11-14T18:17:58.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/965c/live/69643890-e04f-11f1-8d5a-49633fbae59d.jpg"
+    },
+    {
+      "id": "sotheby-s-auction-of-180m-van-gogh-challenged-d644feeef9f2",
+      "language": "en",
+      "title": "Sotheby's auction of $180m Van Gogh challenged over claims it was 'sold under duress'",
+      "excerpt": "Sotheby's says it will work with the heirs of a family who had previously owned the artwork to try and reach a solution.",
+      "date": "2026-11-14T18:00:10.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmwy05gg75lvo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4bff/live/0bb4d910-e046-11f1-88e1-eb4e155225b3.jpg"
+    },
+    {
+      "id": "got-an-iphone-duo-these-9-settings-make-it-ea-85e3933679b6",
+      "language": "en",
+      "title": "Got an iPhone Duo? These 9 settings make it easier to use",
+      "excerpt": "From Touch ID shortcuts to smarter volume buttons and camera tricks, these tweaks make Apple's foldable iPhone easier to use every day.",
+      "date": "2026-11-14T18:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/14/got-an-iphone-duo-these-9-settings-make-it-easier-to-use/",
+      "image": ""
+    },
+    {
+      "id": "nvidia-board-urged-to-consider-potential-retu-85c189086e19",
+      "language": "en",
+      "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
+      "excerpt": "Two Nvidia investors with about $2.13 billion of stock disclosed as of June 30 are calling for a deliberate leadership search after Huang’s resignation.",
+      "date": "2026-11-14T17:46:06.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
+      "image": ""
+    },
+    {
+      "id": "transportation-secretary-blames-routine-equip-fcddece06a43",
+      "language": "en",
+      "title": "Transportation secretary blames ‘routine’ equipment upgrade for grounding flights nationwide",
+      "excerpt": "FAA administrator Bryan Bedford also said there's \"zero evidence of anything AI-related.\"",
+      "date": "2026-11-14T17:45:04.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/",
+      "image": ""
+    },
+    {
+      "id": "the-ai-graveyard-a-running-list-of-projects-a-0dac5bc8bd77",
+      "language": "en",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "excerpt": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "date": "2026-11-14T17:30:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "image": ""
+    },
+    {
+      "id": "asian-governments-react-to-nvidia-ceo-jensen--8097820885cc",
+      "language": "en",
+      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+      "excerpt": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
+      "date": "2026-11-14T16:34:15.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+      "image": ""
+    },
+    {
+      "id": "how-nvidia-turmoil-and-a-democratic-congress--f9f0c603b448",
+      "language": "en",
+      "title": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
+      "excerpt": "ETF experts say Nvidia’s leadership turmoil and Democratic control of Congress could shift AI demand to the benefit of other Big Tech stocks, rival chipmakers.",
+      "date": "2026-11-14T15:50:43.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
+      "image": ""
+    },
+    {
+      "id": "在柬埔寨金边-法语国家文化村-感受多元文化魅力-c4ec82414ee9",
+      "language": "zh",
+      "title": "在柬埔寨金边“法语国家文化村”感受多元文化魅力",
+      "excerpt": "中新社金边11月14日电 题：在柬埔寨金边“法语国家文化村”感受多元文化魅力",
+      "date": "2026-11-14T15:43:11.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-14/10732210.shtml",
+      "image": ""
+    },
+    {
+      "id": "nigeria-cautions-against-travel-via-ethiopia--43f46995ee09",
+      "language": "en",
+      "title": "Nigeria cautions against travel via Ethiopia's main airport due to altitude",
+      "excerpt": "The foreign ministry in Abuja says 6 Nigerians with underlying health problems have died this year while transiting through Addis Ababa.",
+      "date": "2026-11-14T15:42:54.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmz6qjpdy2wqo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/103b/live/ed70d6c0-e040-11f1-88e1-eb4e155225b3.jpg"
+    },
+    {
+      "id": "rising-rents-draw-wall-street-money-to-indust-2683b088b23f",
+      "language": "en",
+      "title": "Rising rents draw Wall Street money to industrial outdoor storage lot investments across the U.S.",
+      "excerpt": "A real estate investment in markets across the U.S. called 'industrial outdoor storage' is attracting Wall Street giants including Brookfield and Blackstone.",
+      "date": "2026-11-14T15:14:57.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/14/real-estate-rental-income-industrial-storage-market.html",
+      "image": ""
+    },
     {
       "id": "英国格拉斯哥公寓楼发生蓄意纵火案-15人送医-0bec353c876f",
       "language": "zh",
@@ -2860,146 +3000,6 @@
       "source_name": "BBC World",
       "source_url": "https://www.bbc.co.uk/news/videos/cwm2591k27e2o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cf55/live/6c53e480-df49-11f1-b441-2b33b063138f.jpg"
-    },
-    {
-      "id": "why-singapore-keeps-turning-up-in-the-fight-o-6a5d8039e378",
-      "language": "en",
-      "title": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
-      "excerpt": "Singapore said it had barred Alice Huang from re-entering the country and that U.S. authorities had provided limited help with its yearlong investigations.",
-      "date": "2026-11-13T07:15:01.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
-      "image": ""
-    },
-    {
-      "id": "african-miss-universe-beauty-queens-in-limbo--2699a76e030e",
-      "language": "en",
-      "title": "African Miss Universe beauty queens in limbo as US visa restrictions bite",
-      "excerpt": "Hall has been seeking a US visa in South Africa as other African beauty queens face similar hurdles.",
-      "date": "2026-11-13T07:01:43.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cklyw3neqg2wo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0c93/live/2288e9c0-df28-11f1-b396-2b394d1b806d.jpg"
-    },
-    {
-      "id": "whatever-happened-to-the-300-000-diamond-that-5de73707b796",
-      "language": "en",
-      "title": "Whatever happened to the $300,000 diamond that went missing in F1 crash?",
-      "excerpt": "Whatever happened to the diamond that went missing after the Formula 1 car it was attached to crashed?",
-      "date": "2026-11-13T06:12:20.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/sport/formula1/articles/c60735md0jrpo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dc35/live/a5547670-df5b-11f1-b441-2b33b063138f.jpg"
-    },
-    {
-      "id": "伊朗专家会议呼吁审议退出-不扩散核武器条约-4a52d2be078a",
-      "language": "zh",
-      "title": "伊朗专家会议呼吁审议退出《不扩散核武器条约》",
-      "excerpt": "中新社北京11月13日电 综合消息：伊朗专家会议当地时间12日发表声明，呼吁有关部门审议退出《不扩散核武器条约》。",
-      "date": "2026-11-13T03:57:05.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731357.shtml",
-      "image": ""
-    },
-    {
-      "id": "日本民间团体举行集会-反对高市政权修宪扩军-27d1bbe0388c",
-      "language": "zh",
-      "title": "日本民间团体举行集会 反对高市政权修宪扩军",
-      "excerpt": "12日，日本多个民间团体在东京众议院第二议员会馆前举行抗议集会，反对高市政权推动修宪扩军等相关动向。集会参加者表示，近期高市政权讨论修改“安保三文件”以及不断推动修改日本宪法等举动令人担忧，日本绝不能再次走上战争道路。",
-      "date": "2026-11-13T03:41:12.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731394.shtml",
-      "image": ""
-    },
-    {
-      "id": "日本政府计划将-集体韧性-写入安保战略-进一步恶化地区环境-e22d1c35b239",
-      "language": "zh",
-      "title": "日本政府计划将“集体韧性”写入安保战略 进一步恶化地区环境",
-      "excerpt": "日本正在加速谋划年内对“安保三文件”进行修订。据日本方面12日消息，日本政府计划将所谓“集体韧性”的理念写入“安保三文件”之一的《国家安全保障战略》。",
-      "date": "2026-11-13T03:29:05.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731385.shtml",
-      "image": ""
-    },
-    {
-      "id": "人机之间探寻表演本真-中外名家齐聚上戏共探育人路径-c421991e4bf6",
-      "language": "zh",
-      "title": "人机之间探寻表演本真 中外名家齐聚上戏共探育人路径",
-      "excerpt": "中新网上海11月13日电(记者 许婧)“AI可以抓取海量微表情，生成一些我本人演不出来的效果，但人的表演像π，无穷无尽，里面藏着算法算不出来的灵魂。”演员、导演徐峥12日在上海戏剧学院第四届表演教育国际论坛暨上海高校国际青年学者论坛上说。",
-      "date": "2026-11-13T03:18:17.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-13/10731359.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026年美国麻疹相关死亡病例升至6例-1a93660cd034",
-      "language": "zh",
-      "title": "2026年美国麻疹相关死亡病例升至6例",
-      "excerpt": "中新网11月13日电 据英国《卫报》报道，美国疾病控制和预防中心当地时间12日更新的数据显示，2026年以来美国麻疹相关死亡病例累计已升至6例。",
-      "date": "2026-11-13T03:15:12.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-13/10731371.shtml",
-      "image": ""
-    },
-    {
-      "id": "国际随笔-走近中国-更新眼光-ae4655837b31",
-      "language": "zh",
-      "title": "国际随笔｜走近中国，更新眼光",
-      "excerpt": "新华社伦敦11月12日电(记者高文成)英国美食作家扶霞·邓洛普日前在英国《金融时报》发表文章，谈及自己对豆汁儿——北京胡同里的这口滋味如何念念不忘，甚至在伦敦尝试复刻。她由此谈到，在伦敦，从四川豆瓣酱到湖南臭豆腐，中国的各地风味不难寻觅。但身边的选择再丰富，也挡不住她实地踏访中国的脚步：有些滋味，终究要到当地去尝。",
-      "date": "2026-11-13T03:14:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-13/10731375.shtml",
-      "image": ""
-    },
-    {
-      "id": "纪念孙中山先生诞辰160周年瞻仰活动在沪举行-3e58a1c9fa2d",
-      "language": "zh",
-      "title": "纪念孙中山先生诞辰160周年瞻仰活动在沪举行",
-      "excerpt": "中新网上海11月13日电 12日，纪念孙中山先生诞辰160周年瞻仰活动在上海孙中山故居举行。上海市政协主席胡文容，上海市委常委、统战部部长陈通出席。",
-      "date": "2026-11-13T03:12:44.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-13/10731347.shtml",
-      "image": ""
-    },
-    {
-      "id": "走进民企看发展丨镁伽科技创始人黄瑜清-硬科技创业-我没有plan-b-be8a178b40f3",
-      "language": "zh",
-      "title": "走进民企看发展丨镁伽科技创始人黄瑜清：硬科技创业，我没有Plan B",
-      "excerpt": "中新网苏州11月13日电(记者 唐娟 常慕城 葛勇 王昊)2026年夏，镁伽科技同时出现在《财富》中国科技50强和福布斯中国人工智能企业TOP50两份榜单上。这家估值超百亿元的硬科技独角兽，创始人黄瑜清41岁。",
-      "date": "2026-11-13T03:11:46.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-13/10731327.shtml",
-      "image": ""
-    },
-    {
-      "id": "克里-美国等国应跟上中国绿能发展步伐-fa13c8476e99",
-      "language": "zh",
-      "title": "克里：美国等国应跟上中国绿能发展步伐",
-      "excerpt": "全球瞭望丨克里：美国等国应跟上中国绿能发展步伐",
-      "date": "2026-11-13T03:09:26.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-13/10731374.shtml",
-      "image": ""
-    },
-    {
-      "id": "乡村行-看振兴-湖北远安-小山货-触网-闯出大市场-c6c8430803fe",
-      "language": "zh",
-      "title": "（乡村行·看振兴）湖北远安：小山货 “触网” 闯出大市场",
-      "excerpt": "中新网宜昌11月13日电 题：湖北远安：小山货“触网”闯出大市场",
-      "date": "2026-11-13T03:08:30.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-13/10731362.shtml",
-      "image": ""
-    },
-    {
-      "id": "australian-footballers-will-not-be-charged-af-e56c4b761af6",
-      "language": "en",
-      "title": "Australian footballers will not be charged after hotel incident, police say",
-      "excerpt": "Four Sydney Swans players had been under investigation after an alleged sexual assault after a game in Melbourne.",
-      "date": "2026-11-13T03:02:54.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/ckregjwr7njqo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e9a2/live/04510720-defc-11f1-9b2e-c7d61d5838d4.jpg"
     }
   ]
 }
