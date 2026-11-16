@@ -2514,7 +2514,8 @@ window.globalViewSetArticleImage = async function (img, article) {
     return;
   }
 
-  const folder = `/public/images/library/${category}`;
+  const imageCategory = category === "culture" ? "business" : category;
+  const folder = `/public/images/library/${imageCategory}`;
 
   img.onerror = null;
   img.style.visibility = "visible";
