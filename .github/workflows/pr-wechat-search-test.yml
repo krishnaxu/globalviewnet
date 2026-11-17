@@ -4,7 +4,11 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "25 0,6,12,18 * * *"
+    # 北京时间每天 08:30
+    - cron: "30 0 * * *"
+
+    # 北京时间每天 20:30
+    - cron: "30 12 * * *"
 
   push:
     branches:
@@ -35,8 +39,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
-          cache-dependency-path: package-lock.json
 
       - name: Check collector script
         run: |
@@ -49,7 +51,7 @@ jobs:
 
           node --check scripts/wechat-resolve.mjs
 
-      - name: Install Playwright
+      - name: Install Playwright and Chromium
         run: |
           set -euo pipefail
 
@@ -61,6 +63,7 @@ jobs:
           NODE_OPTIONS: "--max-old-space-size=2048"
         run: |
           set -euo pipefail
+
           node scripts/wechat-resolve.mjs
 
       - name: Validate generated files
@@ -70,19 +73,34 @@ jobs:
           if [ -f content/pr-portfolio/wechat-articles.json ]; then
             node -e '
               const fs = require("fs");
-              const file = "content/pr-portfolio/wechat-articles.json";
-              const data = JSON.parse(fs.readFileSync(file, "utf8"));
+
+              const file =
+                "content/pr-portfolio/wechat-articles.json";
+
+              const data = JSON.parse(
+                fs.readFileSync(file, "utf8")
+              );
 
               if (!Array.isArray(data)) {
-                throw new Error("wechat-articles.json 顶层必须是数组");
+                throw new Error(
+                  "wechat-articles.json 顶层必须是数组"
+                );
               }
 
               for (const item of data) {
-                if (!item || typeof item !== "object") {
-                  throw new Error("wechat-articles.json 包含无效记录");
+                if (
+                  !item ||
+                  typeof item !== "object"
+                ) {
+                  throw new Error(
+                    "wechat-articles.json 包含无效记录"
+                  );
                 }
 
-                if (!item.title || !item.source_url) {
+                if (
+                  !item.title ||
+                  !item.source_url
+                ) {
                   throw new Error(
                     "发现缺少 title 或 source_url 的微信文章记录"
                   );
@@ -100,12 +118,14 @@ jobs:
           if [ -f wechat-backfill-state.json ]; then
             node -e '
               const fs = require("fs");
+
               JSON.parse(
                 fs.readFileSync(
                   "wechat-backfill-state.json",
                   "utf8"
                 )
               );
+
               console.log(
                 "wechat-backfill-state.json validated"
               );
