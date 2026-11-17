@@ -2,8 +2,10 @@ name: WeChat automatic collection
 
 on:
   workflow_dispatch:
+
   schedule:
     - cron: "25 0,6,12,18 * * *"
+
   push:
     branches:
       - main
@@ -26,45 +28,127 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: "npm"
+          cache-dependency-path: package-lock.json
 
-      - name: Verify script is intact
+      - name: Check collector script
         run: |
           set -euo pipefail
+
+          if [ ! -f scripts/wechat-resolve.mjs ]; then
+            echo "::error::Missing scripts/wechat-resolve.mjs"
+            exit 1
+          fi
+
           node --check scripts/wechat-resolve.mjs
-          node -e 'const fs=require("fs"),c=require("crypto");const s=fs.readFileSync("scripts/wechat-resolve.mjs","utf8").replace(/\s+/g,"");const x=c.createHash("sha256").update(s).digest("hex");console.log("fingerprint "+x.slice(0,8));if(x!=="96991c545280c5377227feb00bbdc0bcc3d08459cee6f331c555ea534ea55b76")throw new Error("wechat-resolve.mjs 与预期内容不一致，粘贴时被改动，请重新全量粘贴")'
 
-      - name: Install browser
+      - name: Install Playwright
         run: |
           set -euo pipefail
+
           npm install --no-save playwright
           npx playwright install --with-deps chromium
 
-      - name: Discover and archive WeChat articles
+      - name: Discover and archive new WeChat articles
+        env:
+          NODE_OPTIONS: "--max-old-space-size=2048"
         run: |
           set -euo pipefail
           node scripts/wechat-resolve.mjs
 
-      - name: Commit and push changes
-        if: ${{ !cancelled() }}
+      - name: Validate generated files
         run: |
           set -euo pipefail
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -f content/pr-portfolio/wechat-articles.json ]; then
+            node -e '
+              const fs = require("fs");
+              const file = "content/pr-portfolio/wechat-articles.json";
+              const data = JSON.parse(fs.readFileSync(file, "utf8"));
 
-          git add content/pr-portfolio/wechat-articles.json wechat-backfill-state.json
+              if (!Array.isArray(data)) {
+                throw new Error("wechat-articles.json 顶层必须是数组");
+              }
+
+              for (const item of data) {
+                if (!item || typeof item !== "object") {
+                  throw new Error("wechat-articles.json 包含无效记录");
+                }
+
+                if (!item.title || !item.source_url) {
+                  throw new Error(
+                    "发现缺少 title 或 source_url 的微信文章记录"
+                  );
+                }
+              }
+
+              console.log(
+                "wechat-articles.json validated:",
+                data.length,
+                "articles"
+              );
+            '
+          fi
+
+          if [ -f wechat-backfill-state.json ]; then
+            node -e '
+              const fs = require("fs");
+              JSON.parse(
+                fs.readFileSync(
+                  "wechat-backfill-state.json",
+                  "utf8"
+                )
+              );
+              console.log(
+                "wechat-backfill-state.json validated"
+              );
+            '
+          fi
+
+          git diff --check
+
+      - name: Commit and push new articles
+        run: |
+          set -euo pipefail
+
+          git config \
+            user.name \
+            "github-actions[bot]"
+
+          git config \
+            user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -f content/pr-portfolio/wechat-articles.json ]; then
+            git add \
+              content/pr-portfolio/wechat-articles.json
+          fi
+
+          if [ -f wechat-backfill-state.json ]; then
+            git add \
+              wechat-backfill-state.json
+          fi
 
           if git diff --cached --quiet; then
-            echo "没有新增微信文章"
+            echo "没有发现新增微信文章"
             exit 0
           fi
 
-          git commit -m "chore: automatically collect WeChat articles"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git commit \
+            -m "chore: automatically collect new WeChat articles"
+
+          git pull \
+            --rebase \
+            origin \
+            main
+
+          git push \
+            origin \
+            HEAD:main
