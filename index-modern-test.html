@@ -2,26 +2,17 @@
 <html lang="zh-CN" data-theme="light">
 <head>
   <meta charset="utf-8">
-
   <meta
     name="viewport"
     content="width=device-width,initial-scale=1,viewport-fit=cover"
   >
-
   <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#08182c">
 
   <title>Global View · 观澜泗渡</title>
 
-  <link
-    rel="stylesheet"
-    href="pr-portfolio.css"
-  >
-
-  <link
-    rel="stylesheet"
-    href="home-modern-test.css"
-  >
+  <link rel="stylesheet" href="pr-portfolio.css">
+  <link rel="stylesheet" href="home-modern-test.css">
 </head>
 
 <body>
@@ -204,7 +195,7 @@
           <div class="hero-actions">
             <a
               class="button button-primary"
-              href="#featured-column"
+              href="#featuredTrack"
               data-i18n="readColumns"
             >
               浏览专栏
@@ -221,52 +212,15 @@
         </div>
 
         <div
-          class="banner-panel"
-          aria-hidden="true"
-        >
-          <span>GLOBAL VIEW</span>
-
-          <strong data-i18n="bannerPanel">
-            Ideas · Context · Impact
-          </strong>
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="featured-column"
-      class="section featured-column-section"
-      aria-labelledby="featured-column-title"
-    >
-      <div class="container">
-        <div class="section-heading compact-heading">
-          <div>
-            <p
-              class="eyebrow"
-              data-i18n="featuredColumnEyebrow"
-            >
-              FEATURED COLUMN
-            </p>
-
-            <h2
-              id="featured-column-title"
-              data-i18n="featuredColumn"
-            >
-              专栏文章
-            </h2>
-          </div>
-        </div>
-
-        <div
           id="column-carousel"
-          class="column-carousel"
+          class="banner-panel cms-column-carousel"
           role="region"
           aria-roledescription="carousel"
           aria-label="Featured columns"
         >
           <div
-            id="column-slides"
-            class="column-slides"
+            id="featuredTrack"
+            class="featured-track"
           ></div>
 
           <button
@@ -288,14 +242,14 @@
           </button>
 
           <div
-            id="column-dots"
+            id="carouselDots"
             class="carousel-dots"
           ></div>
         </div>
 
         <p
           id="posts-status"
-          class="module-status"
+          class="module-status hero-status"
           aria-live="polite"
         ></p>
       </div>
@@ -325,7 +279,7 @@
 
           <a
             class="section-link"
-            href="pr-portfolio-list.html"
+            href="pr-portfolio-list.html?source=GenScript%20Official%20Website"
             data-i18n="viewAllPr"
           >
             查看全部企业传播 →
@@ -380,7 +334,7 @@
           <a
             id="industry-list-link"
             class="section-link"
-            href="column.html?category=industry"
+            href="pr-portfolio-list.html?source=Industry%20News"
             data-i18n="viewAllIndustry"
           >
             查看全部行业视角 →
@@ -494,7 +448,7 @@
           <article
             id="news-technology"
             class="news-card"
-            data-news-category="technology"
+            data-news-category="tech"
           >
             <div
               class="fixed-cover cover-technology"
@@ -503,7 +457,6 @@
 
             <div class="news-card-body">
               <small>TECHNOLOGY</small>
-
               <h3 data-i18n="technology">科技</h3>
 
               <ul
@@ -525,7 +478,6 @@
 
             <div class="news-card-body">
               <small>BUSINESS</small>
-
               <h3 data-i18n="business">商业</h3>
 
               <ul
@@ -547,7 +499,6 @@
 
             <div class="news-card-body">
               <small>CULTURE</small>
-
               <h3 data-i18n="culture">文化</h3>
 
               <ul
@@ -569,7 +520,6 @@
 
             <div class="news-card-body">
               <small>LIFESTYLE</small>
-
               <h3 data-i18n="life">生活</h3>
 
               <ul
