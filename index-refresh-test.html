@@ -2,63 +2,28 @@
 <html lang="zh-CN" class="cms-loading" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#07182e">
   <meta name="robots" content="noindex,nofollow">
-  <meta
-    name="description"
-    content="Global View 视觉焕新独立测试首页"
-  >
   <title>Global View · 视觉焕新测试</title>
-
-  <!-- 保留正式站现有外部样式接口，不修改原文件 -->
-  <link rel="stylesheet" href="pr-portfolio.css">
+  <link rel="stylesheet" href="/pr-portfolio.css">
 
   <style>
-    /*
-     * Global View standalone visual refresh candidate
-     * ------------------------------------------------------------
-     * 这是完整、独立的测试首页，不在运行时读取 /index.html。
-     *
-     * 现有数据和脚本接口保持不变：
-     * /api/posts
-     * /api/works
-     * /api/pr-portfolio
-     * /auto-news.json
-     * cms-integration.js
-     * pr-portfolio.js
-     */
-
     :root {
-      --gv-ink: #07182e;
-      --gv-ink-soft: #31455d;
-      --gv-muted: #6d7e92;
-      --gv-blue: #1769e0;
-      --gv-blue-deep: #0c4cab;
-      --gv-cyan: #61d7ff;
-      --gv-paper: #ffffff;
-      --gv-canvas: #f3f6fa;
-      --gv-soft: #eaf1f8;
-      --gv-line: #dce5ef;
-      --gv-line-strong: #c7d5e5;
-      --gv-dark: #061426;
-      --gv-dark-2: #0e213a;
-      --gv-success: #0e8f68;
-      --gv-warning: #d97706;
-      --gv-danger: #cc3d55;
-      --gv-radius-small: 12px;
-      --gv-radius: 20px;
-      --gv-radius-large: 28px;
-      --gv-shadow: 0 18px 50px rgba(8, 31, 61, 0.09);
-      --gv-shadow-large: 0 28px 80px rgba(4, 22, 45, 0.18);
-      --gv-container: 1180px;
-      --gv-gutter: 24px;
-      --gv-header-height: 86px;
-      --gv-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+      --ink: #07182e;
+      --muted: #687a90;
+      --blue: #1769e0;
+      --cyan: #61d7ff;
+      --paper: #ffffff;
+      --canvas: #f3f6fa;
+      --line: #dce5ef;
+      --dark: #061426;
+      --dark-soft: #0e213a;
+      --radius: 20px;
+      --radius-large: 28px;
+      --shadow: 0 18px 50px rgba(8, 31, 61, 0.09);
+      --container: 1180px;
+      --header-height: 82px;
     }
 
     * {
@@ -66,63 +31,44 @@
     }
 
     html {
-      min-width: 320px;
       scroll-behavior: smooth;
-      scroll-padding-top: calc(var(--gv-header-height) + 22px);
-      background: var(--gv-canvas);
+      scroll-padding-top: 100px;
+      background: var(--canvas);
     }
 
     body {
       min-width: 320px;
       margin: 0;
-      color: var(--gv-ink);
+      color: var(--ink);
       background:
         radial-gradient(
-          circle at 84% 0,
+          circle at 85% 0,
           rgba(23, 105, 224, 0.07),
           transparent 30rem
         ),
-        var(--gv-canvas);
+        var(--canvas);
       font-family:
         Inter,
-        "Noto Sans SC",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
         "PingFang SC",
-        "Hiragino Sans GB",
         "Microsoft YaHei",
         sans-serif;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
     }
 
     body,
     button,
-    input,
-    textarea,
-    select {
-      font: inherit;
-    }
-
-    button,
-    a,
     input {
-      -webkit-tap-highlight-color: transparent;
+      font: inherit;
     }
 
     a {
       color: inherit;
     }
 
-    button {
-      color: inherit;
-    }
-
     img,
-    picture,
-    svg,
-    video {
+    svg {
       max-width: 100%;
     }
 
@@ -141,663 +87,263 @@
       display: none !important;
     }
 
-    .skip-link {
-      position: fixed;
-      z-index: 2000;
-      top: 12px;
-      left: 12px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      color: #ffffff;
-      background: var(--gv-blue);
-      transform: translateY(-180%);
-      transition: transform 0.2s ease;
-    }
-
-    .skip-link:focus {
-      transform: translateY(0);
-    }
-
     .container {
-      width: min(
-        var(--gv-container),
-        calc(100% - (var(--gv-gutter) * 2))
-      );
+      width: min(var(--container), calc(100% - 48px));
       margin-inline: auto;
     }
 
-    .cms-loading body {
-      opacity: 1;
+    .skip-link {
+      position: fixed;
+      z-index: 3000;
+      top: 10px;
+      left: 10px;
+      padding: 10px 14px;
+      color: #ffffff;
+      background: var(--blue);
+      border-radius: 999px;
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: none;
     }
 
     .loading-line {
       position: fixed;
-      z-index: 3000;
+      z-index: 4000;
       top: 0;
-      left: 0;
       width: 100%;
       height: 3px;
       overflow: hidden;
       background: rgba(23, 105, 224, 0.12);
-      pointer-events: none;
     }
 
     .loading-line::after {
       content: "";
       position: absolute;
-      inset: 0;
-      width: 42%;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          var(--gv-blue),
-          var(--gv-cyan)
-        );
-      animation: gv-loading 1.1s linear infinite;
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        var(--blue),
+        var(--cyan)
+      );
+      animation: loading 1s linear infinite;
     }
 
     html:not(.cms-loading) .loading-line {
       display: none;
     }
 
-    @keyframes gv-loading {
+    @keyframes loading {
       from {
-        transform: translateX(-120%);
+        transform: translateX(-110%);
       }
 
       to {
-        transform: translateX(340%);
+        transform: translateX(350%);
       }
     }
-
-    /* Header */
 
     .site-header {
       position: sticky;
       z-index: 1000;
       top: 0;
-      min-height: var(--gv-header-height);
-      border-bottom: 1px solid rgba(220, 229, 239, 0.9);
-      background: rgba(255, 255, 255, 0.94);
-      box-shadow: 0 8px 30px rgba(8, 31, 61, 0.035);
-      backdrop-filter: blur(16px) saturate(145%);
-      -webkit-backdrop-filter: blur(16px) saturate(145%);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(14px);
     }
 
     .header-inner {
-      min-height: var(--gv-header-height);
+      height: var(--header-height);
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 20px;
     }
 
     .brand {
-      flex: none;
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 12px;
-      color: inherit;
+      gap: 10px;
       text-decoration: none;
     }
 
     .brand-mark {
-      width: 46px;
-      height: 46px;
-      flex: none;
-      color: var(--gv-blue);
-    }
-
-    .brand-copy {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
+      width: 42px;
+      height: 42px;
+      color: var(--blue);
     }
 
     .brand-en {
-      color: var(--gv-ink);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 28px;
-      font-weight: 800;
-      line-height: 0.95;
-      letter-spacing: -0.035em;
+      display: block;
+      font: 800 27px / 0.9 Georgia, serif;
       white-space: nowrap;
     }
 
     .brand-cn {
-      color: var(--gv-blue);
-      font-size: 13px;
-      font-weight: 760;
-      line-height: 1;
+      display: block;
+      margin-top: 5px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
       letter-spacing: 0.18em;
-      white-space: nowrap;
     }
 
     .main-nav {
-      min-width: 0;
-      height: var(--gv-header-height);
+      height: 100%;
       margin-left: auto;
       display: flex;
-      align-items: stretch;
-      gap: 2px;
     }
 
-    .nav-link {
-      position: relative;
-      min-width: 72px;
-      padding: 11px 12px;
+    .main-nav a,
+    .mobile-nav a {
       display: flex;
       align-items: center;
-      justify-content: center;
-      border-radius: 10px;
+      padding: 0 12px;
       color: #41546b;
       font-size: 12px;
-      font-weight: 680;
-      text-align: center;
+      font-weight: 700;
       text-decoration: none;
-      white-space: nowrap;
-      transition:
-        color 0.2s ease,
-        background-color 0.2s ease;
+      border-radius: 10px;
     }
 
-    .nav-link:hover,
-    .nav-link:focus-visible,
-    .nav-link.active {
-      color: var(--gv-blue);
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--blue);
       background: #edf4ff;
-    }
-
-    .nav-link.active::after {
-      content: "";
-      position: absolute;
-      right: 14px;
-      bottom: -1px;
-      left: 14px;
-      height: 3px;
-      border-radius: 999px 999px 0 0;
-      background: var(--gv-blue);
     }
 
     .header-tools {
-      flex: none;
       display: flex;
-      align-items: center;
+      gap: 6px;
+    }
+
+    .icon-button,
+    .menu-button {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      color: var(--ink);
+      background: #f7f9fc;
+      cursor: pointer;
+    }
+
+    .menu-button {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: none;
+      padding: 10px 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .mobile-nav.open {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 7px;
     }
 
-    .icon-btn,
-    .menu-button {
-      width: 42px;
-      height: 42px;
-      padding: 0;
-      display: inline-grid;
-      place-items: center;
-      border: 1px solid var(--gv-line);
-      border-radius: 12px;
-      color: var(--gv-ink-soft);
-      background: #f5f8fc;
-      cursor: pointer;
-      transition:
-        color 0.2s ease,
-        border-color 0.2s ease,
-        background-color 0.2s ease,
-        transform 0.2s ease;
-    }
-
-    .icon-btn:hover,
-    .icon-btn:focus-visible,
-    .menu-button:hover,
-    .menu-button:focus-visible {
-      color: var(--gv-blue);
-      border-color: #bcd0e9;
+    .mobile-nav a {
+      min-height: 44px;
       background: #ffffff;
-      transform: translateY(-1px);
+      border: 1px solid var(--line);
     }
-
-    .icon-btn svg,
-    .menu-button svg {
-      width: 18px;
-      height: 18px;
-    }
-
-    .language-button {
-      width: auto;
-      min-width: 42px;
-      padding-inline: 10px;
-      font-size: 11px;
-      font-weight: 800;
-    }
-
-    .menu-button {
-      display: none;
-    }
-
-    .mobile-menu {
-      display: none;
-      border-top: 1px solid var(--gv-line);
-      background: rgba(248, 251, 255, 0.98);
-    }
-
-    .mobile-menu.open {
-      display: block;
-    }
-
-    .mobile-menu-grid {
-      padding-block: 14px 18px;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
-    }
-
-    .mobile-menu .nav-link {
-      min-height: 50px;
-      justify-content: flex-start;
-      border: 1px solid var(--gv-line);
-      background: #ffffff;
-    }
-
-    /* Search */
-
-    .search-layer {
-      position: fixed;
-      z-index: 1600;
-      inset: 0;
-      padding: clamp(80px, 12vh, 140px) 22px 22px;
-      display: grid;
-      align-items: start;
-      justify-items: center;
-      background: rgba(4, 17, 34, 0.68);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    }
-
-    .search-dialog {
-      width: min(660px, 100%);
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 24px;
-      background: #ffffff;
-      box-shadow: 0 30px 100px rgba(4, 18, 36, 0.36);
-    }
-
-    .search-dialog-header {
-      padding: 18px 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      border-bottom: 1px solid var(--gv-line);
-    }
-
-    .search-dialog-header input {
-      min-width: 0;
-      flex: 1;
-      padding: 12px 14px;
-      border: 1px solid var(--gv-line-strong);
-      border-radius: 12px;
-      color: var(--gv-ink);
-      background: #f8fafc;
-      outline: none;
-    }
-
-    .search-dialog-header input:focus {
-      border-color: var(--gv-blue);
-      box-shadow: 0 0 0 4px rgba(23, 105, 224, 0.12);
-    }
-
-    .search-close {
-      flex: none;
-    }
-
-    .search-results {
-      max-height: min(58vh, 520px);
-      padding: 8px;
-      overflow-y: auto;
-    }
-
-    .search-empty {
-      margin: 0;
-      padding: 28px 20px;
-      color: var(--gv-muted);
-      text-align: center;
-    }
-
-    .search-result {
-      width: 100%;
-      padding: 14px 15px;
-      display: block;
-      border: 0;
-      border-radius: 12px;
-      color: var(--gv-ink);
-      background: transparent;
-      text-align: left;
-      cursor: pointer;
-    }
-
-    .search-result:hover,
-    .search-result:focus-visible {
-      background: #edf4ff;
-    }
-
-    .search-result strong {
-      display: block;
-      font-size: 14px;
-      line-height: 1.45;
-    }
-
-    .search-result span {
-      margin-top: 4px;
-      display: block;
-      color: var(--gv-muted);
-      font-size: 11px;
-    }
-
-    /* Ticker */
 
     .ticker {
-      position: relative;
-      z-index: 30;
       overflow: hidden;
       color: #ffffff;
       background: linear-gradient(90deg, #061426, #0d2949);
     }
 
     .ticker-inner {
-      min-height: 44px;
+      height: 42px;
       display: flex;
       align-items: center;
       overflow: hidden;
     }
 
     .ticker-label {
-      position: relative;
-      z-index: 2;
-      height: 44px;
-      padding-right: 18px;
       flex: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #ffffff;
-      background: #0d2949;
+      color: var(--cyan);
       font-size: 10px;
-      font-weight: 850;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .ticker-label::before {
-      content: "";
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--gv-cyan);
-      box-shadow: 0 0 0 5px rgba(97, 215, 255, 0.14);
+      font-weight: 800;
     }
 
     .ticker-window {
-      min-width: 0;
-      flex: 1;
       overflow: hidden;
-      mask-image:
-        linear-gradient(
-          90deg,
-          transparent,
-          #000 3%,
-          #000 97%,
-          transparent
-        );
-      -webkit-mask-image:
-        linear-gradient(
-          90deg,
-          transparent,
-          #000 3%,
-          #000 97%,
-          transparent
-        );
     }
 
     .ticker-content {
       width: max-content;
       display: flex;
-      align-items: center;
-      animation: gv-ticker 45s linear infinite;
-    }
-
-    .ticker:hover .ticker-content,
-    .ticker:focus-within .ticker-content {
-      animation-play-state: paused;
+      animation: ticker 45s linear infinite;
     }
 
     .ticker-item {
-      max-width: 460px;
-      padding: 0 24px;
-      display: inline-flex;
-      align-items: center;
+      padding: 0 22px;
       border: 0;
       border-right: 1px solid rgba(255, 255, 255, 0.14);
-      color: rgba(255, 255, 255, 0.82);
+      color: rgba(255, 255, 255, 0.8);
       background: transparent;
       font-size: 11px;
-      line-height: 44px;
+      line-height: 42px;
       white-space: nowrap;
       cursor: pointer;
     }
 
-    .ticker-item:hover,
-    .ticker-item:focus-visible {
-      color: #ffffff;
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-
-    @keyframes gv-ticker {
-      from {
-        transform: translateX(0);
-      }
-
+    @keyframes ticker {
       to {
         transform: translateX(-50%);
       }
     }
 
-    /* Main intro and top feature */
-
     main {
-      padding-top: 38px;
+      padding-top: 34px;
     }
 
     .top-story-layout {
       display: grid;
-      grid-template-columns:
-        minmax(0, 1.12fr)
-        minmax(360px, 0.88fr);
-      gap: 28px;
-      align-items: stretch;
-    }
-
-    .editorial-intro {
-      position: relative;
-      min-height: 500px;
-      overflow: hidden;
-      border-radius: var(--gv-radius-large);
-      color: #ffffff;
-      background:
-        linear-gradient(
-          110deg,
-          rgba(4, 17, 34, 0.94),
-          rgba(4, 17, 34, 0.48)
-        ),
-        url(
-          "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=84"
-        ) center / cover no-repeat;
-      box-shadow: var(--gv-shadow-large);
-      isolation: isolate;
-    }
-
-    .editorial-intro::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      inset: 0;
-      background:
-        radial-gradient(
-          circle at 82% 12%,
-          rgba(97, 215, 255, 0.34),
-          transparent 17rem
-        ),
-        linear-gradient(
-          0deg,
-          rgba(4, 17, 34, 0.68),
-          transparent 64%
-        );
-    }
-
-    .editorial-intro-content {
-      position: absolute;
-      right: clamp(28px, 5vw, 62px);
-      bottom: clamp(32px, 5vw, 58px);
-      left: clamp(28px, 5vw, 62px);
-    }
-
-    .eyebrow {
-      margin: 0 0 16px;
-      display: inline-flex;
+      grid-template-columns: minmax(0, 7fr) minmax(260px, 3fr);
+      gap: 24px;
       align-items: center;
-      gap: 10px;
-      color: var(--gv-cyan);
-      font-size: 10px;
-      font-weight: 850;
-      line-height: 1;
-      letter-spacing: 0.17em;
-      text-transform: uppercase;
     }
-
-    .eyebrow::before {
-      content: "";
-      width: 34px;
-      height: 2px;
-      border-radius: 999px;
-      background: currentColor;
-    }
-
-    .editorial-intro h1 {
-      max-width: 720px;
-      margin: 0;
-      color: #ffffff;
-      font-size: clamp(42px, 5.8vw, 74px);
-      font-weight: 780;
-      line-height: 0.98;
-      letter-spacing: -0.055em;
-    }
-
-    .editorial-intro p {
-      max-width: 660px;
-      margin: 20px 0 0;
-      color: rgba(255, 255, 255, 0.75);
-      font-size: 14px;
-      line-height: 1.85;
-    }
-
-    .intro-actions {
-      margin-top: 24px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .primary-btn,
-    .secondary-btn {
-      min-height: 44px;
-      padding: 11px 17px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      border: 1px solid transparent;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 780;
-      text-decoration: none;
-      cursor: pointer;
-      transition:
-        transform 0.2s var(--gv-ease),
-        box-shadow 0.2s ease,
-        background-color 0.2s ease;
-    }
-
-    .primary-btn {
-      color: #ffffff;
-      background: var(--gv-blue);
-      box-shadow: 0 10px 28px rgba(23, 105, 224, 0.28);
-    }
-
-    .secondary-btn {
-      color: var(--gv-ink);
-      border-color: var(--gv-line-strong);
-      background: #ffffff;
-    }
-
-    .editorial-intro .secondary-btn {
-      color: #ffffff;
-      border-color: rgba(255, 255, 255, 0.28);
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(8px);
-    }
-
-    .primary-btn:hover,
-    .primary-btn:focus-visible,
-    .secondary-btn:hover,
-    .secondary-btn:focus-visible {
-      transform: translateY(-2px);
-    }
-
-    /* CMS column carousel: only here, no separate column block */
 
     .featured-carousel {
       position: relative;
-      min-height: 500px;
+      min-height: 535px;
       overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: var(--gv-radius-large);
-      background:
-        linear-gradient(
-          145deg,
-          var(--gv-dark),
-          #123f73
-        );
-      box-shadow: var(--gv-shadow-large);
+      border-radius: var(--radius-large);
+      color: #ffffff;
+      background: linear-gradient(145deg, var(--dark), #123f73);
+      box-shadow: 0 28px 80px rgba(4, 22, 45, 0.18);
     }
 
     .featured-kicker {
       position: absolute;
-      z-index: 6;
-      top: 20px;
-      left: 20px;
-      padding: 8px 11px;
+      z-index: 5;
+      top: 19px;
+      left: 19px;
+      padding: 7px 10px;
       border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 999px;
-      color: #ffffff;
-      background: rgba(6, 20, 38, 0.54);
+      border-radius: 99px;
+      background: rgba(6, 20, 38, 0.6);
       font-size: 9px;
-      font-weight: 850;
-      letter-spacing: 0.12em;
-      backdrop-filter: blur(10px);
+      font-weight: 800;
     }
 
     .featured-track {
-      height: 100%;
+      height: 535px;
       display: flex;
-      transition: transform 0.58s var(--gv-ease);
-      will-change: transform;
+      transition: transform 0.55s ease;
     }
 
     .featured-slide {
       position: relative;
       min-width: 100%;
-      height: 500px;
-      overflow: hidden;
-      color: #ffffff;
+      height: 535px;
       cursor: pointer;
     }
 
@@ -805,68 +351,43 @@
       content: "";
       position: absolute;
       inset: 0;
-      background:
-        linear-gradient(
-          0deg,
-          rgba(4, 17, 34, 0.94),
-          rgba(4, 17, 34, 0.1) 75%
-        ),
-        linear-gradient(
-          90deg,
-          rgba(4, 17, 34, 0.32),
-          transparent 74%
-        );
-    }
-
-    .featured-slide:focus-visible {
-      outline: 3px solid var(--gv-cyan);
-      outline-offset: -5px;
+      background: linear-gradient(
+        0deg,
+        rgba(4, 17, 34, 0.94),
+        rgba(4, 17, 34, 0.08) 75%
+      );
     }
 
     .featured-image {
       position: absolute;
-      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition:
-        transform 0.8s var(--gv-ease);
-    }
-
-    .featured-slide:hover .featured-image {
-      transform: scale(1.035);
     }
 
     .featured-content {
       position: absolute;
       z-index: 2;
       right: 28px;
-      bottom: 48px;
+      bottom: 45px;
       left: 28px;
     }
 
     .featured-content h2 {
-      margin: 13px 0 12px;
+      margin: 11px 0;
       color: #ffffff;
-      font-size: clamp(28px, 3.4vw, 42px);
-      font-weight: 800;
+      font-size: clamp(28px, 3.3vw, 44px);
       line-height: 1.08;
-      letter-spacing: -0.045em;
     }
 
     .featured-content p {
-      margin: 0;
-      display: -webkit-box;
-      overflow: hidden;
+      max-width: 640px;
       color: rgba(255, 255, 255, 0.76);
       font-size: 12px;
-      line-height: 1.75;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
+      line-height: 1.7;
     }
 
     .featured-meta {
-      margin-top: 15px;
       display: flex;
       flex-wrap: wrap;
       gap: 7px;
@@ -875,24 +396,20 @@
     }
 
     .category-tag {
-      width: max-content;
+      display: inline-block;
       padding: 6px 9px;
-      display: inline-flex;
-      align-items: center;
-      border-radius: 999px;
+      border-radius: 99px;
       color: #ffffff;
-      background: rgba(23, 105, 224, 0.92);
+      background: rgba(23, 105, 224, 0.9);
       font-size: 9px;
-      font-weight: 820;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-weight: 800;
     }
 
     .carousel-dots {
       position: absolute;
-      z-index: 5;
+      z-index: 4;
       right: 22px;
-      bottom: 20px;
+      bottom: 19px;
       left: 22px;
       display: flex;
       gap: 7px;
@@ -903,205 +420,189 @@
       height: 8px;
       padding: 0;
       border: 0;
-      border-radius: 50%;
+      border-radius: 9px;
       background: rgba(255, 255, 255, 0.44);
-      cursor: pointer;
-      transition:
-        width 0.2s ease,
-        background-color 0.2s ease;
     }
 
     .carousel-dot.active {
       width: 27px;
-      border-radius: 999px;
-      background: var(--gv-cyan);
+      background: var(--cyan);
     }
 
     .featured-empty {
       min-width: 100%;
-      height: 500px;
-      padding: 42px;
+      height: 535px;
+      padding: 38px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      color: #ffffff;
-      background:
-        radial-gradient(
-          circle at 85% 12%,
-          rgba(97, 215, 255, 0.25),
-          transparent 15rem
-        ),
-        linear-gradient(
-          145deg,
-          #061426,
-          #123f73
-        );
+      background: linear-gradient(145deg, #061426, #123f73);
     }
 
     .featured-empty strong {
-      font-size: 28px;
-      line-height: 1.16;
+      font-size: 27px;
     }
 
     .featured-empty span {
-      margin-top: 12px;
-      color: rgba(255, 255, 255, 0.68);
+      margin-top: 10px;
+      color: rgba(255, 255, 255, 0.66);
       font-size: 12px;
-      line-height: 1.7;
     }
 
-    /* Shared section styles */
-
-    .home-section {
-      padding: 76px 0;
+    .compact-intro-card {
+      position: relative;
+      min-height: 365px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-large);
+      background:
+        radial-gradient(
+          circle at 100% 0,
+          rgba(23, 105, 224, 0.14),
+          transparent 15rem
+        ),
+        linear-gradient(160deg, #ffffff, #edf4fb);
+      box-shadow: var(--shadow);
     }
 
-    .home-section + .home-section {
-      border-top:
-        1px solid rgba(220, 229, 239, 0.72);
-    }
-
-    .section-heading {
-      margin-bottom: 24px;
+    .intro-content {
+      position: absolute;
+      inset: 0;
+      padding: 34px;
       display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 22px;
+      flex-direction: column;
+      justify-content: flex-end;
     }
 
-    .section-heading-copy {
-      min-width: 0;
+    .eyebrow {
+      margin-bottom: 14px;
+      color: var(--blue);
+      font-size: 10px;
+      font-weight: 850;
+      letter-spacing: 0.15em;
     }
 
-    .section-heading h2,
-    .section-heading h3 {
+    .compact-intro-card h1 {
       margin: 0;
-      color: var(--gv-ink);
-      font-size: clamp(30px, 3.4vw, 42px);
-      font-weight: 770;
-      line-height: 1.08;
-      letter-spacing: -0.04em;
+      font-size: clamp(29px, 3vw, 42px);
+      line-height: 1.07;
     }
 
-    .section-heading p {
-      max-width: 620px;
-      margin: 10px 0 0;
-      color: var(--gv-muted);
+    .compact-intro-card p {
+      margin: 15px 0 0;
+      color: var(--muted);
       font-size: 12px;
       line-height: 1.75;
     }
 
+    .actions {
+      margin-top: 21px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .button {
+      min-height: 42px;
+      padding: 10px 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 99px;
+      color: var(--blue);
+      background: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      color: #ffffff;
+      border-color: var(--blue);
+      background: var(--blue);
+    }
+
+    .section {
+      padding: 72px 0;
+    }
+
+    .section + .section {
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading {
+      margin-bottom: 23px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(29px, 3.3vw, 42px);
+      line-height: 1.08;
+    }
+
+    .section-heading p {
+      max-width: 620px;
+      margin: 9px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
     .section-link {
-      flex: none;
-      color: var(--gv-blue);
+      color: var(--blue);
       font-size: 11px;
-      font-weight: 780;
+      font-weight: 800;
       text-decoration: none;
     }
 
-    .section-link:hover,
-    .section-link:focus-visible {
-      text-decoration: underline;
-      text-underline-offset: 4px;
+    .surface {
+      padding: 27px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-large);
+      background: var(--paper);
+      box-shadow: var(--shadow);
     }
 
-    .surface-card {
-      border: 1px solid var(--gv-line);
-      border-radius: var(--gv-radius-large);
-      background: var(--gv-paper);
-      box-shadow: var(--gv-shadow);
-    }
-
-    .skeleton-card {
-      min-height: 250px;
-      overflow: hidden;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.72),
-          transparent
-        ),
-        #e9eff6;
-      background-size: 220% 100%, 100% 100%;
-      animation: gv-skeleton 1.5s linear infinite;
-    }
-
-    @keyframes gv-skeleton {
-      from {
-        background-position: 180% 0, 0 0;
-      }
-
-      to {
-        background-position: -40% 0, 0 0;
-      }
-    }
-
-    /* Enterprise communication */
-
-    .pr-shell {
-      padding: 28px;
-      overflow: hidden;
-    }
-
-    .pr-portfolio-section {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      background: transparent;
-      box-shadow: none;
-    }
-
-    .pr-portfolio-section > .section-heading {
-      display: none;
-    }
-
-    .pr-portfolio-group {
-      padding: 0 !important;
-    }
-
-    .pr-portfolio-grid,
-    .pr-grid,
-    #prPortfolioGrid,
-    #prPortfolioList {
+    #prPortfolioCompanyGrid,
+    #prPortfolioIndustryGrid {
+      width: 100%;
       display: grid;
-      grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
+      visibility: visible;
+    }
+
+    #prPortfolioCompanyMore,
+    #prPortfolioIndustryMore {
+      width: max-content;
+      margin: 20px auto 0;
+      padding: 10px 18px;
+      display: block;
+      border: 1px solid var(--line);
+      border-radius: 99px;
+      color: var(--blue);
+      background: var(--paper);
+      font-size: 11px;
+      font-weight: 800;
+      text-decoration: none;
+      visibility: visible;
     }
 
     .pr-portfolio-card,
     .pr-card {
-      min-width: 0;
       overflow: hidden;
-      border:
-        1px solid var(--gv-line) !important;
-      border-radius:
-        var(--gv-radius) !important;
+      border: 1px solid var(--line) !important;
+      border-radius: var(--radius) !important;
       background: #ffffff !important;
-      box-shadow:
-        0 10px 30px
-        rgba(8, 31, 61, 0.055) !important;
-      transition:
-        transform 0.25s var(--gv-ease),
-        box-shadow 0.25s ease,
-        border-color 0.25s ease;
     }
 
     .pr-portfolio-card:first-child,
     .pr-card:first-child {
       grid-column: span 2;
-      grid-row: span 2;
-    }
-
-    .pr-portfolio-card:hover,
-    .pr-portfolio-card:focus-within,
-    .pr-card:hover,
-    .pr-card:focus-within {
-      border-color: #bfd1e6 !important;
-      box-shadow:
-        var(--gv-shadow) !important;
-      transform: translateY(-4px);
     }
 
     .pr-portfolio-card img,
@@ -1111,212 +612,161 @@
       object-fit: cover;
     }
 
-    .pr-portfolio-card:first-child img,
-    .pr-card:first-child img {
-      min-height: 310px;
-    }
-
-    .integration-status {
-      min-height: 260px;
-      padding: 36px;
+    .status {
+      min-height: 210px;
+      padding: 30px;
       display: grid;
       place-items: center;
-      border: 1px dashed var(--gv-line-strong);
-      border-radius: var(--gv-radius);
-      color: var(--gv-muted);
+      border: 1px dashed #bdcde0;
+      border-radius: var(--radius);
+      color: var(--muted);
       background: #f8fafc;
       text-align: center;
     }
 
-    .integration-status strong {
+    .status strong {
       display: block;
-      color: var(--gv-ink);
-      font-size: 18px;
+      color: var(--ink);
+      font-size: 17px;
     }
-
-    .integration-status span {
-      max-width: 520px;
-      margin-top: 8px;
-      display: block;
-      font-size: 12px;
-      line-height: 1.7;
-    }
-
-    /* Industry articles */
 
     .industry-section {
       background: #ffffff;
     }
 
+    .content-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 21px;
+      align-items: start;
+    }
+
     .article-grid {
       display: grid;
-      grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
     }
 
     .article-card {
-      min-width: 0;
       overflow: hidden;
-      border: 1px solid var(--gv-line);
-      border-radius: var(--gv-radius);
-      background: var(--gv-paper);
-      box-shadow:
-        0 12px 35px rgba(8, 31, 61, 0.065);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
       cursor: pointer;
-      transition:
-        transform 0.25s var(--gv-ease),
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
-    }
-
-    .article-card:hover,
-    .article-card:focus-visible {
-      border-color: #bfd1e6;
-      box-shadow: var(--gv-shadow);
-      transform: translateY(-5px);
-      outline: none;
-    }
-
-    .article-card.featured-industry {
-      grid-column: span 2;
-    }
-
-    .card-image-wrap {
-      position: relative;
-      height: 200px;
-      overflow: hidden;
-      background:
-        linear-gradient(
-          140deg,
-          #0b2345,
-          #155aa2
-        );
-    }
-
-    .featured-industry .card-image-wrap {
-      height: 280px;
     }
 
     .card-image {
+      height: 190px;
+      overflow: hidden;
+      background: #123f73;
+    }
+
+    .card-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition:
-        transform 0.5s var(--gv-ease);
-    }
-
-    .article-card:hover .card-image {
-      transform: scale(1.04);
     }
 
     .card-body {
-      padding: 19px;
+      padding: 17px;
     }
 
-    .card-title {
-      margin: 12px 0 9px;
-      display: -webkit-box;
-      overflow: hidden;
-      color: var(--gv-ink);
-      font-size: 18px;
-      font-weight: 760;
+    .card-body h3 {
+      margin: 10px 0 8px;
+      font-size: 17px;
       line-height: 1.35;
-      letter-spacing: -0.02em;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
     }
 
-    .card-excerpt {
+    .card-body p {
       margin: 0;
-      display: -webkit-box;
-      overflow: hidden;
-      color: var(--gv-muted);
-      font-size: 12px;
-      line-height: 1.7;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.65;
     }
 
     .card-meta {
-      margin-top: 15px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-      color: #8795a6;
+      margin-top: 10px;
+      color: var(--muted);
       font-size: 9px;
     }
 
-    /* Media works */
+    .trending-panel {
+      padding: 20px;
+    }
+
+    .trending-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .trending-item {
+      padding: 14px 0;
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 8px;
+      border-bottom: 1px solid var(--line);
+      cursor: pointer;
+    }
+
+    .trend-number {
+      color: var(--blue);
+      font: 800 18px Georgia;
+    }
+
+    .trend-title {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .trend-subtitle {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 9px;
+    }
 
     .media-layout {
       display: grid;
-      grid-template-columns:
-        minmax(0, 1.35fr)
-        minmax(300px, 0.65fr);
-      gap: 24px;
-      align-items: stretch;
+      grid-template-columns: 1.35fr minmax(290px, 0.65fr);
+      gap: 22px;
     }
 
     .media-visual {
       position: relative;
-      min-height: 420px;
+      min-height: 410px;
       overflow: hidden;
-      border-radius: var(--gv-radius-large);
+      border-radius: var(--radius-large);
       color: #ffffff;
       background:
         linear-gradient(
           0deg,
-          rgba(4, 17, 34, 0.82),
-          rgba(4, 17, 34, 0.08)
+          rgba(4, 17, 34, 0.84),
+          rgba(4, 17, 34, 0.06)
         ),
-        url(
-          "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=84"
-        ) center / cover no-repeat;
-      box-shadow: var(--gv-shadow-large);
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=84")
+          center / cover;
     }
 
-    .media-visual-copy {
+    .media-copy {
       position: absolute;
-      right: 30px;
-      bottom: 30px;
-      left: 30px;
+      right: 28px;
+      bottom: 28px;
+      left: 28px;
     }
 
-    .media-visual h3 {
-      margin: 10px 0 8px;
-      font-size: clamp(30px, 4vw, 48px);
-      line-height: 1.05;
-      letter-spacing: -0.04em;
+    .media-copy h3 {
+      margin: 8px 0;
+      font-size: clamp(29px, 4vw, 47px);
     }
 
-    .media-visual p {
-      max-width: 590px;
-      margin-bottom: 0;
+    .media-copy p {
       color: rgba(255, 255, 255, 0.72);
       font-size: 12px;
-      line-height: 1.7;
     }
 
     .works-panel {
-      min-width: 0;
-      padding: 24px;
-    }
-
-    .panel-heading {
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-    }
-
-    .panel-heading h3 {
-      margin: 0;
-      color: var(--gv-ink);
-      font-size: 20px;
-      font-weight: 760;
-      letter-spacing: -0.025em;
+      padding: 22px;
     }
 
     .works-list {
@@ -1325,59 +775,42 @@
     }
 
     .work-item {
-      min-width: 0;
-      padding: 17px 0;
+      padding: 15px 0;
       display: grid;
-      grid-template-columns:
-        32px minmax(0, 1fr);
-      gap: 9px;
-      border-bottom: 1px solid var(--gv-line);
-      color: inherit;
+      grid-template-columns: 30px 1fr;
+      gap: 8px;
+      border-bottom: 1px solid var(--line);
       text-decoration: none;
     }
 
-    .work-item:last-child {
-      border-bottom: 0;
-    }
-
     .work-number {
-      color: var(--gv-blue);
-      font-family: Georgia, serif;
-      font-size: 19px;
-      font-weight: 800;
+      color: var(--blue);
+      font: 800 18px Georgia;
     }
 
     .work-title {
       display: block;
-      color: var(--gv-ink);
       font-size: 13px;
-      font-weight: 740;
-      line-height: 1.5;
+      font-weight: 750;
     }
 
     .work-meta,
-    .work-excerpt,
-    .work-read-time {
-      margin: 5px 0 0;
-      color: var(--gv-muted);
+    .work-excerpt {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
       font-size: 9px;
-      line-height: 1.55;
     }
 
     .works-more-button {
       width: 100%;
-      margin-top: 16px;
-      min-height: 42px;
-      border: 1px solid var(--gv-line-strong);
-      border-radius: 999px;
-      color: var(--gv-blue);
+      margin-top: 14px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 99px;
+      color: var(--blue);
       background: #ffffff;
-      font-size: 11px;
-      font-weight: 780;
-      cursor: pointer;
     }
-
-    /* Live News */
 
     .live-section {
       color: #ffffff;
@@ -1387,99 +820,54 @@
           rgba(23, 105, 224, 0.24),
           transparent 24rem
         ),
-        linear-gradient(
-          145deg,
-          var(--gv-dark),
-          #0c2646
-        );
+        linear-gradient(145deg, var(--dark), #0c2646);
     }
 
-    .live-section .section-heading h2 {
+    .live-section h2 {
       color: #ffffff;
     }
 
-    .live-section .section-heading p {
-      color: rgba(255, 255, 255, 0.64);
-    }
-
-    .live-section .section-link {
-      color: var(--gv-cyan);
-    }
-
-    .news-tabs {
-      margin-bottom: 22px;
+    .tabs {
+      margin-bottom: 20px;
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 7px;
     }
 
-    .news-tab {
-      min-height: 38px;
+    .tab {
       padding: 9px 14px;
-      border:
-        1px solid rgba(255, 255, 255, 0.16);
-      border-radius: 999px;
-      color: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 99px;
+      color: rgba(255, 255, 255, 0.72);
       background: rgba(255, 255, 255, 0.05);
       font-size: 10px;
-      font-weight: 760;
       cursor: pointer;
     }
 
-    .news-tab:hover,
-    .news-tab:focus-visible,
-    .news-tab.active {
+    .tab.active {
       color: #ffffff;
-      border-color:
-        rgba(97, 215, 255, 0.54);
-      background:
-        rgba(23, 105, 224, 0.34);
+      border-color: rgba(97, 215, 255, 0.54);
+      background: rgba(23, 105, 224, 0.34);
     }
 
-    .news-grid {
+    .live-grid {
       display: grid;
-      grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 15px;
     }
 
     .news-card {
-      min-width: 0;
       overflow: hidden;
       border: 1px solid #263a54;
-      border-radius: var(--gv-radius);
-      color: #ffffff;
-      background: var(--gv-dark-2);
+      border-radius: var(--radius);
+      background: var(--dark-soft);
       cursor: pointer;
-      transition:
-        transform 0.25s var(--gv-ease),
-        border-color 0.25s ease;
-    }
-
-    .news-card:hover,
-    .news-card:focus-visible {
-      border-color: #47749f;
-      transform: translateY(-4px);
-      outline: none;
     }
 
     .news-cover {
-      position: relative;
       aspect-ratio: 16 / 9;
       overflow: hidden;
-      background: #10243d;
-    }
-
-    .news-cover::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(
-          0deg,
-          rgba(4, 17, 34, 0.58),
-          transparent 68%
-        );
+      background: #123f73;
     }
 
     .news-cover img {
@@ -1488,479 +876,298 @@
       object-fit: cover;
     }
 
-    .news-cover-placeholder {
+    .news-placeholder {
       width: 100%;
       height: 100%;
       display: grid;
       place-items: center;
-      color: rgba(255, 255, 255, 0.78);
-      font-size: 34px;
-      font-weight: 820;
-      letter-spacing: -0.06em;
+      font-size: 30px;
+      font-weight: 800;
     }
 
-    .news-card[data-category="tech"]
-    .news-cover-placeholder {
-      background:
-        linear-gradient(
-          140deg,
-          #0755c7,
-          #02a8d5
-        );
+    .news-card[data-category="tech"] .news-placeholder {
+      background: linear-gradient(140deg, #0755c7, #02a8d5);
     }
 
-    .news-card[data-category="business"]
-    .news-cover-placeholder {
-      background:
-        linear-gradient(
-          140deg,
-          #0b2345,
-          #155aa2
-        );
+    .news-card[data-category="business"] .news-placeholder {
+      background: linear-gradient(140deg, #0b2345, #155aa2);
     }
 
-    .news-card[data-category="culture"]
-    .news-cover-placeholder {
-      background:
-        linear-gradient(
-          140deg,
-          #492980,
-          #b1528d
-        );
+    .news-card[data-category="culture"] .news-placeholder {
+      background: linear-gradient(140deg, #492980, #b1528d);
     }
 
-    .news-card[data-category="life"]
-    .news-cover-placeholder {
-      background:
-        linear-gradient(
-          140deg,
-          #096451,
-          #24a67e
-        );
+    .news-card[data-category="life"] .news-placeholder {
+      background: linear-gradient(140deg, #096451, #24a67e);
     }
 
     .news-body {
-      padding: 16px;
+      padding: 15px;
     }
 
     .news-body h3 {
-      margin: 9px 0 8px;
-      display: -webkit-box;
-      overflow: hidden;
-      color: #ffffff;
+      margin: 8px 0;
       font-size: 14px;
-      font-weight: 730;
       line-height: 1.45;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
     }
 
     .news-body p {
       margin: 0;
-      color: rgba(255, 255, 255, 0.58);
+      color: rgba(255, 255, 255, 0.56);
       font-size: 9px;
-      line-height: 1.55;
     }
-
-    .news-empty {
-      grid-column: 1 / -1;
-      min-height: 260px;
-      display: grid;
-      place-items: center;
-      border:
-        1px dashed rgba(255, 255, 255, 0.22);
-      border-radius: var(--gv-radius);
-      color: rgba(255, 255, 255, 0.6);
-      text-align: center;
-    }
-
-    /* Newsletter and about */
 
     .final-grid {
       display: grid;
-      grid-template-columns:
-        minmax(0, 1fr)
-        minmax(0, 1fr);
-      gap: 22px;
+      grid-template-columns: 1fr 1fr;
+      gap: 21px;
     }
 
     .newsletter,
-    .about-promo {
-      min-height: 270px;
-      padding: 30px;
-      overflow: hidden;
-      border-radius: var(--gv-radius-large);
+    .about-card {
+      min-height: 260px;
+      padding: 28px;
+      border-radius: var(--radius-large);
     }
 
     .newsletter {
       color: #ffffff;
-      background:
-        linear-gradient(
-          140deg,
-          #0b376d,
-          #1769e0
-        );
-      box-shadow: var(--gv-shadow-large);
+      background: linear-gradient(140deg, #0b376d, #1769e0);
     }
 
-    .newsletter h2,
-    .about-promo h2 {
-      margin: 12px 0 10px;
-      font-size: clamp(27px, 3vw, 38px);
-      line-height: 1.1;
-      letter-spacing: -0.04em;
-    }
-
-    .newsletter p {
-      color: rgba(255, 255, 255, 0.72);
-      font-size: 12px;
-      line-height: 1.75;
-    }
-
-    .newsletter-form {
-      margin-top: 22px;
+    .newsletter form {
+      margin-top: 20px;
       display: grid;
-      grid-template-columns:
-        minmax(0, 1fr) auto;
-      gap: 10px;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
     }
 
-    .newsletter-form input {
+    .newsletter input {
       min-width: 0;
-      min-height: 46px;
-      padding: 11px 14px;
-      border:
-        1px solid rgba(255, 255, 255, 0.28);
-      border-radius: 12px;
+      padding: 11px;
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      border-radius: 11px;
       color: #ffffff;
-      background:
-        rgba(255, 255, 255, 0.1);
-      outline: none;
+      background: rgba(255, 255, 255, 0.1);
     }
 
-    .newsletter-form input::placeholder {
-      color:
-        rgba(255, 255, 255, 0.62);
-    }
-
-    .newsletter-form input:focus {
-      border-color: #ffffff;
-      box-shadow:
-        0 0 0 4px rgba(255, 255, 255, 0.12);
-    }
-
-    .newsletter-form button {
-      color: #0b376d;
-      background: #ffffff;
-      box-shadow: none;
-    }
-
-    .form-note {
-      min-height: 18px;
-      margin-top: 10px !important;
-      font-size: 9px !important;
-    }
-
-    .about-promo {
+    .about-card {
       border: 1px solid #cfe0f4;
-      background:
-        radial-gradient(
-          circle at 92% 0,
-          rgba(23, 105, 224, 0.2),
-          transparent 170px
-        ),
-        linear-gradient(
-          140deg,
-          #eaf2ff,
-          #f9fbff
-        );
+      background: linear-gradient(140deg, #eaf2ff, #f9fbff);
     }
 
-    .about-promo p {
-      color: var(--gv-muted);
-      font-size: 12px;
-      line-height: 1.75;
+    .page:not(.active) {
+      display: none;
     }
 
-    /* Footer */
+    .compatibility-page {
+      padding: 70px 0;
+    }
 
-    .site-footer {
+    footer {
       color: #ffffff;
-      background:
-        linear-gradient(
-          145deg,
-          #061426,
-          #0d2949
-        );
+      background: linear-gradient(145deg, #061426, #0d2949);
     }
 
     .footer-main {
-      padding: 52px 0 34px;
+      padding: 48px 0 30px;
       display: grid;
-      grid-template-columns:
-        minmax(260px, 1.4fr)
-        repeat(3, minmax(130px, 0.6fr));
-      gap: 34px;
+      grid-template-columns: 1.4fr repeat(2, 0.6fr);
+      gap: 30px;
     }
 
-    .footer-brand p {
-      max-width: 420px;
-      margin: 18px 0 0;
-      color: rgba(255, 255, 255, 0.58);
-      font-size: 11px;
-      line-height: 1.75;
-    }
-
-    .footer-column h3 {
-      margin-bottom: 14px;
-      color: #ffffff;
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    .footer-column a {
-      margin: 9px 0;
-      display: block;
+    .footer-main p,
+    .footer-main a {
       color: rgba(255, 255, 255, 0.6);
       font-size: 10px;
+    }
+
+    .footer-main a {
+      display: block;
+      margin: 8px 0;
       text-decoration: none;
     }
 
-    .footer-column a:hover,
-    .footer-column a:focus-visible {
-      color: #ffffff;
-    }
-
-    .footer-bottom {
-      min-height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      border-top:
-        1px solid rgba(255, 255, 255, 0.1);
-      color: rgba(255, 255, 255, 0.48);
+    .copyright {
+      padding: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.44);
       font-size: 9px;
     }
 
-    /* Article modal */
+    .search-layer {
+      position: fixed;
+      z-index: 1600;
+      inset: 0;
+      padding: 100px 20px;
+      background: rgba(4, 17, 34, 0.72);
+      backdrop-filter: blur(12px);
+    }
+
+    .search-dialog {
+      width: min(650px, 100%);
+      margin: auto;
+      overflow: hidden;
+      border-radius: 22px;
+      background: #ffffff;
+    }
+
+    .search-head {
+      padding: 17px;
+      display: flex;
+      gap: 9px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .search-head input {
+      min-width: 0;
+      flex: 1;
+      padding: 11px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    .search-results {
+      max-height: 55vh;
+      padding: 8px;
+      overflow: auto;
+    }
+
+    .search-result {
+      width: 100%;
+      padding: 13px;
+      border: 0;
+      border-radius: 10px;
+      background: transparent;
+      text-align: left;
+    }
+
+    .empty-message {
+      padding: 25px;
+      color: var(--muted);
+      text-align: center;
+    }
 
     .article-modal {
       position: fixed;
       z-index: 1700;
       inset: 0;
-      padding: 22px;
+      padding: 20px;
       display: grid;
       place-items: center;
-      background: rgba(4, 17, 34, 0.74);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
+      background: rgba(4, 17, 34, 0.75);
     }
 
-    .article-modal-card {
-      width: min(820px, 100%);
-      max-height: min(88vh, 900px);
+    .modal-card {
+      width: min(810px, 100%);
+      max-height: 90vh;
       overflow: auto;
-      border-radius: var(--gv-radius-large);
+      border-radius: var(--radius-large);
       background: #ffffff;
-      box-shadow:
-        0 34px 110px rgba(4, 18, 36, 0.4);
     }
 
-    .article-modal-cover {
-      position: relative;
-      height: min(38vh, 340px);
-      overflow: hidden;
-      background:
-        linear-gradient(
-          145deg,
-          #061426,
-          #1769e0
-        );
+    .modal-cover {
+      height: min(38vh, 330px);
+      background: #123f73;
     }
 
-    .article-modal-cover img {
+    .modal-cover img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-    .article-modal-close {
+    .modal-close {
       position: sticky;
       z-index: 3;
-      top: 14px;
+      top: 12px;
       float: right;
-      margin: 14px 14px -56px 0;
+      margin: 12px 12px -54px;
       color: #ffffff;
-      border-color:
-        rgba(255, 255, 255, 0.24);
-      background:
-        rgba(4, 17, 34, 0.64);
-      backdrop-filter: blur(10px);
+      background: rgba(4, 17, 34, 0.66);
     }
 
-    .article-modal-body {
-      padding: clamp(24px, 5vw, 50px);
+    .modal-body {
+      padding: clamp(24px, 5vw, 48px);
     }
 
-    .article-modal-body h2 {
-      margin: 13px 0 14px;
-      color: var(--gv-ink);
-      font-size: clamp(30px, 4.6vw, 52px);
-      line-height: 1.08;
-      letter-spacing: -0.045em;
+    .modal-body h2 {
+      font-size: clamp(29px, 4.5vw, 50px);
     }
 
-    .article-modal-meta {
-      margin-bottom: 24px;
-      color: var(--gv-muted);
+    .modal-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      color: var(--muted);
       font-size: 10px;
     }
 
-    .article-modal-content p {
-      color: var(--gv-ink-soft);
+    .modal-content p {
       font-size: 15px;
-      line-height: 1.9;
+      line-height: 1.85;
     }
 
-    .article-modal-actions {
-      margin-top: 28px;
+    .modal-actions {
+      margin-top: 25px;
+      display: flex;
+      gap: 8px;
     }
 
-    body.modal-open {
+    body.locked {
       overflow: hidden;
     }
 
-    /* Utility controls */
-
-    .back-to-top,
-    .gv-refresh-badge {
+    .back-to-top {
       position: fixed;
       z-index: 900;
       right: 14px;
-      border-radius: 999px;
-    }
-
-    .back-to-top {
-      bottom: 54px;
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border: 1px solid var(--gv-line);
-      color: var(--gv-blue);
-      background: rgba(255, 255, 255, 0.94);
-      box-shadow:
-        0 10px 28px rgba(8, 31, 61, 0.14);
-      cursor: pointer;
+      bottom: 50px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--blue);
+      background: #ffffff;
       opacity: 0;
       pointer-events: none;
-      transform: translateY(8px);
-      transition:
-        opacity 0.2s ease,
-        transform 0.2s ease;
     }
 
-    .back-to-top.visible {
+    .back-to-top.show {
       opacity: 1;
       pointer-events: auto;
-      transform: translateY(0);
     }
 
-    .gv-refresh-badge {
-      bottom: 14px;
-      padding: 7px 11px;
-      border:
-        1px solid rgba(255, 255, 255, 0.18);
-      color: #ffffff;
-      background:
-        rgba(6, 20, 39, 0.9);
-      box-shadow:
-        0 8px 25px rgba(4, 18, 36, 0.2);
-      font-size: 9px;
-      font-weight: 760;
-      letter-spacing: 0.06em;
-      pointer-events: none;
-      backdrop-filter: blur(10px);
-    }
-
-    .toast-region {
+    .test-badge {
       position: fixed;
-      z-index: 1900;
-      right: 18px;
-      top: calc(var(--gv-header-height) + 18px);
-      width: min(360px, calc(100% - 36px));
-      display: grid;
-      gap: 8px;
-      pointer-events: none;
+      z-index: 900;
+      right: 12px;
+      bottom: 10px;
+      padding: 6px 10px;
+      border-radius: 99px;
+      color: #ffffff;
+      background: rgba(6, 20, 38, 0.9);
+      font-size: 9px;
     }
-
-    .toast {
-      padding: 13px 15px;
-      border: 1px solid var(--gv-line);
-      border-radius: 14px;
-      color: var(--gv-ink);
-      background: rgba(255, 255, 255, 0.96);
-      box-shadow: var(--gv-shadow);
-      font-size: 11px;
-      line-height: 1.5;
-      animation:
-        gv-toast-in 0.25s var(--gv-ease) both;
-    }
-
-    @keyframes gv-toast-in {
-      from {
-        opacity: 0;
-        transform: translateY(-8px);
-      }
-    }
-
-    /* Dark mode */
 
     html[data-theme="dark"] {
-      --gv-ink: #eff5ff;
-      --gv-ink-soft: #c8d6e7;
-      --gv-muted: #9eafc4;
-      --gv-paper: #0d1b2c;
-      --gv-canvas: #07111f;
-      --gv-soft: #10233b;
-      --gv-line: #273950;
-      --gv-line-strong: #38506c;
-      --gv-dark: #030b14;
-      --gv-dark-2: #0b192a;
-    }
-
-    html[data-theme="dark"] body {
-      color: var(--gv-ink);
-      background: var(--gv-canvas);
+      --ink: #eff5ff;
+      --muted: #9eafc4;
+      --paper: #0d1b2c;
+      --canvas: #07111f;
+      --line: #273950;
+      --dark: #030b14;
     }
 
     html[data-theme="dark"] .site-header {
-      border-color: var(--gv-line);
-      background:
-        rgba(7, 17, 31, 0.94);
+      background: rgba(7, 17, 31, 0.95);
     }
 
-    html[data-theme="dark"] .brand-en,
-    html[data-theme="dark"] .section-heading h2,
-    html[data-theme="dark"] .section-heading h3,
-    html[data-theme="dark"] .panel-heading h3,
-    html[data-theme="dark"] .card-title,
-    html[data-theme="dark"] .work-title,
-    html[data-theme="dark"] .article-modal-body h2,
-    html[data-theme="dark"] .integration-status strong {
-      color: #eff5ff;
-    }
-
-    html[data-theme="dark"] .surface-card,
-    html[data-theme="dark"] .article-card,
+    html[data-theme="dark"] .compact-intro-card,
+    html[data-theme="dark"] .about-card,
     html[data-theme="dark"] .search-dialog,
-    html[data-theme="dark"] .article-modal-card,
-    html[data-theme="dark"] .mobile-menu .nav-link,
-    html[data-theme="dark"] .secondary-btn,
-    html[data-theme="dark"] .works-more-button,
-    html[data-theme="dark"] .toast {
+    html[data-theme="dark"] .modal-card,
+    html[data-theme="dark"] .article-card {
       background: #0d1b2c;
     }
 
@@ -1968,125 +1175,66 @@
       background: #091523;
     }
 
-    html[data-theme="dark"] .about-promo {
-      border-color: #27496d;
-      background:
-        radial-gradient(
-          circle at 92% 0,
-          rgba(23, 105, 224, 0.24),
-          transparent 170px
-        ),
-        linear-gradient(
-          140deg,
-          #0d2137,
-          #0d1b2c
-        );
-    }
-
-    html[data-theme="dark"] .icon-btn,
-    html[data-theme="dark"] .menu-button,
-    html[data-theme="dark"] .integration-status {
-      color: var(--gv-ink-soft);
-      border-color: var(--gv-line);
-      background: #10233b;
-    }
-
-    /* Responsive */
-
-    @media (max-width: 1080px) {
+    @media (max-width: 1000px) {
       .main-nav {
         display: none;
       }
 
       .menu-button {
-        display: inline-grid;
+        display: block;
       }
 
       .top-story-layout {
-        grid-template-columns:
-          minmax(0, 1fr)
-          minmax(330px, 0.78fr);
+        grid-template-columns: minmax(0, 2.1fr) minmax(260px, 0.9fr);
       }
 
-      .article-grid {
-        grid-template-columns:
-          repeat(2, minmax(0, 1fr));
-      }
-
-      .news-grid {
-        grid-template-columns:
-          repeat(2, minmax(0, 1fr));
-      }
-
-      .footer-main {
-        grid-template-columns:
-          minmax(260px, 1.2fr)
-          repeat(2, minmax(130px, 0.6fr));
+      .article-grid,
+      .live-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 860px) {
-      :root {
-        --gv-gutter: 18px;
+    @media (max-width: 800px) {
+      .container {
+        width: calc(100% - 36px);
       }
 
       .top-story-layout,
+      .content-layout,
       .media-layout,
       .final-grid {
         grid-template-columns: 1fr;
       }
 
-      .editorial-intro,
       .featured-carousel,
+      .featured-track,
       .featured-slide,
       .featured-empty {
-        min-height: 480px;
-        height: 480px;
+        height: 500px;
+        min-height: 500px;
       }
 
-      .pr-portfolio-grid,
-      .pr-grid,
-      #prPortfolioGrid,
-      #prPortfolioList {
-        grid-template-columns:
-          repeat(2, minmax(0, 1fr));
+      .compact-intro-card {
+        min-height: 250px;
       }
 
-      .pr-portfolio-card:first-child,
-      .pr-card:first-child {
-        grid-column: span 2;
-      }
-
-      .footer-main {
-        grid-template-columns:
-          repeat(2, minmax(0, 1fr));
-      }
-
-      .footer-brand {
-        grid-column: 1 / -1;
+      #prPortfolioCompanyGrid,
+      #prPortfolioIndustryGrid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 620px) {
+    @media (max-width: 600px) {
       :root {
-        --gv-gutter: 14px;
-        --gv-header-height: 70px;
-        --gv-radius: 17px;
-        --gv-radius-large: 22px;
+        --header-height: 68px;
       }
 
-      .header-inner {
-        gap: 8px;
-      }
-
-      .brand {
-        min-width: 0;
-        gap: 8px;
+      .container {
+        width: calc(100% - 28px);
       }
 
       .brand-mark {
         width: 34px;
-        height: 34px;
       }
 
       .brand-en {
@@ -2095,136 +1243,84 @@
 
       .brand-cn {
         font-size: 9px;
-        letter-spacing: 0.14em;
       }
 
-      .header-tools {
-        margin-left: auto;
-        gap: 5px;
-      }
-
-      .icon-btn,
+      .icon-button,
       .menu-button {
-        width: 38px;
-        height: 38px;
+        width: 37px;
+        height: 37px;
       }
 
       .theme-button {
         display: none;
       }
 
-      .mobile-menu-grid {
+      .mobile-nav.open {
         grid-template-columns: 1fr;
-      }
-
-      .ticker-label {
-        padding-right: 10px;
-        font-size: 8px;
-      }
-
-      .ticker-item {
-        max-width: 320px;
-        padding-inline: 16px;
       }
 
       main {
-        padding-top: 14px;
+        padding-top: 12px;
       }
 
       .top-story-layout {
-        gap: 14px;
+        gap: 13px;
       }
 
-      .editorial-intro,
       .featured-carousel {
-        margin-inline:
-          calc(50% - 50vw);
-        border-inline: 0;
-        border-radius:
-          0 0
-          var(--gv-radius-large)
-          var(--gv-radius-large);
-      }
-
-      .editorial-intro {
-        min-height: 520px;
-      }
-
-      .editorial-intro h1 {
-        font-size:
-          clamp(40px, 14vw, 62px);
+        margin-inline: calc(50% - 50vw);
+        border-radius: 0 0 var(--radius-large) var(--radius-large);
       }
 
       .featured-carousel,
+      .featured-track,
       .featured-slide,
       .featured-empty {
-        min-height: 500px;
-        height: 500px;
+        height: 490px;
+        min-height: 490px;
       }
 
-      .featured-content {
-        right: 22px;
-        bottom: 42px;
-        left: 22px;
+      .compact-intro-card {
+        min-height: 235px;
       }
 
-      .featured-content h2 {
-        font-size:
-          clamp(30px, 10vw, 42px);
-      }
-
-      .home-section {
-        padding: 58px 0;
-      }
-
-      .section-heading {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .article-grid,
-      .news-grid,
-      .pr-portfolio-grid,
-      .pr-grid,
-      #prPortfolioGrid,
-      #prPortfolioList {
-        grid-template-columns: 1fr;
-      }
-
-      .article-card.featured-industry,
-      .pr-portfolio-card:first-child,
-      .pr-card:first-child {
-        grid-column: auto;
-        grid-row: auto;
-      }
-
-      .featured-industry .card-image-wrap,
-      .pr-portfolio-card:first-child img,
-      .pr-card:first-child img {
-        min-height: 0;
-        height: 210px;
-      }
-
-      .card-image-wrap {
-        height: 210px;
-      }
-
-      .pr-shell,
-      .works-panel,
-      .newsletter,
-      .about-promo {
+      .intro-content {
+        position: relative;
+        min-height: 235px;
         padding: 22px;
       }
 
+      .section {
+        padding: 55px 0;
+      }
+
+      .section-heading {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .article-grid,
+      .live-grid,
+      #prPortfolioCompanyGrid,
+      #prPortfolioIndustryGrid {
+        grid-template-columns: 1fr;
+      }
+
+      .surface,
+      .trending-panel,
+      .works-panel,
+      .newsletter,
+      .about-card {
+        padding: 20px;
+      }
+
       .media-visual {
-        min-height: 480px;
-        margin-inline:
-          calc(50% - 50vw);
+        min-height: 450px;
+        margin-inline: calc(50% - 50vw);
         border-radius: 0;
       }
 
-      .newsletter-form {
+      .newsletter form {
         grid-template-columns: 1fr;
       }
 
@@ -2232,1153 +1328,392 @@
         grid-template-columns: 1fr;
       }
 
-      .footer-brand {
-        grid-column: auto;
-      }
-
-      .footer-bottom {
-        padding: 18px 0;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
       .article-modal {
         padding: 0;
         align-items: end;
       }
 
-      .article-modal-card {
+      .modal-card {
         max-height: 94vh;
-        border-radius:
-          var(--gv-radius-large)
-          var(--gv-radius-large)
-          0 0;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      *,
-      *::before,
-      *::after {
-        animation-duration:
-          0.001ms !important;
-        animation-iteration-count:
-          1 !important;
-        scroll-behavior:
-          auto !important;
-        transition-duration:
-          0.001ms !important;
+        border-radius: var(--radius-large) var(--radius-large) 0 0;
       }
     }
   </style>
 </head>
-
 <body>
-  <div class="loading-line" aria-hidden="true"></div>
-
-  <a class="skip-link" href="#mainContent">
-    跳到主要内容
-  </a>
+  <div class="loading-line"></div>
+  <a class="skip-link" href="#mainContent" data-i18n="skipMain">跳到主要内容</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a
-        class="brand"
-        href="#home"
-        aria-label="Global View 首页"
-      >
-        <svg
-          class="brand-mark"
-          viewBox="0 0 48 48"
-          aria-hidden="true"
-        >
-          <defs>
-            <linearGradient
-              id="gvMarkGradient"
-              x1="0"
-              x2="1"
-              y1="0"
-              y2="1"
-            >
-              <stop
-                offset="0"
-                stop-color="#61d7ff"
-              ></stop>
-              <stop
-                offset="1"
-                stop-color="#1769e0"
-              ></stop>
-            </linearGradient>
-          </defs>
-
-          <circle
-            cx="24"
-            cy="24"
-            r="20"
-            fill="none"
-            stroke="url(#gvMarkGradient)"
-            stroke-width="3"
-          ></circle>
-
-          <path
-            d="M8 24h32M24 4c6 6 9 13 9 20s-3 14-9 20c-6-6-9-13-9-20s3-14 9-20Z"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          ></path>
+      <a class="brand" href="#home" aria-label="Global View">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="3"></circle>
+          <path d="M8 24h32M24 4c6 6 9 13 9 20s-3 14-9 20c-6-6-9-13-9-20s3-14 9-20Z" fill="none" stroke="currentColor" stroke-width="2"></path>
         </svg>
-
-        <span class="brand-copy">
-          <span class="brand-en">
-            Global View
-          </span>
-          <span
-            class="brand-cn"
-            data-i18n="brandCn"
-          >
-            观澜泗渡
-          </span>
+        <span>
+          <span class="brand-en">Global View</span>
+          <span class="brand-cn">观澜泗渡</span>
         </span>
       </a>
 
-      <nav
-        class="main-nav"
-        aria-label="主要导航"
-      >
-        <a
-          class="nav-link active"
-          href="#home"
-          data-i18n="navHome"
-        >
-          首页
-        </a>
-
-        <a
-          class="nav-link"
-          href="#enterprise"
-          data-i18n="navEnterprise"
-        >
-          企业传播
-        </a>
-
-        <a
-          class="nav-link"
-          href="#industry"
-          data-i18n="navIndustry"
-        >
-          行业视角
-        </a>
-
-        <a
-          class="nav-link"
-          href="#media"
-          data-i18n="navMedia"
-        >
-          媒体作品
-        </a>
-
-        <a
-          class="nav-link"
-          href="#live"
-          data-i18n="navLive"
-        >
-          新闻速览
-        </a>
-
-        <a
-          class="nav-link"
-          href="#about"
-          data-i18n="navAbout"
-        >
-          关于
-        </a>
+      <nav class="main-nav">
+        <a class="active" href="#home" data-i18n="home">首页</a>
+        <a href="#enterprise" data-i18n="corporate">企业传播</a>
+        <a href="#industry" data-i18n="industry">行业视角</a>
+        <a href="#media" data-i18n="media">媒体作品</a>
+        <a href="#live" data-i18n="live">新闻速览</a>
+        <a href="#about" data-i18n="about">关于</a>
       </nav>
 
       <div class="header-tools">
-        <button
-          class="icon-btn search-button"
-          type="button"
-          aria-label="搜索"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            aria-hidden="true"
-          >
-            <circle
-              cx="11"
-              cy="11"
-              r="7"
-            ></circle>
-            <path d="m20 20-4-4"></path>
-          </svg>
-        </button>
-
-        <button
-          class="icon-btn theme-button"
-          type="button"
-          aria-label="切换深色模式"
-        >
-          <svg
-            class="theme-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            aria-hidden="true"
-          >
-            <path
-              d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"
-            ></path>
-          </svg>
-        </button>
-
-        <button
-          class="icon-btn language-button"
-          type="button"
-          aria-label="Switch language"
-        >
-          EN
-        </button>
-
-        <button
-          class="menu-button"
-          type="button"
-          aria-label="打开菜单"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            aria-hidden="true"
-          >
-            <path
-              d="M4 7h16M4 12h16M4 17h16"
-            ></path>
-          </svg>
-        </button>
+        <button class="icon-button search-button" aria-label="Search">⌕</button>
+        <button class="icon-button theme-button" aria-label="Theme">◐</button>
+        <button class="icon-button language-button">EN</button>
+        <button class="menu-button" aria-expanded="false">☰</button>
       </div>
     </div>
 
-    <nav
-      class="mobile-menu"
-      id="mobileMenu"
-      aria-label="移动端导航"
-    >
-      <div class="container mobile-menu-grid">
-        <a
-          class="nav-link"
-          href="#home"
-          data-i18n="navHome"
-        >
-          首页
-        </a>
-
-        <a
-          class="nav-link"
-          href="#enterprise"
-          data-i18n="navEnterprise"
-        >
-          企业传播
-        </a>
-
-        <a
-          class="nav-link"
-          href="#industry"
-          data-i18n="navIndustry"
-        >
-          行业视角
-        </a>
-
-        <a
-          class="nav-link"
-          href="#media"
-          data-i18n="navMedia"
-        >
-          媒体作品
-        </a>
-
-        <a
-          class="nav-link"
-          href="#live"
-          data-i18n="navLive"
-        >
-          新闻速览
-        </a>
-
-        <a
-          class="nav-link"
-          href="#about"
-          data-i18n="navAbout"
-        >
-          关于
-        </a>
-      </div>
+    <nav class="mobile-nav container">
+      <a href="#home" data-i18n="home">首页</a>
+      <a href="#enterprise" data-i18n="corporate">企业传播</a>
+      <a href="#industry" data-i18n="industry">行业视角</a>
+      <a href="#media" data-i18n="media">媒体作品</a>
+      <a href="#live" data-i18n="live">新闻速览</a>
+      <a href="#about" data-i18n="about">关于</a>
     </nav>
   </header>
 
-  <section
-    class="ticker"
-    aria-label="滚动头条"
-  >
+  <section class="ticker">
     <div class="container ticker-inner">
-      <div
-        class="ticker-label"
-        data-i18n="tickerLabel"
-      >
-        最新
-      </div>
-
+      <div class="ticker-label" data-i18n="latest">最新</div>
       <div class="ticker-window">
-        <div
-          class="ticker-content"
-          id="tickerContent"
-        >
-          <span
-            class="ticker-item"
-            data-i18n="loading"
-          >
-            正在连接内容接口…
-          </span>
+        <div class="ticker-content" id="tickerContent">
+          <span class="ticker-item" data-i18n="loading">正在连接内容接口…</span>
         </div>
       </div>
     </div>
   </section>
 
   <main id="mainContent">
-    <section
-      class="container top-story-layout"
-      id="home"
-      aria-labelledby="homeTitle"
-    >
-      <article class="editorial-intro">
-        <div class="editorial-intro-content">
-          <p
-            class="eyebrow"
-            data-i18n="introEyebrow"
-          >
-            GLOBAL COMMUNICATIONS
-          </p>
+    <div id="homePage" class="page active">
+      <section class="container top-story-layout" id="home">
+        <section class="featured-carousel" id="featuredCarousel">
+          <span class="featured-kicker" data-i18n="column">我的专栏 · COLUMN</span>
 
-          <h1
-            id="homeTitle"
-            data-i18n="introTitle"
-          >
-            以全球视野，讲述有影响力的故事。
-          </h1>
-
-          <p data-i18n="introBody">
-            聚焦企业传播、行业趋势与媒体实践，以清晰的叙事连接组织、受众与不断变化的世界。
-          </p>
-
-          <div class="intro-actions">
-            <a
-              class="primary-btn"
-              href="#enterprise"
-              data-i18n="introPrimary"
-            >
-              查看企业传播
-            </a>
-
-            <a
-              class="secondary-btn"
-              href="#live"
-              data-i18n="introSecondary"
-            >
-              浏览最新资讯
-            </a>
+          <div class="featured-track" id="featuredTrack">
+            <div class="featured-empty" id="cmsFeaturedStatus">
+              <strong data-i18n="loadingColumn">正在载入专栏文章</strong>
+              <span>/api/posts</span>
+            </div>
           </div>
-        </div>
-      </article>
 
-      <section
-        class="featured-carousel"
-        aria-label="我的专栏轮播"
-      >
-        <span
-          class="featured-kicker"
-          data-i18n="columnLabel"
-        >
-          我的专栏 · COLUMN
-        </span>
+          <div class="carousel-dots" id="carouselDots"></div>
+        </section>
 
-        <div
-          class="featured-track"
-          id="featuredTrack"
-          aria-live="polite"
-        >
-          <div class="featured-empty">
-            <strong
-              data-i18n="columnLoadingTitle"
-            >
-              正在载入专栏文章
-            </strong>
+        <article class="compact-intro-card">
+          <div class="intro-content">
+            <div class="eyebrow">EDITOR'S NOTE</div>
+            <h1 data-i18n="introTitle">连接世界，发现更多可能。</h1>
+            <p data-i18n="introText">从科技创新到文化生活，读懂正在发生的变化。</p>
 
-            <span
-              data-i18n="columnLoadingBody"
-            >
-              该区域直接连接现有 CMS 接口；正式首页不会被修改。
-            </span>
+            <div class="actions">
+              <a class="button primary" href="#enterprise" data-i18n="seeCorporate">查看企业传播</a>
+              <a class="button" href="#live" data-i18n="seeNews">浏览最新资讯</a>
+            </div>
           </div>
-        </div>
-
-        <div
-          class="carousel-dots"
-          id="carouselDots"
-          aria-label="轮播页码"
-        ></div>
+        </article>
       </section>
-    </section>
 
-    <section
-      class="home-section"
-      id="enterprise"
-      aria-labelledby="enterpriseTitle"
-    >
-      <div class="container">
-        <div class="section-heading">
-          <div class="section-heading-copy">
-            <p
-              class="eyebrow"
-              data-i18n="enterpriseEyebrow"
-            >
-              CORPORATE COMMUNICATIONS
-            </p>
+      <div id="prPortfolioSection">
+        <section class="section" id="enterprise">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <div class="eyebrow">CORPORATE COMMUNICATIONS</div>
+                <h2 id="prPortfolioCompanyHeading" data-i18n="corporate">企业传播</h2>
+                <p data-i18n="corporateText">最新公司新闻进入主展示位，其余内容自动下沉。</p>
+              </div>
 
-            <h2
-              id="enterpriseTitle"
-              data-i18n="enterpriseTitle"
-            >
-              企业传播
-            </h2>
+              <a
+                class="section-link"
+                href="/pr-portfolio-list.html?source=GenScript%20Official%20Website"
+                data-source-filter="GenScript Official Website"
+                data-i18n="viewAll"
+              >查看全部 →</a>
+            </div>
 
-            <p data-i18n="enterpriseBody">
-              最新公司新闻自动进入主展示位，其余内容按更新时间自然下沉。
-            </p>
-          </div>
-
-          <a
-            class="section-link"
-            id="prPortfolioCompanyMore"
-            href="pr-portfolio-list.html?source=GenScript%20Official%20Website"
-            data-i18n="viewAll"
-          >
-            查看全部 →
-          </a>
-        </div>
-
-        <div class="surface-card pr-shell">
-          <div
-            id="prPortfolioRoot"
-            class="pr-portfolio-section"
-            aria-live="polite"
-          >
-            <div id="prPortfolioSection">
-              <section
-                class="pr-portfolio-group"
-                aria-labelledby="prPortfolioCompanyHeading"
-              >
-                <h3
-                  id="prPortfolioCompanyHeading"
-                  hidden
-                >
-                  企业传播
-                </h3>
-
-                <div
-                  id="prPortfolioCompanyGrid"
-                  class="pr-portfolio-grid"
-                >
-                  <div class="integration-status">
-                    <div>
-                      <strong
-                        data-i18n="enterpriseLoadingTitle"
-                      >
-                        正在连接企业传播内容
-                      </strong>
-
-                      <span
-                        data-i18n="enterpriseLoadingBody"
-                      >
-                        保留现有 pr-portfolio.js 与样式接口，最新内容将自动占据主展示位。
-                      </span>
-                    </div>
+            <div class="surface">
+              <div id="prPortfolioCompanyGrid">
+                <div class="status" id="prCompanyStatus">
+                  <div>
+                    <strong data-i18n="loadingCorporate">正在连接企业传播内容</strong>
+                    <span>GenScript Official Website</span>
                   </div>
                 </div>
-              </section>
+              </div>
+
+              <a
+                id="prPortfolioCompanyMore"
+                href="/pr-portfolio-list.html?source=GenScript%20Official%20Website"
+                data-source-filter="GenScript Official Website"
+                data-i18n="viewMore"
+              >查看更多</a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="home-section industry-section"
-      id="industry"
-      aria-labelledby="industryTitle"
-    >
-      <div class="container">
-        <div class="section-heading">
-          <div class="section-heading-copy">
-            <p
-              class="eyebrow"
-              data-i18n="industryEyebrow"
-            >
-              INDUSTRY PERSPECTIVES
-            </p>
-
-            <h2
-              id="industryTitle"
-              data-i18n="industryTitle"
-            >
-              行业视角
-            </h2>
-
-            <p data-i18n="industryBody">
-              集中呈现原有行业与微信文章；专栏文章只在顶部轮播出现。
-            </p>
-          </div>
-
-          <a
-            class="section-link"
-            id="prPortfolioIndustryMore"
-            href="pr-portfolio-list.html?source=Industry%20News"
-            data-i18n="viewAll"
-          >
-            查看全部 →
-          </a>
-        </div>
-
-        <section
-          class="pr-portfolio-group"
-          aria-labelledby="prPortfolioIndustryHeading"
-        >
-          <h3
-            id="prPortfolioIndustryHeading"
-            hidden
-          >
-            行业视角
-          </h3>
-
-          <div
-            id="prPortfolioIndustryGrid"
-            class="pr-portfolio-grid"
-            aria-live="polite"
-          >
-            <div class="skeleton-card surface-card"></div>
-            <div class="skeleton-card surface-card"></div>
-            <div class="skeleton-card surface-card"></div>
           </div>
         </section>
 
-        <div
-          class="article-grid"
-          id="articlesGrid"
-          aria-live="polite"
-          hidden
-        ></div>
-      </div>
-    </section>
+        <section class="section industry-section" id="industry">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <div class="eyebrow">INDUSTRY PERSPECTIVES</div>
+                <h2 id="prPortfolioIndustryHeading" data-i18n="industry">行业视角</h2>
+                <p data-i18n="industryText">本区仅使用 Industry News 与现有微信文章逻辑。</p>
+              </div>
 
-    <section
-      class="home-section"
-      id="media"
-      aria-labelledby="mediaTitle"
-    >
-      <div class="container">
-        <div class="section-heading">
-          <div class="section-heading-copy">
-            <p
-              class="eyebrow"
-              data-i18n="mediaEyebrow"
-            >
-              MEDIA FEATURES
-            </p>
-
-            <h2
-              id="mediaTitle"
-              data-i18n="mediaTitle"
-            >
-              媒体作品
-            </h2>
-
-            <p data-i18n="mediaBody">
-              通过现有作品接口展示视频、专题与传播实践。
-            </p>
-          </div>
-
-          <a
-            class="section-link"
-            href="works.html"
-            data-i18n="viewAll"
-          >
-            查看全部 →
-          </a>
-        </div>
-
-        <div class="media-layout">
-          <article class="media-visual">
-            <div class="media-visual-copy">
-              <p
-                class="eyebrow"
-                data-i18n="mediaFeatureEyebrow"
-              >
-                STORYTELLING IN PRACTICE
-              </p>
-
-              <h3
-                data-i18n="mediaFeatureTitle"
-              >
-                让内容既有策略，也有温度。
-              </h3>
-
-              <p
-                data-i18n="mediaFeatureBody"
-              >
-                视觉区域完整铺满封面，在桌面与移动端保持一致的叙事重心。
-              </p>
-            </div>
-          </article>
-
-          <aside
-            class="surface-card works-panel"
-            aria-labelledby="worksPanelTitle"
-          >
-            <div class="panel-heading">
-              <h3
-                id="worksPanelTitle"
-                data-i18n="latestWorks"
-              >
-                最新作品
-              </h3>
+              <a
+                class="section-link"
+                href="/pr-portfolio-list.html?source=Industry%20News"
+                data-source-filter="Industry News"
+                data-i18n="viewAll"
+              >查看全部 →</a>
             </div>
 
-            <div
-              class="works-list"
-              id="worksList"
-              aria-live="polite"
-            >
-              <p
-                class="search-empty"
-                data-i18n="loading"
-              >
-                正在连接内容接口…
-              </p>
+            <div class="surface">
+              <div id="prPortfolioIndustryGrid">
+                <div class="status" id="prIndustryStatus">
+                  <div>
+                    <strong data-i18n="loadingIndustry">正在连接行业文章</strong>
+                    <span>Industry News</span>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                id="prPortfolioIndustryMore"
+                href="/pr-portfolio-list.html?source=Industry%20News"
+                data-source-filter="Industry News"
+                data-i18n="viewMore"
+              >查看更多</a>
             </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="home-section live-section"
-      id="live"
-      aria-labelledby="liveTitle"
-    >
-      <div class="container">
-        <div class="section-heading">
-          <div class="section-heading-copy">
-            <p
-              class="eyebrow"
-              data-i18n="liveEyebrow"
-            >
-              LIVE NEWS
-            </p>
-
-            <h2
-              id="liveTitle"
-              data-i18n="liveTitle"
-            >
-              新闻速览
-            </h2>
-
-            <p data-i18n="liveBody">
-              直接读取 auto-news.json，按科技、商业、文化、生活四类呈现。
-            </p>
           </div>
-        </div>
-
-        <div
-          class="news-tabs"
-          role="tablist"
-          aria-label="新闻分类"
-        >
-          <button
-            class="news-tab active"
-            type="button"
-            role="tab"
-            aria-selected="true"
-            data-news-filter="all"
-            data-i18n="all"
-          >
-            全部
-          </button>
-
-          <button
-            class="news-tab"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-news-filter="tech"
-            data-i18n="tech"
-          >
-            科技
-          </button>
-
-          <button
-            class="news-tab"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-news-filter="business"
-            data-i18n="business"
-          >
-            商业
-          </button>
-
-          <button
-            class="news-tab"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-news-filter="culture"
-            data-i18n="culture"
-          >
-            文化
-          </button>
-
-          <button
-            class="news-tab"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-news-filter="life"
-            data-i18n="life"
-          >
-            生活
-          </button>
-        </div>
-
-        <div
-          class="news-grid"
-          id="liveNewsGrid"
-          aria-live="polite"
-        >
-          <div
-            class="news-empty"
-            data-i18n="loading"
-          >
-            正在连接内容接口…
-          </div>
-        </div>
-
-        <!-- 保留原 index 的固定接口容器 -->
-        <div hidden>
-          <div id="filterRow"></div>
-          <div id="articleGrid"></div>
-          <span id="articleCount"></span>
-          <div id="emptyState"></div>
-          <div id="categoryArticleGrid"></div>
-          <div id="categoryEmptyState"></div>
-          <div id="categoryFilterRow"></div>
-          <h2 id="categoryPageTitle"></h2>
-          <p id="categoryPageDesc"></p>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="home-section"
-      id="about"
-      aria-label="订阅与关于"
-    >
-      <div class="container final-grid">
-        <section class="newsletter">
-          <p
-            class="eyebrow"
-            data-i18n="newsletterEyebrow"
-          >
-            STAY INFORMED
-          </p>
-
-          <h2 data-i18n="newsletterTitle">
-            订阅 Global View
-          </h2>
-
-          <p data-i18n="newsletterBody">
-            获得企业传播观察、行业文章与最新作品更新。
-          </p>
-
-          <form
-            class="newsletter-form"
-            id="newsletterForm"
-            action="https://buttondown.com/api/emails/embed-subscribe/globalviewnet"
-            method="post"
-            target="_blank"
-          >
-            <label
-              class="skip-link"
-              for="newsletterEmail"
-              data-i18n="emailLabel"
-            >
-              邮箱地址
-            </label>
-
-            <input
-              id="newsletterEmail"
-              name="email"
-              type="email"
-              autocomplete="email"
-              placeholder="name@example.com"
-              required
-            >
-
-            <button
-              class="primary-btn"
-              type="submit"
-              data-i18n="subscribe"
-            >
-              订阅
-            </button>
-          </form>
-
-          <p
-            class="form-note"
-            id="newsletterNote"
-            aria-live="polite"
-          ></p>
-        </section>
-
-        <section class="about-promo">
-          <p
-            class="eyebrow"
-            data-i18n="aboutEyebrow"
-          >
-            ABOUT GLOBAL VIEW
-          </p>
-
-          <h2 data-i18n="aboutTitle">
-            连接全球趋势与本地实践。
-          </h2>
-
-          <p data-i18n="aboutBody">
-            Global View 是一个聚焦企业传播、媒体内容与行业观察的双语平台。
-          </p>
-
-          <a
-            class="secondary-btn"
-            href="#home"
-            data-i18n="backHome"
-          >
-            返回首页
-          </a>
-
-          <div id="disclaimer" hidden></div>
         </section>
       </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">LATEST INSIGHTS</div>
+              <h2 data-i18n="insights">最新内容</h2>
+              <p data-i18n="insightsText">浏览专栏之外的最新文章与观察。</p>
+            </div>
+
+            <span id="articleCount"></span>
+          </div>
+
+          <div id="filterRow" class="tabs"></div>
+
+          <div class="content-layout">
+            <div>
+              <div id="articleGrid" class="article-grid"></div>
+              <div id="emptyState" class="status" hidden data-i18n="empty">没有找到匹配内容。</div>
+            </div>
+
+            <aside class="surface trending-panel">
+              <h3 data-i18n="trending">热门阅读</h3>
+              <ol id="trendingList" class="trending-list"></ol>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="media">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">MEDIA WORKS</div>
+              <h2 data-i18n="media">媒体作品</h2>
+              <p data-i18n="mediaText">通过现有接口展示媒体作品。</p>
+            </div>
+
+            <a class="section-link" href="/works.html" data-i18n="viewAll">查看全部 →</a>
+          </div>
+
+          <div class="media-layout">
+            <article class="media-visual">
+              <div class="media-copy">
+                <div class="eyebrow">STORYTELLING IN PRACTICE</div>
+                <h3 data-i18n="storyTitle">让内容既有策略，也有温度。</h3>
+                <p data-i18n="storyText">在不同屏幕保持一致的叙事重心。</p>
+              </div>
+            </article>
+
+            <aside class="surface works-panel">
+              <h3 data-i18n="works">最新作品</h3>
+              <div id="worksList" class="works-list">
+                <p class="empty-message" data-i18n="loading">正在连接内容接口…</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section live-section" id="live">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">LIVE NEWS</div>
+              <h2 data-i18n="live">新闻速览</h2>
+              <p data-i18n="liveText">直接读取 /auto-news.json 的 items。</p>
+            </div>
+          </div>
+
+          <div class="tabs">
+            <button class="tab active" data-filter="all" data-i18n="all">全部</button>
+            <button class="tab" data-filter="tech" data-i18n="tech">科技</button>
+            <button class="tab" data-filter="business" data-i18n="business">商业</button>
+            <button class="tab" data-filter="culture" data-i18n="culture">文化</button>
+            <button class="tab" data-filter="life" data-i18n="life">生活</button>
+          </div>
+
+          <div id="liveNewsGrid" class="live-grid">
+            <div class="empty-message" data-i18n="loading">正在连接内容接口…</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container final-grid">
+          <section class="newsletter">
+            <div class="eyebrow">STAY INFORMED</div>
+            <h2 data-i18n="subscribe">订阅 Global View</h2>
+            <p data-i18n="subscribeText">获得观察、文章与作品更新。</p>
+
+            <form id="newsletterForm">
+              <input id="newsletterEmail" type="email" placeholder="name@example.com" required>
+              <button class="button" data-i18n="subscribeButton">订阅</button>
+            </form>
+
+            <p id="newsletterNote"></p>
+          </section>
+
+          <section class="about-card">
+            <div class="eyebrow">ABOUT GLOBAL VIEW</div>
+            <h2 data-i18n="aboutTitle">连接全球趋势与本地实践。</h2>
+            <p data-i18n="aboutText">聚焦企业传播、媒体内容与行业观察。</p>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <section id="categoryPage" class="page compatibility-page">
+      <div class="container">
+        <h2 id="categoryPageTitle" data-i18n="categoryTitle">分类文章</h2>
+        <p id="categoryPageDesc" data-i18n="categoryText">按分类浏览文章。</p>
+        <div id="categoryFilterRow" class="tabs"></div>
+        <div id="categoryArticleGrid" class="article-grid"></div>
+        <div id="categoryEmptyState" class="status" hidden data-i18n="empty">没有找到匹配内容。</div>
+      </div>
     </section>
 
-    <!-- 保留 cms-integration.js 依赖 -->
-    <section id="homePage" hidden></section>
-    <section id="categoryPage" hidden></section>
-    <section id="aboutPage" hidden></section>
-    <ol id="trendingList" hidden></ol>
+    <section id="aboutPage" class="page compatibility-page">
+      <div class="container about-card">
+        <h2>Global View</h2>
+        <p data-i18n="aboutTitle">连接全球趋势与本地实践。</p>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <div class="container footer-main">
-      <div class="footer-brand">
+      <div>
         <a class="brand" href="#home">
-          <svg
-            class="brand-mark"
-            viewBox="0 0 48 48"
-            aria-hidden="true"
-          >
-            <circle
-              cx="24"
-              cy="24"
-              r="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="3"
-            ></circle>
-
-            <path
-              d="M8 24h32M24 4c6 6 9 13 9 20s-3 14-9 20c-6-6-9-13-9-20s3-14 9-20Z"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            ></path>
-          </svg>
-
-          <span class="brand-copy">
-            <span
-              class="brand-en"
-              style="color:#fff"
-            >
-              Global View
-            </span>
-
-            <span
-              class="brand-cn"
-              style="color:#61d7ff"
-              data-i18n="brandCn"
-            >
-              观澜泗渡
-            </span>
+          <span>
+            <span class="brand-en" style="color:#fff">Global View</span>
+            <span class="brand-cn">观澜泗渡</span>
           </span>
         </a>
-
-        <p data-i18n="footerDescription">
-          以双语视角连接全球资讯，让值得关注的想法跨越边界。
-        </p>
+        <p data-i18n="footerText">连接企业、行业与世界。</p>
       </div>
 
-      <div class="footer-column">
-        <h3 data-i18n="footerExplore">
-          探索
-        </h3>
-
-        <a
-          href="#enterprise"
-          data-i18n="navEnterprise"
-        >
-          企业传播
-        </a>
-
-        <a
-          href="#industry"
-          data-i18n="navIndustry"
-        >
-          行业视角
-        </a>
-
-        <a
-          href="#media"
-          data-i18n="navMedia"
-        >
-          媒体作品
-        </a>
+      <div>
+        <h3 data-i18n="explore">探索</h3>
+        <a href="#enterprise" data-i18n="corporate">企业传播</a>
+        <a href="#industry" data-i18n="industry">行业视角</a>
+        <a href="#media" data-i18n="media">媒体作品</a>
       </div>
 
-      <div class="footer-column">
-        <h3 data-i18n="footerNews">
-          资讯
-        </h3>
-
-        <a href="#live" data-i18n="tech">
-          科技
-        </a>
-
-        <a href="#live" data-i18n="business">
-          商业
-        </a>
-
-        <a href="#live" data-i18n="culture">
-          文化
-        </a>
-
-        <a href="#live" data-i18n="life">
-          生活
-        </a>
-      </div>
-
-      <div class="footer-column">
-        <h3 data-i18n="footerMore">
-          更多
-        </h3>
-
-        <a
-          href="column.html"
-          data-i18n="columnLabel"
-        >
-          我的专栏
-        </a>
-
-        <a
-          href="works.html"
-          data-i18n="latestWorks"
-        >
-          最新作品
-        </a>
-
-        <a
-          href="#about"
-          data-i18n="navAbout"
-        >
-          关于
-        </a>
+      <div>
+        <h3 data-i18n="news">资讯</h3>
+        <a href="#live" data-i18n="tech">科技</a>
+        <a href="#live" data-i18n="business">商业</a>
+        <a href="#live" data-i18n="culture">文化</a>
+        <a href="#live" data-i18n="life">生活</a>
       </div>
     </div>
 
-    <div class="container footer-bottom">
-      <span>
-        © <span id="currentYear"></span>
-        Global View
-      </span>
-
-      <span data-i18n="testNotice">
-        视觉焕新独立测试页 · 正式首页未修改
-      </span>
+    <div class="container copyright">
+      © <span id="currentYear"></span> Global View
     </div>
   </footer>
 
-  <section
-    class="search-layer"
-    id="searchLayer"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="searchTitle"
-    hidden
-  >
+  <section id="searchLayer" class="search-layer" hidden>
     <div class="search-dialog">
-      <div class="search-dialog-header">
-        <label
-          class="skip-link"
-          id="searchTitle"
-          for="searchInput"
-          data-i18n="search"
-        >
-          搜索
-        </label>
-
-        <input
-          id="searchInput"
-          type="search"
-          autocomplete="off"
-          placeholder="搜索文章与作品"
-        >
-
-        <button
-          class="icon-btn search-close"
-          type="button"
-          aria-label="关闭搜索"
-        >
-          ×
-        </button>
+      <div class="search-head">
+        <input id="searchInput" type="search">
+        <button class="icon-button search-close">×</button>
       </div>
 
-      <div
-        class="search-results"
-        id="searchResults"
-      >
-        <p
-          class="search-empty"
-          data-i18n="searchHint"
-        >
-          输入关键词搜索当前已载入内容。
-        </p>
+      <div id="searchResults" class="search-results">
+        <p class="empty-message" data-i18n="searchHint">输入关键词搜索当前内容。</p>
       </div>
     </div>
   </section>
 
-  <section
-    class="article-modal"
-    id="articleModal"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="articleModalTitle"
-    hidden
-  >
-    <article class="article-modal-card">
-      <button
-        class="icon-btn article-modal-close"
-        id="modalClose"
-        type="button"
-        aria-label="关闭"
-      >
-        ×
-      </button>
+  <section id="articleModal" class="article-modal" hidden>
+    <article id="modalDialog" class="modal-card">
+      <button id="closeArticleBtn" class="icon-button modal-close">×</button>
 
-      <div
-        class="article-modal-cover"
-        id="articleModalCover"
-      ></div>
+      <div class="modal-cover">
+        <img id="modalImage" alt="" hidden>
+      </div>
 
-      <div class="article-modal-body">
-        <span
-          class="category-tag"
-          id="articleModalCategory"
-        ></span>
+      <div class="modal-body">
+        <span id="modalCategory" class="category-tag"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalSubtitle"></p>
 
-        <h2 id="articleModalTitle"></h2>
+        <p class="modal-meta">
+          <span id="modalAuthor"></span>
+          <span id="modalDate"></span>
+          <span id="modalReadTime"></span>
+        </p>
 
-        <p
-          class="article-modal-meta"
-          id="articleModalMeta"
-        ></p>
+        <div id="modalBody" class="modal-content"></div>
+        <p id="modalSource"></p>
+        <div id="modalTags"></div>
 
-        <div
-          class="article-modal-content"
-          id="articleModalContent"
-        ></div>
+        <div class="modal-actions">
+          <button id="shareArticleBtn" class="button" data-i18n="share">分享</button>
+          <a id="modalOriginalLink" class="button primary" hidden data-i18n="original">阅读原文</a>
+        </div>
 
-        <div
-          class="article-modal-actions"
-          id="articleModalActions"
-        ></div>
+        <p id="shareMessage"></p>
       </div>
     </article>
   </section>
 
-  <!-- 保留原 index 模态框契约 -->
-  <div hidden>
-    <img id="modalImage" alt="">
-    <span id="modalCategory"></span>
-    <h2 id="modalTitle"></h2>
-    <p id="modalSubtitle"></p>
-    <span id="modalAuthor"></span>
-    <span id="modalDate"></span>
-    <span id="modalReadTime"></span>
-    <div id="modalBody"></div>
-    <div id="modalSource"></div>
-    <div id="modalTags"></div>
-    <button id="shareArticleBtn"></button>
-    <button id="closeArticleBtn"></button>
-    <p id="shareMessage"></p>
-    <div id="modalDialog"></div>
-  </div>
-
-  <button
-    class="back-to-top"
-    id="backToTop"
-    type="button"
-    aria-label="返回顶部"
-  >
-    ↑
-  </button>
-
-  <div
-    class="gv-refresh-badge"
-    id="gvRefreshBadge"
-  >
-    视觉焕新 · 测试
-  </div>
-
-  <div
-    class="toast-region"
-    id="toastRegion"
-    aria-live="polite"
-  ></div>
+  <button id="backToTop" class="back-to-top">↑</button>
+  <div id="gvRefreshBadge" class="test-badge">视觉焕新 · 测试</div>
+  <div id="toastRegion"></div>
 
   <script>
     "use strict";
 
-    /*
-     * Shared state and compatibility contract
-     */
-
     var currentLang =
-      localStorage.getItem("gv-language") === "en"
+      localStorage.getItem("gvLanguage") === "en"
         ? "en"
         : "zh";
 
@@ -3386,321 +1721,128 @@
     var articles = [];
     var currentSlide = 0;
     var carouselTimer = null;
-    var activeNewsFilter = "all";
     var liveNewsItems = [];
+    var activeNewsFilter = "all";
 
     var translations = {
       zh: {
-        brandCn: "观澜泗渡",
-        navHome: "首页",
-        navEnterprise: "企业传播",
-        navIndustry: "行业视角",
-        navMedia: "媒体作品",
-        navLive: "新闻速览",
-        navAbout: "关于",
-        tickerLabel: "最新",
+        skipMain: "跳到主要内容",
+        home: "首页",
+        corporate: "企业传播",
+        industry: "行业视角",
+        media: "媒体作品",
+        live: "新闻速览",
+        about: "关于",
+        latest: "最新",
         loading: "正在连接内容接口…",
-
-        introEyebrow:
-          "GLOBAL COMMUNICATIONS",
-        introTitle:
-          "以全球视野，讲述有影响力的故事。",
-        introBody:
-          "聚焦企业传播、行业趋势与媒体实践，以清晰的叙事连接组织、受众与不断变化的世界。",
-        introPrimary:
-          "查看企业传播",
-        introSecondary:
-          "浏览最新资讯",
-
-        columnLabel:
-          "我的专栏",
-        columnLoadingTitle:
-          "正在载入专栏文章",
-        columnLoadingBody:
-          "该区域直接连接现有 CMS 接口；正式首页不会被修改。",
-
-        enterpriseEyebrow:
-          "CORPORATE COMMUNICATIONS",
-        enterpriseTitle:
-          "企业传播",
-        enterpriseBody:
-          "最新公司新闻自动进入主展示位，其余内容按更新时间自然下沉。",
-        enterpriseLoadingTitle:
-          "正在连接企业传播内容",
-        enterpriseLoadingBody:
-          "保留现有 pr-portfolio.js 与样式接口，最新内容将自动占据主展示位。",
-
-        industryEyebrow:
-          "INDUSTRY PERSPECTIVES",
-        industryTitle:
-          "行业视角",
-        industryBody:
-          "集中呈现原有行业与微信文章；专栏文章只在顶部轮播出现。",
-
-        mediaEyebrow:
-          "MEDIA FEATURES",
-        mediaTitle:
-          "媒体作品",
-        mediaBody:
-          "通过现有作品接口展示视频、专题与传播实践。",
-        mediaFeatureEyebrow:
-          "STORYTELLING IN PRACTICE",
-        mediaFeatureTitle:
-          "让内容既有策略，也有温度。",
-        mediaFeatureBody:
-          "视觉区域完整铺满封面，在桌面与移动端保持一致的叙事重心。",
-        latestWorks:
-          "最新作品",
-
-        liveEyebrow:
-          "LIVE NEWS",
-        liveTitle:
-          "新闻速览",
-        liveBody:
-          "直接读取 auto-news.json，按科技、商业、文化、生活四类呈现。",
-
+        column: "我的专栏 · COLUMN",
+        loadingColumn: "正在载入专栏文章",
+        introTitle: "连接世界，发现更多可能。",
+        introText: "从科技创新到文化生活，读懂正在发生的变化。",
+        seeCorporate: "查看企业传播",
+        seeNews: "浏览最新资讯",
+        corporateText: "最新公司新闻进入主展示位，其余内容自动下沉。",
+        loadingCorporate: "正在连接企业传播内容",
+        industryText: "本区仅使用 Industry News 与现有微信文章逻辑。",
+        loadingIndustry: "正在连接行业文章",
+        viewAll: "查看全部 →",
+        viewMore: "查看更多",
+        insights: "最新内容",
+        insightsText: "浏览专栏之外的最新文章与观察。",
+        trending: "热门阅读",
+        mediaText: "通过现有接口展示媒体作品。",
+        storyTitle: "让内容既有策略，也有温度。",
+        storyText: "在不同屏幕保持一致的叙事重心。",
+        works: "最新作品",
+        liveText: "直接读取 /auto-news.json 的 items。",
         all: "全部",
         tech: "科技",
         business: "商业",
         culture: "文化",
         life: "生活",
-
-        newsletterEyebrow:
-          "STAY INFORMED",
-        newsletterTitle:
-          "订阅 Global View",
-        newsletterBody:
-          "获得企业传播观察、行业文章与最新作品更新。",
-        emailLabel:
-          "邮箱地址",
-        subscribe:
-          "订阅",
-
-        aboutEyebrow:
-          "ABOUT GLOBAL VIEW",
-        aboutTitle:
-          "连接全球趋势与本地实践。",
-        aboutBody:
-          "Global View 是一个聚焦企业传播、媒体内容与行业观察的双语平台。",
-        backHome:
-          "返回首页",
-
-        footerDescription:
-          "以双语视角连接全球资讯，让值得关注的想法跨越边界。",
-        footerExplore:
-          "探索",
-        footerNews:
-          "资讯",
-        footerMore:
-          "更多",
-        testNotice:
-          "视觉焕新独立测试页 · 正式首页未修改",
-
-        viewAll:
-          "查看全部 →",
-        search:
-          "搜索",
-        searchHint:
-          "输入关键词搜索当前已载入内容。",
-        searchPlaceholder:
-          "搜索文章与作品",
-        noResults:
-          "没有找到匹配内容。",
-        noIndustry:
-          "当前语言下暂时没有可显示的行业文章。",
-        noNews:
-          "当前分类暂时没有新闻。",
-        source:
-          "来源",
-        readMore:
-          "阅读原文",
-        minutes:
-          "分钟阅读",
-        subscribeOk:
-          "订阅窗口已经打开。",
-        invalidEmail:
-          "请输入有效的邮箱地址。",
-        interfaceError:
-          "部分内容接口暂时不可用，页面其他区域仍可正常测试。",
-
-        catTech: "科技",
-        catBusiness: "商业",
-        catCulture: "文化",
-        catLife: "生活",
-        sourceLabel: "来源",
-        articlesCount: "篇文章",
-        worksTitle: "媒体作品",
-        worksEmpty: "暂无作品",
-        viewMoreArticles: "查看更多文章 →",
-        trendingTitle: "我的专栏"
+        subscribe: "订阅 Global View",
+        subscribeText: "获得观察、文章与作品更新。",
+        subscribeButton: "订阅",
+        aboutTitle: "连接全球趋势与本地实践。",
+        aboutText: "聚焦企业传播、媒体内容与行业观察。",
+        footerText: "连接企业、行业与世界。",
+        explore: "探索",
+        news: "资讯",
+        categoryTitle: "分类文章",
+        categoryText: "按分类浏览文章。",
+        empty: "没有找到匹配内容。",
+        searchHint: "输入关键词搜索当前内容。",
+        share: "分享",
+        original: "阅读原文",
+        source: "来源",
+        readTime: "分钟阅读"
       },
 
       en: {
-        brandCn: "观澜泗渡",
-        navHome: "Home",
-        navEnterprise:
-          "PR Portfolio",
-        navIndustry:
-          "Industry Insights",
-        navMedia:
-          "Media Features",
-        navLive:
-          "Live News",
-        navAbout:
-          "About",
-        tickerLabel:
-          "Latest",
-        loading:
-          "Connecting to content services…",
-
-        introEyebrow:
-          "GLOBAL COMMUNICATIONS",
-        introTitle:
-          "Stories with impact, seen through a global lens.",
-        introBody:
-          "Corporate communications, industry shifts and media practice, connected through clear and purposeful storytelling.",
-        introPrimary:
-          "Explore PR Portfolio",
-        introSecondary:
-          "Browse Live News",
-
-        columnLabel:
-          "My Column",
-        columnLoadingTitle:
-          "Loading column stories",
-        columnLoadingBody:
-          "This area connects directly to the existing CMS. The production homepage remains unchanged.",
-
-        enterpriseEyebrow:
-          "CORPORATE COMMUNICATIONS",
-        enterpriseTitle:
-          "PR Portfolio",
-        enterpriseBody:
-          "The latest company story takes the lead position while earlier updates move down automatically.",
-        enterpriseLoadingTitle:
-          "Connecting corporate stories",
-        enterpriseLoadingBody:
-          "The existing pr-portfolio.js and stylesheet remain authoritative.",
-
-        industryEyebrow:
-          "INDUSTRY INSIGHTS",
-        industryTitle:
-          "Industry Insights",
-        industryBody:
-          "Industry and WeChat stories stay here. Column articles appear only in the top carousel.",
-
-        mediaEyebrow:
-          "MEDIA FEATURES",
-        mediaTitle:
-          "Media Features",
-        mediaBody:
-          "Videos, features and communications practice from the existing works service.",
-        mediaFeatureEyebrow:
-          "STORYTELLING IN PRACTICE",
-        mediaFeatureTitle:
-          "Strategy, craft and a human point of view.",
-        mediaFeatureBody:
-          "Cover visuals fill the frame consistently across desktop and mobile.",
-        latestWorks:
-          "Latest Features",
-
-        liveEyebrow:
-          "LIVE NEWS",
-        liveTitle:
-          "Live News",
-        liveBody:
-          "Powered by auto-news.json across Technology, Business, Culture and Life.",
-
+        skipMain: "Skip to main content",
+        home: "Home",
+        corporate: "Corporate",
+        industry: "Industry Perspectives",
+        media: "Media Works",
+        live: "Live News",
+        about: "About",
+        latest: "Latest",
+        loading: "Connecting to content services…",
+        column: "MY COLUMN",
+        loadingColumn: "Loading column stories",
+        introTitle: "Connect with the world. Discover more possibilities.",
+        introText: "Understand change across technology, culture and life.",
+        seeCorporate: "Explore Corporate Stories",
+        seeNews: "Browse Live News",
+        corporateText: "The latest company story leads; earlier updates follow.",
+        loadingCorporate: "Connecting corporate stories",
+        industryText: "Industry News and existing WeChat stories only.",
+        loadingIndustry: "Connecting industry stories",
+        viewAll: "View all →",
+        viewMore: "View more",
+        insights: "Latest Insights",
+        insightsText: "Browse recent stories and perspectives.",
+        trending: "Trending",
+        mediaText: "Works from the existing media service.",
+        storyTitle: "Strategy, craft and a human point of view.",
+        storyText: "Consistent storytelling across every screen.",
+        works: "Latest Works",
+        liveText: "Powered by the items array in /auto-news.json.",
         all: "All",
         tech: "Technology",
         business: "Business",
         culture: "Culture",
         life: "Life",
-
-        newsletterEyebrow:
-          "STAY INFORMED",
-        newsletterTitle:
-          "Subscribe to Global View",
-        newsletterBody:
-          "Corporate communications insights, industry perspectives and new work.",
-        emailLabel:
-          "Email address",
-        subscribe:
-          "Subscribe",
-
-        aboutEyebrow:
-          "ABOUT GLOBAL VIEW",
-        aboutTitle:
-          "Connecting global shifts with local practice.",
-        aboutBody:
-          "Global View is a bilingual platform for corporate communications, media features and industry insights.",
-        backHome:
-          "Back to Home",
-
-        footerDescription:
-          "Connecting global developments and ideas through a bilingual perspective.",
-        footerExplore:
-          "Explore",
-        footerNews:
-          "News",
-        footerMore:
-          "More",
-        testNotice:
-          "Standalone visual refresh test · Production is unchanged",
-
-        viewAll:
-          "View all →",
-        search:
-          "Search",
-        searchHint:
-          "Type to search content already loaded on this page.",
-        searchPlaceholder:
-          "Search stories and features",
-        noResults:
-          "No matching content was found.",
-        noIndustry:
-          "No industry stories are available in this language yet.",
-        noNews:
-          "No news is available in this category yet.",
-        source:
-          "Source",
-        readMore:
-          "Read original",
-        minutes:
-          "min read",
-        subscribeOk:
-          "The subscription window has opened.",
-        invalidEmail:
-          "Enter a valid email address.",
-        interfaceError:
-          "Some content services are temporarily unavailable; the rest of the page remains testable.",
-
-        catTech: "Technology",
-        catBusiness: "Business",
-        catCulture: "Culture",
-        catLife: "Life",
-        sourceLabel: "Source",
-        articlesCount: "articles",
-        worksTitle: "Media Features",
-        worksEmpty: "No features yet",
-        viewMoreArticles: "View more →",
-        trendingTitle: "My Column"
+        subscribe: "Subscribe to Global View",
+        subscribeText: "Insights, perspectives and new work.",
+        subscribeButton: "Subscribe",
+        aboutTitle: "Connecting global shifts with local practice.",
+        aboutText: "A bilingual communications and media platform.",
+        footerText: "Connecting companies, industries and the world.",
+        explore: "Explore",
+        news: "News",
+        categoryTitle: "Category Articles",
+        categoryText: "Browse articles by category.",
+        empty: "No matching content was found.",
+        searchHint: "Type to search current content.",
+        share: "Share",
+        original: "Read original",
+        source: "Source",
+        readTime: "min read"
       }
     };
 
     function $(selector, root) {
-      return (root || document)
-        .querySelector(selector);
+      return (root || document).querySelector(selector);
     }
 
     function $$(selector, root) {
       return Array.from(
-        (root || document)
-          .querySelectorAll(selector)
+        (root || document).querySelectorAll(selector)
       );
     }
 
-    function t(key) {
+    function translate(key) {
       return (
         translations[currentLang][key] ||
         translations.zh[key] ||
@@ -3708,218 +1850,12 @@
       );
     }
 
-    function hasChinese(value) {
-      return /[\u3400-\u9fff]/
-        .test(String(value || ""));
+    function t(key) {
+      return translate(key);
     }
 
-    function localizedText(value, lang) {
-      var target = lang || currentLang;
-
-      if (value == null) {
-        return "";
-      }
-
-      if (typeof value === "object") {
-        return String(
-          value[target] ||
-          value[
-            target === "en" ? "zh" : "en"
-          ] ||
-          ""
-        ).trim();
-      }
-
-      var text = String(value).trim();
-
-      if (
-        target === "en" &&
-        hasChinese(text)
-      ) {
-        return "";
-      }
-
-      return text;
-    }
-
-    function safeDate(value) {
-      var date = new Date(value || "");
-
-      return Number.isNaN(date.getTime())
-        ? null
-        : date;
-    }
-
-    function dateValue(value) {
-      var date = safeDate(value);
-      return date ? date.getTime() : 0;
-    }
-
-    function displayDate(value) {
-      var date = safeDate(value);
-
-      if (!date) {
-        return String(value || "");
-      }
-
-      return new Intl.DateTimeFormat(
-        currentLang === "en"
-          ? "en-US"
-          : "zh-CN",
-        {
-          year: "numeric",
-          month:
-            currentLang === "en"
-              ? "short"
-              : "long",
-          day: "numeric"
-        }
-      ).format(date);
-    }
-
-    function categoryName(category) {
-      var mapping = {
-        tech: "catTech",
-        business: "catBusiness",
-        culture: "catCulture",
-        life: "catLife"
-      };
-
-      return t(
-        mapping[category] || "catBusiness"
-      );
-    }
-
-    function readTimeText(minutes) {
-      var value = Number(minutes) || 1;
-
-      return currentLang === "en"
-        ? value + " " + t("minutes")
-        : value + " " + t("minutes");
-    }
-
-    function articleById(id) {
-      return articles.find(function (item) {
-        return String(item.id) === String(id);
-      });
-    }
-
-    function articleTitle(article) {
-      return localizedText(
-        article && article.title
-      );
-    }
-
-    function articleExcerpt(article) {
-      return localizedText(
-        article && article.excerpt
-      );
-    }
-
-    function articleImage(article) {
-      if (!article) {
-        return "";
-      }
-
-      if (typeof article.image === "object") {
-        return (
-          article.image.url ||
-          article.image.src ||
-          localizedText(article.image)
-        );
-      }
-
-      return String(
-        article.image ||
-        article.cover_image ||
-        article.cover ||
-        article.thumbnail ||
-        ""
-      ).trim();
-    }
-
-    function articleUrl(article) {
-      if (!article) {
-        return "";
-      }
-
-      if (article.cms) {
-        return currentLang === "en"
-          ? (
-            article.url_en ||
-            article.url ||
-            ""
-          )
-          : (
-            article.url_zh ||
-            article.url ||
-            ""
-          );
-      }
-
-      return String(
-        article.url ||
-        article.link ||
-        article.source_url ||
-        article.externalUrl ||
-        ""
-      ).trim();
-    }
-
-    function articleHasLanguage(article) {
-      if (!article) {
-        return false;
-      }
-
-      if (article.cms) {
-        return currentLang === "en"
-          ? (
-            article.has_en === true ||
-            Boolean(
-              localizedText(
-                article.title,
-                "en"
-              )
-            )
-          )
-          : (
-            article.has_zh !== false ||
-            Boolean(
-              localizedText(
-                article.title,
-                "zh"
-              )
-            )
-          );
-      }
-
-      return Boolean(articleTitle(article));
-    }
-
-    function sourceText(article) {
-      return (
-        t("source") +
-        ": " +
-        String(
-          (article && article.source) ||
-          "Global View"
-        )
-      );
-    }
-
-    function setText(element, value) {
-      if (element) {
-        element.textContent = value || "";
-      }
-    }
-
-    function createElement(
-      tag,
-      className,
-      text
-    ) {
-      var element =
-        document.createElement(tag);
+    function makeElement(tag, className, text) {
+      var element = document.createElement(tag);
 
       if (className) {
         element.className = className;
@@ -3932,80 +1868,186 @@
       return element;
     }
 
-    window.globalViewSetArticleImage =
-      function (img, article) {
-        var src = articleImage(article);
+    function setText(element, value) {
+      if (element) {
+        element.textContent = value || "";
+      }
+    }
 
-        img.onerror = function () {
-          img.onerror = null;
+    function hasChinese(value) {
+      return /[\u3400-\u9fff]/.test(
+        String(value || "")
+      );
+    }
 
-          /*
-           * RSS 或列表图片失败后使用固定分类底图；
-           * CMS文章仍优先保留自身封面。
-           */
-          var fallbackMap = {
-            tech:
-              "data:image/svg+xml;charset=UTF-8," +
-              encodeURIComponent(
-                '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">' +
-                '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
-                '<stop stop-color="#0755c7"/><stop offset="1" stop-color="#02a8d5"/>' +
-                '</linearGradient></defs><rect width="1200" height="675" fill="url(#g)"/>' +
-                '<circle cx="920" cy="100" r="260" fill="#fff" opacity=".08"/>' +
-                '<path d="M0 520L430 210l280 210 490-310v565H0Z" fill="#fff" opacity=".1"/>' +
-                "</svg>"
-              ),
+    function localizedText(value, language) {
+      language = language || currentLang;
 
-            business:
-              "data:image/svg+xml;charset=UTF-8," +
-              encodeURIComponent(
-                '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">' +
-                '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
-                '<stop stop-color="#0b2345"/><stop offset="1" stop-color="#155aa2"/>' +
-                '</linearGradient></defs><rect width="1200" height="675" fill="url(#g)"/>' +
-                '<rect x="720" y="120" width="280" height="420" rx="28" fill="#fff" opacity=".07"/>' +
-                '<path d="M90 520l210-170 170 70 250-270 390 360" fill="none" stroke="#61d7ff" opacity=".35" stroke-width="18"/>' +
-                "</svg>"
-              ),
+      if (value == null) {
+        return "";
+      }
 
-            culture:
-              "data:image/svg+xml;charset=UTF-8," +
-              encodeURIComponent(
-                '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">' +
-                '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
-                '<stop stop-color="#492980"/><stop offset="1" stop-color="#b1528d"/>' +
-                '</linearGradient></defs><rect width="1200" height="675" fill="url(#g)"/>' +
-                '<circle cx="280" cy="320" r="220" fill="#fff" opacity=".08"/>' +
-                '<circle cx="840" cy="210" r="310" fill="none" stroke="#fff" stroke-width="44" opacity=".08"/>' +
-                "</svg>"
-              ),
+      if (typeof value === "object") {
+        return String(
+          language === "en"
+            ? value.en || ""
+            : value.zh || value.en || ""
+        ).trim();
+      }
 
-            life:
-              "data:image/svg+xml;charset=UTF-8," +
-              encodeURIComponent(
-                '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">' +
-                '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
-                '<stop stop-color="#096451"/><stop offset="1" stop-color="#24a67e"/>' +
-                '</linearGradient></defs><rect width="1200" height="675" fill="url(#g)"/>' +
-                '<path d="M80 600C310 240 520 180 680 510 830 190 980 180 1160 510" fill="none" stroke="#fff" stroke-width="48" opacity=".09"/>' +
-                "</svg>"
-              )
-          };
+      value = String(value).trim();
 
-          img.src =
-            fallbackMap[
-              article &&
-              article.category
-            ] ||
-            fallbackMap.business;
-        };
+      return language === "en" && hasChinese(value)
+        ? ""
+        : value;
+    }
 
-        if (src) {
-          img.src = src;
-        } else {
-          img.onerror();
+    function dateValue(value) {
+      var timestamp = Date.parse(value || "");
+
+      return Number.isFinite(timestamp)
+        ? timestamp
+        : 0;
+    }
+
+    function displayDate(value) {
+      if (!value) {
+        return "";
+      }
+
+      var date = new Date(value);
+
+      if (Number.isNaN(date.getTime())) {
+        return String(value);
+      }
+
+      return new Intl.DateTimeFormat(
+        currentLang === "en"
+          ? "en-US"
+          : "zh-CN",
+        {
+          year: "numeric",
+          month: "short",
+          day: "numeric"
         }
+      ).format(date);
+    }
+
+    function categoryName(category) {
+      return translate(
+        ["tech", "business", "culture", "life"].includes(category)
+          ? category
+          : "business"
+      );
+    }
+
+    function readTimeText(minutes) {
+      return (
+        (Number(minutes) || 1) +
+        " " +
+        translate("readTime")
+      );
+    }
+
+    function articleById(id) {
+      return articles.find(function (article) {
+        return String(article.id) === String(id);
+      });
+    }
+
+    function articleTitle(article) {
+      return localizedText(article && article.title);
+    }
+
+    function articleExcerpt(article) {
+      return localizedText(article && article.excerpt);
+    }
+
+    function articleImage(article) {
+      return String(
+        article &&
+        (
+          article.image ||
+          article.cover_image ||
+          article.cover ||
+          article.thumbnail
+        ) ||
+        ""
+      );
+    }
+
+    function articleUrl(article) {
+      if (!article) {
+        return "";
+      }
+
+      if (article.cms) {
+        return currentLang === "en"
+          ? article.url_en || article.url || ""
+          : article.url_zh || article.url || "";
+      }
+
+      return (
+        article.url ||
+        article.link ||
+        article.source_url ||
+        ""
+      );
+    }
+
+    function hasLanguage(article) {
+      if (!article) {
+        return false;
+      }
+
+      if (
+        article.origin === "auto" ||
+        String(article.id).startsWith("auto-")
+      ) {
+        var language = String(
+          article.language || ""
+        ).toLowerCase();
+
+        return currentLang === "en"
+          ? (!language || language.startsWith("en")) &&
+              Boolean(localizedText(article.title, "en"))
+          : Boolean(
+              localizedText(article.title, "zh") ||
+              localizedText(article.title, "en")
+            );
+      }
+
+      return article.cms
+        ? currentLang === "en"
+          ? article.has_en === true &&
+              Boolean(localizedText(article.title, "en"))
+          : article.has_zh !== false &&
+              Boolean(localizedText(article.title, "zh"))
+        : Boolean(articleTitle(article));
+    }
+
+    function sourceText(article) {
+      return (
+        translate("source") +
+        ": " +
+        (article.source || "Global View")
+      );
+    }
+
+    window.globalViewSetArticleImage = function (
+      image,
+      article
+    ) {
+      image.onerror = function () {
+        image.onerror = null;
+        image.src =
+          "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80";
       };
+
+      image.src =
+        articleImage(article) ||
+        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80";
+    };
 
     function bindActivation(
       element,
@@ -4016,10 +2058,7 @@
       element.setAttribute("role", "link");
 
       if (label) {
-        element.setAttribute(
-          "aria-label",
-          label
-        );
+        element.setAttribute("aria-label", label);
       }
 
       element.addEventListener(
@@ -4041,106 +2080,67 @@
       );
     }
 
-    function showToast(message) {
-      var region = $("#toastRegion");
-
-      if (!region) {
-        return;
-      }
-
-      var toast = createElement(
-        "div",
-        "toast",
-        message
-      );
-
-      region.appendChild(toast);
-
-      window.setTimeout(
-        function () {
-          toast.remove();
-        },
-        4200
-      );
-    }
-
-    /*
-     * Carousel compatibility functions
-     */
-
     function updateCarouselPosition() {
       var track = $("#featuredTrack");
-      var dots = $$(
-        "#carouselDots .carousel-dot"
-      );
 
-      var slideCount =
-        track ? track.children.length : 0;
-
-      if (!track || !slideCount) {
+      if (
+        !track ||
+        !track.children.length
+      ) {
         return;
       }
 
       currentSlide =
         (
-          (currentSlide % slideCount) +
-          slideCount
-        ) % slideCount;
+          currentSlide +
+          track.children.length
+        ) %
+        track.children.length;
 
       track.style.transform =
         "translateX(-" +
         currentSlide * 100 +
         "%)";
 
-      dots.forEach(function (dot, index) {
-        dot.classList.toggle(
-          "active",
-          index === currentSlide
-        );
-
-        dot.setAttribute(
-          "aria-selected",
-          String(index === currentSlide)
-        );
-      });
+      $$(".carousel-dot").forEach(
+        function (dot, index) {
+          dot.classList.toggle(
+            "active",
+            index === currentSlide
+          );
+        }
+      );
     }
 
     function goToSlide(index) {
-      currentSlide = Number(index) || 0;
+      currentSlide = index;
       updateCarouselPosition();
       startCarousel();
     }
 
     function stopCarousel() {
-      if (carouselTimer) {
-        window.clearInterval(carouselTimer);
-        carouselTimer = null;
-      }
+      window.clearInterval(carouselTimer);
     }
 
     function startCarousel() {
       stopCarousel();
 
-      var track = $("#featuredTrack");
+      var count =
+        $("#featuredTrack").children.length;
 
-      var slideCount =
-        track ? track.children.length : 0;
+      if (count > 1) {
+        carouselTimer =
+          window.setInterval(
+            function () {
+              currentSlide =
+                (currentSlide + 1) %
+                count;
 
-      if (slideCount <= 1) {
-        return;
+              updateCarouselPosition();
+            },
+            6500
+          );
       }
-
-      carouselTimer =
-        window.setInterval(
-          function () {
-            currentSlide =
-              (currentSlide + 1) %
-              slideCount;
-
-            updateCarouselPosition();
-          },
-          6500
-        );
     }
 
     function renderFeatured() {
@@ -4156,17 +2156,18 @@
           return (
             article.cms === true &&
             article.show_in_column === true &&
-            articleHasLanguage(article)
+            hasLanguage(article)
           );
         })
-        .slice()
-        .sort(function (a, b) {
+        .sort(function (first, second) {
           return (
             dateValue(
-              b.updatedAt || b.date
+              second.updatedAt ||
+              second.date
             ) -
             dateValue(
-              a.updatedAt || a.date
+              first.updatedAt ||
+              first.date
             )
           );
         })
@@ -4174,44 +2175,42 @@
 
       window.globalViewCarouselIds =
         new Set(
-          featured.map(
-            function (article) {
-              return article.id;
-            }
-          )
+          featured.map(function (article) {
+            return article.id;
+          })
         );
 
       track.replaceChildren();
       dots.replaceChildren();
 
       if (!featured.length) {
-        var empty = createElement(
+        var empty = makeElement(
           "div",
           "featured-empty"
         );
 
+        empty.id = "cmsFeaturedStatus";
+
         empty.append(
-          createElement(
+          makeElement(
             "strong",
             "",
-            t("columnLoadingTitle")
+            translate("loadingColumn")
           ),
-          createElement(
+          makeElement(
             "span",
             "",
-            t("columnLoadingBody")
+            "/api/posts"
           )
         );
 
         track.appendChild(empty);
-        currentSlide = 0;
-        stopCarousel();
         return;
       }
 
       featured.forEach(
         function (article, index) {
-          var slide = createElement(
+          var slide = makeElement(
             "article",
             "featured-slide"
           );
@@ -4224,88 +2223,66 @@
             articleTitle(article)
           );
 
-          var img = createElement(
+          var image = makeElement(
             "img",
             "featured-image"
           );
 
           window.globalViewSetArticleImage(
-            img,
+            image,
             article
           );
 
-          img.alt =
-            localizedText(article.alt) ||
+          image.alt =
             articleTitle(article);
 
-          img.loading =
-            index === 0
-              ? "eager"
-              : "lazy";
-
-          var content = createElement(
+          var content = makeElement(
             "div",
             "featured-content"
           );
 
-          content.appendChild(
-            createElement(
+          content.append(
+            makeElement(
               "span",
               "category-tag",
-              categoryName(
-                article.category
-              )
-            )
-          );
-
-          content.appendChild(
-            createElement(
+              categoryName(article.category)
+            ),
+            makeElement(
               "h2",
               "",
               articleTitle(article)
             )
           );
 
-          var excerpt =
-            articleExcerpt(article);
-
-          if (excerpt) {
+          if (articleExcerpt(article)) {
             content.appendChild(
-              createElement(
+              makeElement(
                 "p",
                 "",
-                excerpt
+                articleExcerpt(article)
               )
             );
           }
 
-          var meta = createElement(
+          var meta = makeElement(
             "div",
             "featured-meta"
           );
 
           meta.append(
-            createElement(
+            makeElement(
               "span",
               "",
               displayDate(article.date)
             ),
-            createElement(
-              "span",
-              "",
-              "•"
-            ),
-            createElement(
+            makeElement("span", "", "•"),
+            makeElement(
               "span",
               "",
               readTimeText(article.read)
             ),
-            createElement(
-              "span",
-              "",
-              "•"
-            ),
-            createElement(
+            makeElement("span", "", "•"),
+            makeElement(
               "span",
               "",
               sourceText(article)
@@ -4313,29 +2290,13 @@
           );
 
           content.appendChild(meta);
-          slide.append(img, content);
+          slide.append(image, content);
           track.appendChild(slide);
 
-          var dot = createElement(
+          var dot = makeElement(
             "button",
             "carousel-dot" +
-            (
-              index === 0
-                ? " active"
-                : ""
-            )
-          );
-
-          dot.type = "button";
-
-          dot.setAttribute(
-            "aria-label",
-            currentLang === "en"
-              ? "Go to slide " +
-                (index + 1)
-              : "转到第 " +
-                (index + 1) +
-                " 张"
+              (index ? "" : " active")
           );
 
           dot.addEventListener(
@@ -4354,10 +2315,6 @@
       startCarousel();
     }
 
-    /*
-     * Ticker and cards
-     */
-
     function renderTicker() {
       var content = $("#tickerContent");
 
@@ -4366,12 +2323,11 @@
       }
 
       var entries = articles
-        .filter(articleHasLanguage)
-        .slice()
-        .sort(function (a, b) {
+        .filter(hasLanguage)
+        .sort(function (first, second) {
           return (
-            dateValue(b.date) -
-            dateValue(a.date)
+            dateValue(second.date) -
+            dateValue(first.date)
           );
         })
         .slice(0, 10);
@@ -4380,10 +2336,10 @@
 
       if (!entries.length) {
         content.appendChild(
-          createElement(
+          makeElement(
             "span",
             "ticker-item",
-            t("loading")
+            translate("loading")
           )
         );
 
@@ -4394,13 +2350,11 @@
         .concat(entries)
         .forEach(
           function (article, index) {
-            var item = createElement(
+            var item = makeElement(
               "button",
               "ticker-item",
               articleTitle(article)
             );
-
-            item.type = "button";
 
             item.addEventListener(
               "click",
@@ -4410,11 +2364,6 @@
             );
 
             if (index >= entries.length) {
-              item.setAttribute(
-                "aria-hidden",
-                "true"
-              );
-
               item.tabIndex = -1;
             }
 
@@ -4423,42 +2372,224 @@
         );
     }
 
+    function isHomeArticle(article) {
+      return (
+        article &&
+        hasLanguage(article) &&
+        article.show_in_column !== true &&
+        (
+          article.cms === true ||
+          String(article.id).startsWith("auto-")
+        )
+      );
+    }
+
+    function createArticleCard(article) {
+      var card = makeElement(
+        "article",
+        "article-card"
+      );
+
+      bindActivation(
+        card,
+        function () {
+          openArticle(article.id);
+        },
+        articleTitle(article)
+      );
+
+      var imageWrap = makeElement(
+        "div",
+        "card-image"
+      );
+
+      var image = makeElement("img");
+
+      window.globalViewSetArticleImage(
+        image,
+        article
+      );
+
+      image.alt = articleTitle(article);
+      imageWrap.appendChild(image);
+
+      var body = makeElement(
+        "div",
+        "card-body"
+      );
+
+      body.append(
+        makeElement(
+          "span",
+          "category-tag",
+          categoryName(article.category)
+        ),
+        makeElement(
+          "h3",
+          "",
+          articleTitle(article)
+        )
+      );
+
+      if (articleExcerpt(article)) {
+        body.appendChild(
+          makeElement(
+            "p",
+            "",
+            articleExcerpt(article)
+          )
+        );
+      }
+
+      var meta = makeElement(
+        "div",
+        "card-meta",
+        displayDate(article.date) +
+          " · " +
+          sourceText(article)
+      );
+
+      body.appendChild(meta);
+      card.append(imageWrap, body);
+
+      return card;
+    }
+
     function renderArticles() {
-      /*
-       * 行业视角由 pr-portfolio.js 对
-       * #prPortfolioIndustryGrid 负责。
-       * 这里保留空实现，供 cms-integration.js 兼容调用。
-       */
-      return undefined;
-    }
+      var grid = $("#articleGrid");
 
-    function renderTrending() {
-      /*
-       * 新版不建立独立专栏列表，
-       * 专栏只在顶部轮播显示。
-       */
-      return undefined;
-    }
+      var list = articles
+        .filter(isHomeArticle)
+        .sort(function (first, second) {
+          return (
+            dateValue(
+              second.updatedAt ||
+              second.date
+            ) -
+            dateValue(
+              first.updatedAt ||
+              first.date
+            )
+          );
+        })
+        .slice(0, 9);
 
-    function renderCategoryGrid() {
-      return undefined;
-    }
-
-    /*
-     * Article opening and modal fallback
-     */
-
-    function closeArticleModal() {
-      var modal = $("#articleModal");
-
-      if (!modal || modal.hidden) {
+      if (!grid) {
         return;
       }
 
-      modal.hidden = true;
+      grid.replaceChildren.apply(
+        grid,
+        list.map(createArticleCard)
+      );
 
+      setText(
+        $("#articleCount"),
+        String(list.length)
+      );
+
+      $("#emptyState").hidden =
+        Boolean(list.length);
+    }
+
+    function renderTrending() {
+      var list = $("#trendingList");
+
+      var featured = articles
+        .filter(function (article) {
+          return (
+            article.cms &&
+            article.show_in_column &&
+            hasLanguage(article)
+          );
+        })
+        .sort(function (first, second) {
+          return (
+            dateValue(second.date) -
+            dateValue(first.date)
+          );
+        })
+        .slice(0, 3);
+
+      if (!list) {
+        return;
+      }
+
+      list.replaceChildren();
+
+      featured.forEach(
+        function (article, index) {
+          var item = makeElement(
+            "li",
+            "trending-item"
+          );
+
+          bindActivation(
+            item,
+            function () {
+              openArticle(article.id);
+            },
+            articleTitle(article)
+          );
+
+          item.append(
+            makeElement(
+              "span",
+              "trend-number",
+              index + 1 + "."
+            ),
+            makeElement("div", "")
+          );
+
+          item.lastChild.append(
+            makeElement(
+              "p",
+              "trend-title",
+              articleTitle(article)
+            ),
+            makeElement(
+              "p",
+              "trend-subtitle",
+              displayDate(article.date)
+            )
+          );
+
+          list.appendChild(item);
+        }
+      );
+    }
+
+    function renderCategoryGrid() {
+      var grid =
+        $("#categoryArticleGrid");
+
+      var list = articles.filter(
+        function (article) {
+          return (
+            article.category ===
+              currentPage &&
+            hasLanguage(article)
+          );
+        }
+      );
+
+      if (!grid) {
+        return;
+      }
+
+      grid.replaceChildren.apply(
+        grid,
+        list.map(createArticleCard)
+      );
+
+      $("#categoryEmptyState").hidden =
+        Boolean(list.length);
+    }
+
+    function closeArticleModal() {
+      $("#articleModal").hidden = true;
       document.body.classList.remove(
-        "modal-open"
+        "locked"
       );
     }
 
@@ -4469,125 +2600,92 @@
         return;
       }
 
-      var url = articleUrl(article);
+      var link = articleUrl(article);
 
-      if (article.cms && url) {
-        window.location.href = url;
+      if (article.cms && link) {
+        window.location.href = link;
         return;
       }
 
-      if (
-        url &&
-        (
-          String(article.id || "")
-            .startsWith("auto-") ||
-          article.external === true ||
-          article.externalUrl
-        )
-      ) {
+      if (link && article.external) {
         window.open(
-          url,
+          link,
           "_blank",
-          "noopener,noreferrer"
+          "noopener"
         );
 
         return;
       }
 
       var modal = $("#articleModal");
+      var image = $("#modalImage");
+      var source = articleImage(article);
 
-      if (!modal) {
-        if (url) {
-          window.open(
-            url,
-            "_blank",
-            "noopener,noreferrer"
-          );
-        }
+      image.hidden = !source;
 
-        return;
-      }
-
-      var cover =
-        $("#articleModalCover");
-
-      var title =
-        $("#articleModalTitle");
-
-      var category =
-        $("#articleModalCategory");
-
-      var meta =
-        $("#articleModalMeta");
-
-      var content =
-        $("#articleModalContent");
-
-      var actions =
-        $("#articleModalActions");
-
-      cover.replaceChildren();
-      content.replaceChildren();
-      actions.replaceChildren();
-
-      var src = articleImage(article);
-
-      if (src) {
-        var img =
-          createElement("img", "");
-
+      if (source) {
         window.globalViewSetArticleImage(
-          img,
+          image,
           article
         );
-
-        img.alt =
-          articleTitle(article);
-
-        cover.appendChild(img);
       }
 
       setText(
-        title,
-        articleTitle(article)
-      );
-
-      setText(
-        category,
+        $("#modalCategory"),
         categoryName(article.category)
       );
 
       setText(
-        meta,
-        [
-          displayDate(article.date),
-          readTimeText(article.read),
-          sourceText(article)
-        ]
-          .filter(Boolean)
-          .join(" · ")
+        $("#modalTitle"),
+        articleTitle(article)
       );
 
-      var paragraphs = [];
+      setText(
+        $("#modalSubtitle"),
+        localizedText(article.subtitle) ||
+          articleExcerpt(article)
+      );
 
-      var localizedBody =
+      setText(
+        $("#modalAuthor"),
+        article.author
+      );
+
+      setText(
+        $("#modalDate"),
+        displayDate(article.date)
+      );
+
+      setText(
+        $("#modalReadTime"),
+        readTimeText(article.read)
+      );
+
+      setText(
+        $("#modalSource"),
+        sourceText(article)
+      );
+
+      var body = $("#modalBody");
+      body.replaceChildren();
+
+      var content =
         article.body &&
         article.body[currentLang];
 
-      if (Array.isArray(localizedBody)) {
-        paragraphs = localizedBody;
-      } else if (localizedBody) {
-        paragraphs = [localizedBody];
-      } else if (articleExcerpt(article)) {
-        paragraphs = [
-          articleExcerpt(article)
-        ];
-      }
+      var paragraphs =
+        Array.isArray(content)
+          ? content
+          : content
+            ? [content]
+            : articleExcerpt(article)
+              ? [articleExcerpt(article)]
+              : [];
 
       paragraphs.forEach(
         function (paragraph) {
-          content.appendChild(
-            createElement(
+          body.appendChild(
+            makeElement(
               "p",
               "",
               paragraph
@@ -4596,251 +2694,66 @@
         }
       );
 
-      if (url) {
-        var link = createElement(
-          "a",
-          "primary-btn",
-          t("readMore")
-        );
+      var original =
+        $("#modalOriginalLink");
 
-        link.href = url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-
-        actions.appendChild(link);
-      }
+      original.hidden = !link;
+      original.href = link;
 
       modal.hidden = false;
 
       document.body.classList.add(
-        "modal-open"
+        "locked"
       );
-
-      var closeButton =
-        $(".article-modal-close", modal);
-
-      if (closeButton) {
-        closeButton.focus();
-      }
     }
 
-    /*
-     * Live News
-     */
-
-    function normalizeCategory(
-      value,
-      fallback
-    ) {
-      var raw = String(
-        value ||
-        fallback ||
-        "business"
+    function normalizeCategory(value) {
+      value = String(
+        value || ""
       ).toLowerCase();
 
-      var aliases = {
+      var categories = {
         technology: "tech",
         tech: "tech",
         科技: "tech",
-
         business: "business",
         finance: "business",
         economy: "business",
         商业: "business",
         财经: "business",
-
         culture: "culture",
         entertainment: "culture",
         文化: "culture",
-
         life: "life",
-        lifestyle: "life",
         health: "life",
+        lifestyle: "life",
         生活: "life"
       };
 
-      return (
-        aliases[raw] ||
-        (
-          raw.includes("tech")
-            ? "tech"
-            : raw.includes("cult")
-              ? "culture"
-              : raw.includes("life")
-                ? "life"
-                : "business"
-        )
-      );
-    }
-
-    function unwrapNewsPayload(payload) {
-      var output = [];
-
-      function pushItems(
-        items,
-        forcedCategory
-      ) {
-        if (!Array.isArray(items)) {
-          return;
-        }
-
-        items.forEach(function (item) {
-          if (
-            !item ||
-            typeof item !== "object"
-          ) {
-            return;
-          }
-
-          output.push(
-            Object.assign(
-              {},
-              item,
-              {
-                category:
-                  normalizeCategory(
-                    item.category,
-                    forcedCategory
-                  )
-              }
-            )
-          );
-        });
-      }
-
-      if (Array.isArray(payload)) {
-        pushItems(payload);
-        return output;
-      }
-
-      if (
-        !payload ||
-        typeof payload !== "object"
-      ) {
-        return output;
-      }
-
-      [
-        "news",
-        "items",
-        "articles",
-        "data",
-        "results"
-      ].forEach(function (key) {
-        if (Array.isArray(payload[key])) {
-          pushItems(payload[key]);
-        }
-      });
-
-      [
-        "tech",
-        "business",
-        "culture",
-        "life"
-      ].forEach(function (category) {
-        pushItems(
-          payload[category],
-          category
-        );
-      });
-
-      if (
-        payload.data &&
-        typeof payload.data === "object" &&
-        !Array.isArray(payload.data)
-      ) {
-        [
-          "tech",
-          "business",
-          "culture",
-          "life"
-        ].forEach(function (category) {
-          pushItems(
-            payload.data[category],
-            category
-          );
-        });
-      }
-
-      return output;
+      return categories[value] || "";
     }
 
     function normalizeNewsItem(
       item,
       index
     ) {
-      var titleZh = String(
-        item.title_zh ||
-        item.titleZh ||
-        item.title ||
-        item.name ||
-        ""
-      ).trim();
+      var title = String(
+        item.title || ""
+      );
 
-      var titleEn = String(
-        item.title_en ||
-        item.titleEn ||
-        ""
-      ).trim();
+      var excerpt = String(
+        item.excerpt || ""
+      );
 
-      var excerptZh = String(
-        item.excerpt_zh ||
-        item.summary_zh ||
-        item.description ||
-        item.excerpt ||
-        item.summary ||
-        ""
-      ).trim();
-
-      var excerptEn = String(
-        item.excerpt_en ||
-        item.summary_en ||
-        ""
-      ).trim();
-
-      var url = String(
-        item.url ||
-        item.link ||
+      var sourceUrl =
         item.source_url ||
-        item.original_url ||
-        ""
-      ).trim();
-
-      var source = String(
-        item.source ||
-        item.source_name ||
-        item.publisher ||
-        "Live News"
-      ).trim();
-
-      var date =
-        item.date ||
-        item.published_at ||
-        item.publishedAt ||
-        item.pubDate ||
-        item.updated_at ||
+        item.url ||
         "";
-
-      var key =
-        item.id ||
-        item.guid ||
-        url ||
-        titleZh ||
-        "item-" + index;
 
       return {
         id:
-          String(key).startsWith("auto-")
-            ? String(key)
-            : (
-              "auto-" +
-              String(key)
-                .replace(
-                  /[^a-zA-Z0-9_-]/g,
-                  "-"
-                )
-                .slice(0, 80)
-            ),
+          "auto-" +
+          (item.id || index),
 
         category:
           normalizeCategory(
@@ -4848,35 +2761,22 @@
           ),
 
         title: {
-          zh: titleZh,
-          en:
-            titleEn ||
-            (
-              !hasChinese(titleZh)
-                ? titleZh
-                : ""
-            )
+          zh: title,
+          en: hasChinese(title)
+            ? ""
+            : title
         },
 
         excerpt: {
-          zh: excerptZh,
-          en:
-            excerptEn ||
-            (
-              !hasChinese(excerptZh)
-                ? excerptZh
-                : ""
-            )
+          zh: excerpt,
+          en: hasChinese(excerpt)
+            ? ""
+            : excerpt
         },
 
-        date: date,
-
-        updatedAt:
-          item.updated_at ||
-          item.updatedAt ||
-          date,
-
-        source: source,
+        source:
+          item.source_name ||
+          "Live News",
 
         image:
           item.image ||
@@ -4884,792 +2784,469 @@
           item.thumbnail ||
           "",
 
-        url: url,
-        link: url,
-        externalUrl: url,
-
-        read: Number(
-          item.read ||
-          item.read_time ||
-          1
-        ),
-
+        url: sourceUrl,
+        link: sourceUrl,
+        date: item.date || "",
+        language: item.language || "",
         origin: "auto",
         external: true
       };
     }
 
-    function mergeArticles(items) {
-      items.forEach(function (item) {
-        var existingIndex =
-          articles.findIndex(
-            function (article) {
-              return (
-                String(article.id) ===
-                String(item.id)
-              );
-            }
-          );
-
-        if (existingIndex >= 0) {
-          articles[existingIndex] =
-            Object.assign(
-              {},
-              articles[existingIndex],
-              item
-            );
-        } else {
-          articles.push(item);
-        }
-      });
-
-      articles.sort(function (a, b) {
-        return (
-          dateValue(b.date) -
-          dateValue(a.date)
-        );
-      });
-    }
-
     function renderLiveNews(filter) {
-      var grid = $("#liveNewsGrid");
-
-      if (!grid) {
-        return;
-      }
-
       activeNewsFilter =
         filter ||
-        activeNewsFilter ||
-        "all";
+        activeNewsFilter;
 
-      var visible = liveNewsItems
-        .filter(function (item) {
-          return (
-            articleHasLanguage(item) &&
-            (
-              activeNewsFilter === "all" ||
-              item.category ===
-              activeNewsFilter
-            )
-          );
-        })
-        .slice(
-          0,
-          activeNewsFilter === "all"
-            ? 8
-            : 12
+      var grid =
+        $("#liveNewsGrid");
+
+      var visible =
+        liveNewsItems.filter(
+          function (item) {
+            return (
+              hasLanguage(item) &&
+              (
+                activeNewsFilter === "all" ||
+                item.category ===
+                  activeNewsFilter
+              )
+            );
+          }
         );
 
       grid.replaceChildren();
 
       if (!visible.length) {
         grid.appendChild(
-          createElement(
+          makeElement(
             "div",
-            "news-empty",
-            t("noNews")
+            "empty-message",
+            translate("empty")
           )
         );
 
         return;
       }
 
-      visible.forEach(function (article) {
-        var card = createElement(
-          "article",
-          "news-card"
-        );
+      visible
+        .slice(0, 12)
+        .forEach(function (article) {
+          var card = makeElement(
+            "article",
+            "news-card"
+          );
 
-        card.dataset.category =
-          article.category;
+          card.dataset.category =
+            article.category;
 
-        bindActivation(
-          card,
-          function () {
-            openArticle(article.id);
-          },
-          articleTitle(article)
-        );
-
-        var cover = createElement(
-          "div",
-          "news-cover"
-        );
-
-        /*
-         * 固定四分类封面，不再读取随机图库。
-         */
-        cover.appendChild(
-          createElement(
-            "div",
-            "news-cover-placeholder",
-            categoryName(
-              article.category
-            ).slice(0, 2)
-          )
-        );
-
-        var body = createElement(
-          "div",
-          "news-body"
-        );
-
-        body.appendChild(
-          createElement(
-            "span",
-            "category-tag",
-            categoryName(
-              article.category
-            )
-          )
-        );
-
-        body.appendChild(
-          createElement(
-            "h3",
-            "",
+          bindActivation(
+            card,
+            function () {
+              openArticle(article.id);
+            },
             articleTitle(article)
-          )
-        );
+          );
 
-        body.appendChild(
-          createElement(
-            "p",
-            "",
-            [
-              displayDate(article.date),
-              article.source
-            ]
-              .filter(Boolean)
-              .join(" · ")
-          )
-        );
+          var cover = makeElement(
+            "div",
+            "news-cover"
+          );
 
-        card.append(cover, body);
-        grid.appendChild(card);
-      });
+          var source =
+            articleImage(article);
+
+          if (source) {
+            var image =
+              makeElement("img");
+
+            image.src = source;
+            cover.appendChild(image);
+          } else {
+            cover.appendChild(
+              makeElement(
+                "div",
+                "news-placeholder",
+                categoryName(
+                  article.category
+                )
+              )
+            );
+          }
+
+          var body = makeElement(
+            "div",
+            "news-body"
+          );
+
+          body.append(
+            makeElement(
+              "span",
+              "category-tag",
+              categoryName(
+                article.category
+              )
+            ),
+            makeElement(
+              "h3",
+              "",
+              articleTitle(article)
+            ),
+            makeElement(
+              "p",
+              "",
+              displayDate(article.date) +
+                " · " +
+                article.source
+            )
+          );
+
+          card.append(cover, body);
+          grid.appendChild(card);
+        });
     }
 
-    async function loadAutoNews() {
+    async function loadLiveNews() {
       try {
         var response = await fetch(
           "/auto-news.json",
           {
-            headers: {
-              Accept: "application/json"
-            },
             cache: "no-store"
           }
         );
 
-        if (!response.ok) {
-          throw new Error(
-            "auto-news.json HTTP " +
-            response.status
-          );
-        }
-
         var payload =
           await response.json();
 
-        liveNewsItems =
-          unwrapNewsPayload(payload)
-            .map(normalizeNewsItem);
+        var items =
+          Array.isArray(payload.items)
+            ? payload.items
+            : [];
 
-        mergeArticles(liveNewsItems);
-        renderLiveNews(
-          activeNewsFilter
+        liveNewsItems = items
+          .map(normalizeNewsItem)
+          .filter(function (item) {
+            return [
+              "tech",
+              "business",
+              "culture",
+              "life"
+            ].includes(item.category);
+          });
+
+        articles.push.apply(
+          articles,
+          liveNewsItems
         );
+
+        renderLiveNews();
         renderTicker();
+        renderArticles();
       } catch (error) {
         console.error(
-          "Global View auto news failed:",
+          "/auto-news.json",
           error
         );
 
-        renderLiveNews(
-          activeNewsFilter
-        );
-
-        showToast(
-          t("interfaceError")
-        );
+        $("#liveNewsGrid")
+          .replaceChildren(
+            makeElement(
+              "div",
+              "empty-message",
+              "/auto-news.json"
+            )
+          );
       }
     }
 
-    /*
-     * Search, language, theme and navigation
-     */
-
-    function applyTranslations() {
+    function applyLanguage() {
       document.documentElement.lang =
         currentLang === "en"
           ? "en"
           : "zh-CN";
 
-      $("[data-i18n]");
-
-      $$("[data-i18n]")
-        .forEach(function (element) {
-          var key =
-            element.dataset.i18n;
-
-          element.textContent = t(key);
-        });
-
-      var languageButton =
-        $(".language-button");
-
-      if (languageButton) {
-        languageButton.textContent =
-          currentLang === "en"
-            ? "中"
-            : "EN";
-      }
-
-      var searchInput =
-        $("#searchInput");
-
-      if (searchInput) {
-        searchInput.placeholder =
-          t("searchPlaceholder");
-      }
-
-      var badge =
-        $("#gvRefreshBadge");
-
-      if (badge) {
-        badge.textContent =
-          currentLang === "en"
-            ? "VISUAL REFRESH · TEST"
-            : "视觉焕新 · 测试";
-      }
-
-      document.title =
-        currentLang === "en"
-          ? "Global View · Visual Refresh Test"
-          : "Global View · 视觉焕新测试";
-    }
-
-    function refreshLocalizedContent() {
-      applyTranslations();
-      renderFeatured();
-      renderTicker();
-      renderLiveNews(
-        activeNewsFilter
-      );
-    }
-
-    function toggleLanguage() {
-      currentLang =
-        currentLang === "en"
-          ? "zh"
-          : "en";
-
-      localStorage.setItem(
-        "gv-language",
-        currentLang
+      $$("[data-i18n]").forEach(
+        function (element) {
+          setText(
+            element,
+            translate(
+              element.dataset.i18n
+            )
+          );
+        }
       );
 
-      refreshLocalizedContent();
+      $(".language-button").textContent =
+        currentLang === "en"
+          ? "中"
+          : "EN";
+
+      $("#searchInput").placeholder =
+        translate("searchHint");
+
+      $("#gvRefreshBadge").textContent =
+        currentLang === "en"
+          ? "VISUAL REFRESH · TEST"
+          : "视觉焕新 · 测试";
     }
 
-    function setTheme(theme) {
-      document.documentElement
-        .setAttribute(
-          "data-theme",
-          theme
+    function searchArticles(query) {
+      var results =
+        $("#searchResults");
+
+      var text =
+        query.toLowerCase();
+
+      var matches = articles
+        .filter(hasLanguage)
+        .filter(function (article) {
+          return (
+            articleTitle(article) +
+            articleExcerpt(article) +
+            (article.source || "")
+          )
+            .toLowerCase()
+            .includes(text);
+        })
+        .slice(0, 15);
+
+      results.replaceChildren();
+
+      if (
+        !text ||
+        !matches.length
+      ) {
+        results.appendChild(
+          makeElement(
+            "p",
+            "empty-message",
+            translate(
+              text
+                ? "empty"
+                : "searchHint"
+            )
+          )
         );
 
-      localStorage.setItem(
-        "gv-theme",
-        theme
-      );
-    }
-
-    function toggleTheme() {
-      var current =
-        document.documentElement
-          .getAttribute("data-theme");
-
-      setTheme(
-        current === "dark"
-          ? "light"
-          : "dark"
-      );
-    }
-
-    function openSearch() {
-      var layer = $("#searchLayer");
-
-      if (!layer) {
         return;
       }
 
-      layer.hidden = false;
+      matches.forEach(
+        function (article) {
+          var button = makeElement(
+            "button",
+            "search-result"
+          );
 
-      var input = $("#searchInput");
+          button.append(
+            makeElement(
+              "strong",
+              "",
+              articleTitle(article)
+            ),
+            makeElement(
+              "small",
+              "",
+              displayDate(article.date) +
+                " · " +
+                (article.source || "")
+            )
+          );
 
-      if (input) {
-        input.focus();
-      }
+          button.addEventListener(
+            "click",
+            function () {
+              closeSearch();
+              openArticle(article.id);
+            }
+          );
+
+          results.appendChild(button);
+        }
+      );
     }
 
     function closeSearch() {
-      var layer = $("#searchLayer");
+      $("#searchLayer").hidden = true;
 
-      if (layer) {
-        layer.hidden = true;
-      }
-    }
-
-    function searchableItems() {
-      var output = [];
-
-      articles.forEach(function (article) {
-        var title =
-          articleTitle(article);
-
-        if (!title) {
-          return;
-        }
-
-        output.push({
-          type: "article",
-          title: title,
-          subtitle:
-            articleExcerpt(article),
-          date: article.date,
-          action: function () {
-            openArticle(article.id);
-          }
-        });
-      });
-
-      $$("#worksList .work-item")
-        .forEach(function (item) {
-          var titleElement =
-            $(".work-title", item);
-
-          if (!titleElement) {
-            return;
-          }
-
-          output.push({
-            type: "work",
-            title:
-              titleElement.textContent
-                .trim(),
-            subtitle:
-              (
-                $(".work-meta", item) ||
-                {}
-              ).textContent || "",
-            action: function () {
-              item.click();
-            }
-          });
-        });
-
-      return output;
-    }
-
-    function renderSearchResults(query) {
-      var target =
-        $("#searchResults");
-
-      if (!target) {
-        return;
-      }
-
-      var normalized =
-        String(query || "")
-          .trim()
-          .toLocaleLowerCase();
-
-      target.replaceChildren();
-
-      if (!normalized) {
-        target.appendChild(
-          createElement(
-            "p",
-            "search-empty",
-            t("searchHint")
-          )
-        );
-
-        return;
-      }
-
-      var results =
-        searchableItems()
-          .filter(function (item) {
-            return (
-              (
-                item.title +
-                " " +
-                item.subtitle
-              )
-                .toLocaleLowerCase()
-                .includes(normalized)
-            );
-          })
-          .slice(0, 20);
-
-      if (!results.length) {
-        target.appendChild(
-          createElement(
-            "p",
-            "search-empty",
-            t("noResults")
-          )
-        );
-
-        return;
-      }
-
-      results.forEach(function (item) {
-        var button = createElement(
-          "button",
-          "search-result"
-        );
-
-        button.type = "button";
-
-        button.appendChild(
-          createElement(
-            "strong",
-            "",
-            item.title
-          )
-        );
-
-        if (item.subtitle) {
-          button.appendChild(
-            createElement(
-              "span",
-              "",
-              item.subtitle
-            )
-          );
-        }
-
-        button.addEventListener(
-          "click",
-          function () {
-            closeSearch();
-            item.action();
-          }
-        );
-
-        target.appendChild(button);
-      });
-    }
-
-    function updateActiveNav() {
-      var sectionIds = [
-        "home",
-        "enterprise",
-        "industry",
-        "media",
-        "live",
-        "about"
-      ];
-
-      var active = "home";
-      var offset =
-        window.scrollY +
-        Number(
-          getComputedStyle(
-            document.documentElement
-          )
-            .getPropertyValue(
-              "--gv-header-height"
-            )
-            .replace("px", "")
-        ) +
-        60;
-
-      sectionIds.forEach(
-        function (id) {
-          var section =
-            document.getElementById(id);
-
-          if (
-            section &&
-            section.offsetTop <= offset
-          ) {
-            active = id;
-          }
-        }
+      document.body.classList.remove(
+        "locked"
       );
-
-      $$(".nav-link")
-        .forEach(function (link) {
-          link.classList.toggle(
-            "active",
-            link.getAttribute("href") ===
-            "#" + active
-          );
-        });
     }
 
-    function initInteractions() {
-      var storedTheme =
-        localStorage.getItem(
-          "gv-theme"
-        );
-
-      if (storedTheme) {
-        setTheme(storedTheme);
-      } else if (
-        window.matchMedia &&
-        window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches
-      ) {
-        setTheme("dark");
-      } else {
-        setTheme("light");
-      }
-
-      var menuButton =
-        $(".menu-button");
-
-      var mobileMenu =
-        $("#mobileMenu");
-
-      if (
-        menuButton &&
-        mobileMenu
-      ) {
-        menuButton.addEventListener(
+    function setupEvents() {
+      $(".language-button")
+        .addEventListener(
           "click",
           function () {
-            var open =
-              mobileMenu.classList
-                .toggle("open");
+            currentLang =
+              currentLang === "en"
+                ? "zh"
+                : "en";
 
-            menuButton.setAttribute(
-              "aria-expanded",
-              String(open)
+            localStorage.setItem(
+              "gvLanguage",
+              currentLang
+            );
+
+            applyLanguage();
+            renderFeatured();
+            renderTicker();
+            renderArticles();
+            renderTrending();
+            renderLiveNews();
+          }
+        );
+
+      $(".theme-button")
+        .addEventListener(
+          "click",
+          function () {
+            var theme =
+              document.documentElement
+                .dataset.theme === "dark"
+                ? "light"
+                : "dark";
+
+            document.documentElement
+              .dataset.theme = theme;
+
+            localStorage.setItem(
+              "gvTheme",
+              theme
             );
           }
         );
-      }
 
-      $$(".mobile-menu .nav-link")
-        .forEach(function (link) {
-          link.addEventListener(
-            "click",
-            function () {
-              if (mobileMenu) {
-                mobileMenu.classList
-                  .remove("open");
-              }
-
-              if (menuButton) {
-                menuButton.setAttribute(
-                  "aria-expanded",
-                  "false"
-                );
-              }
-            }
-          );
-        });
-
-      var languageButton =
-        $(".language-button");
-
-      if (languageButton) {
-        languageButton.addEventListener(
+      $(".menu-button")
+        .addEventListener(
           "click",
-          toggleLanguage
+          function (event) {
+            var navigation =
+              $(".mobile-nav");
+
+            var open =
+              navigation.classList.toggle(
+                "open"
+              );
+
+            event.currentTarget
+              .setAttribute(
+                "aria-expanded",
+                String(open)
+              );
+          }
         );
-      }
 
-      var themeButton =
-        $(".theme-button");
-
-      if (themeButton) {
-        themeButton.addEventListener(
+      $(".search-button")
+        .addEventListener(
           "click",
-          toggleTheme
+          function () {
+            $("#searchLayer").hidden =
+              false;
+
+            document.body.classList.add(
+              "locked"
+            );
+
+            $("#searchInput").focus();
+          }
         );
-      }
 
-      var searchButton =
-        $(".search-button");
-
-      if (searchButton) {
-        searchButton.addEventListener(
-          "click",
-          openSearch
-        );
-      }
-
-      var searchClose =
-        $(".search-close");
-
-      if (searchClose) {
-        searchClose.addEventListener(
+      $(".search-close")
+        .addEventListener(
           "click",
           closeSearch
         );
-      }
 
-      var searchLayer =
-        $("#searchLayer");
-
-      if (searchLayer) {
-        searchLayer.addEventListener(
-          "click",
-          function (event) {
-            if (
-              event.target ===
-              searchLayer
-            ) {
-              closeSearch();
-            }
-          }
-        );
-      }
-
-      var searchInput =
-        $("#searchInput");
-
-      if (searchInput) {
-        searchInput.addEventListener(
+      $("#searchInput")
+        .addEventListener(
           "input",
-          function () {
-            renderSearchResults(
-              searchInput.value
+          function (event) {
+            searchArticles(
+              event.target.value
             );
           }
         );
-      }
 
-      document.addEventListener(
-        "keydown",
-        function (event) {
-          if (event.key === "Escape") {
-            closeSearch();
-            closeArticleModal();
-          }
-        }
-      );
+      $("#closeArticleBtn")
+        .addEventListener(
+          "click",
+          closeArticleModal
+        );
 
-      var modal =
-        $("#articleModal");
-
-      if (modal) {
-        modal.addEventListener(
+      $("#articleModal")
+        .addEventListener(
           "click",
           function (event) {
-            if (event.target === modal) {
+            if (
+              event.target.id ===
+              "articleModal"
+            ) {
               closeArticleModal();
             }
           }
         );
-      }
 
-      var modalClose =
-        $(".article-modal-close");
-
-      if (modalClose) {
-        modalClose.addEventListener(
+      $("#shareArticleBtn")
+        .addEventListener(
           "click",
-          closeArticleModal
-        );
-      }
+          async function () {
+            try {
+              if (navigator.share) {
+                await navigator.share({
+                  title:
+                    $("#modalTitle")
+                      .textContent,
+                  url: location.href
+                });
+              } else {
+                await navigator.clipboard
+                  .writeText(
+                    location.href
+                  );
+              }
 
-      $$(".news-tab")
-        .forEach(function (tab) {
-          tab.addEventListener(
+              setText(
+                $("#shareMessage"),
+                currentLang === "en"
+                  ? "Shared."
+                  : "已分享。"
+              );
+            } catch (error) {
+              console.error(
+                "Share failed",
+                error
+              );
+            }
+          }
+        );
+
+      $$("[data-filter]").forEach(
+        function (button) {
+          button.addEventListener(
             "click",
             function () {
-              var filter =
-                tab.dataset.newsFilter ||
-                "all";
-
-              $$(".news-tab")
+              $$("[data-filter]")
                 .forEach(
                   function (item) {
-                    var selected =
-                      item === tab;
-
                     item.classList.toggle(
                       "active",
-                      selected
-                    );
-
-                    item.setAttribute(
-                      "aria-selected",
-                      String(selected)
+                      item === button
                     );
                   }
                 );
 
-              renderLiveNews(filter);
+              renderLiveNews(
+                button.dataset.filter
+              );
             }
           );
-        });
-
-      var newsletterForm =
-        $("#newsletterForm");
-
-      if (newsletterForm) {
-        newsletterForm.addEventListener(
-          "submit",
-          function (event) {
-            var email =
-              $("#newsletterEmail");
-
-            if (
-              !email ||
-              !email.validity.valid
-            ) {
-              event.preventDefault();
-
-              setText(
-                $("#newsletterNote"),
-                t("invalidEmail")
-              );
-
-              return;
-            }
-
-            setText(
-              $("#newsletterNote"),
-              t("subscribeOk")
-            );
-          }
-        );
-      }
-
-      var backToTop =
-        $("#backToTop");
-
-      window.addEventListener(
-        "scroll",
-        function () {
-          if (backToTop) {
-            backToTop.classList.toggle(
-              "visible",
-              window.scrollY > 520
-            );
-          }
-
-          updateActiveNav();
-        },
-        {
-          passive: true
         }
       );
 
-      if (backToTop) {
-        backToTop.addEventListener(
+      $("#backToTop")
+        .addEventListener(
           "click",
           function () {
             window.scrollTo({
@@ -5678,84 +3255,84 @@
             });
           }
         );
-      }
 
-      var carousel =
-        $(".featured-carousel");
-
-      if (carousel) {
-        carousel.addEventListener(
-          "mouseenter",
-          stopCarousel
-        );
-
-        carousel.addEventListener(
-          "mouseleave",
-          startCarousel
-        );
-      }
-    }
-
-    function initializeBasePage() {
-      setText(
-        $("#currentYear"),
-        new Date().getFullYear()
+      window.addEventListener(
+        "scroll",
+        function () {
+          $("#backToTop")
+            .classList.toggle(
+              "show",
+              window.scrollY > 700
+            );
+        },
+        {
+          passive: true
+        }
       );
 
-      applyTranslations();
-      initInteractions();
-      loadAutoNews();
+      $("#newsletterForm")
+        .addEventListener(
+          "submit",
+          function (event) {
+            event.preventDefault();
 
-      window.setTimeout(
+            var input =
+              $("#newsletterEmail");
+
+            setText(
+              $("#newsletterNote"),
+              input.checkValidity()
+                ? currentLang === "en"
+                  ? "Subscription noted."
+                  : "订阅请求已记录。"
+                : translate("empty")
+            );
+
+            if (input.checkValidity()) {
+              input.value = "";
+            }
+          }
+        );
+    }
+
+    function initializePage() {
+      document.documentElement
+        .dataset.theme =
+          localStorage.getItem(
+            "gvTheme"
+          ) ||
+          "light";
+
+      setText(
+        $("#currentYear"),
+        String(
+          new Date().getFullYear()
+        )
+      );
+
+      applyLanguage();
+      setupEvents();
+      renderFeatured();
+      renderTicker();
+      renderArticles();
+      renderTrending();
+      renderLiveNews();
+      loadLiveNews();
+
+      requestAnimationFrame(
         function () {
           document.documentElement
             .classList.remove(
               "cms-loading"
             );
-        },
-        12000
+        }
       );
     }
 
-    initializeBasePage();
+    initializePage();
   </script>
 
-  <!-- 保持现有生产脚本顺序 -->
   <script src="/cms-integration.js"></script>
   <script src="/pr-portfolio.js"></script>
-
-  <script>
-    /*
-     * 各外部接口脚本执行后刷新对应区域。
-     * 不修改外部脚本本身。
-     */
-    window.addEventListener(
-      "load",
-      function () {
-        window.setTimeout(
-          function () {
-            try {
-              renderFeatured();
-              renderTicker();
-              renderLiveNews(
-                activeNewsFilter
-              );
-            } catch (error) {
-              console.error(
-                "Global View post-load refresh failed:",
-                error
-              );
-            }
-
-            document.documentElement
-              .classList.remove(
-                "cms-loading"
-              );
-          },
-          500
-        );
-      }
-    );
-  </script>
 </body>
 </html>
