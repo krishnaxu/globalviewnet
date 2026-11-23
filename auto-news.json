@@ -1,6 +1,986 @@
 {
-  "generated_at": "2026-11-23T09:02:07.125Z",
+  "generated_at": "2026-11-23T21:21:41.978Z",
   "items": [
+    {
+      "id": "jensen-huang-reinstated-as-nvidia-ceo-stock-s-cf5164636ad3",
+      "language": "en",
+      "title": "Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 31%",
+      "excerpt": "The Nvidia board said it had input from senior levels of the U.S. government.",
+      "date": "2026-11-23T21:08:05.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+      "image": ""
+    },
+    {
+      "id": "crowdstrike-to-buy-zscaler-in-44-billion-deal-2e3b0b8d96be",
+      "language": "en",
+      "title": "CrowdStrike to buy Zscaler in $44 billion deal as AI supercharges cyberattacks",
+      "excerpt": "CrowdStrike and competitors have shelled out billions to ramp up defenses in the wake of AI cyberattacks.",
+      "date": "2026-11-23T21:04:03.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
+      "image": ""
+    },
+    {
+      "id": "fed-s-john-williams-indicates-higher-interest-e7b248e2a411",
+      "language": "en",
+      "title": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+      "excerpt": "The influential central banker expressed confidence that inflation will get closer to the Fed's 2% target in 2027.",
+      "date": "2026-11-23T21:02:17.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+      "image": ""
+    },
+    {
+      "id": "jensen-huang-cheered-by-nvidia-employees-afte-c7b577980505",
+      "language": "en",
+      "title": "Jensen Huang cheered by Nvidia employees after return, pledges to be a better CEO",
+      "excerpt": "Nvidia's Jensen Huang admitted to an affair in a note to employees on Nov. 8 and resigned as CEO on Nov. 12.",
+      "date": "2026-11-23T20:57:41.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/jensen-huang-nvidia-ceo-return.html",
+      "image": ""
+    },
+    {
+      "id": "what-strike-on-russian-ship-in-libya-says-abo-8b0993be5d17",
+      "language": "en",
+      "title": "What strike on Russian ship in Libya says about spread of Ukraine war",
+      "excerpt": "Ukraine's sinking of a Russian battleship at a port in Libya raises the stakes of the war a notch, writes Frank Gardner.",
+      "date": "2026-11-23T20:48:35.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/363b/live/dab0da20-e771-11f1-99a1-253766e7ad8b.jpg"
+    },
+    {
+      "id": "nvidia-employees-greet-jensen-huang-like-a-he-19cceeec9c2a",
+      "language": "en",
+      "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+      "excerpt": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
+      "date": "2026-11-23T20:38:53.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
+      "image": ""
+    },
+    {
+      "id": "russia-will-launch-a-routine-iss-supply-missi-bddfaf1afe08",
+      "language": "en",
+      "title": "Russia will launch a routine ISS supply mission tomorrow—apparently, it's a big secret",
+      "excerpt": "\"I would ask you to please reach out to Roscosmos directly.\"",
+      "date": "2026-11-23T20:34:51.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/11/russia-will-launch-a-routine-iss-supply-mission-tomorrow-apparently-its-a-big-secret/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/02/52674646862_dbe4378754_k-500x500.jpg"
+    },
+    {
+      "id": "surveillance-pricing-uses-our-personal-data-t-847433dec9be",
+      "language": "en",
+      "title": "Surveillance pricing uses our personal data to make us pay more",
+      "excerpt": "Personalized pricing can mean unfair, and even biased, prices.",
+      "date": "2026-11-23T20:11:43.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/surveillance-pricing-uses-our-personal-data-to-make-us-pay-more/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1527415822-500x500.jpg"
+    },
+    {
+      "id": "nvidia-breathes-new-life-into-the-ai-trade-pl-c06a7883fcf2",
+      "language": "en",
+      "title": "Nvidia breathes new life into the AI trade. Plus, Qnity inks a smart deal to get stronger",
+      "excerpt": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "date": "2026-11-23T20:03:25.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/investingclub/2026/11/23/nvidia-breathes-new-life-into-the-ai-trade-plus-qnity-inks-a-smart-deal-to-get-stronger.html",
+      "image": ""
+    },
+    {
+      "id": "average-401-k-ira-balances-fall-as-more-worke-39135f14c4fe",
+      "language": "en",
+      "title": "Average 401(k), IRA balances fall as more workers raid their accounts, Fidelity says",
+      "excerpt": "Retirement account balances fell in the third quarter amid market swings, according to Fidelity. At the same time, more savers tapped their accounts for cash.",
+      "date": "2026-11-23T19:54:35.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/fidelity-401k-ira-balances-q3-2026.html",
+      "image": ""
+    },
+    {
+      "id": "trump-administration-proposes-rule-that-could-071ee24ea0bd",
+      "language": "en",
+      "title": "Trump administration proposes rule that could curb ESG investing in 401(k)s",
+      "excerpt": "The Labor Department proposed a regulation Monday that seeks to curb uptake of ESG funds in workplace retirement plans such as 401(k)s.",
+      "date": "2026-11-23T19:46:28.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/labor-department-esg-401k-rule.html",
+      "image": ""
+    },
+    {
+      "id": "amazon-fights-delivery-protection-act-by-putt-14d7d654182e",
+      "language": "en",
+      "title": "Amazon fights Delivery Protection Act by putting stickers on its packages",
+      "excerpt": "Amazon now uses its packages for political purposes.",
+      "date": "2026-11-23T19:38:13.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/amazon-fights-delivery-protection-act-by-putting-stickers-on-its-packages/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/something-about-this-just-feels-off-to-me-v0-d584x10nr83i1-500x500-1795460897.jpg"
+    },
+    {
+      "id": "amazon-to-acquire-ai-startup-decart-s-chip-so-444a52eae9e0",
+      "language": "en",
+      "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
+      "excerpt": "Decart, founded in 2023, is best known for its software that lets developers sync their AI models across different chips.",
+      "date": "2026-11-23T19:34:38.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+      "image": ""
+    },
+    {
+      "id": "outrageous-reckless-wow-here-s-what-politicia-20bb58c8d5c8",
+      "language": "en",
+      "title": "‘Outrageous,’ ‘reckless,’ ‘wow’: Here’s what politicians are saying about Jensen Huang’s return to Nvidia",
+      "excerpt": "Politicians on both sides of the aisle seem angry, agitated, and nonplussed by the return of Jensen Huang to Nvidia leadership less than two weeks after his ousting.",
+      "date": "2026-11-23T19:31:41.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/outrageous-reckless-wow-heres-what-politicians-are-saying-about-jensen-huangs-return-to-nvidia/",
+      "image": ""
+    },
+    {
+      "id": "reports-russia-may-launch-nuclear-weapon-into-4efb0bcac54b",
+      "language": "en",
+      "title": "Reports: Russia may launch nuclear weapon into orbit as soon as next month",
+      "excerpt": "A nuclear detonation in space \"could cause rapid and sudden loss or degradation of thousands of satellites.\"",
+      "date": "2026-11-23T19:28:30.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/space/2026/11/russia-may-launch-a-nuclear-armed-satellite-far-sooner-than-we-thought/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-525166886-500x500.jpg"
+    },
+    {
+      "id": "tech-stocks-rally-after-nvidia-board-approves-946a6895071e",
+      "language": "en",
+      "title": "Tech stocks rally after Nvidia board approves Jensen Huang's return as CEO",
+      "excerpt": "The Nasdaq slid 10% last week in its worst week since the early days of Covid in 2020.",
+      "date": "2026-11-23T19:19:08.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
+      "image": ""
+    },
+    {
+      "id": "google-search-s-ai-mode-can-now-tap-into-driv-50419d3a895f",
+      "language": "en",
+      "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+      "excerpt": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem",
+      "date": "2026-11-23T19:14:46.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+      "image": ""
+    },
+    {
+      "id": "dni-jay-clayton-tapped-as-acting-national-cyb-1db1b34ee022",
+      "language": "en",
+      "title": "DNI Jay Clayton tapped as acting national cyber director",
+      "excerpt": "President Donald Trump last week said he decided to replace Sean Cairncross as national cyber director \"because I didn't think that person was good enough.\"",
+      "date": "2026-11-23T19:12:49.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/jay-clayton-cyber-director-kirsten-davies-trump.html",
+      "image": ""
+    },
+    {
+      "id": "espn-nfl-to-show-super-bowl-61-in-imax-theate-cb11a6b8673c",
+      "language": "en",
+      "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
+      "excerpt": "In addition to ESPN channels, Super Bowl 61 will also be available on streaming platform Disney+ as well as the company's broadcast network ABC.",
+      "date": "2026-11-23T19:08:37.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
+      "image": ""
+    },
+    {
+      "id": "an-options-strategy-for-making-even-more-of-y-2758da50f770",
+      "language": "en",
+      "title": "An options strategy for making even more of your money back in Nvidia",
+      "excerpt": "Nvidia shareholders can look to the options market to recoup lost money",
+      "date": "2026-11-23T18:52:46.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/an-options-strategy-for-making-even-more-of-your-money-back-in-nvidia-.html",
+      "image": ""
+    },
+    {
+      "id": "jensen-huang-scheduled-to-testify-next-week-i-9f6a9f2b4d78",
+      "language": "en",
+      "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+      "excerpt": "The public hearing follows bipartisan calls for Huang to testify about the affair with the suspected Chinese spy.",
+      "date": "2026-11-23T18:12:22.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+      "image": ""
+    },
+    {
+      "id": "iranian-authorities-flog-singer-who-performed-1221712236f0",
+      "language": "en",
+      "title": "Iranian authorities flog singer who performed without hijab, lawyers say",
+      "excerpt": "Parastoo Ahmadi, three musicians and a producer were reportedly given 74 lashes in Qom.",
+      "date": "2026-11-23T18:04:20.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6a11/live/e201bf70-bb4c-11f1-bc1f-3f186ca4140c.jpg"
+    },
+    {
+      "id": "this-establishes-a-bottom-jensen-huang-s-retu-2102247483a9",
+      "language": "en",
+      "title": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
+      "excerpt": "Wall Street strategists say Jensen Huang’s return to Nvidia could steady the AI trade, though spending and data-center risks remain.",
+      "date": "2026-11-23T18:00:47.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html",
+      "image": ""
+    },
+    {
+      "id": "what-failure-of-cop31-reveals-about-a-divided-df8cf82ed3b7",
+      "language": "en",
+      "title": "What failure of COP31 reveals about a divided world",
+      "excerpt": "Interests of oil-producing countries, a US boycott and a dispute over finance may have torpedoed climate talks.",
+      "date": "2026-11-23T17:24:25.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cky970n83rvjo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c650/live/3a868c20-e767-11f1-99a1-253766e7ad8b.jpg"
+    },
+    {
+      "id": "trump-tells-cnbc-i-made-the-deal-to-reinstate-13f8d897c04d",
+      "language": "en",
+      "title": "Trump tells CNBC ‘I made the deal’ to reinstate Nvidia’s Jensen Huang",
+      "excerpt": "President Trump said his administration gave Nvidia's board assurance that Jensen Huang would not be a national security threat if he was reinstated as CEO.",
+      "date": "2026-11-23T17:16:39.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
+      "image": ""
+    },
+    {
+      "id": "comedian-impersonates-trump-s-dance-moves-moc-f6d36288d783",
+      "language": "en",
+      "title": "Comedian impersonates Trump's dance moves, mocks trade talks at Canada press dinner",
+      "excerpt": "The impersonator, Canadian comedian Mark Critch, poked fun at the US president's search for a new press secretary and US-Canada trade talks.",
+      "date": "2026-11-23T17:14:50.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cr930y92dyx4o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9f36/live/7d4e5560-e758-11f1-b407-33329b1ec67a.png"
+    },
+    {
+      "id": "amazon-snaps-up-decart-s-ai-optimization-tech-9e07b8c2cf04",
+      "language": "en",
+      "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+      "excerpt": "Amazon is acquiring Decart’s AI optimization technology and research team in a reported $7.5 billion deal.",
+      "date": "2026-11-23T17:14:23.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+      "image": ""
+    },
+    {
+      "id": "meta-throws-out-its-net-zero-goal-its-competi-aa1274f91f4a",
+      "language": "en",
+      "title": "Meta throws out its net-zero goal — its competitors should be furious",
+      "excerpt": "Meta walked back its 2030 net-zero goal in its 2026 sustainability report, a decision that could send ripples throughout the tech industry.",
+      "date": "2026-11-23T17:13:45.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/meta-throws-out-its-net-zero-goal-its-competitors-should-be-furious/",
+      "image": ""
+    },
+    {
+      "id": "israeli-attacks-have-turned-gaza-into-toxic-w-81800622d8bc",
+      "language": "en",
+      "title": "Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says",
+      "excerpt": "The report says there are signs of possible contamination across almost all of Gaza as a result of Israel's actions.",
+      "date": "2026-11-23T17:07:25.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/810a/live/c0542f80-e73d-11f1-99a1-253766e7ad8b.jpg"
+    },
+    {
+      "id": "jensen-huang-isn-t-out-of-the-woods-yet-3e04281a8147",
+      "language": "en",
+      "title": "Jensen Huang isn’t out of the woods yet",
+      "excerpt": "Tech leaders should be clear-eyed about all the problems likely to come with Huang's reinstatement.",
+      "date": "2026-11-23T16:57:40.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/",
+      "image": ""
+    },
+    {
+      "id": "spacex-sued-by-oregon-and-virginia-over-ai-de-2e08a3893b9b",
+      "language": "en",
+      "title": "SpaceX sued by Oregon and Virginia over AI deepfake porn, Grok safety claims",
+      "excerpt": "The states are seeking civil penalties and injunctions to stop Grok and X from creation and distribution of nonconsensual sexualized images.",
+      "date": "2026-11-23T16:45:31.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html",
+      "image": ""
+    },
+    {
+      "id": "trump-reportedly-called-into-nvidia-board-mee-79c3fac607e1",
+      "language": "en",
+      "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
+      "excerpt": "\"I spoke to them, let me put it that way … And I convinced them,\" the president told CNBC.",
+      "date": "2026-11-23T16:39:10.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
+      "image": ""
+    },
+    {
+      "id": "stop-agonizing-over-the-right-choice-to-avoid-92d383404291",
+      "language": "en",
+      "title": "Stop agonizing over the ‘right’ choice—to avoid regret, save time and reduce stress, take these 3 steps",
+      "excerpt": "Maximizing can increase regret, anxiety and indecision, says therapist Chamin Ajjan. Take three steps to make faster, better decisions.",
+      "date": "2026-11-23T16:25:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/make-it/2026/11/23/stop-maximizing-make-decisions.html",
+      "image": ""
+    },
+    {
+      "id": "crowdstrike-to-acquire-zscaler-for-44-billion-1100af5b02a1",
+      "language": "en",
+      "title": "CrowdStrike to acquire Zscaler for $44 billion",
+      "excerpt": "The cybersecurity giant said that the deal to buy Zscaler, which provides zero-trust products to large enterprises, will better equip their customers to use AI agents.",
+      "date": "2026-11-23T16:20:11.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion/",
+      "image": ""
+    },
+    {
+      "id": "英伟达恢复黄仁勋总裁-ceo及董事职务-c25bc30eff15",
+      "language": "zh",
+      "title": "英伟达恢复黄仁勋总裁、CEO及董事职务",
+      "excerpt": "中新社旧金山11月23日电 英伟达公司23日宣布，即日起恢复黄仁勋的公司总裁、首席执行官(CEO)及董事职务。",
+      "date": "2026-11-23T16:17:37.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-24/10736726.shtml",
+      "image": ""
+    },
+    {
+      "id": "月租-酒店划不划算-先分清-安居-与-旅居-1a255a92c0fe",
+      "language": "zh",
+      "title": "“月租”酒店划不划算？先分清“安居”与“旅居”",
+      "excerpt": "酒店包月当租房，正在成为一种新的生活方式。上海一位租客和酒店谈定每晚300元，工作日入住、周末回远郊的家，一个月房费约3600元、最高4800元，两份早餐、保洁、停车全包；而在同地段租一间20平方米的“老破小”，房租加水电、停车等杂费每月要5500元左右。两相比较，住酒店反而省了近2000元。与此同时，头部酒店集团集体下场，上线长租房源、推出独立公寓品牌。",
+      "date": "2026-11-23T16:11:04.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-24/10736725.shtml",
+      "image": ""
+    },
+    {
+      "id": "marvel-crams-every-superhero-ever-into-avenge-4d311cc43bc2",
+      "language": "en",
+      "title": "Marvel crams every superhero ever into Avengers: Doomsday final trailer",
+      "excerpt": "\"All of you have lived stolen lives. But now you must give them back.\"",
+      "date": "2026-11-23T15:55:12.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/culture/2026/11/marvel-crams-every-superhero-ever-into-avengers-doomsday-final-trailer/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/doomsday1-500x500.jpg"
+    },
+    {
+      "id": "jensen-huang-reinstated-as-nvidia-ceo-board-c-20cfb07f132d",
+      "language": "en",
+      "title": "Jensen Huang reinstated as Nvidia CEO, board chair",
+      "excerpt": "Trump says he spoke to the board and that Huang \"did nothing wrong.\"",
+      "date": "2026-11-23T15:46:18.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2301328096-500x500.jpg"
+    },
+    {
+      "id": "tokenized-stocks-face-pushback-as-nyse-nasdaq-517c89c78b9c",
+      "language": "en",
+      "title": "Tokenized stocks face pushback as NYSE, Nasdaq pivot for a new market",
+      "excerpt": "OKXICE is set to debut Monday despite objections from 90% of the companies whose stocks it initially proposed to list.",
+      "date": "2026-11-23T15:30:27.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/tokenized-stocks-face-pushback-as-nyse-nasdaq-pivot-for-a-new-market-.html",
+      "image": ""
+    },
+    {
+      "id": "dutch-privacy-authority-urges-consumers-not-t-51e551e855ad",
+      "language": "en",
+      "title": "Dutch privacy authority urges consumers not to buy ‘pervert glasses’",
+      "excerpt": "The Netherlands' data protection agency said smart wearables violate people's privacy, get information wrong, and can result in unsafe situations.",
+      "date": "2026-11-23T15:29:49.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/dutch-privacy-authority-urges-consumers-not-to-buy-pervert-glasses/",
+      "image": ""
+    },
+    {
+      "id": "英国曼彻斯特演唱会现不明物质-逾1-2万人被紧急疏散-98c02fc5fd23",
+      "language": "zh",
+      "title": "英国曼彻斯特演唱会现不明物质 逾1.2万人被紧急疏散",
+      "excerpt": "中新社伦敦11月23日电 (记者 欧阳开宇)当地时间11月22日晚间，英国曼彻斯特Co-op Live体育馆举办演唱会期间出现不明物质，现场超过1.2万名观众被紧急疏散，警方将此列为重大事件展开调查。",
+      "date": "2026-11-23T15:23:43.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736724.shtml",
+      "image": ""
+    },
+    {
+      "id": "cop31-ends-in-failure-as-countries-split-over-aad6f2d81e7b",
+      "language": "en",
+      "title": "COP31 ends in failure as countries split over fossil fuels, climate finance",
+      "excerpt": "COP31 ended without a consensus deal for the first time since 2009.",
+      "date": "2026-11-23T15:23:26.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/science/2026/11/cop31-ends-in-failure-as-countries-split-over-fossil-fuels-climate-finance/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/cop31-500x500.jpg"
+    },
+    {
+      "id": "菲律宾南部官员住宅遭火箭弹袭击-数百居民再度撤离-992cb0508be3",
+      "language": "zh",
+      "title": "菲律宾南部官员住宅遭火箭弹袭击 数百居民再度撤离",
+      "excerpt": "中新社马尼拉11月23日电 (记者 周璟)据菲律宾媒体23日消息，菲南部棉兰老岛日前发生一起武装袭击事件，当地一名政府官员的住宅遭火箭弹袭击，周边数百名居民被迫撤离。",
+      "date": "2026-11-23T15:23:05.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736723.shtml",
+      "image": ""
+    },
+    {
+      "id": "stuck-how-a-frozen-housing-market-is-hitting--9b0cc2d11fd6",
+      "language": "en",
+      "title": "Stuck: How a frozen housing market is hitting buyers, sellers and the economy",
+      "excerpt": "A sharp spike in mortgage rates in September has pushed the already chilly real estate sector into a deep freeze.",
+      "date": "2026-11-23T15:22:03.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/housing-market-real-estate-economy.html",
+      "image": ""
+    },
+    {
+      "id": "走进民企看发展丨德康农牧董事长王德根-用科技创新解决农民养殖痛点-21f7bd49b0d5",
+      "language": "zh",
+      "title": "走进民企看发展丨德康农牧董事长王德根：用科技创新解决农民养殖痛点",
+      "excerpt": "四川德康农牧食品集团股份有限公司董事长王德根在接受采访时表示，作为农牧行业链主企业，我们要把科技创新、防疫体系和食品安全全产业链的各个控制环节系统性地建设好、建强，真正让产业实现持续发展、农民持续增收，企业实现良好效益，形成稳定、长期发力的基础体系。(左雨晴 陈庆洋)",
+      "date": "2026-11-23T15:19:56.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "http://www.chinanews.com.cn/cj/shipin/2026/11-23/news1075814.shtml",
+      "image": ""
+    },
+    {
+      "id": "netflix-s-the-altruists-sparks-ftx-portrayal--b9d82ee3d562",
+      "language": "en",
+      "title": "Netflix’s ‘The Altruists’ sparks FTX portrayal debate among crypto bigwigs from CZ to Star Xu",
+      "excerpt": "Netflix’s \"The Altruists\" has drawn backlash over its portrayal of the FTX collapse, with prominent crypto industry figures questioning the series’ accuracy",
+      "date": "2026-11-23T15:18:51.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/23/netflix-the-altruists-crypto-ftx-collapse.html",
+      "image": ""
+    },
+    {
+      "id": "特朗普再次发文-祝贺英伟达作出了一个在我看来绝对出色的决定-539ca515c4d7",
+      "language": "zh",
+      "title": "特朗普再次发文：“祝贺英伟达作出了一个在我看来绝对出色的决定”",
+      "excerpt": "中新网11月23日电 当地时间11月23日，美国总统特朗普再次在社交媒体发文，祝贺英伟达作出恢复黄仁勋职务的决定。",
+      "date": "2026-11-23T15:10:43.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736721.shtml",
+      "image": ""
+    },
+    {
+      "id": "业内人士-ai智能体正成为高端手机出海竞争的新变量-82a53f987164",
+      "language": "zh",
+      "title": "业内人士：AI智能体正成为高端手机出海竞争的新变量",
+      "excerpt": "中新网11月23日电(左雨晴) AI智能体手机正在成为中国厂商出海竞争的新变量。",
+      "date": "2026-11-23T15:10:07.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736712.shtml",
+      "image": ""
+    },
+    {
+      "id": "外交部-中国不搞地缘争夺-不搞势力范围-8f52eb94e15c",
+      "language": "zh",
+      "title": "外交部：中国不搞地缘争夺，不搞势力范围",
+      "excerpt": "中新社北京11月23日电 (记者 黄钰钦)针对中俄美元首会晤若机制化是否会削弱现有多边机制，中国外交部发言人郭嘉昆23日在例行记者会上应询指出，中国不搞地缘争夺，不搞势力范围，而是在相互尊重、平等相待的基础上，同各国开展友好交往。",
+      "date": "2026-11-23T15:09:35.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-23/10736714.shtml",
+      "image": ""
+    },
+    {
+      "id": "张利忠-对接东盟市场实际需求-助力各类市场主体发掘合作商机-f0d6a76b8b0a",
+      "language": "zh",
+      "title": "张利忠：对接东盟市场实际需求，助力各类市场主体发掘合作商机",
+      "excerpt": "中新网重庆11月23日电 (程春雨 谢艺观)“放眼当下，世界变局加速演进，中国—东盟合作外部环境发生深刻变化。中国—东盟合作逆势而上，取得诸多令人振奋的成果。事实表明，越是形势复杂，越需要东盟和中国携手奋进，团结自强，共同维护地区和平稳定，为全球发展注入确定性。”",
+      "date": "2026-11-23T15:08:25.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736720.shtml",
+      "image": ""
+    },
+    {
+      "id": "今年10月欧盟油价同比增长近三成-e6b41e840015",
+      "language": "zh",
+      "title": "今年10月欧盟油价同比增长近三成",
+      "excerpt": "中新社布鲁塞尔11月23日电 (记者 德永健)欧盟统计局23日公布的数据显示，今年10月欧盟油价继续保持高位，燃油和润滑油价格同比增长近三成。",
+      "date": "2026-11-23T15:08:13.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736716.shtml",
+      "image": ""
+    },
+    {
+      "id": "黄仁勋复职-英伟达开盘涨超33-f4597e8e168c",
+      "language": "zh",
+      "title": "黄仁勋复职，英伟达开盘涨超33%",
+      "excerpt": "中新网北京11月23日电 当地时间11月23日，美股开盘后，英伟达开盘暴涨超33%。据英伟达公司官网消息，英伟达重新任命黄仁勋为首席执行官。(完)",
+      "date": "2026-11-23T15:07:01.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736711.shtml",
+      "image": ""
+    },
+    {
+      "id": "黄仁勋回应重返英伟达-9a73c45d38f3",
+      "language": "zh",
+      "title": "黄仁勋回应重返英伟达",
+      "excerpt": "中新网北京11月23日电 北京时间23日，英伟达通过其网站发布公告称，自即日起，恢复黄仁勋的总裁兼首席执行官职务，并成为董事会成员。",
+      "date": "2026-11-23T15:05:53.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736709.shtml",
+      "image": ""
+    },
+    {
+      "id": "trump-endorses-jensen-huang-s-return-to-nvidi-5876b76a766d",
+      "language": "en",
+      "title": "Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing",
+      "excerpt": "The president cited the U.S. attorney general in defending Huang's return, while urging Nvidia to continue its export-control investigation.",
+      "date": "2026-11-23T15:04:01.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing/",
+      "image": ""
+    },
+    {
+      "id": "马斯克回应黄仁勋重任英伟达ceo-1c898528a8c5",
+      "language": "zh",
+      "title": "马斯克回应黄仁勋重任英伟达CEO",
+      "excerpt": "中新网11月23日电 当地时间11月23日，在英伟达宣布恢复黄仁勋担任公司总裁兼首席执行官后，美国企业家马斯克在社交媒体X上连续发布帖文，写道：“事情已经办妥”(It is done)和“错误已经得到纠正”(The mistake has been corrected)。",
+      "date": "2026-11-23T15:01:04.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736719.shtml",
+      "image": ""
+    },
+    {
+      "id": "三箭齐发稳市场-a股走出v型反弹-24f45d1767d7",
+      "language": "zh",
+      "title": "三箭齐发稳市场，A股走出V型反弹",
+      "excerpt": "刚过去的周末，资本市场连迎三项重大政策利好。",
+      "date": "2026-11-23T15:00:14.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736708.shtml",
+      "image": ""
+    },
+    {
+      "id": "prominent-zimbabwean-preacher-arrested-on-sex-0f7f1d297cd7",
+      "language": "en",
+      "title": "Prominent Zimbabwean preacher arrested on sexual assault allegations",
+      "excerpt": "Uebert Angel, a British-Zimbabwean national, leads a charismatic church with branches in several countries.",
+      "date": "2026-11-23T14:55:14.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cxyvdmjr893zo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/caba/live/164c61e0-e73a-11f1-8294-033bd8ee7e95.jpg"
+    },
+    {
+      "id": "澳大利亚艺术家赴华采风-于山水林石间见中国-d337b8f30877",
+      "language": "zh",
+      "title": "澳大利亚艺术家赴华采风：于山水林石间见中国",
+      "excerpt": "中新社悉尼11月23日电 题：澳大利亚艺术家赴华采风：于山水林石间见中国",
+      "date": "2026-11-23T14:54:42.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736715.shtml",
+      "image": ""
+    },
+    {
+      "id": "mexican-soldiers-attacked-in-wake-of-drug-lor-c21768189b7c",
+      "language": "en",
+      "title": "Mexican soldiers attacked in wake of drug lord's arrest",
+      "excerpt": "Eight suspects are arrested after firing on soldiers trying to re-establish order following the arrest of 'El Chapo Isidro'.",
+      "date": "2026-11-23T14:54:03.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/17c3/live/64308a00-e73d-11f1-802a-678be58471bb.jpg"
+    },
+    {
+      "id": "伊朗制定综合措施应对制裁和封锁-卡塔尔首相赴美继续调解-6ab11971461e",
+      "language": "zh",
+      "title": "伊朗制定综合措施应对制裁和封锁 卡塔尔首相赴美继续调解",
+      "excerpt": "中新社北京11月23日电 综合消息：伊朗外交部发言人巴加埃23日表示，伊朗已制定政治、外交和防御相结合的综合措施，以应对美国的非法制裁和封锁。卡塔尔首相兼外交大臣穆罕默德23日赴美，继续推动美伊达成协议。",
+      "date": "2026-11-23T14:53:48.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736713.shtml",
+      "image": ""
+    },
+    {
+      "id": "sierra-doubles-valuation-to-30b-within-six-mo-10ed8c9647ec",
+      "language": "en",
+      "title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+      "excerpt": "Enterprise customer experience company Sierra, co-founded by former Salesforce co-CEO Bret Taylor, said on Monday that it has raised $1.75 billion in a Series F round.",
+      "date": "2026-11-23T14:43:03.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      "image": ""
+    },
+    {
+      "id": "特朗普祝贺黄仁勋重掌英伟达-称其回归无国家安全风险-3b05be62d469",
+      "language": "zh",
+      "title": "特朗普祝贺黄仁勋重掌英伟达：称其回归无国家安全风险",
+      "excerpt": "中新网11月23日电 当地时间11月23日，美国总统特朗普在社交媒体发文，祝贺英伟达董事会决定恢复黄仁勋担任公司首席执行官。",
+      "date": "2026-11-23T14:35:59.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736710.shtml",
+      "image": ""
+    },
+    {
+      "id": "英伟达董事会一致通过黄仁勋复职-恢复总裁兼ceo职务-相关调查仍将继续-b9b7998081c6",
+      "language": "zh",
+      "title": "英伟达董事会一致通过黄仁勋复职：恢复总裁兼CEO职务，相关调查仍将继续",
+      "excerpt": "中新网11月23日电 当地时间11月23日，英伟达在官网发布声明称，公司董事会一致投票决定，即日起恢复黄仁勋担任公司总裁兼首席执行官及董事会成员职务。",
+      "date": "2026-11-23T14:28:47.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736707.shtml",
+      "image": ""
+    },
+    {
+      "id": "nigeria-s-president-says-he-is-also-hit-by-wa-1a67c979a6d7",
+      "language": "en",
+      "title": "Nigeria's president says he is also hit by water and power cuts plaguing country",
+      "excerpt": "Bola Tinubu says he was shaving last week when the water cut out - an experience familiar to many Nigerians.",
+      "date": "2026-11-23T14:26:33.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cv1j65xjjk65o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/69d2/live/beff50e0-e71c-11f1-914b-6d226d813a52.jpg"
+    },
+    {
+      "id": "国务院台办与中国进出口银行签署合作协议-6d6e0dd3cb20",
+      "language": "zh",
+      "title": "国务院台办与中国进出口银行签署合作协议",
+      "excerpt": "中新社北京11月23日电 (记者 张杨彬 刘子衿)国务院台湾事务办公室与中国进出口银行23日在北京签署《“十五五”时期促进两岸融合发展金融合作协议》。",
+      "date": "2026-11-23T14:22:02.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gn/2026/11-23/10736705.shtml",
+      "image": ""
+    },
+    {
+      "id": "nvidia-reverses-course-and-brings-jensen-huan-0affd11db18d",
+      "language": "en",
+      "title": "Nvidia reverses course and brings Jensen Huang back as CEO",
+      "excerpt": "The stunning reversal was supported by senior officials in the U.S. government.",
+      "date": "2026-11-23T14:21:59.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/",
+      "image": ""
+    },
+    {
+      "id": "尼泊尔-菏泽牡丹园-揭牌-0bb9916300a7",
+      "language": "zh",
+      "title": "尼泊尔“菏泽牡丹园”揭牌",
+      "excerpt": "中新社加德满都11月23日电 (记者 崔楠)“菏泽牡丹园”23日在尼泊尔杜利克尔市揭牌。来自中国山东省菏泽市的首批100株牡丹已移栽至园内。",
+      "date": "2026-11-23T14:21:08.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736702.shtml",
+      "image": ""
+    },
+    {
+      "id": "黄仁勋重新出任英伟达ceo-cb428259a451",
+      "language": "zh",
+      "title": "黄仁勋重新出任英伟达CEO",
+      "excerpt": "中新网11月23日电 据英伟达官网当地时间11月23日消息，黄仁勋重新出任英伟达CEO。",
+      "date": "2026-11-23T14:06:37.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736703.shtml",
+      "image": ""
+    },
+    {
+      "id": "uber-now-lets-you-book-rides-that-record-the--31053907af70",
+      "language": "en",
+      "title": "Uber now lets you book rides that record the drive by default",
+      "excerpt": "The option, which uses the front camera of the Uber driver's phone to record the entire drive, will show up as \"Recorded Rides\" in the app.",
+      "date": "2026-11-23T14:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/23/uber-now-lets-you-book-rides-that-record-the-drive-by-default/",
+      "image": ""
+    },
+    {
+      "id": "西藏最大铁路货运枢纽拉萨西站首次完成道岔更换-e5ef6e348ece",
+      "language": "zh",
+      "title": "西藏最大铁路货运枢纽拉萨西站首次完成道岔更换",
+      "excerpt": "中新网拉萨11月23日电(马生明)11月22日凌晨2时50分，青藏铁路拉萨西站站场上，随着最后一组道岔各项参数试验合格，22组道岔更换施工圆满完成。此次施工历时近半个月，利用12个“天窗”作业时段完成，这是青藏铁路全线开通20年来，拉萨西站首次成组集中更换道岔。",
+      "date": "2026-11-23T13:59:19.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736694.shtml",
+      "image": ""
+    },
+    {
+      "id": "10月中国全社会用电量同比增长1-6-11784a3933da",
+      "language": "zh",
+      "title": "10月中国全社会用电量同比增长1.6%",
+      "excerpt": "中新社北京11月23日电 (记者 王梦瑶)中国国家能源局23日发布的数据显示，10月中国全社会用电量8709亿千瓦时，同比增长1.6%，较9月回升0.4个百分点。",
+      "date": "2026-11-23T13:59:11.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736695.shtml",
+      "image": ""
+    },
+    {
+      "id": "f1-in-las-vegas-you-ve-never-seen-an-f1-race--19e0ad3fe085",
+      "language": "en",
+      "title": "F1 in Las Vegas: You've never seen an F1 race like this before",
+      "excerpt": "There were 352 position changes, including 35 for the lead.",
+      "date": "2026-11-23T13:54:22.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/11/f1-in-las-vegas-youve-never-seen-an-f1-race-like-this-before/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2305548314-500x500.jpg"
+    },
+    {
+      "id": "全球首只离岸人民币债券etf在港挂牌-2ee22e050ab8",
+      "language": "zh",
+      "title": "全球首只离岸人民币债券ETF在港挂牌",
+      "excerpt": "中新社香港11月23日电 (记者 戴小橦)全球首只离岸人民币债券交易所买卖基金(ETF)23日于香港交易及结算所有限公司(简称“港交所”)正式挂牌上市。",
+      "date": "2026-11-23T13:49:54.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736675.shtml",
+      "image": ""
+    },
+    {
+      "id": "粤科通-科技成果直通车服务平台发布-c3f25cdbdcad",
+      "language": "zh",
+      "title": "粤科通·科技成果直通车服务平台发布",
+      "excerpt": "中新网肇庆11月23日电 (记者 蔡敏婕)粤科通·科技成果直通车服务平台23日在广东肇庆发布。该平台对接企业技术、人才、资金、场地需求，持续打通创新要素流转通道，打造科创转化永不停歇的直通车和服务粤港澳大湾区的数字化科创枢纽。",
+      "date": "2026-11-23T13:47:04.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736673.shtml",
+      "image": ""
+    },
+    {
+      "id": "哈尔滨今年上半年数字经济核心产业营收同比增长21-2-a0dfa2d617f0",
+      "language": "zh",
+      "title": "哈尔滨今年上半年数字经济核心产业营收同比增长21.2%",
+      "excerpt": "中新网哈尔滨11月23日电 (记者 田德雨)11月23日，“给力！新引擎”数字经济篇主题采访活动在哈尔滨市启动。哈尔滨市数据局党组成员、副局长张晓多在介绍会上表示，今年上半年，哈尔滨市数字经济核心产业营收同比增21.2%，占黑龙江省数字经济核心产业营业收入比重超过70%，黑龙江省数字经济跨越发展核心区地位进一步巩固。",
+      "date": "2026-11-23T13:45:14.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736672.shtml",
+      "image": ""
+    },
+    {
+      "id": "india-pledges-1-6bn-to-nepal-in-reset-of-ties-593cf9abec85",
+      "language": "en",
+      "title": "India pledges $1.6bn to Nepal in reset of ties",
+      "excerpt": "As Nepal rebuilds after deadly floods, its prime minister sets contentious issues aside to secure Indian funding, port access and a new train service.",
+      "date": "2026-11-23T13:39:30.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwx2ervemj4ko?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/25f9/live/8fa3a390-e71d-11f1-914b-6d226d813a52.jpg"
+    },
+    {
+      "id": "flights-cancelled-in-belgium-due-to-cost-of-l-c3f0c850050e",
+      "language": "en",
+      "title": "Flights cancelled in Belgium due to cost-of-living strike",
+      "excerpt": "A series of strikes have hit Belgium in recent months as the prime minister struggles to agree a budget to cut costs.",
+      "date": "2026-11-23T13:34:02.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwdr155e2d05o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6bf3/live/3920ed00-e738-11f1-8294-033bd8ee7e95.jpg"
+    },
+    {
+      "id": "i-want-to-destroy-capitalism-not-france-on-th-8006ba0f9c43",
+      "language": "en",
+      "title": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
+      "excerpt": "The BBC meets the far-left protesters French President Emmanuel Macron says are trying to bring down the Republic.",
+      "date": "2026-11-23T13:09:52.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw074km48myeo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/87ae/live/24717fd0-e73f-11f1-802a-678be58471bb.jpg"
+    },
+    {
+      "id": "今年10月欧盟油价同比增长近三成-625fbe56a46f",
+      "language": "zh",
+      "title": "今年10月欧盟油价同比增长近三成",
+      "excerpt": "中新网布鲁塞尔11月23日电 (记者 德永健)欧盟统计局23日公布的数据显示，今年10月欧盟油价继续保持高位，燃油和润滑油价格同比增长近三成。",
+      "date": "2026-11-23T13:07:38.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736648.shtml",
+      "image": ""
+    },
+    {
+      "id": "从-捐钱-到-捐能力-首届深圳科技公益大会展现能力型公益-30d9e51e0de7",
+      "language": "zh",
+      "title": "从“捐钱”到“捐能力”：首届深圳科技公益大会展现能力型公益",
+      "excerpt": "中新网深圳11月23日电 (记者 索有为)2026企业公益年度主题交流暨首届深圳科技公益大会23日在深圳举行。参会企业公益负责人、研究者与合作伙伴，围绕科技创新、新就业群体关爱、城乡融合等六个方向展开联合解题，集中呈现企业把核心能力接入社会议题的实践。",
+      "date": "2026-11-23T13:02:46.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736662.shtml",
+      "image": ""
+    },
+    {
+      "id": "合湛高铁全线最长跨海大桥开始架梁-930bc2eae454",
+      "language": "zh",
+      "title": "合湛高铁全线最长跨海大桥开始架梁",
+      "excerpt": "中新网广西北海11月23日电 (莫小斌 陈磊 林鹤)11月23日上午，在新建广西合浦至广东湛江高速铁路(以下简称“合湛高铁”)广西段铁山港跨海特大桥箱梁架设现场，一榀混凝土简支箱梁被架桥机缓缓吊起并顺利落在指定桥墩的预接孔内，标志着合湛高铁最长跨海大桥首榀箱梁架设成功，全线桥梁工程全面进入上部施工环节。",
+      "date": "2026-11-23T12:47:53.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736651.shtml",
+      "image": ""
+    },
+    {
+      "id": "search-and-rescue-teams-race-against-time-to--8a02e349b2bd",
+      "language": "en",
+      "title": "Search and rescue teams race against time to find survivors after Nigeria boat tragedy",
+      "excerpt": "The government blames overcrowding, poor maintenance, and missing life jackets for boat accidents.",
+      "date": "2026-11-23T12:43:40.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq7820xjm49po?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4f67/live/f7d15990-e6fe-11f1-b302-63c5d030cf64.jpg"
+    },
+    {
+      "id": "重庆高新区深耕新能源汽摩产业-力争到2030年规模达600亿元-b32eb46bf5ea",
+      "language": "zh",
+      "title": "重庆高新区深耕新能源汽摩产业 力争到2030年规模达600亿元",
+      "excerpt": "中新网重庆11月23日电 (梁钦卿)西部科学城重庆高新区管委会副主任张炎23日在新闻发布会上介绍，到2030年，西部科学城重庆高新区(下称“重庆高新区”)的新能源汽摩产业规模将达到600亿元；新能源商用车、摩托车年产销量分别达到20万台和300万台，基本建成智能网联新能源汽车和高端摩托车产业集群重要承载地。",
+      "date": "2026-11-23T12:37:15.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736645.shtml",
+      "image": ""
+    },
+    {
+      "id": "百亿级科创企业汇聚香港-探讨具身智能产业全球化路径-46f694112934",
+      "language": "zh",
+      "title": "百亿级科创企业汇聚香港 探讨具身智能产业全球化路径",
+      "excerpt": "中新网香港11月23日电 (记者 张语洽)“香港国际具身智能领袖峰会”23日在香港举行，吸引多家估值百亿级具身智能企业及独角兽企业参会。",
+      "date": "2026-11-23T12:37:11.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736644.shtml",
+      "image": ""
+    },
+    {
+      "id": "第十二次中俄财长对话举行-1a8bcab1ad16",
+      "language": "zh",
+      "title": "第十二次中俄财长对话举行",
+      "excerpt": "中新社北京11月23日电 第十二次中俄财长对话23日在俄罗斯莫斯科举行。双方围绕宏观经济形势与金融合作、多边财金合作等深入探讨，达成多项共识，共同发表《第十二次中俄财长对话联合声明》(下称声明)。据中国财政部公布的新闻稿，中国财政部部长蓝佛安与俄罗斯副总理兼财政部部长西卢阿诺夫共同主持会议。",
+      "date": "2026-11-23T12:31:50.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736637.shtml",
+      "image": ""
+    },
+    {
+      "id": "第十七次中欧财金对话在北京举行-2ae9351426a9",
+      "language": "zh",
+      "title": "第十七次中欧财金对话在北京举行",
+      "excerpt": "中新社北京11月23日电 (记者 赵建华)中国财政部副部长廖岷与欧盟委员会经济与金融事务总司长沃威23日在北京共同主持第十七次中欧财金对话。会议围绕宏观经济形势和政策、中欧在二十国集团(G20)框架下的多边合作等议题进行了深入讨论。",
+      "date": "2026-11-23T12:28:14.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736629.shtml",
+      "image": ""
+    },
+    {
+      "id": "宁夏出台就业优先战略-十五五-规划-聚力推进高质量充分就业-d451de497f17",
+      "language": "zh",
+      "title": "宁夏出台就业优先战略“十五五”规划 聚力推进高质量充分就业",
+      "excerpt": "中新网银川11月23日电 (记者 于晶)11月23日，《宁夏回族自治区实施就业优先战略“十五五”规划》(以下简称《规划》)对外发布，直面结构性就业矛盾，细化实化稳就业举措，为宁夏“十五五”时期就业工作绘就路线图。",
+      "date": "2026-11-23T12:24:38.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736633.shtml",
+      "image": ""
+    },
+    {
+      "id": "重庆高新区力争到-十五五-末gdp总量达1300亿元-e62715672c0d",
+      "language": "zh",
+      "title": "重庆高新区力争到“十五五”末GDP总量达1300亿元",
+      "excerpt": "中新网重庆11月23日电 (梁钦卿)西部科学城重庆高新区管委会主任聂红焰23日在重庆市政府新闻办举行的新闻发布会上介绍，力争到“十五五”末，西部科学城重庆高新区(下称“重庆高新区”)GDP总量迈上1300亿元台阶、研发投入强度达到6%。",
+      "date": "2026-11-23T12:18:42.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736626.shtml",
+      "image": ""
+    },
+    {
+      "id": "北大马来西亚校友-阳光医行-义诊走进社区-b2ed54d4c8ed",
+      "language": "zh",
+      "title": "北大马来西亚校友“阳光医行”义诊走进社区",
+      "excerpt": "中新网吉隆坡11月23日电 (记者 刘育英)由北京大学马来西亚校友会组织、中国驻马来西亚大使馆及马中友好协会等支持的第四届“阳光医行，关爱社会”义诊活动22日走进马来西亚雪兰莪州的一个马来社区。",
+      "date": "2026-11-23T12:16:17.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736608.shtml",
+      "image": ""
+    },
+    {
+      "id": "韩国总统李在明提名多名长官人选-13043f8bd34c",
+      "language": "zh",
+      "title": "韩国总统李在明提名多名长官人选",
+      "excerpt": "中新网首尔11月23日电 (记者 金旭)韩国总统府青瓦台当地时间23日宣布，韩国总统李在明当天提名国家情报院院长和外交部、统一部长官等5个职位人选。",
+      "date": "2026-11-23T12:15:49.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736606.shtml",
+      "image": ""
+    },
+    {
+      "id": "tri-screen-portable-monitors-aren-t-for-the-f-7b55e88540fc",
+      "language": "en",
+      "title": "Tri-screen portable monitors aren’t for the faint of heart",
+      "excerpt": "Three extra screens boost multitasking but can distract and overwhelm.",
+      "date": "2026-11-23T12:15:16.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/11/a-triple-screen-portable-monitor-means-more-pixels-and-more-bulk/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/20261120_163720-500x500.jpg"
+    },
+    {
+      "id": "今年前三季度市场监管总局完成经营者集中反垄断审查440件-52f8e084f94b",
+      "language": "zh",
+      "title": "今年前三季度市场监管总局完成经营者集中反垄断审查440件",
+      "excerpt": "记者今天(23日)了解到，今年前三季度，市场监管总局共审结经营者集中案件440件，其中无条件批准420件。前三季度，制造业，电力、热力、燃气及水生产和供应业，交通运输、仓储和邮政业，批发和零售业，金融业，房地产业等领域投资较为活跃。",
+      "date": "2026-11-23T12:07:37.000Z",
+      "source_name": "中新网财经新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-23/10736630.shtml",
+      "image": ""
+    },
+    {
+      "id": "review-the-asus-proart-p16-offers-a-glimpse-o-d76321c82e0f",
+      "language": "en",
+      "title": "Review: The Asus ProArt P16 offers a glimpse of a future powered by local AI",
+      "excerpt": "The new Asus ProArt laptop costs up to $7,000, but it can run a gaggle of local AI agents.",
+      "date": "2026-11-23T12:00:00.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Asus-P16-3-500x500.jpg"
+    },
+    {
+      "id": "ukraine-shares-video-of-strikes-on-russian-sh-3b152dca00dd",
+      "language": "en",
+      "title": "Ukraine shares video of strikes on Russian ships off Libya",
+      "excerpt": "President Zelensky said a Russia warship was sunk, with a Russian cargo ship also hit.",
+      "date": "2026-11-23T11:34:10.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/c6wy93q5wwqvo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9cc6/live/7a950f50-e738-11f1-99b6-a35a62fa4264.jpg"
+    },
+    {
+      "id": "韩国综合股价指数下跌逾3-59a9abf18ed7",
+      "language": "zh",
+      "title": "韩国综合股价指数下跌逾3%",
+      "excerpt": "中新网首尔11月23日电 (金旭 林珺)韩国综合股价指数(KOSPI)当地时间23日下跌超过3%，收盘跌至4700点附近，创下2026年1月13日以来的最低水平。",
+      "date": "2026-11-23T11:11:12.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736556.shtml",
+      "image": ""
+    },
+    {
+      "id": "马来西亚政府官员基础汉语课程42名学员结业-9a5394baf419",
+      "language": "zh",
+      "title": "马来西亚政府官员基础汉语课程42名学员结业",
+      "excerpt": "中新网吉隆坡11月23日电 (记者 刘育英)马来西亚汉文化中心与马来西亚外交与国际关系学院合作的2026年政府官员基础汉语课程落幕。在22日举行的结业典礼上，42名来自11个政府部门的学员取得结业证书，展现马来西亚公共部门对汉语学习及跨文化沟通能力的持续重视。",
+      "date": "2026-11-23T11:10:28.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736540.shtml",
+      "image": ""
+    },
+    {
+      "id": "苏丹首都遭无人机袭击造成4人死亡-0e478961e183",
+      "language": "zh",
+      "title": "苏丹首都遭无人机袭击造成4人死亡",
+      "excerpt": "中新社北京11月23日电 喀土穆消息：当地时间11月22日，苏丹首都喀土穆及其西北恩图曼市遭无人机袭击，造成至少4人死亡，一处联合国设施受损。",
+      "date": "2026-11-23T11:09:46.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736507.shtml",
+      "image": ""
+    },
+    {
+      "id": "印度贾坎德邦拟建煤矿项目遭居民抗议-12名警察受伤-a810e4e7a1b9",
+      "language": "zh",
+      "title": "印度贾坎德邦拟建煤矿项目遭居民抗议 12名警察受伤",
+      "excerpt": "中新网11月23日电 据《印度斯坦时报》报道，当地时间22日，印度贾坎德邦一处拟建煤矿项目的勘测工作遭到当地居民反对，抗议活动期间发生冲突，12名警察受伤。",
+      "date": "2026-11-23T09:07:19.000Z",
+      "source_name": "中新网国际新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-23/10736532.shtml",
+      "image": ""
+    },
     {
       "id": "牙膏新规明年5月实施-如何挑选适合自己的牙膏-6adb541cf266",
       "language": "zh",
@@ -10,6 +990,16 @@
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/life/2026/11-23/10736527.shtml",
       "image": ""
+    },
+    {
+      "id": "kenya-and-dr-congo-agree-to-restore-ties-afte-476e3de4bfff",
+      "language": "en",
+      "title": "Kenya and DR Congo agree to restore ties after tensions over conflict",
+      "excerpt": "The two leaders committed to upholding sovereignty and \"non-interference in the internal affairs of states\".",
+      "date": "2026-11-23T08:53:01.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmvg2qnn95vro?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ae1f/live/ec9cfdb0-e71f-11f1-914b-6d226d813a52.jpg"
     },
     {
       "id": "天路-二十载-货车检修从人工锤检到-人机协同-智控-60e24d5a13de",
@@ -2009,996 +2999,6 @@
       "date": "2026-11-22T02:29:35.000Z",
       "source_name": "中新网即时新闻",
       "source_url": "https://www.chinanews.com.cn/dwq/2026/11-22/10735968.shtml",
-      "image": ""
-    },
-    {
-      "id": "邮寄假律师函为境外诈骗铺路-兼职代发为何沦为犯罪一环-e9105e35d26a",
-      "language": "zh",
-      "title": "邮寄假律师函为境外诈骗铺路 兼职代发为何沦为犯罪一环？",
-      "excerpt": "“从来没借过钱，哪来的催款通知？”一通来自外省的报警电话，牵出了一条藏在快递包裹里的犯罪链条。近日，上海闵行警方抓获了两名代发虚假律师函实施诈骗的犯罪嫌疑人。",
-      "date": "2026-11-22T02:27:35.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-22/10735969.shtml",
-      "image": ""
-    },
-    {
-      "id": "田汉之孙谈抗战文艺跨国传播-至今仍引海外华人共鸣-065fc3ad6a26",
-      "language": "zh",
-      "title": "田汉之孙谈抗战文艺跨国传播：至今仍引海外华人共鸣",
-      "excerpt": "中新网桂林11月22日电 (张广权 欧惠兰)“桂林是抗战时期文化抗战核心阵地，诞生的文艺作品既动员中国国内民众，也将中华民族救亡之声传向海外。”田汉之孙欧阳维21日在广西桂林表示，抗战文艺蕴藏的民族精神，至今仍能与海外华人形成精神共鸣。",
-      "date": "2026-11-22T02:27:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-22/10735967.shtml",
-      "image": ""
-    },
-    {
-      "id": "网购牛仔裤水洗后轻戳就破-消费者要求-退一赔三-该得到支持吗-15748d11e1c0",
-      "language": "zh",
-      "title": "网购牛仔裤水洗后轻戳就破 消费者要求“退一赔三”该得到支持吗？",
-      "excerpt": "消费者网购标称“秋季新款”的牛仔裤，试穿时就有大量黑色粉末脱落；经清水漂洗后，面料多处出现破洞，晾干后轻轻触碰便破损。",
-      "date": "2026-11-22T02:24:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-22/10735966.shtml",
-      "image": ""
-    },
-    {
-      "id": "小城良方-后劲为何这么大-演员张国强揭秘-e643998550b0",
-      "language": "zh",
-      "title": "《小城良方》后劲为何这么大？演员张国强揭秘",
-      "excerpt": "中新网北京11月22日电(记者 上官云)电视剧《小城良方》已于日前收官。剧中，演员张国强饰演了一位善良、世故但却绝不虚伪的基层医生，这个角色的完成度极高，也赢得了许多观众的赞誉。",
-      "date": "2026-11-22T02:23:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-22/10735954.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026-世界电视日-大视听产业系列活动武汉启幕-3833aa921651",
-      "language": "zh",
-      "title": "2026“世界电视日”大视听产业系列活动武汉启幕",
-      "excerpt": "中新网武汉11月22日电 (蒋秋雨 高玲玲 王梦媛)2026“世界电视日”大视听产业系列活动21日在武汉经开区启幕，行业领军人物、知名学者齐聚一堂，聚焦行业前沿技术趋势与产业机遇，打造立足华中、面向全国、链接海外的视听文化盛会，为大视听产业发展锚定方向。",
-      "date": "2026-11-22T02:17:01.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-22/10735963.shtml",
-      "image": ""
-    },
-    {
-      "id": "商务部新闻发言人就美国联邦通信委员会拟禁止中国电信运营商直接获取美国互联网电话号码资源答记-cfbd47089a71",
-      "language": "zh",
-      "title": "商务部新闻发言人就美国联邦通信委员会拟禁止中国电信运营商直接获取美国互联网电话号码资源答记者问",
-      "excerpt": "中新网11月22日电 据商务部网站消息，商务部新闻发言人就美国联邦通信委员会拟禁止中国电信运营商直接获取美国互联网电话号码资源答记者问。",
-      "date": "2026-11-22T01:21:58.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-22/10735951.shtml",
-      "image": ""
-    },
-    {
-      "id": "特朗普-将寻求与伊朗达成一项-永久性-协议-88279aaec690",
-      "language": "zh",
-      "title": "特朗普：将寻求与伊朗达成一项“永久性”协议",
-      "excerpt": "中新网11月22日电 综合美媒21日报道，美国总统特朗普在采访节目中表示，将寻求与伊朗达成一项“永久性”协议。",
-      "date": "2026-11-22T00:49:20.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-22/10735946.shtml",
-      "image": ""
-    },
-    {
-      "id": "nigerian-youth-have-shown-their-power-in-the--a201ec4f423e",
-      "language": "en",
-      "title": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
-      "excerpt": "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?",
-      "date": "2026-11-22T00:10:37.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/ck4g174n020eo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/abb2/live/99a82d30-e4e7-11f1-99a1-253766e7ad8b.jpg"
-    },
-    {
-      "id": "how-a-teen-gamer-and-his-mother-helped-rescue-7b29528f2e14",
-      "language": "en",
-      "title": "How a teen gamer and his mother helped rescue a missing girl",
-      "excerpt": "When 16-year-old Landon Tresp met a teenage girl in an online game, it led to him and his mother helping the FBI rescue her from kidnapping.",
-      "date": "2026-11-22T00:09:58.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmq8lyv8lkjwo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e06/live/d8778490-e503-11f1-9e2f-7fb5281f0b3c.jpg"
-    },
-    {
-      "id": "英国国防大臣访基辅重申长期援乌承诺-3b78112f9dcb",
-      "language": "zh",
-      "title": "英国国防大臣访基辅重申长期援乌承诺",
-      "excerpt": "中新社伦敦11月21日电 (记者 欧阳开宇)当地时间11月21日，英国国防大臣斯特里廷到访乌克兰首都基辅，先后会见乌总统泽连斯基、国防部长赫马拉，围绕防务工业协作、冬季防务支持等议题磋商，推进乌方自研攻击无人机在英国投产相关安排，进一步夯实双方战时装备供应链。",
-      "date": "2026-11-21T22:35:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-22/10735938.shtml",
-      "image": ""
-    },
-    {
-      "id": "英国凯特王妃通过纪录片深度讲述抗癌经历-e3f635f75a7d",
-      "language": "zh",
-      "title": "英国凯特王妃通过纪录片深度讲述抗癌经历",
-      "excerpt": "中新社伦敦11月21日电 (记者 欧阳开宇)英国肯辛顿宫21日消息称，英国凯特王妃将通过一部全新纪录片，公开讲述癌症确诊、治疗与自我疗愈的心路历程，首度深度剖析重病对身心与人生认知的深刻改变。",
-      "date": "2026-11-21T22:34:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-22/10735937.shtml",
-      "image": ""
-    },
-    {
-      "id": "墨西哥抓获大毒枭-矮子伊西德罗-e93718646f3e",
-      "language": "zh",
-      "title": "墨西哥抓获大毒枭“矮子伊西德罗”",
-      "excerpt": "新华社墨西哥城11月21日电(记者吴昊 翟淑睿)墨西哥国防部21日发布公报说，在墨美双边情报合作框架下，墨特种部队20日在西北部锡那罗亚州瓜萨韦市逮捕美国联邦调查局“十大通缉要犯”之一、绰号“矮子伊西德罗”的毒枭福斯托·伊西德罗。",
-      "date": "2026-11-21T22:14:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-22/10735936.shtml",
-      "image": ""
-    },
-    {
-      "id": "今日开启商业首航-爱达-花城号-最新乘船攻略来了-a1de6e538f29",
-      "language": "zh",
-      "title": "今日开启商业首航！“爱达·花城号”最新乘船攻略来了",
-      "excerpt": "今天(22日)，第二艘国产大型邮轮“爱达·花城号”将开启6天5晚的商业首航，从广州南沙国际邮轮母港驶向中国香港与越南顺化。",
-      "date": "2026-11-21T22:12:59.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-22/10735935.shtml",
-      "image": ""
-    },
-    {
-      "id": "review-godzilla-minus-zero-joins-the-list-of--080f5b44a05a",
-      "language": "en",
-      "title": "Review: Godzilla Minus Zero joins the list of truly stellar sequels",
-      "excerpt": "Director Takashi Yamazaki ups the ante by pitting Godzilla against one of the monster's greatest foes",
-      "date": "2026-11-21T22:12:41.000Z",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/culture/2026/11/review-godzilla-minus-zero-is-everything-we-could-want-in-a-sequel/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/godzillaTOP-500x500.jpg"
-    },
-    {
-      "id": "伊朗革命卫队称袭击美军在巴林两处基地防空雷达-9867759aff36",
-      "language": "zh",
-      "title": "伊朗革命卫队称袭击美军在巴林两处基地防空雷达",
-      "excerpt": "新华社德黑兰11月21日电(记者刁慧琳 沙达提)据伊朗伊斯兰共和国通讯社21日报道，伊朗伊斯兰革命卫队当天发表声明称，革命卫队航空航天部队使用导弹和无人机袭击了美国在巴林里法和阿瓦利两处军事基地的防空雷达。",
-      "date": "2026-11-21T22:10:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-22/10735934.shtml",
-      "image": ""
-    },
-    {
-      "id": "正值流感季-今年毒株有何特点-能自行服用抗生素吗-b3dfa4dafdd3",
-      "language": "zh",
-      "title": "正值流感季 今年毒株有何特点？能自行服用抗生素吗？",
-      "excerpt": "中国疾控中心发布的最新监测显示，全国流感活动整体已进入中流行水平，北方流感阳性率上升势头显著，南方维持波动流行状态，聚集性疫情数量较前期有所增加。",
-      "date": "2026-11-21T22:10:01.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/jk/2026/11-22/10735933.shtml",
-      "image": ""
-    },
-    {
-      "id": "空手道世界杯-中国两支女队首次跻身四强-将争铜牌-b5ef4e7917f2",
-      "language": "zh",
-      "title": "空手道世界杯：中国两支女队首次跻身四强 将争铜牌",
-      "excerpt": "新华社杭州11月21日电(记者牛梦彤、夏亮)在21日的2026年空手道世界杯比赛中，中国女子团体组手队和女子团体型队均在半决赛中不敌卫冕冠军日本队，无缘决赛。不过，两队首次跻身世界杯四强，实现历史突破，并将于22日分别与西班牙队、伊朗队争夺铜牌。",
-      "date": "2026-11-21T22:06:03.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-22/10735932.shtml",
-      "image": ""
-    },
-    {
-      "id": "lock-of-former-us-president-george-washington-490042f26061",
-      "language": "en",
-      "title": "Lock of former US President George Washington's hair sells for $4,000",
-      "excerpt": "The hair was given as a sign of friendship shortly before Washington's death in 1799, according to a descendent of its former owner.",
-      "date": "2026-11-21T22:01:19.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5138/live/c4d4d0c0-e5ec-11f1-ad4d-5dd9d517a6dd.jpg"
-    },
-    {
-      "id": "signal-restricts-mobile-screenshots-as-it-con-7289e21f33e2",
-      "language": "en",
-      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
-      "excerpt": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
-      "date": "2026-11-21T21:37:10.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-      "image": ""
-    },
-    {
-      "id": "a-tale-of-two-nvidias-8ed913cfa76c",
-      "language": "en",
-      "title": "A tale of two Nvidias",
-      "excerpt": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
-      "date": "2026-11-21T21:07:42.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
-      "image": ""
-    },
-    {
-      "id": "russia-bound-ship-attacked-in-gulf-of-finland-a9bb7c6e29da",
-      "language": "en",
-      "title": "Russia-bound ship attacked in Gulf of Finland",
-      "excerpt": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
-      "date": "2026-11-21T19:20:22.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4cee/live/4e2fa7a0-e5c5-11f1-a738-4787e1a18cce.jpg"
-    },
-    {
-      "id": "trump-says-reported-fbi-database-hack-is-not--e41fc8a711e0",
-      "language": "en",
-      "title": "Trump says reported FBI database hack is ‘not good’",
-      "excerpt": "The FBI is reportedly investigating a hack of the National Crime Information Center.",
-      "date": "2026-11-21T18:44:53.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
-      "image": ""
-    },
-    {
-      "id": "here-are-the-top-ai-agents-that-can-live-in-y-d15566b2aef3",
-      "language": "en",
-      "title": "Here are the top AI agents that can live in your text messages",
-      "excerpt": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-      "date": "2026-11-21T17:00:00.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "image": ""
-    },
-    {
-      "id": "trump-says-there-could-be-a-positive-spin-fro-b5e06384c5ca",
-      "language": "en",
-      "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
-      "excerpt": "This would make the second recent intrusion into the FBI system.",
-      "date": "2026-11-21T16:57:34.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
-      "image": ""
-    },
-    {
-      "id": "anthropic-s-record-ipo-collides-with-tech-s-w-9a0d630bdb6c",
-      "language": "en",
-      "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
-      "excerpt": "Anthropic held its historic Nasdaq debut a day before Nvidia's stock closed out its longest weekly losing streak since 2008.",
-      "date": "2026-11-21T16:40:05.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
-      "image": ""
-    },
-    {
-      "id": "fbi-reportedly-investigating-apparent-hack-of-1c64d44e2f0c",
-      "language": "en",
-      "title": "FBI reportedly investigating apparent hack of its criminal database",
-      "excerpt": "The National Crime Information Center database is used by federal and local law enforcement to share information.",
-      "date": "2026-11-21T16:35:15.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3fd7/live/9009b220-e58d-11f1-99a1-253766e7ad8b.jpg"
-    },
-    {
-      "id": "is-selling-an-ai-version-of-your-face-to-this-53e893a48ca0",
-      "language": "en",
-      "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
-      "excerpt": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
-      "date": "2026-11-21T16:00:00.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
-      "image": ""
-    },
-    {
-      "id": "alaska-your-next-governor-is-a-wikipedia-nerd-7e38a968ec4d",
-      "language": "en",
-      "title": "Alaska, your next governor is a Wikipedia nerd",
-      "excerpt": "Jonathan Kreiss-Tomkins, Alaska's governor-elect, has made more than 13,000 WIkipedia edits.",
-      "date": "2026-11-21T15:18:29.000Z",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/21/alaska-your-next-governor-is-a-wikipedia-nerd/",
-      "image": ""
-    },
-    {
-      "id": "tech-outages-are-fueling-a-new-doomsday-econo-749c505adaf4",
-      "language": "en",
-      "title": "Tech outages are fueling a new doomsday economy",
-      "excerpt": "Recent technology outages have left some worried about AI cyberattacks and the U.S. electricity grid. The doomsday economy is heating up as a result.",
-      "date": "2026-11-21T15:04:56.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
-      "image": ""
-    },
-    {
-      "id": "i-never-wanted-the-american-dream-and-i-felt--5e5b048f47d8",
-      "language": "en",
-      "title": "I never wanted the American Dream and I felt like something was wrong with me—until I moved abroad",
-      "excerpt": "\"I realized it was okay to want something different,\" says Cepee Tabibian, who moved to Spain in 2015 at age 35.",
-      "date": "2026-11-21T15:00:02.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/make-it/2026/11/21/never-wanted-american-dream-moving-abroad-redefine-success.html",
-      "image": ""
-    },
-    {
-      "id": "侨商牵线促成足坛巨星ip落地上海-南京东路添体育文化打卡新地标-2142a0edebfe",
-      "language": "zh",
-      "title": "侨商牵线促成足坛巨星IP落地上海 南京东路添体育文化打卡新地标",
-      "excerpt": "中新网上海11月21日电(范宇斌)21日，全球最高C罗巨型雕像揭幕暨CR7 MUSEUM(C罗博物馆)上海馆开幕活动在上海南京东路第一百货商业中心举行。",
-      "date": "2026-11-21T14:32:30.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/11-21/10735931.shtml",
-      "image": ""
-    },
-    {
-      "id": "retirees-face-a-looming-deadline-for-required-e6b99eb2f3fb",
-      "language": "en",
-      "title": "Retirees face a looming deadline for required withdrawals — missing it could trigger a tax penalty",
-      "excerpt": "The busy holiday season may lead retirees to miss a key deadline for retirement account withdrawals.",
-      "date": "2026-11-21T14:30:02.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/21/rmd-deadline-penalty-2026.html",
-      "image": ""
-    },
-    {
-      "id": "广西留学生-斗诗-品味中国诗词之美-f68399e9cde4",
-      "language": "zh",
-      "title": "广西留学生“斗诗”品味中国诗词之美",
-      "excerpt": "中新社南宁11月21日电 (记者 黄艳梅)2026年第五届广西留学生中国诗词大赛21日在广西民族大学举行，来自广西17所高校的51名留学生选手同台“打擂”，展开一场跨越国界的诗词对话。",
-      "date": "2026-11-21T14:25:26.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-21/10735927.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026文化抗战学术研讨会在桂林举行-7a5e0c20c319",
-      "language": "zh",
-      "title": "2026文化抗战学术研讨会在桂林举行",
-      "excerpt": "中新社广西桂林11月21日电 (张广权 欧惠兰)2026文化抗战学术研讨会21日在广西桂林举行。会上，多名抗战文化名人后代向文化抗战(桂林)研究院捐赠一批珍贵的抗战时期书籍与手稿。",
-      "date": "2026-11-21T14:25:20.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-21/10735926.shtml",
-      "image": ""
-    },
-    {
-      "id": "during-wall-street-s-worst-week-in-over-a-yea-7966e1651294",
-      "language": "en",
-      "title": "During Wall Street's worst week in over a year, we put money to work. What we're buying",
-      "excerpt": "The brutal sell-off is creating opportunities for us to put cash to work.",
-      "date": "2026-11-21T14:22:04.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/investingclub/2026/11/21/during-wall-streets-worst-week-in-over-a-year-we-put-money-to-work-what-were-buying.html",
-      "image": ""
-    },
-    {
-      "id": "清水文化海外传播与创新发展研讨会-在厦门开幕-d4c3d06dc350",
-      "language": "zh",
-      "title": "“清水文化海外传播与创新发展研讨会”在厦门开幕",
-      "excerpt": "中新社厦门11月21日电 (吴冠标 吴江辉)由华侨大学主办的“清水文化海外传播与创新发展研讨会”21日在福建厦门开幕，170余名海内外专家学者、侨界代表齐聚一堂，共同探索中华文化海外传播的新路径。",
-      "date": "2026-11-21T14:21:45.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/hr/2026/11-21/10735925.shtml",
-      "image": ""
-    },
-    {
-      "id": "why-anthropic-s-blockbuster-ipo-couldn-t-esca-43781dc411ed",
-      "language": "en",
-      "title": "Why Anthropic's blockbuster IPO couldn't escape the stock market correction",
-      "excerpt": "Anthropic's IPO was a big public market success for the company, but Friday's selloff shows that valuing the AI stock will remain volatile for investors.",
-      "date": "2026-11-21T14:07:53.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-ai-stock-market-selloff.html",
-      "image": ""
-    },
-    {
-      "id": "an-illusion-of-glitz-and-glamour-inside-calif-24225dc1e53e",
-      "language": "en",
-      "title": "An ‘illusion of glitz and glamour’: Inside California’s modern-day gold rush, where miners can bring in millions",
-      "excerpt": "The price of gold has sparked a modern-day gold rush in California. Small-scale miners are investing time, physical labor and money to unearth the yellow metal.",
-      "date": "2026-11-21T14:05:40.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/make-it/2026/11/21/california-mining-modern-gold-rush.html",
-      "image": ""
-    },
-    {
-      "id": "第十八届傅雷翻译出版奖获奖者名单在江苏南京揭晓-972da1b2ccf9",
-      "language": "zh",
-      "title": "第十八届傅雷翻译出版奖获奖者名单在江苏南京揭晓",
-      "excerpt": "中新社南京11月21日电 (记者 朱晓颖)第十八届傅雷翻译出版奖获奖者名单21日在江苏南京的世界文学客厅揭晓。要颖娟凭借译作《瘟疫与霍乱》摘得文学类奖项，吴子枫凭借译作《写给非哲学家的哲学入门》获得社科类奖项；新人奖由王睿琦获得，获奖译作是《拟像与拟真》。",
-      "date": "2026-11-21T13:53:36.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-21/10735921.shtml",
-      "image": ""
-    },
-    {
-      "id": "第七届世界海洋生物多样性大会在比利时举行-8c34509fbcb2",
-      "language": "zh",
-      "title": "第七届世界海洋生物多样性大会在比利时举行",
-      "excerpt": "中新社比利时布鲁日11月21日电 (记者 德永健)第七届世界海洋生物多样性大会于11月17日至20日在比利时西北部城市布鲁日举行，围绕全球海洋生物现状、建立“数字海洋”体系等展开研讨。中国南海研究院和厦门大学派代表参会。",
-      "date": "2026-11-21T13:52:52.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-21/10735916.shtml",
-      "image": ""
-    },
-    {
-      "id": "2026年林木业大会在南宁举行-现场签约超400亿元-4f0cf1b98d8d",
-      "language": "zh",
-      "title": "2026年林木业大会在南宁举行 现场签约超400亿元",
-      "excerpt": "中新社南宁11月21日电 (张广权 黄令妍)2026年林木业大会21日在广西南宁举行。大会现场签约一批项目，总金额超400亿元人民币，涵盖浆纸原料林、纸品加工等领域。",
-      "date": "2026-11-21T13:51:38.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-21/10735919.shtml",
-      "image": ""
-    },
-    {
-      "id": "探访秘鲁钱凯港-跨越太平洋的发展新机遇-7fc5c57c374b",
-      "language": "zh",
-      "title": "探访秘鲁钱凯港：跨越太平洋的发展新机遇",
-      "excerpt": "",
-      "date": "2026-11-21T13:29:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "http://www.chinanews.com.cn/tp/hd2011/2026/11-21/1211364.shtml",
-      "image": ""
-    },
-    {
-      "id": "长安大学回应14号面试13号出结果-1d972e0e2b04",
-      "language": "zh",
-      "title": "长安大学回应14号面试13号出结果",
-      "excerpt": "长安大学11月21日发布情况通报：针对近日网络关于长安大学辅导员招聘工作的有关反映，学校高度重视，迅速成立由纪委牵头的专项调查组开展调查。 #8203;#8203;#8203;#8203;",
-      "date": "2026-11-21T13:28:19.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-21/10735917.shtml",
-      "image": ""
-    },
-    {
-      "id": "zelensky-says-crimean-bridge-strikes-fair-res-714dcc77cc1a",
-      "language": "en",
-      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "excerpt": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine.",
-      "date": "2026-11-21T13:17:38.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3686/live/9ee585d0-e5a6-11f1-99b6-a35a62fa4264.jpg"
-    },
-    {
-      "id": "半部全唐诗咏长安-今天我们为何还要读诗-3daf2ecd360a",
-      "language": "zh",
-      "title": "半部全唐诗咏长安，今天我们为何还要读诗？",
-      "excerpt": "西安网评：半部全唐诗咏长安，今天我们为何还要读诗？",
-      "date": "2026-11-21T13:17:10.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-21/10735915.shtml",
-      "image": ""
-    },
-    {
-      "id": "mexican-drug-lord-on-fbi-s-10-most-wanted-lis-d53e011b61ee",
-      "language": "en",
-      "title": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-      "excerpt": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities.",
-      "date": "2026-11-21T13:15:21.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5701/live/7ac9e270-e5ad-11f1-99a1-253766e7ad8b.jpg"
-    },
-    {
-      "id": "拖堂-的气候大会给全世界算了笔账-a9be5f106b86",
-      "language": "zh",
-      "title": "“拖堂”的气候大会给全世界算了笔账",
-      "excerpt": "气候大会又“拖堂”了。",
-      "date": "2026-11-21T13:15:16.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735906.shtml",
-      "image": ""
-    },
-    {
-      "id": "结构向优-动能向新-我国消费市场潜能不断释放-10f9f43533e6",
-      "language": "zh",
-      "title": "结构向优、动能向新 我国消费市场潜能不断释放",
-      "excerpt": "“经”彩新图景丨结构向优、动能向新 我国消费市场潜能不断释放",
-      "date": "2026-11-21T13:14:40.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735914.shtml",
-      "image": ""
-    },
-    {
-      "id": "state-and-federal-battle-over-prediction-mark-53ae4dbcf6cd",
-      "language": "en",
-      "title": "State and federal battle over prediction markets regulation heats up after midterms",
-      "excerpt": "States, Congress and the CFTC are escalating the fight over prediction market regulation after the midterms.",
-      "date": "2026-11-21T13:12:41.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
-      "image": ""
-    },
-    {
-      "id": "习近平新时代中国特色社会主义思想海外研究国际论坛-2026-在北京举行-李书磊出席开幕式并-8284c54cd486",
-      "language": "zh",
-      "title": "习近平新时代中国特色社会主义思想海外研究国际论坛（2026）在北京举行 李书磊出席开幕式并发表主旨演讲",
-      "excerpt": "新华社北京11月21日电 习近平新时代中国特色社会主义思想海外研究国际论坛(2026)21日在北京开幕。中共中央政治局委员、中宣部部长李书磊出席开幕式并发表主旨演讲。",
-      "date": "2026-11-21T13:11:12.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-21/10735898.shtml",
-      "image": ""
-    },
-    {
-      "id": "数万家智能工厂背后-ai到底改变了什么-ec0b8a747253",
-      "language": "zh",
-      "title": "数万家智能工厂背后，AI到底改变了什么？",
-      "excerpt": "新华社南京11月20日电(记者沈汝发)“过去靠看风口亮度、听异响、摸水温来判断炉况，现在，我们给高炉装上了‘透视眼’。”南钢人工智能研究院院长李瑾彦说，高炉周边布设了上千个传感器，实时采集温度、压力、图像等多维数据，铁水一级品率提升了10个百分点，217个产品和技术达到国际领先水平。",
-      "date": "2026-11-21T13:11:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735913.shtml",
-      "image": ""
-    },
-    {
-      "id": "李强同新加坡总理黄循财会谈-6ec0bf53c13b",
-      "language": "zh",
-      "title": "李强同新加坡总理黄循财会谈",
-      "excerpt": "中新社北京11月21日电 11月21日上午，中国国务院总理李强在北京钓鱼台国宾馆同新加坡总理黄循财举行会谈。",
-      "date": "2026-11-21T13:10:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-21/10735896.shtml",
-      "image": ""
-    },
-    {
-      "id": "秋假-赏秋热潮叠加-地方文旅消费迎来新机遇-592ff65120fa",
-      "language": "zh",
-      "title": "秋假+赏秋热潮叠加 地方文旅消费迎来新机遇",
-      "excerpt": "亲子游、家庭游是秋假期间旅游市场一大亮点。眼下，安徽黄山正值赏秋时节，秋假与赏秋热潮叠加，让当地不少景区人气持续走高。孩子们来到黄山，除了饱览风光，还能体验哪些特色活动？",
-      "date": "2026-11-21T13:09:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735912.shtml",
-      "image": ""
-    },
-    {
-      "id": "雅江逐浪迎全民健身热潮-西藏尼木上演-高原第一漂-ad592310cab6",
-      "language": "zh",
-      "title": "雅江逐浪迎全民健身热潮 西藏尼木上演“高原第一漂”",
-      "excerpt": "中新网拉萨11月21日电 (贡嘎来松)21日，2026年尼木县全民健身漂流推广活动(西藏尼木站)在拉萨市尼木县吞巴镇雅鲁藏布江根培村河段举办。本次活动由尼木县文化和旅游局、尼木县教育局主办，共有250余名漂流爱好者参与体验。",
-      "date": "2026-11-21T13:07:27.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-21/10735891.shtml",
-      "image": ""
-    },
-    {
-      "id": "创新职普融通-年度报告上海发布-ai时代职普融通成教育创新战略选择-14e3aea8fc2d",
-      "language": "zh",
-      "title": "《创新职普融通》年度报告上海发布 AI时代职普融通成教育创新战略选择",
-      "excerpt": "中新网上海11月21日电(记者 陈静)长三角教育发展研究院《创新职普融通》年度报告(下称：报告)21日“出炉”。报告认为，人工智能时代的到来为破解教育困境带来重大契机，推进职业教育与普通教育的融合，引导学生“像科学家一样思考、像工程师一样实践”，坚持手脑并重、做学合一，已成为教育创新的必然战略选择。",
-      "date": "2026-11-21T13:06:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735892.shtml",
-      "image": ""
-    },
-    {
-      "id": "经济日报-温差-待消弭-信心不可失-4b66049a4d3c",
-      "language": "zh",
-      "title": "经济日报：“温差”待消弭 信心不可失",
-      "excerpt": "今年以来，我国经济顶压前行，继续保持总体平稳、向新向优发展态势，展现出强大韧性和活力，借用国家统计局新闻发言人的话概括，就是“‘稳’的特质明显、‘稳’的底气增强”。这从前10个月外贸增速、规模以上工业增加值、高技术制造业增长等数据中可见一斑。",
-      "date": "2026-11-21T13:06:55.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735911.shtml",
-      "image": ""
-    },
-    {
-      "id": "全国逾2300名选手齐聚广州-以赛会友-26103c3c9e23",
-      "language": "zh",
-      "title": "全国逾2300名选手齐聚广州“以赛会友”",
-      "excerpt": "中新网广州11月21日电 (张璐 焦婵娟)第二届全国全民健身大赛2026年全国国防体育运动大联动暨2026年传统运动项目公开赛(以下简称“赛事”)21日在广州黄埔区知识城国际会展中心开赛。赛事为期三天，共吸引全国237支代表队、2390名选手参赛。",
-      "date": "2026-11-21T13:05:25.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-21/10735897.shtml",
-      "image": ""
-    },
-    {
-      "id": "中方设备解了我们燃眉之急-委内瑞拉感谢中方支持灾后重建-224f3583fe46",
-      "language": "zh",
-      "title": "中方设备解了我们燃眉之急——委内瑞拉感谢中方支持灾后重建",
-      "excerpt": "新华社加拉加斯11月20日电 通讯｜中方设备解了我们燃眉之急——委内瑞拉感谢中方支持灾后重建",
-      "date": "2026-11-21T13:03:51.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-21/10735909.shtml",
-      "image": ""
-    },
-    {
-      "id": "warren-buffett-quadruples-thanksgiving-gifts--c4c418aece05",
-      "language": "en",
-      "title": "Warren Buffett quadruples Thanksgiving gifts: A breakdown of how much wealth he's giving away",
-      "excerpt": "Warren Buffett more than quadrupled his Thanksgiving donations to four family foundations this year to $5.5 billion.",
-      "date": "2026-11-21T13:01:44.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/21/warren-buffett-quadruples-thanksgiving-gifts.html",
-      "image": ""
-    },
-    {
-      "id": "智能网联新能源汽车产业人才发展大会在渝举行-赋能-渝车出海-aa31bc41da92",
-      "language": "zh",
-      "title": "智能网联新能源汽车产业人才发展大会在渝举行 赋能“渝车出海”",
-      "excerpt": "中新网重庆11月21日电(记者 肖江川)21日，作为重庆国际人才交流大会的主体活动之一，智能网联新能源汽车产业人才发展大会在重庆市两江新区举行。本次大会紧扣“渝车出海·才遇未来”主题，聚焦“出海、聚才、共享”三大方向，邀请200余名海内外专家、产业领军人才、企业代表参会，为智能网联新能源汽车产业高质量发展积蓄人才动能。",
-      "date": "2026-11-21T12:56:15.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735888.shtml",
-      "image": ""
-    },
-    {
-      "id": "豫湘产业携手-共拓先进制造前沿材料新赛道-309e88286378",
-      "language": "zh",
-      "title": "豫湘产业携手 共拓先进制造前沿材料新赛道",
-      "excerpt": "中新网郑州11月21日电 (记者 韩章云)一条京广铁路贯通南北，嵩阳书院与岳麓书院遥相守望。地处中部地区的河南与湖南，文脉交融、人缘相亲，产业协作正加速走向纵深。",
-      "date": "2026-11-21T12:43:16.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735889.shtml",
-      "image": ""
-    },
-    {
-      "id": "算力补贴直达企业-北京延庆上线词元服务平台-9612f56725a7",
-      "language": "zh",
-      "title": "算力补贴直达企业 北京延庆上线词元服务平台",
-      "excerpt": "中新网北京11月21日电 (张思琦)Token Hub·词元汇——中关村延庆园词元服务平台暨延庆Y-Hub·OPC赋能服务计划上线发布会20日在北京延庆Y-Hub·OPC创新社区举办。该平台的上线投用，将有效补齐区域科创服务链条，降低中小微企业人工智能算力使用成本，为北京延庆数字科创产业发展赋能增效。",
-      "date": "2026-11-21T12:38:36.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735881.shtml",
-      "image": ""
-    },
-    {
-      "id": "行业报告称-中国脑机接口产业集聚于三大城市群-4788016f2826",
-      "language": "zh",
-      "title": "行业报告称，中国脑机接口产业集聚于三大城市群",
-      "excerpt": "中新社北京11月21日电 (记者 陈杭)21日于北京举行的2026脑机接口大会主论坛发布《脑机接口创新发展研究报告(2026)》。报告显示，中国脑机接口产业集聚于京津冀、长三角和粤港澳三大城市群，已初步形成重视原创、转化、制造的优质协同链条。",
-      "date": "2026-11-21T12:35:26.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735875.shtml",
-      "image": ""
-    },
-    {
-      "id": "菲律宾霍乱病例两周增加69-卫生部吁保障饮水和食品安全-5f3a79ab2bf5",
-      "language": "zh",
-      "title": "菲律宾霍乱病例两周增加69% 卫生部吁保障饮水和食品安全",
-      "excerpt": "中新网马尼拉11月21日电 菲律宾卫生部20日发布报告称，菲律宾霍乱病例近期有所上升，10月11日至24日较此前两周增加69%。该部门正密切监测厄尔尼诺现象可能带来的饮水安全风险，呼吁公众注意饮用水和食品安全。",
-      "date": "2026-11-21T12:27:11.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-21/10735864.shtml",
-      "image": ""
-    },
-    {
-      "id": "北京丰台亮出9处优质体育资源-邀-城市合伙人-共创运动新空间-9fd99a3c0128",
-      "language": "zh",
-      "title": "北京丰台亮出9处优质体育资源 邀“城市合伙人”共创运动新空间",
-      "excerpt": "中新网北京11月21日电 11月中旬开始，北京市丰台区陆续举办系列专场推介发布会，亮出政府合作诚意，全程公开透明，持续释放优质投资机会。“遇见丰台·众汇京彩”——2026丰台区体育资源发布会作为第二场系列发布20日举办。会上，丰台亮出体育资源“家底”，集中推出9处体育“留白空间”，包括5宗体育用地、1处体育存量设施和3处可做气膜场馆用地，面向社会公开征集运营主体，所有体育设施、地块信息全部向社会公开、全程接受社会监督。",
-      "date": "2026-11-21T12:26:57.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735873.shtml",
-      "image": ""
-    },
-    {
-      "id": "菲律宾达沃机场发生客机紧急迫降-146人安全撤离-b4ff9fcc43d6",
-      "language": "zh",
-      "title": "菲律宾达沃机场发生客机紧急迫降 146人安全撤离",
-      "excerpt": "中新网马尼拉11月21日电 一架从中国香港飞往巴布亚新几内亚的客机21日凌晨因右侧发动机出现火警警报，在菲律宾南部达沃国际机场紧急迫降。机上146名乘客及机组人员全部安全撤离，无人员受伤。初步检查发现，飞机右侧起落架4个机轮受损。",
-      "date": "2026-11-21T12:26:25.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-21/10735857.shtml",
-      "image": ""
-    },
-    {
-      "id": "港口通-绿电足-智能普惠-深圳apec交出开放创新高分答卷-9f24a9746c1a",
-      "language": "zh",
-      "title": "港口通、绿电足、智能普惠：深圳APEC交出开放创新高分答卷",
-      "excerpt": "中新网11月21日电 11月18日至19日，亚太经合组织(APEC)第三十三次领导人非正式会议在深圳举行。深圳成为继上海、北京之后中国APEC第三城，其所代表的开放联通与创新效率，彰显出亚太合作的韧性与活力。",
-      "date": "2026-11-21T12:24:07.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-21/10735855.shtml",
-      "image": ""
-    },
-    {
-      "id": "投资额约14亿元-重庆发布市属国企第四批-四链-融合创新项目-1ecf6988ae22",
-      "language": "zh",
-      "title": "投资额约14亿元 重庆发布市属国企第四批“四链”融合创新项目",
-      "excerpt": "中新网重庆11月21日电 (梁钦卿)重庆国际人才交流大会·“科学家·创业者·投资人”创投对接活动21日在重庆举办。活动现场发布了重庆市属国企第四批“四链”融合创新项目共65个，投资额约14亿元，主要覆盖智能网联新能源汽车、先进材料与绿色化工、智能装备与制造等6大方向。",
-      "date": "2026-11-21T12:19:59.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735871.shtml",
-      "image": ""
-    },
-    {
-      "id": "江苏扬州发布2026年新型光储产业场景清单-开放50项供需场景-ab99ea978bf9",
-      "language": "zh",
-      "title": "江苏扬州发布2026年新型光储产业场景清单 开放50项供需场景",
-      "excerpt": "中新网扬州11月21日电 (徐珊珊 房曾强)11月21日下午，在2026年“光储融智·科创未来”新型光储产业融创对接活动分会场上，《2026年扬州市新型光储产业场景清单》正式发布。清单共发布50项，包括15项场景机会和35项场景能力，旨在以场景开放为纽带，畅通供需对接，推动更多技术找到用武之地、更多项目找到合作伙伴。",
-      "date": "2026-11-21T12:18:29.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735860.shtml",
-      "image": ""
-    },
-    {
-      "id": "中部六省-论道-崛起新路径-外国客商看好中部市场-59113c474d44",
-      "language": "zh",
-      "title": "中部六省“论道”崛起新路径 外国客商看好中部市场",
-      "excerpt": "中新社郑州11月21日电 (记者 阚力)第十四届中国中部投资贸易博览会(以下简称中博会)21日在河南郑州启幕，中部六省政商界人士与会“论道”中部崛起新路径，组团前来寻觅合作机遇的外国客商看好中部地区市场。",
-      "date": "2026-11-21T12:12:12.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735856.shtml",
-      "image": ""
-    },
-    {
-      "id": "race-realism-isn-t-realistic-and-it-isn-t-goo-248395301e19",
-      "language": "en",
-      "title": "“Race realism” isn’t realistic—and it isn’t good science",
-      "excerpt": "Modern genetics does not support claims of innate racial differences in intelligence.",
-      "date": "2026-11-21T12:01:13.000Z",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/science/2026/11/race-realism-isnt-realistic-and-it-isnt-good-science/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2201567552-500x500.jpg"
-    },
-    {
-      "id": "international-first-class-is-over-for-u-s-air-09bc82cbb9b9",
-      "language": "en",
-      "title": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
-      "excerpt": "Airlines are opting to build giant business-class cabins with ever-more luxurious suites.",
-      "date": "2026-11-21T12:00:01.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html",
-      "image": ""
-    },
-    {
-      "id": "浙江义乌办-校招-530余家企业提供近1-6万个岗位-18c60525098d",
-      "language": "zh",
-      "title": "浙江义乌办“校招”：530余家企业提供近1.6万个岗位",
-      "excerpt": "中新网义乌11月21日电(董易鑫)“我来应聘主播岗，现在不少企业采用AI主播与真人主播相结合的模式，我也想借这次机会集中了解一下市场最新的招聘条件、薪资水平。”11月20日，应届毕业生张靓在浙江义乌说。",
-      "date": "2026-11-21T11:47:57.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735844.shtml",
-      "image": ""
-    },
-    {
-      "id": "伊朗宣布击落一架美军mq-1无人机-9073b08b1b58",
-      "language": "zh",
-      "title": "伊朗宣布击落一架美军MQ-1无人机",
-      "excerpt": "中新网11月21日电 据伊朗媒体当地时间21日报道，伊朗伊斯兰革命卫队发布声明称，美军的一架MQ-1无人机在伊朗锡里克岛上空被击落。",
-      "date": "2026-11-21T11:29:36.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-21/10735843.shtml",
-      "image": ""
-    },
-    {
-      "id": "松原首批氢能试点超亿元奖励资金拨付到企-27f90a0d4747",
-      "language": "zh",
-      "title": "松原首批氢能试点超亿元奖励资金拨付到企",
-      "excerpt": "中新网长春11月21日电 (记者 郭佳)吉林省松原市官方21日披露，国家氢能综合应用试点城市奖励资金已完成企业端拨付，1.0024亿元奖励资金按程序直达中能建松原氢能产业园(绿色氢氨醇一体化)、松原天楹风光储氢氨醇一体化项目等试点承接主体，标志着松原氢能试点从获批阶段，迈入企业落地受益的实质性实施阶段。",
-      "date": "2026-11-21T10:49:08.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735829.shtml",
-      "image": ""
-    },
-    {
-      "id": "特朗普-普京-李在明等apec与会领导人感谢中国-点赞深圳-这是历史性的一页-d63982d3b5ad",
-      "language": "zh",
-      "title": "特朗普、普京、李在明等APEC与会领导人感谢中国，点赞深圳：“这是历史性的一页”",
-      "excerpt": "中新网11月21日电 风从大洋来，潮起珠江畔。连日来，世界的目光投向了中国、聚焦深圳。",
-      "date": "2026-11-21T10:41:47.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-21/10735832.shtml",
-      "image": ""
-    },
-    {
-      "id": "昆仑山下的国际陆港-连藏通疆-冬日繁忙-a70544177297",
-      "language": "zh",
-      "title": "昆仑山下的国际陆港：连藏通疆 冬日繁忙",
-      "excerpt": "中新网青海格尔木11月21日电 题：昆仑山下的国际陆港：连藏通疆 冬日繁忙",
-      "date": "2026-11-21T10:41:11.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735822.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国历史经典产业借新科技实现-当代表达-806231d78a53",
-      "language": "zh",
-      "title": "中国历史经典产业借新科技实现“当代表达”",
-      "excerpt": "中新社杭州11月21日电 (林波 孙琳茹)“帮我设计一方简约大气的丝巾，用于搭配风衣。”在首届历史经典产业博览会的万事利丝绸展台前，参观者向AI花型交互智能体说出需求，数十款花型瞬间呈现。选定纹样后，一旁的免水洗印染一体机启动生产，几分钟内便完成一方专属丝巾制作。",
-      "date": "2026-11-21T10:38:43.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735831.shtml",
-      "image": ""
-    },
-    {
-      "id": "报告称跨国企业将更多目标聚焦到中国-为亚太乃至全球创造-3f6d4d871be3",
-      "language": "zh",
-      "title": "报告称跨国企业将更多目标聚焦到中国 “为亚太乃至全球创造”",
-      "excerpt": "中新网北京11月21日电 (记者 张素)日前发布的《2026年跨国企业中国展望》报告显示，跨国企业对中国经济前景及自身在华业务表现更加乐观，对在华业务持有信心的受访企业比例较上一年度上升。",
-      "date": "2026-11-21T10:37:45.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735816.shtml",
-      "image": ""
-    },
-    {
-      "id": "智造打造光储充一体化解决方案-助力数字能源产业高质量发展-cc7400b88cb9",
-      "language": "zh",
-      "title": "智造打造光储充一体化解决方案 助力数字能源产业高质量发展",
-      "excerpt": "中新网北京11月21日电 (记者 孙自法)记者11月21日从中国电科获悉，其自主智造品牌“电科微”(CETMIC)近日在北京发布，以新能源产业为切入点，为用户打造提供行业领先的光储充一体化解决方案，构建覆盖智能光储、充电桩等产品，依托央企平台优质供应链与全域服务网络，提供全链路交付服务。",
-      "date": "2026-11-21T10:24:18.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735806.shtml",
-      "image": ""
-    },
-    {
-      "id": "deal-with-eu-not-dependent-on-tuition-fees-ag-8bd28aa954d3",
-      "language": "en",
-      "title": "Deal with EU not dependent on tuition fees agreement, Miliband says",
-      "excerpt": "Brussels sources had previously suggested the bloc might not apply the wider deal until fees were lowered for EU students in Britain.",
-      "date": "2026-11-21T09:40:55.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d218/live/12a1fc40-e531-11f1-a67d-39d55c7178b0.jpg"
-    },
-    {
-      "id": "54件西藏勉唐画派唐卡亮相江西-呈现文化交融之美-f2da04a1ff28",
-      "language": "zh",
-      "title": "54件西藏勉唐画派唐卡亮相江西 呈现文化交融之美",
-      "excerpt": "中新网南昌11月21日电 (记者 李韵涵)“如意度量 五彩意境——西藏勉唐画派唐卡艺术展”21日在江西省博物馆开展，54件唐卡作品集中亮相，呈现文化交融之美。",
-      "date": "2026-11-21T09:31:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-21/10735788.shtml",
-      "image": ""
-    },
-    {
-      "id": "重庆发布86项低空产业发展机会清单-总投资约289亿元-259abd49f853",
-      "language": "zh",
-      "title": "重庆发布86项低空产业发展机会清单 总投资约289亿元",
-      "excerpt": "中新网重庆11月21日电 (张旭)11月21日下午，重庆国际人才交流大会·超大城市低空综合治理产业人才发展大会在重庆举行。大会发布低空产业发展机会清单86项，预计总投资约289亿元。",
-      "date": "2026-11-21T09:29:24.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735787.shtml",
-      "image": ""
-    },
-    {
-      "id": "乡村行-看振兴-广西梧州-允许抱球跑-的女篮赛-球场-不讲究-跑出乡村新气象-de5787ec23f1",
-      "language": "zh",
-      "title": "（乡村行·看振兴）广西梧州“允许抱球跑”的女篮赛：球场“不讲究” 跑出乡村新气象",
-      "excerpt": "中新网梧州11月21日电 题：广西梧州“允许抱球跑”的女篮赛：球场“不讲究” 跑出乡村新气象",
-      "date": "2026-11-21T09:28:09.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-21/10735786.shtml",
-      "image": ""
-    },
-    {
-      "id": "广西钦州港口岸获评中西部地区首个-国际卫生港口-1279d31ceea8",
-      "language": "zh",
-      "title": "广西钦州港口岸获评中西部地区首个“国际卫生港口”",
-      "excerpt": "中新网南宁11月21日电(李虎祥 钟闯瑜 林浩)11月21日，经世界卫生组织专家组实地测评，广西钦州港口岸正式荣获“国际卫生港口”称号，成为中国中西部地区首个获此认证的水运口岸。",
-      "date": "2026-11-21T09:26:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/11-21/10735785.shtml",
-      "image": ""
-    },
-    {
-      "id": "全国青少年软式棒垒球校园联赛走进宁夏固原-35ebbcad0c29",
-      "language": "zh",
-      "title": "全国青少年软式棒垒球校园联赛走进宁夏固原",
-      "excerpt": "中新网固原11月21日电 (记者 杨迪)11月21日，2026全国青少年软式棒垒球校园联赛·固原分站赛在固原市体育馆正式开赛，来自当地4所小学的8支队伍、百余名少年选手，在赛场上展现协作拼搏的棒球精神。",
-      "date": "2026-11-21T09:24:27.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-21/10735784.shtml",
-      "image": ""
-    },
-    {
-      "id": "中外儿童齐聚广州共唱粤语童谣-a99da591d090",
-      "language": "zh",
-      "title": "中外儿童齐聚广州共唱粤语童谣",
-      "excerpt": "中新网广州11月21日电 (记者 张璐)广州市第二届“广府童谣”传唱暨儿童友好成果展示主场活动(简称“活动”)20日晚在广州市白鹅潭大湾区艺术中心户外舞台举行。约500名儿童参与演出，包括来自澳大利亚、韩国、约旦等13个国家或地区的儿童。",
-      "date": "2026-11-21T09:20:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-21/10735783.shtml",
-      "image": ""
-    },
-    {
-      "id": "七十载笔墨传薪-作家-搭建中外文学对话桥梁-5e2d5de39925",
-      "language": "zh",
-      "title": "七十载笔墨传薪 《作家》搭建中外文学对话桥梁",
-      "excerpt": "中新网长春11月21日电 (李彦国 高龙安)推动吉林文学高质量发展暨《作家》杂志创刊70周年主题系列活动，21日在长春举行。《作家》杂志深度参与中国当代文学发展进程，培养了一大批文学新人，同时大力推动中国作家作品“走出去”，促进中外文学交流。",
-      "date": "2026-11-21T09:18:21.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cul/2026/11-21/10735782.shtml",
-      "image": ""
-    },
-    {
-      "id": "特朗普盛赞深圳城市建设-干净整洁-路面平整-看看人家-再看看我们自己-99ff13699812",
-      "language": "zh",
-      "title": "特朗普盛赞深圳城市建设：干净整洁、路面平整，看看人家，再看看我们自己……",
-      "excerpt": "当地时间11月20日，美国总统特朗普在白宫举行记者会。会上，特朗普高度评价了亚太经合组织第三十三次领导人非正式会议的主办城市深圳。",
-      "date": "2026-11-21T09:03:08.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-21/10735781.shtml",
-      "image": ""
-    },
-    {
-      "id": "外籍来华消费有多便利-美国博主-来了就知道-4736aa876421",
-      "language": "zh",
-      "title": "外籍来华消费有多便利？美国博主：来了就知道",
-      "excerpt": "聚焦APEC丨外籍来华消费有多便利？美国博主：来了就知道",
-      "date": "2026-11-21T09:01:02.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-21/10735780.shtml",
-      "image": ""
-    },
-    {
-      "id": "湾区和湾区经济是啥-人民日报2分钟说透-5fec177c8609",
-      "language": "zh",
-      "title": "湾区和湾区经济是啥？人民日报2分钟说透",
-      "excerpt": "湾区不只是一片海湾，也是连接全球市场、产业和创新资源的重要枢纽。湾区经济，是以港口为纽带、城市群为载体，以产业集聚和协同发展为支撑形成的区域经济形态。目前世界公认的四大湾区分别是美国纽约湾区、旧金山湾区、日本东京湾区，以及中国的粤港澳大湾区。",
-      "date": "2026-11-21T08:58:52.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/dwq/2026/11-21/10735779.shtml",
-      "image": ""
-    },
-    {
-      "id": "广西柳州通报打击非法猎捕贩卖野生鸟类-抓捕涉案人员35人-36a1a5086dd6",
-      "language": "zh",
-      "title": "广西柳州通报打击非法猎捕贩卖野生鸟类 抓捕涉案人员35人",
-      "excerpt": "中新网柳州11月21日电 11月20日，广西柳州市林业和园林局发布通报称，2026年10月，接到关于该市融水、三江两县出现涉非法猎捕贩卖野生鸟类的举报线索后，柳州市林业和园林局会同公安机关，对涉事区域实行全域拉网清查，对相关违法犯罪行为实施严厉打击。",
-      "date": "2026-11-21T08:47:49.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-21/10735771.shtml",
-      "image": ""
-    },
-    {
-      "id": "西藏开展2026年冰雪运动进机关和企事业单位活动-e27221051209",
-      "language": "zh",
-      "title": "西藏开展2026年冰雪运动进机关和企事业单位活动",
-      "excerpt": "中新网拉萨11月21日电 (李林)为补齐冬季全民健身活动供给短板，20日，2026年西藏自治区冰雪运动进机关和企事业单位活动在拉萨市堆龙德庆区康嘎楚希峰顺利举办，全区各党政机关、企事业单位干部职工及户外运动爱好者200余人踊跃参与。",
-      "date": "2026-11-21T08:46:21.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/ty/2026/11-21/10735769.shtml",
-      "image": ""
-    },
-    {
-      "id": "聚焦ai攻防变局-第六届新一代通信网内生安全大会12月南京举行-a49de4ca52e4",
-      "language": "zh",
-      "title": "聚焦AI攻防变局 第六届新一代通信网内生安全大会12月南京举行",
-      "excerpt": "中新网南京11月21日电 (记者 徐珊珊)记者20日从紫金山实验室召开的新闻通气会上获悉，第六届新一代通信网内生安全学术大会暨第九届“强网”拟态防御国际精英挑战赛将于12月3日至6日在南京举办。同期，还将举办IEEE CRESS2026国际会议。",
-      "date": "2026-11-21T08:45:29.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-21/10735758.shtml",
-      "image": ""
-    },
-    {
-      "id": "河南汝州汝瓷文化节开幕-be916d619091",
-      "language": "zh",
-      "title": "河南汝州汝瓷文化节开幕",
-      "excerpt": "11月21日，2026汝州汝瓷文化节在河南省汝州市启幕。当日的汝州汝瓷博物馆，恢复汝窑70年科研成果展、国家级非遗汝瓷烧制技艺代表性传承人作品展、非遗互动展示区全面开放。本届汝瓷文化节旨在持续推动汝瓷非遗传承、文旅融合、产业发展同频共振。图为游客参观汝瓷博物馆。张俊 摄 11月21日，2026汝州汝瓷文化节在河南省汝州市启幕。当日的汝州汝瓷博物馆，恢复汝窑70年科研成果展、国家级非遗汝瓷烧制技艺代表性传承人作品展、非遗互动展示区全面开放。本届汝瓷文化节旨在持续推动汝瓷非遗传承、文旅融合、产业发展同频共振。图为展出的汝瓷作品。张俊 摄 11月21日，2026汝州汝瓷文化节在河南省汝州市启幕。当日的汝州汝瓷博物馆，恢复汝窑70年科研成果展、国家级非遗汝瓷烧制技艺代表性传承人作品展、非遗互动展示区全面开放。本届汝瓷文化节旨在持续推动汝瓷非遗传承、文旅融合、产业发展同频共振。图为游客在汝瓷博物馆观赏汝瓷作品。张俊 摄 11月21日，2026汝州汝瓷文化节在河南省汝州市启幕。当日的汝州汝瓷博物馆，恢复汝窑70年科研成果展、国家级非遗汝瓷烧制技艺代表性传承人作品展、非遗互动展示区全面开放。本届汝瓷文化节旨在持续推动汝瓷非遗传承、文旅融合、产业发展同频共振。图为展出的各类汝瓷作品。张俊 摄 11月21日，2026汝州汝瓷文化节在河南省汝州市启幕。当日的汝州汝瓷博物馆，恢复汝窑70年科研成果展、国家级非遗汝瓷烧制技艺代表性传承人作品展、非遗互动展示区全面开放。本届汝瓷文化节旨在持续推动汝瓷非遗传承、文旅融合、产业发展同频共振。图为游客在汝瓷博物馆观赏汝瓷作品。张俊 摄",
-      "date": "2026-11-21T08:40:31.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-21/10735770.shtml",
-      "image": ""
-    },
-    {
-      "id": "走进中国乡村-新雪季新疆-冰雪小镇-迎客忙-cf7831237e30",
-      "language": "zh",
-      "title": "（走进中国乡村）新雪季新疆“冰雪小镇”迎客忙",
-      "excerpt": "中新社新疆富蕴11月21日电 (记者 苟继鹏)“作为本雪季中国首家开滑的室外高山滑雪场，自今年10月20日新雪季开板以来，我们已累计接待游客超7.5万人次，开局即火热。”新疆富蕴县的可可托海国际滑雪度假区营销企划部员工赵婷玉21日说。",
-      "date": "2026-11-21T08:37:57.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/sh/2026/11-21/10735765.shtml",
-      "image": ""
-    },
-    {
-      "id": "第十四届中国中部投资贸易博览会在河南郑州开幕-46cb0c96a1d4",
-      "language": "zh",
-      "title": "第十四届中国中部投资贸易博览会在河南郑州开幕",
-      "excerpt": "11月21日，为期三天的第十四届中国中部投资贸易博览会在河南郑州开幕。中国中部投资贸易博览会由商务部、中部六省（山西、安徽、江西、河南、湖北、湖南）人民政府及中国工业经济联合会共同主办，自2006年起在中部六省轮流举办，目前已成功举办十三届。图为人工钻石展区。中新社记者 阚力 摄 11月21日，为期三天的第十四届中国中部投资贸易博览会在河南郑州开幕。中国中部投资贸易博览会由商务部、中部六省（山西、安徽、江西、河南、湖北、湖南）人民政府及中国工业经济联合会共同主办，自2006年起在中部六省轮流举办，目前已成功举办十三届。图为参观者试戴人工钻石饰品。中新社记者 阚力 摄 11月21日，为期三天的第十四届中国中部投资贸易博览会在河南郑州开幕。中国中部投资贸易博览会由商务部、中部六省（山西、安徽、江西、河南、湖北、湖南）人民政府及中国工业经济联合会共同主办，自2006年起在中部六省轮流举办，目前已成功举办十三届。图为智能艾灸机器人。中新社记者 阚力 摄 11月21日，为期三天的第十四届中国中部投资贸易博览会在河南郑州开幕。中国中部投资贸易博览会由商务部、中部六省（山西、安徽、江西、河南、湖北、湖南）人民政府及中国工业经济联合会共同主办，自2006年起在中部六省轮流举办，目前已成功举办十三届。图为河南本土品牌宇通客车吸引外国客商参观。中新社记者 阚力 摄 11月21日，为期三天的第十四届中国中部投资贸易博览会在河南郑州开幕。中国中部投资贸易博览会由商务部、中部六省（山西、安徽、江西、河南、湖北、湖南）人民政府及中国工业经济联合会共同主办，自2006年起在中部六省轮流举办，目前已成功举办十",
-      "date": "2026-11-21T08:37:23.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/tp/2026/11-21/10735750.shtml",
-      "image": ""
-    },
-    {
-      "id": "人力资源服务方向国家人工智能应用中试基地在重庆揭牌-4d137089fee6",
-      "language": "zh",
-      "title": "人力资源服务方向国家人工智能应用中试基地在重庆揭牌",
-      "excerpt": "中新社重庆11月21日电 (记者 钟旖)国家人工智能应用中试基地(人力资源领域人力资源服务方向)21日在重庆揭牌，标志着行业人工智能应用从“技术突破”向“规模应用”迈出关键一步。",
-      "date": "2026-11-21T08:37:15.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-21/10735757.shtml",
-      "image": ""
-    },
-    {
-      "id": "神舟二十四号任务完成最后一次全区合练-发射场做好发射前各项准备-c5d359960780",
-      "language": "zh",
-      "title": "神舟二十四号任务完成最后一次全区合练，发射场做好发射前各项准备",
-      "excerpt": "新华社快讯：神舟二十四号任务完成最后一次全区合练，发射场做好发射前各项准备。",
-      "date": "2026-11-21T08:35:13.000Z",
-      "source_name": "中新网即时新闻",
-      "source_url": "https://www.chinanews.com.cn/gn/2026/11-21/10735773.shtml",
       "image": ""
     }
   ]
