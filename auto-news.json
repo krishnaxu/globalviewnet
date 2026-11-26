@@ -1,6 +1,326 @@
 {
-  "generated_at": "2026-11-26T15:13:22.322Z",
+  "generated_at": "2026-11-26T23:51:38.836Z",
   "items": [
+    {
+      "id": "主打潜江小龙虾-岳阳烧烤-柳州螺蛳粉-风味-学院-对味产业-f05b0abb5e37",
+      "language": "zh",
+      "title": "主打潜江小龙虾、岳阳烧烤、柳州螺蛳粉 “风味”学院 对味产业",
+      "excerpt": "主打潜江小龙虾、岳阳烧烤、柳州螺蛳粉",
+      "date": "2026-11-26T23:45:19.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-27/10738488.shtml",
+      "image": ""
+    },
+    {
+      "id": "泽连斯基任命乌武装部队支援部队新任司令-0f855f5e3238",
+      "language": "zh",
+      "title": "泽连斯基任命乌武装部队支援部队新任司令",
+      "excerpt": "中新网11月27日电 综合乌克兰媒体报道，乌克兰总统官方网站当地时间26日公布，乌总统泽连斯基解除了德米特里·杰雷加的乌克兰武装部队支援部队司令职务，并任命德米特罗·特卡琴科接任。",
+      "date": "2026-11-26T23:41:39.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-27/10738487.shtml",
+      "image": ""
+    },
+    {
+      "id": "秋假为秋冬旅游市场注入新活力-亲子错峰游成为新需求-421b1cc50a63",
+      "language": "zh",
+      "title": "秋假为秋冬旅游市场注入新活力 亲子错峰游成为新需求",
+      "excerpt": "网友热议——",
+      "date": "2026-11-26T23:40:46.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-27/10738486.shtml",
+      "image": ""
+    },
+    {
+      "id": "开塞露是面霜平替-引热议-医生紧急提醒-90a659d88872",
+      "language": "zh",
+      "title": "“开塞露是面霜平替”引热议 医生紧急提醒",
+      "excerpt": "网传“开塞露是面霜平替”是真的吗？",
+      "date": "2026-11-26T23:35:26.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-27/10738485.shtml",
+      "image": ""
+    },
+    {
+      "id": "外卖骑手-网购电动车车灯改装有风险-9e6038c467d2",
+      "language": "zh",
+      "title": "@外卖骑手，网购电动车车灯改装有风险",
+      "excerpt": "本报讯(实习生税宇 记者杨召奎)夜间骑行，最怕遇上“强光刺客”。近日，北京市交管部门在日常执法中对电动自行车违规加装、改装灯光的情况开展现场检查。11月24日，记者走访北京多地发现，不少电动自行车加装高亮度灯具后上路行驶，其中外卖车辆较为常见。",
+      "date": "2026-11-26T23:33:46.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/sh/2026/11-27/10738484.shtml",
+      "image": ""
+    },
+    {
+      "id": "想运动却迈不开腿怎么办-校园体育如何-圈粉-年轻人-7111ca2c5b15",
+      "language": "zh",
+      "title": "想运动却迈不开腿怎么办 校园体育如何“圈粉”年轻人",
+      "excerpt": "受访者所在学校采取了哪些促进学生运动的措施",
+      "date": "2026-11-26T23:31:04.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/11-27/10738483.shtml",
+      "image": ""
+    },
+    {
+      "id": "科威特称伊朗袭击该国致两名意大利人身亡-伊朗否认-cb3e792c6fd5",
+      "language": "zh",
+      "title": "科威特称伊朗袭击该国致两名意大利人身亡，伊朗否认",
+      "excerpt": "中新网11月27日电 据伊朗媒体报道，伊朗武装部队发言人谢卡尔希26日否认科威特军方有关伊朗军队袭击科威特一处重要设施的指控。",
+      "date": "2026-11-26T23:25:02.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-27/10738482.shtml",
+      "image": ""
+    },
+    {
+      "id": "开-出百亿级大市场-义乌仿真花热销全球-dcf53f56c887",
+      "language": "zh",
+      "title": "“开”出百亿级大市场！义乌仿真花热销全球",
+      "excerpt": "不用浇水，不会凋零，如今仿真花让人们“但愿花常在”的美好愿望轻松成为日常。临近年底，海外节庆与软装需求集中释放，仿真花迎来一年中忙碌的出口时段。从单枝花销售到成套花艺方案出口，义乌已成为全球主要的仿真花生产和出口中心之一。数据显示，2025年国内仿真花行业市场规模约169亿元，出口量超50万吨，出口金额达41.9亿美元。",
+      "date": "2026-11-26T23:23:30.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-27/10738481.shtml",
+      "image": ""
+    },
+    {
+      "id": "未来五年-我国服务贸易将迎来哪些新机遇-2b48b22077a3",
+      "language": "zh",
+      "title": "未来五年，我国服务贸易将迎来哪些新机遇？",
+      "excerpt": "新闻1+1丨未来五年，我国服务贸易将迎来哪些新机遇？",
+      "date": "2026-11-26T23:06:51.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/cj/2026/11-27/10738480.shtml",
+      "image": ""
+    },
+    {
+      "id": "11月27日新闻早报-343c6898b069",
+      "language": "zh",
+      "title": "11月27日新闻早报",
+      "excerpt": "",
+      "date": "2026-11-26T23:03:38.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/iframe/2026/11-27/10738479.shtml",
+      "image": ""
+    },
+    {
+      "id": "my-dad-s-watch-stopped-the-moment-he-died-i-f-b084591b14ed",
+      "language": "en",
+      "title": "My dad's watch stopped the moment he died - I found it in the ashes of Hong Kong tower fire",
+      "excerpt": "The city marks a year since a huge blaze tore through seven apartment blocks, killing 168 people.",
+      "date": "2026-11-26T23:03:16.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/c6evr2y40v0jo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/56c9/live/268edc00-e978-11f1-99b6-a35a62fa4264.jpg"
+    },
+    {
+      "id": "特朗普-与普京会谈中-已敦促其尽快与乌克兰达成协议-5b9e9ee7e1d2",
+      "language": "zh",
+      "title": "特朗普：与普京会谈中，已敦促其尽快与乌克兰达成协议",
+      "excerpt": "中新网11月27日电 综合报道，美国总统特朗普当地时间26日在社交媒体发文表示，他日前在与俄罗斯总统普京的会谈中敦促其尽快与乌克兰达成协议，以结束俄乌冲突。",
+      "date": "2026-11-26T23:02:40.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-27/10738478.shtml",
+      "image": ""
+    },
+    {
+      "id": "男篮世预赛-中国队两分憾负沙特阿拉伯队-aa86600f2cb9",
+      "language": "zh",
+      "title": "男篮世预赛：中国队两分憾负沙特阿拉伯队",
+      "excerpt": "中新社北京11月26日电 当地时间26日，在中立场地卡塔尔多哈进行的2027年男篮世界杯亚洲区预选赛第五窗口期比赛中，中国队以80:82遗憾不敌沙特阿拉伯队。",
+      "date": "2026-11-26T23:00:18.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/11-27/10738477.shtml",
+      "image": ""
+    },
+    {
+      "id": "巴西副总统-美国对巴西加征新关税完全不合理-77e865f357c5",
+      "language": "zh",
+      "title": "巴西副总统：美国对巴西加征新关税完全不合理",
+      "excerpt": "当地时间11月26日，巴西副总统阿尔克明表示，美国提出对巴西加征的新关税完全不合理，巴西政府将尽全力扭转这一局面。阿尔克明强调，世界上不存在航空领域的关税，航空这样具有战略意义的领域不征收关税是传统。",
+      "date": "2026-11-26T22:57:06.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-27/10738476.shtml",
+      "image": ""
+    },
+    {
+      "id": "为科威特军方维护雷达天线-两名意大利人遇袭身亡-12b0ecb4f66f",
+      "language": "zh",
+      "title": "为科威特军方维护雷达天线 两名意大利人遇袭身亡",
+      "excerpt": "意大利外交部26日证实，两名意大利公民当天在为科威特军方维护雷达天线时遇袭身亡。意大利政府将密切关注事件进展。",
+      "date": "2026-11-26T22:53:30.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-27/10738475.shtml",
+      "image": ""
+    },
+    {
+      "id": "us-too-focused-on-middle-east-and-not-pushing-2eccc11da40e",
+      "language": "en",
+      "title": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
+      "excerpt": "Ukraine's president voices frustration with US and says it is \"strange\" Trump has described Vladimir Putin as a friend.",
+      "date": "2026-11-26T22:49:27.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/20f7/live/d0e75f10-e9e6-11f1-ab41-f1f84c0c758a.jpg"
+    },
+    {
+      "id": "特朗普-在与普京会谈中敦促其尽快与乌克兰达成协议-44281f2f23aa",
+      "language": "zh",
+      "title": "特朗普：在与普京会谈中敦促其尽快与乌克兰达成协议",
+      "excerpt": "美国总统特朗普26日在社交媒体发文说，他日前在与俄罗斯总统普京的会谈中敦促其尽快与乌克兰达成协议，以结束俄乌冲突。",
+      "date": "2026-11-26T22:37:27.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-27/10738474.shtml",
+      "image": ""
+    },
+    {
+      "id": "zelensky-questions-strange-trump-putin-friend-84c0a249884b",
+      "language": "en",
+      "title": "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
+      "excerpt": "The Ukrainian president tells the BBC that Russia's Vladimir Putin should not be treated as a friend.",
+      "date": "2026-11-26T22:06:20.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cm9309nwk7x9o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5957/live/94851140-e9e4-11f1-ab41-f1f84c0c758a.jpg"
+    },
+    {
+      "id": "two-italians-killed-in-strike-in-kuwait-as-ir-0f889ad86b23",
+      "language": "en",
+      "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
+      "excerpt": "The pair were technicians for German company Rheinmetall, according to Italy's foreign ministry.",
+      "date": "2026-11-26T21:17:53.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4cbd/live/babaff60-e9ac-11f1-a094-5fdc692f3e33.png"
+    },
+    {
+      "id": "trump-demands-probe-into-record-setting-error-d5f73ba4b22b",
+      "language": "en",
+      "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
+      "excerpt": "President Donald Trump on Thursday deemed the latest gross domestic product revision a mistake, claiming that it should be \"immediately investigated.\"",
+      "date": "2026-11-26T21:13:17.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
+      "image": ""
+    },
+    {
+      "id": "nvidia-hits-pause-on-chip-shipments-to-southe-979e22972f74",
+      "language": "en",
+      "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+      "excerpt": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
+      "date": "2026-11-26T20:03:54.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "image": ""
+    },
+    {
+      "id": "is-alice-huang-a-spy-or-not-8a47fa25d48b",
+      "language": "en",
+      "title": "Is Alice Huang a spy or not?",
+      "excerpt": "The central, still-unproven claim in the Nvidia scandal is that Alice Huang, the former Megaspeed exec with whom Nvidia CEO Jensen Huang had an extramarital affair, is a Chinese spy.",
+      "date": "2026-11-26T20:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/",
+      "image": ""
+    },
+    {
+      "id": "x-finally-gets-parental-controls-after-20-yea-58238582b61f",
+      "language": "en",
+      "title": "X finally gets parental controls after 20 years",
+      "excerpt": "Elon Musk's social network X has finally added parental controls for teenagers, giving parents and guardians a way to manage what their kids see on the platform.",
+      "date": "2026-11-26T19:31:50.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/",
+      "image": ""
+    },
+    {
+      "id": "watch-roofs-torn-off-and-streets-under-water--531caf503c7f",
+      "language": "en",
+      "title": "Watch: Roofs torn off and streets under water as severe weather hits US",
+      "excerpt": "Hundreds of thousands have been affected by storms in the country as the Thanksgiving holiday weekend begins.",
+      "date": "2026-11-26T19:26:16.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cq808d704m22o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e81d/live/7ff7f4c0-e9cd-11f1-99a1-253766e7ad8b.jpg"
+    },
+    {
+      "id": "microdrama-apps-chase-profits-as-hollywood-mo-760a332429d5",
+      "language": "en",
+      "title": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video",
+      "excerpt": "The microdrama category has exploded at a time when traditional forms of media face waning interest and YouTube claims more viewing hours.",
+      "date": "2026-11-26T18:27:43.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/26/micro-drama-apps-hollywood-vertical-video.html",
+      "image": ""
+    },
+    {
+      "id": "ford-unveils-the-gt41-as-it-hopes-to-win-le-m-cd2ffd2be57f",
+      "language": "en",
+      "title": "Ford unveils the GT41 as it hopes to win Le Mans again",
+      "excerpt": "Ford enters the World Endurance Championship in 2027 with the new prototype.",
+      "date": "2026-11-26T18:00:29.000Z",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/cars/2026/11/ford-unveils-the-gt41-as-it-hopes-to-win-le-mans-again/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Ford-GT41-and-GT40_06-500x500.jpg"
+    },
+    {
+      "id": "a-month-with-the-iphone-duo-has-changed-how-i-805fcb4a332b",
+      "language": "en",
+      "title": "A month with the iPhone Duo has changed how I use my phone",
+      "excerpt": "From reading more books to breaking mindless scrolling habits, Apple's foldable has changed my daily routines in ways I didn't anticipate.",
+      "date": "2026-11-26T17:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/",
+      "image": ""
+    },
+    {
+      "id": "buyer-beware-nvidia-s-volatile-swings-expose--34d37baac0f4",
+      "language": "en",
+      "title": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
+      "excerpt": "ETF Action founding partner Mike Akins and GraniteShares CEO Will Rhind react to Nvidia's sharp losses and latest comeback.",
+      "date": "2026-11-26T16:00:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/2026/11/26/nvidias-volatile-swings-expose-risks-of-single-stock-etfs.html",
+      "image": ""
+    },
+    {
+      "id": "grand-theft-auto-vi-proves-why-efficiency-isn-b81da0547893",
+      "language": "en",
+      "title": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
+      "excerpt": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.",
+      "date": "2026-11-26T16:00:00.000Z",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+      "image": ""
+    },
+    {
+      "id": "英国伦敦地铁司机开启冬季罢工-9e192581c36f",
+      "language": "zh",
+      "title": "英国伦敦地铁司机开启冬季罢工",
+      "excerpt": "中新社伦敦11月26日电 (记者 欧阳开宇)当地时间11月26日，伦敦地铁司机正式启动今冬首轮24小时罢工行动。据悉，本次冬季罢工共计八日，分多时段开展，将持续至2027年2月，预计持续扰乱伦敦公共交通秩序，影响数百万通勤民众出行。",
+      "date": "2026-11-26T15:34:08.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-26/10738473.shtml",
+      "image": ""
+    },
+    {
+      "id": "英国斥资80亿英镑提升核潜艇战备水平-205d8f73a828",
+      "language": "zh",
+      "title": "英国斥资80亿英镑提升核潜艇战备水平",
+      "excerpt": "中新社伦敦11月26日电 (记者 欧阳开宇)英国国防部26日宣布，已与本国企业巴布科克签署为期五年、总额80亿英镑的合作协议，用于升级英国海军核潜艇的维护保障体系，提升核潜艇战备水平。",
+      "date": "2026-11-26T15:32:14.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/gj/2026/11-26/10738472.shtml",
+      "image": ""
+    },
+    {
+      "id": "世预赛惜败沙特男篮后-中国男篮容错率越来越小-076733f3ac00",
+      "language": "zh",
+      "title": "世预赛惜败沙特男篮后，中国男篮容错率越来越小",
+      "excerpt": "中新网北京11月26日电(记者 刘星晨)在北京时间11月26日晚结束的国际篮联2027篮球世界杯预选赛第五窗口期比赛中，中国男篮最后时刻没能逆转比赛，以80:82负于沙特男篮。",
+      "date": "2026-11-26T15:30:05.000Z",
+      "source_name": "中新网即时新闻",
+      "source_url": "https://www.chinanews.com.cn/ty/2026/11-26/10738471.shtml",
+      "image": ""
+    },
     {
       "id": "spain-s-pablo-hernández-de-cos-set-to-lead-eu-6b91ecd492b1",
       "language": "en",
@@ -382,6 +702,16 @@
       "image": ""
     },
     {
+      "id": "planes-trains-and-automobiles-the-best-ways-t-f66d3236f476",
+      "language": "en",
+      "title": "Planes, trains and automobiles: The best ways to beat travel fatigue—so you can come home feeling rested and fulfilled",
+      "excerpt": "Visiting loved ones for the holidays? Here's how to manage the travel fatigue, from a travel expert and a sleep medicine specialist.",
+      "date": "2026-11-26T13:00:01.000Z",
+      "source_name": "CNBC Top News",
+      "source_url": "https://www.cnbc.com/make-it/2026/11/26/travel-fatigue-holiday-tips.html",
+      "image": ""
+    },
+    {
       "id": "u-s-tariff-hike-threats-pile-pressure-on-part-c2cf0074819c",
       "language": "en",
       "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
@@ -430,6 +760,16 @@
       "source_name": "中新网财经新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-26/10738366.shtml",
       "image": ""
+    },
+    {
+      "id": "egyptian-authorities-arrest-motorist-over-tan-5897d0f37fb9",
+      "language": "en",
+      "title": "Egyptian authorities arrest motorist over tanker crash that killed 31",
+      "excerpt": "Officials say the man confessed to travelling at speed and clipping the fuel truck as he was overtaking traffic.",
+      "date": "2026-11-26T12:16:06.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/articles/c3gre90l0g45o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e387/live/8aafd3d0-e98f-11f1-9d1c-4dcc8fcde666.jpg"
     },
     {
       "id": "draining-peatlands-is-responsible-for-a-few-p-193535c3d6a2",
@@ -580,6 +920,16 @@
       "source_name": "中新网国际新闻",
       "source_url": "https://www.chinanews.com.cn/gj/2026/11-26/10738244.shtml",
       "image": ""
+    },
+    {
+      "id": "politics-and-peek-a-boo-in-australian-parliam-dffc17fc9dc8",
+      "language": "en",
+      "title": "Politics and peek-a-boo in Australian parliament as senator brings baby to work",
+      "excerpt": "Senator Lidia Thorpe kept 6-month-old Aaliyah entertained, as her mum Senator Fatima Payman, participated in an online safety bill debate.",
+      "date": "2026-11-26T09:49:42.000Z",
+      "source_name": "BBC World",
+      "source_url": "https://www.bbc.co.uk/news/videos/cmvg23djw8v9o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f1ce/live/37520f50-e97b-11f1-a094-5fdc692f3e33.jpg"
     },
     {
       "id": "musk-s-plan-to-send-a-million-spacex-data-sat-29f2b2d83a49",
@@ -2649,356 +2999,6 @@
       "date": "2026-11-25T12:06:58.000Z",
       "source_name": "中新网财经新闻",
       "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737752.shtml",
-      "image": ""
-    },
-    {
-      "id": "脑机接口技术应用提速-四川亮出多款创新产品-26d76a194d31",
-      "language": "zh",
-      "title": "脑机接口技术应用提速 四川亮出多款创新产品",
-      "excerpt": "中新社成都11月25日电 (单鹏)2026四川省脑机接口产业对接大会25日在成都举行，22项四川省2026年脑机接口代表性产品集中亮相，涵盖医疗康复、精神健康、睡眠管理、养老康养等多个领域。",
-      "date": "2026-11-25T12:06:06.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737753.shtml",
-      "image": ""
-    },
-    {
-      "id": "天津武清-数字经济核心规上企业前三季度营收657-63亿元-同比增长15-3-ed380fe6ee6e",
-      "language": "zh",
-      "title": "天津武清：数字经济核心规上企业前三季度营收657.63亿元 同比增长15.3%",
-      "excerpt": "中新网天津11月25日电 (孙翼飞)记者从天津市武清区25日举办的新闻发布会上获悉，今年前三季度，该区数字经济核心规上企业达270家，营收657.63亿元，同比增长15.3%，成为拉动天津市数字经济发展的重要增长极。",
-      "date": "2026-11-25T12:05:06.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737735.shtml",
-      "image": ""
-    },
-    {
-      "id": "发挥老企业文化底蕴优势-燕山石化党群工作-燕品牌-建设-76c211d675a4",
-      "language": "zh",
-      "title": "发挥老企业文化底蕴优势 燕山石化党群工作“燕品牌”建设",
-      "excerpt": "燕燕于飞，奋翮高翔。燕山石化立足国有企业改革实际，系统构建以“燕品牌”为总牵引，以理论“鸣燕”、清风“护燕”、励志“青燕”、关爱“暖燕”四个子品牌协同联动的工作矩阵，既为企业“以二次创业推动高质量发展”注入源源不断的内生动力，也为国有企业以高质量党建引领改革发展实践提供可资借鉴的经验启示。",
-      "date": "2026-11-25T12:03:18.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737751.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国首单国际航行船舶生物甲烷加注业务落地山东青岛-e39afb8cb6b8",
-      "language": "zh",
-      "title": "中国首单国际航行船舶生物甲烷加注业务落地山东青岛",
-      "excerpt": "中新社青岛11月25日电 (胡耀杰 王禹)靠泊在山东港口青岛港的“德城”轮25日顺利完成生物甲烷加注作业，标志着中国首单国际航行船舶生物甲烷加注业务落地。",
-      "date": "2026-11-25T12:02:56.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737742.shtml",
-      "image": ""
-    },
-    {
-      "id": "国际可再生能源署-中国是推动全球能源转型进入新发展阶段的重要力量-f755c3286af4",
-      "language": "zh",
-      "title": "国际可再生能源署：中国是推动全球能源转型进入新发展阶段的重要力量",
-      "excerpt": "中新社青岛11月25日电 (记者 王梦瑶 胡耀杰)第四届“一带一路”能源部长会议25日至27日在青岛举行。国际可再生能源署总干事弗朗切斯科·拉卡梅拉25日在“绿色能源合作”分论坛上进行视频致辞时表示，全球能源转型已经进入新的发展阶段。中国是推动这一进展的重要力量。",
-      "date": "2026-11-25T12:02:42.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737741.shtml",
-      "image": ""
-    },
-    {
-      "id": "雄安高新区opc科创社区揭牌-首批11家企业入驻-d7eaa32b6104",
-      "language": "zh",
-      "title": "雄安高新区OPC科创社区揭牌 首批11家企业入驻",
-      "excerpt": "中新网雄安11月25日电 (谌诗雨 韩冰)11月25日，由河北雄安高新技术产业开发区管理委员会与雄安新区中关村科技园联合打造的“雄安高新区OPC科创社区”正式揭牌，11家OPC企业集中入驻。",
-      "date": "2026-11-25T12:02:32.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737733.shtml",
-      "image": ""
-    },
-    {
-      "id": "今年以来山西打掉黑恶组织251个-4f65d589bd85",
-      "language": "zh",
-      "title": "今年以来山西打掉黑恶组织251个",
-      "excerpt": "中新网太原11月25日电 (李庭耀 于雨彤)“人民群众痛恨什么犯罪，我们就重点打击什么犯罪。”中共山西省委宣传部、山西省人民政府新闻办公室25日举办开局起步“十五五”系列主题新闻发布会，山西省公安厅党委委员、副厅长李文平介绍，今年以来，全省已打掉黑恶组织251个，破获刑事案件1170起，抓获犯罪嫌疑人1259人。",
-      "date": "2026-11-25T12:01:42.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737744.shtml",
-      "image": ""
-    },
-    {
-      "id": "天津举办-金融走进重大项目-活动-现场签约超320亿元-4c8ff347ef9e",
-      "language": "zh",
-      "title": "天津举办“金融走进重大项目”活动 现场签约超320亿元",
-      "excerpt": "中新网天津11月25日电 (孙翼飞)“金融走进重大项目”活动25日在天津举办，记者从活动现场获悉，此次活动共签约25个项目，签约规模超320亿元。",
-      "date": "2026-11-25T12:01:42.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737731.shtml",
-      "image": ""
-    },
-    {
-      "id": "ai-may-soon-change-what-it-means-to-be-a-theo-5f071a5fc3a6",
-      "language": "en",
-      "title": "AI may soon change what it means to be a theoretical physicist",
-      "excerpt": "Frontier AI is already solving problems that once took top physicists a full day.",
-      "date": "2026-11-25T12:00:28.000Z",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/physics-and-ai-500x500.jpg"
-    },
-    {
-      "id": "secondhand-shopping-is-going-mainstream-this--7526cfd15e5b",
-      "language": "en",
-      "title": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
-      "excerpt": "More consumers are shopping secondhand this holiday season as they emphasize value and uniqueness in their purchases.",
-      "date": "2026-11-25T12:00:01.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
-      "image": ""
-    },
-    {
-      "id": "浙江海港发布-十五五-发展规划-锻造港航供应链硬核力量-724ad9b80e2f",
-      "language": "zh",
-      "title": "浙江海港发布“十五五”发展规划 锻造港航供应链硬核力量",
-      "excerpt": "中新网杭州11月25日电(奚金燕)25日，浙江省海港集团、宁波舟山港集团在杭州召开新闻发布会，正式对外发布集团“十五五”发展规划。规划立足新时期发展机遇与挑战，迭代发展定位、明确阶段目标与实施路径，目标到2027年基本建成世界一流强港、世界一流企业。",
-      "date": "2026-11-25T11:59:52.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737730.shtml",
-      "image": ""
-    },
-    {
-      "id": "智源real物理ai开放日举办-探讨评测标准建设与规模化应用-ca70ad725942",
-      "language": "zh",
-      "title": "智源REAL物理AI开放日举办 探讨评测标准建设与规模化应用",
-      "excerpt": "中新网北京11月25日电 (记者 陈杭)智源REAL物理AI开放日24日在北京中关村国际技术交易中心举办。活动汇聚60余家物理AI头部企业、产业合作伙伴及高校科研机构，围绕物理AI迈向真实世界的关键技术突破、评测标准建设与规模化应用展开深入交流。",
-      "date": "2026-11-25T11:55:47.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737724.shtml",
-      "image": ""
-    },
-    {
-      "id": "colombian-police-storm-supermarket-to-free-20-86e9e9979fdc",
-      "language": "en",
-      "title": "Colombian police storm supermarket to free 20 held hostage for 17 hours",
-      "excerpt": "One gunman was killed in the operation to free around 20 shoppers and employees after a 17-hour hostage ordeal.",
-      "date": "2026-11-25T11:45:16.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/997a/live/4f4b3940-e8c4-11f1-ac76-db9e97f93d67.jpg"
-    },
-    {
-      "id": "上海浦东发布数智赋能十大样本-加快前沿技术落地制造一线-6a42de93b3ff",
-      "language": "zh",
-      "title": "上海浦东发布数智赋能十大样本 加快前沿技术落地制造一线",
-      "excerpt": "中新网上海11月25日电 (记者 李姝徵)2026浦东新区数智赋能年度活动25日在上海举行。",
-      "date": "2026-11-25T11:19:43.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737712.shtml",
-      "image": ""
-    },
-    {
-      "id": "中国将牵头制定全球首个油气生产物联网国际标准-0d920ba53e7d",
-      "language": "zh",
-      "title": "中国将牵头制定全球首个油气生产物联网国际标准",
-      "excerpt": "中新社北京11月25日电 (记者 刘亮)中国国家市场监管总局25日公布，由中国牵头制定的全球首个油气生产物联网领域国际标准近日在国际电工委员会成功立项，标志着中国在能源数字化国际规则制定上取得新的突破。",
-      "date": "2026-11-25T11:12:19.000Z",
-      "source_name": "中新网财经新闻",
-      "source_url": "https://www.chinanews.com.cn/cj/2026/11-25/10737713.shtml",
-      "image": ""
-    },
-    {
-      "id": "budget-carrier-norse-atlantic-falls-77-after--6422b4f26a07",
-      "language": "en",
-      "title": "Budget carrier Norse Atlantic falls 77% after warning its finances are ‘critical’ amid soaring fuel costs",
-      "excerpt": "The Norwegian low-cost carrier said its situation is dependent on securing financing for its short-term liquidity needs.",
-      "date": "2026-11-25T11:10:28.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
-      "image": ""
-    },
-    {
-      "id": "protesters-call-on-israel-to-free-palestinian-68fbec585c94",
-      "language": "en",
-      "title": "Protesters call on Israel to free Palestinian student held without charge",
-      "excerpt": "Mahdi Tunsi, 26, was taken from his university dormitory earlier this month and has since been held without charge.",
-      "date": "2026-11-25T10:03:42.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cw62p8z9edjlo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3883/live/d69e8c10-e8b7-11f1-a094-5fdc692f3e33.jpg"
-    },
-    {
-      "id": "金建希-卖官鬻爵-案12月3日终审宣判-4768c3235a40",
-      "language": "zh",
-      "title": "金建希“卖官鬻爵”案12月3日终审宣判",
-      "excerpt": "中新网11月25日电 据韩联社当地时间11月25日报道，韩国前总统尹锡悦夫人金建希“卖官鬻爵”案将于12月3日迎来大法院(最高法院)终审判决。",
-      "date": "2026-11-25T09:19:01.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737650.shtml",
-      "image": ""
-    },
-    {
-      "id": "ukraine-tells-putin-to-stop-complaining-over--6f303d26d7e0",
-      "language": "en",
-      "title": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation",
-      "excerpt": "Ukraine’s foreign minister told Putin to end the war if he wants Kyiv to stop attacking Russian refineries, after Putin said retaliation was “inevitable.”",
-      "date": "2026-11-25T09:18:37.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/25/ukraine-putin-russia-oil-refinery-attacks.html",
-      "image": ""
-    },
-    {
-      "id": "尼泊尔泥石流受灾区开始发放住房租赁补贴-183fe9adae5c",
-      "language": "zh",
-      "title": "尼泊尔泥石流受灾区开始发放住房租赁补贴",
-      "excerpt": "中新社加德满都11月25日电 (记者 崔楠)据尼泊尔国家通讯社25日报道，受今年“8·26”泥石流灾害影响严重的尼泊尔努瓦果德县比德尔镇，近日开始向970户受灾家庭发放住房租赁补贴。",
-      "date": "2026-11-25T09:09:12.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737628.shtml",
-      "image": ""
-    },
-    {
-      "id": "朝鲜驱逐瑞士外交办事处代表-b8bce3f3e9c7",
-      "language": "zh",
-      "title": "朝鲜驱逐瑞士外交办事处代表",
-      "excerpt": "中新社北京11月25日电 平壤消息：据朝中社25日报道，朝鲜外务省当天宣布，瑞士驻朝鲜外交办事处代表为“不受欢迎的人”，并要求其在48小时内离境。",
-      "date": "2026-11-25T08:49:43.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737612.shtml",
-      "image": ""
-    },
-    {
-      "id": "澳大利亚10月cpi同比上涨4-9-f50371485e41",
-      "language": "zh",
-      "title": "澳大利亚10月CPI同比上涨4.9%",
-      "excerpt": "中新社悉尼11月25日电 (记者 薄雯雯)澳大利亚统计局25日公布的数据显示，该国10月消费者价格指数(CPI)同比上涨4.9%，高于9月的4.3%，并超出市场预期。",
-      "date": "2026-11-25T08:44:13.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737512.shtml",
-      "image": ""
-    },
-    {
-      "id": "一直夸一直夸-完全停不下来-返美后-特朗普连续多天夸赞中国之行-bf6439d1686b",
-      "language": "zh",
-      "title": "一直夸一直夸，完全停不下来！返美后，特朗普连续多天夸赞中国之行",
-      "excerpt": "中新网11月25日电 返回美国这几天，美国总统特朗普似乎仍对中国之行意犹未尽，多次在不同场合谈到这趟出访的收获。",
-      "date": "2026-11-25T08:19:12.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737589.shtml",
-      "image": ""
-    },
-    {
-      "id": "南非学者-日本应加快日遗化武处置进程-403699a81f7b",
-      "language": "zh",
-      "title": "南非学者：日本应加快日遗化武处置进程",
-      "excerpt": "总台记者专访丨南非学者：日本应加快日遗化武处置进程",
-      "date": "2026-11-25T07:31:45.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737565.shtml",
-      "image": ""
-    },
-    {
-      "id": "巴基斯坦总理-巴中航天合作体现两国牢不可破友谊-9bede0773503",
-      "language": "zh",
-      "title": "巴基斯坦总理：巴中航天合作体现两国牢不可破友谊",
-      "excerpt": "新华社伊斯兰堡11月25日电(记者杨恺)巴基斯坦总理办公室25日发表声明说，巴总理夏巴兹表示，巴航天员穆罕默德·齐尚·阿里将成为首位到访中国空间站“天宫”的外籍航天员，这证明了巴中两国之间牢不可破的友谊。",
-      "date": "2026-11-25T07:29:35.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737559.shtml",
-      "image": ""
-    },
-    {
-      "id": "zimbabwe-issues-arrest-warrant-for-robert-mug-2d4be2774567",
-      "language": "en",
-      "title": "Zimbabwe issues arrest warrant for Robert Mugabe's son over missed court date",
-      "excerpt": "The son of Zimbabwe's late former President Robert Mugabe has faced multiple legal troubles in the recent past.",
-      "date": "2026-11-25T07:26:54.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c6d917jn5gq7o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d4e2/live/505d3ac0-e89e-11f1-88cb-d14f0511e6fd.jpg"
-    },
-    {
-      "id": "two-children-among-six-dead-after-plane-crash-6728eb208267",
-      "language": "en",
-      "title": "Two children among six dead after plane crash off Mississippi coast",
-      "excerpt": "Divers found the bodies of four adults and two boys, aged 8 and 10, in the fuselage, the US Coast Guard said.",
-      "date": "2026-11-25T07:08:22.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/c6z74l1017zpo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cb6d/live/6e173110-e899-11f1-801d-b916df288324.jpg"
-    },
-    {
-      "id": "美国一小型飞机坠海-机上6人下落不明-ac3b68196c7d",
-      "language": "zh",
-      "title": "美国一小型飞机坠海 机上6人下落不明",
-      "excerpt": "中新网11月25日电 据美联社报道，美国一架小型飞机于当地时间24日在美国墨西哥湾海域坠海，机上6人下落不明。美国海岸警卫队表示，救援人员已展开搜索。",
-      "date": "2026-11-25T06:46:51.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737528.shtml",
-      "image": ""
-    },
-    {
-      "id": "crypto-talent-will-return-when-ai-implodes-ar-cdc9ce7aea80",
-      "language": "en",
-      "title": "Crypto talent will return ‘when AI implodes,’ Arthur Hayes says",
-      "excerpt": "Maelstrom CIO Arthur Hayes expects the AI trade to face headwinds in the second half of 2027, with startup talent potentially returning to crypto afterward.",
-      "date": "2026-11-25T06:09:44.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/25/talents-crypto-ai-investment.html",
-      "image": ""
-    },
-    {
-      "id": "close-up-images-to-be-revealed-of-asteroid-de-6cd45e2d2b78",
-      "language": "en",
-      "title": "Close-up images to be revealed of asteroid deliberately hit to test ability to protect Earth",
-      "excerpt": "The mission is studying an asteroid deliberately knocked off course by a colliding spacecraft.",
-      "date": "2026-11-25T06:00:36.000Z",
-      "source_name": "BBC World",
-      "source_url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/abbb/live/4b2b41d0-e8a5-11f1-99a1-253766e7ad8b.jpg"
-    },
-    {
-      "id": "沙特主导联军袭击也门荷台达港-胡塞武装威胁沙特红海沿岸港口-fec0d2baa155",
-      "language": "zh",
-      "title": "沙特主导联军袭击也门荷台达港 胡塞武装威胁沙特红海沿岸港口",
-      "excerpt": "中新社北京11月25日电 综合消息：沙特主导的多国联军25日对也门荷台达港及萨达省、阿姆兰省目标实施打击。此前，也门胡塞武装军事发言人叶海亚·萨雷亚威胁称，若荷台达港遭袭，沙特红海沿岸所有港口都将成为打击目标。",
-      "date": "2026-11-25T05:56:34.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737475.shtml",
-      "image": ""
-    },
-    {
-      "id": "朝中社-朝鲜驱逐瑞士外交办事处代表-限其48小时内离境-a8e8a3c16a83",
-      "language": "zh",
-      "title": "朝中社：朝鲜驱逐瑞士外交办事处代表 限其48小时内离境",
-      "excerpt": "中新网11月25日电 据朝中社报道，当地时间25日，朝鲜外务省宣布瑞士驻朝鲜外交办事处代表为“不受欢迎的人”，限其在48小时内离境。",
-      "date": "2026-11-25T04:13:18.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737460.shtml",
-      "image": ""
-    },
-    {
-      "id": "ready-for-any-storm-uae-minister-optimistic-o-80802e4592c7",
-      "language": "en",
-      "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
-      "excerpt": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model.",
-      "date": "2026-11-25T04:06:01.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
-      "image": ""
-    },
-    {
-      "id": "china-s-xiamen-airlines-to-buy-50-boeing-jets-cb89afc0f58c",
-      "language": "en",
-      "title": "China’s Xiamen Airlines to buy 50 Boeing jets in $7.4 billion deal",
-      "excerpt": "Xiamen Airlines has agreed to purchase 50 Boeing 737-8 aircraft with a combined catalog price of around $7.4 billion.",
-      "date": "2026-11-25T03:58:32.000Z",
-      "source_name": "CNBC Top News",
-      "source_url": "https://www.cnbc.com/2026/11/25/china-xiamen-boeing-deal.html",
-      "image": ""
-    },
-    {
-      "id": "黄仁勋-闪电复出-发了88篇报道-围攻-他的-纽约时报-尴尬了-a12e113f0ec7",
-      "language": "zh",
-      "title": "黄仁勋“闪电复出”，发了88篇报道“围攻”他的《纽约时报》尴尬了",
-      "excerpt": "中新网11月25日电 短短11天，一场沸沸扬扬的职业危机，迎来戏剧性反转。",
-      "date": "2026-11-25T03:32:00.000Z",
-      "source_name": "中新网国际新闻",
-      "source_url": "https://www.chinanews.com.cn/gj/2026/11-25/10737442.shtml",
       "image": ""
     }
   ]
